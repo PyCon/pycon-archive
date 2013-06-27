@@ -1,0 +1,580 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+    
+<!-- Mirrored from us.pycon.org/2012/tutorials/proposals/ by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 20 Jun 2013 15:37:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <link href="/2012/site_media/static/img/favicon.ico" rel="shortcut icon" />
+        <title>PyCon US 2012 </title>
+        <!--  hack to make IE able to apply CSS to elements that it doesn't usually know about. See http://code.google.com/p/html5shim/ -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <link rel="stylesheet" href="/2012/site_media/static/pinax/css/tabs.css" />
+        <link rel="stylesheet" href="/2012/site_media/static/css/facebox.css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
+        <link href="/2012/site_media/static/markitup/skins/simple/style.css" type="text/css" media="screen" rel="stylesheet" />
+<link href="/2012/site_media/static/markitup/sets/markdown-custom/style.css" type="text/css" media="screen" rel="stylesheet" />
+
+        
+    <!-- Framework CSS -->
+<link rel="stylesheet" href="/2012/site_media/static/css/blueprint/grid.css" media="screen, projection" />
+<link rel="stylesheet" href="/2012/site_media/static/css/blueprint/print.css" media="print" />
+<!--[if lt IE 8]>
+<link rel="stylesheet" href="/2012/site_media/static/css/blueprint/ie.css" media="screen, projection" />
+<![endif]-->
+
+        
+    <link rel="stylesheet" href="/2012/site_media/static/css/reset.css" />
+    <link rel="stylesheet" href="/2012/site_media/static/css/pycon.css" />
+    <link rel="stylesheet" href="/2012/site_media/static/css/site_tabs.css" />
+    <link rel="stylesheet" href="/2012/site_media/static/uni_form/uni-form.css" />
+    <link rel="alternate" type="application/atom+xml" href="/2012/feed/general/" title="blog feed"/>
+    
+
+    </head>
+
+    <body class="wiki tutorials/proposals " id="">
+        <div class="wrapper">
+
+            <div class="msg-container">
+                
+            </div>
+
+            <header>
+                <div class="container">
+                    
+                        <h1 id="logo"><a href="/2012/">PyCon 2012</a></h1>
+                        
+                        <div id="left_tabs"></div>
+                        <div id="right_tabs"></div>
+                        <div class="login">
+    
+
+<div class="account-bar">
+
+    <a href="/2012/account/login/">Log in</a> or <a href="/2012/account/signup/">Sign Up</a>
+
+</div>
+<div class="clear"></div>
+
+</div>
+                        
+    <nav id="main-nav">
+        <ul>
+            
+                
+                    <li id="tab_pycon-2013"><a href="/2013/" id="link-pycon-2013">PyCon 2013!</a></li>
+                
+            
+                
+                    <li id="tab_about" class="dropdown">
+                        <a href="/2012/about/"
+                              class="dropdown-toggle"
+                              data-toggle="dropdown"
+                              id="link-about">
+                              About
+                              <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                
+                    <li id="tab_code-conduct"><a href="/2012/codeofconduct/" id="link-code-conduct">Code of Conduct</a></li>
+                
+            
+                
+                    <li id="tab_diversity"><a href="/2012/diversity/" id="link-diversity">Diversity</a></li>
+                
+            
+                
+                    <li id="tab_pycon-mobile-guide"><a href="http://guidebook.com/g/pycon2012/" id="link-pycon-mobile-guide">PyCon Mobile Guide</a></li>
+                
+            
+                
+                    <li id="tab_volunteers"><a href="/2012/community/volunteer/" id="link-volunteers">Volunteers</a></li>
+                
+            
+                
+                    <li id="tab_what-pycon"><a href="/2012/about/" id="link-what-pycon">What is Pycon?</a></li>
+                
+            
+                
+                    <li id="tab_join-conversation"><a href="https://pycon.disqus.com/" id="link-join-conversation">Join the Conversation</a></li>
+                
+            
+                        </ul>
+                    </li>
+                
+            
+                
+                    <li id="tab_blog"><a href="http://pycon.blogspot.com/" id="link-blog">Blog</a></li>
+                
+            
+                
+                    <li id="tab_schedule" class="dropdown">
+                        <a href="/2012/schedule/"
+                              class="dropdown-toggle"
+                              data-toggle="dropdown"
+                              id="link-schedule">
+                              Schedule
+                              <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                
+                    <li id="tab_conference-schedule"><a href="/2012/schedule/" id="link-conference-schedule">Conference Schedule</a></li>
+                
+            
+                
+                    <li id="tab_keynote-speakers"><a href="/2012/keynotes/" id="link-keynote-speakers">Keynote Speakers</a></li>
+                
+            
+                
+                    <li id="tab_mobile-guide"><a href="http://guidebook.com/g/pycon2012/" id="link-mobile-guide">Mobile Guide</a></li>
+                
+            
+                
+                    <li id="tab_open-spaces"><a href="/2012/community/openspaces/" id="link-open-spaces">Open Spaces</a></li>
+                
+            
+                
+                    <li id="tab_posters"><a href="/2012/schedule/lists/posters/" id="link-posters">Posters</a></li>
+                
+            
+                
+                    <li id="tab_pycon-5k"><a href="/2012/5k/" id="link-pycon-5k">Pycon 5K</a></li>
+                
+            
+                
+                    <li id="tab_sprints"><a href="/2012/community/sprints/" id="link-sprints">Sprints</a></li>
+                
+            
+                
+                    <li id="tab_startup-row"><a href="/2012/community/startuprow/" id="link-startup-row">Startup Row</a></li>
+                
+            
+                
+                    <li id="tab_tutorials"><a href="/2012/schedule/tutorials/" id="link-tutorials">Tutorials</a></li>
+                
+            
+                        </ul>
+                    </li>
+                
+            
+                
+                    <li id="tab_sponsors" class="dropdown">
+                        <a href="/2012/sponsors/"
+                              class="dropdown-toggle"
+                              data-toggle="dropdown"
+                              id="link-sponsors">
+                              Sponsors
+                              <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                
+                    <li id="tab_about-pycon-sponsors"><a href="/2012/sponsors/" id="link-about-pycon-sponsors">About Pycon Sponsors</a></li>
+                
+            
+                
+                    <li id="tab_jobs-fair"><a href="/2012/sponsors/jobs/" id="link-jobs-fair">Jobs Fair</a></li>
+                
+            
+                
+                    <li id="tab_sponsor-prospectus"><a href="/2012/sponsors/prospectus/" id="link-sponsor-prospectus">Sponsor Prospectus</a></li>
+                
+            
+                
+                    <li id="tab_sponsor-sign"><a href="/2012/sponsors/info/" id="link-sponsor-sign">Sponsor Sign Up</a></li>
+                
+            
+                        </ul>
+                    </li>
+                
+            
+                
+                    <li id="tab_venue" class="dropdown">
+                        <a href="/2012/venue/"
+                              class="dropdown-toggle"
+                              data-toggle="dropdown"
+                              id="link-venue">
+                              Venue
+                              <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                
+                    <li id="tab_bars"><a href="/2012/venue/bars/" id="link-bars">Bars</a></li>
+                
+            
+                
+                    <li id="tab_directions-venue"><a href="/2012/venue/directions/" id="link-directions-venue">Directions to the Venue</a></li>
+                
+            
+                
+                    <li id="tab_explore-santa-clara"><a href="/2012/venue/explore/" id="link-explore-santa-clara">Explore Santa Clara</a></li>
+                
+            
+                
+                    <li id="tab_getting-around-santa-clara"><a href="/2012/venue/getting-around/" id="link-getting-around-santa-clara">Getting Around Santa Clara </a></li>
+                
+            
+                
+                    <li id="tab_restaurants"><a href="/2012/venue/restaurants/" id="link-restaurants">Restaurants</a></li>
+                
+            
+                
+                    <li id="tab_needs-share-room"><a href="/2012/community/roomsharing/" id="link-needs-share-room">Room Sharing</a></li>
+                
+            
+                
+                    <li id="tab_shopping"><a href="/2012/venue/shopping/" id="link-shopping">Shopping</a></li>
+                
+            
+                
+                    <li id="tab_traveling-santa-clara"><a href="/2012/venue/traveling/" id="link-traveling-santa-clara">Traveling</a></li>
+                
+            
+                
+                    <li id="tab_weather"><a href="/2012/venue/weather/" id="link-weather">Weather</a></li>
+                
+            
+                        </ul>
+                    </li>
+                
+            
+        </ul>
+    </nav>
+
+                        
+                    
+                </div>
+            </header>
+
+            <section id="subnav">
+                <div class="container">
+                    
+                </div>
+            </section>
+
+            
+                
+                <section id="body">
+                    <div class="container">
+
+                        
+    <div class="span-8">
+        &nbsp;
+    </div>
+    <div class="span-16 last spacer">
+        
+
+        <div class="page">
+            <h1 class="shift">How to submit a <span>Tutorial</span></h1>
+
+<p>This page gives detailed instructions and advice on how to submit a
+proposal for a tutorial at PyCon.</p>
+<p>For general information about tutorials, see <a href="/2012/tutorials/instructors" title="Tutorial Information for
+Instructors">Tutorial Information for
+Instructors</a>.</p>
+<p>For general advice on developing and submitting a proposal see <a href="/2012/speaking/proposal_advice" title="So You Want To Present a
+Talk/Tutorial/Poster At PyCon">So You
+Want To Present a Talk/Tutorial/Poster At
+PyCon</a> and <a href="/2012/tutorials/suggested_topics" title="Suggested Tutorial Topics">Suggested Tutorial
+Topics</a>.</p>
+<h2>What information to submit</h2>
+<p>The logistics of submitting a proposal are fairly simple.  Go to
+<a href="/2012/proposal/submit/" title="http://us.pycon.org/2012/proposal/submit/">http://us.pycon.org/2012/proposal/submit/</a> and fill in the fields as
+follows:</p>
+<h3 id="title">Title</h3>
+<p>Give your tutorial a name that accurately describes what it's about to
+potential students.</p>
+<h3 id="description">Description</h3>
+<p>A high level description of the tutorial, limited to 400 characters.</p>
+<h3 id="abstract">Abstract</h3>
+<p>Try to include the following to help participants decide if this is a
+good match for them:</p>
+<ul>
+<li>
+<p>What the tutorial aims to teach students</p>
+</li>
+<li>
+<p>Prerequisites for the tutorial, i.e. what the student should know or
+  be able to do before the tutorial.  For example, "Students should have 
+  at least intermediate level Python and SQL and have some experience using an ORM."</p>
+</li>
+<li>
+<p>Prerequisites for their laptop (assuming one is required).  Note that
+  these prerequisites serve two purposes:</p>
+<ol>
+<li>
+<p>They may help the potential student understand more precisely what
+   you plan to teach.</p>
+</li>
+<li>
+<p>They help ensure students arrive with the software they need to
+   take the tutorial.  If possible, finalize these prerequisites
+   and submit them with your proposal.  However, we realize that
+   in some cases the prerequisites may change as you prepare to
+   teach your tutorial, and in a few cases the prerequisites will
+   be complex enough that they'll need their own page of
+   instructions.  We're working on how best to communicate to
+   students in both cases.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Any information you're providing to reviewers (such as tutorial
+  format or outline) that potential students will also want to know to
+  help them decide if this tutorial is a good match for them.</p>
+</li>
+</ul>
+<h3 id="audience_level">Audience Level</h3>
+<p>At what level of Python and other topic-specific experience or
+expertise is the tutorial aiming for?  We realize this may be too
+narrow for a tutorial, for example if the tutorial is aimed at
+Experienced programmers but Novices to Python, but give it your best
+shot.  If this field doesn't work well, be sure to include a note in
+the Additional Notes section, and you may also wish to add to your
+Description or Abstract.</p>
+<h3 id="additional_notes">Additional Notes</h3>
+<p>This is the one section that is for reviewers only, so it should have
+lots and lots of information to help reviewers decide which tutorials
+to accept, based on both the subject being taught and the ability of
+the teacher.  The following information should be included:</p>
+<ul>
+<li>
+<p>Any explanation or fleshing out of the public fields that would help
+  reviewers.</p>
+</li>
+<li>
+<p>Intended audience: more than just novice/intermediate/etc.
+  Reviewers need to know what level of Python experience/expertise is
+  targeted but also what level(s) of domain-specific
+  experience/expertise is targeted, for example networking, SQL,
+  database, etc.</p>
+</li>
+<li>
+<p>Tutorial format: lab, lecture, workshop, etc.  However, don't just
+  pick a label, describe what will happen during the tutorial.</p>
+</li>
+<li>
+<p>Interest in tutorial assistants: We're considering making tutorial
+  assistants available to instructors.  These would be volunteers with
+  Python experience who will provide one-on-one help during the
+  tutorial when students are working on exercises.  If we do this,
+  would you be interested and if so how many students per assistant
+  would you want?</p>
+</li>
+<li>
+<p>Preferences or requirements with respect to class size or
+  scheduling.</p>
+</li>
+<li>
+<p>Outline: of the tutorial content for reviewers.</p>
+</li>
+<li>
+<p>Previous experience: tell us what experience you have in the
+  subject, in activities such as teaching or public speaking, or
+  anything else that would help us understand and gauge your abilities
+  as a tutorial presenter.  Ideal would be a link to a video.</p>
+</li>
+<li>
+<p>Biography: You'll be asked to enter your biography when you register
+  on the us.pycon.org site and that information will be made public.
+  However, you may wish to include more information for reviewers to
+  complement information about your Previous Experience.</p>
+</li>
+</ul>
+<h2>Notes</h2>
+<ul>
+<li>
+<p>There will be some duplication of information between the public
+  information contained in the Description and Abstract, and the
+  Additional Notes which only reviewers will read.  That duplicate
+  information is for two different audiences so if you just copy and
+  paste between them neither will likely be served well.  A better
+  strategy, if you don't want to write two versions, is to reference
+  the public version (Description and Abstract) in the Additional
+  Notes for reviewers and then expound on it.</p>
+</li>
+<li>
+<p>The tutorial selection process attempts to choose a good variety of
+  tutorial topics and levels that will be in demand, i.e. it doesn't
+  just select the best proposals!</p>
+</li>
+<li>
+<p>Tutorial are subject to cancellation if enrollment is low.  In the
+  past the cancellation criterion has been less than 10 students
+  registered.</p>
+</li>
+</ul>
+<h2>Questions or Suggestions</h2>
+<p>If you have questions about any of this, or suggestions, please
+contact us at
+<a href="mailto:pycon-tutorials@python.org?subject=Question/Suggestion
+about Tutorial Proposals" title="pycon-tutorials@python.org">pycon-tutorials@python.org</a></p>
+        </div>
+
+        <div class="info"><span><strong>tutorials/proposals</strong></span><span>
+                
+                    Recently modified by <em>paulproteus</em>: Oct. 10, 2011, 2:41 p.m.
+                
+                (<a href="/2012/tutorials/proposals/history/">History</a>)
+            </span><div><a href="/2012/index/">Index</a></div></div>
+    </div>
+
+
+                    </div>
+
+                </section>
+            
+            <div class="push"></div>
+        </div>
+
+        <footer>
+            <div class="container">
+    <p>
+        PyCon US 2012 is a production of the <a href="http://python.org/psf/">Python Software Foundation</a>.
+    <br />
+        Site built by <a href="http://eldarion.com">Eldarion</a> using <a href="http://djangoproject.com">Django</a> and <a href="http://pinaxproject.com">Pinax</a>. Hosting provided by <a href="http://gondor.io">Gondor</a>.
+    <br />
+        Questions? Comments? Contact <a href="mailto:pycon-organizers@python.org">pycon-organizers@python.org</a>
+    </p>
+</div>
+        </footer>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+        <script src="/2012/site_media/static/js/base.js" type="text/javascript"></script>
+        <script src="/2012/site_media/static/uni_form/uni-form.jquery.js" type="text/javascript"></script>
+        <script type="text/javascript" src="/2012/site_media/static/markitup/jquery.markitup.js"></script>
+        <script type="text/javascript" src="/2012/site_media/static/markitup/sets/markdown-custom/set.js"></script>
+        <script src="/2012/site_media/static/js/facebox.js" type="text/javascript"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $('a[rel*=facebox]').facebox({
+            loadingImage: '/2012/site_media/static/img/facebox/loading.gif',
+            closeImage: '/2012/site_media/static/img/facebox/closelabel.png'
+        });
+        $(document).bind('reveal.facebox', function() {
+            $("form.in_facebox").submit(function() {
+                form = this;
+                jQuery.facebox(function($) {
+                    fields = jQuery(form).find("input[type='text']").filter(":enabled");
+                    params = {}
+                    fields.each(function() {
+                        params[this.name] = this.value;
+                    });
+                    jQuery.post(form.action, params,
+                        function(data, textStatus) {
+                            jQuery.facebox(data);
+                        }
+                    );
+                });
+                return false;
+            });
+        });
+        $(document).bind('close.facebox', function() {
+           location.reload();
+          });
+     });
+</script>
+        <script type="text/javascript" charset="utf-8">
+            $(document).ajaxSend(function(event, xhr, settings) {
+                function getCookie(name) {
+                    var cookieValue = null;
+                    if (document.cookie && document.cookie != '') {
+                        var cookies = document.cookie.split(';');
+                        for (var i = 0; i < cookies.length; i++) {
+                            var cookie = jQuery.trim(cookies[i]);
+                            // Does this cookie string begin with the name we want?
+                            if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                                break;
+                            }
+                        }
+                    }
+                    return cookieValue;
+                }
+                function sameOrigin(url) {
+                    // url could be relative or scheme relative or absolute
+                    var host = document.location.host; // host + port
+                    var protocol = document.location.protocol;
+                    var sr_origin = '//' + host;
+                    var origin = protocol + sr_origin;
+                    // Allow absolute or scheme relative URLs to same origin
+                    return (url == origin || url.slice(0, origin.length + 1) == origin + '/') ||
+                        (url == sr_origin || url.slice(0, sr_origin.length + 1) == sr_origin + '/') ||
+                        // or any other URL that isn't scheme relative or absolute i.e relative.
+                        !(/^(\/\/|http:|https:).*/.test(url));
+                }
+                function safeMethod(method) {
+                    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+                }
+
+                if (!safeMethod(settings.type) && sameOrigin(settings.url)) {
+                    xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
+                }
+            });
+        </script>
+        
+        <script type="text/javascript">
+            $(document).ready(function($) {
+                $("a.boxes-edit-link").click(function() {
+                    $.facebox.settings.loadingImage = "/site_media/static/img/loading.gif";
+                    $.facebox.settings.closeImage = "/site_media/static/img/closelabel.png";
+                    $(document).bind("beforeReveal.facebox", function() {
+                        $("#facebox .content").css("width", "600px");
+                    });
+                    var editable = this;
+                    $(document).bind("reveal.facebox", function() {
+                        $("#edit_form").submit(function() {
+                            $.post(editable.href, $(this).serialize(), function(data) {
+                                $(document).trigger("close.facebox");
+                                $(editable).load(data);
+                                $(document).unbind("reveal.facebox");
+                            });
+                            return false;
+                        });
+                    });
+                    $.facebox({ajax: this.href});
+                    return false;
+                });
+            });
+        </script>
+        
+        <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2401894-29']);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_trackPageLoadTime']);
+    // _gaq.push(['_setCustomVar', 1, 'Authentication Type', ut, 2]);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+        
+        
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+          $("#id_email").focus();
+          if(('ul#messages').length > 0) {
+              setTimeout(function() {
+                  $('ul#messages').fadeOut(3000);
+              }, 2000 );
+          }
+      });
+    </script>
+    
+
+    </body>
+
+<!-- Mirrored from us.pycon.org/2012/tutorials/proposals/ by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 20 Jun 2013 15:37:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+</html>

@@ -1,0 +1,222 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en-us" lang="en-us">
+    
+<!-- Mirrored from us.pycon.org/2011/schedule/presentations/159/ by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 19 Jun 2013 18:26:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>PyCon US 2011</title>
+        <!--[if IE]><style>
+            div {
+                zoom: 1; /* trigger hasLayout */
+            }
+        </style><![endif]-->
+        <link rel="stylesheet" href="/2011/site_media/static/css/reset.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/css/960.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/css/base.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/css/account.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/uni_form/uni-form.css" />
+        
+        
+    <link rel="stylesheet" href="/2011/site_media/static/css/pycon.css" />
+    <link rel="stylesheet" href="/2011/site_media/static/css/tabs.css" />
+    <link rel="alternate" type="application/atom+xml" href="/2011/feed/general/" title="blog feed"/>
+    
+    <style>
+        a.unbookmark {
+            text-decoration: none;
+            padding-left: 20px;
+            background: url(/2011/site_media/static/img/star.png) no-repeat left;
+        }
+        a.bookmark {
+            text-decoration: none;
+            padding-left: 20px;
+            background: url(/2011/site_media/static/img/star_unselected.png) no-repeat left;
+        }
+        div.slot {
+            font-weight: bold;
+        }
+    </style>
+
+
+    </head>
+
+    <body class="full schedule">
+        
+
+        <div id="tabhead">
+            
+    <div id="heading">
+        <img src="/2011/site_media/static/img/pycon_logo.gif" alt="pycon logo" />
+        <h1><a href="/2011/">PyCon 2011 Atlanta</a></h1>
+        <h2>March 9th&ndash;17th</h2>
+    </div>
+
+            
+
+<div class="account-bar">
+
+    <a href="/2011/account/login/">Log in</a> or <a href="/2011/account/signup/">Sign Up</a>
+
+</div>
+<div class="clear"></div>
+
+            <div id="nav">
+                
+<ul>
+    <li class="about_tab"><a href="/2011/about/">About</a></li>
+    <li class="schedule_tab"><a href="/2011/schedule/">Schedule</a></li>
+    <li class="speaker_tab"><a href="/2011/speaker/">Speakers</a></li>
+    
+    <li class="sprints_tab"><a href="/2011/sprints/">Sprints</a></li>
+    <li class="volunteer_tab"><a href="/2011/volunteer/">Volunteer</a></li>
+    <li class="tickets_tab"><a href="/2011/tickets/">Tickets</a></li>
+    <li class="venue_tab"><a href="/2011/venue/">Venue</a></li>
+    <li class="sponsors_tab"><a href="/2011/sponsors/">Sponsors</a></li>
+    <li class="blog_tab"><a href="/2011/blog/">Blog</a></li>
+</ul>
+
+            </div>
+        </div>
+
+        
+        <div id="body">
+            <div id="wrapper">
+                <div id="main">
+                    <div id="subnav" class="clearfix"><div class="clearfix">
+    <a href="/2011/schedule/tutorials/">Tutorial Schedule</a>
+    |
+    <a href="/2011/schedule/">Conference Schedule</a>
+    |
+    <a href="/2011/schedule/lists/talks/">List of Accepted Talks and Panels</a>
+    |
+    <a href="/2011/schedule/lists/posters/">List of Accepted Posters</a>
+    |
+    <a href="/2011/openspaces/index/">OpenSpaces</a>
+</div></div>
+                    
+
+                    
+    
+    <h1>Running ultra large telescopes in Python</h1>
+    
+    
+        <p><a href="/2011/account/login/?next=/2011/schedule/presentations/159/">log in</a> to bookmark this presentaton</p>
+    
+    
+    <div class="badges">
+        
+        
+        <div class="clear"></div>
+    </div>
+    
+    <div class="presentation_types">Novice / Talk</div>
+    
+    <div class="speakers">
+        
+        <a href="/2011/speaker/profile/39/">Maciej Fijałkowski</a>
+        
+    </div>
+    
+    
+        <div class="slot">March 13th 11:55 a.m. &ndash; 12:25 p.m.</div>
+    
+    
+    <div class="description">In this talk I would like to present the SKA (Square Kilometer Array) project in South Africa and how is it run. The main focus will be what the problem area is, how to handle high data-throughput in the telescope and how to make it all work in Python.</div>
+    
+    <h3>Abstract</h3>
+    
+    <div class="abstract"><p>Running large scale projects is always a challenge. At SKA South Africa, it was decided some time ago that the expressiveness of Python outweighs its potential drawbacks. In this talk I'll present the problem domain of running a large telescope, with a special focus of how to handle it in Python.</p>
+<p>Almost everything in this project is written in Python. The production servers run Python for monitoring, control and data processing. Our full testing infrastructure (e.g. simulators) are written in Python. Python technologies in use include NumPy, SciPy and h5py.</p>
+<p>On of the central points of our implementation is the KATCP network protocol, which is built in a way that it's possible to introspect devices around you. It has implementations using a normal select loop, twisted, Ruby and C. I'll describe how this protocol works, why it's better than others available and how we manage a large set of devices almost purely within Python.</p>
+<p>Lessons learned while implementing software for SKA could be used for any other large-scale high-complexity python scientific projects.</p>
+<p>The SKA will be a two thousand antenna radio telescope with an effective collecting area of one square kilometer [1]. Two countries are bidding to host this astronomical instrument -- South Africa and Australia. Construction of the SKA is expected to start in 2016 and be completed around 2024.</p>
+<p>South Africa's bid includes the construction of a sixty-four antenna array named MeerKAT which will itself be a leading radio astronomy instrument until the SKA is completed [2]. KAT7, a seven antenna prototype of MeerKAT is already in place on the MeerKAT site.</p>
+<p>Many important parts of the KAT7 system use Python, including::</p>
+<ul>
+<li>monitoring of the entire system</li>
+<li>simulators for the entire system</li>
+<li>all low-level devices except the correlator and antenna motor controller</li>
+<li>control of antenna positions</li>
+<li>control of all ancillary devices</li>
+<li>generation and presentation of data for user displays</li>
+<li>post-processing of data</li>
+<li>analysis of data (via NumPy, SciPy and CASA)</li>
+</ul>
+<p>A number of Python libraries have been released by the project under open source licenses::</p>
+<ul>
+<li>PySPEAD (the correlator data transfer protocol) [3]</li>
+<li>KATCP (the monitoring and control protocol) [4]</li>
+<li>an HTML5 backend for matplotlib [5]</li>
+<li>CASPER correlator interface utilities [6]</li>
+</ul>
+<p>[1] <a href="http://en.wikipedia.org/wiki/Square_Kilometre_Array">http://en.wikipedia.org/wiki/Square_Kilometre_Array</a> [2] <a href="http://en.wikipedia.org/wiki/MeerKAT">http://en.wikipedia.org/wiki/MeerKAT</a> [3] <a href="http://github.com/sratcliffe/PySPEAD">http://github.com/sratcliffe/PySPEAD</a> [4] <a href="http://pypi.python.org/pypi/katcp/0.3.0">http://pypi.python.org/pypi/katcp/0.3.0</a> [5] <a href="http://code.google.com/p/mplh5canvas/">http://code.google.com/p/mplh5canvas/</a> [6] <a href="http://pypi.python.org/pypi/corr/0.5.1">http://pypi.python.org/pypi/corr/0.5.1</a></p>
+</div>
+
+
+                </div>
+                <div id="right">
+                    
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        
+
+        <div id="footer"><div id="footer-content">
+    Site built by <a href="http://eldarion.com/"><b>Eldarion</b></a> using
+    <a href="http://djangoproject.com/"><b>Django</b></a> and
+    <a href="http://pinaxproject.com/"><b>Pinax</b></a>.
+</div></div>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="/2011/site_media/static/js/base.js" type="text/javascript"></script>
+        <script src="/2011/site_media/static/uni_form/uni-form.jquery.js" type="text/javascript"></script>
+        
+            
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a.bookmark").live("click", function() {
+                aElem = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: this.href,
+                    data: "action=add;csrfmiddlewaretoken=4def7bf91c1248521b986424ea5596db",
+                    success: function() {
+                        aElem.text("unbookmark");
+                        aElem.removeClass("bookmark");
+                        aElem.addClass("unbookmark");
+                    },
+                    error: function(xhr, options, error) {
+                        alert(xhr.status);
+                    }
+                });
+                return false;
+            });
+            $("a.unbookmark").live("click", function() {
+                aElem = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: this.href,
+                    data: "action=delete;csrfmiddlewaretoken=4def7bf91c1248521b986424ea5596db",
+                    success: function(response) {
+                        aElem.text("bookmark");
+                        aElem.removeClass("unbookmark");
+                        aElem.addClass("bookmark");
+                    },
+                    error: function(xhr, options, error) {
+                        alert(xhr.status);
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+
+        
+    </body>
+
+<!-- Mirrored from us.pycon.org/2011/schedule/presentations/159/ by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 19 Jun 2013 18:26:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+</html>

@@ -1,0 +1,230 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en-us" lang="en-us">
+    
+<!-- Mirrored from us.pycon.org/2011/schedule/presentations/50/ by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 19 Jun 2013 18:26:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>PyCon US 2011</title>
+        <!--[if IE]><style>
+            div {
+                zoom: 1; /* trigger hasLayout */
+            }
+        </style><![endif]-->
+        <link rel="stylesheet" href="/2011/site_media/static/css/reset.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/css/960.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/css/base.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/css/account.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/uni_form/uni-form.css" />
+        
+        
+    <link rel="stylesheet" href="/2011/site_media/static/css/pycon.css" />
+    <link rel="stylesheet" href="/2011/site_media/static/css/tabs.css" />
+    <link rel="alternate" type="application/atom+xml" href="/2011/feed/general/" title="blog feed"/>
+    
+    <style>
+        a.unbookmark {
+            text-decoration: none;
+            padding-left: 20px;
+            background: url(/2011/site_media/static/img/star.png) no-repeat left;
+        }
+        a.bookmark {
+            text-decoration: none;
+            padding-left: 20px;
+            background: url(/2011/site_media/static/img/star_unselected.png) no-repeat left;
+        }
+        div.slot {
+            font-weight: bold;
+        }
+    </style>
+
+
+    </head>
+
+    <body class="full schedule">
+        
+
+        <div id="tabhead">
+            
+    <div id="heading">
+        <img src="/2011/site_media/static/img/pycon_logo.gif" alt="pycon logo" />
+        <h1><a href="/2011/">PyCon 2011 Atlanta</a></h1>
+        <h2>March 9th&ndash;17th</h2>
+    </div>
+
+            
+
+<div class="account-bar">
+
+    <a href="/2011/account/login/">Log in</a> or <a href="/2011/account/signup/">Sign Up</a>
+
+</div>
+<div class="clear"></div>
+
+            <div id="nav">
+                
+<ul>
+    <li class="about_tab"><a href="/2011/about/">About</a></li>
+    <li class="schedule_tab"><a href="/2011/schedule/">Schedule</a></li>
+    <li class="speaker_tab"><a href="/2011/speaker/">Speakers</a></li>
+    
+    <li class="sprints_tab"><a href="/2011/sprints/">Sprints</a></li>
+    <li class="volunteer_tab"><a href="/2011/volunteer/">Volunteer</a></li>
+    <li class="tickets_tab"><a href="/2011/tickets/">Tickets</a></li>
+    <li class="venue_tab"><a href="/2011/venue/">Venue</a></li>
+    <li class="sponsors_tab"><a href="/2011/sponsors/">Sponsors</a></li>
+    <li class="blog_tab"><a href="/2011/blog/">Blog</a></li>
+</ul>
+
+            </div>
+        </div>
+
+        
+        <div id="body">
+            <div id="wrapper">
+                <div id="main">
+                    <div id="subnav" class="clearfix"><div class="clearfix">
+    <a href="/2011/schedule/tutorials/">Tutorial Schedule</a>
+    |
+    <a href="/2011/schedule/">Conference Schedule</a>
+    |
+    <a href="/2011/schedule/lists/talks/">List of Accepted Talks and Panels</a>
+    |
+    <a href="/2011/schedule/lists/posters/">List of Accepted Posters</a>
+    |
+    <a href="/2011/openspaces/index/">OpenSpaces</a>
+</div></div>
+                    
+
+                    
+    
+    <h1>SOLVCON: A New Python-Based Software Framework for Massively Parallelized Numerical Simulations</h1>
+    
+    
+        <p><a href="/2011/account/login/?next=/2011/schedule/presentations/50/">log in</a> to bookmark this presentaton</p>
+    
+    
+    <div class="badges">
+        
+        
+        <div class="clear"></div>
+    </div>
+    
+    <div class="presentation_types">Experienced / Talk</div>
+    
+    <div class="speakers">
+        
+        <a href="/2011/speaker/profile/83/">Yung-Yu Chen</a>
+        
+    </div>
+    
+    
+        <div class="slot">March 12th 11:05 a.m. &ndash; 11:35 a.m.</div>
+    
+    
+    <div class="description">SOLVCON is the first Python-based software framework for high-resolution simulations of multi-physics conservation laws. More than ninety percents of the codes are done in Python. Performance hot-spots are optimized by C and glued by ctypes library. SOLVCON is high-performance in nature and has been able to utilize 512 4-core nodes at Ohio Supercomputer Center.</div>
+    
+    <h3>Abstract</h3>
+    
+    <div class="abstract"><p>In this decade, performance improvements of scientific computing will mainly come from major changes in the computing hardware. A well-organized software structure is imperative to accommodate such changes. Based on Python, <a href="http://solvcon.net/">SOLVCON (http://solvcon.net/)</a> is designed as a software framework to develop conservation-law solvers by segregating solving kernels from various supportive functionalities. Being the governing equations for the physical world, conservation laws are applied everywhere in science and engineering. Although it is well known that the numerical algorithms and physical models form the kernel of any conservation-law solver, few if not none code can cleanly separate those core components from supportive functionalities. The lack of organization has hindered the development of legacy codes. To address the issues, the supportive functionalities are internalized in the framework of SOLVCON. Aided by the framework, both multi-physics and hybrid parallelism can be implemented in an organized way. To date, SOLVCON has utilized up to 512 4-core nodes at Ohio Supercomputer Center for high-resolution simulations of computational fluid dynamics (CFD). SOLVCON targets to concurrently utilize thousands of computer nodes for high-resolution simulations using over one billion mesh points.</p>
+<p>One of the major purposes of SOLVCON is to resolve the complicated programming efforts for GPU clusters. Supercomputing is undergoing the third revolution by the emerging GPU computing. To date, the fastest supercomputer in the <a href="http://top500.org/">Top 500</a> list, Tianhe-1A, is a GPU cluster.  GPU computing promises numerical analysts to reduce the time for the high-resolution simulations from months to days. In order to use GPU computing to accelerate such large-scale problems, GPU nodes must be networked together to form a GPU cluster. As such, shared-memory and distributed-memory parallelization must be simultaneously utilized to achieve the so-called hybrid parallelism. Parallel computing is difficult, and hybrid parallel computing is more difficult. By using Python to develop the fundamental software structure, GPU or multi-threaded programming for shared-memory parallelization are locked in solving kernels. Complex message-passing is implemented in SOLVCON and isolated from solving-kernel developers. Highly optimized C and GPU codes are glued into SOLVCON without loss of performance by using the ctypes package. Othere important features of SOLVCON include:</p>
+<ul>
+<li>Pluggable multi-physics.</li>
+<li>Built-in <a href="http://www.grc.nasa.gov/WWW/microbus/">CESE</a> solvers.</li>
+<li>Unstructured mesh consisting of mixed elements.</li>
+<li>Interface to Message-Passing Interface (MPI) libraries.</li>
+<li>Socket communication layer: working without MPI installed.</li>
+<li>Automatic distributed-memory parallelization by domain decomposition.</li>
+<li>Parallel I/O.</li>
+<li>In situ visualization by <a href="http://vtk.org">VTK</a> library.</li>
+<li>Standalone writers to VTK legacy and XML file formats.</li>
+<li>Integration to supercomputer (cluster) batch systems.</li>
+</ul>
+<p>SOLVCON has been applied to computation fluid dynamics and computational mechanics. More physical solvers are being developed for various propagating wave problems, e.g., electromagnetic waves. By using Python as the foundation in SOLVCON, performance and extensibility are well balanced, and computational research is being done in the most productive way. In this talk, the author of SOLVCON will make an introduction to the software framework by including the following topics:</p>
+<ol>
+<li>Simulations of conservation laws and hybrid parallelism for supercomputing.</li>
+<li>Issues in legacy codes and challenges to code for emerging supercomputer hardware.</li>
+<li>Using SOLVCON in the simple way by pre-defined modules.</li>
+<li>Fixed parts in SOLVCON.<ol>
+<li>Distributed computing.</li>
+<li>Multi-thread utilities.</li>
+</ol>
+</li>
+<li>Customizable parts in SOLVCON.<ol>
+<li>Pluggable multi-physics and GPGPU computing.</li>
+<li>Supercomputer batch system and bootstrapping.</li>
+<li>In situ visualization.</li>
+</ol>
+</li>
+<li>Conclusion.</li>
+</ol>
+<p>The talk will take 30 minutes.</p>
+</div>
+
+
+                </div>
+                <div id="right">
+                    
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        
+
+        <div id="footer"><div id="footer-content">
+    Site built by <a href="http://eldarion.com/"><b>Eldarion</b></a> using
+    <a href="http://djangoproject.com/"><b>Django</b></a> and
+    <a href="http://pinaxproject.com/"><b>Pinax</b></a>.
+</div></div>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="/2011/site_media/static/js/base.js" type="text/javascript"></script>
+        <script src="/2011/site_media/static/uni_form/uni-form.jquery.js" type="text/javascript"></script>
+        
+            
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a.bookmark").live("click", function() {
+                aElem = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: this.href,
+                    data: "action=add;csrfmiddlewaretoken=4def7bf91c1248521b986424ea5596db",
+                    success: function() {
+                        aElem.text("unbookmark");
+                        aElem.removeClass("bookmark");
+                        aElem.addClass("unbookmark");
+                    },
+                    error: function(xhr, options, error) {
+                        alert(xhr.status);
+                    }
+                });
+                return false;
+            });
+            $("a.unbookmark").live("click", function() {
+                aElem = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: this.href,
+                    data: "action=delete;csrfmiddlewaretoken=4def7bf91c1248521b986424ea5596db",
+                    success: function(response) {
+                        aElem.text("bookmark");
+                        aElem.removeClass("unbookmark");
+                        aElem.addClass("bookmark");
+                    },
+                    error: function(xhr, options, error) {
+                        alert(xhr.status);
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+
+        
+    </body>
+
+<!-- Mirrored from us.pycon.org/2011/schedule/presentations/50/ by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 19 Jun 2013 18:26:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+</html>

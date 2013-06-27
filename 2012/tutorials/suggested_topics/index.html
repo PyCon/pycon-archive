@@ -1,0 +1,838 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+    
+<!-- Mirrored from us.pycon.org/2012/tutorials/suggested_topics/ by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 20 Jun 2013 15:37:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <link href="/2012/site_media/static/img/favicon.ico" rel="shortcut icon" />
+        <title>PyCon US 2012 </title>
+        <!--  hack to make IE able to apply CSS to elements that it doesn't usually know about. See http://code.google.com/p/html5shim/ -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <link rel="stylesheet" href="/2012/site_media/static/pinax/css/tabs.css" />
+        <link rel="stylesheet" href="/2012/site_media/static/css/facebox.css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
+        <link href="/2012/site_media/static/markitup/skins/simple/style.css" type="text/css" media="screen" rel="stylesheet" />
+<link href="/2012/site_media/static/markitup/sets/markdown-custom/style.css" type="text/css" media="screen" rel="stylesheet" />
+
+        
+    <!-- Framework CSS -->
+<link rel="stylesheet" href="/2012/site_media/static/css/blueprint/grid.css" media="screen, projection" />
+<link rel="stylesheet" href="/2012/site_media/static/css/blueprint/print.css" media="print" />
+<!--[if lt IE 8]>
+<link rel="stylesheet" href="/2012/site_media/static/css/blueprint/ie.css" media="screen, projection" />
+<![endif]-->
+
+        
+    <link rel="stylesheet" href="/2012/site_media/static/css/reset.css" />
+    <link rel="stylesheet" href="/2012/site_media/static/css/pycon.css" />
+    <link rel="stylesheet" href="/2012/site_media/static/css/site_tabs.css" />
+    <link rel="stylesheet" href="/2012/site_media/static/uni_form/uni-form.css" />
+    <link rel="alternate" type="application/atom+xml" href="/2012/feed/general/" title="blog feed"/>
+    
+
+    </head>
+
+    <body class="wiki tutorials/suggested_topics " id="">
+        <div class="wrapper">
+
+            <div class="msg-container">
+                
+            </div>
+
+            <header>
+                <div class="container">
+                    
+                        <h1 id="logo"><a href="/2012/">PyCon 2012</a></h1>
+                        
+                        <div id="left_tabs"></div>
+                        <div id="right_tabs"></div>
+                        <div class="login">
+    
+
+<div class="account-bar">
+
+    <a href="/2012/account/login/">Log in</a> or <a href="/2012/account/signup/">Sign Up</a>
+
+</div>
+<div class="clear"></div>
+
+</div>
+                        
+    <nav id="main-nav">
+        <ul>
+            
+                
+                    <li id="tab_pycon-2013"><a href="/2013/" id="link-pycon-2013">PyCon 2013!</a></li>
+                
+            
+                
+                    <li id="tab_about" class="dropdown">
+                        <a href="/2012/about/"
+                              class="dropdown-toggle"
+                              data-toggle="dropdown"
+                              id="link-about">
+                              About
+                              <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                
+                    <li id="tab_code-conduct"><a href="/2012/codeofconduct/" id="link-code-conduct">Code of Conduct</a></li>
+                
+            
+                
+                    <li id="tab_diversity"><a href="/2012/diversity/" id="link-diversity">Diversity</a></li>
+                
+            
+                
+                    <li id="tab_pycon-mobile-guide"><a href="http://guidebook.com/g/pycon2012/" id="link-pycon-mobile-guide">PyCon Mobile Guide</a></li>
+                
+            
+                
+                    <li id="tab_volunteers"><a href="/2012/community/volunteer/" id="link-volunteers">Volunteers</a></li>
+                
+            
+                
+                    <li id="tab_what-pycon"><a href="/2012/about/" id="link-what-pycon">What is Pycon?</a></li>
+                
+            
+                
+                    <li id="tab_join-conversation"><a href="https://pycon.disqus.com/" id="link-join-conversation">Join the Conversation</a></li>
+                
+            
+                        </ul>
+                    </li>
+                
+            
+                
+                    <li id="tab_blog"><a href="http://pycon.blogspot.com/" id="link-blog">Blog</a></li>
+                
+            
+                
+                    <li id="tab_schedule" class="dropdown">
+                        <a href="/2012/schedule/"
+                              class="dropdown-toggle"
+                              data-toggle="dropdown"
+                              id="link-schedule">
+                              Schedule
+                              <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                
+                    <li id="tab_conference-schedule"><a href="/2012/schedule/" id="link-conference-schedule">Conference Schedule</a></li>
+                
+            
+                
+                    <li id="tab_keynote-speakers"><a href="/2012/keynotes/" id="link-keynote-speakers">Keynote Speakers</a></li>
+                
+            
+                
+                    <li id="tab_mobile-guide"><a href="http://guidebook.com/g/pycon2012/" id="link-mobile-guide">Mobile Guide</a></li>
+                
+            
+                
+                    <li id="tab_open-spaces"><a href="/2012/community/openspaces/" id="link-open-spaces">Open Spaces</a></li>
+                
+            
+                
+                    <li id="tab_posters"><a href="/2012/schedule/lists/posters/" id="link-posters">Posters</a></li>
+                
+            
+                
+                    <li id="tab_pycon-5k"><a href="/2012/5k/" id="link-pycon-5k">Pycon 5K</a></li>
+                
+            
+                
+                    <li id="tab_sprints"><a href="/2012/community/sprints/" id="link-sprints">Sprints</a></li>
+                
+            
+                
+                    <li id="tab_startup-row"><a href="/2012/community/startuprow/" id="link-startup-row">Startup Row</a></li>
+                
+            
+                
+                    <li id="tab_tutorials"><a href="/2012/schedule/tutorials/" id="link-tutorials">Tutorials</a></li>
+                
+            
+                        </ul>
+                    </li>
+                
+            
+                
+                    <li id="tab_sponsors" class="dropdown">
+                        <a href="/2012/sponsors/"
+                              class="dropdown-toggle"
+                              data-toggle="dropdown"
+                              id="link-sponsors">
+                              Sponsors
+                              <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                
+                    <li id="tab_about-pycon-sponsors"><a href="/2012/sponsors/" id="link-about-pycon-sponsors">About Pycon Sponsors</a></li>
+                
+            
+                
+                    <li id="tab_jobs-fair"><a href="/2012/sponsors/jobs/" id="link-jobs-fair">Jobs Fair</a></li>
+                
+            
+                
+                    <li id="tab_sponsor-prospectus"><a href="/2012/sponsors/prospectus/" id="link-sponsor-prospectus">Sponsor Prospectus</a></li>
+                
+            
+                
+                    <li id="tab_sponsor-sign"><a href="/2012/sponsors/info/" id="link-sponsor-sign">Sponsor Sign Up</a></li>
+                
+            
+                        </ul>
+                    </li>
+                
+            
+                
+                    <li id="tab_venue" class="dropdown">
+                        <a href="/2012/venue/"
+                              class="dropdown-toggle"
+                              data-toggle="dropdown"
+                              id="link-venue">
+                              Venue
+                              <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                
+                    <li id="tab_bars"><a href="/2012/venue/bars/" id="link-bars">Bars</a></li>
+                
+            
+                
+                    <li id="tab_directions-venue"><a href="/2012/venue/directions/" id="link-directions-venue">Directions to the Venue</a></li>
+                
+            
+                
+                    <li id="tab_explore-santa-clara"><a href="/2012/venue/explore/" id="link-explore-santa-clara">Explore Santa Clara</a></li>
+                
+            
+                
+                    <li id="tab_getting-around-santa-clara"><a href="/2012/venue/getting-around/" id="link-getting-around-santa-clara">Getting Around Santa Clara </a></li>
+                
+            
+                
+                    <li id="tab_restaurants"><a href="/2012/venue/restaurants/" id="link-restaurants">Restaurants</a></li>
+                
+            
+                
+                    <li id="tab_needs-share-room"><a href="/2012/community/roomsharing/" id="link-needs-share-room">Room Sharing</a></li>
+                
+            
+                
+                    <li id="tab_shopping"><a href="/2012/venue/shopping/" id="link-shopping">Shopping</a></li>
+                
+            
+                
+                    <li id="tab_traveling-santa-clara"><a href="/2012/venue/traveling/" id="link-traveling-santa-clara">Traveling</a></li>
+                
+            
+                
+                    <li id="tab_weather"><a href="/2012/venue/weather/" id="link-weather">Weather</a></li>
+                
+            
+                        </ul>
+                    </li>
+                
+            
+        </ul>
+    </nav>
+
+                        
+                    
+                </div>
+            </header>
+
+            <section id="subnav">
+                <div class="container">
+                    
+                </div>
+            </section>
+
+            
+                
+                <section id="body">
+                    <div class="container">
+
+                        
+    <div class="span-8">
+        &nbsp;
+    </div>
+    <div class="span-16 last spacer">
+        
+
+        <div class="page">
+            <h2>Suggested Tutorial Topics</h2>
+<p>Here are ideas we've collected from surveys:</p>
+<ul>
+<li><a href="/2012/tutorials/suggested_topics#pycon_2011_tutorial_evaluations">PyCon 2011 during tutorials</a></li>
+<li><a href="#pycon_2011_conference_evaluations">PyCon 2011 during the conference</a></li>
+<li><a href="#pycon_2012_guidance_survey_in_august_2011">PyCon 2012 Guidance Survey in August 2011</a></li>
+</ul>
+<h4 id="pycon_2011_tutorial_evaluations">PyCon 2011 Tutorial Evaluations</h4>
+<p>"What tutorial topics would you like to see in the future?"</p>
+<ul>
+<li>Graph database-backed Web applications.</li>
+<li>Data visualization</li>
+<li>Business-related or non-programming content for programmers who are independent contractors or work in a small environment. Things like running your own consultancy, managing clients and expectations, project management, identifying tactical advantages that Python can bring to your business.</li>
+<li>real time web development with support of asynchronous longer running tasks</li>
+<li>Anything having to do with maps</li>
+<li>I would like to see the same instructor teach a tutorial in the same format, but at an advanced level.</li>
+<li>A SciPy exclusive tutorial would be great, or a combined Numpy/SciPy exclusive tutorial.</li>
+<li>Migrating to PyPy</li>
+<li>Continous Integration</li>
+<li>Migrating to Python 3</li>
+<li>How to participate in the Python community (uploading packages, how to submit &amp; fix bugs, etc.)</li>
+<li>Sprint lead-in (So you want to get involved in project so &amp; so).</li>
+<li>more experienced topics, and  topics for more experienced</li>
+<li>More stuff about distributed systems and how to build them</li>
+<li>Nodebox</li>
+<li>Advanced Python 1 and 2</li>
+<li>More topics related to Django</li>
+<li>Deployment, tools to make web development easier</li>
+<li>Visualization w. Python</li>
+<li>more aws, with automated/scripted deploy (chef? puppet? fabric?) Perhaps also Eucalyptus or OpenStack</li>
+<li>3d related material</li>
+<li>High performance python</li>
+<li>More multiprocessing, more "Learning X for Python Developers" (where X is a not-necessarily-python tool).</li>
+<li>sqlalchemy, unit testing</li>
+<li>embedding python in applications  distributing computing</li>
+<li>Testing, Cloud, Operations, SysAdmin</li>
+<li>Wrapping C libs in python, Cython / ctypes</li>
+<li>More packaging stuff. Maybe a tutorial about pyramid</li>
+<li>More python 3.</li>
+<li>wsgi</li>
+<li>Python!</li>
+<li>more language handling  overviews of python structure</li>
+<li>Something using the NLTK (Natural Language Toolkit).  Something using the Microsoft Kinect device and pattern recognition.</li>
+<li>Nodebox!</li>
+<li>System/network level programming with Python.</li>
+<li>Computer Vision topics</li>
+<li>Cython</li>
+<li>web-based app dev, django or equivalent specific</li>
+<li>Tutorials to do specific things:  automate a Unix Server build, build an ecommerce site in DJango</li>
+<li>Intermediate Django  Unit testing</li>
+<li>Thinking As a Programmer - Taking ideas and dissecting them (the how to of dissecting programs before putting them into code.</li>
+<li>GUI programming</li>
+<li>web-based app / mobile / django or django alternatives</li>
+<li>Distributed Python</li>
+<li>web-based applications, more django (or equiv) content</li>
+<li>more django/python framework/front-end integrations/web-based applications.</li>
+<li>python language specific</li>
+<li>Python web development basics</li>
+<li>pyjamas</li>
+<li>Game Development</li>
+<li>advanced stuff</li>
+<li>Django tutorials - intermediate and advance level</li>
+<li>I am interested in Social Network related development.</li>
+<li>More advanced talks</li>
+<li>Things I might not know I can do with the standard library.</li>
+<li>Killer features of Python 3</li>
+<li>Migrating to PyPy</li>
+<li>Migrating to distutils2 + distribute</li>
+<li>Continuous Integration</li>
+<li>How to Get Involved in Project X (lead in to a sprint and ongoing participation) This could be any project with a leader willing to give a tutorial walkthough of the code and the history of the project.</li>
+<li>Python 3 porting</li>
+<li>storage with Python</li>
+<li>Pyramid, SQLAlchemy, Celery</li>
+<li>Best Practices on deploying projects (especially web apps).</li>
+<li>Tutorial for people coming to python from other languages - advantages, disadvantages, what to watch out for, being pythonic, etc.</li>
+<li>more advanced python (less application / framework specific)</li>
+<li>SQLAlchemy</li>
+<li>Advanced Python, fiddling with AST, advanced data structures, distributed processing and data mining</li>
+<li>Maybe more about C extensions.</li>
+<li>Project development using Python. i.e. project planning, prototyping, development, test, release in a Pythonic method, perhaps using Python in an Agile framework.</li>
+<li>A detailed look at the implementation at the C Interpreter, and understanding the relationship between the Python and the C implementation.</li>
+<li>A patterns, algorithms and recipes class discussing common ways of generalizing problems.</li>
+<li>Graphics applications</li>
+<li>Maybe address packages like chef or libCloud</li>
+<li>a NoSQL smackdown?</li>
+<li>pinax workshop?</li>
+<li>Anything on machine learning or genetic programming.</li>
+<li>more advanced stuff</li>
+<li>How Python works with web interfaces, like selenium.</li>
+<li>Fabric, gunicon</li>
+<li>python and c++ integration</li>
+<li>python for sysadmins / more intermediate level courses</li>
+<li>more packet crafting geared towards QA</li>
+<li>Testing</li>
+<li>More on Pinax, Pyramid and Turbogears (if they get Turbogears moved over to Pyramid).</li>
+<li>Database connectivity and plugging in to things like GIS and maps make two topics.</li>
+<li>In-depth dives into limited subject matter. The subjects, of course, must be immediately relevant to whatever-it-is I'm wanting to learn at the time. ;)</li>
+<li>An advanced-level Django tutorial would be very cool</li>
+<li>Twisted Matrix</li>
+</ul>
+<h4 id="pycon_2011_conference_evaluations">PyCon 2011 Conference Evaluations</h4>
+<p>"Please list 3 tutorial subjects you would like to attend."</p>
+<ul>
+<li>Python 3</li>
+<li>SciPy/NumPy</li>
+<li>Graph theory</li>
+<li>Statistics in/with Python</li>
+<li>Testing Frameworks</li>
+<li>Web Frameworks</li>
+<li>API Design</li>
+<li>intermediate python</li>
+<li>writing web applications in Pyramind</li>
+<li>Advanced server management/deployment</li>
+<li>Full stack web application testing (unit, browser, etc)</li>
+<li>Large scale data processing &amp; visualization</li>
+<li>Redis + Socketio + Gevent == Realtime web</li>
+<li>Python webapp deployment using vagrant, chef, fabric, etc</li>
+<li>Unit testing web applications</li>
+<li>Python idioms</li>
+<li>Test driven development</li>
+<li>Core Python Development</li>
+<li>AST Manipulation</li>
+<li>Writing DSLs</li>
+<li>ctypes, Cython and pyrex</li>
+<li>making music with python</li>
+<li>data visualization with python and other tools</li>
+<li>Django</li>
+<li>SQLAlchemy</li>
+<li>Pyramid</li>
+<li>porting to Python 3</li>
+<li>distributing Python apps</li>
+<li>Anything having to do with maps</li>
+<li>Anything having to do with django</li>
+<li>Advanced Python</li>
+<li>c extensions</li>
+<li>Non-rel</li>
+<li>A good intro to C class</li>
+<li>A basic Django class</li>
+<li>Python 3 porting</li>
+<li>High performance computing</li>
+<li>Django internals</li>
+<li>Django</li>
+<li>Core Python development</li>
+<li>advanced python</li>
+<li>real time web apps</li>
+<li>sqlalchemy</li>
+<li>Pyramid</li>
+<li>ZODB</li>
+<li>Testing</li>
+<li>PyCuda</li>
+<li>Python C API</li>
+<li>Python OpenGL</li>
+<li>Django/Pinax</li>
+<li>Python 3</li>
+<li>EC2</li>
+<li>DevOps</li>
+<li>Concurrency</li>
+<li>PyPy</li>
+<li>Machine learning</li>
+<li>BigData (mapreduce, parallelism, etc.)</li>
+<li>Advanced Python concepts</li>
+<li>Pygame</li>
+<li>AI programming in Python</li>
+<li>Build A Compiler in Python</li>
+<li>Build A Processor Emulator in Python</li>
+<li>Defending Your App From Attacks (ex. timing attack)</li>
+<li>NLTK</li>
+<li>numpy, data analysis, specific machine learning topics</li>
+<li>Nodebox</li>
+<li>Advanced Python data structures</li>
+<li>Visualisation tutorials</li>
+<li>Network programming and libraries (twisted, gevent, etc)</li>
+<li>Python toolchain: virtualenv, pip, nose, etc</li>
+<li>The standard library in-depth</li>
+<li>Multiprocessing with Python</li>
+<li>Porting to Py3 and handing dual python 2/3 codebases</li>
+<li>Configuration automation (chef, puppet)</li>
+<li>GIS</li>
+<li>Hidden Treasures of stdlib tutorial</li>
+<li>Cpython or pypy internals</li>
+<li>deep dive into scipy/numpy</li>
+<li>Pylons</li>
+<li>SQLAlchemy</li>
+<li>"Writing great python code"</li>
+<li>HTML 5</li>
+<li>Django</li>
+<li>eventlet / gevent</li>
+<li>Using the data structures in Python (not a tutorial on what data structures are)</li>
+<li>Anything about the Python language to deepen my understanding</li>
+<li>Review of the standard library, what tools are available to us in Python</li>
+<li>Django</li>
+<li>NLTK or similar tools</li>
+<li>Statistical analysis with Python</li>
+<li>More networking</li>
+<li>102, 201, 202 level python coding</li>
+<li>Packaging</li>
+<li>Documentation Tools</li>
+<li>Advanced language techniques</li>
+<li>Novice to Ninja</li>
+<li>Scaling, dealing with caching, etc.....</li>
+<li>Jython Intro</li>
+<li>SQLAlchemy</li>
+<li>Decorators and properties</li>
+<li>Django ORM optimizations</li>
+<li>SQL, or PostgresSQL specifically</li>
+<li>WSGI and webframework, aka Pyramid</li>
+<li>Porting to python3</li>
+<li>Memory debugging</li>
+<li>Distributed / high performance computing</li>
+<li>Standard Library</li>
+<li>A 2nd Intermediate tutorial</li>
+</ul>
+<h3 id="pycon_2012_guidance_survey_in_august_2011">PyCon 2012 Guidance Survey in August 2011</h3>
+<p>As of September 7th, 2011</p>
+<ul>
+<li>Business<ul>
+<li>Business-related or non-programming content for programmers who are independent contractors or work in a small environment. Things like running your own consultancy, managing clients and expectations, project management, identifying tactical advantages that Python can bring to your business.</li>
+<li>Documentation Tools</li>
+<li>Project development using Python. i.e. project planning, prototyping, development, test, release in a Pythonic method, perhaps using Python in an Agile framework.</li>
+</ul>
+</li>
+<li>Community<ul>
+<li>How to Get Involved in Project X (lead in to a sprint and ongoing participation) This could be any project with a leader willing to give a tutorial walkthough of the code and the history of the project.</li>
+<li>How to participate in the Python community (uploading packages, how to submit &amp; fix bugs, etc.)</li>
+<li>Sprint lead-in (So you want to get involved in project so &amp; so).</li>
+</ul>
+</li>
+<li>Core Python<ul>
+<li>A detailed look at the implementation at the C Interpreter, and understanding the relationship between the Python and the C implementation.</li>
+<li>Advanced Python 1 and 2</li>
+<li>Advanced Python concepts</li>
+<li>Advanced Python, fiddling with AST, advanced data structures, distributed processing and data mining</li>
+<li>Anything about the Python language to deepen my understanding</li>
+<li>Core Python Development</li>
+<li>Decorators and properties</li>
+<li>Distributed Python</li>
+<li>Embedding python in applications distributing computing</li>
+<li>Hidden Treasures of stdlib tutorial</li>
+<li>High performance python</li>
+<li>Killer features of Python 3</li>
+<li>Language handling overviews of python structure</li>
+<li>Migrating to Python 3</li>
+<li>More about C extensions.</li>
+<li>Porting to Py3 and handing dual python 2/3 codebases</li>
+<li>Python 3</li>
+<li>Python 3 porting</li>
+<li>Python C API</li>
+<li>Python and C++ integration</li>
+<li>Review of the standard library, what tools are available to us in Python</li>
+<li>The standard library in-depth</li>
+<li>Things I might not know I can do with the standard library.</li>
+<li>Using the data structures in Python (not a tutorial on what data structures are)</li>
+<li>Wrapping C libs in python, Cython / ctypes</li>
+</ul>
+</li>
+<li>Data<ul>
+<li>AST Manipulation</li>
+<li>Anything having to do with maps</li>
+<li>BigData (mapreduce, parallelism, etc.)</li>
+<li>Data visualization</li>
+<li>Database connectivity and plugging in to things like GIS and maps</li>
+<li>GIS</li>
+<li>Large scale data processing &amp; visualization</li>
+<li>NoSQL</li>
+<li>Non-rel</li>
+<li>SQLAlchemy</li>
+<li>Statistics in/with Python</li>
+<li>Storage with Python</li>
+<li>ZODB</li>
+<li>data visualization with python and other tools</li>
+</ul>
+</li>
+<li>Deployment<ul>
+<li>Automated / scripted deploy (Chef? Puppet? Fabric?)</li>
+<li>Best Practices on deploying projects (especially web apps).</li>
+<li>Continous Integration</li>
+<li>Fabric, gunicon</li>
+<li>Python webapp deployment using vagrant, chef, fabric, etc</li>
+<li>Tutorials to do specific things: automate a Unix Server build, build an ecommerce site in DJango</li>
+</ul>
+</li>
+<li>Development<ul>
+<li>"Learning X for Python Developers" (where X is a not-necessarily-python tool).</li>
+<li>A good intro to C class</li>
+<li>A patterns, algorithms and recipes class discussing common ways of generalizing problems.</li>
+<li>AI programming in Python</li>
+<li>API Design</li>
+<li>Advanced language techniques</li>
+<li>Anything on machine learning or genetic programming.</li>
+<li>Build A Compiler in Python</li>
+<li>Build A Processor Emulator in Python</li>
+<li>Computer Vision topics</li>
+<li>Concurrency</li>
+<li>Continuous Integration</li>
+<li>DevOps</li>
+<li>Front-end integrations</li>
+<li>Full stack web application testing (unit, browser, etc)</li>
+<li>Game Development</li>
+<li>High performance computing</li>
+<li>Jython Intro</li>
+<li>Machine learning</li>
+<li>Multiprocessing</li>
+<li>Multiprocessing with Python</li>
+<li>NLTK (Natural language toolkit</li>
+<li>Novice to Ninja</li>
+<li>Python toolchain: virtualenv, pip, nose, etc</li>
+<li>Python web development basics</li>
+<li>Real time web development with support of asynchronous longer running tasks</li>
+<li>Redis + Socketio + Gevent == Realtime web</li>
+<li>Social Network related development</li>
+<li>Test driven development</li>
+<li>Tools to make web development easier</li>
+<li>Tutorial for people coming to python from other languages - advantages, disadvantages, what to watch out for, being pythonic, etc.</li>
+<li>Web Frameworks</li>
+<li>Writing DSLs</li>
+</ul>
+</li>
+<li>General<ul>
+<li>Graph theory</li>
+<li>In-depth dives into limited subject matter.</li>
+<li>More advanced talks</li>
+<li>Python idioms</li>
+<li>The same instructor teach a tutorial in the same format, but at an advanced level.</li>
+<li>Thinking As a Programmer - Taking ideas and dissecting them (the how to of dissecting programs before putting them into code.</li>
+<li>Writing great python code</li>
+<li>more advanced python (less application / framework specific)</li>
+</ul>
+</li>
+<li>Interface / Visual design<ul>
+<li>3d related material</li>
+<li>GUI programming</li>
+<li>Graphics applications</li>
+<li>HTML 5</li>
+<li>Microsoft Kinect device and pattern recognition.</li>
+<li>Nodebox</li>
+<li>Visualisation tutorials</li>
+<li>Visualization w. Python</li>
+<li>Web-based app / mobile / django or django alternatives</li>
+<li>making music with python</li>
+</ul>
+</li>
+<li>Packaging<ul>
+<li>Migrating to PyPy</li>
+<li>Migrating to distutils2 + distribute</li>
+<li>PyPy</li>
+<li>Pypy internals</li>
+</ul>
+</li>
+<li>Python Packages/Frameworks<ul>
+<li>A SciPy exclusive tutorial would be great, or a combined Numpy/SciPy exclusive tutorial.</li>
+<li>Cython</li>
+<li>Django ORM optimizations</li>
+<li>Django internals</li>
+<li>Django tutorials - beginner, intermediate and advance level</li>
+<li>More on Pinax, Pyramid and Turbogears (if they get Turbogears moved over to Pyramid).</li>
+<li>More packaging stuff. Maybe a tutorial about pyramid</li>
+<li>PyCuda</li>
+<li>Pygame</li>
+<li>Pyjamas</li>
+<li>Pylons</li>
+<li>Pyramid, SQLAlchemy, Celery</li>
+<li>Python OpenGL</li>
+<li>SciPy/NumPy</li>
+<li>Twisted Matrix</li>
+<li>ctypes, Cython and pyrex</li>
+<li>writing web applications in Pyramind</li>
+</ul>
+</li>
+<li>Security<ul>
+<li>Defending Your App From Attacks (ex. timing attack)</li>
+</ul>
+</li>
+<li>Servers / Sys Admin<ul>
+<li>AWS</li>
+<li>Advanced server management/deployment</li>
+<li>Configuration automation (chef, puppet)</li>
+<li>Distributed / high performance computing</li>
+<li>EC2</li>
+<li>Eucalyptus or OpenStack</li>
+<li>Maybe address packages like chef or libCloud</li>
+<li>Memory debugging</li>
+<li>More stuff about distributed systems and how to build them</li>
+<li>Network programming and libraries (twisted, gevent, etc)</li>
+<li>Python for sysadmins</li>
+<li>Scaling, dealing with caching, etc.....</li>
+<li>System/network level programming with Python.</li>
+<li>Testing, Cloud, Operations, SysAdmin</li>
+<li>eventlet / gevent</li>
+<li>wsgi</li>
+</ul>
+</li>
+<li>Testing<ul>
+<li>How Python works with web interfaces, like selenium.</li>
+<li>Intermediate Django Unit testing</li>
+<li>More packet crafting geared towards QA</li>
+<li>Testing</li>
+<li>Testing Frameworks</li>
+<li>Unit testing</li>
+<li>Unit testing web applications</li>
+</ul>
+</li>
+</ul>
+        </div>
+
+        <div class="info"><span><strong>tutorials/suggested_topics</strong></span><span>
+                
+                    Recently modified by <em>stuart</em>: Sept. 7, 2011, 10:04 p.m.
+                
+                (<a href="/2012/tutorials/suggested_topics/history/">History</a>)
+            </span><div><a href="/2012/index/">Index</a></div></div>
+    </div>
+
+
+                    </div>
+
+                </section>
+            
+            <div class="push"></div>
+        </div>
+
+        <footer>
+            <div class="container">
+    <p>
+        PyCon US 2012 is a production of the <a href="http://python.org/psf/">Python Software Foundation</a>.
+    <br />
+        Site built by <a href="http://eldarion.com">Eldarion</a> using <a href="http://djangoproject.com">Django</a> and <a href="http://pinaxproject.com">Pinax</a>. Hosting provided by <a href="http://gondor.io">Gondor</a>.
+    <br />
+        Questions? Comments? Contact <a href="mailto:pycon-organizers@python.org">pycon-organizers@python.org</a>
+    </p>
+</div>
+        </footer>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+        <script src="/2012/site_media/static/js/base.js" type="text/javascript"></script>
+        <script src="/2012/site_media/static/uni_form/uni-form.jquery.js" type="text/javascript"></script>
+        <script type="text/javascript" src="/2012/site_media/static/markitup/jquery.markitup.js"></script>
+        <script type="text/javascript" src="/2012/site_media/static/markitup/sets/markdown-custom/set.js"></script>
+        <script src="/2012/site_media/static/js/facebox.js" type="text/javascript"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $('a[rel*=facebox]').facebox({
+            loadingImage: '/2012/site_media/static/img/facebox/loading.gif',
+            closeImage: '/2012/site_media/static/img/facebox/closelabel.png'
+        });
+        $(document).bind('reveal.facebox', function() {
+            $("form.in_facebox").submit(function() {
+                form = this;
+                jQuery.facebox(function($) {
+                    fields = jQuery(form).find("input[type='text']").filter(":enabled");
+                    params = {}
+                    fields.each(function() {
+                        params[this.name] = this.value;
+                    });
+                    jQuery.post(form.action, params,
+                        function(data, textStatus) {
+                            jQuery.facebox(data);
+                        }
+                    );
+                });
+                return false;
+            });
+        });
+        $(document).bind('close.facebox', function() {
+           location.reload();
+          });
+     });
+</script>
+        <script type="text/javascript" charset="utf-8">
+            $(document).ajaxSend(function(event, xhr, settings) {
+                function getCookie(name) {
+                    var cookieValue = null;
+                    if (document.cookie && document.cookie != '') {
+                        var cookies = document.cookie.split(';');
+                        for (var i = 0; i < cookies.length; i++) {
+                            var cookie = jQuery.trim(cookies[i]);
+                            // Does this cookie string begin with the name we want?
+                            if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                                break;
+                            }
+                        }
+                    }
+                    return cookieValue;
+                }
+                function sameOrigin(url) {
+                    // url could be relative or scheme relative or absolute
+                    var host = document.location.host; // host + port
+                    var protocol = document.location.protocol;
+                    var sr_origin = '//' + host;
+                    var origin = protocol + sr_origin;
+                    // Allow absolute or scheme relative URLs to same origin
+                    return (url == origin || url.slice(0, origin.length + 1) == origin + '/') ||
+                        (url == sr_origin || url.slice(0, sr_origin.length + 1) == sr_origin + '/') ||
+                        // or any other URL that isn't scheme relative or absolute i.e relative.
+                        !(/^(\/\/|http:|https:).*/.test(url));
+                }
+                function safeMethod(method) {
+                    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+                }
+
+                if (!safeMethod(settings.type) && sameOrigin(settings.url)) {
+                    xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
+                }
+            });
+        </script>
+        
+        <script type="text/javascript">
+            $(document).ready(function($) {
+                $("a.boxes-edit-link").click(function() {
+                    $.facebox.settings.loadingImage = "/site_media/static/img/loading.gif";
+                    $.facebox.settings.closeImage = "/site_media/static/img/closelabel.png";
+                    $(document).bind("beforeReveal.facebox", function() {
+                        $("#facebox .content").css("width", "600px");
+                    });
+                    var editable = this;
+                    $(document).bind("reveal.facebox", function() {
+                        $("#edit_form").submit(function() {
+                            $.post(editable.href, $(this).serialize(), function(data) {
+                                $(document).trigger("close.facebox");
+                                $(editable).load(data);
+                                $(document).unbind("reveal.facebox");
+                            });
+                            return false;
+                        });
+                    });
+                    $.facebox({ajax: this.href});
+                    return false;
+                });
+            });
+        </script>
+        
+        <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2401894-29']);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_trackPageLoadTime']);
+    // _gaq.push(['_setCustomVar', 1, 'Authentication Type', ut, 2]);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+        
+        
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+          $("#id_email").focus();
+          if(('ul#messages').length > 0) {
+              setTimeout(function() {
+                  $('ul#messages').fadeOut(3000);
+              }, 2000 );
+          }
+      });
+    </script>
+    
+
+    </body>
+
+<!-- Mirrored from us.pycon.org/2012/tutorials/suggested_topics/ by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 20 Jun 2013 15:37:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+</html>

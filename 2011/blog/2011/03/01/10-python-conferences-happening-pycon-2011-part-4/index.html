@@ -1,0 +1,658 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en-us" lang="en-us">
+    
+<!-- Mirrored from us.pycon.org/2011/blog/2011/03/01/10-python-conferences-happening-pycon-2011-part-4/ by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 19 Jun 2013 18:27:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>PyCon US 2011</title>
+        <!--[if IE]><style>
+            div {
+                zoom: 1; /* trigger hasLayout */
+            }
+        </style><![endif]-->
+        <link rel="stylesheet" href="/2011/site_media/static/css/reset.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/css/960.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/css/base.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/css/account.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/uni_form/uni-form.css" />
+        
+        
+    <link rel="stylesheet" href="/2011/site_media/static/css/pycon.css" />
+    <link rel="stylesheet" href="/2011/site_media/static/css/tabs.css" />
+    <link rel="alternate" type="application/atom+xml" href="/2011/feed/general/" title="blog feed"/>
+    
+
+    </head>
+
+    <body class="blog">
+        
+
+        <div id="tabhead">
+            
+    <div id="heading">
+        <img src="/2011/site_media/static/img/pycon_logo.gif" alt="pycon logo" />
+        <h1><a href="/2011/">PyCon 2011 Atlanta</a></h1>
+        <h2>March 9th&ndash;17th</h2>
+    </div>
+
+            
+
+<div class="account-bar">
+
+    <a href="/2011/account/login/">Log in</a> or <a href="/2011/account/signup/">Sign Up</a>
+
+</div>
+<div class="clear"></div>
+
+            <div id="nav">
+                
+<ul>
+    <li class="about_tab"><a href="/2011/about/">About</a></li>
+    <li class="schedule_tab"><a href="/2011/schedule/">Schedule</a></li>
+    <li class="speaker_tab"><a href="/2011/speaker/">Speakers</a></li>
+    
+    <li class="sprints_tab"><a href="/2011/sprints/">Sprints</a></li>
+    <li class="volunteer_tab"><a href="/2011/volunteer/">Volunteer</a></li>
+    <li class="tickets_tab"><a href="/2011/tickets/">Tickets</a></li>
+    <li class="venue_tab"><a href="/2011/venue/">Venue</a></li>
+    <li class="sponsors_tab"><a href="/2011/sponsors/">Sponsors</a></li>
+    <li class="blog_tab"><a href="/2011/blog/">Blog</a></li>
+</ul>
+
+            </div>
+        </div>
+
+        
+        <div id="body">
+            <div id="wrapper">
+                <div id="main">
+                    <div id="subnav" class="clearfix"><div class="clearfix"></div></div>
+                    
+
+                    
+    
+    
+    <div class="blog-post">
+        <h1>The 10 Python Conferences Happening at PyCon 2011 (part 4)</h1>
+        <p class="post_dateline">
+    <span class="date">1st March 2011</span>
+    by <span class="author">Van Lindberg</span>
+</p>
+
+        
+        <div class="teaser"><p>This is the fourth in a series of posts about the <a href="/2011/schedule/">schedule</a> for PyCon 2011. In designing this schedule, we found that there are actually 10 different conferences happening in parallel at PyCon.  See the <a href="/2011/blog/2011/02/28/10-python-conferences-happening-pycon-2011-part-1/">first post</a> for an introduction to the series and a description of the <a href="http://bit.ly/dGNzgK">Django virtual track</a>. The second post focused on the <a href="/2011/blog/2011/02/28/10-python-conferences-happening-pycon-2011-part-2/">web working virtual track</a>. The third post focused on the <a href="/2011/blog/2011/03/01/10-python-conferences-happening-pycon-2011-part-3/">Python and NoSQL virtual track</a>. This post focuses on the fourth virtual track, <b>Networking and Concurrency.</b></p>
+</div>
+        
+        <div class="content"><h1>Networking and Concurrency</h1>
+<p>Moving away from specific web frameworks and data stores, dealing with concurrency and high-volume networking is always a challenge. When you are serving three users, you don't stress your code the same way you do when you are serving 30,000 users (all concurrently). </p>
+<p>It is also worth pointing out that it is not just networking that is the issue; it is concurrency. Concurrency is a common problem across many programming languages, and high-traffic networking is just a natural testing ground for constructs that make it easier to handle high concurrency. Nevertheless, the principles discussed in this track are applicable to any high-throughput process. </p>
+<p>There are eight different talks in this track:</p>
+<p><b> <a href="/2011/schedule/presentations/51/">Extreme Network Programming with Python and Linux</a> </b> by Rob Ludwick (<b> Extreme </b>). Traditionally, C is the preferred language for low level network programming and works well for those who have the time and patience to work with it. As it turns out, Python is very capable for prototyping low level network code, collecting data, and testing ideas quickly without getting lost in the land of C. Obscure topics such as raw sockets, multicast, network bridging, rolling your own vpn, and disruption tolerant networking will be covered. This talk will show how you can use Python to build custom protocols, debug a network, fix broken nets, implement custom logging and processing, and simulate network traffic. </p>
+<p> <b> <a href="/2011/schedule/presentations/228/">Jython Concurrency</a> </b> by Jim Baker (<b>Extreme</b>). One of the persistent troubles with concurrency in Python is the GIL - the Global Interpreter Lock used to simplify the implementation of CPython... but not all Python implementations include a GIL. Jython implements the Python language, but Jython leverages the underlying Java platform to provide an opinionated alternative to CPython in its support of concurrency. Jython instead embraces threads, provides extensive support for managing their execution and coordination through standard Java platform functionality (java.util.concurrent), and works well with Jython's implementation of {ython's standard mutable collection types. The underlying JVM provides also extensive instrumentation as well as the ability to set a variety of parameters, including choice of GC. This talk will go into a detailed discussion of some of the interesting ramifications of these design points and how they can be effectively applied to write concurrent code, as illustrated through a variety of short examples.</p>
+<p> <b> <a href="/2011/schedule/presentations/208/">Ten Years of Twisted</a> </b> by Glyph Lefkowitz. Twisted is one of the oldest event-driven architectures for Python, and it is the oldest one still being actively maintained and extended with new functionality. The maturity that Twisted brings to event-based networking is essential - they have found and fixed bugs that other asynchronous architectures may not hit for a couple years.  Despite this pedigree, however, many aspects of Twisted remain misunderstood or simply unrealized. This talk will present a brief conceptual introduction to Twisted, followed by a survey of its features, their status, and how development has been proceeding over the years, with a special focus on the last two years of sponsored development.</p>
+<p> <b> <a href="/2011/schedule/presentations/79/">Using Coroutines to Create Efficient, High-Concurrency Web Applications</a> </b> by Matt Spitz (<b> Extreme </b>). Many people don't know that the popular web-based instant messaging service Meebo is delivered using Python. At Meebo, they have settled on using gunicorn, a lightweight WSGI server, which supports gevent, a coroutine-based network library for python. Gevent monkeypatches python's system modules to make network requests asynchronous using an event loop based on libevent. This trick allows the developer to use a simple blocking CGI as a non-blocking web application that can handle many concurrent requests. In this in-depth review, Matt discusses how Meebo worked through the various approaches to building web applications, why they ended up choosing gunicorn+gevent, the challenges this new framework presents, and how they've dealt with them.</p>
+<p> <b> <a href="/2011/schedule/presentations/147/">Prototyping Go's Select with stackless.py for Stackless Python</a> </b> by Andrew Francis (<b>Extreme</b>). Google’s introduction of the Go language raised eyebrows in the Stackless Python community. Although very different languages, Go and Stackless Python’s concurrency model share a common ancestor: the Bell Labs family of languages (i.e., Newsqueak, Limbo). The common feature are channels: a synchronous message passing mechanism based on Tony Hoare’s Communicating Sequential Processes (CSP). </p>
+<p>Both Go and Stackless Python have channels - but the select language built into Go gives it the ability to wait on multiple channels simultaneously.  This talk explores the prototyping potential of stackless.py, the PyPy's framework's implementation of Stackless Python. This talk will present a brain-bending "case study" involving prototyping Go's select in stackless.py before reimplementing select in C based Stackless Python. </p>
+<p> <b> <a href="/2011/schedule/presentations/35/">An Introduction to Tornado</a>  </b> by Gavin Roy.  Tornado is an open source version of the scalable, non-blocking web server and tools that power FriendFeed. It is not only a web server but it is a light-weight, use only what you need, web development framework. This talk will review the current state of the Tornado project, review the features Tornado provides and give examples of how to implement asynchronous web applications in Tornado.</p>
+<p> <b> <a href="/2011/schedule/presentations/98/">Advanced Network Architectures With ZeroMQ</a> </b> by Zed Shaw (<b>Extreme</b>). Zed Shaw has raised a lot of interest with his recent work on Mongrel2, a "language agnostic" webserver that uses ZeroMQ to handle all the plumbing. This talk builds on Zed's experience with Mongrel2 to demonstrate how to use ZeroMQ with Python (and others) to do really advanced or even weird network architectures. Zed will show Python talking to other languages, handling HTTP, JSON, XML, WebSockets, encoding videos, handling chat messaging, etc. This is an extreme talk, so it will be in code, not in diagrams. This talk will assume you know ZeroMQ and Python, but if you don't know ZeroMQ you can probably still keep up. </p>
+<p> <b> <a href="/2011/schedule/presentations/154/">An outsider's look at co-routines</a> </b> by Peter Portante. This talk is designed to take an interested beginner from a hazy understanding of coroutines up to the point where they can understand the essential concepts (and the essential differences!) associated with the different implementations of coroutines for Python. </p>
+<p>Is this the conference you want to see? Then, <b> <a href="/2011/tickets/">register for PyCon and book your room now!</a> </b> We have picked up a few more rooms - including a few at a lower rate a block away. You can email (<a href="mailto:pycon4-reg@cteusa.com">pycon4-reg@cteusa.com</a>), or phone (847-759-4277). We have very few spots left. </p>
+<p>Links:</p>
+<ul>
+<li>Go to <a href="/2011/blog/2011/02/28/10-python-conferences-happening-pycon-2011-part-1/">Part 1</a> of this series</li>
+<li>Go to <a href="/2011/blog/2011/02/28/10-python-conferences-happening-pycon-2011-part-2/">Part 2</a> of this series</li>
+<li>Go to <a href="/2011/blog/2011/03/01/10-python-conferences-happening-pycon-2011-part-3/">Part 3</a> of this series</li>
+<li>Go to <a href="http://pycon.blogspot.com/2011/03/10-python-conferences-happening-at_01.html">this post on Blogspot</a>.</li>
+</ul>
+<p><i>Edit</i>: <a href="http://news.ycombinator.com/item?id=2277997">Discussion link on Hacker News</a>.</p>
+</div>
+    </div>
+
+
+
+                </div>
+                <div id="right">
+                    
+    
+
+<div class="support-pycon">
+    
+    <h2>Sponsors</h2>
+    
+    
+    
+    
+        
+            
+                <h3>Diamond</h3>
+            
+            <div class="sponsor">
+                <a href="http://code.google.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/google.png" alt="Google"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.qnx.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/qnx_logo-160x80.jpg" alt="QNX Software Systems"/>
+                </a>
+            </div>
+        
+    
+        
+            
+                <h3>Platinum</h3>
+            
+            <div class="sponsor">
+                <a href="http://www.microsoft.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/pycon-sponsorship_3.png" alt="Microsoft"/>
+                </a>
+            </div>
+        
+    
+        
+            
+                <h3>Gold</h3>
+            
+            <div class="sponsor">
+                <a href="http://www.disneyanimation.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/WDAS_logo.jpg" alt="Walt Disney Animation Studios"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.nasuni.com/?utm_source=pycon">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/nasuni.png" alt="Nasuni Corporation"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://rackspace.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/New_Rackspace_Logo_1.jpg" alt="Rackspace"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.jetbrains.com/pycharm">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/PCbyJB.png" alt="Jetbrains"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.ccpgames.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/ccp-stor.jpg" alt="CCP"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.linode.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/linode_logo10.png" alt="Linode"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.canonical.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/canonical_new_160x80.png" alt="Canonical"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="https://github.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/github.png" alt="GitHub"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://bitbucket.org/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/LOGO_Bitbucket_thumb.png" alt="Bitbucket by Atlassian"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.woti.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/WOTI_160x80.JPG" alt="White Oak Technologies, Inc."/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.evite.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/evite_logo_s.gif" alt="Evite"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.zeomega.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/ZeOmega-logo.png" alt="ZeOmega"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.activestate.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/as_logo_2010_200px.png" alt="ActiveState Software Inc."/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.caktusgroup.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/caktus-web-logo-160x45-rounded.PNG" alt="Caktus"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.dropbox.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/esuslogo101409_1.PNG" alt="Dropbox"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.uber.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/uber_logo_small_1.png" alt="Uber"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://gondor.io/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/gondor_logo_160x80.png" alt="Gondor"/>
+                </a>
+            </div>
+        
+    
+        
+            
+                <h3>Silver</h3>
+            
+            <div class="sponsor">
+                <a href="http://developers.freshbooks.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/freshbooks-logo-160x80.gif" alt="FreshBooks"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.accense.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/ATlogo_for_pycon2011.png" alt="Accense Technology, Inc."/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.wingware.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/wingware-sponsor-160x80.png" alt="Wingware"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.chicagopython.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/imagescape-web.gif" alt="Imaginary Landscape, LLC"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.net-ng.com/en/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/net-ng.gif" alt="Net-ng"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.revsys.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/revsys-logo.png" alt="Revolution Systems, LLC"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.esri.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/esri-10GlobeLogo_sRGB_.png" alt="ESRI"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.loggly.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/logo_beaver_1.jpg" alt="Loggly"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.disqus.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/disqus-pycon.png" alt="DISQUS"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://myemma.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/Emma_logo_160x54.png" alt="Emma"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.threadless.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/threadless_logo.jpg" alt="Threadless"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.eutaxia.eu/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/Eutaxia_by_OpenEnd.jpg" alt="Open End"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.enthought.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/enthought.png" alt="Enthought"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.surveymonkey.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/monkeylogo.PNG" alt="SurveyMonkey"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.picloud.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/picloud_pycon.png" alt="PiCloud"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://cmgdigital.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/cmgdigital_180x60.png" alt="Cox Media Group Digital"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.10gen.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/Combined_Logo_Short.jpg" alt="10gen/MongoDB"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.aginteractive.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/agi_logo_160x80.png" alt="AG Interactive"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.eucalyptus.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/Eucalyptus_Systems_Logo_33.jpg" alt="Eucalyptus"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.truecar.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/TrueCar-logo-tagline-large-gradientJPEG.jpg" alt="TrueCar.com"/>
+                </a>
+            </div>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+                <h3>Media</h3>
+            
+            <div class="sponsor">
+                <a href="http://www.oreilly.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/oreilly_160x80.png" alt="O&#39;Reilly"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.linuxpromagazine.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/LinuxProMagazine_WebLogo_100.jpg" alt="Linux Pro Magazine"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.ubuntu-user.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/Ubuntu-User.png" alt="Ubuntu User"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.admin-magazine.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/admin_logo_INT.jpg" alt="Admin Magazine"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.smart-developer.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/SD_Logo_RGB_72dpi.jpg" alt="Smart Developer Magazine"/>
+                </a>
+            </div>
+        
+    
+        
+            
+            <div class="sponsor">
+                <a href="http://www.linuxjournal.com/">
+                    
+                    <img src="/2011/site_media/media/sponsor_files/ljlogo_1.jpg" alt="Linux Journal"/>
+                </a>
+            </div>
+        
+    
+        
+    
+</div>
+
+
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        
+
+        <div id="footer"><div id="footer-content">
+    Site built by <a href="http://eldarion.com/"><b>Eldarion</b></a> using
+    <a href="http://djangoproject.com/"><b>Django</b></a> and
+    <a href="http://pinaxproject.com/"><b>Pinax</b></a>.
+</div></div>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="/2011/site_media/static/js/base.js" type="text/javascript"></script>
+        <script src="/2011/site_media/static/uni_form/uni-form.jquery.js" type="text/javascript"></script>
+        
+            
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-2401894-23");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+    
+    <script>
+        $("#id_email").focus();
+    </script>
+
+        
+    </body>
+
+<!-- Mirrored from us.pycon.org/2011/blog/2011/03/01/10-python-conferences-happening-pycon-2011-part-4/ by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 19 Jun 2013 18:27:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+</html>

@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+    
+<!-- Mirrored from us.pycon.org/2012/community/tutorials/245/ by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 20 Jun 2013 15:37:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <link href="/2012/site_media/static/img/favicon.ico" rel="shortcut icon" />
+        <title>PyCon US 2012 </title>
+        <!--  hack to make IE able to apply CSS to elements that it doesn't usually know about. See http://code.google.com/p/html5shim/ -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <link rel="stylesheet" href="/2012/site_media/static/pinax/css/tabs.css" />
+        <link rel="stylesheet" href="/2012/site_media/static/css/facebox.css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
+        <link href="/2012/site_media/static/markitup/skins/simple/style.css" type="text/css" media="screen" rel="stylesheet" />
+<link href="/2012/site_media/static/markitup/sets/markdown-custom/style.css" type="text/css" media="screen" rel="stylesheet" />
+
+        
+    <!-- Framework CSS -->
+<link rel="stylesheet" href="/2012/site_media/static/css/blueprint/grid.css" media="screen, projection" />
+<link rel="stylesheet" href="/2012/site_media/static/css/blueprint/print.css" media="print" />
+<!--[if lt IE 8]>
+<link rel="stylesheet" href="/2012/site_media/static/css/blueprint/ie.css" media="screen, projection" />
+<![endif]-->
+
+        
+    <link rel="stylesheet" href="/2012/site_media/static/css/reset.css" />
+    <link rel="stylesheet" href="/2012/site_media/static/css/pycon.css" />
+    <link rel="stylesheet" href="/2012/site_media/static/css/site_tabs.css" />
+    <link rel="stylesheet" href="/2012/site_media/static/uni_form/uni-form.css" />
+    <link rel="alternate" type="application/atom+xml" href="/2012/feed/general/" title="blog feed"/>
+    
+
+    </head>
+
+    <body class="wiki community/tutorials/245 " id="">
+        <div class="wrapper">
+
+            <div class="msg-container">
+                
+            </div>
+
+            <header>
+                <div class="container">
+                    
+                        <h1 id="logo"><a href="/2012/">PyCon 2012</a></h1>
+                        
+                        <div id="left_tabs"></div>
+                        <div id="right_tabs"></div>
+                        <div class="login">
+    
+
+<div class="account-bar">
+
+    <a href="/2012/account/login/">Log in</a> or <a href="/2012/account/signup/">Sign Up</a>
+
+</div>
+<div class="clear"></div>
+
+</div>
+                        
+    <nav id="main-nav">
+        <ul>
+            
+                
+                    <li id="tab_pycon-2013"><a href="/2013/" id="link-pycon-2013">PyCon 2013!</a></li>
+                
+            
+                
+                    <li id="tab_about" class="dropdown">
+                        <a href="/2012/about/"
+                              class="dropdown-toggle"
+                              data-toggle="dropdown"
+                              id="link-about">
+                              About
+                              <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                
+                    <li id="tab_code-conduct"><a href="/2012/codeofconduct/" id="link-code-conduct">Code of Conduct</a></li>
+                
+            
+                
+                    <li id="tab_diversity"><a href="/2012/diversity/" id="link-diversity">Diversity</a></li>
+                
+            
+                
+                    <li id="tab_pycon-mobile-guide"><a href="http://guidebook.com/g/pycon2012/" id="link-pycon-mobile-guide">PyCon Mobile Guide</a></li>
+                
+            
+                
+                    <li id="tab_volunteers"><a href="/2012/community/volunteer/" id="link-volunteers">Volunteers</a></li>
+                
+            
+                
+                    <li id="tab_what-pycon"><a href="/2012/about/" id="link-what-pycon">What is Pycon?</a></li>
+                
+            
+                
+                    <li id="tab_join-conversation"><a href="https://pycon.disqus.com/" id="link-join-conversation">Join the Conversation</a></li>
+                
+            
+                        </ul>
+                    </li>
+                
+            
+                
+                    <li id="tab_blog"><a href="http://pycon.blogspot.com/" id="link-blog">Blog</a></li>
+                
+            
+                
+                    <li id="tab_schedule" class="dropdown">
+                        <a href="/2012/schedule/"
+                              class="dropdown-toggle"
+                              data-toggle="dropdown"
+                              id="link-schedule">
+                              Schedule
+                              <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                
+                    <li id="tab_conference-schedule"><a href="/2012/schedule/" id="link-conference-schedule">Conference Schedule</a></li>
+                
+            
+                
+                    <li id="tab_keynote-speakers"><a href="/2012/keynotes/" id="link-keynote-speakers">Keynote Speakers</a></li>
+                
+            
+                
+                    <li id="tab_mobile-guide"><a href="http://guidebook.com/g/pycon2012/" id="link-mobile-guide">Mobile Guide</a></li>
+                
+            
+                
+                    <li id="tab_open-spaces"><a href="/2012/community/openspaces/" id="link-open-spaces">Open Spaces</a></li>
+                
+            
+                
+                    <li id="tab_posters"><a href="/2012/schedule/lists/posters/" id="link-posters">Posters</a></li>
+                
+            
+                
+                    <li id="tab_pycon-5k"><a href="/2012/5k/" id="link-pycon-5k">Pycon 5K</a></li>
+                
+            
+                
+                    <li id="tab_sprints"><a href="/2012/community/sprints/" id="link-sprints">Sprints</a></li>
+                
+            
+                
+                    <li id="tab_startup-row"><a href="/2012/community/startuprow/" id="link-startup-row">Startup Row</a></li>
+                
+            
+                
+                    <li id="tab_tutorials"><a href="/2012/schedule/tutorials/" id="link-tutorials">Tutorials</a></li>
+                
+            
+                        </ul>
+                    </li>
+                
+            
+                
+                    <li id="tab_sponsors" class="dropdown">
+                        <a href="/2012/sponsors/"
+                              class="dropdown-toggle"
+                              data-toggle="dropdown"
+                              id="link-sponsors">
+                              Sponsors
+                              <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                
+                    <li id="tab_about-pycon-sponsors"><a href="/2012/sponsors/" id="link-about-pycon-sponsors">About Pycon Sponsors</a></li>
+                
+            
+                
+                    <li id="tab_jobs-fair"><a href="/2012/sponsors/jobs/" id="link-jobs-fair">Jobs Fair</a></li>
+                
+            
+                
+                    <li id="tab_sponsor-prospectus"><a href="/2012/sponsors/prospectus/" id="link-sponsor-prospectus">Sponsor Prospectus</a></li>
+                
+            
+                
+                    <li id="tab_sponsor-sign"><a href="/2012/sponsors/info/" id="link-sponsor-sign">Sponsor Sign Up</a></li>
+                
+            
+                        </ul>
+                    </li>
+                
+            
+                
+                    <li id="tab_venue" class="dropdown">
+                        <a href="/2012/venue/"
+                              class="dropdown-toggle"
+                              data-toggle="dropdown"
+                              id="link-venue">
+                              Venue
+                              <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                
+                    <li id="tab_bars"><a href="/2012/venue/bars/" id="link-bars">Bars</a></li>
+                
+            
+                
+                    <li id="tab_directions-venue"><a href="/2012/venue/directions/" id="link-directions-venue">Directions to the Venue</a></li>
+                
+            
+                
+                    <li id="tab_explore-santa-clara"><a href="/2012/venue/explore/" id="link-explore-santa-clara">Explore Santa Clara</a></li>
+                
+            
+                
+                    <li id="tab_getting-around-santa-clara"><a href="/2012/venue/getting-around/" id="link-getting-around-santa-clara">Getting Around Santa Clara </a></li>
+                
+            
+                
+                    <li id="tab_restaurants"><a href="/2012/venue/restaurants/" id="link-restaurants">Restaurants</a></li>
+                
+            
+                
+                    <li id="tab_needs-share-room"><a href="/2012/community/roomsharing/" id="link-needs-share-room">Room Sharing</a></li>
+                
+            
+                
+                    <li id="tab_shopping"><a href="/2012/venue/shopping/" id="link-shopping">Shopping</a></li>
+                
+            
+                
+                    <li id="tab_traveling-santa-clara"><a href="/2012/venue/traveling/" id="link-traveling-santa-clara">Traveling</a></li>
+                
+            
+                
+                    <li id="tab_weather"><a href="/2012/venue/weather/" id="link-weather">Weather</a></li>
+                
+            
+                        </ul>
+                    </li>
+                
+            
+        </ul>
+    </nav>
+
+                        
+                    
+                </div>
+            </header>
+
+            <section id="subnav">
+                <div class="container">
+                    
+                </div>
+            </section>
+
+            
+                
+                <section id="body">
+                    <div class="container">
+
+                        
+    <div class="span-8">
+        &nbsp;
+    </div>
+    <div class="span-16 last spacer">
+        
+
+        <div class="page">
+            <h1 class="shift"><a href="/2012/schedule/presentation/245/">Notes from</a><br/><span>the Instructor</span></h1>
+
+<p><em><a href="/2012/community/welcome/">General installation help</a>: 6:30-8:00PM Tuesday &amp; Wednesday in Open Spaces.</em></p>
+<h2 id="faster_python_programs_through_optimization2012schedulepresentation245"><a href="/2012/schedule/presentation/245/">Faster Python Programs through Optimization</a></h2>
+<h2>Hello</h2>
+<p>These are important information for all participants from the instructor.<br/>
+Please read this carefully.</p>
+<h2>Example Code</h2>
+<p>Please download the 
+<a href="http://www.python-academy.com/download/pycon2012/optimization_mmueller_tut.zip">example source code</a>.
+We will need it in the tutorial.</p>
+<h2>Required Software</h2>
+<p>It is <strong>essential</strong> that you install the needed software <strong>before</strong>
+the tutorial.
+Please do this well in advance at least the day <strong>before</strong>. There will be <strong>no</strong>
+time during the tutorial to do this. </p>
+<p>You need:</p>
+<ul>
+<li>a laptop with the operating system of your choice (Linux, Mac OS X, Windows)</li>
+<li>Python 2.6 or 2.7 installed</li>
+<li><a href="http://www.vrplumber.com/programming/runsnakerun">RunSnakeRun</a></li>
+<li><a href="http://wxpython.org/">wxPython</a> needed py RunSnakeRun</li>
+<li><a href="https://launchpad.net/squaremap">SquareMap</a> needed py RunSnakeRun</li>
+<li>the <a href="http://guppy-pe.sourceforge.net">Guppy_PE framework</a></li>
+<li><a href="http://psyco.sourceforge.net">psyco</a> Python 2.6 and 32-bit only, version 1.5.2 or higher)</li>
+<li><a href="http://pypy.org">PyPy</a> and</li>
+<li><a href="http://numpy.scipy.org">NumPy</a>, version 1.2 or higher.</li>
+</ul>
+<p>Some of these can be installed with the package manager of your operating
+system or via pip. <strong>Note</strong>: psyco is optional and works only for 32-bit systems
+with Python &lt;= 2.6. Don't install it if your system does not fit this requirments.</p>
+<h2>Details</h2>
+<p>More details at the <a href="/2012/schedule/presentation/245/">tutorial web page</a>.</p>
+<h2>Questions</h2>
+<p>Please ask me if anything needs clarification.
+mmueller [at] python-academy [dot] de</p>
+<p>Mike Müller</p>
+<hr/>
+<p>Extra notes relevant only to Mac OS 10.7 (Lion) from a user who worked around the problem:</p>
+<p>OS/Setup:</p>
+<p>Tried to install wxPython with Homebrew, MacPorts, and manual source compile. None of these worked this past weekend. Homebrew and MacPorts are having issues with the new Xcode 4.3 layout. The source code also links to the older layout of Xcode. However, installing the pre-built binary [1] worked. FYI, it had a side-effect of changing permissions in /usr/local, which affected Homebrew.</p>
+<p>wxPython explicitly checked to see if the python version being ran was a Framework [2] version. That is, I couldn't create a virtualenv for it and run it that way. I then installed ez_setup.py, pip, squaremap, and runsnakerun [3, 4, 5, 6] against the Framework version. Running <code>python -c 'import wx'</code> worked as expected.</p>
+<p>The last issues I had was a Traceback in runsnake [6]. After reading the source, runsnake was looking for an environmental variable called either 'home' or 'appdata'. One of these had to be set to a directory containing a sub-directory called ".config". So prior to executing runsnake, I did a <code>mkdir -p ~/Documents/PyCon/245/.config</code> and set 'appdata' to ~/Documents/PyCon/245. As a final test, I profiled some setup.py and ran runsnake. It worked! [7].</p>
+<pre><code>[1] http://downloads.sourceforge.net/wxpython/wxPython2.9-osx-2.9.3.1-cocoa-py2.7.dmg
+[2] /System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7
+[3] sudo python ez_setup.py
+[4] sudo easy_install pip
+[5] sudo pip install squaremap runsnakerun
+[6]
+...
+ File "/Library/Python/2.7/site-packages/runsnakerun/homedirectory.py", line 69, in appdatadirectory
+   raise OSError( """Unable to determine user's application-data directory""" )
+OSError: Unable to determine user's application-data directory
+[7] python -m cProfile -o ${appdata}/test.profile setup.py --help-commands &amp;&amp; runsnake ${appdata}/test.profile
+</code></pre>
+        </div>
+
+        <div class="info"><span><strong>community/tutorials/245</strong></span><span>
+                
+                    Recently modified by <em>stuart</em>: March 7, 2012, 12:10 a.m.
+                
+                (<a href="/2012/community/tutorials/245/history/">History</a>)
+            </span><span><a href="/2012/community/tutorials/245/edit/">Edit</a></span><div><a href="/2012/index/">Index</a></div></div>
+    </div>
+
+
+                    </div>
+
+                </section>
+            
+            <div class="push"></div>
+        </div>
+
+        <footer>
+            <div class="container">
+    <p>
+        PyCon US 2012 is a production of the <a href="http://python.org/psf/">Python Software Foundation</a>.
+    <br />
+        Site built by <a href="http://eldarion.com">Eldarion</a> using <a href="http://djangoproject.com">Django</a> and <a href="http://pinaxproject.com">Pinax</a>. Hosting provided by <a href="http://gondor.io">Gondor</a>.
+    <br />
+        Questions? Comments? Contact <a href="mailto:pycon-organizers@python.org">pycon-organizers@python.org</a>
+    </p>
+</div>
+        </footer>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+        <script src="/2012/site_media/static/js/base.js" type="text/javascript"></script>
+        <script src="/2012/site_media/static/uni_form/uni-form.jquery.js" type="text/javascript"></script>
+        <script type="text/javascript" src="/2012/site_media/static/markitup/jquery.markitup.js"></script>
+        <script type="text/javascript" src="/2012/site_media/static/markitup/sets/markdown-custom/set.js"></script>
+        <script src="/2012/site_media/static/js/facebox.js" type="text/javascript"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $('a[rel*=facebox]').facebox({
+            loadingImage: '/2012/site_media/static/img/facebox/loading.gif',
+            closeImage: '/2012/site_media/static/img/facebox/closelabel.png'
+        });
+        $(document).bind('reveal.facebox', function() {
+            $("form.in_facebox").submit(function() {
+                form = this;
+                jQuery.facebox(function($) {
+                    fields = jQuery(form).find("input[type='text']").filter(":enabled");
+                    params = {}
+                    fields.each(function() {
+                        params[this.name] = this.value;
+                    });
+                    jQuery.post(form.action, params,
+                        function(data, textStatus) {
+                            jQuery.facebox(data);
+                        }
+                    );
+                });
+                return false;
+            });
+        });
+        $(document).bind('close.facebox', function() {
+           location.reload();
+          });
+     });
+</script>
+        <script type="text/javascript" charset="utf-8">
+            $(document).ajaxSend(function(event, xhr, settings) {
+                function getCookie(name) {
+                    var cookieValue = null;
+                    if (document.cookie && document.cookie != '') {
+                        var cookies = document.cookie.split(';');
+                        for (var i = 0; i < cookies.length; i++) {
+                            var cookie = jQuery.trim(cookies[i]);
+                            // Does this cookie string begin with the name we want?
+                            if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                                break;
+                            }
+                        }
+                    }
+                    return cookieValue;
+                }
+                function sameOrigin(url) {
+                    // url could be relative or scheme relative or absolute
+                    var host = document.location.host; // host + port
+                    var protocol = document.location.protocol;
+                    var sr_origin = '//' + host;
+                    var origin = protocol + sr_origin;
+                    // Allow absolute or scheme relative URLs to same origin
+                    return (url == origin || url.slice(0, origin.length + 1) == origin + '/') ||
+                        (url == sr_origin || url.slice(0, sr_origin.length + 1) == sr_origin + '/') ||
+                        // or any other URL that isn't scheme relative or absolute i.e relative.
+                        !(/^(\/\/|http:|https:).*/.test(url));
+                }
+                function safeMethod(method) {
+                    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+                }
+
+                if (!safeMethod(settings.type) && sameOrigin(settings.url)) {
+                    xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
+                }
+            });
+        </script>
+        
+        <script type="text/javascript">
+            $(document).ready(function($) {
+                $("a.boxes-edit-link").click(function() {
+                    $.facebox.settings.loadingImage = "/site_media/static/img/loading.gif";
+                    $.facebox.settings.closeImage = "/site_media/static/img/closelabel.png";
+                    $(document).bind("beforeReveal.facebox", function() {
+                        $("#facebox .content").css("width", "600px");
+                    });
+                    var editable = this;
+                    $(document).bind("reveal.facebox", function() {
+                        $("#edit_form").submit(function() {
+                            $.post(editable.href, $(this).serialize(), function(data) {
+                                $(document).trigger("close.facebox");
+                                $(editable).load(data);
+                                $(document).unbind("reveal.facebox");
+                            });
+                            return false;
+                        });
+                    });
+                    $.facebox({ajax: this.href});
+                    return false;
+                });
+            });
+        </script>
+        
+        <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2401894-29']);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_trackPageLoadTime']);
+    // _gaq.push(['_setCustomVar', 1, 'Authentication Type', ut, 2]);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+        
+        
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+          $("#id_email").focus();
+          if(('ul#messages').length > 0) {
+              setTimeout(function() {
+                  $('ul#messages').fadeOut(3000);
+              }, 2000 );
+          }
+      });
+    </script>
+    
+
+    </body>
+
+<!-- Mirrored from us.pycon.org/2012/community/tutorials/245/ by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 20 Jun 2013 15:37:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+</html>

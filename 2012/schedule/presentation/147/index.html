@@ -1,0 +1,617 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+    
+<!-- Mirrored from us.pycon.org/2012/schedule/presentation/147/ by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 20 Jun 2013 15:33:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <link href="/2012/site_media/static/img/favicon.ico" rel="shortcut icon" />
+        <title>PyCon US 2012 Presentation: 13. RAD2PY: platform+IDE for solid &amp; predictable Rapid Application Development</title>
+        <!--  hack to make IE able to apply CSS to elements that it doesn't usually know about. See http://code.google.com/p/html5shim/ -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <link rel="stylesheet" href="/2012/site_media/static/pinax/css/tabs.css" />
+        <link rel="stylesheet" href="/2012/site_media/static/css/facebox.css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
+        <link href="/2012/site_media/static/markitup/skins/simple/style.css" type="text/css" media="screen" rel="stylesheet" />
+<link href="/2012/site_media/static/markitup/sets/markdown-custom/style.css" type="text/css" media="screen" rel="stylesheet" />
+
+        
+    <!-- Framework CSS -->
+<link rel="stylesheet" href="/2012/site_media/static/css/blueprint/grid.css" media="screen, projection" />
+<link rel="stylesheet" href="/2012/site_media/static/css/blueprint/print.css" media="print" />
+<!--[if lt IE 8]>
+<link rel="stylesheet" href="/2012/site_media/static/css/blueprint/ie.css" media="screen, projection" />
+<![endif]-->
+
+        
+    <link rel="stylesheet" href="/2012/site_media/static/css/reset.css" />
+    <link rel="stylesheet" href="/2012/site_media/static/css/pycon.css" />
+    <link rel="stylesheet" href="/2012/site_media/static/css/site_tabs.css" />
+    <link rel="stylesheet" href="/2012/site_media/static/uni_form/uni-form.css" />
+    <link rel="alternate" type="application/atom+xml" href="/2012/feed/general/" title="blog feed"/>
+    
+    <style>
+        a.unbookmark {
+            text-decoration: none;
+            padding-left: 20px;
+            background: url(/2011/site_media/static/img/star.png) no-repeat left;
+        }
+        a.bookmark {
+            text-decoration: none;
+            padding-left: 20px;
+            background: url(/2011/site_media/static/img/star_unselected.png) no-repeat left;
+        }
+        div.slot {
+            font-weight: bold;
+        }
+    </style>
+
+
+    </head>
+
+    <body class="full schedule " id="">
+        <div class="wrapper">
+
+            <div class="msg-container">
+                
+            </div>
+
+            <header>
+                <div class="container">
+                    
+                        <h1 id="logo"><a href="/2012/">PyCon 2012</a></h1>
+                        
+                        <div id="left_tabs"></div>
+                        <div id="right_tabs"></div>
+                        <div class="login">
+    
+
+<div class="account-bar">
+
+    <a href="/2012/account/login/">Log in</a> or <a href="/2012/account/signup/">Sign Up</a>
+
+</div>
+<div class="clear"></div>
+
+</div>
+                        
+    <nav id="main-nav">
+        <ul>
+            
+                
+                    <li id="tab_pycon-2013"><a href="/2013/" id="link-pycon-2013">PyCon 2013!</a></li>
+                
+            
+                
+                    <li id="tab_about" class="dropdown">
+                        <a href="/2012/about/"
+                              class="dropdown-toggle"
+                              data-toggle="dropdown"
+                              id="link-about">
+                              About
+                              <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                
+                    <li id="tab_code-conduct"><a href="/2012/codeofconduct/" id="link-code-conduct">Code of Conduct</a></li>
+                
+            
+                
+                    <li id="tab_diversity"><a href="/2012/diversity/" id="link-diversity">Diversity</a></li>
+                
+            
+                
+                    <li id="tab_pycon-mobile-guide"><a href="http://guidebook.com/g/pycon2012/" id="link-pycon-mobile-guide">PyCon Mobile Guide</a></li>
+                
+            
+                
+                    <li id="tab_volunteers"><a href="/2012/community/volunteer/" id="link-volunteers">Volunteers</a></li>
+                
+            
+                
+                    <li id="tab_what-pycon"><a href="/2012/about/" id="link-what-pycon">What is Pycon?</a></li>
+                
+            
+                
+                    <li id="tab_join-conversation"><a href="https://pycon.disqus.com/" id="link-join-conversation">Join the Conversation</a></li>
+                
+            
+                        </ul>
+                    </li>
+                
+            
+                
+                    <li id="tab_blog"><a href="http://pycon.blogspot.com/" id="link-blog">Blog</a></li>
+                
+            
+                
+                    <li id="tab_schedule" class="dropdown">
+                        <a href="/2012/schedule/"
+                              class="dropdown-toggle"
+                              data-toggle="dropdown"
+                              id="link-schedule">
+                              Schedule
+                              <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                
+                    <li id="tab_conference-schedule"><a href="/2012/schedule/" id="link-conference-schedule">Conference Schedule</a></li>
+                
+            
+                
+                    <li id="tab_keynote-speakers"><a href="/2012/keynotes/" id="link-keynote-speakers">Keynote Speakers</a></li>
+                
+            
+                
+                    <li id="tab_mobile-guide"><a href="http://guidebook.com/g/pycon2012/" id="link-mobile-guide">Mobile Guide</a></li>
+                
+            
+                
+                    <li id="tab_open-spaces"><a href="/2012/community/openspaces/" id="link-open-spaces">Open Spaces</a></li>
+                
+            
+                
+                    <li id="tab_posters"><a href="/2012/schedule/lists/posters/" id="link-posters">Posters</a></li>
+                
+            
+                
+                    <li id="tab_pycon-5k"><a href="/2012/5k/" id="link-pycon-5k">Pycon 5K</a></li>
+                
+            
+                
+                    <li id="tab_sprints"><a href="/2012/community/sprints/" id="link-sprints">Sprints</a></li>
+                
+            
+                
+                    <li id="tab_startup-row"><a href="/2012/community/startuprow/" id="link-startup-row">Startup Row</a></li>
+                
+            
+                
+                    <li id="tab_tutorials"><a href="/2012/schedule/tutorials/" id="link-tutorials">Tutorials</a></li>
+                
+            
+                        </ul>
+                    </li>
+                
+            
+                
+                    <li id="tab_sponsors" class="dropdown">
+                        <a href="/2012/sponsors/"
+                              class="dropdown-toggle"
+                              data-toggle="dropdown"
+                              id="link-sponsors">
+                              Sponsors
+                              <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                
+                    <li id="tab_about-pycon-sponsors"><a href="/2012/sponsors/" id="link-about-pycon-sponsors">About Pycon Sponsors</a></li>
+                
+            
+                
+                    <li id="tab_jobs-fair"><a href="/2012/sponsors/jobs/" id="link-jobs-fair">Jobs Fair</a></li>
+                
+            
+                
+                    <li id="tab_sponsor-prospectus"><a href="/2012/sponsors/prospectus/" id="link-sponsor-prospectus">Sponsor Prospectus</a></li>
+                
+            
+                
+                    <li id="tab_sponsor-sign"><a href="/2012/sponsors/info/" id="link-sponsor-sign">Sponsor Sign Up</a></li>
+                
+            
+                        </ul>
+                    </li>
+                
+            
+                
+                    <li id="tab_venue" class="dropdown">
+                        <a href="/2012/venue/"
+                              class="dropdown-toggle"
+                              data-toggle="dropdown"
+                              id="link-venue">
+                              Venue
+                              <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                
+                    <li id="tab_bars"><a href="/2012/venue/bars/" id="link-bars">Bars</a></li>
+                
+            
+                
+                    <li id="tab_directions-venue"><a href="/2012/venue/directions/" id="link-directions-venue">Directions to the Venue</a></li>
+                
+            
+                
+                    <li id="tab_explore-santa-clara"><a href="/2012/venue/explore/" id="link-explore-santa-clara">Explore Santa Clara</a></li>
+                
+            
+                
+                    <li id="tab_getting-around-santa-clara"><a href="/2012/venue/getting-around/" id="link-getting-around-santa-clara">Getting Around Santa Clara </a></li>
+                
+            
+                
+                    <li id="tab_restaurants"><a href="/2012/venue/restaurants/" id="link-restaurants">Restaurants</a></li>
+                
+            
+                
+                    <li id="tab_needs-share-room"><a href="/2012/community/roomsharing/" id="link-needs-share-room">Room Sharing</a></li>
+                
+            
+                
+                    <li id="tab_shopping"><a href="/2012/venue/shopping/" id="link-shopping">Shopping</a></li>
+                
+            
+                
+                    <li id="tab_traveling-santa-clara"><a href="/2012/venue/traveling/" id="link-traveling-santa-clara">Traveling</a></li>
+                
+            
+                
+                    <li id="tab_weather"><a href="/2012/venue/weather/" id="link-weather">Weather</a></li>
+                
+            
+                        </ul>
+                    </li>
+                
+            
+        </ul>
+    </nav>
+
+                        
+                    
+                </div>
+            </header>
+
+            <section id="subnav">
+                <div class="container">
+                    
+
+                </div>
+            </section>
+
+            
+                
+                <section id="body">
+                    <div class="container">
+
+                        
+    
+    
+    <h1>13. RAD2PY: platform+IDE for solid &amp; predictable Rapid Application Development</h1>
+
+    <div class="badges">
+        
+    </div>
+
+    
+
+    <div class="speakers">
+        
+            <a href="/2012/speaker/profile/131/">Mariano Reingart</a>
+        
+    </div>
+    
+    <div class="badges">
+        
+        <div class="clear"></div>
+    </div>
+
+    <dl class="inline mod">
+        <dt>Type:</dt>
+        <dd>Poster</dd>
+
+        <dt>Audience level:</dt>
+        <dd>Novice</dd>
+
+        <dt>Category:</dt>
+        <dd>Best Practices/Patterns</dd>
+    </dl>
+    
+    
+        <div class="slot">March 11th 8 a.m. &ndash; 8:05 a.m.</div>
+    
+
+    <hr />
+
+    <h3>Description</h3>
+
+    <div class="description">Can we develop software faster without compromising quality, schedule or cost? Do we have the right tools? Do we measure and estimate well? Are we good developers?
+This research attempts to answer these concerns, combining automated statistical methods with a lightweight but complete IDE for wx/web2py, alternative to IDLE resembling VB, for QA &amp; self-improvement using Personal Software Process.
+</div>
+    
+    <hr />
+
+    <h3>Abstract</h3>
+    
+    <div class="abstract"><p>This project is aimed to provide a simple, feature-full and totally integrated IDE tool for Python (specifically something similar to Visual Basic classic, knowing its drawbacks and lesson learned after using it). To prevent common pitfalls of Rapid Application Development, this aproach will follow Personal Software Process guidelines to measure and gather metrics in order to help to estimate and improve quality.</p>
+<p>The goal of this project is to be as lightweight as possible, with a structure similar to IDLE, but solving its annoyances using a modern GUI toolkit and a web framework, integrating the Python development tool-chain.
+This work is being done initially as part of an academic research (degree thesis), and it is intended to be used either for educational purposes and in real world commercial applications.</p>
+<p>Further information at: <a href="http://code.google.com/p/rad2py/">http://code.google.com/p/rad2py/</a></p>
+<h1 id="poster_outline">Poster outline</h1>
+<h2 id="introduction">Introduction</h2>
+<ul>
+<li>Context: research project for academic degree thesis started in 2006,coding has begun in 2011</li>
+<li><a href="http://cacm.acm.org/blogs/blog-cacm/101708-watts-humphrey-in-honor-of-a-pioneer/fulltext">Why is this still relevant and possible</a>: looking for agility and discipline for open source develompent</li>
+<li>Motivation &amp; Objectives: why a new IDE for python?</li>
+<li><a href="http://en.wikipedia.org/wiki/Rapid_application_development">Rapid Application Development</a>: risks and "conceptual dispersion"</li>
+<li><a href="http://en.wikipedia.org/wiki/Personal_Software_Process">Personal Software Process</a>: effectiveness and adoption problem</li>
+<li>Who is Using PSP: <a href="http://www.sei.cmu.edu/tspsymposium/2009/2006/deliver.pdf">Microsoft</a> (India), <a href="http://www.sei.cmu.edu/tspsymposium/2009/program.html">Adobe</a>, <a href="http://www.sei.cmu.edu/tspsymposium/2010/abstracts.cfm#1-930">massively introduction in Mexico</a>, <a href="http://www.sei.cmu.edu/tspsymposium/2010/abstracts.cfm#3-0115a">agile projects</a>, etc.</li>
+<li>Un-obstructive Metrics recollection: Time and Defect recording logs, LOC accounting </li>
+</ul>
+<h2 id="current_similar_tools">Current similar tools</h2>
+<p>2nd and 3rd generation PSP tools (Java):</p>
+<ul>
+<li><a href="http://www.processdash.com/">The Software Process Dashboard</a>: External app (context switching and possible data inaccuracy problems)</li>
+<li><a href="http://code.google.com/p/hackystat">Hackystat open source framework project</a>: Eclipse sensors (privacy concerns, low-level data and complex setup)</li>
+<li><a href="http://www.csie.ntut.edu.tw/labsdtl/95-summer/0823-1.pdf">PSP Assistant</a> &amp; <a href="http://www.springerlink.com/content/1607282107g27767/">"Jasmine" PSP Support tool</a>: Eclipse add-ons (closed source?)</li>
+</ul>
+<h2 id="proposed_solution">Proposed solution</h2>
+<p>"4th generation PSP tool": <a href="http://code.google.com/p/rad2py/">rad2py</a> is a platform (foundations -methodology and process- + framework + tools) including: </p>
+<ul>
+<li>ide2py: integrated IDE with automatic metric collection</li>
+<li>psp2py: web app to track historical data and estimation</li>
+<li><a href="http://www.web2py.com/">web2py</a>: framework to develop web apps (enhancements required)</li>
+<li><a href="http://code.google.com/p/gui2py/">gui2py</a>: framework to develop GUI apps using web2py and wxPython</li>
+</ul>
+<h2 id="implementation">Implementation</h2>
+<ul>
+<li>Python tools and libraries used/inspired by: IDLE / PythonWin, wx.STC, PDB, wx.Py, PythonCard, PyFlakes/PEP8, Py2Exe, etc.</li>
+<li>Why web2py as framework? uniques features that made this possible at this stage </li>
+<li>Why wxpython as gui toolkit? advanced python-made features and interesting alternatives</li>
+<li>Architectural diagram and internal design details</li>
+</ul>
+<h2 id="ide2py_major_modules">ide2py major modules:</h2>
+<ul>
+<li>main.py: AUI/MDI, .ini, PyAUIFrame + mixins</li>
+<li>editor.py: wx.STC: syntaxis, autocompletion, basic calltips</li>
+<li>browser.py: webkit (gtk/linux) or ie (windows)</li>
+<li>shell.py: wx.Py (wx.PyShell): integrated to console and debugger</li>
+<li>debugger.py: bdb, single thread/process (~ IDLE and PythonWin)</li>
+<li>repo.py + repo_hg.py: Mercurial tree + change notifies </li>
+<li>web2py.py: embedded WSGI webserver (mainloop)</li>
+<li>psp.py: defect list, time grid, toolbar (shelve/pickle -&gt; simplejsonrpc)</li>
+<li>wxpydiff.py: integrated visual diff tool</li>
+</ul>
+<h2 id="current_status">Current Status</h2>
+<ul>
+<li>Progress report: <a href="http://code.google.com/p/rad2py/wiki/RoadMap">Roadmap</a></li>
+<li><a href="http://code.google.com/p/rad2py/issues/list">Issues</a> found &amp; lessons learned</li>
+<li>Initial conclusion and topics where help is needed</li>
+</ul>
+<h2 id="field_experiments">Field experiments</h2>
+<p>Projects to be developed to gather metrics for empirical validation:</p>
+<ul>
+<li><a href="http://code.google.com/p/pyafipws/wiki/ProjectSummary">PyRece</a>: Electronic invoice application</li>
+<li><a href="http://code.google.com/p/ampatu/">Ampatu</a>: 911 emergency mgmnt system</li>
+<li><a href="http://code.google.com/p/gestionlibre/">GestionLibre</a>: Simple ERP system</li>
+</ul>
+<h2 id="zero_defects_challenge">"Zero Defects" Challenge:</h2>
+<p>You could help testing this tools and sending statistical data to formally prove the hypothesis of this research regarding that quality software can be developed faster with Python! 
+Also, not only you'll be teaching/learning python, you'll be practising sound software engineering principles to see if you can improve your skills, I bet you will ;-)</p>
+<p><em>Details to be defined</em></p>
+<h2 id="screenshot">Screenshot:</h2>
+<p><img src="http://rad2py.googlecode.com/hg/screenshots/ide2py-0.05-ubuntu.png" alt="ide2py debugging an web2py app"/></p>
+<h1 id="references">References</h1>
+<ul>
+<li>[AGILDIR03]   Abrahamsson, P., Warsta, J., Siponen, M. T., and Ronkainen, J. (2003). New directions on agile methods: a comparative analysis. In Proceedings of the 25th international Conference on Software Engineering (Portland, Oregon, May 03 - 10, 2003). International Conference on Software Engineering. IEEE Computer Society, Washington, DC, 244-254.</li>
+<li>[AISEMA09]    Irina Diana Coman, Alberto Sillitti, Giancarlo Succi. Free University of Bozen-Bolzano, Italy. A case-study on using an Automated In-process Software Engineering Measurement and Analysis system in an industrial environment. Proceedings of the 31st International Conference on Software Engineering IEEE Computer Society Washington DC, USA ©2009 ISBN: 978-1-4244-3453-4; http://www.inf.unibz.it/~gsucci/publications/images/ACase-studyonUsinganAutomated In-processSoftwareEngineering.pdf</li>
+<li>[HUMPHREY95]  Humphrey, Watts S. A Discipline for Software Engineering. Reading, MA: Addison-Wesley, 1995.</li>
+<li>[ISEMA07] Philip M. Johnson. Requirement and Design Trade-offs in Hackystat: An in-process software engineering measurement and analysis system. Proceedings of the 2007 International Symposium on Empirical Software Engineering and Measurement, Madrid, Spain, September, 2007.; http://csdl.ics.hawaii.edu/techreports/06-06/06-06.pdf</li>
+<li>[MUKESH08]    Mukesh Jain. Delivering Successful Projects with TSP and Six Sigma: A Practical Guide to Implementing Team Software Process. Auerbach Publications, November 2008. ISBN 978-1420061437</li>
+<li>[PROCEEDINGSTSP10]    2010 TSP Symposium Proceedings Document. Carnegie Mellon University. Software Engineering Institute; http://www.sei.cmu.edu/tspsymposium/past-proceedings/2010/2010_TSP_Proceedings.pdf</li>
+<li>[PSP00]   Watts S. Humphrey (2000) The Personal Software Process; Software Engineering Institute, Carnegie Mellon University</li>
+<li>[PSPA05]  Raymund Sison, David Diaz, Eliska Lam, Dennis Navarro, Jessica Navarro. Personal Software Process (PSP) Assistant. In Proceedings of APSEC'2005. pp.687~696; http://www.csie.ntut.edu.tw/labsdtl/95-summer/0823-1.pdf</li>
+<li>[PSPBEY03]    Johnson, P. M. et al (2003) Beyond the Personal Software Process: metrics collection and analysis for the differently disciplined. In Proceedings of the 25th international Conference on Software Engineering (Portland, Oregon, May 03 - 10, 2003). International Conference on Software Engineering. IEEE Computer Society, Washington, DC, 641-646.</li>
+<li>[PSPBOK09]    PSP BOK Official Release.The Personal Software Process (PSP) Body of Knowledge, Version 2.0. Special Report. August 2009 (Revised February 2010). CMU/SEI-2009-SR-018; http://www.sei.cmu.edu/library/abstracts/reports/09sr018.cfm</li>
+<li>[PSPDAT98]    Disney, A. M. and Johnson, P. M. (1998) Investigating data quality problems in the PSP. In Proceedings of the 6th ACM SIGSOFT international Symposium on Foundations of Software Engineering (Lake Buena Vista, Florida, United States, November 01 - 05, 1998). SIGSOFT '98/FSE-6. ACM Press, New York, NY, 143-152</li>
+<li>[PSPEMP97]    Will Hayes, James W. Over (1997) The Personal Software Process: An Empirical Study of Impact of PSP on Individual Engineers, Technical Report; Software Engineering Institute, Carnegie Mellon University</li>
+<li>[RAD91]   James Martin, (1991) Rapid Application Development; Macmillan Publishing Co., Inc.</li>
+<li>[RADRSK00]    Agarwal, R., et al (2000). Risks of rapid application development. Communications of the ACM 43, 11es (Nov. 2000)</li>
+<li>[RADSTN98]    Stephen E. Cross (1998) Toward Disciplined Rapid Application Development, Department of Defense Software TechNews; Volume 2 Number 1 - Rapid Application Development (RAD) issue; http://www.dacs.dtic.mil/awareness/newsletters/technews2-1/toc.html</li>
+<li>[ROIPSP]  Rico, David F., What is the Return on Investment (ROI) of PSPSM (página web) http://davidfrico.com/roi-psppdf.htm</li>
+<li>[ROISPI04]    Rico, David F. (2004) ROI of Software Process Improvement: Metrics for Project Managers and Software Engineers; J. Ross Publishing; http://davidfrico.com/</li>
+<li>[ROISTN02]    Rico, David F. (2002) How to Estimate ROI for Inspections, PSPsm, TSPsm, SW-CMM®, ISO 9000, and CMMIsm, Department of Defense Software TechNews; Volume 5 Number 4 - Return-On-Investment from Software Process Improvement; http://www.dacs.dtic.mil/awareness/newsletters/stn5-4/</li>
+<li>[SWQ01]   Baltus, B et.al. , Software Quality: State of the Art in Management, Testing, and Tools; Springer</li>
+<li>[WEB2PY10]    Massimo Di Pierro, School of Computing, DePaul University. Web2py Enterprise Web Framework, 3rd Edition. Lulu.com. October 2010. ISBN 978-0557604142; http://www.web2py.com/book</li>
+<li>[WEB2PY11]    Massimo Di Pierro, "web2py for Scientific Applications," Computing in Science and Engineering, vol. 13, no. 2, pp. 64-69, Mar./Apr. 2011, doi:10.1109/MCSE.2010.97</li>
+</ul></div>
+
+
+
+                    </div>
+
+                </section>
+            
+            <div class="push"></div>
+        </div>
+
+        <footer>
+            <div class="container">
+    <p>
+        PyCon US 2012 is a production of the <a href="http://python.org/psf/">Python Software Foundation</a>.
+    <br />
+        Site built by <a href="http://eldarion.com">Eldarion</a> using <a href="http://djangoproject.com">Django</a> and <a href="http://pinaxproject.com">Pinax</a>. Hosting provided by <a href="http://gondor.io">Gondor</a>.
+    <br />
+        Questions? Comments? Contact <a href="mailto:pycon-organizers@python.org">pycon-organizers@python.org</a>
+    </p>
+</div>
+        </footer>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+        <script src="/2012/site_media/static/js/base.js" type="text/javascript"></script>
+        <script src="/2012/site_media/static/uni_form/uni-form.jquery.js" type="text/javascript"></script>
+        <script type="text/javascript" src="/2012/site_media/static/markitup/jquery.markitup.js"></script>
+        <script type="text/javascript" src="/2012/site_media/static/markitup/sets/markdown-custom/set.js"></script>
+        <script src="/2012/site_media/static/js/facebox.js" type="text/javascript"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $('a[rel*=facebox]').facebox({
+            loadingImage: '/2012/site_media/static/img/facebox/loading.gif',
+            closeImage: '/2012/site_media/static/img/facebox/closelabel.png'
+        });
+        $(document).bind('reveal.facebox', function() {
+            $("form.in_facebox").submit(function() {
+                form = this;
+                jQuery.facebox(function($) {
+                    fields = jQuery(form).find("input[type='text']").filter(":enabled");
+                    params = {}
+                    fields.each(function() {
+                        params[this.name] = this.value;
+                    });
+                    jQuery.post(form.action, params,
+                        function(data, textStatus) {
+                            jQuery.facebox(data);
+                        }
+                    );
+                });
+                return false;
+            });
+        });
+        $(document).bind('close.facebox', function() {
+           location.reload();
+          });
+     });
+</script>
+        <script type="text/javascript" charset="utf-8">
+            $(document).ajaxSend(function(event, xhr, settings) {
+                function getCookie(name) {
+                    var cookieValue = null;
+                    if (document.cookie && document.cookie != '') {
+                        var cookies = document.cookie.split(';');
+                        for (var i = 0; i < cookies.length; i++) {
+                            var cookie = jQuery.trim(cookies[i]);
+                            // Does this cookie string begin with the name we want?
+                            if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                                break;
+                            }
+                        }
+                    }
+                    return cookieValue;
+                }
+                function sameOrigin(url) {
+                    // url could be relative or scheme relative or absolute
+                    var host = document.location.host; // host + port
+                    var protocol = document.location.protocol;
+                    var sr_origin = '//' + host;
+                    var origin = protocol + sr_origin;
+                    // Allow absolute or scheme relative URLs to same origin
+                    return (url == origin || url.slice(0, origin.length + 1) == origin + '/') ||
+                        (url == sr_origin || url.slice(0, sr_origin.length + 1) == sr_origin + '/') ||
+                        // or any other URL that isn't scheme relative or absolute i.e relative.
+                        !(/^(\/\/|http:|https:).*/.test(url));
+                }
+                function safeMethod(method) {
+                    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+                }
+
+                if (!safeMethod(settings.type) && sameOrigin(settings.url)) {
+                    xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
+                }
+            });
+        </script>
+        
+        <script type="text/javascript">
+            $(document).ready(function($) {
+                $("a.boxes-edit-link").click(function() {
+                    $.facebox.settings.loadingImage = "/site_media/static/img/loading.gif";
+                    $.facebox.settings.closeImage = "/site_media/static/img/closelabel.png";
+                    $(document).bind("beforeReveal.facebox", function() {
+                        $("#facebox .content").css("width", "600px");
+                    });
+                    var editable = this;
+                    $(document).bind("reveal.facebox", function() {
+                        $("#edit_form").submit(function() {
+                            $.post(editable.href, $(this).serialize(), function(data) {
+                                $(document).trigger("close.facebox");
+                                $(editable).load(data);
+                                $(document).unbind("reveal.facebox");
+                            });
+                            return false;
+                        });
+                    });
+                    $.facebox({ajax: this.href});
+                    return false;
+                });
+            });
+        </script>
+        
+        <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2401894-29']);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_trackPageLoadTime']);
+    // _gaq.push(['_setCustomVar', 1, 'Authentication Type', ut, 2]);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+        
+        
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+          $("#id_email").focus();
+          if(('ul#messages').length > 0) {
+              setTimeout(function() {
+                  $('ul#messages').fadeOut(3000);
+              }, 2000 );
+          }
+      });
+    </script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a.bookmark").live("click", function() {
+                aElem = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: this.href,
+                    data: "action=add;csrfmiddlewaretoken=e867c258e1a91e5d72cf745f26f82408",
+                    success: function() {
+                        aElem.text("unbookmark");
+                        aElem.removeClass("bookmark");
+                        aElem.addClass("unbookmark");
+                    },
+                    error: function(xhr, options, error) {
+                        alert(xhr.status);
+                    }
+                });
+                return false;
+            });
+            $("a.unbookmark").live("click", function() {
+                aElem = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: this.href,
+                    data: "action=delete;csrfmiddlewaretoken=e867c258e1a91e5d72cf745f26f82408",
+                    success: function(response) {
+                        aElem.text("bookmark");
+                        aElem.removeClass("unbookmark");
+                        aElem.addClass("bookmark");
+                    },
+                    error: function(xhr, options, error) {
+                        alert(xhr.status);
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+
+
+    </body>
+
+<!-- Mirrored from us.pycon.org/2012/schedule/presentation/147/ by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 20 Jun 2013 15:33:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+</html>

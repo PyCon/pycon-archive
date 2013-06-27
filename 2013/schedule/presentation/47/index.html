@@ -1,0 +1,1504 @@
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+    
+<!-- Mirrored from us.pycon.org/2013/schedule/presentation/47/ by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 19 Jun 2013 23:09:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <title>Presentation: All-Singing All-Dancing Python Bytecode | PyCon US 2013</title>
+        
+
+        
+    <link href="/2013/site_media/static/pinax/css/theme.css" rel="stylesheet" type="text/css">
+    <link href="/2013/site_media/static/css/site.css" rel="stylesheet" type="text/css" />
+    
+
+
+        
+            <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+            <!--[if lt IE 9]>
+                <script src="/2013/site_media/static/pinax/js/html5shiv.js"></script>
+            <![endif]-->
+        
+
+        
+    <meta property="og:image" content="https://us.pycon.org/2013/site_media/static/img/logo.png" />
+    <link href="/2013/site_media/static/img/favicon.ico" rel="shortcut icon" />
+    <script src="/2013/site_media/static/pinax/js/jquery.js"></script>
+    <link href="/2013/site_media/static/markitup/skins/simple/style.css" type="text/css" media="screen" rel="stylesheet" />
+<link href="/2013/site_media/static/markitup/sets/markdown-custom/style.css" type="text/css" media="screen" rel="stylesheet" />
+
+
+<script type="text/javascript" src="/2013/site_media/static/markitup/ajax_csrf.js"></script>
+<script type="text/javascript" src="/2013/site_media/static/markitup/jquery.markitup.js"></script>
+<script type="text/javascript" src="/2013/site_media/static/markitup/sets/markdown-custom/set.js"></script>
+
+
+    
+    <meta name="google-site-verification" content="fG_DG4G4eFtBcgIKht-bJKdirGhDa_51X6yeCS8daDs" />
+
+    </head>
+    <body class="" id="">
+
+        
+    <header class="main">
+        <div class="container">
+            <h3 class="logo"><a href="/2013/">PyCon 2013</a></h3>
+            <div class="tagline">Change the future</div>
+            <div class="account-bar">
+
+
+<div class="row">
+    <div class="pull-right">
+        
+            <a href="/2013/account/login/">Log in</a>
+            |
+            <a href="/2013/account/signup/">Sign up</a>
+        
+    </div>
+</div>
+</div>
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <div class="nav-collapse">
+                            
+                                
+
+<ul class="nav">
+    
+        <li class="dropdown ">
+            <a href="/2013/about/what-is-pycon/" class="dropdown-toggle" data-toggle="dropdown">
+                About
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2013/about/what-is-pycon/" >What is PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2013/about/code-of-conduct/" >Code of Conduct</a>
+        </li>
+    
+        <li >
+            <a href="/2013/about/diversity/" >Diversity</a>
+        </li>
+    
+        <li >
+            <a href="/2013/about/volunteers/" >Volunteers</a>
+        </li>
+    
+        <li >
+            <a href="/2013/about/press/" >Press</a>
+        </li>
+    
+        <li >
+            <a href="/2013/about/staff/" >Staff Information</a>
+        </li>
+    
+        <li >
+            <a href="/2013/sitemap/" >Sitemap</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Events
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2013/events/keynotes/" >Keynote Speakers</a>
+        </li>
+    
+        <li >
+            <a href="/2013/schedule/talks/list/" >Conference Talk List</a>
+        </li>
+    
+        <li >
+            <a href="/2013/schedule/talks/" >Conference Talk Schedule</a>
+        </li>
+    
+        <li >
+            <a href="/2013/schedule/tutorials/list/" >Tutorial List</a>
+        </li>
+    
+        <li >
+            <a href="/2013/schedule/tutorials/" >Tutorial Schedule</a>
+        </li>
+    
+        <li >
+            <a href="/2013/schedule/sponsor-tutorials/" >Sponsor Tutorials</a>
+        </li>
+    
+        <li >
+            <a href="/2013/schedule/posters/list/" >Poster Session</a>
+        </li>
+    
+        <li >
+            <a href="/2013/events/reception/" >Opening Reception</a>
+        </li>
+    
+        <li >
+            <a href="/2013/sponsors/jobs/" >Jobs Fair</a>
+        </li>
+    
+        <li >
+            <a href="/2013/sponsors/charityauction/" >Charity Auction</a>
+        </li>
+    
+        <li >
+            <a href="/2013/community/sprints/" >Development Sprints</a>
+        </li>
+    
+        <li >
+            <a href="/2013/community/openspaces/" >Open Spaces</a>
+        </li>
+    
+        <li >
+            <a href="/2013/events/langsummit/" >Python Language Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2013/events/edusummit/" >Education Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2013/events/letslearnpython/" >The Young Coder: Let&#39;s Learn Python</a>
+        </li>
+    
+        <li >
+            <a href="/2013/5k/" >PyCon 2013 5k Fun Run</a>
+        </li>
+    
+        <li >
+            <a href="/2013/events/pyladieslunch/" >PyLadies Lunch @ PyCon!</a>
+        </li>
+    
+        <li >
+            <a href="http://sv2013.pydata.org/" >PyData Silicon Valley</a>
+        </li>
+    
+        <li >
+            <a href="/2013/events/pgday/" >PyPgDay 2013</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="/2013/speaking/speakatpycon/" class="dropdown-toggle" data-toggle="dropdown">
+                Speaking
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2013/speaking/cfp/" >Call For Proposals</a>
+        </li>
+    
+        <li >
+            <a href="/2013/posters/" >Poster Session</a>
+        </li>
+    
+        <li >
+            <a href="/2013/posters/faq/" >Poster Session FAQ</a>
+        </li>
+    
+        <li >
+            <a href="/2013/speaking/proposal_advice/" >Proposal Advice</a>
+        </li>
+    
+        <li >
+            <a href="/2013/speaking/recording/" >Recording Release</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="/2013/sponsors/" class="dropdown-toggle" data-toggle="dropdown">
+                Sponsors
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2013/sponsors/" >PyCon Sponsors</a>
+        </li>
+    
+        <li >
+            <a href="/2013/sponsors/jobs/" >Jobs Fair</a>
+        </li>
+    
+        <li >
+            <a href="/2013/sponsors/prospectus/" >Prospectus</a>
+        </li>
+    
+        <li >
+            <a href="/2013/sponsors/whysponsor/" >Why sponsor PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2013/sponsors/apply/" >Apply to be a Sponsor</a>
+        </li>
+    
+        <li >
+            <a href="/2013/sponsors/exhibitfloor/" >Exhibit Floor Information</a>
+        </li>
+    
+        <li >
+            <a href="/2013/sponsors/charityauction/" >Charity Auction</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Venue
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2013/venue/" >Venue Details</a>
+        </li>
+    
+        <li >
+            <a href="/2013/venue/directions/" >Directions to the Venue</a>
+        </li>
+    
+        <li >
+            <a href="/2013/venue/traveling/" >Traveling to Santa Clara</a>
+        </li>
+    
+        <li >
+            <a href="/2013/venue/hotels/" >Hotels</a>
+        </li>
+    
+        <li >
+            <a href="/2013/venue/explore/" >Explore Santa Clara</a>
+        </li>
+    
+        <li >
+            <a href="/2013/venue/getting-around/" >Getting Around</a>
+        </li>
+    
+        <li >
+            <a href="/2013/venue/bars/" >Bars</a>
+        </li>
+    
+        <li >
+            <a href="/2013/venue/restaurants/" >Restaurants</a>
+        </li>
+    
+        <li >
+            <a href="/2013/venue/shopping/" >Shopping</a>
+        </li>
+    
+        <li >
+            <a href="/2013/venue/weather/" >Weather</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="http://pycon.blogspot.com/" >
+                News
+                
+            </a>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                PSF
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="http://www.python.org/psf/" >About</a>
+        </li>
+    
+        <li >
+            <a href="http://pyfound.blogspot.com/" >Blog</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="/2013/registration/" class="dropdown-toggle" data-toggle="dropdown">
+                Registration
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2013/registration/" >Registration Information</a>
+        </li>
+    
+        <li >
+            <a href="/2013/registration/register/" >Register for PyCon 2013</a>
+        </li>
+    
+        <li >
+            <a href="/2013/community/roomsharing/" >Room Sharing</a>
+        </li>
+    
+        <li >
+            <a href="/2013/assistance/" >Financial Aid</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+</ul>
+
+                            
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+
+        
+    <div class="container">
+        
+
+        
+            <div class="row">
+                <div class="span12">
+                    <div class="page-head">
+                        <h1></h1>
+                        
+
+<ul class="breadcrumb">
+	
+</ul>
+
+
+                    </div>
+                </div>
+                <div class="span9">
+                    <div class="box">
+                        <div class="box-content">
+                            
+    
+        <h4>
+            Saturday
+            4:15 p.m.&ndash;5 p.m.
+        </h4>
+    
+    <h2>All-Singing All-Dancing Python Bytecode</h2>
+
+    <h4>
+        
+            <a href="/2013/speaker/profile/158/">Larry Hastings</a>
+    </h4>
+
+    
+        <dl class="dl-horizontal">
+            <dt>Audience level:</dt>
+            <dd style="margin-bottom: 0;">Intermediate</dd>
+            <dt>Category:</dt>
+            <dd>Core Python (Language, Stdlib)</dd>
+        </dl>
+    
+
+    <h3>Description</h3>
+
+    <div class="description"><p>We all know Python is a bytecode interpreter, but what does that mean? Come find out! You'll learn what Python bytecodes are, what they do, and even how you can tinker with them. By the end of the talk you'll be an expert.  All code will be 100% Python 3--knowledge of C not required!</p></div>
+
+    <h3>Abstract</h3>
+
+    <div class="abstract"><p>The talk will examine Python bytecodes in depth--the families of bytecodes, how and why they are the way they are, and what some specific Python blocks look like when translated to bytecode.</p>
+<p>To facilitate the discussion, I'll unveil a Python bytecode disassembler, a matching Python bytecode assembler, and even a (very!) simple Python bytecode interpreter, all written in Python 3.3.  Talk will also demonstrate a simple FORTH written in a combination of Python and bytecode assembly.  All source code will be made available at the end of the talk under an open source license.</p></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="span3">
+                    
+                        
+                            <h2>Sponsors</h2>
+                            
+                            <div class="sponsor-list">
+                                
+                                    
+                                        <h3 style="margin-top: 3em;">Diamond</h3>
+                                        
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.heroku.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/heroku-logo-light-300x100.png.100x60_q85.png" alt="Heroku" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://google.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/Google_1.png.100x60_q85.png" alt="Google" />
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                
+                                    
+                                        <h3 style="margin-top: 3em;">Platinum</h3>
+                                        
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.redhat.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/RHlogo.jpg.100x60_q85.jpg" alt="RedHat" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.ebay.com/local">
+                                                    <img src="/2013/site_media/media/sponsor_files/local_horz_1.png.100x60_q85.png" alt="eBay Local" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://newrelic.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/NewRelic-logo-square-RGBHEX.png.100x60_q85.png" alt="New Relic" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.caktusgroup.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/caktus_logo.png.100x60_q85.png" alt="Caktus Consulting Group" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.eventbrite.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/eb_logo_transparent-bg_1.png.100x60_q85.png" alt="Eventbrite" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.newcars.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/newcarsLogo.png.100x60_q85.png" alt="NewCars.com/Cars.com" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.surveymonkey.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/SM_2C_Vert_Logo.png.100x60_q85.png" alt="SurveyMonkey" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://pytools.codeplex.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/MSFT_logo_Web.jpeg.100x60_q85.jpg" alt="Microsoft" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.facebook.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/FB_Full_Logo.png.100x60_q85.jpg" alt="Facebook" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.rackspace.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/Rackspace_Cloud_Company_Logo_clr_300x109.jpg.100x60_q85.jpg" alt="Rackspace " />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://openshift.redhat.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/OpenShift_Horizontal_RGB.png.100x60_q85.png" alt="OpenShift" />
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                
+                                    
+                                        <h3 style="margin-top: 3em;">Gold</h3>
+                                        
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.disneyanimation.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/WDAS_LOGO_FINAL_2.png.100x60_q85.png" alt="Disney Animation Studios" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://wingware.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/wingware-sponsor-160x80_1.png.100x60_q85.png" alt="Wingware" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.linode.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/Linode-Logo-2011-v2-pycon_04.png.100x60_q85.png" alt="Linode" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://help.plaidcloud.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/plaidcloud-c.gif.100x60_q85.png" alt="PlaidCloud" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://www.dotcloud.com/register.html?utm_source=PyCon%2B2013&amp;utm_medium=Logo&amp;utm_campaign=Sponsorship">
+                                                    <img src="/2013/site_media/media/sponsor_files/dotCloud_stackedLogo_color.png.100x60_q85.png" alt="dotCloud" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://revsys.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/revsys.png.100x60_q85.png" alt="Revolution Systems, LLC" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.webcubecms.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/webcube_logo.png.100x60_q85.png" alt="Web Cube " />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.stratasan.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/logo_2.png.100x60_q85.png" alt="Stratasan" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://www.twilio.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/logos_downloadable_logobrand.png.100x60_q85.png" alt="Twilio" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.jetbrains.com/pycharm/">
+                                                    <img src="/2013/site_media/media/sponsor_files/PyCharm_JetBrains.png.100x60_q85.png" alt="Jetbrains" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.leapfrogonline.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/leapfrog_online_logo.gif.100x60_q85.png" alt="Leapfrog Online" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://www.counsyl.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/counsyl_logo_fullColor.png.100x60_q85.png" alt="Counsyl" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://2ndquadrant.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/logo.png.100x60_q85.jpg" alt="2ndQuadrant" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://continuum.io/">
+                                                    <img src="/2013/site_media/media/sponsor_files/continuum_analytics_colour2.png.100x60_q85.png" alt="Continuum Analytics, Inc." />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.olark.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/olark-logo-3d-625px.png.100x60_q85.png" alt="Olark" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://projectevolution.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/pe-bird_1c_300.png.100x60_q85.png" alt="Project Evolution" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://cyaninc.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/Cyan_logo_rgb.png.100x60_q85.png" alt="Cyan" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.nebula.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/Nebula_Logo_Monotone_White-Transparent.png.100x60_q85.png" alt="Nebula" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://www.optimizely.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/optimizely_logo.jpeg.100x60_q85.jpg" alt="Optimizely" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://aws.amazon.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/AWS_Logo_Web_300px.png.100x60_q85.png" alt="Amazon Web Services" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.activestate.com/python">
+                                                    <img src="/2013/site_media/media/sponsor_files/as_logo_2012-1000px.png.100x60_q85.png" alt="ActiveState" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://sendgrid.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/logo_full_color_flat.png.100x60_q85.png" alt="SendGrid" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.spotify.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/spotify-wide.png.100x60_q85.png" alt="Spotify" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.canonical.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/CanonicalLogoNewBrand.jpg.100x60_q85.jpg" alt="Canonical" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.plivo.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/LOGO_DEFAULT_PNG.png.100x60_q85.png" alt="Plivo" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.fusionbox.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/fusionbox.png.100x60_q85.png" alt="Fusionbox" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://www.tddium.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/SolanoLogo_RGB_2c.png.100x60_q85.png" alt="Solano Labs" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.truecar.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/Truecar.png.100x60_q85.png" alt="TrueCar" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://integrated-informatics.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/iii_logo2.png.100x60_q85.png" alt="Integrated Informatics Inc." />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://twitter.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/twitter-bird-light-bgs.png.100x60_q85.png" alt="Twitter, Inc." />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.hp.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/HP_Blue_RGB_150_MX2.png.100x60_q85.png" alt="Hewlett Packard " />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.enthought.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/et2_1.png.100x60_q85.png" alt="Enthought, Inc." />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://saucelabs.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/SauceLabs_Logo_Art2.jpg.100x60_q85.jpg" alt="Sauce Labs" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://lincolnloop.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/logo-proper.png.100x60_q85.png" alt="Lincoln Loop" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://www.dropbox.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/logo160x80_copied_from_Jon.png.100x60_q85.png" alt="Dropbox" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.splunk.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/logo_splunk_white.png.100x60_q85.png" alt="Splunk" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://saltstack.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/whiteABOVEweb-01.png.100x60_q85.png" alt="Salt Stack, Inc." />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://www.edx.org/">
+                                                    <img src="/2013/site_media/media/sponsor_files/edX_logo1.png.100x60_q85.jpg" alt="edX" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://wirelessgeneration.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/WG_Amplify-72ppi.png.png.100x60_q85.png" alt="Wireless Generation" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.datadog.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/datadog-logo-purple-trans.png.100x60_q85.png" alt="Datadog" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://www.divio.ch/">
+                                                    <img src="/2013/site_media/media/sponsor_files/divio-logo-black-RE_transparent.png.100x60_q85.png" alt="Divio" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.postmaster.io/">
+                                                    <img src="/2013/site_media/media/sponsor_files/postmaster_larger.png.100x60_q85.png" alt="Postmaster Inc." />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://hearsaysocial.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/Hearsay-Social-Logo_2.png.100x60_q85.png" alt="Hearsay Social" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.ccpgames.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/ccp-stor.jpg.100x60_q85.jpg" alt="CCP" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.quantcast.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/logo.jpg.100x60_q85.jpg" alt="Quantcast" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://guidebook.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/guidebook-logo-blue.png.100x60_q85.png" alt="Guidebook" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://loggly.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/hoover_footer.png.100x60_q85.png" alt="Loggly" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://evite.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/04b7c5231f7b6212eb35c77c19e42389.png.100x60_q85.png" alt="Evite Inc." />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://bitbucket.org/?utm_source=pycon-sponsors&amp;utm_medium=banner&amp;utm_campaign=pycon-2013">
+                                                    <img src="/2013/site_media/media/sponsor_files/atlassian_darkbluetext_large.png.100x60_q85.jpg" alt="Atlassian" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.oracle.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/oracle.png.100x60_q85.jpg" alt="Oracle" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.stormpath.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/stormpath_newblue_logo.png.100x60_q85.png" alt="Stormpath" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.fastly.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/fastly_logo_hd_1.png.100x60_q85.jpg" alt="Fastly " />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.metacloud.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/metacloud-swirl-final-900x300.png.100x60_q85.png" alt="Metacloud" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://mongolab.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/MongoLab-Logo-OnWhite-RGB-transparent-384x100_1.png.100x60_q85.png" alt="MongoLab" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.openstack.org/">
+                                                    <img src="/2013/site_media/media/sponsor_files/openstack-cloud-software-vertical-small.png.100x60_q85.png" alt="OpenStack Foundation" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://disqus.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/disqusbluelogo.jpg.100x60_q85.png" alt="DISQUS" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://careers.stackoverflow.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/careers-logo.png.100x60_q85.png" alt="Stack Overflow" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://pluralsight.com/training">
+                                                    <img src="/2013/site_media/media/sponsor_files/ps_color_logo_500x109.png.100x60_q85.png" alt="Pluralsight" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.acadian-asset.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/Logo-Blue.png.100x60_q85.png" alt="Acadian Asset Management LLC" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.playhaven.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/playhaven-vertical_black.png.100x60_q85.png" alt="PlayHaven" />
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                
+                                    
+                                        <h3 style="margin-top: 3em;">Silver</h3>
+                                        
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.python-academy.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/pya_logo_cmyk.png.100x60_q85.png" alt="Python Academy" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.thumbtack.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/thumbtack-logo.png.100x60_q85.png" alt="Thumbtack" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.mailgun.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/mailgun_900_1.png.100x60_q85.png" alt="Mailgun" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://labs.aweber.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/logo-flat-blue-aweber.png.100x60_q85.png" alt="AWeber" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.net-ng.com/en">
+                                                    <img src="/2013/site_media/media/sponsor_files/net-ng.png.100x60_q85.png" alt="Net-ng" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.devsar.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/devsAr.jpeg.100x60_q85.png" alt="devsAr" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://dreamhost.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/dreamhost_logo-rgb-trans-no_tag-546x126.png.100x60_q85.png" alt="DreamHost" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.meetme.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/meet_me_logo.png.100x60_q85.png" alt="MeetMe" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.americangreetings.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/AG.png.100x60_q85.jpg" alt="American Greetings" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://gocept.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/gocept.png.100x60_q85.png" alt="gocept" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://AllTreatment.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/AllTreatmentLogo.png.100x60_q85.png" alt="AllTreatment.com" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.freshbooks.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/LOGO_CA_BigTag-large.png.100x60_q85.jpg" alt="FreshBooks" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.zeomega.com/careers">
+                                                    <img src="/2013/site_media/media/sponsor_files/zeomega.png.100x60_q85.png" alt="ZeOmega" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://www.webfilings.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/WebFilings_logotm_cmyk.png.100x60_q85.png" alt="WebFilings" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://swiftstack.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/swiftstack_large.png.100x60_q85.jpg" alt="SwiftStack" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://lucasfilm.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/lucasfilm_logo.gif.100x60_q85.jpg" alt="Lucasfilm" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.10gen.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/10gen_Logo_Blue_CMYK_UncoatedStock_new.png.100x60_q85.png" alt="10gen" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.wisertogether.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/wisertogether-logo-160x80.png.100x60_q85.png" alt="WiserTogether, Inc." />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.pistoncloud.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/piston_cloud_logo.png.100x60_q85.png" alt="Piston Cloud Computing, Inc." />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://netflix.com/jobs">
+                                                    <img src="/2013/site_media/media/sponsor_files/Netflix_Web_Logo.png.100x60_q85.jpg" alt="Netflix" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://toastdriven.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/toastdriven_sponsorship_logo.png.100x60_q85.png" alt="Toast Driven" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://finiteloopsoftware.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/FLS_Logo_Tall_Large.png.100x60_q85.png" alt="Finite Loop Software" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.coxmediagroup.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/cmg_logo.png.100x60_q85.png" alt="Cox Media Group Digital" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://lexmachina.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/PixalPerfectLogo.png.100x60_q85.png" alt="Lex Machina" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.esri.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/esri2.png.100x60_q85.png" alt="Esri" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://accense.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/atlogo_t.png.100x60_q85.png" alt="Accense Technology, Inc." />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.reddit.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/reddit-logo.png.100x60_q85.png" alt="reddit" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://www.box.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/box_logo.png.100x60_q85.png" alt="Box" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://tellapart.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/tellapart_clear_logo.png.100x60_q85.png" alt="TellApart" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.stormdb.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/stormdb_transparent_logo.png.100x60_q85.png" alt="StormDB" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://crocodoc.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/Crocodoc_logo_transparent.png.100x60_q85.png" alt="Crocodoc" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.mozilla.org/">
+                                                    <img src="/2013/site_media/media/sponsor_files/logo-wordmark-mozilla.png.100x60_q85.png" alt="Mozilla" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.adroll.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/Logo_3.png.100x60_q85.png" alt="AdRoll" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://oreilly.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/c83b434da751e6822fc0219ab1224bac.png.100x60_q85.png" alt="O&#39;Reilly Media" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.dabeaz.com/chicago/index.html">
+                                                    <img src="/2013/site_media/media/sponsor_files/DabeazLogo.png.100x60_q85.png" alt="Dabeaz, LLC" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.hulu.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/hulu_L_RGB.png.100x60_q85.png" alt="Hulu" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://github.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/GitHub_SiteLogo.png.100x60_q85.png" alt="GitHub" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.digitalreasoning.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/DR_Logo_BLK_72dpi_PYCON.png.100x60_q85.png" alt="Digital Reasoning" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.mutualmobile.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/horizontal.png.100x60_q85.png" alt="Mutual Mobile" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://monetate.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/MonetateLogo_BlueBlack.png.100x60_q85.png" alt="Monetate" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.consumeraffairs.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/CA_logo_blue_CMYK.png.100x60_q85.png" alt="ConsumerAffairs.com" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.mirantis.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/RasterMirantisLogo_HiRes_Standard.png.100x60_q85.jpg" alt="Mirantis" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.stxnext.pl/">
+                                                    <img src="/2013/site_media/media/sponsor_files/stx_fin_rgb.jpg.100x60_q85.jpg" alt="STX Next Python Experts" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.telesign.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/TeleSign_Logo.jpg.100x60_q85.jpg" alt="TeleSign" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://www.filepicker.io/">
+                                                    <img src="/2013/site_media/media/sponsor_files/filepicker_big2.png.100x60_q85.png" alt="Filepicker.io" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://contextual.io/">
+                                                    <img src="/2013/site_media/media/sponsor_files/Contextual_logo_final_1.png.100x60_q85.png" alt="Contextual.io" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://bitdeli.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/bitdeli_angellist_logo.png.100x60_q85.jpg" alt="Bitdeli" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://projectgado.org/">
+                                                    <img src="/2013/site_media/media/sponsor_files/Gado2.png.100x60_q85.jpg" alt="Project Gado" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.decisiondesk.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/decisiondesk_icon.png.100x60_q85.png" alt="DecisionDesk" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://balancedpayments.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/Balanced_logo.png.100x60_q85.png" alt="Balanced Payments" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://cloudant.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/CloudantLogo_1.png.100x60_q85.png" alt="Cloudant" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.tryolabs.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/tryolabs_brand_-_text_-_medium_1.png.100x60_q85.png" alt="Tryolabs" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://cpanel.net/">
+                                                    <img src="/2013/site_media/media/sponsor_files/09-cpanel_company_logo.png.100x60_q85.png" alt="cPanel Inc." />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://basho.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/basho-logo.png.100x60_q85.png" alt="Basho Technologies" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.appneta.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/AppNeta-NoTag-Color_1.png.100x60_q85.png" alt="AppNeta" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://sellerengine.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/sellerengine-logo-cmyk.jpg.100x60_q85.jpg" alt="SellerEngine" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.demonware.net/">
+                                                    <img src="/2013/site_media/media/sponsor_files/Demonware_logo_300dpi.png.100x60_q85.png" alt="DemonWare" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.stickermule.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/sticker-mule-logo-thumb-3.png.100x60_q85.png" alt="Sticker Mule" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.researchaffiliates.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/RA_Logo_RGB_Hi-Res_1.jpg.100x60_q85.jpg" alt="Research Affiliates" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.sparkfun.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/SF-Logo-2C-PC-.jpg.100x60_q85.jpg" alt="Sparkfun Electronics" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.ravellosystems.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/Ravello_Logo_large.png.100x60_q85.png" alt="Ravello Systems" />
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                
+                                    
+                                        <h3 style="margin-top: 3em;">Patron</h3>
+                                        
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.ooshirts.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/ooshirts.png.100x60_q85.png" alt="ooShirts" />
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                
+                                    
+                                        <h3 style="margin-top: 3em;">OSS / Community</h3>
+                                        
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.raspberrypi.org/">
+                                                    <img src="/2013/site_media/media/sponsor_files/Raspi_PGB001_2.png.100x60_q85.png" alt="RaspberryPi" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.texastribune.org/">
+                                                    <img src="/2013/site_media/media/sponsor_files/TexasTribuneLogo_color_compact.png.100x60_q85.png" alt="Texas Tribune" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://plone.org/">
+                                                    <img src="/2013/site_media/media/sponsor_files/plone_150_80.png.100x60_q85.png" alt="Plone Foundation" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.pylonsproject.org/">
+                                                    <img src="/2013/site_media/media/sponsor_files/pylons-small.png.100x60_q85.png" alt="Pyramid Framework" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.codechix.org/">
+                                                    <img src="/2013/site_media/media/sponsor_files/codechix-400x320.png.100x60_q85.png" alt="CodeChix" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://sourceforge.net/">
+                                                    <img src="/2013/site_media/media/sponsor_files/sf-logo.png.100x60_q85.png" alt="SourceForge Allura" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://pyladies.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/logo-magenta-1499x638.png.100x60_q85.png" alt="PyLadies" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://ipython.org/">
+                                                    <img src="/2013/site_media/media/sponsor_files/IPythonLogo.png.100x60_q85.png" alt="IPython Project" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://openhatch.org/">
+                                                    <img src="/2013/site_media/media/sponsor_files/ab5cfdebb56f825d88dda676b689cb2b.png.100x60_q85.png" alt="OpenHatch" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://ladycoders.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/ladycoders_mens_shield_shirt_pocket.png.100x60_q85.png" alt="LadyCoders" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://associacao.python.org.br/">
+                                                    <img src="/2013/site_media/media/sponsor_files/apyb.png.100x60_q85.png" alt="Python Brasil" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://NumFOCUS.org/">
+                                                    <img src="/2013/site_media/media/sponsor_files/NF-Large.png.100x60_q85.png" alt="NumFOCUS" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.meetup.com/Women-Who-Code-SF/">
+                                                    <img src="/2013/site_media/media/sponsor_files/women_who_code_logo.png.100x60_q85.png" alt="Women Who Code" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="https://www.gittip.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/gittip-logo.png.100x60_q85.png" alt="Gittip" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.postgresql.org/">
+                                                    <img src="/2013/site_media/media/sponsor_files/elephant2.png.100x60_q85.png" alt="PostgreSQL Project" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.adafruit.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/ada_logo.gif.100x60_q85.jpg" alt="Adafruit Industries" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.pcduino.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/pcduino_logo_1.gif.100x60_q85.png" alt="pcDuino" />
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                
+                                    
+                                        <h3 style="margin-top: 3em;">Media</h3>
+                                        
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.pythonweekly.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/python-weekly-logo.png.100x60_q85.png" alt="Python Weekly" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://pycoders.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/Final.png.100x60_q85.png" alt="Pycoder&#39;s Weekly" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.computer.org/portal/web/computingnow/cise">
+                                                    <img src="/2013/site_media/media/sponsor_files/cise300.gif.100x60_q85.png" alt="Computing in Science and Engineering" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.linux-magazine.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/LinuxIntpro_Transparent.png.100x60_q85.png" alt="Linux Pro Magazine" />
+                                                </a>
+                                            </div>
+                                        
+                                            <div style="margin: 10px 0;">
+                                                <a href="http://www.admin-magazine.com/">
+                                                    <img src="/2013/site_media/media/sponsor_files/admin_logo_Transparent.png.100x60_q85.png" alt="ADMIN Magazine" />
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                
+                            </div>
+                        
+                    
+                </div>
+            </div>
+        
+        <hr />
+        <footer>
+            
+                <p>
+                    PyCon US 2013 is a production of the <a href="http://python.org/psf/">Python Software Foundation</a>.
+                <br />
+                    Site built by <a href="http://eldarion.com">Eldarion</a> using <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Pinax Symposion</a>. Hosting provided by <a href="http://gondor.io">Gondor</a>.
+                <br />
+                    Questions? Comments? Contact <a href="mailto:pycon-organizers@python.org">pycon-organizers@python.org</a>
+                </p>
+            
+        </footer>
+    </div>
+
+
+        
+    <script src="/2013/site_media/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/2013/site_media/static/pinax/js/theme.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $(".required-field").prepend("<span style='color:red;'>* </div>");
+        });
+    </script>
+    
+
+
+        
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2401894-29']);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_trackPageLoadTime']);
+    // _gaq.push(['_setCustomVar', 1, 'Authentication Type', ut, 2]);
+    
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+    
+
+    </body>
+
+<!-- Mirrored from us.pycon.org/2013/schedule/presentation/47/ by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 19 Jun 2013 23:09:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+</html>

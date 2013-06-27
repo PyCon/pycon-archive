@@ -1,0 +1,200 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en-us" lang="en-us">
+    
+<!-- Mirrored from us.pycon.org/2011/schedule/presentations/197/ by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 19 Jun 2013 18:30:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>PyCon US 2011</title>
+        <!--[if IE]><style>
+            div {
+                zoom: 1; /* trigger hasLayout */
+            }
+        </style><![endif]-->
+        <link rel="stylesheet" href="/2011/site_media/static/css/reset.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/css/960.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/css/base.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/css/account.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/uni_form/uni-form.css" />
+        
+        
+    <link rel="stylesheet" href="/2011/site_media/static/css/pycon.css" />
+    <link rel="stylesheet" href="/2011/site_media/static/css/tabs.css" />
+    <link rel="alternate" type="application/atom+xml" href="/2011/feed/general/" title="blog feed"/>
+    
+    <style>
+        a.unbookmark {
+            text-decoration: none;
+            padding-left: 20px;
+            background: url(/2011/site_media/static/img/star.png) no-repeat left;
+        }
+        a.bookmark {
+            text-decoration: none;
+            padding-left: 20px;
+            background: url(/2011/site_media/static/img/star_unselected.png) no-repeat left;
+        }
+        div.slot {
+            font-weight: bold;
+        }
+    </style>
+
+
+    </head>
+
+    <body class="full schedule">
+        
+
+        <div id="tabhead">
+            
+    <div id="heading">
+        <img src="/2011/site_media/static/img/pycon_logo.gif" alt="pycon logo" />
+        <h1><a href="/2011/">PyCon 2011 Atlanta</a></h1>
+        <h2>March 9th&ndash;17th</h2>
+    </div>
+
+            
+
+<div class="account-bar">
+
+    <a href="/2011/account/login/">Log in</a> or <a href="/2011/account/signup/">Sign Up</a>
+
+</div>
+<div class="clear"></div>
+
+            <div id="nav">
+                
+<ul>
+    <li class="about_tab"><a href="/2011/about/">About</a></li>
+    <li class="schedule_tab"><a href="/2011/schedule/">Schedule</a></li>
+    <li class="speaker_tab"><a href="/2011/speaker/">Speakers</a></li>
+    
+    <li class="sprints_tab"><a href="/2011/sprints/">Sprints</a></li>
+    <li class="volunteer_tab"><a href="/2011/volunteer/">Volunteer</a></li>
+    <li class="tickets_tab"><a href="/2011/tickets/">Tickets</a></li>
+    <li class="venue_tab"><a href="/2011/venue/">Venue</a></li>
+    <li class="sponsors_tab"><a href="/2011/sponsors/">Sponsors</a></li>
+    <li class="blog_tab"><a href="/2011/blog/">Blog</a></li>
+</ul>
+
+            </div>
+        </div>
+
+        
+        <div id="body">
+            <div id="wrapper">
+                <div id="main">
+                    <div id="subnav" class="clearfix"><div class="clearfix">
+    <a href="/2011/schedule/tutorials/">Tutorial Schedule</a>
+    |
+    <a href="/2011/schedule/">Conference Schedule</a>
+    |
+    <a href="/2011/schedule/lists/talks/">List of Accepted Talks and Panels</a>
+    |
+    <a href="/2011/schedule/lists/posters/">List of Accepted Posters</a>
+    |
+    <a href="/2011/openspaces/index/">OpenSpaces</a>
+</div></div>
+                    
+
+                    
+    
+    <h1>TRAPPIST : A toolkit for comparative analysis and visualization of genomic regions</h1>
+    
+    
+        <p><a href="/2011/account/login/?next=/2011/schedule/presentations/197/">log in</a> to bookmark this presentaton</p>
+    
+    
+    <div class="badges">
+        
+        
+        <div class="clear"></div>
+    </div>
+    
+    <div class="presentation_types">Experienced / Poster</div>
+    
+    <div class="speakers">
+        
+        <a href="/2011/speaker/profile/195/">Dr. Geraldine A. Van der Auwera</a>
+        
+    </div>
+    
+    
+    
+    <div class="description">TRAPPIST is a BioPython-based package that performs detailed comparisons of related genomic regions and produces publication-quality vector PDF figures for clear visualization of analysis results. </div>
+    
+    <h3>Abstract</h3>
+    
+    <div class="abstract"><p>Recent developments in genome sequencing technology have led to an outpouring of raw sequence data, which represents both a great opportunity and a daunting challenge as biologists struggle to make sense of this enormous amount of information. There are standard tools available to process genomic data (for tools in Python, look up the BioPython Project at <a href="http://biopython.org/">http://biopython.org/</a>) but there is an unfulfilled need for applications and pipelines to address specific biological questions. </p>
+<p>My work on the genomic evolution and functional modularity of large bacterial plasmids (extrachromosomal DNA molecules which usually confer genetic properties that are non-essential but enhance survival of the host cell, such as antibiotic resistance and virulence) has led me to develop a set of tools (TRAPPIST) that are tailored for the study of plasmids but can in fact be used for any type of genomic region.</p>
+<p>TRAPPIST is a Python package that performs detailed comparisons of related genomic regions and produces publication-quality vector PDF figures for clear visualization of analysis results. It is built as a series of functional modules that can be run separately or in pipelines. Several pre-set pipeline scripts are provided for automated start-to-finish processing of tasks that combine analysis and visualization, such as producing figures of multiple alignments with detailed similarity heat maps, identifying conserved genetic backbones or reconstructing the differential phylogeny of mosaic genome regions. Sequence handling, comparisons and alignments are done using BioPython and external calls to standard tools such as ClustalW, MUSCLE and/or BLAST using their respective BioPython wrappers. Figure generation is done using the ReportLab Toolkit. </p>
+<p>This poster is aimed at bionformaticists who are interested in genomic analysis and visualization as well as Python developers who are interested in developing packages for scientific research. I'm looking for discussion, potential users and development collaboration opportunities.</p>
+<p>Poster content / discussion points - context: genomic research - overview of TRAPPIST features: 	- versatility of alignment functions 	- improved visualization of alignment data 	- identification of genetic backbones 	- handling differential phylogeny - assessment of current performance - future developments</p>
+</div>
+
+
+                </div>
+                <div id="right">
+                    
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        
+
+        <div id="footer"><div id="footer-content">
+    Site built by <a href="http://eldarion.com/"><b>Eldarion</b></a> using
+    <a href="http://djangoproject.com/"><b>Django</b></a> and
+    <a href="http://pinaxproject.com/"><b>Pinax</b></a>.
+</div></div>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="/2011/site_media/static/js/base.js" type="text/javascript"></script>
+        <script src="/2011/site_media/static/uni_form/uni-form.jquery.js" type="text/javascript"></script>
+        
+            
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a.bookmark").live("click", function() {
+                aElem = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: this.href,
+                    data: "action=add;csrfmiddlewaretoken=4def7bf91c1248521b986424ea5596db",
+                    success: function() {
+                        aElem.text("unbookmark");
+                        aElem.removeClass("bookmark");
+                        aElem.addClass("unbookmark");
+                    },
+                    error: function(xhr, options, error) {
+                        alert(xhr.status);
+                    }
+                });
+                return false;
+            });
+            $("a.unbookmark").live("click", function() {
+                aElem = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: this.href,
+                    data: "action=delete;csrfmiddlewaretoken=4def7bf91c1248521b986424ea5596db",
+                    success: function(response) {
+                        aElem.text("bookmark");
+                        aElem.removeClass("unbookmark");
+                        aElem.addClass("bookmark");
+                    },
+                    error: function(xhr, options, error) {
+                        alert(xhr.status);
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+
+        
+    </body>
+
+<!-- Mirrored from us.pycon.org/2011/schedule/presentations/197/ by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 19 Jun 2013 18:30:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+</html>

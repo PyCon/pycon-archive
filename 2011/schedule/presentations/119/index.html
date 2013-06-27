@@ -1,0 +1,224 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en-us" lang="en-us">
+    
+<!-- Mirrored from us.pycon.org/2011/schedule/presentations/119/ by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 19 Jun 2013 18:30:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>PyCon US 2011</title>
+        <!--[if IE]><style>
+            div {
+                zoom: 1; /* trigger hasLayout */
+            }
+        </style><![endif]-->
+        <link rel="stylesheet" href="/2011/site_media/static/css/reset.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/css/960.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/css/base.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/css/account.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/uni_form/uni-form.css" />
+        
+        
+    <link rel="stylesheet" href="/2011/site_media/static/css/pycon.css" />
+    <link rel="stylesheet" href="/2011/site_media/static/css/tabs.css" />
+    <link rel="alternate" type="application/atom+xml" href="/2011/feed/general/" title="blog feed"/>
+    
+    <style>
+        a.unbookmark {
+            text-decoration: none;
+            padding-left: 20px;
+            background: url(/2011/site_media/static/img/star.png) no-repeat left;
+        }
+        a.bookmark {
+            text-decoration: none;
+            padding-left: 20px;
+            background: url(/2011/site_media/static/img/star_unselected.png) no-repeat left;
+        }
+        div.slot {
+            font-weight: bold;
+        }
+    </style>
+
+
+    </head>
+
+    <body class="full schedule">
+        
+
+        <div id="tabhead">
+            
+    <div id="heading">
+        <img src="/2011/site_media/static/img/pycon_logo.gif" alt="pycon logo" />
+        <h1><a href="/2011/">PyCon 2011 Atlanta</a></h1>
+        <h2>March 9th&ndash;17th</h2>
+    </div>
+
+            
+
+<div class="account-bar">
+
+    <a href="/2011/account/login/">Log in</a> or <a href="/2011/account/signup/">Sign Up</a>
+
+</div>
+<div class="clear"></div>
+
+            <div id="nav">
+                
+<ul>
+    <li class="about_tab"><a href="/2011/about/">About</a></li>
+    <li class="schedule_tab"><a href="/2011/schedule/">Schedule</a></li>
+    <li class="speaker_tab"><a href="/2011/speaker/">Speakers</a></li>
+    
+    <li class="sprints_tab"><a href="/2011/sprints/">Sprints</a></li>
+    <li class="volunteer_tab"><a href="/2011/volunteer/">Volunteer</a></li>
+    <li class="tickets_tab"><a href="/2011/tickets/">Tickets</a></li>
+    <li class="venue_tab"><a href="/2011/venue/">Venue</a></li>
+    <li class="sponsors_tab"><a href="/2011/sponsors/">Sponsors</a></li>
+    <li class="blog_tab"><a href="/2011/blog/">Blog</a></li>
+</ul>
+
+            </div>
+        </div>
+
+        
+        <div id="body">
+            <div id="wrapper">
+                <div id="main">
+                    <div id="subnav" class="clearfix"><div class="clearfix">
+    <a href="/2011/schedule/tutorials/">Tutorial Schedule</a>
+    |
+    <a href="/2011/schedule/">Conference Schedule</a>
+    |
+    <a href="/2011/schedule/lists/talks/">List of Accepted Talks and Panels</a>
+    |
+    <a href="/2011/schedule/lists/posters/">List of Accepted Posters</a>
+    |
+    <a href="/2011/openspaces/index/">OpenSpaces</a>
+</div></div>
+                    
+
+                    
+    
+    <h1>A Technical Anatomy of SPM.Python, a Scalable, Parallel Version of Python</h1>
+    
+    
+        <p><a href="/2011/account/login/?next=/2011/schedule/presentations/119/">log in</a> to bookmark this presentaton</p>
+    
+    
+    <div class="badges">
+        
+        
+        <div class="clear"></div>
+    </div>
+    
+    <div class="presentation_types">Experienced / Poster</div>
+    
+    <div class="speakers">
+        
+        <a href="/2011/speaker/profile/77/">Minesh B. Amin</a>
+        
+    </div>
+    
+    
+    
+    <div class="description">In this poster session, we shall review how SPM.Python,
+a solution recognized as a &quot;Disruptive Technology&quot; by the 
+Super Computing Conference (2010), achieves scalability 
+by describing solutions to three formerly open problems.
+</div>
+    
+    <h3>Abstract</h3>
+    
+    <div class="abstract"><p>Spm.Python, a commercial product, extends Python with a programming paradigm for solving parallel problems and strives to do so in a pythonic (natural) way. This is achieved by augmenting the serial Python language with parallel concepts like parallel task managers and communication primitives.</p>
+<p>In this poster session, we examine the what, why and how this augmentation was done. The context for and solutions to three formerly open technical problems will be discussed, including:</p>
+<ul>
+<li>extensions to the general exception handling infrastructure across  many compute resources,</li>
+</ul>
+<ul>
+<li>design of parallel constructs in a way so that serial components are delineated from parallel components, and</li>
+</ul>
+<ul>
+<li>declaration and definition of parallel closures, the building blocks of all parallel constructs.</li>
+</ul>
+<h4>Parallel exception infrastructure</h4>
+<p>To quote Wikipedia, <i>"exception handling is a construct designed     to handle the occurrence of exceptions, special conditions     that change the normal flow of program execution"</i>.</p>
+<p>As such, the ability to throw and catch exceptions forms the bedrock of the serial Python language. We will review     details of how we extended the basic serial exception     infrastructure to account for exceptions that may occur across     many compute resources.</p>
+<p>    Our solution is predicated on the notion that parallel managers     must take ownership of how serial exceptions are handled across     all resources under their control. In other words, unlike in the     serial world, the parallel exception handling infrastructure must     be customized for each parallel manager.</p>
+<h4>Decoupling serial components from parallel  components</h4>
+<p>One of the main tenants of the serial software eco-system is the     asymptotic parity between the serial compute resources available to the     developers and the end-users, which makes possible the easy     reporting, reproduction, and resolution of bugs.</p>
+<p>    With parallel software, this most fundamental of tenants is     violated; software engineers need to be able to produce high-quality     parallel software in what is an essentially serial environment,     yet be able to deploy that software in a parallel environment.</p>
+<p>    We will describe how SPM.Python addresses this dichotomy by offering easy to relate to     parallel primitives. These primitives permit the prototyping,     validation, and testing of parallel ideas in the essentially     serial development environment, and yet deliver performance     when exercised in the parallel environment.</p>
+<h4>Declaring and defining parallel closures</h4>
+<p>In SPM.Python, parallel closures are the building blocks of all     parallel constructs, and provide the sole means by which one     may express how serial components interact with parallel     components. The interactions may take place in one of two contexts (a) when     creating, submitting, and evaluating tasks, and (b) when creating     and processing messages.</p>
+<p>    However, any <i>usage</i> of a parallel closure within <i>any resource</i> is     predicated on a successful, safe, asynchronous and race-free <i>declaration and     definition across many compute resources</i>.</p>
+<p>    We shall describe how SPM.Python solves this fundamental problem     by augmenting the traditional concept of serial sequence points.</p>
+<h3>Conclusion</h3>
+<p>During the development of SPM.Python, several fundamental problems      were solved in order to deliver a scalable parallel version of the serial    Python language. At the poster session, the audience will possess    an understanding of the technical challenges involved and how they    were addressed.</p>
+</div>
+
+
+                </div>
+                <div id="right">
+                    
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        
+
+        <div id="footer"><div id="footer-content">
+    Site built by <a href="http://eldarion.com/"><b>Eldarion</b></a> using
+    <a href="http://djangoproject.com/"><b>Django</b></a> and
+    <a href="http://pinaxproject.com/"><b>Pinax</b></a>.
+</div></div>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="/2011/site_media/static/js/base.js" type="text/javascript"></script>
+        <script src="/2011/site_media/static/uni_form/uni-form.jquery.js" type="text/javascript"></script>
+        
+            
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a.bookmark").live("click", function() {
+                aElem = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: this.href,
+                    data: "action=add;csrfmiddlewaretoken=4def7bf91c1248521b986424ea5596db",
+                    success: function() {
+                        aElem.text("unbookmark");
+                        aElem.removeClass("bookmark");
+                        aElem.addClass("unbookmark");
+                    },
+                    error: function(xhr, options, error) {
+                        alert(xhr.status);
+                    }
+                });
+                return false;
+            });
+            $("a.unbookmark").live("click", function() {
+                aElem = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: this.href,
+                    data: "action=delete;csrfmiddlewaretoken=4def7bf91c1248521b986424ea5596db",
+                    success: function(response) {
+                        aElem.text("bookmark");
+                        aElem.removeClass("unbookmark");
+                        aElem.addClass("bookmark");
+                    },
+                    error: function(xhr, options, error) {
+                        alert(xhr.status);
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+
+        
+    </body>
+
+<!-- Mirrored from us.pycon.org/2011/schedule/presentations/119/ by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 19 Jun 2013 18:30:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+</html>

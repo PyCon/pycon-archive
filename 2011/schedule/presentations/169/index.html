@@ -1,0 +1,215 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en-us" lang="en-us">
+    
+<!-- Mirrored from us.pycon.org/2011/schedule/presentations/169/ by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 19 Jun 2013 18:26:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>PyCon US 2011</title>
+        <!--[if IE]><style>
+            div {
+                zoom: 1; /* trigger hasLayout */
+            }
+        </style><![endif]-->
+        <link rel="stylesheet" href="/2011/site_media/static/css/reset.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/css/960.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/css/base.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/css/account.css" />
+        <link rel="stylesheet" href="/2011/site_media/static/uni_form/uni-form.css" />
+        
+        
+    <link rel="stylesheet" href="/2011/site_media/static/css/pycon.css" />
+    <link rel="stylesheet" href="/2011/site_media/static/css/tabs.css" />
+    <link rel="alternate" type="application/atom+xml" href="/2011/feed/general/" title="blog feed"/>
+    
+    <style>
+        a.unbookmark {
+            text-decoration: none;
+            padding-left: 20px;
+            background: url(/2011/site_media/static/img/star.png) no-repeat left;
+        }
+        a.bookmark {
+            text-decoration: none;
+            padding-left: 20px;
+            background: url(/2011/site_media/static/img/star_unselected.png) no-repeat left;
+        }
+        div.slot {
+            font-weight: bold;
+        }
+    </style>
+
+
+    </head>
+
+    <body class="full schedule">
+        
+
+        <div id="tabhead">
+            
+    <div id="heading">
+        <img src="/2011/site_media/static/img/pycon_logo.gif" alt="pycon logo" />
+        <h1><a href="/2011/">PyCon 2011 Atlanta</a></h1>
+        <h2>March 9th&ndash;17th</h2>
+    </div>
+
+            
+
+<div class="account-bar">
+
+    <a href="/2011/account/login/">Log in</a> or <a href="/2011/account/signup/">Sign Up</a>
+
+</div>
+<div class="clear"></div>
+
+            <div id="nav">
+                
+<ul>
+    <li class="about_tab"><a href="/2011/about/">About</a></li>
+    <li class="schedule_tab"><a href="/2011/schedule/">Schedule</a></li>
+    <li class="speaker_tab"><a href="/2011/speaker/">Speakers</a></li>
+    
+    <li class="sprints_tab"><a href="/2011/sprints/">Sprints</a></li>
+    <li class="volunteer_tab"><a href="/2011/volunteer/">Volunteer</a></li>
+    <li class="tickets_tab"><a href="/2011/tickets/">Tickets</a></li>
+    <li class="venue_tab"><a href="/2011/venue/">Venue</a></li>
+    <li class="sponsors_tab"><a href="/2011/sponsors/">Sponsors</a></li>
+    <li class="blog_tab"><a href="/2011/blog/">Blog</a></li>
+</ul>
+
+            </div>
+        </div>
+
+        
+        <div id="body">
+            <div id="wrapper">
+                <div id="main">
+                    <div id="subnav" class="clearfix"><div class="clearfix">
+    <a href="/2011/schedule/tutorials/">Tutorial Schedule</a>
+    |
+    <a href="/2011/schedule/">Conference Schedule</a>
+    |
+    <a href="/2011/schedule/lists/talks/">List of Accepted Talks and Panels</a>
+    |
+    <a href="/2011/schedule/lists/posters/">List of Accepted Posters</a>
+    |
+    <a href="/2011/openspaces/index/">OpenSpaces</a>
+</div></div>
+                    
+
+                    
+    
+    <h1>How to kill a patent with Python</h1>
+    
+    
+        <p><a href="/2011/account/login/?next=/2011/schedule/presentations/169/">log in</a> to bookmark this presentaton</p>
+    
+    
+    <div class="badges">
+        
+            <div class="badge extreme">E</div>
+        
+        
+        <div class="clear"></div>
+    </div>
+    
+    <div class="presentation_types">Experienced / Talk</div>
+    
+    <div class="speakers">
+        
+        <a href="/2011/speaker/profile/251/">Van Lindberg</a>
+        
+    </div>
+    
+    
+        <div class="slot">March 12th 4:55 p.m. &ndash; 5:25 p.m.</div>
+    
+    
+    <div class="description">Finding the right piece of &quot;prior art&quot; - technical documentation that described a patented piece of technology before the patent was filed - is like finding a needle in a very big haystack. This session will talk about how I am making that process faster and more accurate through the use of natural language processing, graph theory, machine learning, and lots of Python.</div>
+    
+    <h3>Abstract</h3>
+    
+    <div class="abstract"><p>From my work consulting on a number of patent cases, I am frequently asked to find "prior art" - patents and publications that describe a technology before a certain date. The problem is that the indexing mechanisms for patents and publications are not as good as they could be, making good prior art searching more of an art than a science. When I decided to do better, I reached for Python. </p>
+<ul>
+<li>Part I (5 mins): The USPTO as a data source.* The full-text of each patent is available from the USPTO (and now from Google.) What does this data look like? How can it be harvested and normalized to create data structures that we can work with?</li>
+</ul>
+<ul>
+<li>Part II (15 mins, in two parts):*  Once the patents have been cleaned and normalized, they can be turned into data structures that we can use to evaluate their relationship to other documents. This is done in two ways - by modeling each patent as a document vector and a graph node. </li>
+</ul>
+<ul>
+<li>Part IIA (7 mins): Patents as document vectors.*  Once we have a patent as a data structure, we can treat the patent as a vector in an n-dimensional space. In moving from a document into a vector space, we will touch on normalization, stemming, TF/IDF, Latent Semantic Indexing (LSI) and Latent Dirichlet Allocation (LDA). </li>
+</ul>
+<ul>
+<li>Part IIB (7 mins): Patents as technology graphs.*  This will show building graph structures using the connections between patents - both the built-in connections in the patents themselves as well as the connections discovered while working with the patents as vectors. We apply some social network analysis to partition the patent graph and find other documents in the same technology space.</li>
+</ul>
+<ul>
+<li>Part III (5 mins): What have we built?* Now that we have done all this analysis, we can see some interesting things about the patent database as a whole. How does the patent database act as a map to the world of technology? And how has this helped with the original problem - finding better prior art?</li>
+</ul>
+</div>
+
+
+                </div>
+                <div id="right">
+                    
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        
+
+        <div id="footer"><div id="footer-content">
+    Site built by <a href="http://eldarion.com/"><b>Eldarion</b></a> using
+    <a href="http://djangoproject.com/"><b>Django</b></a> and
+    <a href="http://pinaxproject.com/"><b>Pinax</b></a>.
+</div></div>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="/2011/site_media/static/js/base.js" type="text/javascript"></script>
+        <script src="/2011/site_media/static/uni_form/uni-form.jquery.js" type="text/javascript"></script>
+        
+            
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a.bookmark").live("click", function() {
+                aElem = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: this.href,
+                    data: "action=add;csrfmiddlewaretoken=4def7bf91c1248521b986424ea5596db",
+                    success: function() {
+                        aElem.text("unbookmark");
+                        aElem.removeClass("bookmark");
+                        aElem.addClass("unbookmark");
+                    },
+                    error: function(xhr, options, error) {
+                        alert(xhr.status);
+                    }
+                });
+                return false;
+            });
+            $("a.unbookmark").live("click", function() {
+                aElem = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: this.href,
+                    data: "action=delete;csrfmiddlewaretoken=4def7bf91c1248521b986424ea5596db",
+                    success: function(response) {
+                        aElem.text("bookmark");
+                        aElem.removeClass("unbookmark");
+                        aElem.addClass("bookmark");
+                    },
+                    error: function(xhr, options, error) {
+                        alert(xhr.status);
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+
+        
+    </body>
+
+<!-- Mirrored from us.pycon.org/2011/schedule/presentations/169/ by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 19 Jun 2013 18:26:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+</html>
