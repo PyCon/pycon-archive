@@ -1,0 +1,1 @@
+$(function(){var mdown=$('#bio').html();var converter=new Attacklab.showdown.converter();var html=converter.makeHtml(mdown);$('#bio').html(html);});
