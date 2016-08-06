@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="1000px"
+   height="412px"
+   viewBox="0 0 1000 412"
+   >
+  <style type="text/css">
+    path {
+     stroke-width: 1px;
+     stroke: black;
+    }
+    text {
+     fill: black;
+     stroke: none;
+     text-anchor: middle;
+     dominant-baseline: middle;
+     font-family: Helvetica;
+     font-size: 18px;
+     font-weight: bold;
+    }
+    text.break {
+     font-size: 14px;
+     font-style: italic;
+     font-weight: normal;
+    }
+    a:hover[target] text {text-decoration: underline}
+    .reticle text {font-size: 13px}
+    .open-spaces rect {fill: #90E4D3}
+    .open-space rect {fill: white; stroke-width: 0}
+    .tutorials rect, .talks rect {fill: #EEDDA0}
+    .workshops rect, .expo rect {fill: #CEDE9F}
+    .plenary rect {fill: #FBE452}
+    .summit rect {fill: #D1EE3D}
+    .event rect {fill: #E0E0E0}
+  </style>
+    <g transform="translate(300, 60.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        9:00 am
+      </text>
+    </g>
+    <g transform="translate(300, 90.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        10:00 am
+      </text>
+    </g>
+    <g transform="translate(300, 120.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        11:00 am
+      </text>
+    </g>
+    <g transform="translate(300, 150.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        12:00 pm
+      </text>
+    </g>
+    <g transform="translate(300, 180.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        1:00 pm
+      </text>
+    </g>
+    <g transform="translate(300, 210.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        2:00 pm
+      </text>
+    </g>
+    <g transform="translate(300, 240.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        3:00 pm
+      </text>
+    </g>
+    <g transform="translate(300, 270.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        4:00 pm
+      </text>
+    </g>
+    <g transform="translate(300, 300.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        5:00 pm
+      </text>
+    </g>
+    <g transform="translate(300, 330.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        6:00 pm
+      </text>
+    </g>
+    <g transform="translate(300, 360.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        7:00 pm
+      </text>
+    </g>
+    <g transform="translate(300, 390.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        8:00 pm
+      </text>
+    </g>
+    <g transform="translate(520, 60.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        9:00 am
+      </text>
+    </g>
+    <g transform="translate(520, 90.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        10:00 am
+      </text>
+    </g>
+    <g transform="translate(520, 120.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        11:00 am
+      </text>
+    </g>
+    <g transform="translate(520, 150.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        12:00 pm
+      </text>
+    </g>
+    <g transform="translate(520, 180.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        1:00 pm
+      </text>
+    </g>
+    <g transform="translate(520, 210.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        2:00 pm
+      </text>
+    </g>
+    <g transform="translate(520, 240.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        3:00 pm
+      </text>
+    </g>
+    <g transform="translate(520, 270.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        4:00 pm
+      </text>
+    </g>
+    <g transform="translate(520, 300.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        5:00 pm
+      </text>
+    </g>
+    <g transform="translate(520, 330.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        6:00 pm
+      </text>
+    </g>
+    <g transform="translate(520, 360.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        7:00 pm
+      </text>
+    </g>
+    <g transform="translate(520, 390.5)" class="reticle">
+      <path d="M -40 0 L -30 0 z  M 30 0 L 40 0 z" />
+      <text x="0" y="0">
+        8:00 pm
+      </text>
+    </g>
+   <a class="plenary">
+     <rect x="1" width="248" y="60" height="30" />
+     <text x="124" y="75">Keynote</text>
+   </a>
+     <a xlink:href="/2016/events/dinners/" target="_top" class="event">
+       <rect x="1" width="248" y="360" height="45" />
+       <text x="133" y="383">Dinner ($)</text>
+     </a>
+     <a xlink:href="/2016/events/open-spaces/" target="_top" class="open-spaces"
+        transform="translate(570, 0)" >
+       <rect width="120" y="60" height="330" />
+       <text x="60" y="225">Open Spaces</text>
+       <g class="open-space">
+             <rect x="62" y="92"
+                   width="26" height="26"
+                   transform="rotate(-0.275018764975 75.0 90)" />
+             <circle cx="75.0" cy="96" r="1.5" />
+             <rect x="62" y="122"
+                   width="26" height="26"
+                   transform="rotate(-0.247447617743 75.0 120)" />
+             <circle cx="75.0" cy="126" r="1.5" />
+             <rect x="92" y="122"
+                   width="26" height="26"
+                   transform="rotate(0.350086873887 105.0 120)" />
+             <circle cx="105.0" cy="126" r="1.5" />
+             <rect x="32" y="152"
+                   width="26" height="26"
+                   transform="rotate(-2.26616159629 45.0 150)" />
+             <circle cx="45.0" cy="156" r="1.5" />
+             <rect x="62" y="152"
+                   width="26" height="26"
+                   transform="rotate(3.33076297447 75.0 150)" />
+             <circle cx="75.0" cy="156" r="1.5" />
+             <rect x="2" y="182"
+                   width="26" height="26"
+                   transform="rotate(2.37717593145 15.0 180)" />
+             <circle cx="15.0" cy="186" r="1.5" />
+             <rect x="32" y="182"
+                   width="26" height="26"
+                   transform="rotate(0.939620163729 45.0 180)" />
+             <circle cx="45.0" cy="186" r="1.5" />
+             <rect x="62" y="182"
+                   width="26" height="26"
+                   transform="rotate(-3.98580110238 75.0 180)" />
+             <circle cx="75.0" cy="186" r="1.5" />
+             <rect x="2" y="242"
+                   width="26" height="26"
+                   transform="rotate(-2.2761506462 15.0 240)" />
+             <circle cx="15.0" cy="246" r="1.5" />
+             <rect x="92" y="242"
+                   width="26" height="26"
+                   transform="rotate(3.6918239116 105.0 240)" />
+             <circle cx="105.0" cy="246" r="1.5" />
+             <rect x="62" y="272"
+                   width="26" height="26"
+                   transform="rotate(3.5278080087 75.0 270)" />
+             <circle cx="75.0" cy="276" r="1.5" />
+             <rect x="62" y="302"
+                   width="26" height="26"
+                   transform="rotate(-1.11048052222 75.0 300)" />
+             <circle cx="75.0" cy="306" r="1.5" />
+             <rect x="92" y="302"
+                   width="26" height="26"
+                   transform="rotate(-2.83438472367 105.0 300)" />
+             <circle cx="105.0" cy="306" r="1.5" />
+             <rect x="2" y="332"
+                   width="26" height="26"
+                   transform="rotate(-1.58912719384 15.0 330)" />
+             <circle cx="15.0" cy="336" r="1.5" />
+             <rect x="62" y="332"
+                   width="26" height="26"
+                   transform="rotate(1.42347399638 75.0 330)" />
+             <circle cx="75.0" cy="336" r="1.5" />
+             <rect x="92" y="332"
+                   width="26" height="26"
+                   transform="rotate(-1.52033654717 105.0 330)" />
+             <circle cx="105.0" cy="336" r="1.5" />
+             <rect x="62" y="362"
+                   width="26" height="26"
+                   transform="rotate(-0.150252910105 75.0 360)" />
+             <circle cx="75.0" cy="366" r="1.5" />
+       </g>
+    </a>
+   <a xlink:href="/2016/schedule/talks/" target="_top" class="talks">
+           <rect x="1" width="48" y="186" height="15" />
+           <rect x="1" width="48" y="203" height="17" />
+           <rect x="1" width="48" y="222" height="15" />
+           <rect x="51" width="48" y="186" height="15" />
+           <rect x="51" width="48" y="203" height="17" />
+           <rect x="51" width="48" y="222" height="15" />
+           <rect x="101" width="48" y="186" height="15" />
+           <rect x="101" width="48" y="203" height="17" />
+           <rect x="101" width="48" y="222" height="15" />
+           <rect x="151" width="48" y="186" height="15" />
+           <rect x="151" width="48" y="203" height="17" />
+           <rect x="151" width="48" y="222" height="15" />
+           <rect x="201" width="48" y="186" height="15" />
+           <rect x="201" width="48" y="203" height="17" />
+           <rect x="201" width="48" y="222" height="15" />
+     <text x="125" y="196">Talks</text>
+   </a>
+     <a xlink:href="/2016/sponsors/exhibitfloor/" target="_top" class="expo"
+        transform="translate(350, 0)" >
+       <rect x="1" width="120" y="90" height="90" />
+       <text x="60" y="115">Posters and</text>
+       <text x="60" y="140">Job Fair</text>
+       <text x="60" y="170" class="break">— Lunch —</text>
+     </a>
+   <a class="plenary">
+     <rect x="1" width="248" y="245" height="40" />
+     <text x="124" y="265">Keynote and Closing</text>
+   </a>
+   <a class="talks">
+     <rect x="1" width="248" y="300" height="45" />
+     <text x="124" y="322">Intro to sprints</text>
+   </a>
+</svg>
