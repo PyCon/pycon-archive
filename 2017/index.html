@@ -1,0 +1,957 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from us.pycon.org/2017/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Jun 2017 14:57:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="all" href="/2017/site_media/static/css/slight.css" />
+    
+
+
+<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="/2017/site_media/static/cache/css/8534747c90ad.css" type="text/css" />
+
+    
+
+
+
+    <meta property="og:image" content="/2017/site_media/static/img/pycon2017-logo.png" />
+    <link href="/2017/site_media/static/img/pycon-2017.png" rel="shortcut icon" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+      $(document).on('click', '.message button', function(event) {
+        $(this).parent().hide();
+        return false;
+      });
+      $(document).on('click', '.dropdown-toggle', function(event) {
+        /* toggle visibility of nav menu (jQuery sets the "display" attr) */
+        $(this).parent().children('.dropdown-menu').toggle();
+        return false;
+      });
+      $(document).on('mouseout', '.dropdown', function(event) {
+        /* remove any "display" attr that jQuery added when clicked */
+        $(this).children('.dropdown-menu').removeAttr('style');
+        return false;
+      });
+    </script>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.js"></script>
+<script type="text/javascript" src="/2017/site_media/static/cache/js/6f4a8148a968.js"></script>
+
+    
+    <meta name="google-site-verification" content="fG_DG4G4eFtBcgIKht-bJKdirGhDa_51X6yeCS8daDs" />
+
+
+</head>
+<body class="home-page">
+
+
+    
+    
+
+
+
+
+
+<header class="main">
+  
+
+
+
+<div class="account-links">
+    
+    
+</div>
+
+  
+<div class="home-banner">
+  <h1>PyCon 2017 in Portland, Oregon</h1>
+  <p>
+    <span>By the Community</span>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;May 17–25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <span>For the Community</span>
+  </p>
+</div>
+
+  <nav>
+
+<ul class="nav">
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ About PyCon
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/about/" >What is PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2017/about/code-of-conduct/" >Code of Conduct</a>
+        </li>
+    
+        <li >
+            <a href="/2017/about/diversity/" >Diversity</a>
+        </li>
+    
+        <li >
+            <a href="/2017/about/staff/" >Staff Information</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sitemap/" >Site Map</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ PSF
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/psf/" >Python Software Foundation</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ Schedule
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/schedule/tutorials/" >Tutorial Schedule (Wed–Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2017/schedule/sponsor-tutorials/" >Sponsor Workshops (Wed–Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2017/schedule/talks/" >Talk Schedule (Fri–Sun)</a>
+        </li>
+    
+        <li >
+            <a href="/2017/schedule/posters/list/" >Posters (Sunday morning)</a>
+        </li>
+    
+        <li >
+            <a href="/2017/keynote-speakers/" >Keynote Speakers</a>
+        </li>
+    
+        <li >
+            <a href="/2017/schedule/talks/list/" >List of Talks</a>
+        </li>
+    
+        <li >
+            <a href="/2017/schedule/tutorials/list/" >List of Tutorials</a>
+        </li>
+    
+        <li >
+            <a href="/2017/schedule/sponsor-tutorials/list/" >List of Sponsor Workshops</a>
+        </li>
+    
+        <li >
+            <a href="/2017/edusummit/schedule/" >Education Summit (Thursday)</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ Events
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/events/dinners/" >Evening Dinners</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/opening-reception/" >Opening reception</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/edusummit/" >Education Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/startup_row/" >Startup Row</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/jobs/" >Job Fair</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/open-spaces/" >Open Spaces</a>
+        </li>
+    
+        <li >
+            <a href="/2017/5k/" >PyCon Fun Run/Walk</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/auction/" >PyLadies Auction</a>
+        </li>
+    
+        <li >
+            <a href="/2017/community/sprints/" >Development Sprints</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/testing-bof/" >Testing BOF</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/language-summit/" >Python Language Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/django_girls_workshop/" >Django Girls Workshop</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/letslearnpython/" >Young Coders </a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/outsidein/" >Young Coders: Outside In</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/pyladieslunch/" >PyLadies Lunch</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/outside_events/" >Outside Events</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/womenbigdatemeetup" >Women in Big Data Meetup</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ Sponsors
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/sponsors/" >Our Sponsors</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/why-sponsor/" >Why sponsor PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/prospectus/" >Prospectus</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/apply/" >Application Form</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/fees/" >Estimated Sponsor Fees</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/exhibit-hall/" >Exhibit Hall</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/faq/" >Sponsor FAQ</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/information/" >Sponsor Information</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ Venue
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/venue/" >Venue and Hotels</a>
+        </li>
+    
+        <li >
+            <a href="/2017/venue/travel/" >Traveling to Portland</a>
+        </li>
+    
+        <li >
+            <a href="/2017/venue/weather/" >Weather</a>
+        </li>
+    
+        <li >
+            <a href="/2017/venue/accessibility/" >Accessibility</a>
+        </li>
+    
+        <li >
+            <a href="/2017/childcare/" >Childcare</a>
+        </li>
+    
+        <li >
+            <a href="/2017/venue/restaurants/" >Restaurants</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ Registration
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/registration/" >Registration Information</a>
+        </li>
+    
+        <li >
+            <a href="/2017/financial-assistance/" >Financial Assistance</a>
+        </li>
+    
+        <li >
+            <a href="/2017/childcare/" >Childcare</a>
+        </li>
+    
+        <li >
+            <a href="/2017/community/roomsharing/" >Room Sharing</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ Volunteer!
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/about/volunteers" >Volunteering on-site</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+</ul>
+</nav>
+</header>
+
+
+
+
+
+
+<script type="text/javascript">
+    $(function () {
+        var mdown = $('#content_homepage-about > div.markdown').text();
+        var converter = new Attacklab.showdown.converter();
+        var html = converter.makeHtml(mdown);
+        $('#content_homepage-about > div.markdown').html(html);
+        $('#content_homepage-about > a').click(function() {
+            $('#edit_homepage-about').toggle('hide');
+        });
+    });
+</script>
+
+
+<div id="content_homepage-about" class="content-box ">
+    
+    <div class="markdown">PyCon is the largest annual gathering for the community that uses and develops the open-source Python programming language. PyCon is organized [by the Python community](/2017/about/ &quot;&quot;) for the community. We try to keep registration far cheaper than most comparable technology conferences to make PyCon accessible to the widest group possible. PyCon is a [diverse conference](/2017/about/diversity/ &quot;&quot;) dedicated to providing an enjoyable experience to everyone. Our [code of conduct](/2017/about/code-of-conduct/ &quot;&quot;) is intended to help everyone maintain the PyCon spirit. We thank all attendees and staff for observing it.</div>
+</div>
+
+
+
+
+<div class="front-page-facets">
+  <div>
+    <img src="/2017/site_media/static/img/tutorial-photo.jpg">
+    <h2>Tutorials<br>May 17–18 • Wednesday, Thursday</h2>
+    <p>
+      The first 2 days of the conference
+      offer a schedule packed with 3-hour tutorials
+      to help both beginners and experienced developers
+      learn new technologies and increase their skills.
+    </p>
+  </div><div>
+    <img src="/2017/site_media/static/img/talks-photo.jpg">
+    <h2>Talks and Events<br>May 19–21 • Friday, Saturday, Sunday</h2>
+    <p>
+      The 3 main conference days offer almost 100 talks,
+      an Expo Hall where you can visit our sponsors,
+      and events including an academic poster session,
+      a Job Fair, and an annual benefit auction.
+    </p>
+  </div><div>
+    <img src="/2017/site_media/static/img/sprints-photo.jpg">
+    <h2>Sprints<br>May 22–25 • Monday through Thursday</h2>
+    <p>
+      The final 4 days are our developer sprints,
+      where developers both veteran and novice
+      enjoy several days of rare in-person collaboration
+      on their favorite open source projects.
+    </p>
+  </div>
+</div>
+
+<hr>
+
+<h2>
+  Get Ready!
+</h2>
+<div class="front-page-facets narrow">
+  <div>
+    <img src="/2017/site_media/static/img/PNG/tutorials-icon.png">
+    <h2>The conference is sold out!</h2>
+    We thank everyone who is planning to attend.
+    You can double-check your registration and hotel reservations
+    at the <a href="/2017/registration/">registration page</a>.
+  </div><div>
+    <img src="/2017/site_media/static/img/PNG/conference-icon.png">
+    <h2>The schedule is up!</h2>
+    Visit the site’s “Schedule” drop-down menu
+    to see our
+    <a href="/2017/schedule/talks/">talks</a>,
+    <a href="/2017/schedule/tutorials/">tutorials</a>,
+    <a href="/2017/schedule/sponsor-tutorials/">sponsor workshops</a>,
+    and more.
+    Then visit the “Events” tab to see everything else we have planned!
+  </div><div>
+    <img src="/2017/site_media/static/img/PNG/Sprints-Icon.png">
+    <h2><a href="/2017/sponsors/why-sponsor/"
+           ><b>Become a sponsor</b></a></h2>
+    The companies and organizations who sponsor PyCon
+    make the conference possible,
+    and get to connect with a wide array of Python programmers.
+  </div>
+</div>
+
+<hr>
+
+
+
+
+    <div id="content">
+        
+
+
+
+<h2>Sponsors</h2>
+
+<p class="front-page-sponsors">
+  
+  
+  <a href="https://software.intel.com" title="Intel ">
+    <img src="/2017/site_media/media/sponsor_files/intSFT_i_hrz_rgb_3000.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.google.com/about/careers/" title="Google">
+    <img src="/2017/site_media/media/sponsor_files/googlelogo_color_112x36dp.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://aka.ms/python" title="Microsoft">
+    <img src="/2017/site_media/media/sponsor_files/Microsoft-logo_rgb_c-gray.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.continuum.io/" title="Anaconda">
+    <img src="/2017/site_media/media/sponsor_files/Anaconda_horizontal_RGB.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.surveymonkey.com/" title="SurveyMonkey">
+    <img src="/2017/site_media/media/sponsor_files/SM_logo_600x110_002_l1KK6G8.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.heroku.com/" title="Heroku">
+    <img src="/2017/site_media/media/sponsor_files/heroku-logotype-horizontal-purple_6.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.linkedin.com" title="Linkedin">
+    <img src="/2017/site_media/media/sponsor_files/Logo-2C-66px-TM_u4aGgaN.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://careers.jpmorgan.com/careers/divisions/technology" title=" JPMorgan Chase &amp; Co.">
+    <img src="/2017/site_media/media/sponsor_files/jpm_chase_logo_final.gif.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.housecanary.com/" title="HouseCanary">
+    <img src="/2017/site_media/media/sponsor_files/PythonDigital.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.fusionbox.com" title="Fusionbox">
+    <img src="/2017/site_media/media/sponsor_files/fusionbox.gif.300x300_q85.jpg">
+  </a>
+  
+  <a href="http://americangreetings.com" title="American Greetings">
+    <img src="/2017/site_media/media/sponsor_files/ag_logo_2016_digital-150x44.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://www.okta.com" title="Okta">
+    <img src="/2017/site_media/media/sponsor_files/Okta_Logo_BrightBlue_Large.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://nylas.com/" title="Nylas">
+    <img src="/2017/site_media/media/sponsor_files/Nylas_Identity_Horz.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://wingware.com/" title="Wingware">
+    <img src="/2017/site_media/media/sponsor_files/wingware-button-2015_dkVzOto.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://lincolnloop.com" title="Lincoln Loop">
+    <img src="/2017/site_media/media/sponsor_files/ll_logo_landscape_color-filled.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://www.leadpages.net/" title="Leadpages">
+    <img src="/2017/site_media/media/sponsor_files/Leadpages_V_Logo_Blue_2Color.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.caktusgroup.com" title="Caktus Group">
+    <img src="/2017/site_media/media/sponsor_files/Caktus_Logo_Tagline_Color-Lockup.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.demonware.net/" title="Demonware ">
+    <img src="/2017/site_media/media/sponsor_files/unnamed_zkrDHwy.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://sentry.io/welcome/" title="Sentry">
+    <img src="/2017/site_media/media/sponsor_files/sentry-horizontal-black.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://jobs.capitalone.com" title="Capital One">
+    <img src="/2017/site_media/media/sponsor_files/C1_Core_NG_RGB_R_tzBPPK6.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.lyft.com/" title="Lyft, Inc.">
+    <img src="/2017/site_media/media/sponsor_files/lyft_logo_standard_pink.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://www.jetbrains.com/" title="JetBrains">
+    <img src="/2017/site_media/media/sponsor_files/logos_JetBrains_CMYK.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.disneyanimation.com/" title="Walt Disney Animation Studios">
+    <img src="/2017/site_media/media/sponsor_files/WDAS_LOGO_FINAL_NZAWzXE.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.yelp.com/careers" title="Yelp">
+    <img src="/2017/site_media/media/sponsor_files/yelp-logo.jpg.300x300_q85.jpg">
+  </a>
+  
+  <a href="http://www.jumptrading.com" title="Jump Trading">
+    <img src="/2017/site_media/media/sponsor_files/JumpTrading_-_Logo.jpg.300x300_q85.jpg">
+  </a>
+  
+  <a href="https://www.facebook.com/" title="Facebook">
+    <img src="/2017/site_media/media/sponsor_files/Facebook-06-2015-Blue_cPjxmVE.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://saucelabs.com/" title="Sauce Labs">
+    <img src="/2017/site_media/media/sponsor_files/010101_LOGO_Sauce-Labs_Horiz_Red-Grey_RGB.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.instagram.com" title="Instagram ">
+    <img src="/2017/site_media/media/sponsor_files/instagram_.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.ansible.com/" title="Ansible">
+    <img src="/2017/site_media/media/sponsor_files/Ansible-Wordmark-Large-RGB-Black.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://www.activestate.com/python" title="ActiveState Software">
+    <img src="/2017/site_media/media/sponsor_files/as_logo_2016.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://bons.ai/" title="Bonsai">
+    <img src="/2017/site_media/media/sponsor_files/bonsai-logo-color-02.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://goshippo.com" title="Shippo">
+    <img src="/2017/site_media/media/sponsor_files/shippo-lockup-vertical-green-web.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.linode.com/" title="Linode">
+    <img src="/2017/site_media/media/sponsor_files/linode-logo_diagonal_light_1.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.openshift.com/" title="Red Hat OpenShift ">
+    <img src="/2017/site_media/media/sponsor_files/Logotype_RH_OpenShiftOnline_wLogo_RGB_Black.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.patreon.com/careers" title="Patreon">
+    <img src="/2017/site_media/media/sponsor_files/patreon.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.sqreen.io/" title="Sqreen">
+    <img src="/2017/site_media/media/sponsor_files/sqreen-logo-color2x.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.citusdata.com/" title="Citus Data">
+    <img src="/2017/site_media/media/sponsor_files/citusdata-logo-225x90.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://offerupnow.com/" title="OfferUp">
+    <img src="/2017/site_media/media/sponsor_files/OUGreen.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://robinhood.com/" title="Robinhood">
+    <img src="/2017/site_media/media/sponsor_files/Robinhood_Logotype_green.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.nag.com" title="Numerical Algorithms Group">
+    <img src="/2017/site_media/media/sponsor_files/nag_100c90m0y40k_one_line_left_1.jpg.300x300_q85.jpg">
+  </a>
+  
+  <a href="https://www.datadoghq.com/" title="Datadog">
+    <img src="/2017/site_media/media/sponsor_files/dd_logo_v_rgb_3.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://guidebook.com/" title="Guidebook">
+    <img src="/2017/site_media/media/sponsor_files/logo_2_CUIp5Ya.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://venmo.com/" title="Venmo / Braintree">
+    <img src="/2017/site_media/media/sponsor_files/venmo-logoblue.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://pluralsight.com" title="Pluralsight">
+    <img src="/2017/site_media/media/sponsor_files/PS_logo_F-08.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.eyesopen.com" title="OpenEye Scientific Software">
+    <img src="/2017/site_media/media/sponsor_files/openeye-logo-large.jpg.300x300_q85.jpg">
+  </a>
+  
+  <a href="https://www.nexmo.com/" title="Nexmo Inc">
+    <img src="/2017/site_media/media/sponsor_files/Nexmo_VonageAPI.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.twilio.com/" title="Twilio">
+    <img src="/2017/site_media/media/sponsor_files/Twilio_logo_red.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://phobio.com/" title="Phobio">
+    <img src="/2017/site_media/media/sponsor_files/logo_blue_204x60.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://www.northeastern.edu/seattle/" title="Northeastern University - Seattle">
+    <img src="/2017/site_media/media/sponsor_files/seattle-270.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://www.boozallen.com" title="Booz Allen Hamilton">
+    <img src="/2017/site_media/media/sponsor_files/Booz_Allen_logo_black-SMALL.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.pelotoncycle.com/company/" title="Peloton">
+    <img src="/2017/site_media/media/sponsor_files/logo_cropped_1.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.bugsnag.com/?utm_source=pycon&amp;utm_medium=referral&amp;utm_content=blurb&amp;utm_campaign=pycon-2017" title="Bugsnag">
+    <img src="/2017/site_media/media/sponsor_files/logo-dark_UFyseWN.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.docker.com/" title="Docker, Inc">
+    <img src="/2017/site_media/media/sponsor_files/large_v-trans.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://hired.com/" title="Hired">
+    <img src="/2017/site_media/media/sponsor_files/HiredLogo_RedBG.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://nvisium.com/" title="nVisium LLC">
+    <img src="/2017/site_media/media/sponsor_files/nvisium_1.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.datacamp.com/home" title="DataCamp Inc.">
+    <img src="/2017/site_media/media/sponsor_files/datacamp_pycon.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.6ft.com" title="Six Foot">
+    <img src="/2017/site_media/media/sponsor_files/Six_Foot_Regular_Logo.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://rollbar.com/" title="Rollbar">
+    <img src="/2017/site_media/media/sponsor_files/rollbar-logo-color-horiz_1.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.buzzfeed.com" title="BuzzFeed">
+    <img src="/2017/site_media/media/sponsor_files/BuzzFeed_Color.jpg.300x300_q85.png">
+  </a>
+  
+  <a href="https://thisismetis.com/" title="Metis">
+    <img src="/2017/site_media/media/sponsor_files/metis_logo_black_horiz.jpg.300x300_q85.jpg">
+  </a>
+  
+  <a href="https://www.elastic.co/" title="Elastic">
+    <img src="/2017/site_media/media/sponsor_files/elastic-logo-V-full_color.jpg.300x300_q85.jpg">
+  </a>
+  
+  <a href="https://www.indeed.com/prime" title="Indeed Prime">
+    <img src="/2017/site_media/media/sponsor_files/Indeed-prime-horizontal-RGB.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://dneg.com/" title="Double Negative Visual Effects">
+    <img src="/2017/site_media/media/sponsor_files/Dneg_Logo_High_Res_-_Black_on_White.jpg.300x300_q85.jpg">
+  </a>
+  
+  <a href="https://www.twistbioscience.com/" title="Twist Bioscience">
+    <img src="/2017/site_media/media/sponsor_files/Twist_Bioscience_Logo_TransparentBG_1137x556_Web_2.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://micropyramid.com" title="MicroPyramid">
+    <img src="/2017/site_media/media/sponsor_files/pychon.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://saltstack.com/" title="SaltStack">
+    <img src="/2017/site_media/media/sponsor_files/SaltStack_-_Vertical_R.jpg.300x300_q85.jpg">
+  </a>
+  
+  <a href="http://www.hudson-trading.com/" title="Hudson River Trading">
+    <img src="/2017/site_media/media/sponsor_files/HRT_Logo_FB.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://www.newrelic.com" title="New Relic">
+    <img src="/2017/site_media/media/sponsor_files/NewRelic-logo-bug.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://www.oreilly.com/" title="O&#39;Reilly Media">
+    <img src="/2017/site_media/media/sponsor_files/ORM_logo_box75_hex_AKPqVWQ.jpg.300x300_q85.jpg">
+  </a>
+  
+  <a href="https://www.aqr.com/" title="AQR Capital Management">
+    <img src="/2017/site_media/media/sponsor_files/AQR_Cyan_rgb_hires.jpg.300x300_q85.jpg">
+  </a>
+  
+  <a href="https://www.leapfrogonline.com/" title="Leapfrog Online">
+    <img src="/2017/site_media/media/sponsor_files/LFO_logo_2016_v1_bitmap_RGB_small_green.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://www.python-academy.com" title="Python Academy GmbH &amp; Co. KG">
+    <img src="/2017/site_media/media/sponsor_files/pya_logo.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://www.hackbrightacademy.com" title="Hackbright Academy">
+    <img src="/2017/site_media/media/sponsor_files/Hackbright_Academy_logo.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.hulu.com" title="Hulu">
+    <img src="/2017/site_media/media/sponsor_files/Hulu_Logo_Option_A.jpg.300x300_q85.jpg">
+  </a>
+  
+  <a href="http://www.doctorondemand.com/" title="Doctor On Demand, Inc.">
+    <img src="/2017/site_media/media/sponsor_files/dod-logo-full-large.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://nooro.com/pycon2017" title="Nooro">
+    <img src="/2017/site_media/media/sponsor_files/nooro_logo_450x133.png.300x300_q85.jpg">
+  </a>
+  
+  <a href="https://www.twosigma.com/" title="Two Sigma Investments, LP">
+    <img src="/2017/site_media/media/sponsor_files/Digital_TwoSigma_Logo_RGB_transp_1000px.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.adafruit.com" title="Adafruit">
+    <img src="/2017/site_media/media/sponsor_files/black_600x600.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://jambonsw.com" title="JamBon Software">
+    <img src="/2017/site_media/media/sponsor_files/JamBonSWLogoLong.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://aws.amazon.com/" title="AWS Infrastructure">
+    <img src="/2017/site_media/media/sponsor_files/logo.jpg.300x300_q85.jpg">
+  </a>
+  
+  <a href="https://www.researchaffiliates.com" title="Research Affiliates">
+    <img src="/2017/site_media/media/sponsor_files/RA_Logo_CMYK.tif.300x300_q85.jpg">
+  </a>
+  
+  <a href="http://www.carstickers.com" title="Car Stickers, Inc.">
+    <img src="/2017/site_media/media/sponsor_files/carstickers-logo.jpg.300x300_q85.jpg">
+  </a>
+  
+  <a href="https://www.python.org/psf/" title="Python Software Foundation">
+    <img src="/2017/site_media/media/sponsor_files/PSF-Logo.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://www.chipy.org/" title="Chicago Python User Group (Chipy)">
+    <img src="/2017/site_media/media/sponsor_files/chipmunk.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.recurse.com" title="Recurse Center">
+    <img src="/2017/site_media/media/sponsor_files/logo-no-text.png.300x300_q85.jpg">
+  </a>
+  
+  <a href="https://zulip.org" title="Zulip Open Source Project">
+    <img src="/2017/site_media/media/sponsor_files/zulip-icon-300x300.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://talkpython.fm/" title="Python Podcast Community ">
+    <img src="/2017/site_media/media/sponsor_files/podcast-community-logos-new.png.300x300_q85.jpg">
+  </a>
+  
+  <a href="http://www.django-rest-framework.org/" title="Django REST framework">
+    <img src="/2017/site_media/media/sponsor_files/logo_QHVWXkZ.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://www.pyladies.com" title="PyLadies">
+    <img src="/2017/site_media/media/sponsor_files/pylady_geek_wordmark_standard.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://xmpp.org/" title="XMPP Standards Foundation">
+    <img src="/2017/site_media/media/sponsor_files/2000px-XMPP_logo.svg.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://pybee.org" title="BeeWare project">
+    <img src="/2017/site_media/media/sponsor_files/BeeWare_banner.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://sfconservancy.org" title="Software Freedom Conservancy, Inc.">
+    <img src="/2017/site_media/media/sponsor_files/conservancy-logo.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.postgresql.org/" title="PostgreSQL Global Development Group">
+    <img src="/2017/site_media/media/sponsor_files/PostgreSQL_logo.3colors.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.meetup.com/PSPPython/" title="PuPPy -- Seattle&#39;s Python user group">
+    <img src="/2017/site_media/media/sponsor_files/pupy-3_5AHgD6q.jpg.300x300_q85.jpg">
+  </a>
+  
+  <a href="https://plone.com" title="Plone">
+    <img src="/2017/site_media/media/sponsor_files/plone-logo-256_83UfjpO.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://djangogirls.org/" title="Django Girls">
+    <img src="/2017/site_media/media/sponsor_files/logo_heCU05k.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://www.numfocus.org/" title="NumFOCUS">
+    <img src="/2017/site_media/media/sponsor_files/NumFocus_2C_RGB.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.nostarch.com/" title="No Starch Press">
+    <img src="/2017/site_media/media/sponsor_files/NoStarch_logo.jpg.300x300_q85.jpg">
+  </a>
+  
+  <a href="https://www.stickermule.com/" title="Sticker Mule">
+    <img src="/2017/site_media/media/sponsor_files/svgporn-stickermule_1.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://www.opensource.com" title="Opensource.com">
+    <img src="/2017/site_media/media/sponsor_files/OSDC_primary_logos-06_1.png.300x300_q85.png">
+  </a>
+  
+  <a href="https://lwn.net" title="LWN.net">
+    <img src="/2017/site_media/media/sponsor_files/256x256.png.300x300_q85.png">
+  </a>
+  
+  <a href="http://pycoders.com/" title="Pycoder&#39;s Weekly">
+    <img src="/2017/site_media/media/sponsor_files/pycon2017.jpg.300x300_q85.jpg">
+  </a>
+  
+  <a href="http://www.networkworld.com/author/Bryan-Lunduke/" title="Network World">
+    <img src="/2017/site_media/media/sponsor_files/Screenshot_2017-05-16_at_11.39.12_AM.png.300x300_q85.jpg">
+  </a>
+  
+</p>
+
+
+    </div>
+
+<footer>
+  <div>
+    <img class="python-logo" src="/2017/site_media/static/img/psf-logo.png"
+         width=334 height=82 alt="PSF logo">
+    
+<p>
+  Thanks to Mike Pirnat for the
+  <a href="https://www.flickr.com/photos/mikepirnat/27996834601/"
+     >talk photo</a>
+  and Kushal Das for the
+  <a href="https://www.flickr.com/photos/kushaldas/16671966733/"
+     >sprints photo</a>
+  used above!
+</p>
+
+    <p>
+      This year’s logo and banner were designed by
+      <a href="https://trixi.graphics/">Beatrix Bodó</a>.
+      The PyCon 2017 conference in Portland, Oregon, is a production of the
+      <a href="http://python.org/psf/">Python Software Foundation</a>.
+      This site is built using
+      <a href="https://www.djangoproject.com/">Django</a>
+      and
+      <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+      Hosting is provided by
+      <a href="http://www.rackspace.com/">Rackspace US, Inc</a>.
+    </p>
+  </div>
+</footer>
+
+
+
+
+</body>
+
+<!-- Mirrored from us.pycon.org/2017/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Jun 2017 14:59:30 GMT -->
+</html>

@@ -1,0 +1,942 @@
+/*
+ * PyCon 2017 CSS: normalize.css + as few tweaks as possible (below)
+ */
+
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+
+template, /* 1 */
+[hidden] {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+select,
+textarea {
+  font: inherit; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*************************** end of normalize.css ***************************/
+
+/* -------------------- Styles applying to all pages -------------------- */
+
+html {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+}
+a {
+    color: #004360; /* chroma('#136E8E').darken().hex() */
+}
+
+.logo-smaller {
+    display: block;
+    margin: 20px auto 10px;
+    width: 540px;
+    height: 260px;
+    /* Rendered with: inkscape -f pycon2017.svg -w 540 -e pycon2017.png */
+    background-image: url('../img/pycon2017.png');
+    text-indent: -9999px;
+}
+
+/* Alerts at the top of the page. */
+
+.messages {
+    position: absolute;
+}
+.messages .message {
+    margin: 1em;
+    border: 1px solid #D98771;
+    border-radius: 0.5em;
+    background: #a55945;  /* chroma('#D98771').darken().hex() */
+    padding: 0.5em;
+    color: white;
+}
+
+/* The bar across the top saying whether you are logged in. */
+
+.account-links {
+    /* margin-bottom: 0.5em; */
+    /* background-color: #CE624D; */
+    background-color: #136E8E;
+    text-align: center;
+    color: #DBF8EB;
+    font-weight: bold;
+}
+.account-links a {
+    display: inline-block;
+    color: #DBF8EB;
+    padding: 0.5em;
+    text-decoration: none;
+}
+.account-links a:hover {
+    text-decoration: underline;
+}
+.account-links form {
+    padding: 0 0.5em;
+    display: inline-block;
+}
+
+/* The main logo. */
+
+.beatrix-banner, .beatrix-banner img {
+    display: block;
+    width: 100%;
+}
+
+/* The navigation bar. */
+
+nav > .nav {
+    border-top: 1px solid #57b8dc;
+    border-bottom: 1px solid #004360;
+    background-color: #308898;
+    background: linear-gradient(to bottom, #0B88AA 0%, #136E8E 100%);
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+}
+.dropdown a {
+    display: block;
+    padding: 0.5em;
+    color: #fff;
+    text-decoration: none;
+}
+.dropdown-toggle {
+    /* Allow click event on iOS devices */
+    cursor: pointer;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding: 0.8em;
+    background-color: #d8d8d8;
+    list-style-type: none;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu a {
+    color: #308898;
+    white-space: nowrap;
+}
+.dropdown-menu a:hover {
+    text-decoration: underline;
+}
+
+/* The main content pane. */
+
+#content {
+    margin: 0 auto;
+    max-width: 46em;
+    padding: 1em;
+    color: #110;
+}
+aside {
+    float: right;
+    margin: 0.8em;
+    border-radius: 0.5em;
+    max-width: 18em;
+    padding: 0 1em;
+    background-color: #eee;
+}
+dt {
+    color: #CE624D;
+    font-style: italic;
+}
+p {
+    max-width: 46em;
+    margin-left: auto;
+    margin-right: auto;
+}
+pre {
+    border: 1px solid #FBBF8B;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    font-size: 0.8333em;
+}
+table {
+    border-collapse: collapse;
+}
+th {
+    padding: 0 0.4em;
+}
+td {
+    border: 2px solid #B4D3C6;
+    padding: 0.5em;
+}
+
+/* The edit button that site admins are given. */
+
+.edit-btn, .edit-toggle {
+    display: block;
+
+    /* float: right; */
+    position: absolute;
+    right: 0;
+
+    margin-left: 0.3em;
+    border-radius: 8px;
+    background: #eee;
+    padding: 0.5em;
+    color: #308898;
+    text-decoration: none;
+}
+.edit-btn:hover, .edit-toggle:hover {
+    background: #ddd;
+}
+
+/* Forms, when there are no errors */
+
+fieldset {
+    border: none;
+    border-radius: 1em;
+    background-color: #f3f5d6; /* chroma('#A8AA8D').brighten(1.5).hex() */
+    padding: 1em;
+}
+legend {
+    margin: 1em 0;
+    font-weight: bold;
+}
+.control-group {
+    margin: 1em 0;
+}
+label {
+    color: #550;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.controls .help-block {
+    margin: 0;
+    font-size: 0.8em;
+}
+.hide {
+    display: none;
+}
+input[type=text], textarea {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #98917A #e2dac2 #e2dac2 #98917A;
+    /* ^ chroma('#98917A').brighten(1.5).hex() */
+    min-width: 80%;
+}
+.box-content .markedit > textarea {
+    /* override the jQuery UI "markedit > textarea" styling */
+    padding: 0;
+}
+.markedit .markedit-preview {
+    /* override the jQuery UI "ui-widget-content" styling */
+    margin: 1em 0;
+    border: 2px dotted black;
+    background: none;
+    padding: 0.2em;
+    color: #6a644e; /* chroma('#98917A').darken().hex() */
+}
+
+/* Forms, when an error message needs to display. */
+
+.control-group.error input[type=text], .control-group.error textarea {
+    border: 3px solid red;
+}
+span.help-inline {
+    color: red;
+    display: block;
+}
+
+/* Most proposal text-area fields should honor line breaks. */
+
+.proposal-fields dd.significant-whitespace {
+    white-space: pre-wrap;
+    white-space: pre-line;
+}
+
+/* Except for the Description, which gets Markdown processing. */
+
+.proposal-fields dd.description {
+    white-space: normal;
+}
+
+/* The dashboard. */
+
+.dashboard-panel {
+    margin-bottom: 1em;
+    border: 1px solid #e5e8ef;
+    border-radius: 1em;
+    background-color: #f5f8ff;
+    padding: 1em;
+}
+.dashboard-panel .icon-briefcase {
+    display: none;
+}
+.dashboard-panel h3 {
+    margin: 0 0 0.5em;
+}
+.btn,
+.dashboard-panel a.action,
+.dataTables_paginate .paginate_button,
+.dt-button {
+    display: inline-block;
+    margin: 0.2em;
+    box-shadow: 0 0 0 1px #CE624D;
+    border-top: 1px solid #FBBF8B;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-radius: 5px;
+    background-color: #CE624D;
+    background: linear-gradient(to bottom, #e57257 0%, #ce624d 100%);
+    padding: 0.2em 0.3em;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.btn[disabled] {
+    box-shadow: none;
+    border: 1px solid #aaa;
+    background: linear-gradient(to bottom, #eee 0%, #ddd 100%);
+}
+
+/* Paginated tables within the dashboard. */
+
+.pagination li {
+    display: inline;
+}
+.pagination a {
+    padding: 0.5em;
+}
+.pagination a:hover {
+    background: #eef;
+}
+
+/* Sidebar navigation lists, like on /account/settings/. */
+
+.nav-list {
+    padding-left: 1em;
+}
+
+/* The footer at the bottom of every page. */
+
+footer {
+    clear: both;
+    background-color: #B4D3C6;
+    padding: 1em 1em 1em;
+}
+footer > div {
+    margin: 0 auto;
+    max-width: 46em;
+}
+footer img {
+    float: right;
+    margin: 0 0 1em 0.6em;
+    box-shadow: 0px 0px 20px #2d483d;
+    background-color: #2d483d;
+    border-radius: 5px;
+    padding: 5px;
+}
+footer p {
+    margin: 1em auto;
+}
+
+/* -------------------- Styles for use in CMS editing -------------------- */
+
+.box-content .label {  /* White words in a tight blue box, used in text. */
+    border-radius: 3px;
+    padding: 2px 10px;
+    background: #136E8E;
+    color: white;
+    font-weight: bold;
+}
+.callout {  /* Paragraph in a rectangle with a light blue background. */
+    border: 2px solid #B4D3C6;
+    border-radius: 2em;
+    padding: 1em 2em;
+    background-color: #e6fff9;
+    /* ^ chroma('#B4D3C6').brighten().hex() */
+}
+.hotel {
+    display: inline-block;
+    margin: 0.4em;
+    background-color: #f3f5d6;
+    width: 12em;
+    padding: 0 0.8em;
+    vertical-align: top;
+}
+.hotel h3 {
+    color: #CE624D;
+}
+
+/* -------------------- Page-specific styles -------------------- */
+
+/* The home page. */
+
+.home-page #content, .home-page h2 {
+    text-align: center;
+}
+.home-banner {
+    background-color: #B4D3C6;
+    text-align: center;
+    font-size: 22px;
+}
+.home-banner h1 {
+    margin: 0 auto;
+    height: 368px;
+    background: url('../img/pycon-cityscape.png') center no-repeat;
+    text-indent: -9999px;
+}
+.home-banner p {
+    display: inline-block;
+    margin: 1em auto 2em;
+}
+.home-banner p span {
+    /* Avoid "May 17-25" being split across lines on mobile. */
+    white-space: nowrap;
+}
+.home-banner img {
+    width: 100%;
+}
+#content_homepage-about p {
+    margin-top: 2em;
+    /* border: 5px solid #A8AA8D; */
+    /* border-radius: 1em; */
+    /* background-color: #e4e6c7; */
+    max-width: 36em;
+    padding: 1em;
+    font-size: 20px;
+}
+.front-page-facets {
+    text-align: center;
+    max-width: none;
+}
+.front-page-facets div {
+    display: inline-block;
+    vertical-align: top;
+    padding: 2em 2em 0em;
+    max-width: 25em;
+}
+.front-page-facets.narrow div {
+    max-width: 15em;
+}
+.front-page-facets h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+}
+.front-page-facets img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+.front-page-sponsors a {
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid white;
+    padding: 1em;
+}
+.front-page-sponsors a:hover {
+    border: 2px solid black;
+}
+.front-page-sponsors img {
+    max-height: 120px;
+    max-width: 240px;
+}
+
+/* The very wide schedule grid. */
+
+.schedule-page #content {
+    max-width: none;
+    font-size: 14px;  /* slightly smaller */
+}
+table.calendar td {
+    border: 1px solid black;
+    text-align: center;
+}
+td.slot .title {
+    font-weight: bold;
+}
+td.slot .title,
+td.slot .speaker {
+    display: block;
+}
+td.slot-Breakfast,
+td.slot-Break,
+td.slot-Lunch {
+    background-color: #136E8E;
+    color: #fff;
+    font-weight: bold;
+}
+td.slot-plenary {
+    background-color: #CE624D;
+    color: #fff;
+    font-weight: bold;
+}
+td.time {
+    font-weight: bold;
+}
+.schedule-page .badges .btn {
+    font-size: 0.8em;
+    min-width: 1em;
+}
+
+/* The presentation lists for Talks, Tutorials, and Posters. */
+
+.presentation-list #content {
+    font-size: 16px;  /* slightly smaller */
+}
+
+/* The Job Listing page. */
+
+.job-fair h1 {
+    text-align: center;
+}
+.job-fair .sponsor-logo {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+.job-fair .callout {
+    margin-bottom: 1em;
+}
+@media (min-width: 600px) {
+    .job-fair .callout {
+        width: 30%;
+        float: right;
+        margin-left: 1em;
+        padding: 0.3em;
+    }
+}
+
+/* The sponsors page. */
+
+.sponsor-level {
+    text-align: center;
+}
+.sponsor-level h2 {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.sponsor {
+    display: inline-block;
+    margin-top: 1em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    vertical-align: top;
+    max-width: 22em;
+}
+.sponsor > a {
+    display: block;
+}
+.sponsor h3 {
+    margin-bottom: 0.5em;
+}
+.sponsor > p {
+    text-align: left;
+}

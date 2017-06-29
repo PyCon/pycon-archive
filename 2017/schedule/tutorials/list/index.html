@@ -1,0 +1,2723 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from us.pycon.org/2017/schedule/tutorials/list/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Jun 2017 14:59:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="all" href="/2017/site_media/static/css/slight.css" />
+    
+
+
+<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="/2017/site_media/static/cache/css/8534747c90ad.css" type="text/css" />
+
+    
+
+
+
+    <meta property="og:image" content="/2017/site_media/static/img/pycon2017-logo.png" />
+    <link href="/2017/site_media/static/img/pycon-2017.png" rel="shortcut icon" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+      $(document).on('click', '.message button', function(event) {
+        $(this).parent().hide();
+        return false;
+      });
+      $(document).on('click', '.dropdown-toggle', function(event) {
+        /* toggle visibility of nav menu (jQuery sets the "display" attr) */
+        $(this).parent().children('.dropdown-menu').toggle();
+        return false;
+      });
+      $(document).on('mouseout', '.dropdown', function(event) {
+        /* remove any "display" attr that jQuery added when clicked */
+        $(this).children('.dropdown-menu').removeAttr('style');
+        return false;
+      });
+    </script>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.js"></script>
+<script type="text/javascript" src="/2017/site_media/static/cache/js/6f4a8148a968.js"></script>
+
+    
+  
+
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.js"></script>
+<script type="text/javascript" src="/2017/site_media/static/cache/js/6f4a8148a968.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      var converter = new Attacklab.showdown.converter();
+      $('.presentation-description').each(function() {
+        $(this).html(converter.makeHtml($(this).text()));
+      });
+    });
+  </script>
+
+    <meta name="google-site-verification" content="fG_DG4G4eFtBcgIKht-bJKdirGhDa_51X6yeCS8daDs" />
+
+
+</head>
+<body class="presentation-list">
+
+
+    
+    
+
+
+
+
+
+<header class="main">
+  
+
+
+
+<div class="account-links">
+    
+    
+</div>
+
+  
+    <a class="beatrix-banner" href="/2017/">
+      <img src="/2017/site_media/static//img/pycon-cityscape.png">
+    </a>
+  
+  <nav>
+
+<ul class="nav">
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ About PyCon
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/about/" >What is PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2017/about/code-of-conduct/" >Code of Conduct</a>
+        </li>
+    
+        <li >
+            <a href="/2017/about/diversity/" >Diversity</a>
+        </li>
+    
+        <li >
+            <a href="/2017/about/staff/" >Staff Information</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sitemap/" >Site Map</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ PSF
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/psf/" >Python Software Foundation</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown active">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ Schedule
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/schedule/tutorials/" >Tutorial Schedule (Wed–Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2017/schedule/sponsor-tutorials/" >Sponsor Workshops (Wed–Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2017/schedule/talks/" >Talk Schedule (Fri–Sun)</a>
+        </li>
+    
+        <li >
+            <a href="/2017/schedule/posters/list/" >Posters (Sunday morning)</a>
+        </li>
+    
+        <li >
+            <a href="/2017/keynote-speakers/" >Keynote Speakers</a>
+        </li>
+    
+        <li >
+            <a href="/2017/schedule/talks/list/" >List of Talks</a>
+        </li>
+    
+        <li class="active">
+            <a href="/2017/schedule/tutorials/list/" >List of Tutorials</a>
+        </li>
+    
+        <li >
+            <a href="/2017/schedule/sponsor-tutorials/list/" >List of Sponsor Workshops</a>
+        </li>
+    
+        <li >
+            <a href="/2017/edusummit/schedule/" >Education Summit (Thursday)</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ Events
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/events/dinners/" >Evening Dinners</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/opening-reception/" >Opening reception</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/edusummit/" >Education Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/startup_row/" >Startup Row</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/jobs/" >Job Fair</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/open-spaces/" >Open Spaces</a>
+        </li>
+    
+        <li >
+            <a href="/2017/5k/" >PyCon Fun Run/Walk</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/auction/" >PyLadies Auction</a>
+        </li>
+    
+        <li >
+            <a href="/2017/community/sprints/" >Development Sprints</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/testing-bof/" >Testing BOF</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/language-summit/" >Python Language Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/django_girls_workshop/" >Django Girls Workshop</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/letslearnpython/" >Young Coders </a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/outsidein/" >Young Coders: Outside In</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/pyladieslunch/" >PyLadies Lunch</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/outside_events/" >Outside Events</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/womenbigdatemeetup" >Women in Big Data Meetup</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ Sponsors
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/sponsors/" >Our Sponsors</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/why-sponsor/" >Why sponsor PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/prospectus/" >Prospectus</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/apply/" >Application Form</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/fees/" >Estimated Sponsor Fees</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/exhibit-hall/" >Exhibit Hall</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/faq/" >Sponsor FAQ</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/information/" >Sponsor Information</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ Venue
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/venue/" >Venue and Hotels</a>
+        </li>
+    
+        <li >
+            <a href="/2017/venue/travel/" >Traveling to Portland</a>
+        </li>
+    
+        <li >
+            <a href="/2017/venue/weather/" >Weather</a>
+        </li>
+    
+        <li >
+            <a href="/2017/venue/accessibility/" >Accessibility</a>
+        </li>
+    
+        <li >
+            <a href="/2017/childcare/" >Childcare</a>
+        </li>
+    
+        <li >
+            <a href="/2017/venue/restaurants/" >Restaurants</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ Registration
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/registration/" >Registration Information</a>
+        </li>
+    
+        <li >
+            <a href="/2017/financial-assistance/" >Financial Assistance</a>
+        </li>
+    
+        <li >
+            <a href="/2017/childcare/" >Childcare</a>
+        </li>
+    
+        <li >
+            <a href="/2017/community/roomsharing/" >Room Sharing</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ Volunteer!
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/about/volunteers" >Volunteering on-site</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+</ul>
+</nav>
+</header>
+
+
+
+
+    <div id="content">
+        
+            <div class="page-content">
+                
+                <div class="container">
+                    
+                    <h1>
+    Tutorials
+</h1>
+                    <div class="box">
+                      
+                        <div class="box-content">
+  
+
+
+
+<script type="text/javascript">
+    $(function () {
+        var mdown = $('#content_schedule_detail_tutorials > div.markdown').text();
+        var converter = new Attacklab.showdown.converter();
+        var html = converter.makeHtml(mdown);
+        $('#content_schedule_detail_tutorials > div.markdown').html(html);
+        $('#content_schedule_detail_tutorials > a').click(function() {
+            $('#edit_schedule_detail_tutorials').toggle('hide');
+        });
+    });
+</script>
+
+
+<div id="content_schedule_detail_tutorials" class="content-box ">
+    
+    <div class="markdown"></div>
+</div>
+
+
+
+  
+    <h2>
+      <a id="presentation-145"
+         href="/2017/schedule/presentation/145/">
+        An introduction to secure web development with Django and Python
+      </a>
+    </h2>
+    <p>
+      <b>
+        James Bennett
+        
+      </b>
+      
+      <br>
+      <b>
+        Wednesday
+        9 a.m.&ndash;12:20 p.m.
+        in
+        Room 3
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >You can&#39;t afford to have security be an optional or &quot;nice-to-have&quot; feature in your applications. Luckily, Django has your back: this workshop will introduce you to thinking about security, cover a broad range of security concerns from the mundane to the arcane, and walk you through, in detail, how Django and the broader Django and Python ecosystems can help protect you and your users from them.</div>
+  
+    <h2>
+      <a id="presentation-186"
+         href="/2017/schedule/presentation/186/">
+        Applied Modern Cryptography in Python
+      </a>
+    </h2>
+    <p>
+      <b>
+        Amirali Sanatinia
+        
+      </b>
+      
+      <br>
+      <b>
+        Thursday
+        1:20 p.m.&ndash;4:40 p.m.
+        in
+        Room 9
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Today we use cryptography in almost everywhere. From surfing the web over https, to working remotely over ssh. Although most developers don&#39;t need to implement cryptography primitives, the knowledge and understanding of these building block allows them to better deploy them in their application. In modern crypto we have all the building block to develop secure application. However, we see instances of insecure code everywhere. Most of these vulnerabilities are not because of theoretic shortcomings, but due to bad implementation or a flawed protocol design. Cryptography is a delicate art where nuances matter, and failure to comprehend the subtleties of these building blocks leads to critical vulnerabilities. To add insult to injury most of the resources available are either outdated or wrong, and inarguably, using bad crypto more dangerous than not using it.
+
+In this tutorial we look at the basic building blocks of modern cryptography. We will cover the encryption techniques, hashing mechanisms, and key devastation algorithms. Furthermore we review two of the most widely used protocol suites, SSL and PGP. We conclude by implementing a simplified version of Pretty Good Privacy (PGP), that is used for encryption of texts, e-mails, files, directories, and whole disk partitions.</div>
+  
+    <h2>
+      <a id="presentation-160"
+         href="/2017/schedule/presentation/160/">
+        Beginning Python Bootcamp
+      </a>
+    </h2>
+    <p>
+      <b>
+        Matt Harrison
+        
+      </b>
+      
+      <br>
+      <b>
+        Wednesday
+        9 a.m.&ndash;12:20 p.m.
+        in
+        Room 1
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Are you new to Python? Or do you feel like you grok the syntax, but would like to understand new idioms and where to use them? Want to watch an experienced Python developer create code from nothing? Instead of just covering the syntax, we will introduce most of Python
+as we build code together. 
+
+Bring your laptop and we will program a predictive text engine from scratch together. Follow along as we start with IDLE (or your favorite editor) and a blank file, and end with a tested idiomatic Python module. It will learn from any text we pass into it, and predict characters or words for us. Just like your phone!</div>
+  
+    <h2>
+      <a id="presentation-182"
+         href="/2017/schedule/presentation/182/">
+        Best Testing Practices for Data Science
+      </a>
+    </h2>
+    <p>
+      <b>
+        Eric J. Ma, ?
+        
+      </b>
+      
+      <br>
+      <b>
+        Thursday
+        1:20 p.m.&ndash;4:40 p.m.
+        in
+        Room 8
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >So you&#39;re a data scientist wrangling with data that&#39;s continually avalanching in, and there&#39;s always errors cropping up! `NaN`s, strings where there are supposed to be integers, and more. Moreover, your team is writing code that is getting reused, but that code is failing in mysterious places. How do you solve this? Testing is the answer! In this tutorial, you will gain practical hands-on experience writing tests in a data science setting so that you can continually ensure the integrity of your code and data. You will learn how to use `py.test`, `coverage.py`, and `hypothesis` to write better tests for your code.</div>
+  
+    <h2>
+      <a id="presentation-190"
+         href="/2017/schedule/presentation/190/">
+        bokeh: Data Visualization in Python
+      </a>
+    </h2>
+    <p>
+      <b>
+        Chalmer Lowe
+        
+      </b>
+      
+      <br>
+      <b>
+        Wednesday
+        1:20 p.m.&ndash;4:40 p.m.
+        in
+        Room 8
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Bokeh is a powerful data visualization library that creates fully interactive plots and integrates well with the data analysis tools you already know and love: pandas, matplotlib, seaborn, ggplot. Bokeh can produce stand-alone browser-based plots and much more sophisticated server-hosted visualizations.
+
+* Learn to use bokeh to create everything from basic graphs to advanced interactive plots, dashboards, and data applications
+* Incorporate bokeh within your Jupyter/IPython notebooks
+* Partner bokeh with other libraries such as matplotlib, seaborn, pandas, and ggplot
+* Learn about bokeh server: to serve up even more impressive realtime visualizations
+* Explore configurations and settings
+* Recognize and overcome common problems</div>
+  
+    <h2>
+      <a id="presentation-210"
+         href="/2017/schedule/presentation/210/">
+        Build a data pipeline with Luigi
+      </a>
+    </h2>
+    <p>
+      <b>
+        Aaron Knight
+        
+      </b>
+      
+      <br>
+      <b>
+        Thursday
+        9 a.m.&ndash;12:20 p.m.
+        in
+        Room 9
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >[Luigi][1] is a Python library for building pipelines of batch processes. It &quot;handles dependency resolution, workflow management, visualization, handling failures, command line integration, and much more&quot;
+
+In this tutorial, we will use Luigi to build a data pipeline that runs a series of interdependent jobs. We will also discuss some real-world use cases for Luigi, and show how it can make running a data pipeline much more robust and reliable.
+
+  [1]: https://pypi.python.org/pypi/luigi
+</div>
+  
+    <h2>
+      <a id="presentation-200"
+         href="/2017/schedule/presentation/200/">
+        Complexity Science
+      </a>
+    </h2>
+    <p>
+      <b>
+        Allen Downey, Jason Woodard
+        
+      </b>
+      
+      <br>
+      <b>
+        Wednesday
+        1:20 p.m.&ndash;4:40 p.m.
+        in
+        Room 9
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Complexity Science is an approach to modeling systems using tools from discrete mathematics and computer science, including networks, cellular automata, and agent-based models.  It has applications in many areas of natural and social science.
+
+Python is a particularly good language for exploring and implementing models of complex systems.  In this tutorial, we present material from the draft second edition of *Think Complexity*, and from a class we teach at Olin College.  We will work with random networks using NetworkX, with cellular automata using NumPy, and we will implement simple agent-based models.</div>
+  
+    <h2>
+      <a id="presentation-5"
+         href="/2017/schedule/presentation/5/">
+        ContainerOrchestration.py: The tutorial session
+      </a>
+    </h2>
+    <p>
+      <b>
+        Mike Bright, Haïkel Guémar, Mario Loriedo
+        
+      </b>
+      
+      <br>
+      <b>
+        Wednesday
+        1:20 p.m.&ndash;4:40 p.m.
+        in
+        Room 5
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Container Orchestration is the new hot topic in design of scalable system architecture.
+
+In this tutorial we look at the main choices for container orchestrators: Docker Swarm, Kubernetes and Apache Mesos.
+
+We will look at the use of the respective Python APIs for interacting with thoses engines.
+
+This 3-hr session will provide hands-on use of those orchestrators with real use-cases.
+</div>
+  
+    <h2>
+      <a id="presentation-52"
+         href="/2017/schedule/presentation/52/">
+        Contract-First API Development Using The OpenAPI Specification (Swagger)
+      </a>
+    </h2>
+    <p>
+      <b>
+        Dave Forgac, Ian Zelikman
+        
+      </b>
+      
+      <br>
+      <b>
+        Wednesday
+        9 a.m.&ndash;12:20 p.m.
+        in
+        Room 4
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Often developers will implement APIs and then only after they’re released think about things like specifications and documentation. Instead we can make the design of the API contract an explicit part of our development process using The OpenAPI Specification (Swagger) and open source tools.
+
+In this workshop we will:
+
+ - Discuss the contract-first approach
+ - Build and validate a simple OpenAPI Specification
+ - Generate reference documentation and show how you can incorporate it with other docs
+ - Run a mock server so clients can test using the API
+ - Generate stub code based on the specification
+ - Implement a basic working API using Flask
+ - Show how you can iteratively add features and make changes
+ - Discuss generating specifications for existing APIs
+
+Participants will leave with:
+
+ - An understanding of how to incorporate a contract-first process into their API development workflow
+ - An example specification that can be used as reference for their own API design 
+ - Working code for a basic API that can be used as a basis for their own development
+
+Participants are expected to have a basic familiarity with HTTP / RESTful APIs, understanding of simple git operations, and some development experience.</div>
+  
+    <h2>
+      <a id="presentation-120"
+         href="/2017/schedule/presentation/120/">
+        Creating And Consuming Modern Web Services with Twisted
+      </a>
+    </h2>
+    <p>
+      <b>
+        Moshe Zadka, Glyph
+        
+      </b>
+      
+      <br>
+      <b>
+        Thursday
+        9 a.m.&ndash;12:20 p.m.
+        in
+        Room 5
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >This tutorial will show students how to write applications and services which efficiently publish and consume services and APIs.
+
+To do so, we will combine 4 Python-based technologies:
+
+ - Jupyter is a real-time development environment.
+ - Twisted is a powerful platform for network programming that supports many protocols, including HTTP.
+ - Klein is a Twisted-based web application framework.
+ - Treq is a Requests-style HTTP client based on Twisted.
+
+By combining all of these we will guide students through _interactively prototyping_ a production quality web application that _publishes_ both _service APIs_ and web resources such as HTML, and that can _efficiently consume many back-end services_ such as 3rd-party APIs.
+
+</div>
+  
+    <h2>
+      <a id="presentation-166"
+         href="/2017/schedule/presentation/166/">
+        Cross-platform Native GUI development with BeeWare
+      </a>
+    </h2>
+    <p>
+      <b>
+        Russell Keith-Magee
+        
+      </b>
+      
+      <br>
+      <b>
+        Wednesday
+        9 a.m.&ndash;12:20 p.m.
+        in
+        Room 5
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Have you ever wanted to write an application that can run on your phone? Time to learn Objective C or Java - or both of them if you want your app to run on both iOS and Android. Want that app to run on your desktop as well? There&#39;s another whole stack of APIs to learn. What about a website as well? Add JavaScript, CSS, and yet more APIs to your &quot;to-learn&quot; list. Want to do all this with a single language, and a single API? Good luck with that. And if you want that language to be Python? You&#39;ve *got* to be kidding.... right? 
+
+BeeWare is a collection of tools and libraries that allows you to build cross-platform GUI applications in pure Python, targeting desktop, mobile and web platforms. Apps created using BeeWare aren&#39;t web apps wrapped in a native shell, and they don&#39;t ignore native widget styles and UI conventions - they&#39;re 100% native. BeeWare apps are indistinguishable from applications written using the official languages and APIs for each platform. 
+
+In this tutorial, you&#39;ll be introduced to the BeeWare suite of tools and libraries, and use those tools to develop, from scratch, a simple GUI application. You&#39;ll then deploy that application as a standalone desktop application, a mobile phone application, and a single page webapp - without making any changes to the application&#39;s codebase.</div>
+  
+    <h2>
+      <a id="presentation-230"
+         href="/2017/schedule/presentation/230/">
+        Decorators and descriptors decoded
+      </a>
+    </h2>
+    <p>
+      <b>
+        Luciano Ramalho
+        
+      </b>
+      
+      <br>
+      <b>
+        Wednesday
+        1:20 p.m.&ndash;4:40 p.m.
+        in
+        Room 1
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Python developers use decorators and descriptors on a daily basis, but many don&#39;t understand them well enough to create (or debug) them. Decorators are widely deployed in popular Python Web frameworks. Descriptors are the key to the database mappers used with those frameworks, but under the covers they play an even more crucial role in Python as the device that turns plain functions into bound methods, setting the value of the `self` argument. This tutorial is a gentle introduction these important language features, using a test-driven presentation and exercises, and covering enhancements in Python 3.6 that make class metaprogramming easier to get right.
+
+Decorators without closures are presented first, highlighting the difference between _run time_ and _import time_ that is crucial when meta-programming. We then get a firm grounding on closures and how they are implemented in Python, before moving to higher order function decorators and class decorators.
+
+Coverage of descriptors starts with a close look at Python&#39;s `property` built-in function and dynamic attribute look up. We then implement some ORM-like field validation descriptors, encounter a usability problem, and leverage PEP 487 -- Simpler customisation of class creation -- to solve it. Alternative implementations using a class decorator and a metaclass will be contrasted to the PEP 487 solution.
+</div>
+  
+    <h2>
+      <a id="presentation-144"
+         href="/2017/schedule/presentation/144/">
+        Deploy and scale containers with Docker native, open source orchestration
+      </a>
+    </h2>
+    <p>
+      <b>
+        Jerome Petazzoni, AJ Bowen
+        
+      </b>
+      
+      <br>
+      <b>
+        Thursday
+        9 a.m.&ndash;12:20 p.m.
+        in
+        Room 4
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Deploy your own cluster! Use it to &quot;build, ship, and run&quot; containerized applications! Learn how to implement logging, metrics, stateful services, and more! Learn the True Way of DevOps! Alright, we can&#39;t promise anything about the True Way of DevOps, but everything else will definitely be in this tutorial.
+
+We will run a demo app featuring Python components and see some best practices to &quot;Dockerize&quot; Python code and Flask in particular; but the tutorial also includes other languages and frameworks.
+
+Come with your laptop! You don&#39;t need to install anything before the workshop, as long as you have a web browser and a SSH client. Each student will have their own private cluster during the tutorial, to get immediately applicable first-hand experience.
+</div>
+  
+    <h2>
+      <a id="presentation-264"
+         href="/2017/schedule/presentation/264/">
+        Django Admin: Basics and Beyond
+      </a>
+    </h2>
+    <p>
+      <b>
+        Kenneth Love
+        
+      </b>
+      
+      <br>
+      <b>
+        Thursday
+        1:20 p.m.&ndash;4:40 p.m.
+        in
+        Room 2
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Django&#39;s admin is a great tool but it isn&#39;t always the easiest or friendliest to set up and customize. The ModelAdmin class has a lot of attributes and methods to understand and come to grips with. On top of these attributes, the admin&#39;s inlines, custom actions, custom media, and more mean that, really, you can do anything you need with the admin...if you can figure out how. The docs are good but leave a lot to experimentation and the code is notoriously dense.
+
+In this tutorial, you&#39;ll learn the basics of setting up the admin so you can get your job done. Then we&#39;ll dive deeper and see how advanced features like autocomplete, Markdown editors, image editors, and others would be added to make the admin really shine.</div>
+  
+    <h2>
+      <a id="presentation-222"
+         href="/2017/schedule/presentation/222/">
+        Effectively running python applications in Kubernetes/OpenShift
+      </a>
+    </h2>
+    <p>
+      <b>
+        Maciej Szulik
+        
+      </b>
+      
+      <br>
+      <b>
+        Thursday
+        1:20 p.m.&ndash;4:40 p.m.
+        in
+        Room 4
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Google, Red Hat, Intel, Huawei, Mirantis, Deis and many, many others are investing a lot of time and effort into improving Kubernetes.  I bet, you have encountered that name at least once in the past twelve months, either on Hacker News, Reddit, or somewhere else.  Do you want to learn more about the best container orchestration in the universe, but were afraid of the setup complexity?  Do you want to see how easy it is to run any application using containers?  Do you want to experience the joy of scaling application with a single click?  This, and a lot more will be
+discussed in details.
+In this tutorial, every attendee will be provided with an environment, and step by step instructions necessary to setup the environment, build and deploy a microservices based sample application.  Alternatively, a sample application of any choosing can be used throughout the entire tutorial.  All that will be performed on OpenShift, which is a Red Hat distribution of Kuberenets with some add-ons that will be described in details at the beginning of the tutorial.  To wet your appetite even more, here are some of the topics we are going to cover:
+
+- automatic build and deployment
+- git integration
+- image registry integration
+- scaling application
+- containers security
+- batch tasks
+
+and much more.
+
+After the session, every person will be able to play around with the accompanying code repository that was used in the tutorial, which includes detailed instructions how to run it on your own from scratch.</div>
+  
+    <h2>
+      <a id="presentation-170"
+         href="/2017/schedule/presentation/170/">
+        Exploratory data analysis in python
+      </a>
+    </h2>
+    <p>
+      <b>
+        Chloe Mawer, ?, Jonathan Whitmore
+        
+      </b>
+      
+      <br>
+      <b>
+        Wednesday
+        9 a.m.&ndash;12:20 p.m.
+        in
+        Room 7
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >With the recent advancements in machine learning algorithms and statistical techniques, and the increasing ease of implementing them in Python, it is tempting to ignore the power and necessity of exploratory data analysis (EDA), the crucial step before diving into machine learning or statistical modeling. Simply applying machine learning algorithms without a proper orientation of the dataset can lead to wasted time and spurious conclusions. EDA allows practitioners to gain intuition for the pattern of the data, identify anomalies, narrow down a set of alternative modeling approaches, devise strategies to handle missing data, and ensure correct interpretation of the results. Further, EDA can rapidly generate insights and answer many questions without requiring complex modeling.
+
+Python is a fantastic language not only for machine learning, but also EDA. In this tutorial, we will walk through two hands-on examples of how to perform EDA using Python and discuss various EDA techniques for cross-section data, time-series data, and panel data. One example will demonstrate how to use EDA to answer questions, test business assumptions, and generate hypotheses for further analysis. The other example will focus on performing EDA to prepare for modeling.  Between these two examples, we will cover: 
+
+* Data profiling and quality assessment
+* Basic describing of the data 
+* Visualizing the data including interactive visualizations 
+* Identifying patterns in the data (including patterns of correlated missing data)
+* Dealing with many attributes (columns) 
+* Dealing with large datasets using sampling techniques
+* Informing the engineering of features for future modeling 
+* Identifying challenges of using the data (e.g. skewness, outliers) 
+* Developing an intuition for interpreting the results of future modeling 
+
+The intended audience for this tutorial are aspiring and practicing data scientists and analysts, or anyone who wants to be able to get insights out of data. Students must have at least an intermediate-level knowledge of Python and some familiarity with analyzing data would be beneficial. Installation of Jupyter Notebook will be required (and potentially, we will also demonstrate analysis in JupyterLab, if its development in the next few months allows). Instructions will be sent on what packages to install beforehand. 
+
+</div>
+  
+    <h2>
+      <a id="presentation-177"
+         href="/2017/schedule/presentation/177/">
+        Fantastic Data and Where To Find Them: An introduction to APIs, RSS, and Scraping
+      </a>
+    </h2>
+    <p>
+      <b>
+        Nicole Donnelly, Tony Ojeda, Will Voorhees
+        
+      </b>
+      
+      <br>
+      <b>
+        Wednesday
+        9 a.m.&ndash;12:20 p.m.
+        in
+        Room 8
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Whether you’re building a custom web application, getting started in machine learning, or just want to try something new, everyone needs data. And while the web offers a seemingly boundless source for custom data sets, the collection of that data can present a whole host of obstacles. From ever-changing APIs to rate-limiting woes, from nightmarishly nested XML to convoluted DOM trees, working with APIs and web scraping are challenging but critically useful skills for application developers and data scientists alike. In this tutorial, we’ll introduce RESTful APIs, RSS feeds, and web scraping in order to see how different ingestion techniques impact application development. We’ll explore how and when to use Python libraries such as `feedparser`, `requests`, `beautifulsoup`, and `urllib`. And finally we will present common data collection problems and how to overcome them. 
+
+
+We’ll take a hands-on, directed exercise approach combined with short presentations to engage a range of different APIs (with and without authentication), explore examples of how and why you might web scrape, and learn the ethical and legal considerations for both. To prepare attendees to create their own data ingestion scripts, the tutorial will walk through a set of examples for robust and responsible data collection and ingestion. This tutorial will conclude with a case study of [Baleen](https://pypi.python.org/pypi/baleen/0.3.3), an automated RSS ingestion service designed to construct a production-grade text corpus for NLP research and machine learning applications. Exercises will be presented both as Jupyter Notebooks and Python scripts.
+</div>
+  
+    <h2>
+      <a id="presentation-168"
+         href="/2017/schedule/presentation/168/">
+        Faster Python Programs - Measure, don&#39;t Guess
+      </a>
+    </h2>
+    <p>
+      <b>
+        Mike Müller
+        
+      </b>
+      
+      <br>
+      <b>
+        Thursday
+        9 a.m.&ndash;12:20 p.m.
+        in
+        Room 3
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Optimization can often help to make Python programs faster or use less memory.
+Developing a strategy, establishing solid measuring and visualization techniques
+as well as knowing about algorithmic basics and datastructures are the foundation
+for a successful optimization. The tutorial will cover these topics.
+Examples will give you a hands-on experience on how to approach efficiently.
+
+Python is a great language. But it can be slow compared to other languages
+for certain types of tasks. If applied appropriately, optimization may reduce
+program runtime or memory consumption considerably. But this often comes at a
+price. Optimization can be time consuming and the optimized program may be more
+complicated. This, in turn, means more maintenance effort. How do you find
+out if it is worthwhile to optimize your program? Where should you start?
+This tutorial will help you to answer these questions. You will learn how
+to find  an optimization strategy based on quantitative and objective criteria.
+You will experience that one&#39;s gut feeling what to optimize is often wrong.
+
+The solution to this problem is: „Measure, Measure, and Measure!“. You will
+learn how to measure program run times as well as profile CPU and memory.
+There are great tools available. You will learn how to use some of them.
+Measuring is not easy because, by definition, as soon as you start to measure,
+you influence your system. Keeping this impact as small as possible is
+important. Therefore, we will cover different measuring techniques.
+
+Furthermore, we will look at algorithmic improvements. You will see that the
+right data structure for the job can make a big difference. Finally, you will
+learn about different caching techniques.
+
+## Software Requirements
+
+You will need Python 2.7 or 3.5 installed on your laptop. Python 2.6 or 3.3/3.4
+should also work. Python 3.x is strongly preferred.
+
+
+### Jupyter Notebook
+
+I will use a Jupyter Notebook for the tutorial because it makes a very good
+teaching tool. You are welcome to use the setup you prefer, i.e editor, IDE,
+REPL. If you also like to use a Jupyter Notebook, I recommend `conda` for
+easy installation. Similarly to `virtualenv`, `conda` allows creating isolated
+environments but allows binary installs for all platforms.
+
+There are two ways to install `Jupyter` via `conda`:
+
+1. Use [Minconda][10]. This is a  small install and (after you installed it)
+   you can use the command  `conda` to create an environment:
+  `conda create -n pycon2016 python=3.5`
+   Now you can change into this environment:
+   `source activate pycon2016`. The prompt should change to `(pycon2017)`.
+   Now you can install IPython: `conda install Jupyter`.
+
+2. Install [Anaconda][20] and you are ready to go if you don&#39;t mind installing
+   lots of packages from the scientific field.
+
+### Working with ``conda`` environments
+
+After creating a new environment, the system might still work with some
+stale settings. Even when the command ``which`` tells you that you are using an
+executable from your environment, this might actually not be the case.
+If you see strange behavior using a command line tool in your environment,
+use ``hash -r`` and try again.
+
+[10]: http://conda.pydata.org/miniconda.html
+[20]: http://continuum.io/downloads
+
+
+### Tools
+
+You can install these with ``pip`` (in the active ``conda`` environment):
+
+* [SnakeViz][3]
+* [line_profiler][4]
+* [Pympler][6]
+* [memory_profiler][7]
+* [pyprof2calltree][9]
+
+
+
+#### Linux
+
+Using the package manager of your OS should be the best option.
+
+
+[1]: http://conda.pydata.org/miniconda.html
+[3]: http://jiffyclub.github.io/snakeviz/
+[2]: http://continuum.io/downloads
+[4]: https://pypi.python.org/pypi/line_profiler/
+[6]: https://pypi.python.org/pypi/Pympler
+[7]: https://pypi.python.org/pypi/memory_profiler
+[8]: http://kcachegrind.sourceforge.net/html/Home.html
+[9]: https://github.com/pwaller/pyprof2calltree/
+</div>
+  
+    <h2>
+      <a id="presentation-254"
+         href="/2017/schedule/presentation/254/">
+        Hands-On Intro to Python for New Programmers
+      </a>
+    </h2>
+    <p>
+      <b>
+        Trey Hunner
+        
+      </b>
+      
+      <br>
+      <b>
+        Thursday
+        9 a.m.&ndash;12:20 p.m.
+        in
+        Room 1
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Brand new to programming and want to get some hands-on Python experience?  Let&#39;s learn some Python together!
+
+During this tutorial we will work through a number of programming exercises together.  We&#39;ll be doing a lot of asking questions, taking guesses, trying things out, and seeking out help from others.
+
+In this tutorial we&#39;ll cover:
+
+- Types of things in Python: strings, numbers, lists
+- Conditionally executing code
+- Repeating code with loops
+- Getting user input
+</div>
+  
+    <h2>
+      <a id="presentation-238"
+         href="/2017/schedule/presentation/238/">
+        How to Write and Debug C Extension Modules
+      </a>
+    </h2>
+    <p>
+      <b>
+        Joe Jevnik
+        
+      </b>
+      
+      <br>
+      <b>
+        Wednesday
+        1:20 p.m.&ndash;4:40 p.m.
+        in
+        Room 3
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >The CPython interpreter allows us implement modules in C for performance
+critical code or to interface with external libraries while presenting users
+with a high level Python API. This tutorial will teach you how to leverage to
+power of C in your Python projects.
+
+We will start by explaining the C representation of Python objects and how to
+manipulate them from within C. We will then move on to implementing functions in
+C for use in Python. We will discuss reference counting and correct exception
+handling. We will also talk about how to package and build your new extension
+module so that it may be shared on PyPI. (We will only be covering building
+extension modules on GNU/Linux and OSX, not Windows).
+
+After the break, we will show how to implement a new type in C. This will cover
+how to hook into various protocols and properly support cyclic garbage
+collection. We will also discuss techniques for debugging C extension modules
+with gdb using the CPython gdb extension.
+</div>
+  
+    <h2>
+      <a id="presentation-172"
+         href="/2017/schedule/presentation/172/">
+        Intermediate Python Bootcamp
+      </a>
+    </h2>
+    <p>
+      <b>
+        Matt Harrison
+        
+      </b>
+      
+      <br>
+      <b>
+        Thursday
+        1:20 p.m.&ndash;4:40 p.m.
+        in
+        Room 3
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Are you new to Python and want to learn to step it up to the next level? Have you heard about closures, decorators, context managers, generators, list comprehensions, or generator expressions? What are these and why do advanced Pythonistas keep mentioning them? Don&#39;t be intimidated, learn to take advantage of these to make you own code more idiomatic.
+
+This hands-on tutorial will cover these intermediate subjects in detail. We will modify existing Python code to take advantage of them. We will start with a basic file, and then introduce these features into it using the REPL, command line, and tests. The audience will get to follow along using their own computer and editor of choice (or can use IDLE as the instructor). 
+
+We will teach the &quot;code smells&quot; to look for. You will know when you should apply these new techniques to your code. </div>
+  
+    <h2>
+      <a id="presentation-163"
+         href="/2017/schedule/presentation/163/">
+        Introduction to Digital Signal Processing
+      </a>
+    </h2>
+    <p>
+      <b>
+        Allen Downey
+        
+      </b>
+      
+      <br>
+      <b>
+        Thursday
+        1:20 p.m.&ndash;4:40 p.m.
+        in
+        Room 5
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Spectral analysis is an important and useful technique in many areas of science and engineering, and the Fast Fourier Transform is one of the most important algorithms, but the fundamental ideas of signal processing are not as widely known as they should be.
+
+Fortunately, Python provides an accessible and enjoyable way to get started.  In this tutorial, I present material from my book, *Think DSP*, and from a class I teach at Olin College.  We will work with audio signals, including music and other recorded sounds, and visualize their spectrums and spectrograms.  We will synthesize simple sounds and learn about harmonic structure, chirps, filtering, and convolution.
+</div>
+  
+    <h2>
+      <a id="presentation-199"
+         href="/2017/schedule/presentation/199/">
+        Introduction to Statistical Modeling with Python
+      </a>
+    </h2>
+    <p>
+      <b>
+        Christopher Fonnesbeck
+        
+      </b>
+      
+      <br>
+      <b>
+        Wednesday
+        1:20 p.m.&ndash;4:40 p.m.
+        in
+        Room 7
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >This intermediate-level tutorial will provide students with hands-on experience applying practical statistical modeling methods on real data. Unlike many introductory statistics courses, we will not be applying &quot;cookbook&quot; methods that are easy to teach, but often inapplicable; instead, we will learn some foundational statistical methods that can be applied generally to a wide variety of problems: maximum likelihood, bootstrapping, linear regression, and other modern techniques. The tutorial will start with a short introduction on data manipulation and cleaning using [pandas](http://pandas.pydata.org/), before proceeding on to simple concepts like fitting data to statistical distributions, and how to use Monte Carlo simulation for data analysis. Slightly more advanced topics include bootstrapping (for estimating uncertainty around estimates) and flexible linear regression methods using Bayesian methods. By using and modifying hand-coded implementations of these techniques, students will gain an understanding of how each method works. Students will come away with knowledge of how to deal with very practical statistical problems, such as how to deal with missing data, how to check a statistical model for appropriateness, and how to properly express the uncertainty in the quantities estimated by statistical methods. </div>
+  
+    <h2>
+      <a id="presentation-232"
+         href="/2017/schedule/presentation/232/">
+        Intro to Bayesian Machine Learning with PyMC3 and Edward
+      </a>
+    </h2>
+    <p>
+      <b>
+        Torsten Scholak, Diego Maniloff
+        
+      </b>
+      
+      <br>
+      <b>
+        Thursday
+        9 a.m.&ndash;12:20 p.m.
+        in
+        Room 6
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >There has been uprising of probabilistic programming and Bayesian statistics. These techniques are tremendously useful, because they help us to understand, to explain, and to predict data through building a model that accounts for the data and is capable of synthesizing it. This is called the generative approach to statistical pattern recognition.
+
+Estimating the parameters of Bayesian models has always been hard, impossibly hard actually in many cases for anyone but experts. However, recent advances in probabilistic programming have endowed us with tools to estimate models with a lot of parameters and for a lot of data. In this tutorial, we will discuss two of these tools, PyMC3 and Edward. These are black box tools, swiss army knifes for Bayesian modeling that do not require knowledge in calculus or numerical integration. This puts the power of Bayesian statistics into the hands of everyone, not only experts of the field. And, it&#39;s great that these are implemented in Python with its rich, beginner-friendly ecosystem. It means we can immediately start playing with it...
+
+We have planned three awesome parts, spread over three awesome hours:
+
+* First hour: Introduction to Bayesian machine learning.
+
+* Second hour: Baby steps in PyMC3 and Edward.
+
+* Third hour: Solve a real-world problem with PyMC3 or Edward (model, fit, criticize).
+</div>
+  
+    <h2>
+      <a id="presentation-138"
+         href="/2017/schedule/presentation/138/">
+        IoT Lab with Micropython and Friends
+      </a>
+    </h2>
+    <p>
+      <b>
+        Sev Leonard
+        
+      </b>
+      
+      <br>
+      <b>
+        Thursday
+        1:20 p.m.&ndash;4:40 p.m.
+        in
+        Room 6
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Come learn about the Internet of Things and Micropython in this hands-on hardware tutorial, no soldering or hardware experience required! We will be building a wifi-enabled temperature sensor as a vehicle for learning IoT concepts including data capture, building security into data transmission, and messaging between IoT clients and servers. Attendees will have an opportunity to take their sensors out into the conference venue to take measurements, reconvening to discuss analysis and visualization of IoT data.  All the hardware needed will be provided, and attendees will be able to program the devices via a locally-hosted web interface.  
+
+This tutorial will be a great introduction for folks interested in Internet of Things, Micropython, or hardware hacking. You do not need prior experience in any of these topics to attend. We will be using the ESP8266 micro controller and the MQTT protocol for messaging. Attendees should download the [mosquitto MQTT broker](https://mosquitto.org/download/) in addition to collateral that will be sent out to attendees ahead of the tutorial. We will be using the [WebREPL interface](https://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/repl.html) for programming the ESP8266.  If you are wondering what the heck all of this means do not despair! These topics will be covered in the tutorial.</div>
+  
+    <h2>
+      <a id="presentation-184"
+         href="/2017/schedule/presentation/184/">
+        IPython and Jupyter in Depth: High productivity, interactive Python
+      </a>
+    </h2>
+    <p>
+      <b>
+        Matthias Bussonnier, ?, Mike Bright, Min Ragan-Kelley
+        
+      </b>
+      
+      <br>
+      <b>
+        Thursday
+        9 a.m.&ndash;12:20 p.m.
+        in
+        Room 7
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         ># Description
+
+IPython and Jupyter provide tools for interactive computing that are widely
+used in scientific computing, education, and data science, but can benefit any
+Python developer.
+
+You will learn how to use IPython in different ways, as:
+
+- an interactive shell,
+- a graphical console,
+- a network-aware VM (Virtual machine) in GUIs,
+- a web-based notebook combining code, graphics and rich HTML.
+
+We will demonstrate how to deploy a custom environment
+with Docker that not only contains multiple Python kernels but also a couple
+of other languages.
+
+# Objectives
+
+At the end of this tutorial, attendees will have an understanding of the
+overall design of Jupyter (and IPython) as a suite of applications they can use
+and combine in multiple ways in the course of their development work with
+Python and other programming languages. They will learn:
+
+* Tricks from the IPython machinery that are useful in everyday development,
+
+* What high-level applications in Jupyter, the web-based notebooks, can do and
+  how these applications can be used.
+
+* How to use IPython and Jupyter together so that they can be best used for the
+  problem at hand.
+
+# Python Level
+
+Intermediate
+
+# Domain Level
+
+Introductory
+
+# Detailed Abstract
+
+IPython started in 2001 simply as a better interactive Python shell. Over the
+last decade it has grown into a powerful set of interlocking tools that
+maximize developer productivity in Python while working interactively.
+
+Today, Jupyter consists of an IPython kernel that executes user code, provides
+many features for introspection and namespace manipulation, and tools to
+control this kernel either in-process or out-of-process thanks to a well
+specified communications protocol implemented over ZeroMQ. This architecture
+allows the core features to be accessed via a variety of clients, each
+providing unique functionality tuned to a specific use case:
+
+* An interactive, terminal-based shell with capabilities beyond the default
+  Python interactive interpreter (this is the classic application opened by the
+  `ipython` command that many users have worked with)
+
+* A [web-based notebook](http://jupyter.org/) that can execute
+  code and also contain rich text and figures, mathematical equations and
+  arbitrary HTML. This notebook presents a document-like view with cells where
+  code is executed but that can be edited in-place, reordered, mixed with
+  explanatory text and figures, etc. The notebook provides an interactive
+  experience that combines live code and results with literate documentation
+  and the rich media that modern browsers can display:
+
+    ![Notebook screenshot](http://jupyter.org/assets/jupyterpreview.png)
+
+  The notebooks also allow for code in multiple languages allowing to mix Python
+  with Cython, C, R and other programming languages to access features hard to obain from
+  Python.
+
+These tools also increasingly work with languages other than Python, and we
+renamed the language independent frontend components to *Jupyter* in order to
+make this clearer. The Python kernel we provide and the original terminal-based
+shell will continue to be called *IPython*.
+
+In this hands-on, in-depth tutorial, we will briefly describe IPython&#39;s
+architecture and will then show how to use the above tools for a highly
+productive workflow in Python.
+
+The materials for this tutorial are
+[available on a github repository](https://github.com/ipython/ipython-in-depth).
+</div>
+  
+    <h2>
+      <a id="presentation-250"
+         href="/2017/schedule/presentation/250/">
+        Let&#39;s build a web framework!
+      </a>
+    </h2>
+    <p>
+      <b>
+        Jacob Kaplan-Moss
+        
+      </b>
+      
+      <br>
+      <b>
+        Thursday
+        9 a.m.&ndash;12:20 p.m.
+        in
+        Room 2
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >&gt; &quot;Reinventing the wheel is great if your goal is to learn more about wheels.&quot; 
+&gt; -- James Tauber
+
+If you&#39;re building a web app, you probably reach for your favorite framework -- Django, Flask, Pyramid, etc. But we rarely stop to think about what these tools are doing under the hood. In this hands-on tutorial, you&#39;ll gain a deeper understanding of what frameworks are and how they work by implementing your own framework from scratch. We&#39;ll build a complete (if minimal) web framework that handles the WSGI request/response cycle, routing, controllers, templating, and a data layer. Along the way you&#39;ll gain a deeper understanding of the decisions web frameworks make, their relative merits, and inner workings.</div>
+  
+    <h2>
+      <a id="presentation-171"
+         href="/2017/schedule/presentation/171/">
+        Mastering scipy.spatial
+      </a>
+    </h2>
+    <p>
+      <b>
+        Tyler Reddy
+        
+      </b>
+      
+      <br>
+      <b>
+        Thursday
+        9 a.m.&ndash;12:20 p.m.
+        in
+        Room 8
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >The heavily-used scipy library is so large that each of the major modules could fill its own tutorial syllabus. It is also production-quality software with a 1.0 release imminent. In this tutorial, my focus is to cover the scipy.spatial component of the library in great detail, from the perspective of a heavy user and active developer of the computational geometry components of scipy. From distance matrices to Voronoi diagrams and Hausdorff distances, we will explore the corners of scipy.spatial code--both long-established features and even proposed features that haven&#39;t yet made it into a stable release.</div>
+  
+    <h2>
+      <a id="presentation-64"
+         href="/2017/schedule/presentation/64/">
+        Microservices with Python and Flask
+      </a>
+    </h2>
+    <p>
+      <b>
+        Miguel Grinberg
+        
+      </b>
+      
+      <br>
+      <b>
+        Wednesday
+        1:20 p.m.&ndash;4:40 p.m.
+        in
+        Room 2
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Microservices are receiving the buzzword treatment these days, and as such, they have a cloud of hype surrounding them that makes it hard to separate substance from fluff. In this tutorial, Miguel Grinberg starts with an introduction to this architecture, including what&#39;s great and not so great about it, and then teaches you how a traditional monolithic application written in Flask can be refactored into a modern distributed system based on microservices.</div>
+  
+    <h2>
+      <a id="presentation-61"
+         href="/2017/schedule/presentation/61/">
+        Network Analysis Made Simple
+      </a>
+    </h2>
+    <p>
+      <b>
+        Eric J. Ma, Mridul Seth
+        
+      </b>
+      
+      <br>
+      <b>
+        Wednesday
+        9 a.m.&ndash;12:20 p.m.
+        in
+        Room 9
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Have you ever wondered about how those data scientists at Facebook and LinkedIn make friend recommendations? Or how epidemiologists track down patient zero in an outbreak? If so, then this tutorial is for you. In this tutorial, we will use a variety of datasets to help you understand the fundamentals of network thinking, with a particular focus on constructing, summarizing, and visualizing complex networks.</div>
+  
+    <h2>
+      <a id="presentation-189"
+         href="/2017/schedule/presentation/189/">
+        Parallel Data Analysis
+      </a>
+    </h2>
+    <p>
+      <b>
+        Ben Zaitlen, Matthew Rocklin, Min Ragan-Kelley, Olivier Grisel
+        
+      </b>
+      
+      <br>
+      <b>
+        Thursday
+        1:20 p.m.&ndash;4:40 p.m.
+        in
+        Room 7
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >An overview of parallel computing techniques available from Python and hands-on experience with a variety of frameworks.
+
+This course has two primary goals:
+  1. Teach students how to reason about parallel computing
+  2. Provide hands-on experience with a variety of different parallel computing frameworks
+
+Students will walk away with both a high-level understanding of parallel problems and how to select and use an appropriate parallel computing framework for their problem.  They will get hands-on experience using tools both on their personal laptop, and on a cluster environment that will be provided for them at the tutorial.
+
+For the first half we cover programming patterns for parallelism found across many tools, notably map, futures, and big-data collections. We investigate these common APIs by diving into a sequence of examples that require increasingly complex tools.  We learn the benefits and costs of each API and the sorts of problems where each is appropriate.
+
+For the second half, we focus on the performance aspects of frameworks and give intuition on how to pick the right tool for the job. This includes common challenges in parallel analysis, such as communication costs, debugging parallel code, as well as deployment and setup strategies.</div>
+  
+    <h2>
+      <a id="presentation-228"
+         href="/2017/schedule/presentation/228/">
+        Python Epiphanies
+      </a>
+    </h2>
+    <p>
+      <b>
+        Stuart Williams
+        
+      </b>
+      
+      <br>
+      <b>
+        Thursday
+        1:20 p.m.&ndash;4:40 p.m.
+        in
+        Room 1
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >This tutorial is for developers who&#39;ve been using Python for a while and would consider themselves at an intermediate level, but are looking for a deeper understanding of the language.  It focuses on how Python differs from other languages in subtle but important ways that are often confusing, and it demystifies a number of language features that are sometimes misunderstood.
+
+In many ways Python is very similar to other programming languages.  However, in a few subtle ways it is quite different, and many software developers new to Python, after their initial successes, hit a plateau and have difficulty getting past it.  Others don&#39;t hit or perceive a plateau, but still find some of Python&#39;s features a little mysterious or confusing.  This tutorial will help deconstruct some common incorrect assumptions about Python.
+
+If in your use of Python you sometimes feel like an outsider, like you&#39;re missing the inside jokes, like you have most of the puzzle pieces but they don&#39;t quite fit together yet, or like there are parts of Python you just don&#39;t get, this may be a good tutorial for you.
+
+After completing this tutorial you&#39;ll have a deeper understanding of many Python features.  Here are some of the topics we&#39;ll cover:
+
+- How objects are created and names are assigned to them
+
+- Ways to modify a namespace: assignment, import, function definition and call, and class definition and instantiation.  Much of the tutorial is structured around namespaces and how they get modified to help you understand most of the differences between variables in other languages and those in Python, including
+
+    - why Python has neither pass-by-value nor pass-by-reference function call semantics,
+
+    - and why parameters passed to a function can sometimes be changed by it and sometimes cannot.
+
+- Iterables, iterators, and the iterator protocol, including how to make class instances iterable
+
+- How to use generators to make your code easier to read and understand
+
+- Hacking classes after their definition, and creating classes without a class statement, as an exercise to better understand how they work
+
+- Bound versus unbound methods, how they&#39;re implemented, and interesting things you can do with bound methods
+
+- How and why you might want to create or use a partial function
+
+- Example use-cases of functions as first-class objects
+
+- Unpacking and packing arguments with * and ** on function call and definition
+
+Bring a laptop with Python 3 and Jupyter Notebook.
+
+</div>
+  
+    <h2>
+      <a id="presentation-30"
+         href="/2017/schedule/presentation/30/">
+        Readable Regular Expressions
+      </a>
+    </h2>
+    <p>
+      <b>
+        Trey Hunner
+        
+      </b>
+      
+      <br>
+      <b>
+        Wednesday
+        1:20 p.m.&ndash;4:40 p.m.
+        in
+        Room 4
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >What are regular expressions, what are they useful for, and why are they so hard to read?  We&#39;ll learn what regular expressions are good for, how to make our own regular expressions, and how to make our regular expressions friendly and readable (yes it&#39;s possible, sort of).
+</div>
+  
+    <h2>
+      <a id="presentation-235"
+         href="/2017/schedule/presentation/235/">
+        Time Series Analysis
+      </a>
+    </h2>
+    <p>
+      <b>
+        Aileen Nielsen
+        
+      </b>
+      
+      <br>
+      <b>
+        Wednesday
+        1:20 p.m.&ndash;4:40 p.m.
+        in
+        Room 6
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >Time series analysis is more relevant than ever with the rise of big data, the internet of things, and the general availability of data that follows events through time. This tutorial will introduce participants to the many versatile tools Python offers for exploring, analyzing, and predicting time series data. The tutorial will be a mix of lecture and practice, and it will be broken down into four components:
+
+ (1) Handling timestamped data in Python 
+ (2) Commonly encountered problems with time series 
+ (3) Time series prediction exercises 
+ (4) Time series classification exercises</div>
+  
+    <h2>
+      <a id="presentation-24"
+         href="/2017/schedule/presentation/24/">
+        Using Functional Programming for efficient Data Processing and Analysis
+      </a>
+    </h2>
+    <p>
+      <b>
+        Reuben Cummings
+        
+      </b>
+      
+      <br>
+      <b>
+        Wednesday
+        9 a.m.&ndash;12:20 p.m.
+        in
+        Room 6
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >As a multi paradigm language, Python has great support for functional programming. For better or for worse, leading data libraries such as Pandas eschew the this style for object-oriented programming. This tutorial will explain how to take advantage of Python&#39;s excellent functional programming capabilities to efficiently obtain, clean, transform, and store data from disparate sources.
+</div>
+  
+    <h2>
+      <a id="presentation-265"
+         href="/2017/schedule/presentation/265/">
+        Web programming from the beginning
+      </a>
+    </h2>
+    <p>
+      <b>
+        Thomas Ballinger, Rose Ames
+        
+      </b>
+      
+      <br>
+      <b>
+        Wednesday
+        9 a.m.&ndash;12:20 p.m.
+        in
+        Room 2
+      </b>
+      
+    </p>
+    <div class="presentation-description"
+         >*What’s the web all about anyway? How can you make your computer talk to other computers with Python?*
+
+Modern web frameworks such as Django and Flask are immensely powerful. However, these useful tools obscure the foundations of network programming upon which they are based, which can be very helpful to understand. So instead of building useful applications with these libraries, let&#39;s experiment with sockets!
+
+At this tutorial, a Python-flavored history of the web will be presented and attendees will write or modify a TCP chat client, a static site web server, an HTTP client, a CGI script, and a WSGI-compliant server and web application. We will learn what all those things are and how they fit together, bringing the architecture of modern web apps into better focus.
+
+The material will be accessible to participants with no web development experience, however, they must be able to write and run Python scripts at the command-line. This tutorial might appeal to someone also attending an introductory web development tutorial, but it covers separate, complementary material. Web development experience is not required but a little exposure would be helpful; for instance, installing flask and running the minimal application on the [quickstart page](http://flask.pocoo.org/docs/0.11/quickstart/). Similarly, prior exposure to HTML would be useful but is not necessary.</div>
+  
+</div>
+                      
+                    </div>
+                 </div>
+
+                <!--
+                <div class="span12 col-centered sponsor-crawl">
+                    
+                        <h2 class="scroll-title-first">Sponsors</h2>
+                        
+                        <div id="sponsorslider" class="carousel slide col-centered">
+                            <!-- Carousel items
+                            <div class="carousel-inner">
+                                
+                                
+                                
+                                    
+                                        <div class="item active" style="margin: auto;">
+                                    
+
+                                    <a href="https://software.intel.com" title="Intel ">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/intSFT_i_hrz_rgb_3000.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/intSFT_i_hrz_rgb_3000.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.google.com/about/careers/" title="Google">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/googlelogo_color_112x36dp.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/googlelogo_color_112x36dp.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://aka.ms/python" title="Microsoft">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Microsoft-logo_rgb_c-gray.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Microsoft-logo_rgb_c-gray.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.continuum.io/" title="Anaconda">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Anaconda_horizontal_RGB.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Anaconda_horizontal_RGB.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.surveymonkey.com/" title="SurveyMonkey">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/SM_logo_600x110_002_l1KK6G8.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/SM_logo_600x110_002_l1KK6G8.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.heroku.com/" title="Heroku">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/heroku-logotype-horizontal-purple_6.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/heroku-logotype-horizontal-purple_6.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.linkedin.com" title="Linkedin">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Logo-2C-66px-TM_u4aGgaN.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Logo-2C-66px-TM_u4aGgaN.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://careers.jpmorgan.com/careers/divisions/technology" title=" JPMorgan Chase &amp; Co.">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/jpm_chase_logo_final.gif.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/jpm_chase_logo_final.gif.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.housecanary.com/" title="HouseCanary">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/PythonDigital.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/PythonDigital.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.fusionbox.com" title="Fusionbox">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/fusionbox.gif.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/fusionbox.gif.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://americangreetings.com" title="American Greetings">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/ag_logo_2016_digital-150x44.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/ag_logo_2016_digital-150x44.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.okta.com" title="Okta">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Okta_Logo_BrightBlue_Large.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Okta_Logo_BrightBlue_Large.png.500x500_q85.png"></div>
+                                    </a>
+                                    </div>
+                                
+                                    
+                                        <div class="item " style="margin: auto;">
+                                    
+
+                                    <a href="https://nylas.com/" title="Nylas">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Nylas_Identity_Horz.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Nylas_Identity_Horz.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://wingware.com/" title="Wingware">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/wingware-button-2015_dkVzOto.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/wingware-button-2015_dkVzOto.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://lincolnloop.com" title="Lincoln Loop">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/ll_logo_landscape_color-filled.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/ll_logo_landscape_color-filled.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.leadpages.net/" title="Leadpages">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Leadpages_V_Logo_Blue_2Color.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Leadpages_V_Logo_Blue_2Color.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.caktusgroup.com" title="Caktus Group">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Caktus_Logo_Tagline_Color-Lockup.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Caktus_Logo_Tagline_Color-Lockup.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.demonware.net/" title="Demonware ">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/unnamed_zkrDHwy.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/unnamed_zkrDHwy.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://sentry.io/welcome/" title="Sentry">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/sentry-horizontal-black.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/sentry-horizontal-black.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://jobs.capitalone.com" title="Capital One">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/C1_Core_NG_RGB_R_tzBPPK6.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/C1_Core_NG_RGB_R_tzBPPK6.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.lyft.com/" title="Lyft, Inc.">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/lyft_logo_standard_pink.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/lyft_logo_standard_pink.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.jetbrains.com/" title="JetBrains">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/logos_JetBrains_CMYK.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/logos_JetBrains_CMYK.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.disneyanimation.com/" title="Walt Disney Animation Studios">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/WDAS_LOGO_FINAL_NZAWzXE.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/WDAS_LOGO_FINAL_NZAWzXE.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.yelp.com/careers" title="Yelp">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/yelp-logo.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/yelp-logo.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    </div>
+                                
+                                    
+                                        <div class="item " style="margin: auto;">
+                                    
+
+                                    <a href="http://www.jumptrading.com" title="Jump Trading">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/JumpTrading_-_Logo.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/JumpTrading_-_Logo.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.facebook.com/" title="Facebook">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Facebook-06-2015-Blue_cPjxmVE.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Facebook-06-2015-Blue_cPjxmVE.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://saucelabs.com/" title="Sauce Labs">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/010101_LOGO_Sauce-Labs_Horiz_Red-Grey_RGB.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/010101_LOGO_Sauce-Labs_Horiz_Red-Grey_RGB.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.instagram.com" title="Instagram ">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/instagram_.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/instagram_.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.ansible.com/" title="Ansible">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Ansible-Wordmark-Large-RGB-Black.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Ansible-Wordmark-Large-RGB-Black.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.activestate.com/python" title="ActiveState Software">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/as_logo_2016.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/as_logo_2016.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://bons.ai/" title="Bonsai">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/bonsai-logo-color-02.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/bonsai-logo-color-02.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://goshippo.com" title="Shippo">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/shippo-lockup-vertical-green-web.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/shippo-lockup-vertical-green-web.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.linode.com/" title="Linode">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/linode-logo_diagonal_light_1.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/linode-logo_diagonal_light_1.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.openshift.com/" title="Red Hat OpenShift ">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Logotype_RH_OpenShiftOnline_wLogo_RGB_Black.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Logotype_RH_OpenShiftOnline_wLogo_RGB_Black.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.patreon.com/careers" title="Patreon">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/patreon.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/patreon.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.sqreen.io/" title="Sqreen">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/sqreen-logo-color2x.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/sqreen-logo-color2x.png.500x500_q85.png"></div>
+                                    </a>
+                                    </div>
+                                
+                                    
+                                        <div class="item " style="margin: auto;">
+                                    
+
+                                    <a href="https://www.citusdata.com/" title="Citus Data">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/citusdata-logo-225x90.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/citusdata-logo-225x90.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://offerupnow.com/" title="OfferUp">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/OUGreen.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/OUGreen.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://robinhood.com/" title="Robinhood">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Robinhood_Logotype_green.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Robinhood_Logotype_green.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.nag.com" title="Numerical Algorithms Group">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/nag_100c90m0y40k_one_line_left_1.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/nag_100c90m0y40k_one_line_left_1.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.datadoghq.com/" title="Datadog">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/dd_logo_v_rgb_3.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/dd_logo_v_rgb_3.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://guidebook.com/" title="Guidebook">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/logo_2_CUIp5Ya.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/logo_2_CUIp5Ya.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://venmo.com/" title="Venmo / Braintree">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/venmo-logoblue.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/venmo-logoblue.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://pluralsight.com" title="Pluralsight">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/PS_logo_F-08.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/PS_logo_F-08.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.eyesopen.com" title="OpenEye Scientific Software">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/openeye-logo-large.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/openeye-logo-large.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.nexmo.com/" title="Nexmo Inc">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Nexmo_VonageAPI.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Nexmo_VonageAPI.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.twilio.com/" title="Twilio">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Twilio_logo_red.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Twilio_logo_red.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://phobio.com/" title="Phobio">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/logo_blue_204x60.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/logo_blue_204x60.png.500x500_q85.png"></div>
+                                    </a>
+                                    </div>
+                                
+                                    
+                                        <div class="item " style="margin: auto;">
+                                    
+
+                                    <a href="http://www.northeastern.edu/seattle/" title="Northeastern University - Seattle">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/seattle-270.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/seattle-270.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.boozallen.com" title="Booz Allen Hamilton">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Booz_Allen_logo_black-SMALL.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Booz_Allen_logo_black-SMALL.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.pelotoncycle.com/company/" title="Peloton">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/logo_cropped_1.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/logo_cropped_1.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.bugsnag.com/?utm_source=pycon&amp;utm_medium=referral&amp;utm_content=blurb&amp;utm_campaign=pycon-2017" title="Bugsnag">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/logo-dark_UFyseWN.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/logo-dark_UFyseWN.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.docker.com/" title="Docker, Inc">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/large_v-trans.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/large_v-trans.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://hired.com/" title="Hired">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/HiredLogo_RedBG.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/HiredLogo_RedBG.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://nvisium.com/" title="nVisium LLC">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/nvisium_1.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/nvisium_1.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.datacamp.com/home" title="DataCamp Inc.">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/datacamp_pycon.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/datacamp_pycon.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.6ft.com" title="Six Foot">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Six_Foot_Regular_Logo.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Six_Foot_Regular_Logo.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://rollbar.com/" title="Rollbar">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/rollbar-logo-color-horiz_1.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/rollbar-logo-color-horiz_1.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.buzzfeed.com" title="BuzzFeed">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/BuzzFeed_Color.jpg.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/BuzzFeed_Color.jpg.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://thisismetis.com/" title="Metis">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/metis_logo_black_horiz.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/metis_logo_black_horiz.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    </div>
+                                
+                                    
+                                        <div class="item " style="margin: auto;">
+                                    
+
+                                    <a href="https://www.elastic.co/" title="Elastic">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/elastic-logo-V-full_color.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/elastic-logo-V-full_color.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.indeed.com/prime" title="Indeed Prime">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Indeed-prime-horizontal-RGB.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Indeed-prime-horizontal-RGB.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://dneg.com/" title="Double Negative Visual Effects">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Dneg_Logo_High_Res_-_Black_on_White.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/Dneg_Logo_High_Res_-_Black_on_White.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.twistbioscience.com/" title="Twist Bioscience">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Twist_Bioscience_Logo_TransparentBG_1137x556_Web_2.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Twist_Bioscience_Logo_TransparentBG_1137x556_Web_2.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://micropyramid.com" title="MicroPyramid">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/pychon.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/pychon.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://saltstack.com/" title="SaltStack">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/SaltStack_-_Vertical_R.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/SaltStack_-_Vertical_R.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.hudson-trading.com/" title="Hudson River Trading">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/HRT_Logo_FB.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/HRT_Logo_FB.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.newrelic.com" title="New Relic">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/NewRelic-logo-bug.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/NewRelic-logo-bug.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.oreilly.com/" title="O&#39;Reilly Media">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/ORM_logo_box75_hex_AKPqVWQ.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/ORM_logo_box75_hex_AKPqVWQ.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.aqr.com/" title="AQR Capital Management">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/AQR_Cyan_rgb_hires.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/AQR_Cyan_rgb_hires.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.leapfrogonline.com/" title="Leapfrog Online">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/LFO_logo_2016_v1_bitmap_RGB_small_green.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/LFO_logo_2016_v1_bitmap_RGB_small_green.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.python-academy.com" title="Python Academy GmbH &amp; Co. KG">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/pya_logo.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/pya_logo.png.500x500_q85.png"></div>
+                                    </a>
+                                    </div>
+                                
+                                    
+                                        <div class="item " style="margin: auto;">
+                                    
+
+                                    <a href="http://www.hackbrightacademy.com" title="Hackbright Academy">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Hackbright_Academy_logo.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Hackbright_Academy_logo.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.hulu.com" title="Hulu">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Hulu_Logo_Option_A.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/Hulu_Logo_Option_A.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.doctorondemand.com/" title="Doctor On Demand, Inc.">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/dod-logo-full-large.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/dod-logo-full-large.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://nooro.com/pycon2017" title="Nooro">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/nooro_logo_450x133.png.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/nooro_logo_450x133.png.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.twosigma.com/" title="Two Sigma Investments, LP">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Digital_TwoSigma_Logo_RGB_transp_1000px.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Digital_TwoSigma_Logo_RGB_transp_1000px.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.adafruit.com" title="Adafruit">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/black_600x600.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/black_600x600.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://jambonsw.com" title="JamBon Software">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/JamBonSWLogoLong.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/JamBonSWLogoLong.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://aws.amazon.com/" title="AWS Infrastructure">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/logo.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/logo.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.researchaffiliates.com" title="Research Affiliates">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/RA_Logo_CMYK.tif.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/RA_Logo_CMYK.tif.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.carstickers.com" title="Car Stickers, Inc.">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/carstickers-logo.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/carstickers-logo.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.python.org/psf/" title="Python Software Foundation">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/PSF-Logo.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/PSF-Logo.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.chipy.org/" title="Chicago Python User Group (Chipy)">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/chipmunk.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/chipmunk.png.500x500_q85.png"></div>
+                                    </a>
+                                    </div>
+                                
+                                    
+                                        <div class="item " style="margin: auto;">
+                                    
+
+                                    <a href="https://www.recurse.com" title="Recurse Center">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/logo-no-text.png.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/logo-no-text.png.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://zulip.org" title="Zulip Open Source Project">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/zulip-icon-300x300.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/zulip-icon-300x300.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://talkpython.fm/" title="Python Podcast Community ">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/podcast-community-logos-new.png.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/podcast-community-logos-new.png.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.django-rest-framework.org/" title="Django REST framework">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/logo_QHVWXkZ.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/logo_QHVWXkZ.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.pyladies.com" title="PyLadies">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/pylady_geek_wordmark_standard.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/pylady_geek_wordmark_standard.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://xmpp.org/" title="XMPP Standards Foundation">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/2000px-XMPP_logo.svg.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/2000px-XMPP_logo.svg.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://pybee.org" title="BeeWare project">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/BeeWare_banner.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/BeeWare_banner.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://sfconservancy.org" title="Software Freedom Conservancy, Inc.">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/conservancy-logo.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/conservancy-logo.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.postgresql.org/" title="PostgreSQL Global Development Group">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/PostgreSQL_logo.3colors.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/PostgreSQL_logo.3colors.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.meetup.com/PSPPython/" title="PuPPy -- Seattle&#39;s Python user group">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/pupy-3_5AHgD6q.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/pupy-3_5AHgD6q.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://plone.com" title="Plone">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/plone-logo-256_83UfjpO.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/plone-logo-256_83UfjpO.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://djangogirls.org/" title="Django Girls">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/logo_heCU05k.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/logo_heCU05k.png.500x500_q85.png"></div>
+                                    </a>
+                                    </div>
+                                
+                                    
+                                        <div class="item " style="margin: auto;">
+                                    
+
+                                    <a href="http://www.numfocus.org/" title="NumFOCUS">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/NumFocus_2C_RGB.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/NumFocus_2C_RGB.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.nostarch.com/" title="No Starch Press">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/NoStarch_logo.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/NoStarch_logo.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.stickermule.com/" title="Sticker Mule">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/svgporn-stickermule_1.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/svgporn-stickermule_1.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.opensource.com" title="Opensource.com">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/OSDC_primary_logos-06_1.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/OSDC_primary_logos-06_1.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://lwn.net" title="LWN.net">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/256x256.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/256x256.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://pycoders.com/" title="Pycoder&#39;s Weekly">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/pycon2017.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/pycon2017.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.networkworld.com/author/Bryan-Lunduke/" title="Network World">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Screenshot_2017-05-16_at_11.39.12_AM.png.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/Screenshot_2017-05-16_at_11.39.12_AM.png.500x500_q85.jpg"></div>
+                                    </a>
+                                    </div>
+                                
+                            </div>
+
+
+                            
+                              <!-- Carousel nav
+                              <nav id="slider-nav">
+                                <div class="slider-nav">
+                                    <div class="nav-container">
+                                    
+                                        
+                                            <a href="#" class="activeSlide">●</a>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <a href="#" class="">●</a>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <a href="#" class="">●</a>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <a href="#" class="">●</a>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <a href="#" class="">●</a>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <a href="#" class="">●</a>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <a href="#" class="">●</a>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <a href="#" class="">●</a>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <a href="#" class="">●</a>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                    </div>
+                                </div>
+                              </nav>
+                            
+                        </div>
+                    
+                </div>
+                -->
+                </div>
+
+                
+            </div>
+        
+    </div>
+
+<footer>
+  <div>
+    <img class="python-logo" src="/2017/site_media/static/img/psf-logo.png"
+         width=334 height=82 alt="PSF logo">
+    
+    <p>
+      This year’s logo and banner were designed by
+      <a href="https://trixi.graphics/">Beatrix Bodó</a>.
+      The PyCon 2017 conference in Portland, Oregon, is a production of the
+      <a href="http://python.org/psf/">Python Software Foundation</a>.
+      This site is built using
+      <a href="https://www.djangoproject.com/">Django</a>
+      and
+      <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+      Hosting is provided by
+      <a href="http://www.rackspace.com/">Rackspace US, Inc</a>.
+    </p>
+  </div>
+</footer>
+
+
+
+
+</body>
+
+<!-- Mirrored from us.pycon.org/2017/schedule/tutorials/list/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Jun 2017 14:59:43 GMT -->
+</html>
