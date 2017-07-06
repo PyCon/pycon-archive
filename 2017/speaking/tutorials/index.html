@@ -1,0 +1,1575 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from us.pycon.org/2017/speaking/tutorials/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Jun 2017 15:01:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="all" href="/2017/site_media/static/css/slight.css" />
+    
+
+
+<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="/2017/site_media/static/cache/css/8534747c90ad.css" type="text/css" />
+
+    
+
+
+
+    <meta property="og:image" content="/2017/site_media/static/img/pycon2017-logo.png" />
+    <link href="/2017/site_media/static/img/pycon-2017.png" rel="shortcut icon" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+      $(document).on('click', '.message button', function(event) {
+        $(this).parent().hide();
+        return false;
+      });
+      $(document).on('click', '.dropdown-toggle', function(event) {
+        /* toggle visibility of nav menu (jQuery sets the "display" attr) */
+        $(this).parent().children('.dropdown-menu').toggle();
+        return false;
+      });
+      $(document).on('mouseout', '.dropdown', function(event) {
+        /* remove any "display" attr that jQuery added when clicked */
+        $(this).children('.dropdown-menu').removeAttr('style');
+        return false;
+      });
+    </script>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.js"></script>
+<script type="text/javascript" src="/2017/site_media/static/cache/js/6f4a8148a968.js"></script>
+
+    
+    <script type="text/javascript">
+        $(function () {
+            var mdown = $('.box-content').text();
+            var converter = new Attacklab.showdown.converter();
+            var html = converter.makeHtml(mdown);
+            $('.box-content').html(html);
+        });
+    </script>
+
+    <meta name="google-site-verification" content="fG_DG4G4eFtBcgIKht-bJKdirGhDa_51X6yeCS8daDs" />
+
+
+</head>
+<body class="cms-page ">
+
+
+    
+    
+
+
+
+
+
+<header class="main">
+  
+
+
+
+<div class="account-links">
+    
+    
+</div>
+
+  
+    <a class="beatrix-banner" href="/2017/">
+      <img src="/2017/site_media/static//img/pycon-cityscape.png">
+    </a>
+  
+  <nav>
+
+<ul class="nav">
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ About PyCon
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/about/" >What is PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2017/about/code-of-conduct/" >Code of Conduct</a>
+        </li>
+    
+        <li >
+            <a href="/2017/about/diversity/" >Diversity</a>
+        </li>
+    
+        <li >
+            <a href="/2017/about/staff/" >Staff Information</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sitemap/" >Site Map</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ PSF
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/psf/" >Python Software Foundation</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ Schedule
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/schedule/tutorials/" >Tutorial Schedule (Wed–Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2017/schedule/sponsor-tutorials/" >Sponsor Workshops (Wed–Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2017/schedule/talks/" >Talk Schedule (Fri–Sun)</a>
+        </li>
+    
+        <li >
+            <a href="/2017/schedule/posters/list/" >Posters (Sunday morning)</a>
+        </li>
+    
+        <li >
+            <a href="/2017/keynote-speakers/" >Keynote Speakers</a>
+        </li>
+    
+        <li >
+            <a href="/2017/schedule/talks/list/" >List of Talks</a>
+        </li>
+    
+        <li >
+            <a href="/2017/schedule/tutorials/list/" >List of Tutorials</a>
+        </li>
+    
+        <li >
+            <a href="/2017/schedule/sponsor-tutorials/list/" >List of Sponsor Workshops</a>
+        </li>
+    
+        <li >
+            <a href="/2017/edusummit/schedule/" >Education Summit (Thursday)</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ Events
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/events/dinners/" >Evening Dinners</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/opening-reception/" >Opening reception</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/edusummit/" >Education Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/startup_row/" >Startup Row</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/jobs/" >Job Fair</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/open-spaces/" >Open Spaces</a>
+        </li>
+    
+        <li >
+            <a href="/2017/5k/" >PyCon Fun Run/Walk</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/auction/" >PyLadies Auction</a>
+        </li>
+    
+        <li >
+            <a href="/2017/community/sprints/" >Development Sprints</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/testing-bof/" >Testing BOF</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/language-summit/" >Python Language Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/django_girls_workshop/" >Django Girls Workshop</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/letslearnpython/" >Young Coders </a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/outsidein/" >Young Coders: Outside In</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/pyladieslunch/" >PyLadies Lunch</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/outside_events/" >Outside Events</a>
+        </li>
+    
+        <li >
+            <a href="/2017/events/womenbigdatemeetup" >Women in Big Data Meetup</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ Sponsors
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/sponsors/" >Our Sponsors</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/why-sponsor/" >Why sponsor PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/prospectus/" >Prospectus</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/apply/" >Application Form</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/fees/" >Estimated Sponsor Fees</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/exhibit-hall/" >Exhibit Hall</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/faq/" >Sponsor FAQ</a>
+        </li>
+    
+        <li >
+            <a href="/2017/sponsors/information/" >Sponsor Information</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ Venue
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/venue/" >Venue and Hotels</a>
+        </li>
+    
+        <li >
+            <a href="/2017/venue/travel/" >Traveling to Portland</a>
+        </li>
+    
+        <li >
+            <a href="/2017/venue/weather/" >Weather</a>
+        </li>
+    
+        <li >
+            <a href="/2017/venue/accessibility/" >Accessibility</a>
+        </li>
+    
+        <li >
+            <a href="/2017/childcare/" >Childcare</a>
+        </li>
+    
+        <li >
+            <a href="/2017/venue/restaurants/" >Restaurants</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ Registration
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/registration/" >Registration Information</a>
+        </li>
+    
+        <li >
+            <a href="/2017/financial-assistance/" >Financial Assistance</a>
+        </li>
+    
+        <li >
+            <a href="/2017/childcare/" >Childcare</a>
+        </li>
+    
+        <li >
+            <a href="/2017/community/roomsharing/" >Room Sharing</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                ▼ Volunteer!
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2017/about/volunteers" >Volunteering on-site</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+</ul>
+</nav>
+</header>
+
+
+
+
+    <div id="content">
+        
+            <div class="page-content">
+                
+                <div class="container">
+                    
+    
+
+                    <h1>Proposing a Tutorial</h1>
+                    <div class="box">
+                      
+                        <div class="box-content">&lt;blockquote class=&quot;callout&quot;&gt;
+Thank you, everyone who proposed a tutorial for PyCon 2017!
+&lt;br&gt;&lt;br&gt;
+This Call for Proposals is &lt;b&gt;now closed&lt;/b&gt;.
+&lt;br&gt;&lt;br&gt;
+Here is the remaining timeline:
+&lt;ul&gt;
+&lt;li&gt;November 30 — Our Call For Proposals closed.
+&lt;li&gt;February — We send acceptance and rejection emails.
+&lt;li&gt;February — The schedule is posted here on the web site.
+&lt;li&gt;May 17–18 — The tutorials are all presented at PyCon 2017.
+&lt;li&gt;June — All tutorials that were recorded should appear online.
+&lt;/blockquote&gt;
+
+Tutorial proposals are due this year on **30&amp;nbsp;November**.
+
+To learn the mechanics of submitting a proposal, visit the [main Speaking page](https://us.pycon.org/2017/speaking/).
+
+Do you think that you would be able to assemble 3 hours of material and lead a classroom full of PyCon attendees through learning a new skill, library, or technology? Then you might want to apply to be one of our tutorial instructors for PyCon 2017! **PyCon 2017 tutorials will be held May 17-18 at the Oregon Convention Center.**
+
+As you think about your experiences, skills, and knowledge, here are some links that might help you get started in thinking about the expertise that you could bring for the benefit of the conference:
+
+- &lt;a href=&quot;https://us.pycon.org/2016/speaking/tutorials/topics/&quot;&gt;Possible tutorial topics&lt;/a&gt;
+- &lt;a href=&quot;http://us.pycon.org/2015/schedule/tutorials/&quot;&gt;PyCon 2015 Tutorials&lt;/a&gt;
+- &lt;a href=&quot;http://us.pycon.org/2014/schedule/tutorials/&quot;&gt;PyCon 2014 Tutorials&lt;/a&gt;
+- &lt;a href=&quot;http://us.pycon.org/2013/schedule/tutorials/&quot;&gt;PyCon 2013 Tutorials&lt;/a&gt;
+- &lt;a href=&quot;http://us.pycon.org/2012/schedule/&quot;&gt;PyCon 2012 Tutorials&lt;/a&gt;
+
+&lt;p&gt;&lt;a data-flickr-embed=&quot;true&quot;  href=&quot;https://www.flickr.com/photos/mikepirnat/13997682270/in/album-72157644656495851/&quot; title=&quot;IMG_0794.jpg&quot;&gt;&lt;img src=&quot;https://farm3.staticflickr.com/2905/13997682270_d34bb03835.jpg&quot; width=&quot;500&quot; height=&quot;375&quot; alt=&quot;IMG_0794.jpg&quot;&gt;&lt;/a&gt;&lt;script async src=&quot;//embedr.flickr.com/assets/client-code.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+## What information to submit
+
+1. First, &lt;a href=&quot;/2017/account/signup/&quot;&gt;sign up for a new account&lt;/a&gt; or &lt;a href=&quot;/2017/account/login/&quot;&gt;log in&lt;/a&gt; to your account.
+2. Once you are logged in; proceed to your &lt;a href=&quot;/2017/dashboard/&quot;&gt;account dashboard&lt;/a&gt; and create a speaker profile.
+3. At this point, you can submit tutorials, fill in the fields as follows:
+
+## Title
+
+Give your tutorial a name that accurately describes the tutorial&#39;s focus to potential students.
+
+## Description
+
+A high-level description of the tutorial, limited to 400 characters.
+
+## Abstract
+
+Try to include the following to help participants decide if the tutorial is a good match for them:
+
+- What the tutorial aims to teach students.
+
+- Prerequisites for the tutorial, i.e., what students should know or be able to do before the tutorial.  As an example, one past tutorial&#39;s prerequisites were *&quot;Students should have at least intermediate-level Python and SQL and have some experience using an ORM.&quot;*
+
+- Prerequisites for their laptop (assuming one is required).  Note that these prerequisites serve two purposes:
+
+  1. They may help the potential student understand more precisely what you plan to teach.
+
+  2. They help ensure students arrive with the software they need to take the tutorial.  If possible, finalize these prerequisites and submit them with your proposal.  However, we realize the prerequisites may change as you prepare to teach your tutorial, and in a few cases the prerequisites will be complex enough that they&#39;ll need their own page on instructions.  We&#39;re working on how best to communicate to students in both cases.
+
+- Any information you&#39;re providing to reviewers (such as tutorial format or outline) that potential
+  students will also want to know to help them decide if this tutorial is a good match for them.
+
+## Audience Level
+
+At what level of Python and other topic-specific experience or
+expertise is the tutorial aiming for?  We realize this may be too
+narrow for a tutorial, for example if the tutorial is aimed at
+Experienced programmers but Novices to Python, but give it your best
+shot.  If this field doesn&#39;t work well, be sure to include a note in
+the Additional Notes section, and you may also wish to add to your
+Description or Abstract.
+
+## Additional Notes
+
+This is the one section that is for the reviewers&#39; benefit only and will not be published in the PyCon guide. In this section, you should include information that you think would be helpful to assist reviewers in deciding which tutorials to accept, based on both the subject being taught and the ability of the teacher.  The following information should be included:
+
+- Any explanation or fleshing out of the public fields that would help
+  reviewers.
+
+- Intended audience: more than just novice/intermediate/etc. Reviewers need to know what level of Python experience is targeted and also what level(s) of domain-specific expertise is targeted, for example networking, SQL, database, etc.
+
+- Tutorial format: lab, lecture, workshop, etc.  However, don&#39;t just
+  pick a label, describe what will happen during the tutorial.
+
+- Interest in tutorial assistants: We&#39;re considering making tutorial
+  assistants available to instructors.  These would be volunteers with
+  Python experience who will provide one-on-one help during the
+  tutorial when students are working on exercises.  If we do this,
+  would you be interested and if so how many students per assistant
+  would you want?
+
+- Preferences or requirements with respect to class size or
+  scheduling.
+
+- Outline: of the tutorial content for reviewers.
+
+- Previous experience: tell us what experience you have in the subject, in activities such as teaching or public speaking, or anything else that would help us understand and gauge your abilities as a tutorial presenter. Ideal would be a link to a video.
+
+- Biography: You&#39;ll be asked to enter your biography when you register on this site and that information will be made public. Here, you may wish to include more information for reviewers to complement information about your Previous Experience.
+
+## Miscellaneous Notes About Proposals and Tutorials
+
+Here are some notes about the proposal, selection, and delivery process for tutorials.
+
+- There will be some duplication of information between the public
+  information contained in the Description and Abstract, and the
+  Additional Notes which only reviewers will read.  That duplicate
+  information is for two different audiences so if you just copy and
+  paste between them neither will likely be served well.  A better
+  strategy, if you don&#39;t want to write two versions, is to reference
+  the public version (Description and Abstract) in the Additional
+  Notes for reviewers and then expound on it.
+
+- The tutorial selection process attempts to choose a good variety of
+  tutorial topics and levels that will be in demand, i.e., it doesn&#39;t
+  just select the best proposals!
+
+- The selection process has also tended to prefer Python-related
+  topics over more general software development tools or practices
+  that aren&#39;t Python-specific.
+
+- Tutorials are subject to cancellation if enrollment is low.  In the
+  past the cancellation criterion has been less than 10 students
+  registered.
+
+## Questions or Suggestions
+
+If you have questions about any of this, or suggestions, please contact us at: &lt;a href=&quot;mailto:pycon-tutorials@python.org?subject=Question/Suggestion about Tutorial Proposal&quot;&gt;pycon-tutorials@python.org&lt;/a&gt;.
+
+</div>
+                      
+                    </div>
+                 </div>
+
+                <!--
+                <div class="span12 col-centered sponsor-crawl">
+                    
+                        <h2 class="scroll-title-first">Sponsors</h2>
+                        
+                        <div id="sponsorslider" class="carousel slide col-centered">
+                            <!-- Carousel items
+                            <div class="carousel-inner">
+                                
+                                
+                                
+                                    
+                                        <div class="item active" style="margin: auto;">
+                                    
+
+                                    <a href="https://software.intel.com" title="Intel ">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/intSFT_i_hrz_rgb_3000.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/intSFT_i_hrz_rgb_3000.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.google.com/about/careers/" title="Google">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/googlelogo_color_112x36dp.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/googlelogo_color_112x36dp.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://aka.ms/python" title="Microsoft">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Microsoft-logo_rgb_c-gray.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Microsoft-logo_rgb_c-gray.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.continuum.io/" title="Anaconda">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Anaconda_horizontal_RGB.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Anaconda_horizontal_RGB.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.surveymonkey.com/" title="SurveyMonkey">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/SM_logo_600x110_002_l1KK6G8.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/SM_logo_600x110_002_l1KK6G8.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.heroku.com/" title="Heroku">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/heroku-logotype-horizontal-purple_6.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/heroku-logotype-horizontal-purple_6.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.linkedin.com" title="Linkedin">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Logo-2C-66px-TM_u4aGgaN.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Logo-2C-66px-TM_u4aGgaN.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://careers.jpmorgan.com/careers/divisions/technology" title=" JPMorgan Chase &amp; Co.">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/jpm_chase_logo_final.gif.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/jpm_chase_logo_final.gif.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.housecanary.com/" title="HouseCanary">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/PythonDigital.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/PythonDigital.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.fusionbox.com" title="Fusionbox">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/fusionbox.gif.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/fusionbox.gif.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://americangreetings.com" title="American Greetings">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/ag_logo_2016_digital-150x44.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/ag_logo_2016_digital-150x44.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.okta.com" title="Okta">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Okta_Logo_BrightBlue_Large.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Okta_Logo_BrightBlue_Large.png.500x500_q85.png"></div>
+                                    </a>
+                                    </div>
+                                
+                                    
+                                        <div class="item " style="margin: auto;">
+                                    
+
+                                    <a href="https://nylas.com/" title="Nylas">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Nylas_Identity_Horz.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Nylas_Identity_Horz.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://wingware.com/" title="Wingware">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/wingware-button-2015_dkVzOto.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/wingware-button-2015_dkVzOto.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://lincolnloop.com" title="Lincoln Loop">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/ll_logo_landscape_color-filled.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/ll_logo_landscape_color-filled.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.leadpages.net/" title="Leadpages">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Leadpages_V_Logo_Blue_2Color.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Leadpages_V_Logo_Blue_2Color.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.caktusgroup.com" title="Caktus Group">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Caktus_Logo_Tagline_Color-Lockup.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Caktus_Logo_Tagline_Color-Lockup.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.demonware.net/" title="Demonware ">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/unnamed_zkrDHwy.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/unnamed_zkrDHwy.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://sentry.io/welcome/" title="Sentry">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/sentry-horizontal-black.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/sentry-horizontal-black.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://jobs.capitalone.com" title="Capital One">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/C1_Core_NG_RGB_R_tzBPPK6.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/C1_Core_NG_RGB_R_tzBPPK6.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.lyft.com/" title="Lyft, Inc.">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/lyft_logo_standard_pink.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/lyft_logo_standard_pink.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.jetbrains.com/" title="JetBrains">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/logos_JetBrains_CMYK.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/logos_JetBrains_CMYK.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.disneyanimation.com/" title="Walt Disney Animation Studios">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/WDAS_LOGO_FINAL_NZAWzXE.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/WDAS_LOGO_FINAL_NZAWzXE.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.yelp.com/careers" title="Yelp">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/yelp-logo.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/yelp-logo.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    </div>
+                                
+                                    
+                                        <div class="item " style="margin: auto;">
+                                    
+
+                                    <a href="http://www.jumptrading.com" title="Jump Trading">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/JumpTrading_-_Logo.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/JumpTrading_-_Logo.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.facebook.com/" title="Facebook">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Facebook-06-2015-Blue_cPjxmVE.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Facebook-06-2015-Blue_cPjxmVE.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://saucelabs.com/" title="Sauce Labs">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/010101_LOGO_Sauce-Labs_Horiz_Red-Grey_RGB.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/010101_LOGO_Sauce-Labs_Horiz_Red-Grey_RGB.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.instagram.com" title="Instagram ">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/instagram_.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/instagram_.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.ansible.com/" title="Ansible">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Ansible-Wordmark-Large-RGB-Black.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Ansible-Wordmark-Large-RGB-Black.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.activestate.com/python" title="ActiveState Software">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/as_logo_2016.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/as_logo_2016.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://bons.ai/" title="Bonsai">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/bonsai-logo-color-02.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/bonsai-logo-color-02.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://goshippo.com" title="Shippo">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/shippo-lockup-vertical-green-web.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/shippo-lockup-vertical-green-web.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.linode.com/" title="Linode">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/linode-logo_diagonal_light_1.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/linode-logo_diagonal_light_1.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.openshift.com/" title="Red Hat OpenShift ">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Logotype_RH_OpenShiftOnline_wLogo_RGB_Black.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Logotype_RH_OpenShiftOnline_wLogo_RGB_Black.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.patreon.com/careers" title="Patreon">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/patreon.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/patreon.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.sqreen.io/" title="Sqreen">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/sqreen-logo-color2x.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/sqreen-logo-color2x.png.500x500_q85.png"></div>
+                                    </a>
+                                    </div>
+                                
+                                    
+                                        <div class="item " style="margin: auto;">
+                                    
+
+                                    <a href="https://www.citusdata.com/" title="Citus Data">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/citusdata-logo-225x90.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/citusdata-logo-225x90.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://offerupnow.com/" title="OfferUp">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/OUGreen.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/OUGreen.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://robinhood.com/" title="Robinhood">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Robinhood_Logotype_green.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Robinhood_Logotype_green.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.nag.com" title="Numerical Algorithms Group">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/nag_100c90m0y40k_one_line_left_1.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/nag_100c90m0y40k_one_line_left_1.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.datadoghq.com/" title="Datadog">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/dd_logo_v_rgb_3.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/dd_logo_v_rgb_3.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://guidebook.com/" title="Guidebook">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/logo_2_CUIp5Ya.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/logo_2_CUIp5Ya.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://venmo.com/" title="Venmo / Braintree">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/venmo-logoblue.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/venmo-logoblue.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://pluralsight.com" title="Pluralsight">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/PS_logo_F-08.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/PS_logo_F-08.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.eyesopen.com" title="OpenEye Scientific Software">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/openeye-logo-large.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/openeye-logo-large.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.nexmo.com/" title="Nexmo Inc">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Nexmo_VonageAPI.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Nexmo_VonageAPI.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.twilio.com/" title="Twilio">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Twilio_logo_red.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Twilio_logo_red.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://phobio.com/" title="Phobio">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/logo_blue_204x60.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/logo_blue_204x60.png.500x500_q85.png"></div>
+                                    </a>
+                                    </div>
+                                
+                                    
+                                        <div class="item " style="margin: auto;">
+                                    
+
+                                    <a href="http://www.northeastern.edu/seattle/" title="Northeastern University - Seattle">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/seattle-270.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/seattle-270.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.boozallen.com" title="Booz Allen Hamilton">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Booz_Allen_logo_black-SMALL.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Booz_Allen_logo_black-SMALL.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.pelotoncycle.com/company/" title="Peloton">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/logo_cropped_1.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/logo_cropped_1.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.bugsnag.com/?utm_source=pycon&amp;utm_medium=referral&amp;utm_content=blurb&amp;utm_campaign=pycon-2017" title="Bugsnag">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/logo-dark_UFyseWN.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/logo-dark_UFyseWN.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.docker.com/" title="Docker, Inc">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/large_v-trans.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/large_v-trans.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://hired.com/" title="Hired">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/HiredLogo_RedBG.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/HiredLogo_RedBG.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://nvisium.com/" title="nVisium LLC">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/nvisium_1.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/nvisium_1.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.datacamp.com/home" title="DataCamp Inc.">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/datacamp_pycon.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/datacamp_pycon.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.6ft.com" title="Six Foot">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Six_Foot_Regular_Logo.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Six_Foot_Regular_Logo.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://rollbar.com/" title="Rollbar">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/rollbar-logo-color-horiz_1.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/rollbar-logo-color-horiz_1.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.buzzfeed.com" title="BuzzFeed">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/BuzzFeed_Color.jpg.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/BuzzFeed_Color.jpg.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://thisismetis.com/" title="Metis">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/metis_logo_black_horiz.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/metis_logo_black_horiz.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    </div>
+                                
+                                    
+                                        <div class="item " style="margin: auto;">
+                                    
+
+                                    <a href="https://www.elastic.co/" title="Elastic">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/elastic-logo-V-full_color.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/elastic-logo-V-full_color.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.indeed.com/prime" title="Indeed Prime">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Indeed-prime-horizontal-RGB.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Indeed-prime-horizontal-RGB.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://dneg.com/" title="Double Negative Visual Effects">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Dneg_Logo_High_Res_-_Black_on_White.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/Dneg_Logo_High_Res_-_Black_on_White.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.twistbioscience.com/" title="Twist Bioscience">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Twist_Bioscience_Logo_TransparentBG_1137x556_Web_2.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Twist_Bioscience_Logo_TransparentBG_1137x556_Web_2.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://micropyramid.com" title="MicroPyramid">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/pychon.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/pychon.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://saltstack.com/" title="SaltStack">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/SaltStack_-_Vertical_R.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/SaltStack_-_Vertical_R.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.hudson-trading.com/" title="Hudson River Trading">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/HRT_Logo_FB.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/HRT_Logo_FB.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.newrelic.com" title="New Relic">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/NewRelic-logo-bug.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/NewRelic-logo-bug.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.oreilly.com/" title="O&#39;Reilly Media">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/ORM_logo_box75_hex_AKPqVWQ.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/ORM_logo_box75_hex_AKPqVWQ.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.aqr.com/" title="AQR Capital Management">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/AQR_Cyan_rgb_hires.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/AQR_Cyan_rgb_hires.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.leapfrogonline.com/" title="Leapfrog Online">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/LFO_logo_2016_v1_bitmap_RGB_small_green.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/LFO_logo_2016_v1_bitmap_RGB_small_green.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.python-academy.com" title="Python Academy GmbH &amp; Co. KG">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/pya_logo.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/pya_logo.png.500x500_q85.png"></div>
+                                    </a>
+                                    </div>
+                                
+                                    
+                                        <div class="item " style="margin: auto;">
+                                    
+
+                                    <a href="http://www.hackbrightacademy.com" title="Hackbright Academy">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Hackbright_Academy_logo.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Hackbright_Academy_logo.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.hulu.com" title="Hulu">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Hulu_Logo_Option_A.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/Hulu_Logo_Option_A.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.doctorondemand.com/" title="Doctor On Demand, Inc.">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/dod-logo-full-large.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/dod-logo-full-large.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://nooro.com/pycon2017" title="Nooro">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/nooro_logo_450x133.png.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/nooro_logo_450x133.png.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.twosigma.com/" title="Two Sigma Investments, LP">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Digital_TwoSigma_Logo_RGB_transp_1000px.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/Digital_TwoSigma_Logo_RGB_transp_1000px.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.adafruit.com" title="Adafruit">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/black_600x600.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/black_600x600.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://jambonsw.com" title="JamBon Software">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/JamBonSWLogoLong.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/JamBonSWLogoLong.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://aws.amazon.com/" title="AWS Infrastructure">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/logo.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/logo.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.researchaffiliates.com" title="Research Affiliates">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/RA_Logo_CMYK.tif.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/RA_Logo_CMYK.tif.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.carstickers.com" title="Car Stickers, Inc.">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/carstickers-logo.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/carstickers-logo.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.python.org/psf/" title="Python Software Foundation">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/PSF-Logo.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/PSF-Logo.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.chipy.org/" title="Chicago Python User Group (Chipy)">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/chipmunk.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/chipmunk.png.500x500_q85.png"></div>
+                                    </a>
+                                    </div>
+                                
+                                    
+                                        <div class="item " style="margin: auto;">
+                                    
+
+                                    <a href="https://www.recurse.com" title="Recurse Center">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/logo-no-text.png.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/logo-no-text.png.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://zulip.org" title="Zulip Open Source Project">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/zulip-icon-300x300.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/zulip-icon-300x300.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://talkpython.fm/" title="Python Podcast Community ">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/podcast-community-logos-new.png.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/podcast-community-logos-new.png.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.django-rest-framework.org/" title="Django REST framework">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/logo_QHVWXkZ.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/logo_QHVWXkZ.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.pyladies.com" title="PyLadies">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/pylady_geek_wordmark_standard.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/pylady_geek_wordmark_standard.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://xmpp.org/" title="XMPP Standards Foundation">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/2000px-XMPP_logo.svg.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/2000px-XMPP_logo.svg.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://pybee.org" title="BeeWare project">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/BeeWare_banner.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/BeeWare_banner.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://sfconservancy.org" title="Software Freedom Conservancy, Inc.">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/conservancy-logo.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/conservancy-logo.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.postgresql.org/" title="PostgreSQL Global Development Group">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/PostgreSQL_logo.3colors.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/PostgreSQL_logo.3colors.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.meetup.com/PSPPython/" title="PuPPy -- Seattle&#39;s Python user group">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/pupy-3_5AHgD6q.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/pupy-3_5AHgD6q.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://plone.com" title="Plone">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/plone-logo-256_83UfjpO.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/plone-logo-256_83UfjpO.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://djangogirls.org/" title="Django Girls">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/logo_heCU05k.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/logo_heCU05k.png.500x500_q85.png"></div>
+                                    </a>
+                                    </div>
+                                
+                                    
+                                        <div class="item " style="margin: auto;">
+                                    
+
+                                    <a href="http://www.numfocus.org/" title="NumFOCUS">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/NumFocus_2C_RGB.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/NumFocus_2C_RGB.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.nostarch.com/" title="No Starch Press">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/NoStarch_logo.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/NoStarch_logo.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.stickermule.com/" title="Sticker Mule">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/svgporn-stickermule_1.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/svgporn-stickermule_1.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://www.opensource.com" title="Opensource.com">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/OSDC_primary_logos-06_1.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/OSDC_primary_logos-06_1.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="https://lwn.net" title="LWN.net">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/256x256.png.300x300_q85.png')" data-background-2x="/2017/site_media/media/sponsor_files/256x256.png.500x500_q85.png"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://pycoders.com/" title="Pycoder&#39;s Weekly">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/pycon2017.jpg.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/pycon2017.jpg.500x500_q85.jpg"></div>
+                                    </a>
+                                    
+                                
+                                    
+
+                                    <a href="http://www.networkworld.com/author/Bryan-Lunduke/" title="Network World">
+                                        <div class="sponsor-scroll-item" style="background-image: url('/2017/site_media/media/sponsor_files/Screenshot_2017-05-16_at_11.39.12_AM.png.300x300_q85.jpg')" data-background-2x="/2017/site_media/media/sponsor_files/Screenshot_2017-05-16_at_11.39.12_AM.png.500x500_q85.jpg"></div>
+                                    </a>
+                                    </div>
+                                
+                            </div>
+
+
+                            
+                              <!-- Carousel nav
+                              <nav id="slider-nav">
+                                <div class="slider-nav">
+                                    <div class="nav-container">
+                                    
+                                        
+                                            <a href="#" class="activeSlide">●</a>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <a href="#" class="">●</a>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <a href="#" class="">●</a>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <a href="#" class="">●</a>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <a href="#" class="">●</a>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <a href="#" class="">●</a>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <a href="#" class="">●</a>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <a href="#" class="">●</a>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <a href="#" class="">●</a>
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                    </div>
+                                </div>
+                              </nav>
+                            
+                        </div>
+                    
+                </div>
+                -->
+                </div>
+
+                
+            </div>
+        
+    </div>
+
+<footer>
+  <div>
+    <img class="python-logo" src="/2017/site_media/static/img/psf-logo.png"
+         width=334 height=82 alt="PSF logo">
+    
+    <p>
+      This year’s logo and banner were designed by
+      <a href="https://trixi.graphics/">Beatrix Bodó</a>.
+      The PyCon 2017 conference in Portland, Oregon, is a production of the
+      <a href="http://python.org/psf/">Python Software Foundation</a>.
+      This site is built using
+      <a href="https://www.djangoproject.com/">Django</a>
+      and
+      <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+      Hosting is provided by
+      <a href="http://www.rackspace.com/">Rackspace US, Inc</a>.
+    </p>
+  </div>
+</footer>
+
+
+
+
+</body>
+
+<!-- Mirrored from us.pycon.org/2017/speaking/tutorials/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Jun 2017 15:01:57 GMT -->
+</html>
