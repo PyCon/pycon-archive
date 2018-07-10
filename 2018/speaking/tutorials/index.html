@@ -1,0 +1,580 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from us.pycon.org/2018/speaking/tutorials/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jul 2018 14:59:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+<title>Proposing a Tutorial | PyCon 2018 in Cleveland, Ohio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="/2018/site_media/static/css/slight.a3c1b1430280.css"/>
+    
+
+
+<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="/2018/site_media/static/cache/css/411162ab63b1.css" type="text/css" />
+
+    
+    <link rel="stylesheet" type="text/css" media="all" href="/2018/site_media/static/css/simple-grid.d1149de00d41.css"/>
+
+
+
+    <meta property="og:image" content="/2018/site_media/static/img/pycon2018.f76001445fbb.png" />
+    <link href="/2018/site_media/static/img/pycon2018.f76001445fbb.png" rel="shortcut icon" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+      $(document).on('click', '.message button', function(event) {
+        $(this).parent().hide();
+        return false;
+      });
+    </script>
+
+    <script src="/2018/site_media/static/js/site.1e95633d4318.js"></script>
+
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.js"></script>
+<script type="text/javascript" src="/2018/site_media/static/cache/js/6f4a8148a968.js"></script>
+
+    
+    <script type="text/javascript">
+        $(function () {
+            var mdown = $('.box-content').text();
+            var converter = new Attacklab.showdown.converter();
+            var html = converter.makeHtml(mdown);
+            $('.box-content').html(html);
+        });
+    </script>
+
+    <meta name="google-site-verification" content="fG_DG4G4eFtBcgIKht-bJKdirGhDa_51X6yeCS8daDs" />
+
+
+
+
+</head>
+<body class="cms-page ">
+
+
+    
+    
+
+
+
+
+
+<div id="content-wrapper"> <!-- wrap everything but footer for sticky footer -->
+  <header class="header-container">
+    
+      <a class="logo-banner" href="/2018/">
+        <img src="/2018/site_media/static/img/pycon2018.f76001445fbb.png">
+      </a>
+    
+    
+
+<div class="nav-container">
+    <a href="#!" tabindex="0" id="nav-toggle" class="nav-toggle" role="button">
+        Menu
+    </a>
+    <nav id="nav" class="primary-site-nav">
+        <ul class="nav-primary-list">
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">About PyCon</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/about/" >What is PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2018/about/code-of-conduct/" >Code of Conduct</a>
+        </li>
+    
+        <li >
+            <a href="/2018/about/diversity/" >Diversity</a>
+        </li>
+    
+        <li >
+            <a href="/2018/about/staff/" >Staff Information</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sitemap/" >Site Map</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">PSF</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/psf/" >Python Software Foundation</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Schedule</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/keynote-speakers/" >Keynote Speakers</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/tutorials" >Tutorial Schedule (Wed–Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/sponsor-tutorials/" >Sponsor Workshops (Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/edusummits/" >Education Summit (Thursday)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/talks/" >Talk Schedule (Fri–Sun)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/posters/list/" >Posters (Sunday morning)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/talks/list/" >List of Talks</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/sponsor-tutorials/list/" >List of Sponsor Workshops</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/tutorials/list/" >List of Tutorials</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/edusummits/list" >List of Education Summit Talks</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Events</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/events/opening-reception/" >Opening reception</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/dinners/" >Evening Dinners</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/edusummit/" >Education Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/startup_row/" >Startup Row</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/jobs/" >Job Fair</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/open-spaces/" >Open Spaces</a>
+        </li>
+    
+        <li >
+            <a href="/2018/5k/" >PyCon Fun Run/Walk</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/auction/" >PyLadies Auction</a>
+        </li>
+    
+        <li >
+            <a href="/2018/community/sprints/" >Development Sprints</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/language-summit/" >Python Language Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/letslearnpython/" >Young Coders </a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/pyladieslunch/" >PyLadies Lunch</a>
+        </li>
+    
+        <li >
+            <a href="/2018/hatchery/charlas" >PyCon Charlas</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/lightning/talks" >Lightning Talks</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/speed_networking" >Speed Networking</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/newcomer_orientation" >Newcomer Orientation</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Sponsors</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/sponsors/" >Our Sponsors</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/why-sponsor/" >Why sponsor PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/prospectus/" >Prospectus</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/apply/" >Application Form</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/fees/" >Estimated Sponsor Fees</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/exhibit-hall/" >Exhibit Hall</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/faq/" >Sponsor FAQ</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/information/" >Sponsor Information</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Venue</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/venue/travel/" >Traveling to Cleveland</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/" >Venue and Hotels</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/weather/" >Weather</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/accessibility/" >Accessibility</a>
+        </li>
+    
+        <li >
+            <a href="/2018/childcare/" >Childcare</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/recommendations/" >Local Recommendations</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/cle_events/" >Cleveland Events During PyCon</a>
+        </li>
+    
+        <li >
+            <a href="/2018/onsite" >Onsite Information</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/transit/" >Public Transit</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Registration</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/registration/" >Registration Information</a>
+        </li>
+    
+        <li >
+            <a href="/2018/registration/register" >Register</a>
+        </li>
+    
+        <li >
+            <a href="/2018/childcare/" >Childcare</a>
+        </li>
+    
+        <li >
+            <a href="/2018/financial-assistance/" >Financial Assistance</a>
+        </li>
+    
+        <li >
+            <a href="/2018/community/roomsharing/" >Room Sharing</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Volunteer!</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/about/volunteers" >Volunteering on-site</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+  </header>
+
+  
+
+  
+    <div id="content" class="">
+        
+          <div class="page-content">
+            
+              <div class="container">
+                
+    
+
+                <h1>Proposing a Tutorial</h1>
+                <div class="box">
+                  
+                    <div class="box-content">&lt;blockquote class=&quot;callout&quot;&gt;
+&lt;b&gt;PyCon US 2018 Tutorials CFP has closed&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+Remaining timeline:
+&lt;ul&gt;
+&lt;li&gt;&lt;s&gt;November 24, 2017 — Our Call For Proposals closed.&lt;/s&gt;
+&lt;li&gt;&lt;s&gt;February 2018 — We send acceptance and rejection emails.&lt;/s&gt;
+&lt;li&gt;&lt;s&gt;February 2018 — The schedule is posted here on the web site.&lt;/s&gt;
+&lt;li&gt;May 9–10, 2018 — The tutorials are all presented at PyCon 2018.
+&lt;li&gt;June — All tutorials that were recorded should appear online.
+&lt;/blockquote&gt;
+
+&lt;!--Tutorial proposals are due this year on **24&amp;nbsp;November**.--&gt;
+
+To learn the mechanics of submitting a proposal, visit the [main Speaking page](/2018/speaking/).
+
+Do you think that you would be able to assemble 3 hours of material and lead a classroom full of PyCon attendees through learning a new skill, library, or technology? Then you might want to apply to be one of our tutorial instructors for PyCon 2018! **PyCon 2018 tutorials will be held May 9-10 at the Huntington Convention Center in Cleveland, OH.**
+
+As you think about your experiences, skills, and knowledge, here are some links that might help you get started in thinking about the expertise that you could bring for the benefit of the conference:
+
+- &lt;a href=&quot;/2017/schedule/tutorials/&quot;&gt;PyCon 2017 Tutorials&lt;/a&gt;
+- &lt;a href=&quot;/2016/schedule/tutorials/&quot;&gt;PyCon 2016 Tutorials&lt;/a&gt;
+- &lt;a href=&quot;/2015/schedule/tutorials/&quot;&gt;PyCon 2015 Tutorials&lt;/a&gt;
+- &lt;a href=&quot;/2014/schedule/tutorials/&quot;&gt;PyCon 2014 Tutorials&lt;/a&gt;
+- &lt;a href=&quot;/2013/schedule/tutorials/&quot;&gt;PyCon 2013 Tutorials&lt;/a&gt;
+- &lt;a href=&quot;/2012/schedule/&quot;&gt;PyCon 2012 Tutorials&lt;/a&gt;
+
+&lt;p&gt;&lt;a data-flickr-embed=&quot;true&quot;  href=&quot;https://www.flickr.com/photos/mikepirnat/13997682270/in/album-72157644656495851/&quot; title=&quot;IMG_0794.jpg&quot;&gt;&lt;img src=&quot;https://farm3.staticflickr.com/2905/13997682270_d34bb03835.jpg&quot; width=&quot;500&quot; height=&quot;375&quot; alt=&quot;IMG_0794.jpg&quot;&gt;&lt;/a&gt;&lt;script async src=&quot;//embedr.flickr.com/assets/client-code.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+## What information to submit
+
+1. First, &lt;a href=&quot;/2018/account/signup/&quot;&gt;sign up for a new account.
+2. Once you are logged in; proceed to your &lt;a href=&quot;/2018/dashboard/&quot;&gt;account dashboard&lt;/a&gt; and create a speaker profile.
+3. At this point, you can submit tutorials, fill in the fields as follows:
+
+## Title
+
+Give your tutorial a name that accurately describes the tutorial&#39;s focus to potential students.
+
+## Description
+
+A high-level description of the tutorial, limited to 400 characters.
+
+## Audience Level
+
+At what level of Python and other topic-specific experience or
+expertise is the tutorial aiming for?  We realize this may be too
+narrow for a tutorial, for example if the tutorial is aimed at
+Experienced programmers but Novices to Python, but give it your best
+shot.  If this field doesn&#39;t work well, be sure to include a note in
+the Additional Notes section, and you may also wish to add to your
+Description.
+
+## Additional Notes
+
+This is the one section that is for the reviewers&#39; benefit only and will not be published in the PyCon guide. In this section, you should include information that you think would be helpful to assist reviewers in deciding which tutorials to accept, based on both the subject being taught and the ability of the teacher.  The following information should be included:
+
+- Any explanation or fleshing out of the public fields that would help
+  reviewers.
+
+- Intended audience: more than just novice/intermediate/etc. Reviewers need to know what level of Python experience is targeted and also what level(s) of domain-specific expertise is targeted, for example networking, SQL, database, etc.
+
+- Tutorial format: lab, lecture, workshop, etc.  However, don&#39;t just
+  pick a label, describe what will happen during the tutorial.
+
+- Interest in tutorial assistants: We&#39;re considering making tutorial
+  assistants available to instructors.  These would be volunteers with
+  Python experience who will provide one-on-one help during the
+  tutorial when students are working on exercises.  If we do this,
+  would you be interested and if so how many students per assistant
+  would you want?
+
+- Preferences or requirements with respect to class size or
+  scheduling.
+
+- Outline: of the tutorial content for reviewers.
+
+- Previous experience: tell us what experience you have in the subject, in activities such as teaching or public speaking, or anything else that would help us understand and gauge your abilities as a tutorial presenter. Ideal would be a link to a video.
+
+- Biography: You&#39;ll be asked to enter your biography when you register on this site and that information will be made public. Here, you may wish to include more information for reviewers to complement information about your Previous Experience.
+
+## Miscellaneous Notes About Proposals and Tutorials
+
+Here are some notes about the proposal, selection, and delivery process for tutorials.
+
+- Approved tutorial presenters will receive a $1,500 USD honorarium. 
+  We will need to collect a [W9](https://www.irs.gov/pub/irs-pdf/fw9.pdf) form from US tax payers. 
+  If you are a non-US tax payer, you will need to fill out a [W8ben](https://www.irs.gov/pub/irs-pdf/fw8ben.pdf) form.
+
+- PyCon does not want expenses to discourage you from submitting
+   a proposal, and offers speaker grants ensure that anyone can speak 
+   at PyCon. When you create a speaker profile, check the box to indicate 
+   that you require a speaker grant. This is not seen by the proposal 
+   reviewers and does not affect the review of your proposal. After proposals
+   are selected, we&#39;ll reach out to you regarding your needs. We understand 
+   situations can change, and are here for you. If you have any questions let 
+   us know at [pycon-aid@python.org](mailto:pycon-aid@python.org). 
+   Please keep in mind that accepted tutorial presenters will receive a 
+   honorarium (see point above).
+
+- There will be some duplication of information between the public
+  information contained in the Description, and the
+  Additional Notes which only reviewers will read.  That duplicate
+  information is for two different audiences so if you just copy and
+  paste between them neither will likely be served well.  A better
+  strategy, if you don&#39;t want to write two versions, is to reference
+  the public version (Description) in the Additional
+  Notes for reviewers and then expound on it.
+
+- The tutorial selection process attempts to choose a good variety of
+  tutorial topics and levels that will be in demand, i.e., it doesn&#39;t
+  just select the best proposals!
+
+- The selection process has also tended to prefer Python-related
+  topics over more general software development tools or practices
+  that aren&#39;t Python-specific.
+
+- Tutorials are subject to cancellation if enrollment is low.  In the
+  past the cancellation criterion has been less than 10 students
+  registered.
+
+## Questions or Suggestions
+
+If you have questions about any of this, or suggestions, please contact us at: &lt;a href=&quot;mailto:pycon-tutorials@python.org?subject=Question/Suggestion about Tutorial Proposal&quot;&gt;pycon-tutorials@python.org&lt;/a&gt;.
+</div>
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        
+    </div>
+  
+</div>
+<footer>
+  <div>
+    <img class="python-logo" src="/2018/site_media/static/img/psf-logo.e099cceabfa5.png"
+         width=300 alt="PSF logo">
+    
+    <p>
+      The PyCon 2018 conference in Cleveland, Ohio, USA, is a production of the
+      <a href="http://python.org/psf/">Python Software Foundation</a>.
+      This site is built using
+      <a href="https://www.djangoproject.com/">Django</a>
+      and
+      <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+      Hosting is provided by
+      <a href="http://www.rackspace.com/">Rackspace US, Inc</a>.
+    </p>
+    <p>
+      Logo and Branding by
+      <a href="http://hellofizz.com/"><img title="Fizz Creative" alt="Fizz Creative" src="/2018/site_media/static/img/fizz.4bf21f7d9cd9.png"/></a>.
+    </p>
+    <p>
+      Front-end development assistance by
+      <a href="http://imnikkilee.com/"><img title="Nikki Lee" alt="Nikki Lee" src="/2018/site_media/static/img/nikkilee.84a5c8979ca5.png"/></a>.
+  </div>
+</footer>
+  
+
+
+
+</body>
+
+<!-- Mirrored from us.pycon.org/2018/speaking/tutorials/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jul 2018 14:59:24 GMT -->
+</html>

@@ -1,0 +1,485 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from us.pycon.org/2018/schedule/presentation/144/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jul 2018 13:51:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+<title>Presentation: Colossal Cave Adventure in Python... in the browser! | PyCon 2018 in Cleveland, Ohio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="/2018/site_media/static/css/slight.a3c1b1430280.css"/>
+    
+
+
+<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="/2018/site_media/static/cache/css/411162ab63b1.css" type="text/css" />
+
+    
+    <link rel="stylesheet" type="text/css" media="all" href="/2018/site_media/static/css/simple-grid.d1149de00d41.css"/>
+
+
+
+    <meta property="og:image" content="/2018/site_media/static/img/pycon2018.f76001445fbb.png" />
+    <link href="/2018/site_media/static/img/pycon2018.f76001445fbb.png" rel="shortcut icon" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+      $(document).on('click', '.message button', function(event) {
+        $(this).parent().hide();
+        return false;
+      });
+    </script>
+
+    <script src="/2018/site_media/static/js/site.1e95633d4318.js"></script>
+
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.js"></script>
+<script type="text/javascript" src="/2018/site_media/static/cache/js/6f4a8148a968.js"></script>
+
+    
+    <script type="text/javascript">
+        $(function () {
+            var converter = new Attacklab.showdown.converter();
+            $('.tutorial-comment, .description').each(function() {
+                $(this).html(converter.makeHtml($(this).text()));
+            })
+        });
+    </script>
+
+    <meta name="google-site-verification" content="fG_DG4G4eFtBcgIKht-bJKdirGhDa_51X6yeCS8daDs" />
+
+
+
+
+</head>
+<body class="">
+
+
+    
+    
+
+
+
+
+
+<div id="content-wrapper"> <!-- wrap everything but footer for sticky footer -->
+  <header class="header-container">
+    
+      <a class="logo-banner" href="/2018/">
+        <img src="/2018/site_media/static/img/pycon2018.f76001445fbb.png">
+      </a>
+    
+    
+
+<div class="nav-container">
+    <a href="#!" tabindex="0" id="nav-toggle" class="nav-toggle" role="button">
+        Menu
+    </a>
+    <nav id="nav" class="primary-site-nav">
+        <ul class="nav-primary-list">
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">About PyCon</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/about/" >What is PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2018/about/code-of-conduct/" >Code of Conduct</a>
+        </li>
+    
+        <li >
+            <a href="/2018/about/diversity/" >Diversity</a>
+        </li>
+    
+        <li >
+            <a href="/2018/about/staff/" >Staff Information</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sitemap/" >Site Map</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">PSF</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/psf/" >Python Software Foundation</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Schedule</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/keynote-speakers/" >Keynote Speakers</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/tutorials" >Tutorial Schedule (Wed–Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/sponsor-tutorials/" >Sponsor Workshops (Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/edusummits/" >Education Summit (Thursday)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/talks/" >Talk Schedule (Fri–Sun)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/posters/list/" >Posters (Sunday morning)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/talks/list/" >List of Talks</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/sponsor-tutorials/list/" >List of Sponsor Workshops</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/tutorials/list/" >List of Tutorials</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/edusummits/list" >List of Education Summit Talks</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Events</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/events/opening-reception/" >Opening reception</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/dinners/" >Evening Dinners</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/edusummit/" >Education Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/startup_row/" >Startup Row</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/jobs/" >Job Fair</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/open-spaces/" >Open Spaces</a>
+        </li>
+    
+        <li >
+            <a href="/2018/5k/" >PyCon Fun Run/Walk</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/auction/" >PyLadies Auction</a>
+        </li>
+    
+        <li >
+            <a href="/2018/community/sprints/" >Development Sprints</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/language-summit/" >Python Language Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/letslearnpython/" >Young Coders </a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/pyladieslunch/" >PyLadies Lunch</a>
+        </li>
+    
+        <li >
+            <a href="/2018/hatchery/charlas" >PyCon Charlas</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/lightning/talks" >Lightning Talks</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/speed_networking" >Speed Networking</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/newcomer_orientation" >Newcomer Orientation</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Sponsors</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/sponsors/" >Our Sponsors</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/why-sponsor/" >Why sponsor PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/prospectus/" >Prospectus</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/apply/" >Application Form</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/fees/" >Estimated Sponsor Fees</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/exhibit-hall/" >Exhibit Hall</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/faq/" >Sponsor FAQ</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/information/" >Sponsor Information</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Venue</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/venue/travel/" >Traveling to Cleveland</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/" >Venue and Hotels</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/weather/" >Weather</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/accessibility/" >Accessibility</a>
+        </li>
+    
+        <li >
+            <a href="/2018/childcare/" >Childcare</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/recommendations/" >Local Recommendations</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/cle_events/" >Cleveland Events During PyCon</a>
+        </li>
+    
+        <li >
+            <a href="/2018/onsite" >Onsite Information</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/transit/" >Public Transit</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Registration</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/registration/" >Registration Information</a>
+        </li>
+    
+        <li >
+            <a href="/2018/registration/register" >Register</a>
+        </li>
+    
+        <li >
+            <a href="/2018/childcare/" >Childcare</a>
+        </li>
+    
+        <li >
+            <a href="/2018/financial-assistance/" >Financial Assistance</a>
+        </li>
+    
+        <li >
+            <a href="/2018/community/roomsharing/" >Room Sharing</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Volunteer!</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/about/volunteers" >Volunteering on-site</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+  </header>
+
+  
+
+  
+    <div id="content" class="">
+        
+          <div class="page-content">
+            
+              <div class="container">
+                
+                <h1></h1>
+                <div class="box">
+                  
+                    <div class="box-content">
+    
+        <h4>
+            Saturday
+            12:10 p.m.&ndash;12:55 p.m.
+            in Grand Ballroom B
+        </h4>
+        
+    
+    <h2>Colossal Cave Adventure in Python... in the browser!</h2>
+
+    <h4>
+        
+            <a href="/2018/speaker/profile/742/">Christopher Swenson</a>
+    </h4>
+
+    
+
+    <h3>Description</h3>
+
+    <div class="description">Colossal Cave, also known as Adventure or ADVENT, is the original text adventure. It was written in FORTRAN IV and there is practically no way to run the original program without translating it. We&#39;ll explore software archeology to write a Python interpreter to run the FORTRAN code as-is, without translating it. Come learn about pre-ASCII and 36-bit integers and writing interpreters in Python!
+
+And, we&#39;ll show how to use BeeWare&#39;s Batavia Python interpreter (in JavaScript) to execute the program. FORTRAN IV in Python in JavaScript in your browser!</div>
+
+    
+
+    
+
+    
+    
+</div>
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        
+    </div>
+  
+</div>
+<footer>
+  <div>
+    <img class="python-logo" src="/2018/site_media/static/img/psf-logo.e099cceabfa5.png"
+         width=300 alt="PSF logo">
+    
+    <p>
+      The PyCon 2018 conference in Cleveland, Ohio, USA, is a production of the
+      <a href="http://python.org/psf/">Python Software Foundation</a>.
+      This site is built using
+      <a href="https://www.djangoproject.com/">Django</a>
+      and
+      <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+      Hosting is provided by
+      <a href="http://www.rackspace.com/">Rackspace US, Inc</a>.
+    </p>
+    <p>
+      Logo and Branding by
+      <a href="http://hellofizz.com/"><img title="Fizz Creative" alt="Fizz Creative" src="/2018/site_media/static/img/fizz.4bf21f7d9cd9.png"/></a>.
+    </p>
+    <p>
+      Front-end development assistance by
+      <a href="http://imnikkilee.com/"><img title="Nikki Lee" alt="Nikki Lee" src="/2018/site_media/static/img/nikkilee.84a5c8979ca5.png"/></a>.
+  </div>
+</footer>
+  
+
+
+
+</body>
+
+<!-- Mirrored from us.pycon.org/2018/schedule/presentation/144/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jul 2018 13:51:39 GMT -->
+</html>

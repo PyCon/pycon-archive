@@ -1,0 +1,584 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from us.pycon.org/2018/about/code-of-conduct/staff-procedure/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jul 2018 14:10:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+<title>Staff Procedure For Incident Response | PyCon 2018 in Cleveland, Ohio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="/2018/site_media/static/css/slight.a3c1b1430280.css"/>
+    
+
+
+<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="/2018/site_media/static/cache/css/411162ab63b1.css" type="text/css" />
+
+    
+    <link rel="stylesheet" type="text/css" media="all" href="/2018/site_media/static/css/simple-grid.d1149de00d41.css"/>
+
+
+
+    <meta property="og:image" content="/2018/site_media/static/img/pycon2018.f76001445fbb.png" />
+    <link href="/2018/site_media/static/img/pycon2018.f76001445fbb.png" rel="shortcut icon" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+      $(document).on('click', '.message button', function(event) {
+        $(this).parent().hide();
+        return false;
+      });
+    </script>
+
+    <script src="/2018/site_media/static/js/site.1e95633d4318.js"></script>
+
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.js"></script>
+<script type="text/javascript" src="/2018/site_media/static/cache/js/6f4a8148a968.js"></script>
+
+    
+    <script type="text/javascript">
+        $(function () {
+            var mdown = $('.box-content').text();
+            var converter = new Attacklab.showdown.converter();
+            var html = converter.makeHtml(mdown);
+            $('.box-content').html(html);
+        });
+    </script>
+
+    <meta name="google-site-verification" content="fG_DG4G4eFtBcgIKht-bJKdirGhDa_51X6yeCS8daDs" />
+
+
+
+
+</head>
+<body class="cms-page ">
+
+
+    
+    
+
+
+
+
+
+<div id="content-wrapper"> <!-- wrap everything but footer for sticky footer -->
+  <header class="header-container">
+    
+      <a class="logo-banner" href="/2018/">
+        <img src="/2018/site_media/static/img/pycon2018.f76001445fbb.png">
+      </a>
+    
+    
+
+<div class="nav-container">
+    <a href="#!" tabindex="0" id="nav-toggle" class="nav-toggle" role="button">
+        Menu
+    </a>
+    <nav id="nav" class="primary-site-nav">
+        <ul class="nav-primary-list">
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">About PyCon</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/about/" >What is PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2018/about/code-of-conduct/" >Code of Conduct</a>
+        </li>
+    
+        <li >
+            <a href="/2018/about/diversity/" >Diversity</a>
+        </li>
+    
+        <li >
+            <a href="/2018/about/staff/" >Staff Information</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sitemap/" >Site Map</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">PSF</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/psf/" >Python Software Foundation</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Schedule</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/keynote-speakers/" >Keynote Speakers</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/tutorials" >Tutorial Schedule (Wed–Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/sponsor-tutorials/" >Sponsor Workshops (Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/edusummits/" >Education Summit (Thursday)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/talks/" >Talk Schedule (Fri–Sun)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/posters/list/" >Posters (Sunday morning)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/talks/list/" >List of Talks</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/sponsor-tutorials/list/" >List of Sponsor Workshops</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/tutorials/list/" >List of Tutorials</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/edusummits/list" >List of Education Summit Talks</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Events</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/events/opening-reception/" >Opening reception</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/dinners/" >Evening Dinners</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/edusummit/" >Education Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/startup_row/" >Startup Row</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/jobs/" >Job Fair</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/open-spaces/" >Open Spaces</a>
+        </li>
+    
+        <li >
+            <a href="/2018/5k/" >PyCon Fun Run/Walk</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/auction/" >PyLadies Auction</a>
+        </li>
+    
+        <li >
+            <a href="/2018/community/sprints/" >Development Sprints</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/language-summit/" >Python Language Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/letslearnpython/" >Young Coders </a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/pyladieslunch/" >PyLadies Lunch</a>
+        </li>
+    
+        <li >
+            <a href="/2018/hatchery/charlas" >PyCon Charlas</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/lightning/talks" >Lightning Talks</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/speed_networking" >Speed Networking</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/newcomer_orientation" >Newcomer Orientation</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Sponsors</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/sponsors/" >Our Sponsors</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/why-sponsor/" >Why sponsor PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/prospectus/" >Prospectus</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/apply/" >Application Form</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/fees/" >Estimated Sponsor Fees</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/exhibit-hall/" >Exhibit Hall</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/faq/" >Sponsor FAQ</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/information/" >Sponsor Information</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Venue</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/venue/travel/" >Traveling to Cleveland</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/" >Venue and Hotels</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/weather/" >Weather</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/accessibility/" >Accessibility</a>
+        </li>
+    
+        <li >
+            <a href="/2018/childcare/" >Childcare</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/recommendations/" >Local Recommendations</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/cle_events/" >Cleveland Events During PyCon</a>
+        </li>
+    
+        <li >
+            <a href="/2018/onsite" >Onsite Information</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/transit/" >Public Transit</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Registration</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/registration/" >Registration Information</a>
+        </li>
+    
+        <li >
+            <a href="/2018/registration/register" >Register</a>
+        </li>
+    
+        <li >
+            <a href="/2018/childcare/" >Childcare</a>
+        </li>
+    
+        <li >
+            <a href="/2018/financial-assistance/" >Financial Assistance</a>
+        </li>
+    
+        <li >
+            <a href="/2018/community/roomsharing/" >Room Sharing</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Volunteer!</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/about/volunteers" >Volunteering on-site</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+  </header>
+
+  
+
+  
+    <div id="content" class="">
+        
+          <div class="page-content">
+            
+              <div class="container">
+                
+    
+
+                <h1>Staff Procedure For Incident Response</h1>
+                <div class="box">
+                  
+                    <div class="box-content">Be sure to have a good understanding of our Code of Conduct, which can be found here:
+
+- [Code of Conduct](/2018/about/code-of-conduct/)
+
+Also have a good understanding of what is expected from an attendee that wants to report an incident. These guidelines can be found here:
+
+- [Attendee Procedure For Reporting Code of Conduct Incidents](/2018/about/code-of-conduct/attendee-procedure/)
+
+### When taking an incident report:
+
+1. Ask the reporter if they want to go to a quiet space
+1. Be an active listener and don&#39;t use judgement words
+1. Ensure the reporter&#39;s safety
+1. Seek additional emergency resources as needed (consult the volunteer guide)
+1. Take down the report and ask any clarifying questions
+1. Thank the reporter for reporting the incident
+1. Report the incident to the lead incident responders listed below.
+
+In case of a conflict of interest, you can individually contact:
+
+  * Ewa Jodlowska
+      * Python Software Foundation - Director of Operations
+      * &lt;ewa@python.org&gt;
+  * Ernest W. Durbin III
+      * PyCon US - Conference Chair
+      * &lt;ernest@python.org&gt;
+
+### While gathering information from the reporter:
+
+1. Do not invite them to withdraw the incident report
+1. Do not ask for their advice on how to immediately respond to the incident
+1. Do not offer them input into the long-term response to the incident
+1. Do not promise any particular response, since it may differ from the official response decided by the lead incident responders
+
+Try to get as much of the incident in written form by the reporter. If you cannot, transcribe it yourself as it was told to you. The important information to gather include the following:
+
+* Current date and time
+* Date and time of the incident
+* Location of incident
+* Description of the incident
+* Identifying information of the reported person: name, physical appearance, height, clothing, voice accent, identifying badge information such as company name, ribbons, or badge number
+* Additional circumstances surrounding the incident
+* Reporter’s name and contact information. If the reporter wants to make an anonymous report, allow them to do so. If responding to the incident would reveal who reported the incident (e.g. a microaggression in one-on-one conversation) ask the reporter if they have safety concerns about this.
+* Other people involved in or witnesses to the incident and their contact information or description
+* Do not prompt the reporter for suggestions of how to handle the incident, but record their suggested responses if they offer them
+
+Assess whether an immediate response is necessary. This initial response is very important and will set the tone for PyCon. Depending on the severity/details of the incident, please follow these guidelines:
+
+* If there is any general threat to attendees or the safety of anyone including conference staff, consult the volunteer guide for emergency and crisis resources.
+* If everyone is presently physically safe, involve law enforcement or security only at a reporter’s request.
+* After taking the report, assess whether you need a lead incident responder to immediately respond to the incident. If so, ask the reporter to stay with you and call the lead incident responders.
+
+Respond to reporter needs. You can:
+
+* Thank the reporter for making the incident report
+* Reassure them that the incident report will be reviewed by the lead incident responders
+* Gather their contact information to send a follow-up after the incident is resolved
+* Offer to get them water
+* Tell them where the Safety Room is. Offer to escort them if desired.
+* Ask, &quot;Is there a friend or trusted person who you would like to be with you?&quot; If so, arrange for another incident responder to get this person.
+* Ask them, &quot;How else can I help?&quot;
+* Provide them with specific non-emergency or crisis contacts from the volunteer guide if necessary.
+
+Once something is reported, the event coordinator, the conference chair, and the lead incident responders should meet. The main objectives of this meeting is to:
+
+* Review report documentation to determine what happened
+* Consult documentation of past incidents for patterns of behavior
+* Discuss appropriate response(s) to the incident
+* Assign a person to make those reponse(s)
+* Determine the follow up actions for any impacted people and/or the reporter
+* Assign a person to follow up with the impacted people
+
+After the staff meeting and discussion, a staff member (preferably the conference chair or event coordinator if available) may choose to communicate with the reported person.
+
+When following up with a reported person:
+
+* Explain what happened
+* Focus on the impact of their behavior
+* Reiterate the Code of Conduct and that their behavior was not appropriate
+* Give them concrete examples of how they can improve their behavior
+* Remind them of the consequences of their behavior, or future consequences if the behavior is repeated
+
+People who are reported often get upset, defensive, or deny the report. Allow them to give any additional details about the incident. However, remember:
+
+* It does not matter if they did not intend to hurt anyoneTheir behavior still impacted attendees negatively
+* It is not your job to reassure or forgive them
+* Do not allow the reported person to make an apology to the reporter or impacted person. Often an apology centers the reported person’s feelings and not the person who was impacted. You may accept their apology and offer to pass it on (but you’re not required to if you think it would negatively impact the reporter).
+
+What follows are examples of possible responses to an incident report. This list is is not inclusive, and PyCon reserves the right to take any action it deems necessary. Possible responses to an incident include:
+
+* Nothing, if the behavior was determined to not be a Code of Conduct violation
+* A verbal or emailed warning
+* Requiring that the reported person avoid any interaction with, and physical proximity to, another person for the remainder of the event
+* Requiring the reported person not attend evening events
+* Refusal of alcoholic beverage purchases at events
+* Ending a talk that violates the Code of Conduct early
+* Not publishing the video or slides of a talk that violated the Code of Conduct
+* Not allowing a speaker who violated the Code of Conduct to give (further) talks at the event now or in the future
+* Immediately ending any event volunteer responsibilities and privileges the a person holds
+* Requiring that a person not volunteer for future events your organization runs (either indefinitely or for a certain time period)
+* Requiring that a person refund any travel grants and similar they received (this would need to be a condition of the grant at the time of being awarded)
+* Requiring that a person  immediately leave the event and not return
+* Banning a person from future events (either indefinitely or for a certain time period)
+* Removing a person  from membership of relevant organizations
+* Publishing an account of the incident and calling for the resignation of a person from their responsibilities (usually pursued by people without formal authority: may be called for if the person is the event leader, or refuses to stand aside from the conflict of interest, or similar, typically event staff have sufficient governing rights over their space that this isn&#39;t as useful)
+
+If a reported person wants to appeal the decision, notify them that they may contact the Python Software Foundation Board &lt;psf@python.org&gt;. Keep in mind that it is not a good idea to encourage an apology from the reported person.
+
+It is very important how we deal with the incident publicly. Our policy is to make sure that everyone aware of the initial incident is also made aware that it is not according to policy and that official action has been taken - while still respecting the privacy of individual attendees. When speaking to individuals (those who are aware of the incident, but were not involved with the incident) about the incident it is a good idea to keep the details out.
+
+Depending on the incident, the conference chair or their designate may decide to make one or more public announcements. If necessary, this will be done with a short announcement either during the plenary and/or through other channels. No one other than the conference chair or someone delegated authority from the conference chair should make any announcements.
+
+If some attendees were angered by the incident, it is best to apologize to them that the incident occurred to begin with. If there are residual hard feelings, suggest to them to write an email to the conference chair or to the event coordinator listed below. It will be dealt with accordingly.
+
+* Ewa Jodlowska
+    * Python Software Foundation - Director of Operations
+    * ewa@python.org
+* Ernest W. Durbin III
+    * PyCon US - Conference Chair
+    * ernest@python.org
+
+If contact cannot be made via phone or email, please proceed to the staff room.
+
+---
+
+This procedure has been adapted from the Ada Initiative’s guide titled &quot;[Conference anti-harassment/Responding to Reports](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports)&quot; and has been updated by [Otter Tech](https://otter.technology/).
+
+[Revision 2f4d980](https://github.com/python/pycon-code-of-conduct/tree/2f4d980c8df6f1473d814c0af66f0243b842059f) of the PyCon Code of Conduct</div>
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        
+    </div>
+  
+</div>
+<footer>
+  <div>
+    <img class="python-logo" src="/2018/site_media/static/img/psf-logo.e099cceabfa5.png"
+         width=300 alt="PSF logo">
+    
+    <p>
+      The PyCon 2018 conference in Cleveland, Ohio, USA, is a production of the
+      <a href="http://python.org/psf/">Python Software Foundation</a>.
+      This site is built using
+      <a href="https://www.djangoproject.com/">Django</a>
+      and
+      <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+      Hosting is provided by
+      <a href="http://www.rackspace.com/">Rackspace US, Inc</a>.
+    </p>
+    <p>
+      Logo and Branding by
+      <a href="http://hellofizz.com/"><img title="Fizz Creative" alt="Fizz Creative" src="/2018/site_media/static/img/fizz.4bf21f7d9cd9.png"/></a>.
+    </p>
+    <p>
+      Front-end development assistance by
+      <a href="http://imnikkilee.com/"><img title="Nikki Lee" alt="Nikki Lee" src="/2018/site_media/static/img/nikkilee.84a5c8979ca5.png"/></a>.
+  </div>
+</footer>
+  
+
+
+
+</body>
+
+<!-- Mirrored from us.pycon.org/2018/about/code-of-conduct/staff-procedure/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jul 2018 14:10:21 GMT -->
+</html>

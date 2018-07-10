@@ -1,0 +1,677 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from us.pycon.org/2018/community/sprints/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jul 2018 13:47:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+<title>Development Sprints | PyCon 2018 in Cleveland, Ohio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="/2018/site_media/static/css/slight.a3c1b1430280.css"/>
+    
+
+
+<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="/2018/site_media/static/cache/css/411162ab63b1.css" type="text/css" />
+
+    
+    <link rel="stylesheet" type="text/css" media="all" href="/2018/site_media/static/css/simple-grid.d1149de00d41.css"/>
+
+
+
+    <meta property="og:image" content="/2018/site_media/static/img/pycon2018.f76001445fbb.png" />
+    <link href="/2018/site_media/static/img/pycon2018.f76001445fbb.png" rel="shortcut icon" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+      $(document).on('click', '.message button', function(event) {
+        $(this).parent().hide();
+        return false;
+      });
+    </script>
+
+    <script src="/2018/site_media/static/js/site.1e95633d4318.js"></script>
+
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.js"></script>
+<script type="text/javascript" src="/2018/site_media/static/cache/js/6f4a8148a968.js"></script>
+
+    
+    <script type="text/javascript">
+        $(function () {
+            var mdown = $('.box-content').text();
+            var converter = new Attacklab.showdown.converter();
+            var html = converter.makeHtml(mdown);
+            $('.box-content').html(html);
+        });
+    </script>
+
+    <meta name="google-site-verification" content="fG_DG4G4eFtBcgIKht-bJKdirGhDa_51X6yeCS8daDs" />
+
+
+
+
+</head>
+<body class="cms-page editable">
+
+
+    
+    
+
+
+
+
+
+<div id="content-wrapper"> <!-- wrap everything but footer for sticky footer -->
+  <header class="header-container">
+    
+      <a class="logo-banner" href="/2018/">
+        <img src="/2018/site_media/static/img/pycon2018.f76001445fbb.png">
+      </a>
+    
+    
+
+<div class="nav-container">
+    <a href="#!" tabindex="0" id="nav-toggle" class="nav-toggle" role="button">
+        Menu
+    </a>
+    <nav id="nav" class="primary-site-nav">
+        <ul class="nav-primary-list">
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">About PyCon</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/about/" >What is PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2018/about/code-of-conduct/" >Code of Conduct</a>
+        </li>
+    
+        <li >
+            <a href="/2018/about/diversity/" >Diversity</a>
+        </li>
+    
+        <li >
+            <a href="/2018/about/staff/" >Staff Information</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sitemap/" >Site Map</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">PSF</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/psf/" >Python Software Foundation</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Schedule</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/keynote-speakers/" >Keynote Speakers</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/tutorials" >Tutorial Schedule (Wed–Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/sponsor-tutorials/" >Sponsor Workshops (Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/edusummits/" >Education Summit (Thursday)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/talks/" >Talk Schedule (Fri–Sun)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/posters/list/" >Posters (Sunday morning)</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/talks/list/" >List of Talks</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/sponsor-tutorials/list/" >List of Sponsor Workshops</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/tutorials/list/" >List of Tutorials</a>
+        </li>
+    
+        <li >
+            <a href="/2018/schedule/edusummits/list" >List of Education Summit Talks</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown active">
+                    <a href="#!" class="nav-primary-link" role="button">Events</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/events/opening-reception/" >Opening reception</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/dinners/" >Evening Dinners</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/edusummit/" >Education Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/startup_row/" >Startup Row</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/jobs/" >Job Fair</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/open-spaces/" >Open Spaces</a>
+        </li>
+    
+        <li >
+            <a href="/2018/5k/" >PyCon Fun Run/Walk</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/auction/" >PyLadies Auction</a>
+        </li>
+    
+        <li class="active">
+            <a href="/2018/community/sprints/" >Development Sprints</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/language-summit/" >Python Language Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/letslearnpython/" >Young Coders </a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/pyladieslunch/" >PyLadies Lunch</a>
+        </li>
+    
+        <li >
+            <a href="/2018/hatchery/charlas" >PyCon Charlas</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/lightning/talks" >Lightning Talks</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/speed_networking" >Speed Networking</a>
+        </li>
+    
+        <li >
+            <a href="/2018/events/newcomer_orientation" >Newcomer Orientation</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Sponsors</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/sponsors/" >Our Sponsors</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/why-sponsor/" >Why sponsor PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/prospectus/" >Prospectus</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/apply/" >Application Form</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/fees/" >Estimated Sponsor Fees</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/exhibit-hall/" >Exhibit Hall</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/faq/" >Sponsor FAQ</a>
+        </li>
+    
+        <li >
+            <a href="/2018/sponsors/information/" >Sponsor Information</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Venue</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/venue/travel/" >Traveling to Cleveland</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/" >Venue and Hotels</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/weather/" >Weather</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/accessibility/" >Accessibility</a>
+        </li>
+    
+        <li >
+            <a href="/2018/childcare/" >Childcare</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/recommendations/" >Local Recommendations</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/cle_events/" >Cleveland Events During PyCon</a>
+        </li>
+    
+        <li >
+            <a href="/2018/onsite" >Onsite Information</a>
+        </li>
+    
+        <li >
+            <a href="/2018/venue/transit/" >Public Transit</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Registration</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/registration/" >Registration Information</a>
+        </li>
+    
+        <li >
+            <a href="/2018/registration/register" >Register</a>
+        </li>
+    
+        <li >
+            <a href="/2018/childcare/" >Childcare</a>
+        </li>
+    
+        <li >
+            <a href="/2018/financial-assistance/" >Financial Assistance</a>
+        </li>
+    
+        <li >
+            <a href="/2018/community/roomsharing/" >Room Sharing</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Volunteer!</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2018/about/volunteers" >Volunteering on-site</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+  </header>
+
+  
+
+  
+    <div id="content" class="">
+        
+          <div class="page-content">
+            
+              <div class="container">
+                
+    
+                <h1>Development Sprints</h1>
+                <div class="box">
+                  
+                    <div class="box-content">**Monday, May 14th 2018 – Thursday, May 17th 2018** and free to attend (you don&#39;t need a Talks and Events PyCon registration to come to the sprints)!
+
+&lt;/div&gt;
+
+We are very grateful for our sponsorships so we can supply our attendees with food and beverages!
+
+Development sprints are a key part of PyCon, and a chance for the contributors to open-source projects to get together face-to-face for up to four days of intensive learning, development and camaraderie. Newbies sit with gurus, go out for lunch and dinner together, and have a great time while advancing their project.
+
+- &lt;a href=&quot;http://pycon.blogspot.com/2016/03/why-not-join-sprints-this-year-at-pycon.html&quot;&gt;
+Why not join the sprints this year at PyCon?&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/NaomiCeder&quot;&gt;Naomi Ceder&lt;/a&gt;
+
+What&#39;s a sprint?
+-------------------
+
+&lt;div style=&quot;float: left; margin: 15px&quot;&gt;
+&lt;a href=&quot;http://www.youtube.com/watch?v=hOtKgFaFcz0&quot;&gt;&lt;img src=&quot;https://us.pycon.org/2015/site_media/media/images/2015/03/30/pycon-sprint-video-link.png&quot; alt=&quot;Come for PyCon, stay for the sprints!&quot; width=&quot;200&quot;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+PyCon Development Sprints are four days of intensive learning and development on an open source project of your choice, in a team environment. It&#39;s a time to come together with colleagues, old and new, to share what you&#39;ve learned and apply it to an open source project.
+
+In the crucible of a sprint room, teaming with both focus and humor, it&#39;s a time to test, fix bugs, add new features, and improve documentation. And it&#39;s a time to network, make friends, and build relationships that go beyond the conference.
+
+PyCon provides the space and infrastructure (network, power, tables &amp; chairs); you bring your skills, humanity, and brainpower (oh! and don&#39;t forget your computer).
+
+For those that never attended a dev sprint before or want to brush up on basics, come to our our Introduction to Sprints workshop Sunday, May 13th!
+
+For those that want to sign up to mentor beginners at the Sprints, [you can sign here (FORM TBA)].
+
+Who can participate?
+--------------------
+
+**You!** All experience levels are welcome; sprints are a great opportunity to get connected with, and start contributing to your favorite Python project. Participation in the sprints is free! You don&#39;t need a Talks and Events PyCon registration to come to the sprints.
+
+Who can run a sprint?
+---------------------------
+
+**You!** If you&#39;ve never run a sprint before, the [In-Person Event Handbook](https://opensourceevents.github.io/) is an excellent guide. 
+
+Please edit this page and add your project according to the instructions below.
+
+What&#39;s the schedule?
+-------------------------
+
+Sprints run all day from Monday, May 14th to Thursday, May 17th. 
+
+
+&lt;a id=&quot;SprintRooms&quot;&gt;&lt;/a&gt;
+Where will the sprints be?
+-------------------------------
+The Sprints will take place in the Convention Center. Each Sprinting project will claim its own room or if the room is large enough, it will share the space with other Sprinting Project. Here is a list of all of the rooms we will be using during the 4 days [TBA]:
+
+Which projects are sprinting?
+----------------------------------
+
+If you are interested in leading a sprint, **please add your project here:**
+
+ **1.** Please [edit this page](https://us.pycon.org/2018/community/sprints/_edit/) and add a brief description of your project to the list below. Include links to what you&#39;ll be sprinting on. 
+
+ **2.** Please also **[fill out this form TBA]** to let us know if you want to be newcomer friendly.
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://www.dropbox.com/s/sgg0gycy0izo5ne/saltstacklogo.png?dl=1&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a href=&quot;https://docs.saltstack.com/&quot;&gt;Salt&lt;/a&gt; is a novel approach to infrastructure management built on a dynamic communication bus. Salt can be used for data-driven orchestration, remote execution for any infrastructure, configuration management for any app stack, and much more.  SaltStack contributors will be present to help you get started with the project, to learn how to write execution modules, fix bugs, or even contribute to documentation.  SaltStack will be sprinting Monday and Tuesday (5/14 and 5/15).&lt;/td&gt; 
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://i.imgur.com/RXxcyxu.png&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a href=&quot;http://warehouse.readthedocs.io/&quot;&gt;Warehouse&lt;/a&gt; is the software behind &lt;a href=&quot;http://pypi.io/&quot;&gt;the new Python Package Index&lt;/a&gt;. It&#39;s a web application built on top of Pyramid. We welcome package maintainers, backend and frontend web developers, infrastructure administrators, technical writers, and testers to help us make the new PyPI as usable and robust as possible. We&#39;re &lt;a href=&quot;https://wiki.python.org/psf/PackagingSprints&quot;&gt;planning&lt;/a&gt; to work on Warehouse, pip, virtualenv, Twine, and other packaging and distribution tools, and have some planning and feedback discussions. &lt;a href=&quot;https://github.com/pypa/warehouse/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22&quot;&gt;See our &quot;good first issue&quot; GitHub label&lt;/a&gt; and &lt;a href=&quot;https://warehouse.readthedocs.io/development/getting-started/&quot;&gt;Getting Started documentation&lt;/a&gt;.&lt;/td&gt; 
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://docs.pulpproject.org/en/pulpproject.org_images/pulp_logo_big.png&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://pulpproject.org/&quot;&gt;Pulp&lt;/a&gt; is a repository manager used to acquire, organize, and distribute Python packages, Docker containers, RPM repositories, and more! Pulp is built with Django and django-rest-framework. We&#39;re a great project for a first time contributor! Come &lt;a href=&quot;https://pulp.plan.io/issues?query_id=34&quot;&gt;fix an issue&lt;/a&gt;, contribute a feature, or even &lt;a href=&quot;https://docs.pulpproject.org/en/3.0/nightly/plugins/plugin-writer/index.html&quot;&gt;add a new content type&lt;/a&gt;! We&#39;ll be at the sprints Wednesday 5/16 and Thursday 5/17.
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://raw.githubusercontent.com/zulip/zulip/master/static/images/logo/zulip-icon-512x512.png&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a href=&quot;https://github.com/zulip/zulip/&quot;&gt;Zulip&lt;/a&gt; is a powerful, open source team chat application built for productivity. We have a vibrant community (over 400 contributors), 90% test coverage, full static typing (mypy), and over 100K words of developer documentation. &lt;br/&gt;
+We have a web application built on top of Django, and also have desktop clients (Electron), mobile clients (React Native), a terminal client (Urwid), and a bots ecosystem (mostly Python). We welcome experienced programmers and technical writers. It doesn&#39;t matter if you&#39;ve never contributed to open source, we&#39;ll have you up and running in no time at all. Come by and say hi before the sprints at &lt;a href=&quot;https://chat.zulip.org&quot;&gt;https://chat.zulip.org&lt;/a&gt;!&lt;/td&gt; 
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://pylint.org/pylint.svg&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://docs.pylint.org&quot;&gt;Pylint&lt;/a&gt; is a tool that checks for errors in Python code, tries to enforce a coding standard, looks for various code smells, it can also look for certain type errors, it can recommend suggestions about how particular blocks can be refactored and can offer you details about the code’s complexity. We&#39;re looking for contributors with all kinds of experience and we also have great issues for &lt;a href=&quot;https://github.com/PyCQA/pylint/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+is%3Aopen+label%3A%22contributor+friendly%22&quot;&gt;first time contributors&lt;/a&gt;.
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://i.imgur.com/v9Wws8U.png&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://arrow.apache.org/&quot;&gt;Apache Arrow&lt;/a&gt; is a cross-language development platform for in-memory data. It specifies a standardized language-independent columnar memory format for flat and hierarchical data, organized for efficient analytic operations on modern hardware. It also provides computational libraries and zero-copy streaming messaging and interprocess communication. We&#39;re looking for contributors with all kinds of experience. Development getting started docs are available &lt;a href=&quot;https://arrow.apache.org/docs/python/development.html&quot;&gt;here&lt;/a&gt;. Issues are tracked and discussed on &lt;a href=&quot;https://issues.apache.org/jira/projects/ARROW/&quot;&gt;Jira&lt;/a&gt;. The best way to keep up with the project or ask questions is on the Apache Arrow mailing list &lt;a href=&quot;mailto:dev@arrow.apache.org&quot;&gt;dev@arrow.apache.org&lt;/a&gt;. For more information see the &lt;a href=&quot;https://arrow.apache.org/docs/python/getting_involved.html&quot;&gt;getting involved&lt;/a&gt; page.
+  &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://xnd.io/xndlogo%20transparentbg.png&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;http://xnd.io&quot;&gt;XND&lt;/a&gt; is a generalization and re-factoring of NumPy functionality into cross-language C-libraries with Python (and other language) interfaces.   It allows development of cross-language operations on general in-memory data structures.  It uses the &lt;a href=&quot;http://datashape.readthedocs.io&quot;&gt;datashape&lt;/a&gt; standard to define in-memory data which provides arbitrary n-dimensional, typed-containers (xnd arrays).  There are three C-libraries (libndtypes, libgumath, libxnd) with Python 3.x interfaces (ndtypes, gumath, and xnd).   We are looking for people willing to write tutorials, and examples, as well as people interested in developing generalized ufuncs, new fundamental types, or integrating XND with PyPY,  Jython, IronPython or other Python run-times.    Also, if anyone has an interest in integrating XND with other libraries (Numba, Arrow, etc.) please join us! 
+&lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;http://na-sj16.marketo.com/rs/284-ESC-480/images/logo_capone_devex_cloud_custodian.svg&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://github.com/capitalone/cloud-custodian&quot;&gt;Cloud Custodian&lt;/a&gt; is an open source cloud management Swiss army knife. It lets users craft policies in yaml that let them manage cloud security, governance/compliance, cost and others. Its got comprehensive coverage of cloud provider features and fully integrates with serverless. We&#39;ve historically targeted AWS, but we&#39;ve been expanding our coverage of Azure and Google Cloud.  We welcome contributors of all experience levels and we&#39;ll be sprinting on multi-cloud support, docs, or check out our extant &lt;a href=&quot;https://github.com/capitalone/cloud-custodian/issues&quot;&gt;issues&lt;/a&gt; for other ideas.
+    &lt;/td&gt;
+  &lt;/tr&gt;
+ &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;http://www.list.org/images/logo2010-2.jpg&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;http://www.list.org/&quot;&gt;GNU Mailman&lt;/a&gt; is open source email list management software.  We will be sprinting to put together the all Python 3 Mailman 3.2 release package. Please join us. We will help you get started with our project. We use Django heavily in our web list management and archiving UI and have tons of work that people with Django skills can work on. We are also interested in accessibility testing of our UI and would welcome your help with that.
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://pybee.org/static/images/brutus-270.png&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;http://pybee.org/&quot;&gt;BeeWare&lt;/a&gt;: Want to run Python code on your iPhone or Android device? Want to write a desktop app with a native user interface? Then why not come sprint with the &lt;a href=&quot;http://pybee.org/&quot;&gt;BeeWare Project&lt;/a&gt;! We&#39;ve got lots of projects, large and small, for you to tackle, no matter your background or level of experience, and we&#39;ll be there to mentor anyone who wants to get involved. We&#39;ll also have &lt;a href=&quot;https://pybee.org/contributing/challenge-coins/&quot;&gt;Challenge Coins&lt;/a&gt; for everyone who participates.
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://certbot.eff.org/images/certbot-logo-1A.svg&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://certbot.eff.org/&quot;&gt;Certbot&lt;/a&gt; is part of &lt;a href=&quot;https://www.eff.org/&quot;&gt;EFF&#39;s&lt;/a&gt; effort to &lt;a href=&quot;https://www.eff.org/encrypt-the-web&quot;&gt;encrypt the entire Internet&lt;/a&gt;. Certbot automates fetching and deploying SSL/TLS certificates from &lt;a href=&quot;https://letsencrypt.org/&quot;&gt;Let&#39;s Encrypt&lt;/a&gt; and is run on millions of servers worldwide to help provide and maintain HTTPS access to websites. We welcome programmers and technical writers and no background in Web security is required. You can learn more about contributing in our &lt;a href=&quot;https://certbot.eff.org/docs/contributing.html&quot;&gt;Developer Guide&lt;/a&gt; or find a &lt;a href=&quot;https://github.com/certbot/certbot/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22&quot;&gt;good first issue on GitHub&lt;/a&gt;.
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;http://www.fabfile.org/_static/logo.png&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;http://www.fabfile.org/&quot;&gt;Fabric&lt;/a&gt; has long been the tool of choice for SSH-based deployment, configuration management &amp; system administration as well as dead-simple execution of Python-defined tasks via a CLI. Version 2.0 is finally upon us, and we&#39;ll need lots of help polishing up what&#39;s there and stuffing version 2.1 full of whatever didn&#39;t make the original cut!&lt;br /&gt;&lt;br /&gt;The sprint naturally includes work on the projects Fabric 2 is built on: &lt;a href=&quot;http://www.pyinvoke.org/&quot;&gt;Invoke&lt;/a&gt; (task management &amp; subprocess execution) and &lt;a href=&quot;http://www.paramiko.org&quot;&gt;Paramiko&lt;/a&gt; (a Python implementation of the SSH protocol).
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;http://alabaster.readthedocs.io/&quot;&gt;Alabaster&lt;/a&gt; is a highly configurable Sphinx documentation theme - but it could always be &lt;i&gt;even more&lt;/i&gt; configurable! (It also, regrettably, may have a bug or two that needs fixing.)&lt;br /&gt;&lt;br /&gt;Please understand that the maintainer will be sprinting on multiple projects and won&#39;t be able to dedicate the entire time to just Alabaster - but if you&#39;ve got some patches to review, he&#39;ll definitely make time to look them over!
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://static.davidism.com/flask.png&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        Flask is a micro web framework for building APIs and websites big and small, part of the &lt;a href=&quot;https://palletsprojects.com/p/flask/&quot;&gt;Pallets Projects&lt;/a&gt;. We just released Flask 1.0! 🎉 We&#39;ll mostly be sprinting on the other Pallets projects: Werkzeug, Jinja, and Click. Whether you want to investigate issues, write code, docs, or tests, there are plenty of tasks for everyone.
+  &lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;Python extension for VS Code&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://github.com/microsoft/vscode-python&quot;&gt;Python extension for VS Code&lt;/a&gt;: The entire team will be at the sprints all four days, happy to help anyone interested in contributing to the extension in some way get set up and helping out!
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://raw.githubusercontent.com/freedomofpress/securedrop/develop/docs/images/logo.png&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://securedrop.org/&quot;&gt;SecureDrop&lt;/a&gt;: is an open-source whistleblower submission system that media organizations can use to securely accept documents from, and communicate with anonymous sources. It was originally created by the late Aaron Swartz and is currently managed by the &lt;a href=&quot;https://freedom.press&quot;&gt;Freedom of the Press Foundation&lt;/a&gt;. The SecureDrop project team members will be present for all the 4 days of the sprint. We will need contributions in every available form including many options for the first time contributors. &lt;a href=&quot;https://docs.securedrop.org/en/latest/development/getting_started.html&quot;&gt;This guide&lt;/a&gt; is a good place to start setting up a development environment for the project.
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;http://docs.python-guide.org/en/latest/_static/python-guide-logo.png&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://github.com/kennethreitz/python-guide/issues/688&quot;&gt;Python best practices guidebook, written for Humans.&lt;/a&gt;: Sprint dedicado a traducir al Español la guía de Python creada por Kenneth Reitz. / This sprint will be dedicated to translate Kenneth Reitz Python guide into Spanish.
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;http://www.mypy-lang.org/static/mypy_light.svg&quot;&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://github.com/python/mypy&quot;&gt;mypy&lt;/a&gt;: Mypy is an optional static type checker for Python. It is used by open source projects like Zulip, and companies like Dropbox, Facebook, and more. New contributors are welcome! There is plenty to work on;  experience with Python and a statically typed language is recommended. For this sprint we will try to focus on improving error reporting and documentation.
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://raw.githubusercontent.com/vmware/tern/master/docs/img/tern_logo.png&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://github.com/vmware/tern&quot;&gt;Tern&lt;/a&gt; is a container inspection tool written in Python. It analyzes containers to find what packages are installed in it. Tern is a very young project with lots of areas to contribute to. During this sprint, we will be focusing on &lt;a href=&quot;https://github.com/vmware/tern/issues/37&quot;&gt;creating an isolated overlay root filesystem from container image layers&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;
+Newcomers are welcome! This is your chance to learn about what container images look like and some cool Linux Kernel system calls. This is my first PyCon sprint, so we&#39;ll all be learning together :).&lt;br/&gt;&lt;br/&gt;
+To get contributing right away, make sure your computer has Linux kernel version 4.0 or newer and Python 3.6 or newer. Hope to see you on Monday and Tuesday!
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://avatars0.githubusercontent.com/u/8749848?s=200&amp;v=4&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://github.com/PyCQA/bandit&quot;&gt;Bandit&lt;/a&gt; is a tool designed to find common security issues in Python code. To do this Bandit processes each file, builds an AST from it, and runs appropriate plugins against the AST nodes. Once Bandit has finished scanning all the files it generates a report. Bandit was originally developed within the OpenStack Security Project and later rehomed to PyCQA. New contributors are always welcome! Come by on Monday if you&#39;d like to help out.
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://raw.githubusercontent.com/falconry/falconry.github.io/master/img/square-logo-with-text.png&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://falconframework.org/&quot;&gt;Falcon&lt;/a&gt; is a reliable, high-performance Python web framework for building app backends and microservices that scale to many thousands of requests per second. It encourages the REST architectural style, and tries to do as little as possible while remaining highly effective. Falcon is used by &lt;a href=&quot;https://github.com/falconry/falcon/wiki/Who%27s-using-Falcon%3F&quot;&gt;organizations around the world&lt;/a&gt;, and is made possible by our fantastic community of open-source contributors.&lt;br&gt;
+        &lt;br&gt;
+        During this year&#39;s sprint we will be working on Falcon 2.0, and we&#39;d love to have your help. We welcome both newcomers and seasoned contributors. Please be sure to review our &lt;a href=&quot;https://github.com/falconry/falcon#contributing&quot;&gt;contributor&#39;s guide&lt;/a&gt;, and then check out the issues list under our &lt;a href=&quot;https://github.com/falconry/falcon/milestone/31&quot;&gt;2.0 milestone on GitHub&lt;/a&gt;. We&#39;ve flagged a number of issues that would be a great place to start for first-time contributors. 
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;http://tox.readthedocs.io/en/latest/_static/tox.png&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;http://tox.readthedocs.io/en/latest//&quot;&gt;tox&lt;/a&gt; aims to automate and standardize testing in Python. It is part of a larger vision of easing the packaging, testing and release process of Python software. tox is used by almost all open source projects to ensure it keeps running under all Python versions, enforce code quality and lower the barrier of contributing to those projects. It is made possible by our fantastic community of open-source contributors.&lt;br&gt;
+        &lt;br&gt;
+        During this year&#39;s sprint. We welcome both newcomers and seasoned contributors. For more details about how you can contribute make sure to check out &lt;a href=&quot;https://github.com/tox-dev/tox/issues/815 &quot;&gt; our dedicated issue for this here. &lt;/a&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://cloud.githubusercontent.com/assets/745966/25355190/cc87ae24-2903-11e7-88cd-cb6b9356d80c.png&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;http://www.scikit-yb.org/en/latest/index.html&quot; id=&#39;yellowbrick&#39;&gt;Yellowbrick&lt;/a&gt;: Yellowbrick is a suite of visual diagnostic tools called “Visualizers” that extend the Scikit-Learn API to allow human steering of the model selection process. In a nutshell, Yellowbrick combines Scikit-Learn with Matplotlib in the best tradition of the Scikit-Learn documentation, but to produce visualizations for your models! 
+&lt;br&gt;
+&lt;br&gt;
+During this year&#39;s sprints, we are looking for contributors to help us develop / experiment with new visualizers, navigate adding support for other ML libraries like tensorflow &amp; keras, optimizing &amp; extending our existing visualizers and generally helping us fix bugs and improve our documentation with better examples and clearer language.
+&lt;br&gt;
+&lt;br&gt;
+We&#39;re an incredibly friendly and welcoming project that will humbly and gratefully accept any contributions that you might make either small or large if you are experienced or just starting out.        
+&lt;br&gt;        
+&lt;br&gt;
+Checkout our documentation on &lt;a href=&quot;http://www.scikit-yb.org/en/latest/contributing.html&quot;&gt;Contributing&lt;/a&gt;
+if you are interested in learning more.
+
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://www.adafruit.com/includes/templates/adafruit2013/images/circuitpython/CircuitPython.png&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;http://github.com/adafruit/circuitpython/&quot;&gt;CircuitPython&lt;/a&gt;: Learn how to build your own CircuitPython! We&#39;ll be sprinting to finish our &lt;a href=&quot;https://github.com/adafruit/circuitpython/issues?q=is%3Aopen+is%3Aissue+milestone%3A3.0&quot;&gt;3.0 milestone&lt;/a&gt;. Help is also welcome on improving &lt;a href=&quot;https://github.com/adafruit/?utf8=%E2%9C%93&amp;q=Adafruit_CircuitPython&amp;type=&amp;language=&quot;&gt;libraries&lt;/a&gt; and &lt;a href=&quot;https://circuitpython.readthedocs.io&quot;&gt;documentation&lt;/a&gt;.
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://trypyramid.com/img/pyramid_logo_red_on_transparent_background.png&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://docs.pylonsproject.org/projects/pyramid/&quot;&gt;Pyramid Web Framework&lt;/a&gt;: Pyramid is a small, fast, down-to-earth Python web framework developed as part of the &lt;a href=&quot;https://pylonsproject.org/&quot;&gt;Pylons Project&lt;/a&gt;. Very powerful and modular it power many of the sites you seen or use including the new Python Package Index (PyPi) used by the whole community. Pyramid needs you love and your PRs so come sprint with us. All skills level engineers are welcome.
+  &lt;/tr&gt;
+
+  &lt;!-- Copy/Paste the following! --&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;http://example.org/&quot;&gt;Example Project&lt;/a&gt;: Example Project Description for Example Project. We intend to have a lot of fun, make new friends and build momentum for the project. :-)
+  &lt;/tr&gt;
+  &lt;!-- End Copy/Paste! --&gt;
+ 
+&lt;/table&gt;
+
+  [1]: http://www.scikit-yb.org/en/latest/contributing.html
+</div>
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        
+    </div>
+  
+</div>
+<footer>
+  <div>
+    <img class="python-logo" src="/2018/site_media/static/img/psf-logo.e099cceabfa5.png"
+         width=300 alt="PSF logo">
+    
+    <p>
+      The PyCon 2018 conference in Cleveland, Ohio, USA, is a production of the
+      <a href="http://python.org/psf/">Python Software Foundation</a>.
+      This site is built using
+      <a href="https://www.djangoproject.com/">Django</a>
+      and
+      <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+      Hosting is provided by
+      <a href="http://www.rackspace.com/">Rackspace US, Inc</a>.
+    </p>
+    <p>
+      Logo and Branding by
+      <a href="http://hellofizz.com/"><img title="Fizz Creative" alt="Fizz Creative" src="/2018/site_media/static/img/fizz.4bf21f7d9cd9.png"/></a>.
+    </p>
+    <p>
+      Front-end development assistance by
+      <a href="http://imnikkilee.com/"><img title="Nikki Lee" alt="Nikki Lee" src="/2018/site_media/static/img/nikkilee.84a5c8979ca5.png"/></a>.
+  </div>
+</footer>
+  
+
+
+
+</body>
+
+<!-- Mirrored from us.pycon.org/2018/community/sprints/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jul 2018 13:47:02 GMT -->
+</html>
