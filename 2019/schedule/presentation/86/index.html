@@ -1,0 +1,643 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from us.pycon.org/2019/schedule/presentation/86/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Jul 2019 20:27:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+<title>Presentation: Faster Python Programs - Measure, don&#39;t Guess | PyCon 2019 in Cleveland, Ohio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="/2019/site_media/static/css/slight.673caeca693d.css"/>
+    
+
+
+<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="/2019/site_media/static/css/jquery.markedit.73000ed650c8.css" />
+
+    
+    <link rel="stylesheet" type="text/css" media="all" href="/2019/site_media/static/css/simple-grid.d1149de00d41.css"/>
+
+
+
+    <meta property="og:image" content="/2019/site_media/static/img/pycon2019.fa9f6ec45f42.png" />
+    <link href="/2019/site_media/static/img/pycon2019.fa9f6ec45f42.png" rel="shortcut icon" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+      $(document).on('click', '.message button', function(event) {
+        $(this).parent().hide();
+        return false;
+      });
+    </script>
+
+    <script src="/2019/site_media/static/js/site.1e95633d4318.js"></script>
+
+    
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.js"></script>
+<script src="/2019/site_media/static/js/jquery.markedit.79fbfdd97d6f.js"></script>
+<script src="/2019/site_media/static/js/showdown.030607cd542f.js"></script>
+
+    
+    <script type="text/javascript">
+        $(function () {
+            var converter = new Attacklab.showdown.converter();
+            $('.tutorial-comment, .description').each(function() {
+                $(this).html(converter.makeHtml($(this).text()));
+            })
+        });
+    </script>
+
+    <meta name="google-site-verification" content="fG_DG4G4eFtBcgIKht-bJKdirGhDa_51X6yeCS8daDs" />
+
+
+
+
+</head>
+<body class="">
+
+
+    
+    
+
+
+
+
+
+<div id="content-wrapper"> <!-- wrap everything but footer for sticky footer -->
+  <header class="header-container">
+    
+
+
+
+
+
+    
+      <a class="logo-banner" href="/2019/">
+        <img src="/2019/site_media/static/img/website-header-wordmark.c1c0544d5b20.svg" alt="PyCon 2019 in Cleveland, Ohio">
+      </a>
+    
+    
+
+<div class="nav-container">
+    <a href="#!" tabindex="0" id="nav-toggle" class="nav-toggle" role="button">
+        Menu
+    </a>
+    <nav id="nav" class="primary-site-nav">
+        <ul class="nav-primary-list">
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">About PyCon</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/about/" >What is PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2019/about/code-of-conduct/" >Code of Conduct</a>
+        </li>
+    
+        <li >
+            <a href="/2019/about/diversity/" >Diversity</a>
+        </li>
+    
+        <li >
+            <a href="/2019/about/staff/" >Staff Information</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sitemap/" >Site Map</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">PSF</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/psf/" >Python Software Foundation</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Schedule</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/keynote-speakers/" >Keynote Speakers</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/tutorials" >Tutorial Schedule (Wed–Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/sponsor-tutorials/" >Sponsor Workshops (Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/edusummits/" >Education Summit (Thursday)</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/talks/" >Talk Schedule (Fri–Sun)</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/posters/list/" >Posters (Sunday morning)</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/talks/list/" >List of Talks</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/sponsor-tutorials/list/" >List of Sponsor Workshops</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/tutorials/list/" >List of Tutorials</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/edusummits/list" >List of Education Summit Talks</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Events</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/events/opening-reception/" >Opening Reception</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/dinners/" >Evening Dinners</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/edusummit/" >Education Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2019/startuprow/" >Startup Row</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/jobs/" >Job Fair / Job Listings</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/open-spaces/" >Open Spaces</a>
+        </li>
+    
+        <li >
+            <a href="/2019/5k/" >PyCon Fun Run/Walk</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/auction/" >PyLadies Auction</a>
+        </li>
+    
+        <li >
+            <a href="/2019/community/sprints/" >Development Sprints</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/language-summit/" >Python Language Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/django_girls_workshop/" >Django Girls Workshop</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/letslearnpython/" >Young Coders </a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/pyladieslunch/" >PyLadies Lunch</a>
+        </li>
+    
+        <li >
+            <a href="/2019/hatchery/charlas" >PyCon Charlas</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/lightning/talks" >Lightning Talks</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/newcomer_orientation" >Newcomer Orientation</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Speaking</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/speaking/" >Overview</a>
+        </li>
+    
+        <li >
+            <a href="/2019/speaking/talks/" >Proposing a Talk</a>
+        </li>
+    
+        <li >
+            <a href="/2019/hatchery/charlas/" >Las PyCon Charlas</a>
+        </li>
+    
+        <li >
+            <a href="/2019/speaking/posters/" >Proposing a Poster</a>
+        </li>
+    
+        <li >
+            <a href="/2019/speaking/tutorials/" >Proposing a Tutorial</a>
+        </li>
+    
+        <li >
+            <a href="/2019/speaking/education-summit" >Proposing Edu Summit Talk</a>
+        </li>
+    
+        <li >
+            <a href="/2019/speaking/recording/" >Recording Release</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Hatchery</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/hatchery" >Call for Proposals</a>
+        </li>
+    
+        <li >
+            <a href="/2019/hatchery/maintainers" >Maintainers Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2019/hatchery/mentoredsprints" >Mentored Sprints</a>
+        </li>
+    
+        <li >
+            <a href="/2019/hatchery/artofpython" >The Art of Python</a>
+        </li>
+    
+        <li >
+            <a href="/2019/hatchery/charlas/" >Las PyCon Charlas</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Sponsors</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/sponsors/" >Our Sponsors</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/why-sponsor/" >Why sponsor PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/prospectus/" >Prospectus</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/apply/" >Application Form</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/fees/" >Estimated Sponsor Fees</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/exhibit-hall/" >Exhibit Hall</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/faq/" >Sponsor FAQ</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/information/" >Sponsor Information</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Venue</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/venue/travel/" >Traveling to Cleveland</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/" >Venue and Hotels</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/weather/" >Weather</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/accessibility/" >Accessibility</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/meals" >Meals</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/recommendations/" >Local Recommendations</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/cle_events/" >Cleveland Events During PyCon</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/transit/" >Public Transit</a>
+        </li>
+    
+        <li >
+            <a href="/2019/onsite" >Onsite Information</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Registration</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/registration/" >Registration Information</a>
+        </li>
+    
+        <li >
+            <a href="/2019/registration/register" >Register</a>
+        </li>
+    
+        <li >
+            <a href="/2019/childcare/" >Childcare</a>
+        </li>
+    
+        <li >
+            <a href="/2019/financial-assistance/" >Financial Assistance</a>
+        </li>
+    
+        <li >
+            <a href="/2019/community/roomsharing/" >Room Sharing</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Volunteer!</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/about/volunteers" >Volunteering on-site</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+  </header>
+
+  
+
+  
+    <div id="content" class="">
+        
+          <div class="page-content">
+            
+              <div class="container">
+                
+                <h1></h1>
+                <div class="box">
+                  
+                    <div class="box-content">
+    
+        <h4>
+            Thursday
+            1:20 p.m.&ndash;4:40 p.m.
+            in Room 20
+        </h4>
+        
+            
+        
+    
+    <h2>Faster Python Programs - Measure, don&#39;t Guess</h2>
+
+    <h4>
+        
+            <a href="/2019/speaker/profile/293/">Mike Müller</a>
+    </h4>
+
+    
+
+    <h3>Description</h3>
+
+    <div class="description">Optimization can often help to make Python programs faster or use less memory. Developing a strategy, establishing solid measuring and visualization techniques as well as knowing about algorithmic basics and datastructures are the foundation for a successful optimization. The tutorial will cover these topics. Examples will give you a hands-on experience on how to approach efficiently.
+
+Python is a great language. But it can be slow compared to other languages
+for certain types of tasks. If applied appropriately, optimization may reduce
+program runtime or memory consumption considerably. But this often comes at a price. Optimization can be time consuming and the optimized program may be more complicated. This, in turn, means more maintenance effort. How do you find out if it is worthwhile to optimize your program? Where should you start? This tutorial will help you to answer these questions. You will learn how to find  an optimization strategy based on quantitative and objective criteria. You will experience that one&#39;s gut feeling what to optimize is often wrong.
+
+The solution to this problem is: „Measure, Measure, and Measure!“. You will
+learn how to measure program run times as well as profile CPU and memory.
+There are great tools available. You will learn how to use some of them.
+Measuring is not easy because, by definition, as soon as you start to measure,
+you influence your system. Keeping this impact as small as possible is important. Therefore, we will cover different measuring techniques.
+
+Furthermore, we will look at algorithmic improvements. You will see that the
+right data structure for the job can make a big difference. Finally, you will
+learn about different caching techniques.
+
+## Software Requirements
+
+You will need Python 3.7 installed on your laptop. Python 2.7 or 3.5/3.6
+should also work. Python 3.x is strongly preferred.
+You may use Python 3.8 if is released at the time of the tutorial and all
+dependencies can be installed.
+
+### JupyterLab
+
+I will use a JupyterLab for the tutorial because it makes a very good
+teaching tool. You are welcome to use the setup you prefer, i.e editor, IDE,
+REPL. If you also like to use a JupyterLab, I recommend `conda` for
+easy installation. Similarly to `virtualenv`, `conda` allows creating isolated
+environments but allows binary installs for all platforms.
+
+There are two ways to install `Jupyter` via `conda`:
+
+1. Use [Minconda][1]. This is a  small install and (after you installed it)
+   you can use the command  `conda` to create an environment:
+  `conda create -n pycon2019 python=3.7`
+   Now you can change into this environment:
+   `conda activate pycon2019`. The prompt should change to `(pycon2019)`.
+   Now you can install JupyterLab: `conda install jupyterlab`.
+
+2. Install [Anaconda][2] and you are ready to go if you don&#39;t mind installing
+   lots of packages from the scientific field.
+
+Personally, I prefer the Miniconda approach.
+
+
+### Working witch ``conda`` environments
+
+After creating a new environment, the system might still work with some
+stale settings. Even when the command ``which`` tells you that you are using an
+executable from your environment, this might actually not be the case.
+If you see strange behavior using a command line tool in your environment,
+use ``hash -r`` and try again.
+
+[1]: https://conda.io/miniconda.html
+[2]: https://www.anaconda.com/download/
+
+
+### Tools
+
+You can install these with ``conda`` or ``pip`` (in the active ``conda`` environment):
+
+* [SnakeViz][3]
+* [line_profiler][4]
+* [Pympler][5]
+* [memory_profiler][6]
+
+
+
+
+#### Linux
+
+Using the package manager of your OS is alternative if you prefer this approach.
+
+
+[3]: http://jiffyclub.github.io/snakeviz/
+[4]: https://pypi.python.org/pypi/line_profiler/
+[5]: https://pypi.python.org/pypi/Pympler
+[6]: https://pypi.python.org/pypi/memory_profiler
+</div>
+
+    
+
+    
+
+    
+    
+          <h3>Student Handout</h3>
+          <div class="student-handout">
+          
+            <p>No handouts have been provided yet for this tutorial</p>
+          
+          </div>
+
+      
+    
+</div>
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        
+    </div>
+  
+</div>
+<footer>
+  <div class="footer-container">
+    <img class="python-logo" src="/2019/site_media/static/img/psf-logo.3411e5f40050.png"
+         width=300 alt="PSF logo">
+    
+    <p>
+      The PyCon 2019 conference in Cleveland, Ohio, USA, is a production of the
+      <a href="http://python.org/psf/">Python Software Foundation</a>.
+      This site is built using
+      <a href="https://www.djangoproject.com/">Django</a>
+      and
+      <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+      Hosting is provided by
+      <a href="http://heroku.com/">Heroku</a>.
+    </p>
+    <p>
+      Logo and Branding by
+      <a href="http://hellofizz.com/"><img title="Fizz Creative" alt="Fizz Creative" src="/2019/site_media/static/img/fizz.b1afc5c95fa1.png"/></a>.
+    </p>
+  </div>
+</footer>
+
+
+
+</body>
+
+<!-- Mirrored from us.pycon.org/2019/schedule/presentation/86/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Jul 2019 20:27:26 GMT -->
+</html>

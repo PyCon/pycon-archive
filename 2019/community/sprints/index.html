@@ -1,0 +1,837 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from us.pycon.org/2019/community/sprints/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Jul 2019 20:23:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+<title>Development Sprints | PyCon 2019 in Cleveland, Ohio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="/2019/site_media/static/css/slight.673caeca693d.css"/>
+    
+
+
+<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="/2019/site_media/static/css/jquery.markedit.73000ed650c8.css" />
+
+    
+    <link rel="stylesheet" type="text/css" media="all" href="/2019/site_media/static/css/simple-grid.d1149de00d41.css"/>
+
+
+
+    <meta property="og:image" content="/2019/site_media/static/img/pycon2019.fa9f6ec45f42.png" />
+    <link href="/2019/site_media/static/img/pycon2019.fa9f6ec45f42.png" rel="shortcut icon" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+      $(document).on('click', '.message button', function(event) {
+        $(this).parent().hide();
+        return false;
+      });
+    </script>
+
+    <script src="/2019/site_media/static/js/site.1e95633d4318.js"></script>
+
+    
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.js"></script>
+<script src="/2019/site_media/static/js/jquery.markedit.79fbfdd97d6f.js"></script>
+<script src="/2019/site_media/static/js/showdown.030607cd542f.js"></script>
+
+    
+    <script type="text/javascript">
+        $(function () {
+            var mdown = $('.box-content').text();
+            var converter = new Attacklab.showdown.converter();
+            var html = converter.makeHtml(mdown);
+            $('.box-content').html(html);
+        });
+    </script>
+
+    <meta name="google-site-verification" content="fG_DG4G4eFtBcgIKht-bJKdirGhDa_51X6yeCS8daDs" />
+
+
+
+
+</head>
+<body class="cms-page editable">
+
+
+    
+    
+
+
+
+
+
+<div id="content-wrapper"> <!-- wrap everything but footer for sticky footer -->
+  <header class="header-container">
+    
+
+
+
+
+
+    
+      <a class="logo-banner" href="/2019/">
+        <img src="/2019/site_media/static/img/website-header-wordmark.c1c0544d5b20.svg" alt="PyCon 2019 in Cleveland, Ohio">
+      </a>
+    
+    
+
+<div class="nav-container">
+    <a href="#!" tabindex="0" id="nav-toggle" class="nav-toggle" role="button">
+        Menu
+    </a>
+    <nav id="nav" class="primary-site-nav">
+        <ul class="nav-primary-list">
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">About PyCon</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/about/" >What is PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2019/about/code-of-conduct/" >Code of Conduct</a>
+        </li>
+    
+        <li >
+            <a href="/2019/about/diversity/" >Diversity</a>
+        </li>
+    
+        <li >
+            <a href="/2019/about/staff/" >Staff Information</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sitemap/" >Site Map</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">PSF</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/psf/" >Python Software Foundation</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Schedule</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/keynote-speakers/" >Keynote Speakers</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/tutorials" >Tutorial Schedule (Wed–Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/sponsor-tutorials/" >Sponsor Workshops (Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/edusummits/" >Education Summit (Thursday)</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/talks/" >Talk Schedule (Fri–Sun)</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/posters/list/" >Posters (Sunday morning)</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/talks/list/" >List of Talks</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/sponsor-tutorials/list/" >List of Sponsor Workshops</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/tutorials/list/" >List of Tutorials</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/edusummits/list" >List of Education Summit Talks</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown active">
+                    <a href="#!" class="nav-primary-link" role="button">Events</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/events/opening-reception/" >Opening Reception</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/dinners/" >Evening Dinners</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/edusummit/" >Education Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2019/startuprow/" >Startup Row</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/jobs/" >Job Fair / Job Listings</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/open-spaces/" >Open Spaces</a>
+        </li>
+    
+        <li >
+            <a href="/2019/5k/" >PyCon Fun Run/Walk</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/auction/" >PyLadies Auction</a>
+        </li>
+    
+        <li class="active">
+            <a href="/2019/community/sprints/" >Development Sprints</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/language-summit/" >Python Language Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/django_girls_workshop/" >Django Girls Workshop</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/letslearnpython/" >Young Coders </a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/pyladieslunch/" >PyLadies Lunch</a>
+        </li>
+    
+        <li >
+            <a href="/2019/hatchery/charlas" >PyCon Charlas</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/lightning/talks" >Lightning Talks</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/newcomer_orientation" >Newcomer Orientation</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Speaking</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/speaking/" >Overview</a>
+        </li>
+    
+        <li >
+            <a href="/2019/speaking/talks/" >Proposing a Talk</a>
+        </li>
+    
+        <li >
+            <a href="/2019/hatchery/charlas/" >Las PyCon Charlas</a>
+        </li>
+    
+        <li >
+            <a href="/2019/speaking/posters/" >Proposing a Poster</a>
+        </li>
+    
+        <li >
+            <a href="/2019/speaking/tutorials/" >Proposing a Tutorial</a>
+        </li>
+    
+        <li >
+            <a href="/2019/speaking/education-summit" >Proposing Edu Summit Talk</a>
+        </li>
+    
+        <li >
+            <a href="/2019/speaking/recording/" >Recording Release</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Hatchery</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/hatchery" >Call for Proposals</a>
+        </li>
+    
+        <li >
+            <a href="/2019/hatchery/maintainers" >Maintainers Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2019/hatchery/mentoredsprints" >Mentored Sprints</a>
+        </li>
+    
+        <li >
+            <a href="/2019/hatchery/artofpython" >The Art of Python</a>
+        </li>
+    
+        <li >
+            <a href="/2019/hatchery/charlas/" >Las PyCon Charlas</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Sponsors</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/sponsors/" >Our Sponsors</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/why-sponsor/" >Why sponsor PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/prospectus/" >Prospectus</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/apply/" >Application Form</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/fees/" >Estimated Sponsor Fees</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/exhibit-hall/" >Exhibit Hall</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/faq/" >Sponsor FAQ</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/information/" >Sponsor Information</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Venue</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/venue/travel/" >Traveling to Cleveland</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/" >Venue and Hotels</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/weather/" >Weather</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/accessibility/" >Accessibility</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/meals" >Meals</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/recommendations/" >Local Recommendations</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/cle_events/" >Cleveland Events During PyCon</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/transit/" >Public Transit</a>
+        </li>
+    
+        <li >
+            <a href="/2019/onsite" >Onsite Information</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Registration</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/registration/" >Registration Information</a>
+        </li>
+    
+        <li >
+            <a href="/2019/registration/register" >Register</a>
+        </li>
+    
+        <li >
+            <a href="/2019/childcare/" >Childcare</a>
+        </li>
+    
+        <li >
+            <a href="/2019/financial-assistance/" >Financial Assistance</a>
+        </li>
+    
+        <li >
+            <a href="/2019/community/roomsharing/" >Room Sharing</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Volunteer!</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/about/volunteers" >Volunteering on-site</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+  </header>
+
+  
+
+  
+    <div id="content" class="">
+        
+          <div class="page-content">
+            
+              <div class="container">
+                
+    
+                <h1>Development Sprints</h1>
+                <div class="box">
+                  
+                    <div class="box-content">**Monday, May 6, 2019 – Thursday, May 9, 2019** and free to attend (you don&#39;t need a  PyCon registration to come to the sprints)!
+
+Development sprints are a key part of PyCon, and a chance for the contributors to open-source projects to get together face-to-face for up to four days of intensive learning, development and camaraderie. Newbies sit with gurus, go out for lunch and dinner together, and have a great time while advancing their project.
+
+- &lt;a href=&quot;http://pycon.blogspot.com/2016/03/why-not-join-sprints-this-year-at-pycon.html&quot;&gt;
+Why not join the sprints this year at PyCon?&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/NaomiCeder&quot;&gt;Naomi Ceder&lt;/a&gt;
+
+
+### Sprint Sponsors
+
+&lt;div style=&quot;text-align: center;&quot;&gt;
+  &lt;img src=&quot;https://s3.amazonaws.com/pycon-assets/2019/sponsor_files/Nylas_Logo_RGB.png.260x240_q85.png&quot;&gt;
+  &lt;img src=&quot;https://s3.amazonaws.com/pycon-assets/2019/sponsor_files/ag_logo_2016_digital-2250x1000.png.260x240_q85.jpg&quot;&gt;
+&lt;/div&gt;
+
+We are very grateful for our sponsorships so we can supply our attendees with food and beverages!
+
+What&#39;s a sprint?
+-------------------
+
+&lt;div style=&quot;float: left; margin: 15px&quot;&gt;
+&lt;a href=&quot;http://www.youtube.com/watch?v=hOtKgFaFcz0&quot;&gt;&lt;img src=&quot;https://us.pycon.org/2015/site_media/media/images/2015/03/30/pycon-sprint-video-link.png&quot; alt=&quot;Come for PyCon, stay for the sprints!&quot; width=&quot;200&quot;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+PyCon Development Sprints are four days of intensive learning and development on an open source project of your choice, in a team environment. It&#39;s a time to come together with colleagues, old and new, to share what you&#39;ve learned and apply it to an open source project.
+
+In the crucible of a sprint room, teaming with both focus and humor, it&#39;s a time to test, fix bugs, add new features, and improve documentation. And it&#39;s a time to network, make friends, and build relationships that go beyond the conference.
+
+PyCon provides the space and infrastructure (network, power, tables &amp; chairs); you bring your skills, humanity, and brainpower (oh! and don&#39;t forget your computer).
+
+For those that never attended a dev sprint before or want to brush up on basics, come to our our Introduction to Sprints workshop Sunday, May 5th!
+
+For those that want to sign up to mentor beginners at the Sprints, [you can sign here (FORM TBA)].
+
+Who can participate?
+--------------------
+
+**You!** All experience levels are welcome; sprints are a great opportunity to get connected with, and start contributing to your favorite Python project. Participation in the sprints is free! You don&#39;t need a Talks and Events PyCon registration to come to the sprints.
+
+Who can run a sprint?
+---------------------------
+
+**You!** If you&#39;ve never run a sprint before, the [In-Person Event Handbook](https://opensourceevents.github.io/) is an excellent guide. 
+
+Please edit this page and add your project according to the instructions below.
+
+What&#39;s the schedule?
+-------------------------
+
+Sprints run all day from Monday, May 6th to Thursday, May 9th. That&#39;s 8:00am to 11:00pm Monday through Wednesday, and probably 8am to about 5 or 6pm on Thursday.
+
+
+&lt;a id=&quot;SprintRooms&quot;&gt;&lt;/a&gt;
+Where will the sprints be?
+-------------------------------
+The Sprints will take place at the Huntington Convention Center. Each Sprinting project will claim its own room or if the room is large enough, it will share the space with other Sprinting Project. Here is a list of all of the rooms we will be using during the 4 days:
+Room 09
+Room 10
+Room 14
+Room 15
+Room 16
+Room 19
+Room 20
+Room 21
+Room 22
+Room 26 B (Mon-Wed only)
+Room 26 C (Mon-Wed only)
+
+Which projects are sprinting?
+----------------------------------
+
+If you are interested in leading a sprint, **please add your project here:**
+
+ **1.** Please [edit this page](https://us.pycon.org/2019/community/sprints/_edit/) and add a brief description of your project to the list below. Include links to what you&#39;ll be sprinting on. 
+
+ **2.** Please also **[fill out this form TBA]** to let us know if you want to be newcomer friendly.
+
+&lt;table&gt;
+
+  &lt;!-- Copy/Paste the following! --&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;http://example.org/&quot;&gt;Example Project&lt;/a&gt;: Example Project Description for Example Project. We intend to have a lot of fun, make new friends and build momentum for the project. :-)
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;!-- End Copy/Paste! --&gt;
+&lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://pbs.twimg.com/profile_images/561419803202568194/Pjk5iqNn_400x400.png&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://www.outreachy.org/&quot;&gt;Outreachy&lt;/a&gt;: Outreachy is a remote internship program. We support diversity in free and open source software. Every six months, we have over 1,000 people apply for around 40 internship spots. We will be sprinting on our  &lt;a href=&quot;https://github.com/outreachy/website/&quot;&gt;Django website&lt;/a&gt;, making it work better for applicants, interns, and mentors. We&#39;ll be at the sprint all day Monday and Tuesday morning. Here&#39;s &lt;a href=&quot;https://github.com/outreachy/website/#setting-up-your-development-environment&quot;&gt;how to get started&lt;/a&gt; and our planned &lt;a href=&quot;https://github.com/outreachy/website/projects/1&quot;&gt;issues for the sprint&lt;/a&gt;.
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;http://python-future.org/&quot;&gt;Future&lt;/a&gt;: The future package is a set of codemods and runtime shims for migrating code from Legacy Python 2 to Modern Python 3.  Let&#39;s help drive the nail in the coffin of Python2 with one last big burst of development towards a final release of Future.
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://svgshare.com/i/BFU.svg&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://hypothesis.readthedocs.io/&quot;&gt;Hypothesis&lt;/a&gt;  is a library for generating tests that no human would ever think of, so your tests can find new bugs as well as regressions.  We&#39;ll be sprinting on Hypothesis itself, as well as helping other projects to write tests that use Hypothesis!  And there&#39;ll be a tutorial, a talk, and a poster if you want to learn about it before the sprints :-)
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://cloudcustodian.io/img/icon-color.jpeg&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://cloudcustodian.io/&quot;&gt;Cloud Custodian&lt;/a&gt;  is a rules engine for helping manage public cloud environments for security, compliance, and cost management and hooks into serverless runtimes and event streams for real time evaluation. We&#39;ll be working on documentation, kubernetes support, and new features.
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot;
+    src=&quot;https://bytebucket.org/leeharr/pynguin/raw/fbb70ad6d419b5aa4bfc6c0aaf565ce7037d6433/data/icons/scalable/pynguin.svg&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a href=&quot;https://bazaar.launchpad.net/~obp/getting-down-with/main/files/head:/pynguin/&quot;&gt;
+    Getting Down with Pynguin&lt;/a&gt;:  &lt;a href=&quot;https://bitbucket.org/leeharr/pynguin&quot;&gt;Pynguin&lt;/a&gt;
+    is a python-based turtle graphics application. It combines an editor, interactive interpreter, and
+    graphics display area.  A group of high school / community college students from Arlington,
+    Virginia will be doing a curriculum sprint on a Pynguin tutorial as part of the
+   &lt;a href=&quot;http://www.openbookproject.net/tutorials/getdown/&quot;&gt;Getting Down with ... Series&lt;/a&gt;.
+   This sprint will start on Thursday afternoon as part of the
+  &lt;a href=&quot;https://us.pycon.org/2019/events/edusummit/&quot;&gt;Education Summit&lt;/a&gt;.
+  &lt;/td&gt;
+  &lt;/tr&gt;
+ 
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://gitlab.com/edzon.quinteros/Doctest-Quiz&quot;&gt;Doctest Quiz&lt;/a&gt;: The goal of
+        Doctest Quiz is to create a Django application that will enable students to complete
+        assessments (&lt;i&gt;doctest quizzes&lt;/i&gt;) composed of assessment items (&lt;i&gt;doctest quiz
+        items&lt;/i&gt;) similar to those found on &lt;a href=&quot;https://codingbat.com/python&quot;&gt;CodingBat
+        Python&lt;/a&gt; with tasks expressed as doctests instead of in prose.  This project is the work
+        of high school /  community college students in Arlington, Virginia, who will start their
+        Pycon sprint on it on Thursday afternoon as part of the
+         &lt;a href=&quot;https://us.pycon.org/2019/events/edusummit/&quot;&gt;Education Summit&lt;/a&gt;.
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxv%0AbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8v%0Ad3d3Lmlua3NjYXBlLm9yZy8pIC0tPgo8c3ZnIHhtbG5zOmRjPSJodHRwOi8v%0AcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6Y2M9Imh0dHA6Ly9j%0AcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6cmRmPSJodHRwOi8vd3d3%0ALnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzdmc9%0AImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3%0Ady53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3Lncz%0ALm9yZy8xOTk5L3hsaW5rIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlw%0Ab2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5z%0AOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2Vz%0AL2lua3NjYXBlIiB3aWR0aD0iMTcxLjY2OTAybW0iIGhlaWdodD0iMTI5LjI1%0AOTY5bW0iIHZpZXdCb3g9IjAgMCAxNzEuNjY5MDIgMTI5LjI1OTY5IiB2ZXJz%0AaW9uPSIxLjEiIGlkPSJzdmc0NzU3Ij4KICA8ZGVmcyBpZD0iZGVmczQ3NTEi%0ALz4KICAKICA8bWV0YWRhdGEgaWQ9Im1ldGFkYXRhNDc1NCI+CiAgICAKICA8%0AL21ldGFkYXRhPgogIDxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNs%0AYXRlKC0wLjM0NDA2MDczLDAuNDYzMTgyNTIpIj4KICAgIDxnIGlkPSJnMzcy%0AOCI+CiAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjY5MTEwMjEx%0ALC0xNy42MDgzMjcpIiBpZD0ibGF5ZXIxLTYiPgogICAgICAgIDxnIGlkPSJn%0ANDU5OCIgdHJhbnNmb3JtPSJtYXRyaXgoMC44Njk2NTM5OCwwLDAsMC43OTM4%0ANTAzLC0wLjEyMDg4MDY3LC0xLjI3MjQ3NzcpIj4KICAgICAgICAgIDxnIGNs%0AYXNzPSJzdDAiIGlkPSJMYXllcl8xIiBzdHlsZT0iZGlzcGxheTpub25lIj4K%0AICAgICAgICAgICAgPGcgY2xhc3M9InN0MSIgaWQ9ImRjdEV6MS50aWYiIHN0%0AeWxlPSJkaXNwbGF5OmlubGluZSI+CiAgICAgICAgICAgICAgPGltYWdlIHRy%0AYW5zZm9ybT0ibWF0cml4KDAuMTgxLDAsMCwwLjE4MSwxNywxNykiIGlkPSJM%0AYXllcl8wXzFfIiBoZWlnaHQ9IjEwMDAiIHdpZHRoPSIxMDAwIiBzdHlsZT0i%0Ab3ZlcmZsb3c6dmlzaWJsZSIvPgogICAgICAgICAgICA8L2c+CiAgICAgICAg%0AICA8L2c+CiAgICAgICAgICA8ZyBpZD0iTGF5ZXJfMyI+CiAgICAgICAgICAg%0AIDxwb2x5Z29uIGlkPSJwb2x5Z29uNDUyMyIgcG9pbnRzPSI4Ny4yLDE0MC44%0AIDg2LjgsMTI2LjkgMTAxLjEsMTI2LjkgMTAxLjEsMTQ5LjYgNDMuMiwxNzEu%0ANSAwLjEsMTg2LjcgMC4xLDE3MS41ICIgY2xhc3M9InN0MiIgc3R5bGU9ImZp%0AbGw6IzE2MTYxNiIvPgogICAgICAgICAgICA8cGF0aCBpZD0icGF0aDQ1MjUi%0AIGQ9Im0gMzguNSwxMDQgYyAwLDAgMC43LDE0LjUgMTQuNCwyNS41IDAsMCA2%0ALDYuNyAxOC44LDYgMCwwIDEwLjEsLTAuNSAxMy44LC00LjQgbCA0NiwtMTEu%0AMiBjIDAsMCAtMjIuNiwtNS4zIC0yNi4yLC0zOSAwLDAgLTIuMiw0LjIgLTYu%0AMSw0LjkgeiIgY2xhc3M9InN0MyIgc3R5bGU9ImZpbGw6IzI2MjYyNiIvPgog%0AICAgICAgICAgICA8cGF0aCBpZD0icGF0aDQ1MjciIGQ9Im0gMTI3LjMsNTcg%0ANS43LC0xLjkgNC44LC03LjcgYyAwLDAgMjkuNCwtMTguOSAyNy4xLDEwLjkg%0AMCwwIDUuNywxMi4xIDQuNSwyNC4xIDAsMCAxLjQsMjkuMSAtMTkuMywzMyAw%0ALDAgLTE1LjUsLTMuMyAtMjQuOCwtMjEuMiAtMC4xLC0wLjEgLTEwLjQsLTE5%0ALjEgMiwtMzcuMiB6Ii8+CiAgICAgICAgICAgIDxlbGxpcHNlIGlkPSJlbGxp%0AcHNlNDUyOSIgcnk9IjcuMzAwMDAwMiIgcng9IjUuMDk5OTk5OSIgY3k9Ijcz%0ALjQwMDAwMiIgY3g9IjExMy44IiBjbGFzcz0ic3Q0IiB0cmFuc2Zvcm09Im1h%0AdHJpeCgwLjk5MTYsLTAuMTI5NCwwLjEyOTQsMC45OTE2LC04LjU0MTIsMTUu%0AMzQ1KSIgc3R5bGU9ImRpc3BsYXk6bm9uZTtmaWxsOiMzYTNhM2EiLz4KICAg%0AICAgICAgICAgPGVsbGlwc2UgaWQ9ImVsbGlwc2U0NTMxIiByeT0iMy4yIiBy%0AeD0iMi40MDAwMDAxIiBjeT0iNzMuNjk5OTk3IiBjeD0iMTEyLjMiIGNsYXNz%0APSJzdDUiIHRyYW5zZm9ybT0ibWF0cml4KDAuOTc3OCwtMC4yMDk1LDAuMjA5%0ANSwwLjk3NzgsLTEyLjk1NDEsMjUuMTU5MSkiIHN0eWxlPSJkaXNwbGF5Om5v%0AbmU7ZmlsbDojMGMwYzBjIi8+CiAgICAgICAgICAgIDxwYXRoIGlkPSJwYXRo%0ANDUzMyIgZD0ibSAzMS4zLDEwNS40IDIuOCwtMjYuNSBjIDAsMCAxLjQsLTku%0ANyAyMC4yLC0xNC40IGwgMC41LC0xLjYgNDUuNSwtMTcuNSAxLjksMC42IDU3%0ALjksLTIxLjggYyAwLDAgNC40LC0xLjQgMTAuOSwxLjYgTCAxOTIuOSwzNiBj%0AIDAsMCA4LjMsNS40IDIuNiwyMi42IGwgLTguOSwxNi45IGMgMCwwIC0xMy43%0ALDIuNSAtMTcsNi43IDAsMCAxLjUsLTIzLjIgLTExLjYsLTMyLjkgMCwwIC05%0ALjQsLTYuNSAtMjAsLTIgbCAtNC44LDcuNyBjIDAsMCAtMTUsNC45IC0xNi4y%0ALDcgMCwwIC03LjcsOC45IC0xMS44LDE4LjkgMCwwIC0xLjcsMy44IC02LjEs%0ANC45IGwgLTY2LjUsMjAgYyAtMC4xLDAgLTAuOSwwLjUgLTEuMywtMC40IHoi%0AIGNsYXNzPSJzdDYiIHN0eWxlPSJmaWxsOiM3YzdjN2MiLz4KICAgICAgICAg%0AICAgPHBhdGggaWQ9InBhdGg0NTM1IiBkPSJtIDEzOCw0Ny40IGMgMCwwIDMu%0AOSwtMTEuMSAxNy45LC0xOS40IDAsMCA2LjksLTMuNSAxMi43LDAgTCAxOTIs%0AMzguOCBjIDAsMCA1LjgsNS42IDIuNSwxNy40IDAsMCAtNS4zLDEzLjIgLTku%0AMywxOC43IDAsMCAtOC42LDEuOSAtMTAuNywzIDAsMCAtNC4yLDIuMSAtNS4x%0ALDMuMSAwLDAgLTAuOSwtMTcuOCAtNy43LC0yNy44IDAuMSwwIC04LC0xMSAt%0AMjMuNywtNS44IHoiIGNsYXNzPSJzdDciIHN0eWxlPSJmaWxsOiMzYTNhM2Ei%0ALz4KICAgICAgICAgICAgPGcgaWQ9Imc0NTM5Ij4KICAgICAgICAgICAgICA8%0AcGF0aCBpZD0icGF0aDQ1MzciIGQ9Im0gMTI1LjIsOTQuMSBjIDAsMCAtMTAu%0ANCwtMTkgMi4xLC0zNy4xIDAsMCAtOC44LDMuMSAtMTAuMyw0LjYgLTYuMiw2%0ALjMgLTExLjksMTkuMiAtMTEuOSwxOS4yIDAuMiwxMC40IDQuNSwxOC4yIDQu%0ANSwxOC4yIDkuNSwyMS40IDI1LjksMjEuNSAyNS45LDIxLjUgMTAuMiwtMC4y%0AIDE0LjUsLTUuMiAxNC41LC01LjIgMCwwIC0xNS40LC0zLjMgLTI0LjgsLTIx%0ALjIiIGNsYXNzPSJzdDciIHN0eWxlPSJmaWxsOiMzYTNhM2EiLz4KICAgICAg%0AICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzQ1NDUiPgogICAgICAg%0AICAgICAgIDxwYXRoIGlkPSJwYXRoNDU0MSIgZD0ibSAxMzkuMiw3MC45IGMg%0AMC4yLC0yLjQgNS4zLC0yLjMgNS4zLC0yLjMgNS41LDAuMSA1LjQsMi42IDUu%0ANCwyLjYgdiA1LjcgYyAtMC4yLDIuNSAtMi44LDIuNSAtMi44LDIuNSBoIC01%0ALjcgYyAtMi45LDAuMiAtMi45LDIuOSAtMi45LDIuOSB2IDIuOCBoIC0yLjQg%0AYyAtMi45LC0wLjYgLTIuNiwtNS40IC0yLjYsLTUuNCAtMC40LC00LjUgMi43%0ALC01LjMgMi43LC01LjMgaCA4LjQgdiAtMC44IGggLTUuNCB6IG0gMi4zLC0w%0ALjYgYyAtMC41LDAgLTEsMC40IC0xLDEgMCwwLjUgMC40LDEgMSwxIDAuNSww%0AIDEsLTAuNCAxLC0xIDAsLTAuNiAtMC40LC0xIC0xLC0xIHoiIGNsYXNzPSJz%0AdDgiIHN0eWxlPSJmaWxsOiNmOGNmNjEiLz4KICAgICAgICAgICAgICA8cGF0%0AaCBpZD0icGF0aDQ1NDMiIGQ9Im0gMTUwLDg4LjQgYyAtMC4yLDIuNCAtNS4z%0ALDIuMyAtNS4zLDIuMyAtNS41LC0wLjEgLTUuNCwtMi42IC01LjQsLTIuNiB2%0AIC01LjcgYyAwLjIsLTIuNSAyLjgsLTIuNSAyLjgsLTIuNSBoIDUuNyBjIDIu%0AOSwtMC4yIDIuOSwtMi45IDIuOSwtMi45IHYgLTIuOCBoIDIuNCBjIDIuOSww%0ALjYgMi42LDUuNCAyLjYsNS40IDAuNCw0LjUgLTIuNyw1LjMgLTIuNyw1LjMg%0AaCAtOC40IHYgMC44IGggNS40IHogbSAtMi4zLDAuNiBjIDAuNSwwIDEsLTAu%0ANCAxLC0xIDAsLTAuNSAtMC40LC0xIC0xLC0xIC0wLjUsMCAtMSwwLjQgLTEs%0AMSAwLDAuNSAwLjUsMSAxLDEgeiIgY2xhc3M9InN0OSIgc3R5bGU9ImZpbGw6%0AIzQzNmM5MyIvPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxlbGxp%0AcHNlIGlkPSJlbGxpcHNlNDU0NyIgcnk9IjI1LjcwMDAwMSIgcng9IjE4LjEi%0AIGN5PSI4MC42OTk5OTciIGN4PSIxNDQuNjAwMDEiIGNsYXNzPSJzdDEwIiB0%0AcmFuc2Zvcm09Im1hdHJpeCgwLjk5MTYsLTAuMTI5NCwwLjEyOTQsMC45OTE2%0ALC05LjIzMTIsMTkuMzk0NykiIHN0eWxlPSJvcGFjaXR5OjAuNTtmaWxsOiMz%0AYTNhM2EiLz4KICAgICAgICAgICAgPHBhdGggZD0ibSA1NS42LDg1LjcgNDMu%0AMiwtMTQiIGNsYXNzPSJzdDExIiBpZD0iU1ZHSURfeDVGXzFfeDVGXyIgc3R5%0AbGU9ImZpbGw6bm9uZSIvPgogICAgICAgICAgICA8dGV4dCBpZD0idGV4dDQ1%0ANTYiIHRyYW5zZm9ybT0ibWF0cml4KDIuNTQ2NDI0NywtMC4wMzEzNjAzMyww%0ALjAzODYyNjY4LDIuMjQ0Njk0NCwtMTE0LjE5NywtOTMuMjc2ODc0KSI+CiAg%0AICAgICAgICAgICAgPHRleHRQYXRoIGlkPSJ0ZXh0UGF0aDQ1NTQiIHN0YXJ0%0AT2Zmc2V0PSIxMy4xMjE1MDElIiB4bGluazpocmVmPSIjU1ZHSURfeDVGXzFf%0AeDVGXyIgc3R5bGU9ImZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpu%0Ab3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7%0AZm9udC1zaXplOjUuMDk0OTQ5NzJweDtmb250LWZhbWlseTonUGlib3RvIENv%0AbmRlbnNlZCc7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjonUGlib3Rv%0AIENvbmRlbnNlZCwgJyI+QmlnIEJyb3RoZXI8L3RleHRQYXRoPgogICAgICAg%0AICAgICA8L3RleHQ+CiAgICAgICAgICA8L2c+CiAgICAgICAgICA8ZyBpZD0i%0ATGF5ZXJfMiI+CiAgICAgICAgICAgIDxwYXRoIGlkPSJwYXRoNDU1OSIgZD0i%0AbSA2NywxMzYgdiAzOCBjIDAsMCAxMSwxNiAxNiwxNiAwLDAgOCwzIDE4LC0x%0AOCB2IC0zNiBjIDAsMCAtMTUsLTIgLTM0LDAgeiIgY2xhc3M9InN0MTIiIHN0%0AeWxlPSJkaXNwbGF5Om5vbmU7ZmlsbDojNmQ2ZDZkIi8+CiAgICAgICAgICAg%0AIDxwYXRoIGlkPSJwYXRoNDU2MSIgZD0ibSA3MiwxNzUgYyAwLDAgOC4yLC0y%0AMS4zIDEwLjksLTI0LjUgaCA1LjIgYyAwLDAgMy4yLDcuMiAxMi43LDIuOCAw%0ALDAgLTQuOCwxNC41IC00LDIwLjYgbCAwLjgsLTAuMyBjIDAsMCAtMS4zLC01%0AIDcuOSwtMjcuMiAwLDAgMiwtMC40IDIuMSwtMi41IDAsMCAtMSwtMTYuMiAt%0AMi4xLC0xOS40IDAsMCAtMTAuNiwtNS4zIC0yMiwxLjcgbCAwLjMsNi43IEwg%0ANzEsMTUyLjcgViAxNzUgWiIgY2xhc3M9InN0MTMiIHN0eWxlPSJkaXNwbGF5%0AOm5vbmU7ZmlsbDojN2M3YzdjIi8+CiAgICAgICAgICA8L2c+CiAgICAgICAg%0APC9nPgogICAgICA8L2c+CiAgICA8L2c+CiAgPC9nPgogIDxzdHlsZSB0eXBl%0APSJ0ZXh0L2NzcyIgaWQ9InN0eWxlNDUxOCI+Cgkuc3Qwe2Rpc3BsYXk6bm9u%0AZTt9Cgkuc3Qxe2Rpc3BsYXk6aW5saW5lO30KCS5zdDJ7ZmlsbDojMTYxNjE2%0AO30KCS5zdDN7ZmlsbDojMjYyNjI2O30KCS5zdDR7ZGlzcGxheTpub25lO2Zp%0AbGw6IzNBM0EzQTt9Cgkuc3Q1e2Rpc3BsYXk6bm9uZTtmaWxsOiMwQzBDMEM7%0AfQoJLnN0NntmaWxsOiM3QzdDN0M7fQoJLnN0N3tmaWxsOiMzQTNBM0E7fQoJ%0ALnN0OHtmaWxsOiNGOENGNjE7fQoJLnN0OXtmaWxsOiM0MzZDOTM7fQoJLnN0%0AMTB7b3BhY2l0eTowLjU7ZmlsbDojM0EzQTNBO30KCS5zdDExe2ZpbGw6bm9u%0AZTt9Cgkuc3QxMntkaXNwbGF5Om5vbmU7ZmlsbDojNkQ2RDZEO30KCS5zdDEz%0Ae2Rpc3BsYXk6bm9uZTtmaWxsOiM3QzdDN0M7fQo8L3N0eWxlPgo8L3N2Zz4K&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+    &lt;a href=&quot;https://gitlab.com/jelkner/big_brothers_python_guide&quot;&gt;Big Brother&#39;s Guide to Python&lt;/a&gt;:  is a python study guide that focuses on helping students prepare for the &lt;a href=&quot;https://www.microsoft.com/en-us/learning/exam-98-381.aspx&quot;&gt;MTA 98-381&lt;/a&gt; python certification. The objective is to make a study guide that is an effective educational resource while also making it fun to read. It is an interdisciplinary project of high school students from &lt;a href=&quot;https://careercenter.apsva.us/arlington-tech/&quot;&gt;Arlington Tech&lt;/a&gt;, and the English course requirement is that questions be themed using elements from George Orwell&#39;s &lt;i&gt;Nineteen Eighty-Four&lt;/i&gt;.  This sprint will start on Thursday afternoon as part of the
+  &lt;a href=&quot;https://us.pycon.org/2019/events/edusummit/&quot;&gt;Education Summit&lt;/a&gt;.
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;a href=&quot;https://open.edx.org/&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://open.edx.org/wp-content/uploads/2019/01/favicon.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a href=&quot;https://open.edx.org/&quot;&gt;Open edX&lt;/a&gt; is the online learning platform used by &lt;a href=&quot;https://www.edx.org/&quot;&gt;edX&lt;/a&gt; and more than 2,000 other sites with tens of millions of learners around the world.  Most of the server code is written with Python and Django, and dozens of small beginner-friendly tasks have been prepared as part of an &lt;a href=&quot;https://open.edx.org/blog/incremental-improvements-open-edx/&quot;&gt;Incremental Improvements&lt;/a&gt; initiative to welcome new contributors and tackle big projects (like upgrading the last few Python 2.7 services to Python 3).  We&#39;ll be sprinting all 4 days, interested contributors of all skill levels are welcome!  Here&#39;s how to &lt;a href=&quot;https://bit.ly/edx-incr&quot;&gt;get started&lt;/a&gt;.
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;a href=&quot;https://palletsprojects.com/&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://palletsprojects.com/logo-large.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+    &lt;td rowspan=&quot;2&quot;&gt;
+&lt;p&gt;The Pallets community will be sprinting on our various projects:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pallets/flask&quot;&gt;Flask&lt;/a&gt; is a micro framework for building web applications. It powers applications big and small all over the world.
+&lt;li&gt;&lt;a href=&quot;https://github.com/pallets/jinja&quot;&gt;Jinja&lt;/a&gt; is a templating system used in web apps, IT automation, project management, and more.
+&lt;li&gt;&lt;a href=&quot;https://github.com/pallets/click&quot;&gt;Click&lt;/a&gt; is a framework for building command line applications.
+&lt;li&gt;&lt;a href=&quot;https://github.com/pallets/flask-sqlalchemy&quot;&gt;Flask-SQLAlchemy&lt;/a&gt; is an extension that makes it easy to use SQLAlchemy with Flask.
+&lt;/ul&gt;
+&lt;p&gt;Whether you want to investigate issues, write code, docs, or tests, there are plenty of tasks for everyone. We can also help you contribute to other community-maintained extensions.
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;a href=&quot;https://palletsprojects.com/p/flask/&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://static.davidism.com/flask.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;a href=&quot;http://www.list.org/&quot; target=&quot;_blank&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;http://www.list.org/images/logo2010-2.jpg&quot;/&gt;&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;http://www.list.org/&quot; target=&quot;_blank&quot;&gt;GNU Mailman&lt;/a&gt;: We will be sprinting on Mailman 3. We welcome newcomers. There are issues marked &#39;easy&#39; and &#39;beginner friendly&#39; in our &lt;a href=&quot;https://gitlab.com/groups/mailman/-/issues&quot; target=&quot;_blank&quot;&gt;tracker&lt;/a&gt;. People can contribute with bug fixes and features for our Django based web UI and our Python 3 based core engine. There are also opportunities to help with our documentation.
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://camo.githubusercontent.com/9ea8162321620be79ed96b233905d17a3dfa90e5/687474703a2f2f626f757469717565732e6769746875622e696f2f696d616765732f6c6f676f2e706e67&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://github.com/boutiques/boutiques&quot;&gt;Boutiques&lt;/a&gt;: is a cross-platform descriptive framework for containerized command-line applications. The sprint will focus on improving the publisher and documentation as well as bug fixes. Take a look at our &lt;a href=&quot;https://github.com/boutiques/boutiques/issues?q=is%3Aopen+is%3Aissue+label%3A%22PyCon+2019%22&quot;&gt;tracker&lt;/a&gt; to get an idea of the issues we have prepared for PyCon. We have tasks for everyone :-)
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://github.com/coderedcorp/coderedcms&quot;&gt;&lt;img src=&quot;https://www.coderedcorp.com/static/img/logo_f00_55px.png&quot; alt=&quot;CodeRed CMS&quot; style=&quot;max-width:200px;&quot;&gt;&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;a href=&quot;https://github.com/coderedcorp/coderedcms&quot;&gt;CodeRed CMS&lt;/a&gt; is a content management system built on &lt;a href=&quot;https://wagtail.io&quot;&gt;Wagtail&lt;/a&gt; that is designed for small business marketing websites. Wagtail and Django developers are welcome to contribute and will feel right at home! CodeRed CMS competes directly with WordPress as our goal is to provide a mainstream Python CMS that has SEO, accessibility, theming, and basic website features ready out of the box.&lt;br&gt;&lt;br&gt;See our &lt;a href=&quot;https://github.com/coderedcorp/coderedcms/labels/pycon%20sprints&quot;&gt;features queued for PyCon sprints&lt;/a&gt;!
+    &lt;/td&gt;
+  &lt;/tr&gt;
+ &lt;tr&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://econ-ark.org&quot;&gt;&lt;img src=&quot;https://econ-ark.org/assets/img/econ-ark-logo.png&quot; alt=&quot;Econ-Ark&quot; style=&quot;max-width:200px;&quot;&gt;&lt;/a&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+     &lt;p&gt;&lt;a href=&quot;https://econ-ark.org/&quot;&gt;Econ-Ark&lt;/a&gt; is a toolkit for structural modeling of economic choices of heterogeneous agents. We want to make entry into the world of modeling easy; to accelerate the development of this kind of modeling for policy-making and academic research; and to increase the openness, replicability, and interoperability of modeling tools.&lt;/p&gt;
+&lt;p&gt;We&#39;ve got &lt;a href=&quot;https://github.com/econ-ark/OverARK/wiki/Pycon-2019-Sprints&quot;&gt;a bunch of tasks&lt;/a&gt; queued up for the sprints.  We&#39;d love help both from people who want to take advantage of their economics/math/modeling backgrounds, and from people with any background who want to help us adopt Python best practices such as unit testing, linting, and using tools like ReadTheDocs and virtual machines.&lt;/p&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://www.ansible.com/hubfs/2017_Images/BrandPage/Brand-Assets/Community/Ansible-Mark-RGB_Black.svg?hsLang=en-us&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;http://ansible.com&quot;&gt;Ansible&lt;/a&gt; is an automation and orchestration tool written in Python. Using playbooks written in YAML and Jinja, Ansible is used to automate Linux, Windows, network devices, and much more. Ansible is a broad project and there are many interesting things to work on. Come with an idea for a new plugin or module, a specific bug you want fixed, or basic help getting started contributing to Ansible. Several members of the Ansible Core team will be present Monday and Tuesday to help you. Please try to &lt;a href=&quot;https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_general.html#environment-setup&quot;&gt;setup your development environment&lt;/a&gt; beforehand.
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;http://pypa.io/&quot;&gt;Packaging&lt;/a&gt;: We&#39;ll &lt;a href=&quot;https://wiki.python.org/psf/PackagingSprints&quot;&gt;work on Python packaging and distribution features and issues&lt;/a&gt;, including PyPI (Warehouse), pip, and other projects!
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;https://pursuedpybear.org/assets/bearlogo-270.png&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://pursuedpybear.org/&quot;&gt;PursuedPyBear&lt;/a&gt;: ppb is an education focused game engine. The dev team has been winding down ppb&#39;s &lt;a href=&quot;https://github.com/orgs/ppb/projects/5&quot;&gt;0.6 release&lt;/a&gt; and could use people interested in helping. 
+
+Help includes:
+
+&lt;ul&gt;
+&lt;li&gt;Coming and learning how to use it.&lt;/li&gt;
+&lt;li&gt;Creating your own games!&lt;/i&gt;
+&lt;li&gt;Joining the discussion in the issues tracker.&lt;/li&gt;
+&lt;li&gt;Improving our docstrings and overall reference documentation.&lt;/li&gt;
+&lt;li&gt;Helping brainstorm tutorials.&lt;/li&gt;
+&lt;/ul&gt;
+
+One of the co-maintainers will be there to assist getting started with any part you&#39;re willing to.
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+
+
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;http://mypy-lang.org/static/mypy_light.svg&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        We will sprint on &lt;a href=&quot;https://github.com/python/mypy&quot;&gt;mypy&lt;/a&gt;, a static typer checker for Python, in particular on fixing usability issues. We will help you get started contributing to mypy. We can also help you start using mypy in your project.
+       &lt;p&gt;
+        We also sprint on &lt;a href=&quot;https://github.com/mypyc/mypyc&quot;&gt;mypyc&lt;/a&gt;, a compiler from type annotated Python to C extension modules. If you like compilers, please come join us!
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+  &lt;!-- Copy/Paste the following! --&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;
+&lt;a href=&quot;https://www.scikit-yb.org/en/latest/index.html&quot;&gt;
+&lt;img width=&quot;100%&quot; src=&quot;https://cloud.githubusercontent.com/assets/745966/25355190/cc87ae24-2903-11e7-88cd-cb6b9356d80c.png&quot;/&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+    &lt;td&gt;
+&lt;p&gt;
+        &lt;a href=&quot;https://www.scikit-yb.org/en/latest/index.html&quot; id=&quot;yellowbrick&quot;&gt;Yellowbick&lt;/a&gt; Yellowbrick is a suite of visual diagnostic tools called “Visualizers” that extend the Scikit-Learn API to allow human steering of the model selection process. In a nutshell, Yellowbrick combines Scikit-Learn with Matplotlib in the best tradition of the Scikit-Learn documentation, but to produce visualizations for your models! 
+&lt;/p&gt;
+&lt;p&gt;
+During this year&#39;s sprints, we are looking for contributors to help us develop / experiment with new visualizers, navigate adding support for other ML libraries like tensorflow &amp; keras, optimizing &amp; extending our existing visualizers and generally helping us fix bugs and improve our documentation with better examples and clearer language. 
+&lt;/p&gt;
+We&#39;re an incredibly friendly and welcoming project that will humbly and gratefully accept any contributions that you might make either small or large if you are experienced or just starting out. 
+&lt;p&gt;
+Checkout our documentation on &lt;a href=&quot;http://www.scikit-yb.org/en/latest/contributing.html&quot;&gt;Contributing&lt;/a&gt; if you are interested in learning more.
+&lt;/p&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;!-- End Copy/Paste! --&gt;
+
+  &lt;!-- Copy/Paste the following! --&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;
+
+&lt;/td&gt;
+    &lt;td&gt;
+&lt;p&gt;
+        &lt;a href=&quot;https://pyjanitor.readthedocs.io/&quot; id=&quot;pyjanitor&quot;&gt;pyjanitor&lt;/a&gt; pyjanitor aims to provide a clean API for cleaning data, built 100% compatible with pandas. Come extend pandas by contributing your commonly used data cleaning routines!
+&lt;/p&gt;
+&lt;p&gt;
+During this year&#39;s sprints, we will be accepting contributions that fall into one of the following categories:
+&lt;ul&gt;
+  &lt;li&gt;Documentation contributions&lt;/li&gt;
+  &lt;li&gt;Current functionality enhancements&lt;/li&gt;
+  &lt;li&gt;New function contributions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+We&#39;re a new project, and there&#39;s lots of room to help improve the pyjanitor! Most issues are beginner-friendly, and we&#39;re open to new ideas as well! The only hard pre-req is that you should be a user of pandas.
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;!-- End Copy/Paste! --&gt;
+
+  &lt;!-- Copy/Paste the following! --&gt;
+  &lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;&lt;img width=&quot;100%&quot; src=&quot;&quot;/&gt;&lt;/td&gt;
+    &lt;td&gt;
+        &lt;a href=&quot;https://github.com/bimpression/sosw&quot;&gt;sosw&lt;/a&gt; - Serverless Orchestrator of Serverless Workers.&lt;br&gt;Framework for Orchestration of Asynchronous AWS Lambda functions. 
+&lt;p&gt;Entry level sprinters are welcome, but some experience with AWS Lambda is recommended.&lt;/p&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;!-- End Copy/Paste! --&gt;
+&lt;!-- Copy/Paste the following! --&gt;
+&lt;tr&gt;
+    &lt;td width=&quot;20%&quot;&gt;
+        &lt;a href=&quot;https://falconframework.org/&quot;&gt;
+            &lt;img width=&quot;100%&quot; src=&quot;https://falconframework.org/img/logo.svg&quot;&gt;
+        &lt;/a&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+        &lt;p&gt;&lt;a href=&quot;https://falconframework.org&quot; id=&quot;falcon&quot;&gt;Falcon&lt;/a&gt; is a web API framework with a focus on simplicity, reliability, and performance. The framework encourages the REST architectural style, and tries to do as little as possible while remaining highly effective. Falcon is used by a growing number of organizations around the world for building anything from large-scale app backends and microservices to simple APIs and Python programming tutorials.&lt;/p&gt;
+        &lt;p&gt;During this year&#39;s sprint we will be working on Falcon 3.0 including async (ASGI) support, and we&#39;d love to have your help. We welcome both newcomers and seasoned contributors. Please be sure to review our &lt;a href=&quot;https://github.com/falconry/falcon/blob/master/CONTRIBUTING.md&quot;&gt;contributor&#39;s guide&lt;/a&gt;, and then check out the issues list under our &lt;a href=&quot;https://github.com/falconry/falcon/milestone/33&quot;&gt;3.0 milestone on GitHub&lt;/a&gt;. Over the next 24 hours we will be updating the issues list and labeling those items that would provide a great place to start for first-time contributors.&lt;/p&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;!-- End Copy/Paste! --&gt;
+
+&lt;/table&gt;
+
+</div>
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        
+    </div>
+  
+</div>
+<footer>
+  <div class="footer-container">
+    <img class="python-logo" src="/2019/site_media/static/img/psf-logo.3411e5f40050.png"
+         width=300 alt="PSF logo">
+    
+    <p>
+      The PyCon 2019 conference in Cleveland, Ohio, USA, is a production of the
+      <a href="http://python.org/psf/">Python Software Foundation</a>.
+      This site is built using
+      <a href="https://www.djangoproject.com/">Django</a>
+      and
+      <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+      Hosting is provided by
+      <a href="http://heroku.com/">Heroku</a>.
+    </p>
+    <p>
+      Logo and Branding by
+      <a href="http://hellofizz.com/"><img title="Fizz Creative" alt="Fizz Creative" src="/2019/site_media/static/img/fizz.b1afc5c95fa1.png"/></a>.
+    </p>
+  </div>
+</footer>
+
+
+
+</body>
+
+<!-- Mirrored from us.pycon.org/2019/community/sprints/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Jul 2019 20:23:39 GMT -->
+</html>

@@ -1,0 +1,590 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from us.pycon.org/2019/hatchery/artofpython/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Jul 2019 20:24:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+<title>The Art of Python | PyCon 2019 in Cleveland, Ohio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="/2019/site_media/static/css/slight.673caeca693d.css"/>
+    
+
+
+<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="/2019/site_media/static/css/jquery.markedit.73000ed650c8.css" />
+
+    
+    <link rel="stylesheet" type="text/css" media="all" href="/2019/site_media/static/css/simple-grid.d1149de00d41.css"/>
+
+
+
+    <meta property="og:image" content="/2019/site_media/static/img/pycon2019.fa9f6ec45f42.png" />
+    <link href="/2019/site_media/static/img/pycon2019.fa9f6ec45f42.png" rel="shortcut icon" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+      $(document).on('click', '.message button', function(event) {
+        $(this).parent().hide();
+        return false;
+      });
+    </script>
+
+    <script src="/2019/site_media/static/js/site.1e95633d4318.js"></script>
+
+    
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.js"></script>
+<script src="/2019/site_media/static/js/jquery.markedit.79fbfdd97d6f.js"></script>
+<script src="/2019/site_media/static/js/showdown.030607cd542f.js"></script>
+
+    
+    <script type="text/javascript">
+        $(function () {
+            var mdown = $('.box-content').text();
+            var converter = new Attacklab.showdown.converter();
+            var html = converter.makeHtml(mdown);
+            $('.box-content').html(html);
+        });
+    </script>
+
+    <meta name="google-site-verification" content="fG_DG4G4eFtBcgIKht-bJKdirGhDa_51X6yeCS8daDs" />
+
+
+
+
+</head>
+<body class="cms-page ">
+
+
+    
+    
+
+
+
+
+
+<div id="content-wrapper"> <!-- wrap everything but footer for sticky footer -->
+  <header class="header-container">
+    
+
+
+
+
+
+    
+      <a class="logo-banner" href="/2019/">
+        <img src="/2019/site_media/static/img/website-header-wordmark.c1c0544d5b20.svg" alt="PyCon 2019 in Cleveland, Ohio">
+      </a>
+    
+    
+
+<div class="nav-container">
+    <a href="#!" tabindex="0" id="nav-toggle" class="nav-toggle" role="button">
+        Menu
+    </a>
+    <nav id="nav" class="primary-site-nav">
+        <ul class="nav-primary-list">
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">About PyCon</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/about/" >What is PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2019/about/code-of-conduct/" >Code of Conduct</a>
+        </li>
+    
+        <li >
+            <a href="/2019/about/diversity/" >Diversity</a>
+        </li>
+    
+        <li >
+            <a href="/2019/about/staff/" >Staff Information</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sitemap/" >Site Map</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">PSF</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/psf/" >Python Software Foundation</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Schedule</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/keynote-speakers/" >Keynote Speakers</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/tutorials" >Tutorial Schedule (Wed–Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/sponsor-tutorials/" >Sponsor Workshops (Thu)</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/edusummits/" >Education Summit (Thursday)</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/talks/" >Talk Schedule (Fri–Sun)</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/posters/list/" >Posters (Sunday morning)</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/talks/list/" >List of Talks</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/sponsor-tutorials/list/" >List of Sponsor Workshops</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/tutorials/list/" >List of Tutorials</a>
+        </li>
+    
+        <li >
+            <a href="/2019/schedule/edusummits/list" >List of Education Summit Talks</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Events</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/events/opening-reception/" >Opening Reception</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/dinners/" >Evening Dinners</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/edusummit/" >Education Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2019/startuprow/" >Startup Row</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/jobs/" >Job Fair / Job Listings</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/open-spaces/" >Open Spaces</a>
+        </li>
+    
+        <li >
+            <a href="/2019/5k/" >PyCon Fun Run/Walk</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/auction/" >PyLadies Auction</a>
+        </li>
+    
+        <li >
+            <a href="/2019/community/sprints/" >Development Sprints</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/language-summit/" >Python Language Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/django_girls_workshop/" >Django Girls Workshop</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/letslearnpython/" >Young Coders </a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/pyladieslunch/" >PyLadies Lunch</a>
+        </li>
+    
+        <li >
+            <a href="/2019/hatchery/charlas" >PyCon Charlas</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/lightning/talks" >Lightning Talks</a>
+        </li>
+    
+        <li >
+            <a href="/2019/events/newcomer_orientation" >Newcomer Orientation</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Speaking</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/speaking/" >Overview</a>
+        </li>
+    
+        <li >
+            <a href="/2019/speaking/talks/" >Proposing a Talk</a>
+        </li>
+    
+        <li >
+            <a href="/2019/hatchery/charlas/" >Las PyCon Charlas</a>
+        </li>
+    
+        <li >
+            <a href="/2019/speaking/posters/" >Proposing a Poster</a>
+        </li>
+    
+        <li >
+            <a href="/2019/speaking/tutorials/" >Proposing a Tutorial</a>
+        </li>
+    
+        <li >
+            <a href="/2019/speaking/education-summit" >Proposing Edu Summit Talk</a>
+        </li>
+    
+        <li >
+            <a href="/2019/speaking/recording/" >Recording Release</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Hatchery</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/hatchery" >Call for Proposals</a>
+        </li>
+    
+        <li >
+            <a href="/2019/hatchery/maintainers" >Maintainers Summit</a>
+        </li>
+    
+        <li >
+            <a href="/2019/hatchery/mentoredsprints" >Mentored Sprints</a>
+        </li>
+    
+        <li >
+            <a href="/2019/hatchery/artofpython" >The Art of Python</a>
+        </li>
+    
+        <li >
+            <a href="/2019/hatchery/charlas/" >Las PyCon Charlas</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Sponsors</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/sponsors/" >Our Sponsors</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/why-sponsor/" >Why sponsor PyCon?</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/prospectus/" >Prospectus</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/apply/" >Application Form</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/fees/" >Estimated Sponsor Fees</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/exhibit-hall/" >Exhibit Hall</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/faq/" >Sponsor FAQ</a>
+        </li>
+    
+        <li >
+            <a href="/2019/sponsors/information/" >Sponsor Information</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Venue</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/venue/travel/" >Traveling to Cleveland</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/" >Venue and Hotels</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/weather/" >Weather</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/accessibility/" >Accessibility</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/meals" >Meals</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/recommendations/" >Local Recommendations</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/cle_events/" >Cleveland Events During PyCon</a>
+        </li>
+    
+        <li >
+            <a href="/2019/venue/transit/" >Public Transit</a>
+        </li>
+    
+        <li >
+            <a href="/2019/onsite" >Onsite Information</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Registration</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/registration/" >Registration Information</a>
+        </li>
+    
+        <li >
+            <a href="/2019/registration/register" >Register</a>
+        </li>
+    
+        <li >
+            <a href="/2019/childcare/" >Childcare</a>
+        </li>
+    
+        <li >
+            <a href="/2019/financial-assistance/" >Financial Assistance</a>
+        </li>
+    
+        <li >
+            <a href="/2019/community/roomsharing/" >Room Sharing</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+                <li class="has-dropdown ">
+                    <a href="#!" class="nav-primary-link" role="button">Volunteer!</a>
+                    
+                        
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="/2019/about/volunteers" >Volunteering on-site</a>
+        </li>
+    
+</ul>
+                    
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+  </header>
+
+  
+
+  
+    <div id="content" class="">
+        
+          <div class="page-content">
+            
+              <div class="container">
+                
+    
+
+                <h1>The Art of Python</h1>
+                <div class="box">
+                  
+                    <div class="box-content">*The Art of Python* is a miniature arts festival on Friday, May 3rd, at [PyCon North America 2019](https://us.pycon.org/), focusing on narrative, performance, and visual art.
+
+Time &amp; place: **8pm-10pm, Room 26A/B/C** at the convention center.
+
+The Art of Python _will not be videorecorded_.
+
+Scheduled performances
+--------------------------------
+
+**8-9:30 pm:**
+
+ - &quot;A Postmortem on the Ingen Incident&quot;, a play by Hayley Denbraver
+ - &quot;The Interface&quot;, a play by Shauna Gordon-McKeon
+ - [&quot;The Programming Saga: A narrative music video&quot; by E Waldo Dow][1]
+ - _a 5-10 minute intermission_
+ - Music by Russell Keith-Magee and possibly other guests
+ - Performance by MNF Chang
+ - &quot;Hello!!! ... World?&quot;, a play by Kyle R. Conway
+
+
+**9:30-10pm:**
+
+Inspired? After the performances, we&#39;ll hold a short unconference/BoF session where you can meet other people interested in making art about the experience of programming. Share your ideas for plays, video remixes, songs, dance, and stand-up comedy, find a team, and decide to propose your idea for a future conference!
+
+Description
+---------------
+
+We intend to encourage and showcase novel art that helps us share our emotionally charged experiences of programming (particularly in Python). We hope that by attending, our audience will discover new aspects of empathy and rapport, and find a different kind of delight and perspective than might otherwise be expected at a large conference.
+
+In short, we are interested in how fictional narrative, visual and performance art, and different presentation formats can make different kinds of teaching and representation possible. 
+
+We sought many types of creative work, such as music/dance performances and visual art such as paintings, and expect the main body of the event to consist of short one-act plays about the experience of programming, running from five to twenty minutes in length.
+
+Please see our [tips for creators](https://gitlab.com/playhatching/tips-for-creators) regarding narrative, performance, and visual art.
+
+(Consider [also attending](https://organicdonut.com/2019/01/expanding-the-con-aesthetic) the [!!Con conference (New York City, 11-12 May 2019)](http://bangbangcon.com/), which this year also features several performances!)
+
+Purpose
+------------
+
+Right now, we persuade and teach each other in a certain range of session types at PyCon. We have lots of lectures, panel discussions, live tool demonstrations, hands-on workshops and trainings, and birds-of-a-feather discussion sessions. This proposal would help us explore how theater can do things those formats can&#39;t do. Like songs and cartoons, narrative art can encapsulate wisdom in stories and characters, and use entertainment value to help audiences retain that wisdom.
+
+Especially when it comes to the emotionally fraught experiences in programming (code review, hiring, debugging, architectural negotiation, etc.), the medium of theater is a promising way to encourage empathy in the viewer. Theater is a way to model healthy vulnerability, courage and conflict. And visual and performing arts such as dance and music are ways to share experiences that go beyond words. We only know ways to be if we can imagine them. We hope this festival will illustrate a few ways we can be.
+
+Organizing Team
+---------------
+[Sumana Harihareswara](https://harihareswara.net) has coordinated a readings and music festival (Fire and Water, 1998), stage managed a long-running play (*I Look Like an Egg but I Identify as a Cookie*, 2003-2004), and led event and curriculum/session planning for several hackathon/mini-conferences and sprints. She is also the  co-creator of [Python Grab Bag: A Set of Short Plays](https://2018.pygotham.org/talks/python-grab-bag-a-set-of-short-plays/).
+
+[Erty Seidohl](https://erty.me) is a veteran conference organizer, with several years of experience as an organizer for [!!Con](https://bangbangcon.com).
+
+Brendan Adkins is a software developer with a theater degree, and is an experienced pop-culture convention volunteer and panel moderator.
+
+Timeline
+--------
+
+* *[Call for submissions](https://www.papercall.io/art-of-python) open*: closed on 28 February
+* *Acceptance and rejection notifications*: 10 March
+* *Rehearsal video calls* with Art of Python organizers: TBD, approximately week of 25 April
+* *Schedule announcement*: TBD, approximately 28 April
+* *Art of Python committee working with submitters* (providing editing, feedback, logistics guidance): through 3 May
+* *Art of Python festival*: evening of Friday, 3 May, 8-10pm
+
+  [1]: https://echan.dreamwidth.org/73641.html
+</div>
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        
+    </div>
+  
+</div>
+<footer>
+  <div class="footer-container">
+    <img class="python-logo" src="/2019/site_media/static/img/psf-logo.3411e5f40050.png"
+         width=300 alt="PSF logo">
+    
+    <p>
+      The PyCon 2019 conference in Cleveland, Ohio, USA, is a production of the
+      <a href="http://python.org/psf/">Python Software Foundation</a>.
+      This site is built using
+      <a href="https://www.djangoproject.com/">Django</a>
+      and
+      <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+      Hosting is provided by
+      <a href="http://heroku.com/">Heroku</a>.
+    </p>
+    <p>
+      Logo and Branding by
+      <a href="http://hellofizz.com/"><img title="Fizz Creative" alt="Fizz Creative" src="/2019/site_media/static/img/fizz.b1afc5c95fa1.png"/></a>.
+    </p>
+  </div>
+</footer>
+
+
+
+</body>
+
+<!-- Mirrored from us.pycon.org/2019/hatchery/artofpython/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Jul 2019 20:24:29 GMT -->
+</html>
