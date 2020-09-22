@@ -1,0 +1,963 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  
+<!-- Mirrored from us.pycon.org/2020/online/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Sep 2020 15:38:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PyCon US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="/2020/static/images/2020-favicons/favicon.b0fca699f9ca.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/2020/static/images/2020-favicons/apple-icon-57x57.5e5476732b44.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/2020/static/images/2020-favicons/apple-icon-60x60.fe3f72014ff7.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/2020/static/images/2020-favicons/apple-icon-72x72.588c09a2f5c1.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/2020/static/images/2020-favicons/apple-icon-76x76.42cfcd17be28.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/2020/static/images/2020-favicons/apple-icon-114x114.4aecf78dc7fd.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/2020/static/images/2020-favicons/apple-icon-120x120.0a06ff309797.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/2020/static/images/2020-favicons/apple-icon-144x144.0924aed37e4d.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/2020/static/images/2020-favicons/apple-icon-152x152.f828706376a4.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/2020/static/images/2020-favicons/apple-icon-180x180.8782e2c49f51.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/2020/static/images/2020-favicons/android-icon-192x192.920690b23fc0.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2020/static/images/2020-favicons/favicon-32x32.ef0a770e01ed.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2020/static/images/2020-favicons/favicon-96x96.7376a5e71cc9.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2020/static/images/2020-favicons/favicon-16x16.1086e280da95.png">
+    <link rel="manifest" href="/2020/static/images/2020-favicons/manifest.b58fcfa7628c.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/2020/static/images/2020-favicons/ms-icon-144x144.0924aed37e4d.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+    <!-- Third-party CSS libraries go here -->
+
+    <!-- project-specific CSS -->
+    <link href="/2020/static/css/custom-2020-styles.03f21d1a4ffe.css" rel="stylesheet">
+
+    
+
+    
+    
+
+    
+
+  </head>
+
+  <body>
+  <div id="content-wrapper">
+
+    <header class="header ">
+        <div class="top-nav" role="navigation">
+        <!--
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/2020/">Home</a>
+          </li>
+          
+            <li class="nav-item">
+              <a id="sign-up-link" class="nav-link" href="/2020/accounts/signup/">
+                Sign Up
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="log-in-link" class="nav-link" href="/2020/accounts/login/">
+                Sign In
+              </a>
+            </li>
+          
+        </ul>
+        -->
+      </div>
+        <a href="/" class="header-img">
+          <h1 class="sr-only">PyCon Pittsburgh. April 15-23, 2020.</h1>
+        </a>
+    </header>
+
+    <button id="toggle-nav" class="btn btn--toggle">Menu</button>
+    <div id="main-nav" class="main-nav" role="navigation">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-collapse">
+            
+<ul class="navbar-nav mr-auto">
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-1" data-toggle="dropdown">
+                About PyCon
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-1">
+    
+        <a class="dropdown-item " href="/2020/about/" >What Is PyCon?</a>
+    
+        <a class="dropdown-item " href="/2020/about/code-of-conduct/" >Code of Conduct</a>
+    
+        <a class="dropdown-item " href="/2020/about/diversity/" >Diversity</a>
+    
+        <a class="dropdown-item " href="/2020/about/staff/" >Staff Information</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-4" data-toggle="dropdown">
+                PSF
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-4">
+    
+        <a class="dropdown-item " href="/2020/psf/" >Python Software Foundation</a>
+    
+        <a class="dropdown-item " href="/2020/donate/" >Donate</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-42" data-toggle="dropdown">
+                Events
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-42">
+    
+        <a class="dropdown-item " href="/2020/events/languagesummit/" >Language Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/edusummit/" >Education Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/startuprow/participants/" >Startup Row Participants</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/online/" class="nav-link active ">
+                Online
+            </a>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/sponsors/virtualexpohall/" class="nav-link  ">
+                Virtual Expo Hall
+            </a>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-43" data-toggle="dropdown">
+                Hatchery
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-43">
+    
+        <a class="dropdown-item " href="/2020/hatchery/trainers/" >Python Trainers Summit</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/mentoredsprints/" >Mentored Sprints for Diverse Beginners</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/beginnersdata/" >Beginners Data Workshop for Minorities</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-36" data-toggle="dropdown">
+                Resources
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-36">
+    
+        <a class="dropdown-item " href="/2020/financial-assistance/" >Financial Aid</a>
+    
+        <a class="dropdown-item " href="/2020/registration/airline-resources/" >Airfare Cancellation Resources</a>
+    
+        <a class="dropdown-item " href="/2020/registration/international-refund/" >International Refund Policy</a>
+    
+</div>
+            
+        </li>
+    
+</ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+
+      
+
+      
+    
+
+
+      
+<div class="cms_page_title">
+<h1>PyCon US 2020 Online</h1>
+</div>
+<p>PyCon 2020 Online is in its final week. In reflecting back on the past 5 or so weeks, one thought threads through them:   </p>
+<blockquote>
+<p>“Alone we can do so little; together we can do so much” - Helen Keller</p>
+</blockquote>
+<p>Those individuals and groups that took the time to prepare and record talks, charlas, tutorials, workshops, summits, hatchery events, posters, and interviews created PyCon 2020 Online.  Their time and efforts to learn recording platforms, lighting strategies, backgrounds, make t-shirt and hat changes, create slides and so much more is what made such a successful conference.</p>
+<p>Thank you will never be enough to express our appreciation to all volunteers, presenters, sponsors and community members for their support.</p>
+<h1>Closing</h1>
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a05o1fV90jc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<p style="display: block; margin: auto; text-align: center;"><span class="badge badge-info">New</span> PSF Community Address - Ewa Jodlowska</p>
+
+<p><br></p>
+<h1>Python Steering Council Community Address</h1>
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xX8fGuh4T_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<p style="display: block; margin: auto; text-align: center;"><span class="badge badge-info">New</span> Python Steering Council Community Address</p>
+
+<p><br></p>
+<h1>Welcome</h1>
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ThLpG6o6zoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<p style="display: block; margin: auto; text-align: center;">Welcome to PyCon Online - Emily Morehouse-Valcarcel</p>
+
+<p><br></p>
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gCkFkvFVLjY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<p style="display: block; margin: auto; text-align: center;">Sponsor Greeting - Microsoft</p>
+
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M52_CRdhkNA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<p style="display: block; margin: auto; text-align: center;">Sponsor Greeting - Capital One</p>
+
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z1Bi_wlisW0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<p style="display: block; margin: auto; text-align: center;">Sponsor Greeting - Facebook</p>
+
+<h2>Navigation</h2>
+<div>
+<ul class="nav justify-content-center">
+  <li class="nav-item"><a class="nav-link" href="#tutorials">Tutorials</a></li>
+  <li class="nav-item"><a class="nav-link" href="#talks">Talks</a></li>
+  <li class="nav-item"><a class="nav-link" href="#charlas">Charlas</a></li>
+  <li class="nav-item"><a class="nav-link" href="#posters">Posters</a></li>
+  <li class="nav-item"><a class="nav-link" href="/2020/sponsors/virtualexpohall">Virtual Expo Hall</a></li>
+  <li class="nav-item"><a class="nav-link" href="#sponsor-workshops">Sponsor Workshops</a></li>
+  <li class="nav-item"><a class="nav-link" href="#events-hatchery">Events & Hatchery</a></li>
+  <li class="nav-item"><a class="nav-link" href="#startup-row">Startup Row</a></li>
+</ul>
+</div>
+
+<hr>
+
+<div style="text-align: center;">
+<h3>Subscribe to PyCon US 2020 Online </h3>
+<p>Sign up for the mailing list to receive updates as we publish online content for PyCon US 2020.</p>
+<!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div style="display: inline-block;" id="mc_embed_signup">
+<form action="https://pycon.us19.list-manage.com/subscribe/post?u=5697f493c3a48994f504d4deb&amp;id=71583fdee5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+<div class="mc-field-group">
+    <label for="mce-EMAIL">Email Address </label>
+    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+    <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5697f493c3a48994f504d4deb_71583fdee5" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+<p>Form not working? Sign up <a href="https://pycon.us19.list-manage.com/subscribe?u=5697f493c3a48994f504d4deb&id=71583fdee5">here</a>.</p>
+
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+</div>
+
+<hr>
+
+<h1 id="tutorials">Tutorials</h1>
+
+<ul>
+
+  <li>
+    <a href="https://youtu.be/gGu3pPC_fBM">Demystifying Deep Learning for Data Scientists</a> - Eric Ma
+    - <a href="https://us.pycon.org/2020/schedule/presentation/73/">Tutorial Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/fuJcSNUMrW0">Hands on Beginning Python</a> - Matt Harrison
+    - <a href="https://us.pycon.org/2020/schedule/presentation/53/">Tutorial Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/XMMHpv54xxM">Hands-On Web App Test Automation</a> - Andrew Knight
+    - <a href="https://us.pycon.org/2020/schedule/presentation/44/">Tutorial Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/RUQWPJ1T6Zc">It's Officially Legal so Let's Scrape the Web</a> - Kimberly Fessel
+    - <a href="https://us.pycon.org/2020/schedule/presentation/72/">Tutorial Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/WkUBx3g2QfQ">Modern Python Developer's Toolkit</a> - Sebastian Witowski
+    - <a href="https://us.pycon.org/2020/schedule/presentation/64/">Tutorial Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/oYy9_4fm56o">Deploying Django on Serverless Infrastructure</a> - Katie McLaughlin
+    - <a href="https://us.pycon.org/2020/schedule/presentation/62/">Tutorial Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/cNXioWhEeJc">Effective Data Visualization</a> - Husni Almoubayyed
+    - <a href="https://us.pycon.org/2020/schedule/presentation/74/">Tutorial Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/vyOgWhwUmec">Natural Language Processing (NLP) in Python - From Zero to Hero</a> - Keith Galli
+    - <a href="https://us.pycon.org/2020/schedule/presentation/49/">Tutorial Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/JWhywJHIMfs">Say it with Bots!</a> - Mariatta Wijaya
+    - <a href="https://us.pycon.org/2020/schedule/presentation/71/">Tutorial Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/_eII-MqXlv0">Geospatial Public Policy Analysis with GeoPandas</a> - Sergio Sanchez
+    - <a href="https://us.pycon.org/2020/schedule/presentation/46/">Tutorial Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/18B1pznaU1o">Python Concurrency: from beginner to pro</a> - Santiago Basulto
+    - <a href="https://us.pycon.org/2020/schedule/presentation/47/">Tutorial Description Link</a>
+  </li>
+
+  <li>
+    <span class="badge badge-info">New</span>&nbsp;<a href="https://youtu.be/JgIgEjASOlk">Migration from Python 2 to 3</a> - Mike Müller
+    - <a href="https://us.pycon.org/2020/schedule/presentation/60/">Tutorial Description Link</a>
+  </li>
+
+  <li>
+    <span class="badge badge-info">New</span>&nbsp;<a href="https://youtu.be/T8CQwGIsrx4">Introduction to Decorators: Power Up Your Python Code</a> - Geir Arne Hjelle
+    - <a href="https://us.pycon.org/2020/schedule/presentation/75/">Tutorial Description Link</a>
+  </li>
+
+  <li>
+    <span class="badge badge-info">New</span>&nbsp;<a href="https://youtu.be/yJ6iN5M42sA">Nonsense verse (and other creative uses of spelling) with Python and machine learning</a> - Allison Parrish
+    - <a href="https://us.pycon.org/2020/schedule/presentation/59/">Tutorial Description Link</a>
+  </li>
+
+</ul>
+
+<p><hr><br />
+<h1 id="talks">Talks</h1></p>
+<ul>
+
+  <li>
+    <a href="https://youtu.be/76GGZGneJZ4">Yin Yang Ranch: Building a Distributed Computer Vision Pipeline using Python, OpenCV and ZMQ</a> - Jeff Bass
+    - <a href="https://us.pycon.org/2020/schedule/presentation/150/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/CUjCqOw_oFk">Developing With Doctests</a> - Jonathan Crall
+    - <a href="https://us.pycon.org/2020/schedule/presentation/114/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/bK2iPDu7RDE">How I Solved my NYC Parking Problem with Python</a> - Jessica Garson
+    - <a href="https://us.pycon.org/2020/schedule/presentation/102/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/ei71YpmfRX4">Comprehensible Comprehensions</a> - Trey Hunner
+    - <a href="https://us.pycon.org/2020/schedule/presentation/133/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/WjMDXDHBn1I">Snakes in a case: Packaging Python apps for distribution</a> - Russell Keith-Magee
+    - <a href="https://us.pycon.org/2020/schedule/presentation/126/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/OUkzFbzkXy4">East Meets West When Translating Django Apps</a> - Andrew Knight
+    - <a href="https://us.pycon.org/2020/schedule/presentation/86/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/8vstov3Y7uE">What is deployment, anyway?</a> - Katie McLaughlin
+    - <a href="https://us.pycon.org/2020/schedule/presentation/95/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/PQmCADPolOE">Leadership and Identity in the Pan-African Python movement</a> - Marlene Mhangami
+    - <a href="https://us.pycon.org/2020/schedule/presentation/152/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/vPokIvli8yk">Implementing Ethics: Developing Trustworthy AI</a> - Carol Smith
+    - <a href="https://us.pycon.org/2020/schedule/presentation/117/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/ndi55Ig6-SI">Automate the Boring Stuff with Slackbot</a> - Takanori Suzuki
+    - <a href="https://us.pycon.org/2020/schedule/presentation/120/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/8pFnrr0NnwY">Small Big Data: using NumPy and Pandas when your data doesn't fit in memory</a> - Itamar Turner-Trauring
+    - <a href="https://us.pycon.org/2020/schedule/presentation/97/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/tqUe0gcfqAU">Ray: A System for High-performance, Distributed Python Applications</a> - Dean Wampler
+    - <a href="https://us.pycon.org/2020/schedule/presentation/139/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/W-lZttZhsUY">Beautiful Python Refactoring</a> - Conor Hoekstra
+    - <a href="https://us.pycon.org/2020/schedule/presentation/162/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/ST33zDM9vOE">Static Typing in Python</a> - Dustin Ingram
+    - <a href="https://us.pycon.org/2020/schedule/presentation/96/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/4SwdVMKhbn4">Building Docs like Code: Continuous Integration for Documentation</a> - Mason Egger
+    - <a href="https://us.pycon.org/2020/schedule/presentation/98/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/x7IwVaQgUAM">Transitioning from developing software to developing people: A firsthand experience</a> - Matt Bachmann
+    - <a href="https://us.pycon.org/2020/schedule/presentation/106/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/NjMTf2UWPsw">Saved by In-Memory NoSQL - A hitchhiker guided to Black Box debugging of Python Production Code</a> - Deepak Kumar Gupta
+    - <a href="https://us.pycon.org/2020/schedule/presentation/123/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/02CLD-42VdI">AsyncIO + Music</a> - Łukasz Langa
+    - <a href="https://us.pycon.org/2020/schedule/presentation/89/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/2ymZVpuqvSc">Pyambic Pentameter: generating rhyming and metered poems with Markov chains and NLTK</a> - Kathryn Lingel
+    - <a href="https://us.pycon.org/2020/schedule/presentation/112/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/Hn-syMunNy8">The Hitchhiker's Guide to CLIs in Python</a> - Vinayak Mehta
+    - <a href="https://us.pycon.org/2020/schedule/presentation/173/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/KRwpY2TixAs">9 Years of PyLadies: Lessons Learned and What Comes Next</a> - Lorena Mesa, Elaine Wong, Mariatta
+    - <a href="https://us.pycon.org/2020/schedule/presentation/135/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/yr6E7FwK_Hw">The Hidden Power of the Python Runtime</a> - Elizaveta Shashkova
+    - <a href="https://us.pycon.org/2020/schedule/presentation/121/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/mWKygyFir54">Organizing To Improve Your Workplace: Know Your Rights</a> - Shauna Gordon-McKeon
+    - <a href="https://us.pycon.org/2020/schedule/presentation/115/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/YB9aGx5zpto">Mixing a Raspberry Pi with Python into a 5th Grade Science Fair Project</a> - Wendi Dreesen
+    - <a href="https://us.pycon.org/2020/schedule/presentation/154/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/tFeVdazq0O0">Introduction to Writing Network Tests with pyATS</a> - Hank Preston
+    - <a href="https://us.pycon.org/2020/schedule/presentation/134/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/klCfoGCwmMg">C++ ♥ Python: from modules to hybrid applications</a> - Cristián Maureira-Fredes
+    - <a href="https://us.pycon.org/2020/schedule/presentation/111/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/eMI8lwQl3Dc">1 + 1 = 1 or Record Deduplication with Python</a> - Flávio Juvenal
+    - <a href="https://us.pycon.org/2020/schedule/presentation/159/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/36yw8VC3KU8">Let's talk Databases in Python: SQLAlchemy and Alembic</a> - Hannah Stepanek
+    - <a href="https://us.pycon.org/2020/schedule/presentation/100/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/QR9W81P7yTw">Function dissection lab -- learn how functions work by examining their innards</a> - Reuven Lerner
+    - <a href="https://us.pycon.org/2020/schedule/presentation/127/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/Xjv1G0suPF8">The joy of creating art with code.</a> - Neeraj Pandey
+    - <a href="https://us.pycon.org/2020/schedule/presentation/151/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/NUk6QN02UxQ">Practical privacy-preserving machine learning in Python</a> - Catherine Nelson
+    - <a href="https://us.pycon.org/2020/schedule/presentation/130/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/8STo1-rRV1E">How to build an intelligent “indoor garden” with microcontrollers, CircuitPython, and IoT.</a> - Maria Jose Molina Contreras
+    - <a href="https://us.pycon.org/2020/schedule/presentation/103/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/k3fM9KqKfTg">Using Python to Detect Vulnerabilities in Binaries</a> - Terri Oda
+    - <a href="https://us.pycon.org/2020/schedule/presentation/170/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/hYZQaTeowHQ">Bonjour mademoiselle! Wie geht es dir? Wǒ hěn hǎo. Dhanyawaad -How multilingual is your NLP model?</a> - Shreya Khurana
+    - <a href="https://us.pycon.org/2020/schedule/presentation/179/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/GJUL3glrKvA">Big O No: Django ORM runtime complexity and how to avoid it using LATERAL JOINS</a> - Chris Seto
+    - <a href="https://us.pycon.org/2020/schedule/presentation/157/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/jClVsR6XfdI">Python in High Energy Physics</a> - Pratyush Das
+    - <a href="https://us.pycon.org/2020/schedule/presentation/90/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/jKlJEPSZAYo">Privacy-preserving methods: Building secure projects</a> - Rebeca Sarai
+    - <a href="https://us.pycon.org/2020/schedule/presentation/142/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/YBuVGx3EYSY">Write Less and Test More with Data Regression Testing</a> - Igor Ghisi
+    - <a href="https://us.pycon.org/2020/schedule/presentation/110/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/P0kfKqMHioQ">If Statements are a Code Smell</a> - Aly Sivji
+    - <a href="https://us.pycon.org/2020/schedule/presentation/87/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/OS63Er80KJc">The Limitations and Danger of Facial Recognition</a> - Manojit Nandi
+    - <a href="https://us.pycon.org/2020/schedule/presentation/149/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/olhKTHFYNxA">A 🐍's guide to Unicode</a> - James Bennett
+    - <a href="https://us.pycon.org/2020/schedule/presentation/153/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/fnNUMKH6TWI">Building interactive applications for image data with Dash and scikit-image</a> - Emmanuelle Gouillart
+    - <a href="https://us.pycon.org/2020/schedule/presentation/160/">Talk Description Link</a>
+  </li>
+
+
+  <li>
+    <a href="https://youtu.be/5AYIe-3cD-s">Goodbye Print, Hello Debugger!</a> - Nina Zakharenko
+    - <a href="https://us.pycon.org/2020/schedule/presentation/158/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/2R1HELARjUk">Multiply your Testing Effectiveness with Parameterized Testing</a> - Brian Okken
+    - <a href="https://us.pycon.org/2020/schedule/presentation/172/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/9c0ksQKizts">From 0 to 60 in 2,592,000 seconds: How to quickly get engineers up to speed</a> - Alexandra Sunderland
+    - <a href="https://us.pycon.org/2020/schedule/presentation/169/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/Jq68axbKIbg">Docker and Python: making them play nicely and securely for Data Science and ML</a> - Tania Allard
+    - <a href="https://us.pycon.org/2020/schedule/presentation/175/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/0HzbyQPKW9E">Decoding bias and narrative in competitive video games broadcasts with video analysis</a> - Kim-Adeline Miguel
+    - <a href="https://us.pycon.org/2020/schedule/presentation/107/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <span class="badge badge-info">New</span>&nbsp;<a href="https://youtu.be/I4nkgJdVZFA">Why is Python slow?</a> - Anthony Shaw
+    - <a href="https://us.pycon.org/2020/schedule/presentation/141/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <span class="badge badge-info">New</span>&nbsp;<a href="https://youtu.be/G7SIcvWrAKs">A careful walk through probability distributions, using Python</a> - Eric Ma
+    - <a href="https://us.pycon.org/2020/schedule/presentation/122/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <span class="badge badge-info">New</span>&nbsp;<a href="https://youtu.be/nG_ZsNxRz0o">Finite State Machine (FSM) in Django</a> - Calvin Hendryx-Parker
+    - <a href="https://us.pycon.org/2020/schedule/presentation/125/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <span class="badge badge-info">New</span>&nbsp;<a href="https://youtu.be/D9i1lwC-3ZA">“Sorry, Could you repeat that again?” -  Speech Recognition with Python</a> - Javier Jorge
+    - <a href="https://us.pycon.org/2020/schedule/presentation/105/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <span class="badge badge-info">New</span>&nbsp;<a href="https://youtu.be/yWR97VkLIzE">Polyglot data with python: Introducing Pandas and Apache Arrow</a> - Robson Luis Monteiro Junior
+    - <a href="https://us.pycon.org/2020/schedule/presentation/164/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <span class="badge badge-info">New</span>&nbsp;<a href="https://youtu.be/deX0GlW4uew">Deploying Python at Scale with Dask</a> - Matthew Rocklin
+    - <a href="https://us.pycon.org/2020/schedule/presentation/171/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <span class="badge badge-info">New</span>&nbsp;<a href="https://youtu.be/zd_hWkOU-V0">Life Beyond Yaml: Bridging Data Science and Data Infrastructure with Apache Airflow</a> - Daniel Imberman
+    - <a href="https://us.pycon.org/2020/schedule/presentation/137/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <span class="badge badge-info">New</span>&nbsp;<a href="https://youtu.be/NG21KWZSiok">Getting started with automatic differentiation</a> - Colin Carrol
+    - <a href="https://us.pycon.org/2020/schedule/presentation/180/">Talk Description Link</a>
+  </li>
+
+  <li>
+    <span class="badge badge-info">New</span>&nbsp;<a href="https://youtu.be/rk-f3B-eMkI">Stop Using Mocks (for a while)</a> - Harry Percival
+    - <a href="https://us.pycon.org/2020/schedule/presentation/118/">Talk Description Link</a>
+  </li>
+
+<!--
+
+  <li>
+    <span class="badge badge-info">New</span>&nbsp;<a href=""></a> - 
+    - <a href="">Talk Description Link</a>
+  </li>
+-->
+
+
+</ul>
+
+<p><hr><br />
+<h1 id="charlas">Charlas</h1></p>
+<ul>
+
+  <li>
+    <a href="https://youtu.be/UYpnyUyzpSY">Historias de debug en clase de Python Avanzado</a> - Luis Diego Conejo Alpizar
+    - <a href="https://us.pycon.org/2020/schedule/presentation/79/">Enlace a la descripción de la charla</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/KJrgcTfGZig">Si no está documentado, su proyecto no existe.</a> - Renne Rocha - <a href="https://us.pycon.org/2020/schedule/presentation/78/">Enlace a la descripción de la charla</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/Lluu64ri3Qg">Detección automatizada de archivos maliciosos en el repositorio PyPI</a> - Cristina Muñoz - <a href="https://us.pycon.org/2020/schedule/presentation/81/">Enlace a la descripción de la charla</a>
+  </li>
+
+  <li>
+    <span class="badge badge-info">Reciente</span>&nbsp;<a href="https://youtu.be/IGokXFTVRzQ">Integraciones con Asyncio</a> - Eric Horvat - <a href="https://us.pycon.org/2020/schedule/presentation/80/">Enlace a la descripción de la charla</a>
+  </li>
+
+  <li>
+    <span class="badge badge-info">Reciente</span>&nbsp;<a href="https://youtu.be/76j-C2DQRec">Datos, Python y humanos: haciendo ciencia de datos en países latinoamericanos</a> - David Mauricio Delgado Ruiz - <a href="https://us.pycon.org/2020/schedule/presentation/83">Enlace a la descripción de la charla</a>
+  </li>
+
+
+</ul>
+
+<p><hr><br />
+<h1 id="posters">Posters</h1></p>
+<ul>
+  <li><a href="/2020/online/posters">View the online poster hall here!</a></li>
+</ul>
+
+<p><hr><br />
+<h1 id="sponsor-workshops">Sponsor Workshops</h1></p>
+<ul>
+  <li>
+    <a href="https://www.youtube.com/watch?v=4bjX9iKqpXA">Google: Building Serverless Python Applications with Google Cloud</a> - Charles Engelke - <a href="https://us.pycon.org/2020/schedule/presentation/226/">Sponsor Workshop Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://www.youtube.com/watch?v=dyBLGjCQJHs&feature=youtu.be">Microsoft: Optimize Python & Django apps with easy-to-learn Postgres Superpowers</a> - Louise Grandjonc - <a href="https://us.pycon.org/2020/schedule/presentation/229/">Sponsor Workshop Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/PV7iy6FPjAY">Microsoft: Easy Data Processing on Azure with Serverless Functions</a> - Tania Allard - <a href="https://us.pycon.org/2020/schedule/presentation/230/">Sponsor Workshop Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/CLunSEdSDaA">Facebook: Machine Learning on Encrypted Data with CrypTen</a> - Mark Ibrahim - <a href="https://us.pycon.org/2020/schedule/presentation/231/">Sponsor Workshop Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/udVRTBm_-q0">Capital One: Type Hints: Putting more Buzz in your Fizz</a> - Steven Lott - <a href="https://us.pycon.org/2020/schedule/presentation/245/">Sponsor Workshop Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/1923eduj0Gg">Heroku: From Project to Productionized on Heroku</a> - Casey Faist - <a href="https://us.pycon.org/2020/schedule/presentation/222/">Sponsor Workshop Description Link</a>
+  </li>
+
+  <li>
+    <a href="https://youtu.be/ooOLl4_H-IE">Xilinx: Extending the Python Ecosystem to Xilinx Programmable Platforms with PYNQ</a> - Patrick Lysaght - <a href="https://us.pycon.org/2020/schedule/presentation/225/">Sponsor Workshop Description Link</a>
+  </li>
+
+  <li>
+    <span class="badge badge-info">New</span>&nbsp;<a href="https://youtu.be/AxDJWkRISL8">NVIDIA: GPU-Accelerated Data Analytics in Python</a> - Keith Kraus, Bartley Richardson - <a href="https://us.pycon.org/2020/schedule/presentation/228/">Sponsor Workshop Description Link</a>
+  </li>
+
+  <li>
+    <span class="badge badge-info">New</span>&nbsp;<a href="https://youtu.be/XL77lRTVF3g">Salesforce: How Python Powers Salesforce.org's Unique Open Source Model</a> - Jason Lantz - <a href="https://us.pycon.org/2020/schedule/presentation/285/">Sponsor Workshop Description Link</a>
+  </li>
+
+  <li>
+    <span class="badge badge-info">New</span>&nbsp;&nbsp;<a href="https://youtu.be/S77ASVUiTdA">ActiveState: We Need to Talk About Windows </a> - Shaun Lowry - <a href="https://us.pycon.org/2020/schedule/presentation/219/">Sponsor Workshop Description Link</a>
+  </li>
+</ul>
+
+<p><hr><br />
+<h1 id="hatchery">Events &amp; Hatchery</h1></p>
+<h2>Hatchery: Beginners Data Workshop for Minorities</h2>
+
+<p><span class="badge badge-warning">Past</span> This event was held remotely on May 9th and 16th, 2020! No recording is available due to the format.</p>
+
+<p>
+Would you like to learn to code but don’t know where to start? Learning how to code can seem like an impossible task so we’ve decided to put on a workshop to show 60 beginners how it can be done and get them excited about the world of technology!
+</p>
+
+<p>
+<a href="https://us.pycon.org/2020/hatchery/beginnersdata/">Click here to read the detai!</a>
+</p>
+
+<h2>Hatchery: Mentored Sprints</h2>
+
+<p><span class="badge badge-warning">Past</span> This event was held remotely on May 17th, 2020! No recording is available due to the format.</p>
+
+<p>🎉✨ The mentored sprints for diverse community members are back for PyCon US 2020 ✨🎉</p>
+
+<p>Now ONLINE!!!</p>
+
+<p>
+<a href="https://us.pycon.org/2020/hatchery/mentoredsprints/">Click here to read the details!</a>
+</p>
+
+<h2>Hatchery: Trainers Summit</h2>
+
+<p><span class="badge badge-warning">Past</span> This event was held remotely on April 23th, 2020.  You can watch the recording on YouTube!</p>
+
+<p><a href="https://youtu.be/azXvbo_wzmw">Watch now on YouTube</a></p>
+
+<p>
+The Python Trainers Summit is a new hatchery program for PyCon 2020! We will have a virtual format for this year on Thursday, April 23 from 1-4pm (Chicago time).
+</p>
+
+<p>
+<a href="https://us.pycon.org/2020/hatchery/trainers/">Click here to read about the event!</a>
+</p>
+
+<h2>Event: Education Summit</h2>
+
+<p><span class="badge badge-warning">Past</span> This event was held remotely on April 24th, 2020. You can watch the recording on YouTube!</p>
+
+<p><a href="https://youtu.be/3T5QYIsthn0">Watch now on YouTube</a></p>
+
+<p>
+The PyCon Education Summit is a gathering of teachers and educators focused on bringing coding literacy, through Python, to as broad a group of audiences as possible. 
+</p>
+
+<p>
+<a href="https://us.pycon.org/2020/events/edusummit/">Click here to read about the event!</a>.
+</p>
+
+<h2>Event: PyLadies Auction</h2>
+
+<p><span class="badge badge-warning">Cancelled</span></p>
+<p>
+The annual PyLadies charity auction has been cancelled. Read the announcement, and learn how you can still support the PyLadies <a href="https://pycon.blogspot.com/2020/04/pyladies-auction-2020-cancelled.html">on the blog</a>.
+</p>
+
+<p><hr><br />
+<h1 id="startup-row">Startup Row</h1></p>
+<p>Read the full announcement <a href="https://pycon.blogspot.com/2020/04/announcing-startup-row-lineup-at-pycon.html">on the blog</a> and check out the 2020 Startup Row lineup <a href="https://us.pycon.org/2020/events/startuprow/participants/">here</a>!</p>
+
+<h2>Aiko Ai</h2>
+
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NNWiL6DFCcg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p style="display: block; margin: auto; text-align: center;">Interview Video with Aiko AI</p>
+</div>
+
+<h2>R2C</h2>
+
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d6enEZCum8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p style="display: block; margin: auto; text-align: center;">Interview Video with R2C</p>
+</div>
+
+<h2>SLAppforge</h2>
+
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1QzHlvKo9mY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p style="display: block; margin: auto; text-align: center;">Interview Video with SLAppforge</p>
+</div>
+
+<h2>Tonic</h2>
+
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JLTrikEJrSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+
+    </div>
+
+  </div>
+
+    <footer class="footer">
+      <div class="footer-img"></div>
+      <div class="credits">
+        <a href="http://python.org/psf-landing/">
+          <img class="psf-logo" src="/2020/static/images/psf-logo.6d20ed1aa4be.png" width=300 alt="PSF logo">
+        </a>
+        <p class="footer-credits">
+          The PyCon 2020 conference in Pittsburgh, PA, USA, is a production of the
+          <a href="http://python.org/psf-landing/">Python Software Foundation</a>.
+        </p>
+        <p class="footer-credits">
+          This site is built using
+          <a href="https://www.djangoproject.com/">Django</a>
+          and
+          <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+          Hosting is provided by
+          <a href="http://heroku.com/">Heroku</a>.
+        </p>
+        <p class="footer-credits">
+          PyCon 2020 logo and design created by
+          <a href="http://robbdesign.co">
+            <img class="footer-credit-logo" title="Robb Design Co." alt="Robb Design Co." src="/2020/static/images/robb-design-co.c8ca0b0f7bf9.png"/>
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    
+
+    
+      <!-- Bootstrap JS and its dependencies-->
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/b-1.6.1/b-html5-1.6.1/b-print-1.6.1/sl-1.3.1/datatables.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+      <!-- Third-party javascript libraries go here -->
+
+      <!-- Project specific Javascript in this file -->
+      <script src="/2020/static/js/project.b489026c3720.js"></script>
+
+      
+      
+
+      
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55961911-2"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-55961911-2');
+      </script>
+      
+
+    
+  </body>
+
+<!-- Mirrored from us.pycon.org/2020/online/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Sep 2020 15:38:57 GMT -->
+</html>

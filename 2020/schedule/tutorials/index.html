@@ -1,0 +1,911 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  
+<!-- Mirrored from us.pycon.org/2020/schedule/tutorials/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Sep 2020 15:39:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PyCon US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="/2020/static/images/2020-favicons/favicon.b0fca699f9ca.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/2020/static/images/2020-favicons/apple-icon-57x57.5e5476732b44.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/2020/static/images/2020-favicons/apple-icon-60x60.fe3f72014ff7.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/2020/static/images/2020-favicons/apple-icon-72x72.588c09a2f5c1.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/2020/static/images/2020-favicons/apple-icon-76x76.42cfcd17be28.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/2020/static/images/2020-favicons/apple-icon-114x114.4aecf78dc7fd.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/2020/static/images/2020-favicons/apple-icon-120x120.0a06ff309797.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/2020/static/images/2020-favicons/apple-icon-144x144.0924aed37e4d.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/2020/static/images/2020-favicons/apple-icon-152x152.f828706376a4.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/2020/static/images/2020-favicons/apple-icon-180x180.8782e2c49f51.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/2020/static/images/2020-favicons/android-icon-192x192.920690b23fc0.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2020/static/images/2020-favicons/favicon-32x32.ef0a770e01ed.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2020/static/images/2020-favicons/favicon-96x96.7376a5e71cc9.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2020/static/images/2020-favicons/favicon-16x16.1086e280da95.png">
+    <link rel="manifest" href="/2020/static/images/2020-favicons/manifest.b58fcfa7628c.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/2020/static/images/2020-favicons/ms-icon-144x144.0924aed37e4d.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+    <!-- Third-party CSS libraries go here -->
+
+    <!-- project-specific CSS -->
+    <link href="/2020/static/css/custom-2020-styles.03f21d1a4ffe.css" rel="stylesheet">
+
+    
+
+    
+    
+
+    
+    
+  </head>
+
+  <body>
+  <div id="content-wrapper">
+
+    <header class="header ">
+        <div class="top-nav" role="navigation">
+        <!--
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/2020/">Home</a>
+          </li>
+          
+            <li class="nav-item">
+              <a id="sign-up-link" class="nav-link" href="/2020/accounts/signup/">
+                Sign Up
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="log-in-link" class="nav-link" href="/2020/accounts/login/">
+                Sign In
+              </a>
+            </li>
+          
+        </ul>
+        -->
+      </div>
+        <a href="/" class="header-img">
+          <h1 class="sr-only">PyCon Pittsburgh. April 15-23, 2020.</h1>
+        </a>
+    </header>
+
+    <button id="toggle-nav" class="btn btn--toggle">Menu</button>
+    <div id="main-nav" class="main-nav" role="navigation">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-collapse">
+            
+<ul class="navbar-nav mr-auto">
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-1" data-toggle="dropdown">
+                About PyCon
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-1">
+    
+        <a class="dropdown-item " href="/2020/about/" >What Is PyCon?</a>
+    
+        <a class="dropdown-item " href="/2020/about/code-of-conduct/" >Code of Conduct</a>
+    
+        <a class="dropdown-item " href="/2020/about/diversity/" >Diversity</a>
+    
+        <a class="dropdown-item " href="/2020/about/staff/" >Staff Information</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-4" data-toggle="dropdown">
+                PSF
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-4">
+    
+        <a class="dropdown-item " href="/2020/psf/" >Python Software Foundation</a>
+    
+        <a class="dropdown-item " href="/2020/donate/" >Donate</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-42" data-toggle="dropdown">
+                Events
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-42">
+    
+        <a class="dropdown-item " href="/2020/events/languagesummit/" >Language Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/edusummit/" >Education Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/startuprow/participants/" >Startup Row Participants</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/online/" class="nav-link  ">
+                Online
+            </a>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/sponsors/virtualexpohall/" class="nav-link  ">
+                Virtual Expo Hall
+            </a>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-43" data-toggle="dropdown">
+                Hatchery
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-43">
+    
+        <a class="dropdown-item " href="/2020/hatchery/trainers/" >Python Trainers Summit</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/mentoredsprints/" >Mentored Sprints for Diverse Beginners</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/beginnersdata/" >Beginners Data Workshop for Minorities</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-36" data-toggle="dropdown">
+                Resources
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-36">
+    
+        <a class="dropdown-item " href="/2020/financial-assistance/" >Financial Aid</a>
+    
+        <a class="dropdown-item " href="/2020/registration/airline-resources/" >Airfare Cancellation Resources</a>
+    
+        <a class="dropdown-item " href="/2020/registration/international-refund/" >International Refund Policy</a>
+    
+</div>
+            
+        </li>
+    
+</ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="schedule-page">
+
+      
+
+      
+      
+
+      
+    <div class="page-head">
+        <h1>PyCon 2020 Tutorials Schedule</h1>
+    </div>
+
+    
+        <h3>April 15, 2020</h3>
+        <table class="calendar table table-bordered">
+    <thead>
+        <tr>
+            <th class="time">&nbsp;</th>
+            
+                <th>Room 309</th>
+            
+                <th>Room 310/311</th>
+            
+                <th>Room 315</th>
+            
+                <th>Room 316</th>
+            
+                <th>Room 317</th>
+            
+                <th>Room 318</th>
+            
+                <th>Room 319</th>
+            
+                <th>Room 320</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        
+            <tr>
+                <td class="time">09:00AM</td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/50/">Foundations of Numerical Computing in Python</a>
+                                </span>
+                                <span class="speaker">
+                                    Scott Sanderson
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/47/">Python Concurrency: from beginner to pro</a>
+                                </span>
+                                <span class="speaker">
+                                    Santiago Basulto, Martin Zugnoni
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/72/">It&#39;s Officially Legal so Let&#39;s Scrape the Web</a>
+                                </span>
+                                <span class="speaker">
+                                    Kimberly Fessel
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/60/">Migration from Python 2 to 3</a>
+                                </span>
+                                <span class="speaker">
+                                    Mike Müller
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/46/">Geospatial Public Policy Analysis with GeoPandas</a>
+                                </span>
+                                <span class="speaker">
+                                    Sergio Sanchez
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/52/">xonsh - bring Python to your shell</a>
+                                </span>
+                                <span class="speaker">
+                                    Gil Forsyth, Anthony Scopatz
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/51/">Welcome to CircuitPython and Circuit Playground Bluefruit!</a>
+                                </span>
+                                <span class="speaker">
+                                    Kattni Rembor
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/49/">Natural Language Processing (NLP) in Python - From Zero to Hero</a>
+                                </span>
+                                <span class="speaker">
+                                    Keith Galli
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                
+            </tr>
+        
+            <tr>
+                <td class="time">12:20PM</td>
+                
+                    <td class="slot slot-lunch" colspan="8" rowspan="1" style="position: relative;">
+                        
+                            
+                                <p>Lunch Break</p>
+                            
+                        
+                    </td>
+                
+                
+            </tr>
+        
+            <tr>
+                <td class="time">01:20PM</td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/57/">Better Machine Learning through Effective Preprocessing with scikit-learn</a>
+                                </span>
+                                <span class="speaker">
+                                    Kevin Markham
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/56/">Bigger, Better, Faster, More! Building Applications in Python</a>
+                                </span>
+                                <span class="speaker">
+                                    Adam Englander
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/62/">Deploying Django on Serverless Infrastructure</a>
+                                </span>
+                                <span class="speaker">
+                                    Katie McLaughlin
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/68/">Python 3 Habits: What To Do After You&#39;ve Upgraded</a>
+                                </span>
+                                <span class="speaker">
+                                    Trey Hunner
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/54/">A beginner&#39;s guide to befriending Python</a>
+                                </span>
+                                <span class="speaker">
+                                    Grishma Jena
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/55/">Scalable Computing with Dask</a>
+                                </span>
+                                <span class="speaker">
+                                    Tom Augspurger, Matthew Rocklin
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/58/">Test-Driven Bayesian Model Development</a>
+                                </span>
+                                <span class="speaker">
+                                    Mitzi Morris
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/53/">Hands-on Python for Programmers</a>
+                                </span>
+                                <span class="speaker">
+                                    Matt Harrison
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                
+            </tr>
+        
+            <tr>
+                <td class="time">04:40PM</td>
+                
+                
+                    <td colspan="8"></td>
+                
+            </tr>
+        
+    </tbody>
+</table>
+
+    
+        <h3>April 16, 2020</h3>
+        <table class="calendar table table-bordered">
+    <thead>
+        <tr>
+            <th class="time">&nbsp;</th>
+            
+                <th>Room 309</th>
+            
+                <th>Room 310/311</th>
+            
+                <th>Room 315</th>
+            
+                <th>Room 316</th>
+            
+                <th>Room 317</th>
+            
+                <th>Room 318</th>
+            
+                <th>Room 319</th>
+            
+                <th>Room 320</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        
+            <tr>
+                <td class="time">09:00AM</td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/66/">Exploratory Data Analysis with Pandas and Matplotlib</a>
+                                </span>
+                                <span class="speaker">
+                                    Allen Downey
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/61/">Maps and Machine Learning: Spatial Analysis with TensorFlow, scikit-learn, and PyTorch</a>
+                                </span>
+                                <span class="speaker">
+                                    Christy Heaton, Erika Alejandra Pelaez Coyotl
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/44/">Hands-On Web App Test Automation</a>
+                                </span>
+                                <span class="speaker">
+                                    Andrew Knight
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/63/">Creating a Great Python Package</a>
+                                </span>
+                                <span class="speaker">
+                                    Paul Vincent Craven
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/65/">PyTorch : From Zero to Comfortable</a>
+                                </span>
+                                <span class="speaker">
+                                    Deepak Kumar Gupta
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/59/">Nonsense verse (and other creative uses of spelling) with Python and machine learning</a>
+                                </span>
+                                <span class="speaker">
+                                    Allison Parrish
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/45/">Minimum Viable Documentation</a>
+                                </span>
+                                <span class="speaker">
+                                    Heidi Waterhouse
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/64/">Modern Python Developer&#39;s Toolkit</a>
+                                </span>
+                                <span class="speaker">
+                                    Sebastian Witowski
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                
+            </tr>
+        
+            <tr>
+                <td class="time">12:20PM</td>
+                
+                    <td class="slot slot-lunch" colspan="8" rowspan="1" style="position: relative;">
+                        
+                            
+                                <p>Lunch Break</p>
+                            
+                        
+                    </td>
+                
+                
+            </tr>
+        
+            <tr>
+                <td class="time">01:20PM</td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/74/">Effective Data Visualization</a>
+                                </span>
+                                <span class="speaker">
+                                    Husni Almoubayyed
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/48/">Python Epiphanies</a>
+                                </span>
+                                <span class="speaker">
+                                    Stuart Williams
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/69/">Introduction to Property-Based Testing</a>
+                                </span>
+                                <span class="speaker">
+                                    Zac Hatfield-Dodds
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/67/">Correct Cryptography in Python, a Tutorial for Cryptography Beginners</a>
+                                </span>
+                                <span class="speaker">
+                                    Ellie Daw, Seth James Nielson
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/70/">Good to the Last Drop: Writing Robust Flask Apps</a>
+                                </span>
+                                <span class="speaker">
+                                    Isaac Evans
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/71/">Say it with Bots!</a>
+                                </span>
+                                <span class="speaker">
+                                    Mariatta
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/75/">Introduction to Decorators: Power Up Your Python Code</a>
+                                </span>
+                                <span class="speaker">
+                                    Geir Arne Hjelle
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="/2020/schedule/presentation/73/">Demystifying Deep Learning for Data Scientists</a>
+                                </span>
+                                <span class="speaker">
+                                    Eric J. Ma
+                                </span>
+                                
+                            
+                        
+                    </td>
+                
+                
+            </tr>
+        
+            <tr>
+                <td class="time">04:40PM</td>
+                
+                    <td class="slot slot-blank" colspan="8" rowspan="1" style="position: relative;">
+                        
+                            
+                                <p>​</p>
+                            
+                        
+                    </td>
+                
+                
+            </tr>
+        
+            <tr>
+                <td class="time">05:30PM</td>
+                
+                    <td class="slot slot-event" colspan="8" rowspan="1" style="position: relative;">
+                        
+                            
+                                <p>Opening Reception (Expo Hall)</p>
+                            
+                        
+                    </td>
+                
+                
+            </tr>
+        
+            <tr>
+                <td class="time">07:30PM</td>
+                
+                
+                    <td colspan="8"></td>
+                
+            </tr>
+        
+    </tbody>
+</table>
+
+    
+
+
+
+
+    </div>
+
+  </div>
+
+    <footer class="footer">
+      <div class="footer-img"></div>
+      <div class="credits">
+        <a href="http://python.org/psf-landing/">
+          <img class="psf-logo" src="/2020/static/images/psf-logo.6d20ed1aa4be.png" width=300 alt="PSF logo">
+        </a>
+        <p class="footer-credits">
+          The PyCon 2020 conference in Pittsburgh, PA, USA, is a production of the
+          <a href="http://python.org/psf-landing/">Python Software Foundation</a>.
+        </p>
+        <p class="footer-credits">
+          This site is built using
+          <a href="https://www.djangoproject.com/">Django</a>
+          and
+          <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+          Hosting is provided by
+          <a href="http://heroku.com/">Heroku</a>.
+        </p>
+        <p class="footer-credits">
+          PyCon 2020 logo and design created by
+          <a href="http://robbdesign.co">
+            <img class="footer-credit-logo" title="Robb Design Co." alt="Robb Design Co." src="/2020/static/images/robb-design-co.c8ca0b0f7bf9.png"/>
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    
+
+    
+      <!-- Bootstrap JS and its dependencies-->
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/b-1.6.1/b-html5-1.6.1/b-print-1.6.1/sl-1.3.1/datatables.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+      <!-- Third-party javascript libraries go here -->
+
+      <!-- Project specific Javascript in this file -->
+      <script src="/2020/static/js/project.b489026c3720.js"></script>
+
+      
+      
+
+      
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55961911-2"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-55961911-2');
+      </script>
+      
+
+    
+  </body>
+
+<!-- Mirrored from us.pycon.org/2020/schedule/tutorials/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Sep 2020 15:39:08 GMT -->
+</html>

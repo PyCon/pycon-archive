@@ -1,0 +1,765 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  
+<!-- Mirrored from us.pycon.org/2020/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Sep 2020 15:38:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PyCon US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="/2020/static/images/2020-favicons/favicon.b0fca699f9ca.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/2020/static/images/2020-favicons/apple-icon-57x57.5e5476732b44.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/2020/static/images/2020-favicons/apple-icon-60x60.fe3f72014ff7.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/2020/static/images/2020-favicons/apple-icon-72x72.588c09a2f5c1.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/2020/static/images/2020-favicons/apple-icon-76x76.42cfcd17be28.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/2020/static/images/2020-favicons/apple-icon-114x114.4aecf78dc7fd.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/2020/static/images/2020-favicons/apple-icon-120x120.0a06ff309797.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/2020/static/images/2020-favicons/apple-icon-144x144.0924aed37e4d.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/2020/static/images/2020-favicons/apple-icon-152x152.f828706376a4.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/2020/static/images/2020-favicons/apple-icon-180x180.8782e2c49f51.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/2020/static/images/2020-favicons/android-icon-192x192.920690b23fc0.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2020/static/images/2020-favicons/favicon-32x32.ef0a770e01ed.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2020/static/images/2020-favicons/favicon-96x96.7376a5e71cc9.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2020/static/images/2020-favicons/favicon-16x16.1086e280da95.png">
+    <link rel="manifest" href="/2020/static/images/2020-favicons/manifest.b58fcfa7628c.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/2020/static/images/2020-favicons/ms-icon-144x144.0924aed37e4d.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+    <!-- Third-party CSS libraries go here -->
+
+    <!-- project-specific CSS -->
+    <link href="/2020/static/css/custom-2020-styles.03f21d1a4ffe.css" rel="stylesheet">
+
+    
+
+    
+    
+
+    
+    
+  </head>
+
+  <body>
+  <div id="content-wrapper">
+
+    <header class="header header--home">
+        <div class="top-nav" role="navigation">
+        <!--
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/2020/">Home</a>
+          </li>
+          
+            <li class="nav-item">
+              <a id="sign-up-link" class="nav-link" href="/2020/accounts/signup/">
+                Sign Up
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="log-in-link" class="nav-link" href="/2020/accounts/login/">
+                Sign In
+              </a>
+            </li>
+          
+        </ul>
+        -->
+      </div>
+        <a href="/" class="header-img">
+          <h1 class="sr-only">PyCon Pittsburgh. April 15-23, 2020.</h1>
+        </a>
+    </header>
+
+    <button id="toggle-nav" class="btn btn--toggle">Menu</button>
+    <div id="main-nav" class="main-nav" role="navigation">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-collapse">
+            
+<ul class="navbar-nav mr-auto">
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-1" data-toggle="dropdown">
+                About PyCon
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-1">
+    
+        <a class="dropdown-item " href="/2020/about/" >What Is PyCon?</a>
+    
+        <a class="dropdown-item " href="/2020/about/code-of-conduct/" >Code of Conduct</a>
+    
+        <a class="dropdown-item " href="/2020/about/diversity/" >Diversity</a>
+    
+        <a class="dropdown-item " href="/2020/about/staff/" >Staff Information</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-4" data-toggle="dropdown">
+                PSF
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-4">
+    
+        <a class="dropdown-item " href="/2020/psf/" >Python Software Foundation</a>
+    
+        <a class="dropdown-item " href="/2020/donate/" >Donate</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-42" data-toggle="dropdown">
+                Events
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-42">
+    
+        <a class="dropdown-item " href="/2020/events/languagesummit/" >Language Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/edusummit/" >Education Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/startuprow/participants/" >Startup Row Participants</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/online/" class="nav-link  ">
+                Online
+            </a>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/sponsors/virtualexpohall/" class="nav-link  ">
+                Virtual Expo Hall
+            </a>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-43" data-toggle="dropdown">
+                Hatchery
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-43">
+    
+        <a class="dropdown-item " href="/2020/hatchery/trainers/" >Python Trainers Summit</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/mentoredsprints/" >Mentored Sprints for Diverse Beginners</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/beginnersdata/" >Beginners Data Workshop for Minorities</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-36" data-toggle="dropdown">
+                Resources
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-36">
+    
+        <a class="dropdown-item " href="/2020/financial-assistance/" >Financial Aid</a>
+    
+        <a class="dropdown-item " href="/2020/registration/airline-resources/" >Airfare Cancellation Resources</a>
+    
+        <a class="dropdown-item " href="/2020/registration/international-refund/" >International Refund Policy</a>
+    
+</div>
+            
+        </li>
+    
+</ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="">
+
+      
+
+      
+      
+
+      
+  <div class="homepage-intro">
+    <div class="container">
+      <div class="homepage-text">
+        <p class="alert alert-warning">PyCon 2020 will be happening online</p>
+        <p>While the conference cannot take place in person as planned this year our speakers, presenters, and sponsors will be providing recordings of what they were preparing for PyCon 2020 to share with the community online.</p>
+        <p>Find all the details and signup to hear the lastest <a href="/2020/online/">here</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="homepage-links">
+      <div>
+        <a href="/2020/sponsors">
+          <img src="/2020/static/images/2020-sponsors.a0256b9cc505.svg" alt="">
+        </a>
+        <h2>Sponsors</h2>
+        <p>
+          The companies and organizations who sponsor PyCon
+          make the conference possible.
+        </p>
+      </div>
+    </div>
+
+    <div class="sponsor-level">
+      <h2>Our Sponsors</h2>
+    </div>
+    <div class="front-page-sponsor-logos">
+    
+    
+      <div class="sponsor-level">
+      
+        <a class="sponsor-logo" href="https://azure.microsoft.com/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/MS-Azure_logo_horiz_c-gray_rgb.png.260x240_q85.png"
+            alt="Logo of Microsoft Azure"
+            title="Microsoft Azure"
+          />
+        </a>
+      
+      </div>
+    
+      <div class="sponsor-level">
+      
+        <a class="sponsor-logo" href="http://www.facebook.com/careers">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/Facebook-Wordmark-Gray.png.260x240_q85.png"
+            alt="Logo of Facebook"
+            title="Facebook"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.capitalone.com/tech/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/_Web-C1_Core_NG_302_186_R.png.260x240_q85.png"
+            alt="Logo of Capital One"
+            title="Capital One"
+          />
+        </a>
+      
+      </div>
+    
+      <div class="sponsor-level">
+      
+        <a class="sponsor-logo" href="https://slack.com">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/Slack_Mark_Web.png.260x240_q85.png"
+            alt="Logo of Slack"
+            title="Slack"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://heroku.com/python">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/heroku-logotype-horizontal-purple.jpg.260x240_q85.jpg"
+            alt="Logo of Heroku"
+            title="Heroku"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://careers.google.com/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/googlelogo_white_background_color_272x92dp.png.260x240_q85.jpg"
+            alt="Logo of Google"
+            title="Google"
+          />
+        </a>
+      
+      </div>
+    
+      <div class="sponsor-level">
+      
+        <a class="sponsor-logo" href="https://www.corning.com">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/Corning_Logo.png.260x240_q85.png"
+            alt="Logo of Corning Incorporated"
+            title="Corning Incorporated"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.jpmorganchase.com/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/Logo2008_JPMC_D_Black.png.260x240_q85.png"
+            alt="Logo of JPMorgan Chase &amp; Co."
+            title="JPMorgan Chase &amp; Co."
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.techatbloomberg.com/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/BBGEngineering_black.png.260x240_q85.png"
+            alt="Logo of Bloomberg"
+            title="Bloomberg"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://linkedin.com">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/Logo-2C-66px-TM.png.260x240_q85.png"
+            alt="Logo of LinkedIn"
+            title="LinkedIn"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.linkedin.com/company/pokemon-careers/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/TPCi_logo_450px.png.260x240_q85.png"
+            alt="Logo of The Pokémon Company International"
+            title="The Pokémon Company International"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://opensource.salesforce.com/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/Salesforce_Logo_RGB_8_13_14.png.260x240_q85.png"
+            alt="Logo of Salesforce"
+            title="Salesforce"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.ibm.com/quantum-computing/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/IBM_Quantum_logotype_pos_RGB.png.260x240_q85.png"
+            alt="Logo of IBM Q"
+            title="IBM Q"
+          />
+        </a>
+      
+      </div>
+    
+      <div class="sponsor-level">
+      
+        <a class="sponsor-logo" href="https://www.elastic.co">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/elastic-logo-H-full_color.png.260x240_q85.png"
+            alt="Logo of Elastic"
+            title="Elastic"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.anaconda.com/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/Anaconda_horizontal_RGB.png.260x240_q85.png"
+            alt="Logo of Anaconda"
+            title="Anaconda"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://sentry.io/signup/?utm_source=digitalpycon">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/sentry-logo-black.png.260x240_q85.png"
+            alt="Logo of Sentry"
+            title="Sentry"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://lerner.co.il/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/wpe-logo.png.260x240_q85.png"
+            alt="Logo of Weekly Python Exercise"
+            title="Weekly Python Exercise"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://jobs.netflix.com">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/Netflix_Logo_RGB.png.260x240_q85.png.260x240_q85.png"
+            alt="Logo of Netflix, Inc"
+            title="Netflix, Inc"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.caktusgroup.com">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/caktus-logo.png.260x240_q85.png"
+            alt="Logo of Caktus Group"
+            title="Caktus Group"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.activestate.com">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/ActiveState_logo_positive_black_crop.png.260x240_q85.png"
+            alt="Logo of ActiveState"
+            title="ActiveState"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="http://community.redhat.com">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/Logo-RedHat-A-Color-RGB.png.260x240_q85.png"
+            alt="Logo of Red Hat"
+            title="Red Hat"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.progressive.com/careers/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/PGR_RGB_180X50_crop.png.260x240_q85.png"
+            alt="Logo of Progressive Insurance"
+            title="Progressive Insurance"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="http://www.hudson-trading.com/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/Vertical_Combo_01.png.260x240_q85.png"
+            alt="Logo of Hudson River Trading LLC"
+            title="Hudson River Trading LLC"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://quansight.com">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/QS_logostrip.png.260x240_q85.png"
+            alt="Logo of Quansight"
+            title="Quansight"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.novetta.com/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/novetta_full_mark_blue_RGB_9.png.260x240_q85.png"
+            alt="Logo of Novetta"
+            title="Novetta"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://saleor.io/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/Saleor_900.png.260x240_q85.png"
+            alt="Logo of Saleor Commerce"
+            title="Saleor Commerce"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.cuttlesoft.com">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/Wordmark-Blue.png.260x240_q85.png"
+            alt="Logo of Cuttlesoft"
+            title="Cuttlesoft"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.python-academy.com">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/01_pya_logo_rbg_sq.png.260x240_q85.png"
+            alt="Logo of Python Academy GmbH &amp; Co. KG"
+            title="Python Academy GmbH &amp; Co. KG"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.nvidia.com/en-us/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/NVIDIA_Logo_H_ForScreen_ForLightBG.png.260x240_q85.png"
+            alt="Logo of NVIDIA"
+            title="NVIDIA"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.cockroachlabs.com/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/CL_Logo_Stacked.png.260x240_q85.png"
+            alt="Logo of Cockroach Labs"
+            title="Cockroach Labs"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.revsys.com">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/new-square-700x700.png.260x240_q85.jpg"
+            alt="Logo of REVSYS"
+            title="REVSYS"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://tidelift.com/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/Tidelift_primary-logo_1.png.260x240_q85.png"
+            alt="Logo of Tidelift"
+            title="Tidelift"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.godaddy.com/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/GD_WORDMARK_RGB_BLACK.png.260x240_q85.png"
+            alt="Logo of GoDaddy"
+            title="GoDaddy"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.guidebook.com">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/guidebook_logo.jpg.260x240_q85.jpg"
+            alt="Logo of Guidebook"
+            title="Guidebook"
+          />
+        </a>
+      
+      </div>
+    
+      <div class="sponsor-level">
+      
+        <a class="sponsor-logo" href="https://www.trailofbits.com/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/TOB_Logo_2000px.png.260x240_q85.png"
+            alt="Logo of Trail of Bits"
+            title="Trail of Bits"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.union-investment.de/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/UI_Logo_RGB.png.260x240_q85.png"
+            alt="Logo of Union Investment"
+            title="Union Investment"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://abridge.com">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/Abridge_Logo_Light_BG.png.260x240_q85.png"
+            alt="Logo of Abridge AI Inc."
+            title="Abridge AI Inc."
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://anyscale.io">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/Anyscale_logo_with_text_white.png.260x240_q85.png"
+            alt="Logo of Anyscale"
+            title="Anyscale"
+          />
+        </a>
+      
+      </div>
+    
+      <div class="sponsor-level">
+      
+      </div>
+    
+      <div class="sponsor-level">
+      
+        <a class="sponsor-logo" href="https://www.xilinx.com/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/Xilinx_Logo_corp_4C.jpg.260x240_q85.jpg"
+            alt="Logo of Xilinx, Inc."
+            title="Xilinx, Inc."
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://mongodb.com">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/MongoDB_Logo_FullColorBlack_RGB.jpg.260x240_q85.jpg"
+            alt="Logo of MongoDB"
+            title="MongoDB"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.twosigma.com/careers/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/Digital_TwoSigma_Logo_RGB_transp_1000px.png.260x240_q85.png"
+            alt="Logo of Two Sigma"
+            title="Two Sigma"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.researchaffiliates.com">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/RA-Logo-Blue-TM.png.260x240_q85.png"
+            alt="Logo of Research Affiliates, LLC"
+            title="Research Affiliates, LLC"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.pythonanywhere.com/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/PA-logo-large.png.260x240_q85.png"
+            alt="Logo of PythonAnywhere LLP"
+            title="PythonAnywhere LLP"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.nielsen.com/us/en/solutions/nielsen-global-media/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/nielsen-horz2x.png.260x240_q85.png"
+            alt="Logo of Nielsen"
+            title="Nielsen"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.toptal.com/top-3-percent">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/Toptal_Logo_Main_Colors-RGB.jpg.260x240_q85.jpg"
+            alt="Logo of Toptal"
+            title="Toptal"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.mozilla.org/en-US/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/mozilla-logo-bw-rgb.png.260x240_q85.png"
+            alt="Logo of Mozilla"
+            title="Mozilla"
+          />
+        </a>
+      
+        <a class="sponsor-logo" href="https://www.twilio.com/">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/twilio-logo-red.png.260x240_q85.png"
+            alt="Logo of Twilio"
+            title="Twilio"
+          />
+        </a>
+      
+      </div>
+    
+      <div class="sponsor-level">
+      
+        <a class="sponsor-logo" href="https://python.org/psf-landing">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/psf-logo-372x84-alpha_BOtK4tf.png.260x240_q85.png"
+            alt="Logo of Python Software Foundation"
+            title="Python Software Foundation"
+          />
+        </a>
+      
+      </div>
+    
+      <div class="sponsor-level">
+      
+        <a class="sponsor-logo" href="http://www.stickermule.com/supports/pycon-2020">
+          <img
+            src="https://pycon-assets.s3.amazonaws.com/2020/media/sponsor_files/sticker-mule-logo-dark-stacked.png.260x240_q85.jpg"
+            alt="Logo of Sticker Mule"
+            title="Sticker Mule"
+          />
+        </a>
+      
+      </div>
+    
+    </div>
+  </div>
+
+
+
+    </div>
+
+  </div>
+
+    <footer class="footer">
+      <div class="footer-img"></div>
+      <div class="credits">
+        <a href="http://python.org/psf-landing/">
+          <img class="psf-logo" src="/2020/static/images/psf-logo.6d20ed1aa4be.png" width=300 alt="PSF logo">
+        </a>
+        <p class="footer-credits">
+          The PyCon 2020 conference in Pittsburgh, PA, USA, is a production of the
+          <a href="http://python.org/psf-landing/">Python Software Foundation</a>.
+        </p>
+        <p class="footer-credits">
+          This site is built using
+          <a href="https://www.djangoproject.com/">Django</a>
+          and
+          <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+          Hosting is provided by
+          <a href="http://heroku.com/">Heroku</a>.
+        </p>
+        <p class="footer-credits">
+          PyCon 2020 logo and design created by
+          <a href="http://robbdesign.co">
+            <img class="footer-credit-logo" title="Robb Design Co." alt="Robb Design Co." src="/2020/static/images/robb-design-co.c8ca0b0f7bf9.png"/>
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    
+
+    
+      <!-- Bootstrap JS and its dependencies-->
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/b-1.6.1/b-html5-1.6.1/b-print-1.6.1/sl-1.3.1/datatables.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+      <!-- Third-party javascript libraries go here -->
+
+      <!-- Project specific Javascript in this file -->
+      <script src="/2020/static/js/project.b489026c3720.js"></script>
+
+      
+      
+
+      
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55961911-2"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-55961911-2');
+      </script>
+      
+
+    
+  </body>
+
+<!-- Mirrored from us.pycon.org/2020/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Sep 2020 15:38:34 GMT -->
+</html>
