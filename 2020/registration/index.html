@@ -1,0 +1,414 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PyCon US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="/2020/static/images/2020-favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/2020/static/images/2020-favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/2020/static/images/2020-favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/2020/static/images/2020-favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/2020/static/images/2020-favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/2020/static/images/2020-favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/2020/static/images/2020-favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/2020/static/images/2020-favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/2020/static/images/2020-favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/2020/static/images/2020-favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/2020/static/images/2020-favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2020/static/images/2020-favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2020/static/images/2020-favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2020/static/images/2020-favicons/favicon-16x16.png">
+    <link rel="manifest" href="/2020/static/images/2020-favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/2020/static/images/2020-favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+    <!-- Third-party CSS libraries go here -->
+
+    <!-- project-specific CSS -->
+    <link href="/2020/static/css/custom-2020-styles.css" rel="stylesheet">
+
+    
+
+    
+    
+
+    
+
+  </head>
+
+  <body>
+  <div id="content-wrapper">
+
+    <header class="header ">
+        <div class="top-nav" role="navigation">
+        <!--
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/2020/">Home</a>
+          </li>
+          
+            <li class="nav-item">
+              <a id="sign-up-link" class="nav-link" href="/2020/accounts/signup/">
+                Sign Up
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="log-in-link" class="nav-link" href="/2020/accounts/login/">
+                Sign In
+              </a>
+            </li>
+          
+        </ul>
+        -->
+      </div>
+        <a href="/" class="header-img">
+          <h1 class="sr-only">PyCon Pittsburgh. April 15-23, 2020.</h1>
+        </a>
+    </header>
+
+    <button id="toggle-nav" class="btn btn--toggle">Menu</button>
+    <div id="main-nav" class="main-nav" role="navigation">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-collapse">
+            
+<ul class="navbar-nav mr-auto">
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-1" data-toggle="dropdown">
+                About PyCon
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-1">
+    
+        <a class="dropdown-item " href="/2020/about/" >What Is PyCon?</a>
+    
+        <a class="dropdown-item " href="/2020/about/code-of-conduct/" >Code of Conduct</a>
+    
+        <a class="dropdown-item " href="/2020/about/diversity/" >Diversity</a>
+    
+        <a class="dropdown-item " href="/2020/about/staff/" >Staff Information</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-4" data-toggle="dropdown">
+                PSF
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-4">
+    
+        <a class="dropdown-item " href="/2020/psf/" >Python Software Foundation</a>
+    
+        <a class="dropdown-item " href="/2020/donate/" >Donate</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-42" data-toggle="dropdown">
+                Events
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-42">
+    
+        <a class="dropdown-item " href="/2020/events/languagesummit/" >Language Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/edusummit/" >Education Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/startuprow/participants/" >Startup Row Participants</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/online/" class="nav-link  ">
+                Online
+            </a>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/sponsors/virtualexpohall/" class="nav-link  ">
+                Virtual Expo Hall
+            </a>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-43" data-toggle="dropdown">
+                Hatchery
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-43">
+    
+        <a class="dropdown-item " href="/2020/hatchery/trainers/" >Python Trainers Summit</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/mentoredsprints/" >Mentored Sprints for Diverse Beginners</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/beginnersdata/" >Beginners Data Workshop for Minorities</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link active dropdown-toggle" aria-haspopup="true" id="navitem-36" data-toggle="dropdown">
+                Resources
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-36">
+    
+        <a class="dropdown-item " href="/2020/financial-assistance/" >Financial Aid</a>
+    
+        <a class="dropdown-item " href="/2020/registration/airline-resources/" >Airfare Cancellation Resources</a>
+    
+        <a class="dropdown-item " href="/2020/registration/international-refund/" >International Refund Policy</a>
+    
+</div>
+            
+        </li>
+    
+</ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+
+      
+
+      
+    
+
+
+      
+<div class="cms_page_title">
+<h1>Registration Information</h1>
+</div>
+<div class="callout">
+
+<h2 style="margin: 0em; margin-bottom: 0em;">PyCon US 2020 Registration is now open!</h2>
+
+</div>
+
+<p><br></p>
+<p>You can access the registration page via your <a href="http://us.pycon.org/2020/users/dashboard/">dashboard</a> .  Your dashboard will be the place to go to view your registration.  You will be able add events or book your hotel if you chose not to do so during your initial registration.</p>
+<!--
+<center>The Job Fair is open to the public</center>
+
+<center>
+<a href="/2019/registration/register/" class="btn">Register for Job Fair here!</a>
+</center>
+-->
+
+<p>PyCon trusts you to self-select a fair registration rate:</p>
+<ul>
+  <li><a id="Corporate"></a><b>Corporate Rate</b> — If your company is paying for you to attend PyCon, register at the corporate rate. You will help keep the conference affordable for everyone, especially students and those needing financial aid. Government employees should also register at the corporate rate.</li>
+  <li><a id="Individual"></a><b>Individual Rate</b> — If you are paying for yourself to attend PyCon, feel free to come as an individual. Employees of non-profits might also choose to register at the individual rate.</li>
+  <li><a id="Student/Academic"></a><b>Student/Academic Rate</b> — This rate is for full-time students and academics. If you are employeed in a school or university you qualify for this rate. However, if the funds available will allow for the Individual or Corporate rates please select accordingly.</li>
+</ul>
+
+<!---
+Here is how much each level costs for PyCon 2020 during Early Bird registration:
+--->
+
+<p>Regular Rate Registration prices:</p>
+<table cellpadding="7" border="1">
+  <tr>
+    <th align="left">Rate</th>
+    <th align="center">Cost</th>
+  </tr>
+  <tr>
+    <td align="left">Corporate</td>
+    <td align="center">$700 <small>USD</small></td>
+  </tr>
+  <tr>
+    <td align="left">Individual</td>
+    <td align="center">$400 <small>USD</small></td>
+  </tr>
+  <tr>
+    <td align="left">Student</td>
+    <td align="center">$125 <small>USD</small></td>
+  </tr>
+</table>
+
+<!---
+We have 800 early bird tickets available. After they sell out, corporate will cost $700, individual tickets will cost $400 and student tickets will cost $125.
+--->
+
+<p><span class="label label-note">Note:</span> Tutorial registration is not included in regular conference registration prices. Tutorial registration will open in February 2020. Cost will be $150 per tutorial and onsite it will be $200 per tutorial.  <!---Tutorials schedule is listed <a href="https://us.pycon.org/2020/schedule/tutorials/">here</a>---></p>
+<!---If you are interested in attending tutorials,  we are expecting the schedule to launch any day now.  We will post updates to [Twitter][1] and launch a [blog post][2]. Feel free to follow any of these mediums to get the update as they happen.--->
+
+<!---
+<blockquote class="callout">
+Tutorial registration is open now! Click <a href="https://us.pycon.org/2019/registration/register">here</a> to register!
+</blockquote>
+--->
+
+<p>Be sure to <a href="http://us.pycon.org/2020/users/~update/">opt in</a>  to receive PyCon 2020 News for notification when tutorials launch!</p>
+<!---
+## [Add a reminder](http://s3.amazonaws.com/pycon-assets/2020/files/register_for_pycon_2020_tutorials.ics) for Tutorial Registration to my Calendar
+--->
+
+<p><span class="label label-note">Note:</span> The previous four PyCons have sold out, and we expect the same for 2020! If you plan on attending, register by early!</p>
+<!---
+<span class="label label-note">Note:</span> To view or edit your existing registration, proceed to the [registration page](http:///us.pycon.org/2020/registration/register/) .
+--->
+
+<p><span class="label label-note">Note:</span> Children are welcome to attend with a legal guardian. Both people should be registered for the conference and have badges. The legal guardian should be with the child at all times and the child should never be left alone at the conference. </p>
+<h2>What does my registration payment go towards?</h2>
+<p>Your registration payments help us keep PyCon registration tickets reasonably priced. Registration costs go towards offsetting costs for catering, audio visual, recording, internet, and other miscellaneous costs. By offsetting those costs, we can offer attendees reasonable registration rates and offer a financial aid program to those that need it.</p>
+<p>Furthermore, the revenue that PyCon generates is used to run the Python Software Foundation. The <a href="https://python.org/psf/">Python Software Foundation</a> runs PyCon, protects the Python trademark, gives out over $300k in grants per year, houses community infrastructure such as <a href="https://pypi.python.org/pypi">PyPI</a> and <a href="https://www.python.org/"><a href="http://python.org">python.org</a></a> and employs 7 staff <a href="https://www.python.org/psf/records/staff/">members</a>. The revenue from PyCon helps us support the community in all of those ways. Most importantly, the grants program has international reach and impacts individuals in 62 countries! To read more about what the PSF does and its finances, <a href="https://www.python.org/psf/annual-report/2019/">check out the 2019 Annual Impact Report</a>.</p>
+<h2>What&rsquo;s Included?</h2>
+<p>Conference registration includes refreshments during the Opening Reception, full breakfast, full lunch, and both morning and afternoon break refreshments on the three conference days Friday, Saturday, and Sunday (April 17-19, 2020).</p>
+<p>Tutorial attendees on the Wednesday and Thursday (before the main conference) will be provided with morning coffee, lunch, and break refreshments. <strong>Attendees pay per tutorial</strong> for each tutorial class that they attend, and purchasing a tutorial by itself does not include admission to the main conference. Tutorial registration will open in early 2020. One tutorial will cost $150 and onsite, it will cost $200.</p>
+<p>When registration is open, attendees can also book hotel reservations at venues where we have negotiated conference rates. Please be aware of &ldquo;housing pirates&rdquo; and do not book rooms through solicitations. Our staff will never call you to reserve a room. Only book rooms through our registration website. </p>
+<h2>International Travel</h2>
+<p>We can provide you with an &ldquo;Invitation Letter&rdquo; upon request, in support of an application for a United States visitor visa. The letter confirms that as a registered delegate you are invited to attend by the Python Software Foundation (PSF) and the PyCon 2020 committee.  Once you have a confirmed registration send an email to <a href="http://pycon-reg@python.org"><a href="mailto:pycon-reg@python.org">pycon-reg@python.org</a></a>  with your registration ID, name, and address to request the letter.</p>
+<h2>Hotel</h2>
+<p>Listed below are the hotels PyCon has contracted special rates with. When you complete your registration for PyCon 2020, you will be able to book your hotel reservation through our official housing bureau.  This is the only way to get the conference rate listed below.</p>
+<ul>
+<li>Westin — $177 <small>USD</small>/night (plus tax)</li>
+<li>Omni — $180 <small>USD</small>/night (plus tax)</li>
+<li>Drury Plaza Hotel — $179 <small>USD</small>/night (plus tax)</li>
+<li>Embassy Suites - $164 <small>USD</small>/night (plus tax)</li>
+<li>Courtyard Marriott - $180 <small>USD</small>/night (plus tax)</li>
+</ul>
+<p>More information can be found on the <a href="http://us.pycon.org/2020/venue/">Venue and Hotels</a> page.</p>
+<h2>Room Sharing</h2>
+<p>Looking for a roommate for PyCon? Check out: <a href="http://us.pycon.org/2020/community/roomsharing/">Room Sharing</a> </p>
+<h2>Childcare</h2>
+<p>PyCon is proud to announce that we will be offering <a href="http://us.pycon.org/2020/childcare">childcare</a>  during the main conference days. <br />
+Space is limited, so be sure to sign-up for childcare soon.</p>
+<h2>Financial Aid</h2>
+<p>To learn more about Financial Aid for flights, hotel, registration, and childcare to attend PyCon, see the <a href="http://us.pycon.org/2020/financial-assistance/">Financial Aid</a> page.</p>
+<h2>Policy for Transferring Registrations</h2>
+<p><strong>Corporate transfers</strong>: We accept tickets transfers between attendees that are from the same organization at any time. If you need to transfer a ticket to your colleague, please email <a href="mailto:pycon-reg@python.org">pycon-reg@python.org</a>. Be sure to include the information of the person you are transferring to. Their email address domain should match your work email address domain. </p>
+<p><span class="label label-note">Note:</span> If you have a hotel reservation tied to your account, please let our registration team know if you want to cancel or change it. Reservations cannot be changed or canceled on your behalf after April 5, 2020 - you will have to contact the hotel directly to make any changes.</p>
+<p><strong>Individual transfers</strong>: Individuals may request ticket transfers by sending a written request to <a href="mailto:pycon-reg@python.org">pycon-reg@python.org</a> before April 5, 2020. Please include the information of the person you are transferring to and have the person cc’ed on the email so we know they are aware of the transfer.  If payment needs to be changed, there will be a $50 transfer fee. We trust that as a member of the Python community you are transferring your ticket in good faith and for the amount it was paid for. </p>
+<p><span class="label label-note">Note:</span> If you have a hotel reservation tied to your account, please let our registration team know if you want to cancel or change it. Reservations cannot be changed or canceled on your behalf after April 5, 2020 - you will have to contact the hotel directly to make any changes.</p>
+<h2 id="cancellation">Cancellation Policy</h2>
+
+<div class="callout">
+<b>For our international guests:</b> if you are denied a visa, or denied entry to the United States, please contact us and we will refund your registration — in full, and without a processing fee.
+</div>
+
+<p><br><br />
+Registration cancellations must be submitted in writing, an email is sufficient, and received by April 5, 2020 in order to receive a refund minus the $50 cancellation fee($25 for students). No refunds will be granted for any cancellations received after April 5, 2020. <br />
+Please email cancellation notices to <a href="mailto:pycon-reg@python.org">pycon-reg@python.org</a></p>
+<h2>Questions?</h2>
+<p>If you have questions or issues with registration or hotel bookings, please send email to: <a href="http://pycon-reg@python.org"><a href="mailto:pycon-reg@python.org">pycon-reg@python.org</a></a> </p>
+<!-- To sign up for these tutorials, proceed to the [registration](https://us.pycon.org/2019/registration/register/) page and add them to your existing registration!
+
+If you are only attending one or more PyCon Tutorials and not the conference, there is no additional registration fee.
+
+<span class="label label-important">Note:</span> Use the promo code **TUTONLY** to register for just the tutorials (not the whole conference).
+-->
+
+<!--
+<a class="btn btn-primary" href="https://us.pycon.org/2017/registration/register/">Tutorial Registration <span class="icon icon-circle-arrow-right"></span></a>
+-->
+
+
+
+    </div>
+
+  </div>
+
+    <footer class="footer">
+      <div class="footer-img"></div>
+      <div class="credits">
+        <a href="http://python.org/psf-landing/">
+          <img class="psf-logo" src="/2020/static/images/psf-logo.png" width=300 alt="PSF logo">
+        </a>
+        <p class="footer-credits">
+          The PyCon 2020 conference in Pittsburgh, PA, USA, is a production of the
+          <a href="http://python.org/psf-landing/">Python Software Foundation</a>.
+        </p>
+        <p class="footer-credits">
+          This site is built using
+          <a href="https://www.djangoproject.com/">Django</a>
+          and
+          <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+          Hosting is provided by
+          <a href="http://heroku.com/">Heroku</a>.
+        </p>
+        <p class="footer-credits">
+          PyCon 2020 logo and design created by
+          <a href="http://robbdesign.co">
+            <img class="footer-credit-logo" title="Robb Design Co." alt="Robb Design Co." src="/2020/static/images/robb-design-co.png"/>
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    
+
+    
+      <!-- Bootstrap JS and its dependencies-->
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/b-1.6.1/b-html5-1.6.1/b-print-1.6.1/sl-1.3.1/datatables.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+      <!-- Third-party javascript libraries go here -->
+
+      <!-- Project specific Javascript in this file -->
+      <script src="/2020/static/js/project.js"></script>
+
+      
+      
+
+      
+
+    
+  </body>
+</html>

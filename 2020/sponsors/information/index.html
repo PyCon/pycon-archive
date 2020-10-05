@@ -1,0 +1,506 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PyCon US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="/2020/static/images/2020-favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/2020/static/images/2020-favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/2020/static/images/2020-favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/2020/static/images/2020-favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/2020/static/images/2020-favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/2020/static/images/2020-favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/2020/static/images/2020-favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/2020/static/images/2020-favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/2020/static/images/2020-favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/2020/static/images/2020-favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/2020/static/images/2020-favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2020/static/images/2020-favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2020/static/images/2020-favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2020/static/images/2020-favicons/favicon-16x16.png">
+    <link rel="manifest" href="/2020/static/images/2020-favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/2020/static/images/2020-favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+    <!-- Third-party CSS libraries go here -->
+
+    <!-- project-specific CSS -->
+    <link href="/2020/static/css/custom-2020-styles.css" rel="stylesheet">
+
+    
+
+    
+    
+
+    
+
+  </head>
+
+  <body>
+  <div id="content-wrapper">
+
+    <header class="header ">
+        <div class="top-nav" role="navigation">
+        <!--
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/2020/">Home</a>
+          </li>
+          
+            <li class="nav-item">
+              <a id="sign-up-link" class="nav-link" href="/2020/accounts/signup/">
+                Sign Up
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="log-in-link" class="nav-link" href="/2020/accounts/login/">
+                Sign In
+              </a>
+            </li>
+          
+        </ul>
+        -->
+      </div>
+        <a href="/" class="header-img">
+          <h1 class="sr-only">PyCon Pittsburgh. April 15-23, 2020.</h1>
+        </a>
+    </header>
+
+    <button id="toggle-nav" class="btn btn--toggle">Menu</button>
+    <div id="main-nav" class="main-nav" role="navigation">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-collapse">
+            
+<ul class="navbar-nav mr-auto">
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-1" data-toggle="dropdown">
+                About PyCon
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-1">
+    
+        <a class="dropdown-item " href="/2020/about/" >What Is PyCon?</a>
+    
+        <a class="dropdown-item " href="/2020/about/code-of-conduct/" >Code of Conduct</a>
+    
+        <a class="dropdown-item " href="/2020/about/diversity/" >Diversity</a>
+    
+        <a class="dropdown-item " href="/2020/about/staff/" >Staff Information</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-4" data-toggle="dropdown">
+                PSF
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-4">
+    
+        <a class="dropdown-item " href="/2020/psf/" >Python Software Foundation</a>
+    
+        <a class="dropdown-item " href="/2020/donate/" >Donate</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-42" data-toggle="dropdown">
+                Events
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-42">
+    
+        <a class="dropdown-item " href="/2020/events/languagesummit/" >Language Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/edusummit/" >Education Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/startuprow/participants/" >Startup Row Participants</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/online/" class="nav-link  ">
+                Online
+            </a>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/sponsors/virtualexpohall/" class="nav-link  ">
+                Virtual Expo Hall
+            </a>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-43" data-toggle="dropdown">
+                Hatchery
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-43">
+    
+        <a class="dropdown-item " href="/2020/hatchery/trainers/" >Python Trainers Summit</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/mentoredsprints/" >Mentored Sprints for Diverse Beginners</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/beginnersdata/" >Beginners Data Workshop for Minorities</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-36" data-toggle="dropdown">
+                Resources
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-36">
+    
+        <a class="dropdown-item " href="/2020/financial-assistance/" >Financial Aid</a>
+    
+        <a class="dropdown-item " href="/2020/registration/airline-resources/" >Airfare Cancellation Resources</a>
+    
+        <a class="dropdown-item " href="/2020/registration/international-refund/" >International Refund Policy</a>
+    
+</div>
+            
+        </li>
+    
+</ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+
+      
+
+      
+    
+
+
+      
+<div class="cms_page_title">
+<h1>Sponsor Information</h1>
+</div>
+<h2>Sponsor Logistical Information</h2>
+<p>If you have any questions on your sponsorship package or on the info provided below, please email us at <a href="mailto:pycon-sponsors@python.org"><a href="mailto:pycon-sponsors@python.org">pycon-sponsors@python.org</a></a>. Follow <a href="https://twitter.com/pycon">@pycon</a> on Twitter for deadline reminders.</p>
+<ul>
+<li><a href="/2020/sponsors/information#Overview">Quick Overview of the PyCon 2020 Conference</a></li>
+<li><a href="/2020/sponsors/information#Vendors">Quick Vendor Guide</a></li>
+<li><a href="/2020/sponsors/information#Sponsor_Kit/Manual">Tricord Sponsor Kit/Manual</a></li>
+<li><a href="/2020/sponsors/information#Registration">Sponsor Registration and Housing</a></li>
+<li><a href="/2020/sponsors/information#Lead Retrieval">Lead Retrieval</a></li>
+<li><a href="/2020/sponsors/information#Internet">PyCon Internet</a></li>
+<li><a href="/2020/sponsors/information#Shipping">Shipping to PyCon</a></li>
+<li><a href="/2020/sponsors/information#Swag">Swag Bag Information</a></li>
+<li><a href="/2020/sponsors/information#Exhibition">Exhibition Floor Information</a></li>
+<li><a href="/2020/sponsors/information#JobFair">Job Fair Information</a></li>
+<li><a href="/2020/sponsors/information#Auction">PyLadies Auction</a></li>
+<li><a href="/2020/sponsors/information#Accessible_Storage">Accessible Storage</a></li>
+</ul>
+<p><a id="Overview"></a></p>
+<h3>Quick Overview of the PyCon 2020 Conference</h3>
+<div>
+<table cellpadding="4" border="1">
+<tr>
+<th align="center">Wednesday<br>April 15</st>
+<th align="center">Thursday<br>April 16</nd>
+<th align="center">Friday<br>April 17</rd>
+<th align="center">Saturday<br>April 18</th>
+<th align="center">Sunday<br>April 19</th>
+<th align="center">Monday - Thursday<br>April 20 - 23</th>
+</tr>
+<tr>
+<td  align="center">
+<br>
+Tutorials*
+<br><hr>
+<br>
+</td>
+<td  align="center">
+<br>
+Tutorials*
+<br><hr>
+Sponsor Workshops
+<br><hr>
+Newcomer Orientation
+<br><hr>
+Opening Reception
+<br><hr>
+<br>
+</td>
+<td align="center">
+<br>
+Conference
+<br><hr>
+Exhibit Hall
+<br><hr>
+Evening Dinner*
+<br><hr>
+<br>
+</td>
+<td align="center">
+<br>
+Conference
+<br><hr>
+Exhibit Hall
+<br><hr>
+PyLadies Auction*
+<br><hr>
+
+<br>
+</td>
+<td align="center">
+<br>
+Conference
+<br><hr>
+5k Charity Fun Run*
+<br><hr>
+Job Fair
+<br><hr>
+Poster Sessions
+<br><hr>
+Evening Dinner*
+<br><hr>
+<br>
+<td align="center">Sprints</td>
+</tr>
+</table>
+</div>
+
+<p>*Denotes extra cost registration option</p>
+<p><a id="Vendors"></a></p>
+<h3>Quick Vendor Guide</h3>
+<ul>
+<li>Booth Customization: if you would like to order a custom or turnkey booth, see page 20-22 in the Exhibitor Kit. The deadline to order rental items for your booth is March 24. The deadline to order graphics (page 30 in the Exhibitor Kit) is March 24.</li>
+<li>Booth Labor, page 25 in the Exhibitor Kit </li>
+<li>Shipping Info, page 11 in the Exhibitor Kit</li>
+<li>Cleaning Services – David L. Lawrence Convention Center Exhibitor Ordering Guide: <a href="http://www.pittsburghcc.com/exhibitors/exhibitor-services/">http://www.pittsburghcc.com/exhibitors/exhibitor-services/</a> </li>
+<li>Carpet and Padding, page 23-24 in the Exhibitor Kit</li>
+<li>Lead Retrieval: Boomset -  <a href="https://tinyurl.com/qpdnjlf">https://tinyurl.com/qpdnjlf</a></li>
+<li>Power – David L. Lawrence Convention Center Exhibitor Ordering Guide: <a href="http://www.pittsburghcc.com/exhibitors/exhibitor-services/">http://www.pittsburghcc.com/exhibitors/exhibitor-services/</a>   </li>
+<li>Internet – David L. Lawrence Convention Center Exhibitor Ordering Guide: <a href="http://www.pittsburghcc.com/exhibitors/exhibitor-services/">http://www.pittsburghcc.com/exhibitors/exhibitor-services/</a></li>
+<li>Food &amp; Drink Catering, page  - David L. Lawrence Convention Center Exhibitor Ordering Guide: <a href="http://www.pittsburghcc.com/exhibitors/exhibitor-services/">http://www.pittsburghcc.com/exhibitors/exhibitor-services/</a> </li>
+<li>Audio Visual Order Form, page 38 in the Exhibitor Kit. FMAV is the Official Vendor  </li>
+<li>Job Fair Order Form – <a href="http://www.tricord.net/assets/2020-pycon---job-fair-kit.pdf">http://www.tricord.net/assets/2020-pycon---job-fair-kit.pdf</a></li>
+</ul>
+<p><a id="Sponsor_Kit/Manual"></a></p>
+<h3>Tricord Sponsor Manual/Kit</h3>
+<p>The exhibit floor information from Tricord can be found here: <a href="https://www.tricord.net/assets/2020-pycon---exhibitor-kit.pdf">https://www.tricord.net/assets/2020-pycon---exhibitor-kit.pdf</a>. [NOTE: Password is required and will be sent from Tricord to all participating sponsors.]</p>
+<p><a id="Registration"></a></p>
+<h3>Sponsor Registration and Housing</h3>
+<p>Registration voucher codes will be issued to sponsor contacts. Please go to your <a href="http://us.pycon.org/2020/users/dashboard/">dashboard</a>  where you can find your voucher code details. For those that have not yet booked hotel rooms or did not receive their voucher codes, please contact our registration team for assistance at <a href="http://pycon-reg@python.org"><a href="mailto:pycon-reg@python.org">pycon-reg@python.org</a></a> </p>
+<p><a id="Lead Retrieval"></a></p>
+<h3>Sponsor Lead Retrieval</h3>
+<p>This year we’re doing something different for lead generation. We’re working with Boomset to offer a new mobile application for 2020 that can be used with your booth staff’s own mobile device on Android or iOS. The cost is $150.00 per license that allows for multiple team members to be signed into or you can purchase additional licenses if needed. More information can be found here: <a href="https://tinyurl.com/qpdnjlf">https://tinyurl.com/qpdnjlf</a> </p>
+<p><a id="Internet"></a></p>
+<h3>PyCon Internet</h3>
+<p>We as a conference provide wifi in all of the conference spaces including the expo. You are welcome to use this wifi at no additional cost, but it is shared with all of the attendees. If you wish to order your own dedicated Internet, please see the David L. Lawrence Convention Center Exhibitor Ordering Guide - <a href="http://www.pittsburghcc.com/exhibitors/exhibitor-services/">http://www.pittsburghcc.com/exhibitors/exhibitor-services/</a></p>
+<p><a id="Shipping"></a></p>
+<h3>Shipping to PyCon</h3>
+<p>We prefer that all shipments be sent to the advanced warehouse instead of the David L. Lawrence Convention Center. Please use the RUSH - EXHIBIT MATERIAL label in the exhibitor kit. This helps us ensure that we receive your material in time and that it does not get lost/misplaced. The advanced warehouse is open to receive PyCon packages from March 16, 2020 - April 8, 2020, Monday - Friday from 7:30am to 3:30pm. </p>
+<p>Deadline to receive material for PyCon is April 8, 2020</p>
+<p><span class="label label-important">Note:</span> Shipments to the Tricord warehouse will incur a shipping charge</p>
+<p>The shipping address for the advanced warehouse is:</p>
+<div align="center">
+Tricord Tradeshow Services<br>
+c/o Stetson<br>
+PyCon 2020<br>
+(Your Company Name & Booth Number)<br>
+2900 Stayton St<br>
+Pittsburgh, PA 15212<br>
+USA<br>
+</div>
+
+<p><br></p>
+<p>If you need to ship directly to the show, please use the RUSH! DIRECT SHIPMENT label in the exhibitor kit and the following shipping address. <strong>Shipments can only arrive between April 14 and April 15, 2020, between 8:30 AM and 5:00 PM.</strong></p>
+<div align="center">
+Tricord Tradeshow Services<br>
+PyCon Annual 2020<br>
+(Your Company Name & Booth Number)<br>
+c/o David L. Lawrence Convention Center - Hall A<br>
+1000 Fort Duquesne Blvd.<br>
+Pittsburgh, PA 15222<br>
+USA<br>
+</div>
+
+<p><a id="Swag"></a></p>
+<h3>Swag Bag Inserts</h3>
+<p>It’s important that bag inserts be sent with the specific label of SWAG BAG ITEMS in the exhibitor kit, so that they arrive in time for stuffing. Please send 3300 inserts. When picking your swag bag item, please keep in mind that most people will have to pack the item into their suitcase/backpack for traveling. </p>
+<p>Deadline to receive shipments at the advanced warehouse: April 8, 2020</p>
+<p><span class="label label-important">Note:</span> Shipments to the Tricord warehouse will incur a shipping charge</p>
+<p><a id="Exhibition"></a></p>
+<h3>Important Exhibition Information</h3>
+<p>The Exhibit Hall is located in Exhibit Hall A in the David L. Lawrence Convention Center. It is near Registration and in close proximity to all the sessions. Keep in mind that the expo floor opens for the Opening Reception at 5:30 pm Thursday, April 16, 2020. Please have your booth ready and staffed for the event. </p>
+<p>The expo floor with booths continues until 5:00 pm Saturday, April 18, 2020. Please use the appropriate shipping labels for your EXHIBITION FREIGHT in the exhibitor kit. We kindly ask that you do not pack swag bag inserts with your exhibition freight since we stuff bags before you get to your booth for setup. Please ship those items separately with the appropriate shipping label. For your booth items, use the advanced shipping labels in the exhibitor kit.</p>
+<p><span class="label label-important">Note:</span> Beverages and lunch will be available in the “Sponsor Lounge” in the expo hall Please prepare to have your booths staffed from 8:00 am until  5:00 pm. It is mandatory that your booth is staffed for the &ldquo;active times&rdquo; (see below).</p>
+<p>Move-in for the Exhibit Hall<br />
+  * <strong>Keystone &amp; Diamond Level</strong>: begins on Tuesday, April 14 at 2:00pm - 7:00pm and concludes on Thursday, April 16 at 12:00pm. <br />
+  * <strong>Platinum &amp; Gold Levels</strong>: begins on Wednesday, April 15 at 8:00am - 6:00pm and concludes on Thursday, April 16 at 12:00pm. </p>
+<h3>Exhibition Floor Times</h3>
+<p>The exhibit hall is open on April 16 for the opening reception from 5:30pm - 7:30pm and from 8:00am until 5:00pm April 17 and April 18. Please do not tear down your booth prior to 5:00 PM on Saturday, April 18. It is disrespectful to attendees and to the other sponsors who have committed to staying until the end of the day.</p>
+<p><b>Thursday, April 16, 2020</b></p>
+<ul>
+<li>5:30pm to 7:30pm (Opening Reception)</li>
+</ul>
+<p><b>Friday, April 17, 2020 - 8:00am - 5:00pm</b></p>
+<ul>
+<li>8:00am to 9:30am (Breakfast) </li>
+<li>10:10am to 10:50am (AM Break) </li>
+<li>12:40pm to 1:55pm (Lunch) </li>
+<li>3:45pm to 4:30pm (PM Break)</li>
+</ul>
+<p><b>Saturday, April 18, 2020 - 8:00am - 5:00pm</b></p>
+<ul>
+<li>8:00am to 9:30am (Breakfast) </li>
+<li>10:20am to 10:50am (AM Break) </li>
+<li>12:40pm to 1:55pm (Lunch) </li>
+<li>3:45pm to 4:30pm (PM Break)</li>
+</ul>
+<p>Move-out for the Exhibit hall booths begins at 5:00 pm Saturday, April 16, 2020. Everything needs to be cleared out by 7:00 pm. At this point, we transform the Expo Hall into the Job Fair (details for the job fair below). </p>
+<p><span class="label label-important">NOTE:</span> <strong>You have an option to opt-out of the Booth Space in the Exhibit Hall. However, if you do not opt-out before the start of the conference and leave your booth empty, a fee will be applied to your sponsorship. This can be arranged by contacting <a href="mailto:pycon-sponsors@python.org">pycon-sponsors@python.org</a>.</strong><br />
+<br></p>
+<p><a id="JobFair"></a></p>
+<h3>Job Fair</h3>
+<p>Link to Job Fair Exhibitor Kit: <a href="http://www.tricord.net/assets/2020-pycon---job-fair-kit.pdf">http://www.tricord.net/assets/2020-pycon---job-fair-kit.pdf</a></p>
+<p><span class="label label-important">NOTE:</span> <strong>Participating sponsors will have a six-foot table and chairs set aside for them; we do not use booths during the Job Fair.</strong> Table top spaces are limited to (1) pop-up graphic, branded table cloth, and giveaway items. Carpeting is not an option. Standard power will be provided.</p>
+<p>It’s important that job fair boxes be sent with the specific JOB FAIR shipping label in the exhibitor kit, so that they can be delivered right to your table.  </p>
+<p>The job fair is open to the public. Tickets are available online. </p>
+<h4>Important Information</h4>
+<ul>
+<li>When &amp; Where: Sunday, April 19, 2020, in Expo Hall A at the David L. Convention Center </li>
+<li>Time: 10:00am until 1:00pm.</li>
+<li>Morning refreshments and lunch will be served during the event. </li>
+<li>Move-in begins at 8:00am Sunday, April 19, 2020</li>
+<li>Move-out begins at 1:00pm. Sponsor material should be cleared out by 3:00pm.</li>
+</ul>
+<p>If you have anything shipped for your Job Fair table that is clearly marked, the boxes will be placed underneath your job fair table.</p>
+<p><a id="Auction"></a></p>
+<h3>PyCon Auction</h3>
+<p>If your organization will be donating items for the PyCon Auction, the items should be received by the staff no later than Thursday, April 16, 2020. The event takes place on Saturday, April 18, 2020. The items can be brought to the <strong>Staff Office at the David L. Lawrence Convention Center, Room 306-307</strong>. You can also ship them to us- use the advance shipment labels in the exhibitor kit. In order to help us make sure your donation is received, please send your tracking information to: <a href="mailto:pycon-sponsors@python.org">pycon-sponsors@python.org</a>. Be sure to mark the boxes PYLADIES AUCTION: </p>
+<div align="center">
+c/o Tricord<br>
+PyCon Staff - PyLadies Auction<br>
+David L. Lawrence Convention Center<br>
+1000 Fort Duquesne Blvd.<br>
+Pittsburgh, PA 15222<br>
+USA<br>
+</div>
+
+<p>Deadline to receive shipments at the advanced warehouse: April 8, 2020</p>
+<p><span class="label label-important">Note:</span> Shipments to the Tricord warehouse will incur a shipping charge</p>
+<p><a href="mailto:pycon-sponsors@python.org">Email us</a> if you have any questions or if you wish to ship your donation to us. All auction proceeds go to <a href="http://www.pyladies.com">PyLadies</a> </a>.</p>
+<p><a id="Accessible Storage"></a></p>
+<h3>Accessible Storage</h3>
+<p>Onsite storage is $75.00 per skid to store. To access the stored items there is a labor fee that is usually a ½ hour.  Labor does need to be with the exhibitor when they access so that the trailer can be opened.  If there are only a few items to be removed the exhibitor may carry themselves. If boxes need to be moved to the booth area then the labor would need to deliver. See page 16 in the Exhibitor Kit.</p>
+<p><a id=“Conference Advertisement”></a></p>
+<h3>Conference Advertisement</h3>
+<p>Keystone, Diamond and Platinum sponsors can submit a high-resolution advertisement for us to display in between sessions on the screens. Please keep in mind our code of conduct when creating these ads. <br />
+Due March 2, 2020</p>
+
+
+
+    </div>
+
+  </div>
+
+    <footer class="footer">
+      <div class="footer-img"></div>
+      <div class="credits">
+        <a href="http://python.org/psf-landing/">
+          <img class="psf-logo" src="/2020/static/images/psf-logo.png" width=300 alt="PSF logo">
+        </a>
+        <p class="footer-credits">
+          The PyCon 2020 conference in Pittsburgh, PA, USA, is a production of the
+          <a href="http://python.org/psf-landing/">Python Software Foundation</a>.
+        </p>
+        <p class="footer-credits">
+          This site is built using
+          <a href="https://www.djangoproject.com/">Django</a>
+          and
+          <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+          Hosting is provided by
+          <a href="http://heroku.com/">Heroku</a>.
+        </p>
+        <p class="footer-credits">
+          PyCon 2020 logo and design created by
+          <a href="http://robbdesign.co">
+            <img class="footer-credit-logo" title="Robb Design Co." alt="Robb Design Co." src="/2020/static/images/robb-design-co.png"/>
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    
+
+    
+      <!-- Bootstrap JS and its dependencies-->
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/b-1.6.1/b-html5-1.6.1/b-print-1.6.1/sl-1.3.1/datatables.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+      <!-- Third-party javascript libraries go here -->
+
+      <!-- Project specific Javascript in this file -->
+      <script src="/2020/static/js/project.js"></script>
+
+      
+      
+
+      
+
+    
+  </body>
+</html>

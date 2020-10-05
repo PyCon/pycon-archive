@@ -1,0 +1,440 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PyCon US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="/2020/static/images/2020-favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/2020/static/images/2020-favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/2020/static/images/2020-favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/2020/static/images/2020-favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/2020/static/images/2020-favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/2020/static/images/2020-favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/2020/static/images/2020-favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/2020/static/images/2020-favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/2020/static/images/2020-favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/2020/static/images/2020-favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/2020/static/images/2020-favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2020/static/images/2020-favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2020/static/images/2020-favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2020/static/images/2020-favicons/favicon-16x16.png">
+    <link rel="manifest" href="/2020/static/images/2020-favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/2020/static/images/2020-favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+    <!-- Third-party CSS libraries go here -->
+
+    <!-- project-specific CSS -->
+    <link href="/2020/static/css/custom-2020-styles.css" rel="stylesheet">
+
+    
+
+    
+    
+
+    
+
+  </head>
+
+  <body>
+  <div id="content-wrapper">
+
+    <header class="header ">
+        <div class="top-nav" role="navigation">
+        <!--
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/2020/">Home</a>
+          </li>
+          
+            <li class="nav-item">
+              <a id="sign-up-link" class="nav-link" href="/2020/accounts/signup/">
+                Sign Up
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="log-in-link" class="nav-link" href="/2020/accounts/login/">
+                Sign In
+              </a>
+            </li>
+          
+        </ul>
+        -->
+      </div>
+        <a href="/" class="header-img">
+          <h1 class="sr-only">PyCon Pittsburgh. April 15-23, 2020.</h1>
+        </a>
+    </header>
+
+    <button id="toggle-nav" class="btn btn--toggle">Menu</button>
+    <div id="main-nav" class="main-nav" role="navigation">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-collapse">
+            
+<ul class="navbar-nav mr-auto">
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-1" data-toggle="dropdown">
+                About PyCon
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-1">
+    
+        <a class="dropdown-item " href="/2020/about/" >What Is PyCon?</a>
+    
+        <a class="dropdown-item " href="/2020/about/code-of-conduct/" >Code of Conduct</a>
+    
+        <a class="dropdown-item " href="/2020/about/diversity/" >Diversity</a>
+    
+        <a class="dropdown-item " href="/2020/about/staff/" >Staff Information</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-4" data-toggle="dropdown">
+                PSF
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-4">
+    
+        <a class="dropdown-item " href="/2020/psf/" >Python Software Foundation</a>
+    
+        <a class="dropdown-item " href="/2020/donate/" >Donate</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-42" data-toggle="dropdown">
+                Events
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-42">
+    
+        <a class="dropdown-item " href="/2020/events/languagesummit/" >Language Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/edusummit/" >Education Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/startuprow/participants/" >Startup Row Participants</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/online/" class="nav-link  ">
+                Online
+            </a>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/sponsors/virtualexpohall/" class="nav-link  ">
+                Virtual Expo Hall
+            </a>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-43" data-toggle="dropdown">
+                Hatchery
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-43">
+    
+        <a class="dropdown-item " href="/2020/hatchery/trainers/" >Python Trainers Summit</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/mentoredsprints/" >Mentored Sprints for Diverse Beginners</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/beginnersdata/" >Beginners Data Workshop for Minorities</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-36" data-toggle="dropdown">
+                Resources
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-36">
+    
+        <a class="dropdown-item " href="/2020/financial-assistance/" >Financial Aid</a>
+    
+        <a class="dropdown-item " href="/2020/registration/airline-resources/" >Airfare Cancellation Resources</a>
+    
+        <a class="dropdown-item " href="/2020/registration/international-refund/" >International Refund Policy</a>
+    
+</div>
+            
+        </li>
+    
+</ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+
+      
+
+      
+    
+
+
+      
+<div class="cms_page_title">
+<h1>Proposing a Talk</h1>
+</div>
+<div class="callout" style="margin-bottom: 1em;">
+<h3>Timeline</h3>
+<ul>
+<li>September 12, 2019 — Our Call For Proposals opens.
+<li>December 20, 2019 — Our Call For Proposals closes.
+<li>January 2020 — We send acceptance and rejection emails.
+<li>February 2020 — The schedule is posted here on the web site.
+<li>April 17-19, 2020 — The talks are all presented at PyCon 2020.
+<li>May 2020 — All talks that were recorded should be available online.
+</ul>
+<h3>PyCon Talk CFP closes in</h3>
+<div id="clockdiv" style="color: #FFFFFF; margin-left: 2em; margin-top: 1em; font-size: 1em; line-height: 1em;"></div>
+</div>
+
+<p>We are glad you are interested in speaking at PyCon 2020!</p>
+<p>To learn how to submit a proposal, visit the <a href="https://us.pycon.org/2020/speaking/">main Speaking page</a>!</p>
+<p><strong>Conference talks will be held April 17-19, 2020 at the David L Lawrence Convention Center in Pittsburgh, PA.</strong></p>
+<p>This document is a guide to help you submit the best possible proposal and offers tips to make your proposal more likely to be accepted. Please keep in mind that many more proposals are submitted for talks, tutorials, and posters than can be accepted. But following the recommendations provided here can increase your chances of acceptance.</p>
+<p>PyCon does not want expenses to discourage you from submitting a proposal, and offers speaker grants to ensure that anyone can speak at PyCon. When you create a speaker profile, check the box to indicate that you require a speaker grant. This is not seen by the proposal reviewers and does not affect the review of your proposal. </p>
+<p>After proposals are selected, we&rsquo;ll reach out to you regarding your needs. We understand situations can change, and are here for you. If you have any questions about the speaker grants let us know at <a href="mailto:pycon-aid@python.org"><a href="mailto:pycon-aid@python.org">pycon-aid@python.org</a></a></p>
+<h1>Important Dates</h1>
+<p>Talk proposals are due this year on <strong>20 December 2019</strong> <a href="https://en.wikipedia.org/wiki/Anywhere_on_Earth">AoE</a>. You can view what time that is locally to you <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=PyCon+2020+CFP+Deadline+for+Talks%2C+Posters%2C+Charlas%2C+and+Education+Summit&amp;iso=20191220T235959&amp;p1=3399">here</a>.</p>
+<ul>
+<li>September 12, 2019 — Our Call For Proposals opens.</li>
+<li>December 20, 2019 — Our Call For Proposals closes.</li>
+<li>January 2020 — We send acceptance and rejection emails.</li>
+<li>February 2020 — The schedule is posted here on the web site.</li>
+<li>April 17-19, 2020 — The talks are all presented at PyCon 2020.</li>
+<li>May 2020 — All talks that were recorded should be available online.</li>
+</ul>
+<h1>Topics and Advice</h1>
+<p>What excites you about Python development or the community lately? What do you wish someone had told you when you were starting out? What has been the slowest or most frustrating thing you&rsquo;ve had to learn over the past few years, and could you put together a talk that would assist in that process for the next Pythonista who tackles the same problem? </p>
+<p>Recent articles, blog posts, tweets, and open source projects from the community can be a good source of talk topics and ideas, as can your own experiences as a developer. </p>
+<p>As you consider different topics, you might be interested in reviewing the slate of talks selected to appear at PyCon in previous years:</p>
+<ul>
+<li><a href="http://us.pycon.org/2019/schedule/talks/">PyCon 2019 Talks</a></li>
+<li><a href="http://us.pycon.org/2018/schedule/talks/">PyCon 2018 Talks</a></li>
+<li><a href="http://us.pycon.org/2017/schedule/talks/">PyCon 2017 Talks</a></li>
+<li><a href="http://us.pycon.org/2016/schedule/talks/">PyCon 2016 Talks</a></li>
+<li><a href="http://us.pycon.org/2015/schedule/talks/">PyCon 2015 Talks</a></li>
+</ul>
+<p>There are also community members who have blogged about the talk proposal process. Here are a few of the most prominent resources, and a Google search will yield you several more:</p>
+<ul>
+<li><a href="https://hynek.me/articles/speaking/">On Conference Speaking</a> Hynek Schlawack (2017)</li>
+<li><a href="http://www.njl.us/essays/pycon-talks/">How to Get Your Talk Into PyCon</a> — from Ned Jackson Lovely, chair of the talk selection committee for 2016 and 2017!</li>
+<li><a href="http://akaptur.com/blog/2014/09/11/rejected-pycon-proposals/">Rejected PyCon Proposals</a> — Allison Kaptur (2014)</li>
+<li><a href="http://rhodesmill.org/brandon/2013/example-pycon-proposals/">Example PyCon talk proposals</a> — Brandon Rhodes (2013)</li>
+<li><a href="http://craigkerstiens.com/2012/06/19/pro-tips-for-conference-talks/">Pro Tips for Conference Talks</a> — Craig Kerstiens (2012)</li>
+<li><a href="http://doughellmann.com/2011/10/18/how-i-review-a-pycon-talk-proposal.html">How I Review a PyCon Talk Proposal</a> — Doug Hellmann (2011)</li>
+</ul>
+<h1>Mentoring</h1>
+<p>First time speakers are welcomed and encouraged. In order to support speakers, we are going to be trying something new this year for obtaining mentorship and feedback from experienced speakers. Above all we want you to be successful and have a good time telling other attendees about your ideas!</p>
+<p>We&rsquo;re happy to help with any of the following:</p>
+<ul>
+<li>Exploring and brainstorming your interests to help you identify hidden topics that would make great talks.</li>
+<li>Connecting you with experienced speakers to help develop your proposal and talk.</li>
+<li>Reviewing your outline, slide deck, or notes.</li>
+<li>Anything else that&rsquo;d help you be at ease and excited about bringing your ideas to our audience!</li>
+</ul>
+<p>You’ll find checkboxes for both giving and receiving mentorship on the Speakers Profile page.</p>
+<h1>Good Ideas</h1>
+<ul>
+<li>
+<p><strong>Submit your proposal early.</strong> The program committee will provide feedback on talks that come into our system, and we <em>will</em> work with you to improve your proposal, but this is only feasible if your proposal is submitted well before the deadline.</p>
+</li>
+<li>
+<p>Be sure to answer some basic questions:</p>
+<ul>
+<li>
+<p>Who is the intended audience for your talk? (Be specific; &ldquo;Python programmers&rdquo; is not a good answer to this question.)</p>
+</li>
+<li>
+<p>What will attendees get out of your talk? When they leave the room, what will they know that they didn&rsquo;t know before?</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Your outline should be an <em>enumeration</em> of what you intend to say, along with time estimates.</p>
+<ul>
+<li>
+<p>It is not necessary to have completely written your talk already, but you should have an idea of what the points you intend to make are and roughly how long you will spend on each one.</p>
+</li>
+<li>
+<p>If you are requesting a 45-minute slot, remember that these are in very limited supply. Be sure to explain how you will change your talk if we can only offer you a 30-minute slot.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Ensure that your talk will be relevant to a non-trivial set of people.</strong> If your talk is on a particular Python package or piece of software, it should be something that a significant number of people use or want to use. If your talk is about a package that you are writing, ensure that it has gained <em>some</em> acceptance before submitting a talk. If a tool you&rsquo;re excited about is not used widely, consider shifting the focus of your talk to a related best practice or theme which will have broader applicability and a larger audience.</p>
+</li>
+<li>
+<p>Include links to source code, articles, blog posts, videos, or other resources that add context to your proposal.</p>
+</li>
+<li>
+<p>If you&rsquo;ve given a talk, tutorial, or other presentation before, especially at an earlier PyCon or another conference, include that information as well as a link to slides or a video if they&rsquo;re available.</p>
+</li>
+</ul>
+<h1>Bad Ideas</h1>
+<ul>
+<li>
+<p><strong>Avoid infomercials.</strong></p>
+<ul>
+<li>
+<p>That doesn&rsquo;t mean you can&rsquo;t talk about your work or company at PyCon. For instance, we welcome talks on how you or your company solved a problem or notable open source projects that may benefit attendees.</p>
+</li>
+<li>
+<p>On the other hand, talks on &ldquo;how to use our product&rdquo; (or similar) usually aren&rsquo;t appropriate.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Avoid presenting a proposal for code that is incomplete.</strong> The program committee is <em>very</em> skeptical of &ldquo;conference-driven development&rdquo;. </p>
+</li>
+<li>
+<p><strong>Avoid &ldquo;state of our project&rdquo; talks</strong>, unless you can make a compelling argument that the talk will be well-attended and that attendees will gain value from it.</p>
+</li>
+<li>
+<p>Do not assume that everyone on the Program Committee will know who you are simply because you have presented at PyCon in the past. <strong>Everyone should submit a detailed proposal.</strong> During the first round of review, we won&rsquo;t even see your name on the proposal!</p>
+</li>
+</ul>
+<script>
+var deadline = 'December 20 2019 23:59:59 UTC-1200';
+function getTimeRemaining(endtime){
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.max(0, Math.floor( (t/1000) % 60 ));
+  var minutes = Math.max(0, Math.floor( (t/1000/60) % 60 ));
+  var hours = Math.max(0, Math.floor( (t/(1000*60*60)) % 24 ));
+  var days = Math.max(0, Math.floor( t/(1000*60*60*24) ));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+function initializeClock(id, endtime){
+  var clock = document.getElementById(id);
+  var timeinterval = setInterval(function(){
+    var t = getTimeRemaining(endtime);
+    clock.innerHTML = 
+                      '<b>' + t.days + ' days'+ '</b><br>' +
+                      '<b>' + t.hours + ' hours'+ '</b><br>' +
+                      '<b>' + t.minutes + ' minutes'+ '</b><br>' +
+                      '<b>' + t.seconds + ' seconds'+ '</b><br>'
+  },1000);
+}
+initializeClock('clockdiv', deadline);
+</script>
+
+
+
+    </div>
+
+  </div>
+
+    <footer class="footer">
+      <div class="footer-img"></div>
+      <div class="credits">
+        <a href="http://python.org/psf-landing/">
+          <img class="psf-logo" src="/2020/static/images/psf-logo.png" width=300 alt="PSF logo">
+        </a>
+        <p class="footer-credits">
+          The PyCon 2020 conference in Pittsburgh, PA, USA, is a production of the
+          <a href="http://python.org/psf-landing/">Python Software Foundation</a>.
+        </p>
+        <p class="footer-credits">
+          This site is built using
+          <a href="https://www.djangoproject.com/">Django</a>
+          and
+          <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+          Hosting is provided by
+          <a href="http://heroku.com/">Heroku</a>.
+        </p>
+        <p class="footer-credits">
+          PyCon 2020 logo and design created by
+          <a href="http://robbdesign.co">
+            <img class="footer-credit-logo" title="Robb Design Co." alt="Robb Design Co." src="/2020/static/images/robb-design-co.png"/>
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    
+
+    
+      <!-- Bootstrap JS and its dependencies-->
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/b-1.6.1/b-html5-1.6.1/b-print-1.6.1/sl-1.3.1/datatables.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+      <!-- Third-party javascript libraries go here -->
+
+      <!-- Project specific Javascript in this file -->
+      <script src="/2020/static/js/project.js"></script>
+
+      
+      
+
+      
+
+    
+  </body>
+</html>

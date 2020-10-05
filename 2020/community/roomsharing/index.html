@@ -1,0 +1,772 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PyCon US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="/2020/static/images/2020-favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/2020/static/images/2020-favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/2020/static/images/2020-favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/2020/static/images/2020-favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/2020/static/images/2020-favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/2020/static/images/2020-favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/2020/static/images/2020-favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/2020/static/images/2020-favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/2020/static/images/2020-favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/2020/static/images/2020-favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/2020/static/images/2020-favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2020/static/images/2020-favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2020/static/images/2020-favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2020/static/images/2020-favicons/favicon-16x16.png">
+    <link rel="manifest" href="/2020/static/images/2020-favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/2020/static/images/2020-favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+    <!-- Third-party CSS libraries go here -->
+
+    <!-- project-specific CSS -->
+    <link href="/2020/static/css/custom-2020-styles.css" rel="stylesheet">
+
+    
+
+    
+    
+
+    
+
+  </head>
+
+  <body>
+  <div id="content-wrapper">
+
+    <header class="header ">
+        <div class="top-nav" role="navigation">
+        <!--
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/2020/">Home</a>
+          </li>
+          
+            <li class="nav-item">
+              <a id="sign-up-link" class="nav-link" href="/2020/accounts/signup/">
+                Sign Up
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="log-in-link" class="nav-link" href="/2020/accounts/login/">
+                Sign In
+              </a>
+            </li>
+          
+        </ul>
+        -->
+      </div>
+        <a href="/" class="header-img">
+          <h1 class="sr-only">PyCon Pittsburgh. April 15-23, 2020.</h1>
+        </a>
+    </header>
+
+    <button id="toggle-nav" class="btn btn--toggle">Menu</button>
+    <div id="main-nav" class="main-nav" role="navigation">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-collapse">
+            
+<ul class="navbar-nav mr-auto">
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-1" data-toggle="dropdown">
+                About PyCon
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-1">
+    
+        <a class="dropdown-item " href="/2020/about/" >What Is PyCon?</a>
+    
+        <a class="dropdown-item " href="/2020/about/code-of-conduct/" >Code of Conduct</a>
+    
+        <a class="dropdown-item " href="/2020/about/diversity/" >Diversity</a>
+    
+        <a class="dropdown-item " href="/2020/about/staff/" >Staff Information</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-4" data-toggle="dropdown">
+                PSF
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-4">
+    
+        <a class="dropdown-item " href="/2020/psf/" >Python Software Foundation</a>
+    
+        <a class="dropdown-item " href="/2020/donate/" >Donate</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-42" data-toggle="dropdown">
+                Events
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-42">
+    
+        <a class="dropdown-item " href="/2020/events/languagesummit/" >Language Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/edusummit/" >Education Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/startuprow/participants/" >Startup Row Participants</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/online/" class="nav-link  ">
+                Online
+            </a>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/sponsors/virtualexpohall/" class="nav-link  ">
+                Virtual Expo Hall
+            </a>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-43" data-toggle="dropdown">
+                Hatchery
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-43">
+    
+        <a class="dropdown-item " href="/2020/hatchery/trainers/" >Python Trainers Summit</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/mentoredsprints/" >Mentored Sprints for Diverse Beginners</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/beginnersdata/" >Beginners Data Workshop for Minorities</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link active dropdown-toggle" aria-haspopup="true" id="navitem-36" data-toggle="dropdown">
+                Resources
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-36">
+    
+        <a class="dropdown-item " href="/2020/financial-assistance/" >Financial Aid</a>
+    
+        <a class="dropdown-item " href="/2020/registration/airline-resources/" >Airfare Cancellation Resources</a>
+    
+        <a class="dropdown-item " href="/2020/registration/international-refund/" >International Refund Policy</a>
+    
+</div>
+            
+        </li>
+    
+</ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+
+      
+
+      
+    
+
+
+      
+
+<div style="text-align: center">
+  <h1>Room Sharing</h1>
+</div>
+<br>
+
+<div>
+  <p>
+    Do you want to share a room at one of the <a href="/2020/venue/#hotels">PyCon hotels</a> or another hotel with other attendees?
+  </p>
+
+  <p>
+    To list yourself on this page, submit an offer or request below to provide:
+  </p>
+
+  <ul>
+    <li>your arrival date</li>
+    <li>your departure date</li>
+    <li>how you'd like to be contacted</li>
+    <li>any additional information that's important to find a suitable roommate</li>
+  </ul>
+
+  <p>
+    <b>Note</b>: If you see a possible match please make contact and set up arrangements amongst yourselves. Once arrangements are confirmed please select 'withdraw' to remove your request from the list.
+  </p>
+
+  <p>
+    <b>Note</b>: If any of your roommates will be arriving separately, be sure to list their names on the reservation as having permission to check in and get a key to your shared room from the front desk by showing photo ID.
+  </p>
+
+  <p>
+    When reserving your room, be sure to specify the type and number of beds! Some rooms only have a single king size bed; not ideal for platonic room sharing. Cots may be available, but they are not very comfortable.
+  </p>
+
+  <p>
+    <b>Code of conduct</b>: All room sharing requests and offers must observe the <a href="/2020/about/code-of-conduct/">PyCon Code of Conduct</a>. Both parties must agree to observe the <a href="/2020/about/code-of-conduct/">PyCon Code of Conduct</a> during their shared stay. Code of conduct violations can be reported in the same manner described in our <a href="/2020/about/code-of-conduct/attendee-procedure/">Procedure for reporting incidents</a>.
+  </p>
+
+  <p>
+    <b>Caution</b>: Room sharing arrangements are the responsibilities of the individual parties involved. The Python Software Foundation and PyCon Staff takes no responsibility, and cannot get involved in any financial disputes.
+  </p>
+</div>
+
+<hr>
+
+<div style="text-align: center">
+  <span><h2>Submit a Room Sharing offer or request</h2></span>
+  <br>
+  
+  <a href="/2020/accounts/login/?next=/2020/community/roomsharing/" class="btn">Login to continue...</a>
+  
+</div>
+
+<hr>
+
+<div>
+  <span><h2>Rooms Offered</h2></span>
+  <div>
+    <ul style="margin: 1em;">
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 15, 2020 - April 23, 2020<br>
+            <b>Contact Info</b>: twitter dm @vicki_langer or text (607)761-8108<br>
+            <b>Additional Info</b>: I don&#39;t smoke or drink and I&#39;m somewhere in the spectrum of lgbt. I&#39;m married and not looking for any weirdness.
+
+I want to say something to make someone trans*/nonbinary/lgbt comfortable w/ sharing a room, but I also fear sounding like a crazy weirdo. but seriously, I just want to have &amp; offer someone a safe place to sleep and recharge introvert batteries
+
+https://twitter.com/vicki_langer/status/1197224669251866629?s=20
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 15, 2020 - April 19, 2020<br>
+            <b>Contact Info</b>: bpchung2@gmail.com<br>
+            <b>Additional Info</b>: Have a room at the Embassy Suites Hilton (about .4m away), with two queen beds. Clean, male, nonsmoker. Looking for a nice person to split the room with for the four nights). Lmk if you&#39;re interested or have any questions too. Thanks!
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 15, 2020 - April 20, 2020<br>
+            <b>Contact Info</b>: rpost at austin.utexas.edu<br>
+            <b>Additional Info</b>: Hey! I&#39;m a non-smoking woman, looking to share a room with another woman, or possibly a not-straight man. I have a room with two beds at the Drury Plaza and want to share to help keep down costs. Right now the reservation says 2 people, but if you know someone you&#39;re willing to share a bed with, or if you would be ok on the floor, I will see if I can change it to three. I prefer relative quiet from 11pm-7am. Outside of working with Python, I like eating good food and being outside.
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 15, 2020 - April 19, 2020<br>
+            <b>Contact Info</b>: kdwarn@protonmail.com<br>
+            <b>Additional Info</b>: Looking for a fellow male vegan to share a room with. I have a room with two queen beds booked at the Drury Plaza Hotel. Half the cost would be $408, although that might go up slightly if the hotel charges more for an additional person in the room.
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 15, 2020 - April 23, 2020<br>
+            <b>Contact Info</b>: jalilhalifel@gmail.com<br>
+            <b>Additional Info</b>: I have an available Queen size bed in a non-smoking suite at the Embassy Suites by Hilton Downtown Pittsburgh. I would prefer a female roommate (I am male), however, I am open to any gender (male or female). Room is booked for 8 days (4/15 - 4/23), so cost would be split 50%. Willing to prorate for stay less than 8 days, however minimum stay time must be 5 days. Please email me for further information. Peace and Love!
+          </p>
+      </li>
+  
+    </ul>
+  </div>
+</div>
+
+<hr>
+
+<div>
+  <span><h2>Rooms Needed</h2></span>
+  <div>
+    <ul style="margin: 1em;">
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 14, 2020 - April 24, 2020<br>
+            <b>Contact Info</b>: josephmargay5@gmail.com<br>
+            <b>Additional Info</b>: Am cool with any gender be it male/female, and i don&#39;t smoke.
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 15, 2020 - April 20, 2020<br>
+            <b>Contact Info</b>: reikdas@fnal.gov<br>
+            <b>Additional Info</b>: I am a 21-year-old male, who is a speaker at the conference. I am comfortable with a roommate of any gender. Please ping me if you have an extra bed or would like to book a room with multiple beds to split the bill, I am getting financial aid so any good accommodation close to the conference should be fine. I do computer science for High Energy Physics experiments, so you can look forward to a lot of interesting physics conversation if you have me as a roommate ;)
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 16, 2020 - April 21, 2020<br>
+            <b>Contact Info</b>: sh84.ahn@gmail.com<br>
+            <b>Additional Info</b>: IT Developer, non-smoker, gender doesn&#39;t matter.
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 16, 2020 - April 19, 2020<br>
+            <b>Contact Info</b>: richard.penman@gmail.com<br>
+            <b>Additional Info</b>: male, non-smoking
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 15, 2020 - April 21, 2020<br>
+            <b>Contact Info</b>: josereyes.jdi@gmail.com<br>
+            <b>Additional Info</b>: non-smoking, no limit people.
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 14, 2020 - April 20, 2020<br>
+            <b>Contact Info</b>: @brunifrancesco<br>
+            <b>Additional Info</b>: male, no smoking, no drinking, no partying all the night, hating the light when sleeping :)
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 15, 2020 - April 23, 2020<br>
+            <b>Contact Info</b>: bharatishahu712@gmail.com<br>
+            <b>Additional Info</b>: I am Female, non-smoker, no limit people.
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 14, 2020 - April 24, 2020<br>
+            <b>Contact Info</b>: ruth.hazel15@gmail.com<br>
+            <b>Additional Info</b>: Share with one person
+Gender : Female
+Non-smoking
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 14, 2020 - April 24, 2020<br>
+            <b>Contact Info</b>: 8220490110<br>
+            <b>Additional Info</b>: I want rooms for two .Both are female.So i would like to have a female member in our room
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 16, 2010 - April 19, 2020<br>
+            <b>Contact Info</b>: Dunya@renorun.ca<br>
+            <b>Additional Info</b>: Looking for: Non smoking, nice, fun, friendly female.
+
+Myself: 24 year old female from Montreal, Canada. Data Scientist at RenoRun. 
+
+:)
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 16, 2020 - April 19, 2020<br>
+            <b>Contact Info</b>: 9295180183<br>
+            <b>Additional Info</b>: non-smoking
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 15, 2020 - April 24, 2020<br>
+            <b>Contact Info</b>: himanshikhandelwal8@gmail.com<br>
+            <b>Additional Info</b>: looking for a female roomate, non smoker
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 16, 2020 - April 20, 2020<br>
+            <b>Contact Info</b>: juluribk@gmail.com<br>
+            <b>Additional Info</b>: male. non-smoking.
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 14, 2020 - April 24, 2020<br>
+            <b>Contact Info</b>: aditya.bholah07@gmail.com<br>
+            <b>Additional Info</b>: Hello from Mauritius, I&#39;m looking for a room if anyone is sharing. I have no specific requirements and I can share the cost of the room if needed. I am applying for Financial Aid, so my need for the room will be subject to approval of my financial aid and the amount being offered. Thanks y&#39;all.
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 14, 2020 - April 24, 2020<br>
+            <b>Contact Info</b>: e.a.odeniyi@gmail.com, ooakinsowon@futa.edu.ng<br>
+            <b>Additional Info</b>: Female, looking for non-smoking female room mate
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 14, 2020 - April 24, 2020<br>
+            <b>Contact Info</b>: yoluwanifemialowolodu002@gmail.com<br>
+            <b>Additional Info</b>: female, non- smoker, developer,
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 14, 2020 - April 24, 2020<br>
+            <b>Contact Info</b>: princessjike@gmail.com<br>
+            <b>Additional Info</b>: I am a student from Nigeria, studying Computer Science. I will appreciate a cheap hotel because i applied for financial aid(Hopefully it&#39;s approved), a female, non-smoking, no alcohol, not lousy and accomodating.
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 14, 2020 - April 24, 2020<br>
+            <b>Contact Info</b>: taiwo.kolajo@fulokoja.edu.ng<br>
+            <b>Additional Info</b>: I can share with one or two non-smoking females.
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 14, 2020 - April 24, 2020<br>
+            <b>Contact Info</b>: therefeu12@gmail.com<br>
+            <b>Additional Info</b>: I want to share with a woman, non-smoking.
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 16, 2020 - April 19, 2020<br>
+            <b>Contact Info</b>: shreyakhurana11235@gmail.com<br>
+            <b>Additional Info</b>: Hi, I&#39;m looking for 1-2 girls/women to share a room with. I will be speaking at the conference and am applying for financial aid, so a good cheap room will be the preference :)
+Sharing only with non-smoking females please.
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 16, 2020 - April 20, 2020<br>
+            <b>Contact Info</b>: Prashanth - 317 7014810<br>
+            <b>Additional Info</b>: Hello - I&#39;m a male non smoker travelling from Indianapolis to Pittsburg for the PyCon 2020! Looking for a room to stay
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 15, 2020 - April 24, 2020<br>
+            <b>Contact Info</b>: fcardoso0917@gmail.com<br>
+            <b>Additional Info</b>: I do not smoke. I have no problems with the number of people and neither the gender. My only requirement is silence between 00h and 8am.
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 14, 2020 - April 24, 2020<br>
+            <b>Contact Info</b>: EmadG.Kamel@gmail.com or TW: @EmadGKamel<br>
+            <b>Additional Info</b>: 25 M,I don&#39;t smoke and I hate the light when sleeping but I don&#39;t mind to talk in tech. working as a DevOps/Backend developer
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 14, 2020 - April 24, 2020<br>
+            <b>Contact Info</b>: khansa.amrouni@gmail.com<br>
+            <b>Additional Info</b>: Hi, I&#39;m looking for 1-2 girls/women to share a room with. I will attend the conference by applying for financial aid, so a cozy cheap room will be the preference :) Sharing only with non-smoking/alcohol females please.
+Thanks
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 17, 2020 - April 20, 2020<br>
+            <b>Contact Info</b>: prernakanakia@gmail.com<br>
+            <b>Additional Info</b>: female, 34, software engineer at a national lab in long island new york. easy-going , clean, non smoker
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 15, 2020 - April 20, 2020<br>
+            <b>Contact Info</b>: hello@bsao.me<br>
+            <b>Additional Info</b>: Looking for anyplace to rest my body! No special requirements.
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 14, 2020 - April 23, 2020<br>
+            <b>Contact Info</b>: bdossul@gmail.com<br>
+            <b>Additional Info</b>: Hi everyone - Currently looking for a room to share - Will attend the Pycon 2020 for first time. ME: male, non smoker, fitness fanatic, FUN! - I started learning Python last year, so I look forward to learning more. Ping me if anyone has a room available to share during the above conference. Thank you!
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 14, 2020 - April 23, 2020<br>
+            <b>Contact Info</b>: maryalichko@gmail.com<br>
+            <b>Additional Info</b>: will live only with womxn
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 16, 2020 - April 21, 2020<br>
+            <b>Contact Info</b>: sanchitb@buffalo.edu<br>
+            <b>Additional Info</b>: [22M] Student at the University at Buffalo studying Computer Science and Music Performance, super stoked for the conference! No requirements as such, but I was hoping to go for the cheapest hostel/airbnb/hotel and make it even cheaper with a partner :)
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 15, 2020 - April 22, 2020<br>
+            <b>Contact Info</b>: razzormandar@gmail.com<br>
+            <b>Additional Info</b>: Graduate Student at UCLA, working on machine learning and data science
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 16, 2020 - April 24, 2020<br>
+            <b>Contact Info</b>: vagishagupta23@gmail.com<br>
+            <b>Additional Info</b>: Hello, I am from New Delhi. I&#39;m looking for 1-2 non-smoking female to share a room with. Ping me if anyone has a room available to share or planning to book a room during the conference.
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 14, 2020 - April 24, 2020<br>
+            <b>Contact Info</b>: gmaharsh2@gmail.com<br>
+            <b>Additional Info</b>: Male
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 15, 2020 - April 20, 2020<br>
+            <b>Contact Info</b>: muheuenga@gmail.com<br>
+            <b>Additional Info</b>: i am looking for a room to share (Hostel or e.t.c). Non smoker
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 15, 2020 - April 21, 2020<br>
+            <b>Contact Info</b>: ortega.cpp@gmail.com<br>
+            <b>Additional Info</b>: My budget is $300, ideal to share an Airbnb. Male, non-smoking, student. I&#39;m a quiet person.
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 14, 2020 - April 23, 2020<br>
+            <b>Contact Info</b>: +264816943400<br>
+            <b>Additional Info</b>: Looking for a roommate to share. None smoker 33 years old lady, and none gender discriminating. A professional from Namibia
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 15, 2020 - April 20, 2020<br>
+            <b>Contact Info</b>: marjeta.cedilnik@lewyx.com<br>
+            <b>Additional Info</b>: Female, Django developer, math nerd, nonsmoker. I&#39;m very easygoing, patient, and flexible.
+My only limitation: I want to share room with non-smokers and not too much noise between midnight-7am
+I don&#39;t care about the number of people, and I can sleep on the floor in a sleeping bag, if necessary.
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 18, 2020 - April 19, 2020<br>
+            <b>Contact Info</b>: Call or text +13522260270<br>
+            <b>Additional Info</b>: Looking for a room for 4/18. I am male, working as a data scientist
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 14, 2020 - April 19, 2020<br>
+            <b>Contact Info</b>: 3462980150<br>
+            <b>Additional Info</b>: Gender: Male
+Non smoking
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 14, 2020 - April 19, 2020<br>
+            <b>Contact Info</b>: walawalkarnupura@gmail.com<br>
+            <b>Additional Info</b>: Python developer, easy going, flexible,looking for a room to share with non smoking people.
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 23, 2020 - April 23, 2020<br>
+            <b>Contact Info</b>: stevenyholm@gmail.com<br>
+            <b>Additional Info</b>: ** I can&#39;t attend anymore due to coronavirus in my community. **
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 15, 2020 - April 19, 2020<br>
+            <b>Contact Info</b>: tolupona01@gmail.com<br>
+            <b>Additional Info</b>: I am a female, I do not smoke, looking for a fellow female to share a room with. I arrive on 15th April and depart on 19th April. I am a student at Western Illinois University and I&#39;m new to Python. I am easy to get along with.
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 16, 2020 - April 22, 2020<br>
+            <b>Contact Info</b>: me@rmax.io<br>
+            <b>Additional Info</b>: All genders-friendly, vegan-friendly, open minded, easy going, introvert with extrovert bursts, non-smoker, zero alcohol and long time python user and contributor. 
+
+Looking for a place to rest, recharge and do some yoga. Twitter: rmaxio
+
+Open to share room with 2-3 persons to keep costs low. Let&#39;s get in touch!
+          </p>
+      </li>
+  
+      <li style="margin-top: 1em;">
+          <p>
+            <b>Dates</b>: April 16, 2020 - April 20, 2020<br>
+            <b>Contact Info</b>: drew.gilliesbc@gmail.com<br>
+            <b>Additional Info</b>: I&#39;m a guy looking for a room
+          </p>
+      </li>
+  
+    </ul>
+  </div>
+</div>
+
+<hr>
+
+<div style="text-align: center; font: smaller;">
+See something inappropriate or fishy? Let us know at <a href="mailto:pycon-reg@python.org">pycon-reg@python.org</a>.
+</div>
+
+
+
+
+    </div>
+
+  </div>
+
+    <footer class="footer">
+      <div class="footer-img"></div>
+      <div class="credits">
+        <a href="http://python.org/psf-landing/">
+          <img class="psf-logo" src="/2020/static/images/psf-logo.png" width=300 alt="PSF logo">
+        </a>
+        <p class="footer-credits">
+          The PyCon 2020 conference in Pittsburgh, PA, USA, is a production of the
+          <a href="http://python.org/psf-landing/">Python Software Foundation</a>.
+        </p>
+        <p class="footer-credits">
+          This site is built using
+          <a href="https://www.djangoproject.com/">Django</a>
+          and
+          <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+          Hosting is provided by
+          <a href="http://heroku.com/">Heroku</a>.
+        </p>
+        <p class="footer-credits">
+          PyCon 2020 logo and design created by
+          <a href="http://robbdesign.co">
+            <img class="footer-credit-logo" title="Robb Design Co." alt="Robb Design Co." src="/2020/static/images/robb-design-co.png"/>
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    
+
+    
+      <!-- Bootstrap JS and its dependencies-->
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/b-1.6.1/b-html5-1.6.1/b-print-1.6.1/sl-1.3.1/datatables.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+      <!-- Third-party javascript libraries go here -->
+
+      <!-- Project specific Javascript in this file -->
+      <script src="/2020/static/js/project.js"></script>
+
+      
+      
+
+      
+
+    
+  </body>
+</html>

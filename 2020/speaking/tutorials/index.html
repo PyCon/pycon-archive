@@ -1,0 +1,425 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PyCon US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="/2020/static/images/2020-favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/2020/static/images/2020-favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/2020/static/images/2020-favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/2020/static/images/2020-favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/2020/static/images/2020-favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/2020/static/images/2020-favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/2020/static/images/2020-favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/2020/static/images/2020-favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/2020/static/images/2020-favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/2020/static/images/2020-favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/2020/static/images/2020-favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2020/static/images/2020-favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2020/static/images/2020-favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2020/static/images/2020-favicons/favicon-16x16.png">
+    <link rel="manifest" href="/2020/static/images/2020-favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/2020/static/images/2020-favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+    <!-- Third-party CSS libraries go here -->
+
+    <!-- project-specific CSS -->
+    <link href="/2020/static/css/custom-2020-styles.css" rel="stylesheet">
+
+    
+
+    
+    
+
+    
+
+  </head>
+
+  <body>
+  <div id="content-wrapper">
+
+    <header class="header ">
+        <div class="top-nav" role="navigation">
+        <!--
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/2020/">Home</a>
+          </li>
+          
+            <li class="nav-item">
+              <a id="sign-up-link" class="nav-link" href="/2020/accounts/signup/">
+                Sign Up
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="log-in-link" class="nav-link" href="/2020/accounts/login/">
+                Sign In
+              </a>
+            </li>
+          
+        </ul>
+        -->
+      </div>
+        <a href="/" class="header-img">
+          <h1 class="sr-only">PyCon Pittsburgh. April 15-23, 2020.</h1>
+        </a>
+    </header>
+
+    <button id="toggle-nav" class="btn btn--toggle">Menu</button>
+    <div id="main-nav" class="main-nav" role="navigation">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-collapse">
+            
+<ul class="navbar-nav mr-auto">
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-1" data-toggle="dropdown">
+                About PyCon
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-1">
+    
+        <a class="dropdown-item " href="/2020/about/" >What Is PyCon?</a>
+    
+        <a class="dropdown-item " href="/2020/about/code-of-conduct/" >Code of Conduct</a>
+    
+        <a class="dropdown-item " href="/2020/about/diversity/" >Diversity</a>
+    
+        <a class="dropdown-item " href="/2020/about/staff/" >Staff Information</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-4" data-toggle="dropdown">
+                PSF
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-4">
+    
+        <a class="dropdown-item " href="/2020/psf/" >Python Software Foundation</a>
+    
+        <a class="dropdown-item " href="/2020/donate/" >Donate</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-42" data-toggle="dropdown">
+                Events
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-42">
+    
+        <a class="dropdown-item " href="/2020/events/languagesummit/" >Language Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/edusummit/" >Education Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/startuprow/participants/" >Startup Row Participants</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/online/" class="nav-link  ">
+                Online
+            </a>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/sponsors/virtualexpohall/" class="nav-link  ">
+                Virtual Expo Hall
+            </a>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-43" data-toggle="dropdown">
+                Hatchery
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-43">
+    
+        <a class="dropdown-item " href="/2020/hatchery/trainers/" >Python Trainers Summit</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/mentoredsprints/" >Mentored Sprints for Diverse Beginners</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/beginnersdata/" >Beginners Data Workshop for Minorities</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-36" data-toggle="dropdown">
+                Resources
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-36">
+    
+        <a class="dropdown-item " href="/2020/financial-assistance/" >Financial Aid</a>
+    
+        <a class="dropdown-item " href="/2020/registration/airline-resources/" >Airfare Cancellation Resources</a>
+    
+        <a class="dropdown-item " href="/2020/registration/international-refund/" >International Refund Policy</a>
+    
+</div>
+            
+        </li>
+    
+</ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+
+      
+
+      
+    
+
+
+      
+<div class="cms_page_title">
+<h1>Proposing a Tutorial</h1>
+</div>
+<div class="callout">
+<b>PyCon US 2020 Tutorials CFP will be open September 12 to November 22, 2019! </b><br><br>
+Remaining timeline:
+<ul>
+<li>November 22, 2019 — Our Call For Proposals closes.
+<li>January 2020 — We send acceptance and rejection emails.
+<li>February 2020 — The schedule is posted here on the web site.
+<li>April 15-16, 2020 — The tutorials are all presented at PyCon 2020.
+<li>May 2020 — All tutorials that were recorded should appear online.
+</div>
+
+<p><br></p>
+<!--Tutorial proposals are due this year on **26&nbsp;November**.-->
+
+<p>To learn the mechanics of submitting a proposal, visit the <a href="https://us.pycon.org/2020/speaking/">main Speaking page</a>.</p>
+<p>We&rsquo;ve provided some examples of <a href="https://us.pycon.org/2020/speaking/tutorials/samples/">tutorial proposals we&rsquo;ve loved in the past</a>. Please note that guidelines have changed since these samples were submitted.</p>
+<p>Do you think that you would be able to assemble 3 hours of material and lead a classroom full of PyCon attendees through learning a new skill, library, or technology? Then you might want to apply to be one of our tutorial instructors for PyCon 2019! <strong>PyCon 2020 tutorials will be held April 15-16, 2020 at the David L Lawrence Convention Center in Pittsburgh, PA.</strong></p>
+<p>As you think about your experiences, skills, and knowledge, here are some links that might help you get started in thinking about the expertise that you could bring for the benefit of the conference:</p>
+<ul>
+<li><a href="http://us.pycon.org/2019/schedule/tutorials/">PyCon 2019 Tutorials</a></li>
+<li><a href="http://us.pycon.org/2018/schedule/tutorials/">PyCon 2018 Tutorials</a></li>
+<li><a href="http://us.pycon.org/2017/schedule/tutorials/">PyCon 2017 Tutorials</a></li>
+<li><a href="http://us.pycon.org/2016/schedule/tutorials/">PyCon 2016 Tutorials</a></li>
+</ul>
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/mikepirnat/13997682270/in/album-72157644656495851/" title="IMG_0794.jpg"><img src="https://farm3.staticflickr.com/2905/13997682270_d34bb03835.jpg" width="500" height="375" alt="IMG_0794.jpg"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<h2>What information to submit</h2>
+<ol>
+<li>First,sign up for a <a href="http://us.pycon.org/2020/accounts/signup/">new account</a> .</li>
+<li>Once you are logged in proceed to your <a href="http://us.pycon.org/2020/users/dashboard/">account dashboard</a> and create a speaker profile.</li>
+<li>At this point, you can submit tutorials, fill in the fields as follows:</li>
+</ol>
+<h3>Title</h3>
+<p>Give your tutorial a name that accurately describes the tutorial&rsquo;s focus to potential students.</p>
+<h3>Description</h3>
+<p>A high-level description of the tutorial, limited to ~400 characters. The description is used to describe your tutorial online should it be selected.  So we ask that you make it brief.</p>
+<h3>Audience</h3>
+<p>At what level of Python and other topic-specific experience or expertise is the tutorial aiming for? </p>
+<p>‘Advanced’, ‘Intermediate’, and ‘Beginner’ mean something different to everyone. Feel free to include additional detail regarding the sort of background expected, as well as who may benefit. Reviewers need to know what level of Python experience is targeted and also what level(s) of domain-specific expertise is targeted, for example networking, SQL, database, etc. See our sample tutorial proposals for details.</p>
+<h3>Format</h3>
+<p>Please describe what portion of the tutorial you plan to spend on student exercises, lecture, or other activities. We don&rsquo;t want precision: we just want to know what teaching tools you&rsquo;ll use, and how interactive your tutorial will be. If you want to describe this via other means, feel free.</p>
+<p>NOTE: In past years, we instead requested submitters categorize their tutorials as &lsquo;labs&rsquo;, &lsquo;workshops&rsquo;, or &lsquo;lectures&rsquo;, but found everyone&rsquo;s definition of those terms varied.</p>
+<h3>Outline</h3>
+<p>Your outline should list the topics and activities you will guide your students through during your 3 hour tutorial. You may wish to consult the <a href="https://guides.github.com/features/mastering-markdown/">markdown guide</a> for styling. Please err on the side of &lsquo;too much detail&rsquo; rather than &lsquo;not enough&rsquo;.</p>
+<p>You should also include timing notes, estimating what portion of your tutorial you’ll devote to each major topic (usually there are 2-5 of those). </p>
+<p>The outline will not be shared with conference attendees. </p>
+<p><strong>What should my timing notes look like? How precise do I need to be?</strong></p>
+<p>We request you provide a rough estimate of how much time (or percentage of the talk) you’ll dedicate to each major topic (not subtopics). We recommend these timings be no more precise than 30-minute increments, but we’ll allow some leeway. Please don’t give your timings down to the minute!</p>
+<p>Alternatively, you are welcome to provide the portion of time you expect to spend on each major topic. Please indicate whether you are using percentages or minutes.</p>
+<p><strong>Why an outline with timings?</strong></p>
+<p>We want to assess what topics the tutorial will focus most on, as well as the level of student the course is appropriate for. For example, a course that spends 2.5 hours on simple concepts and ends with a brief tour of advanced features is more appropriate for a beginner audience than one with the opposite structure.</p>
+<p>We hope these timings will help first-time tutorial presenters think about their material: can their planned material realistically presented in the time allotted and in the depth they want.</p>
+<p>We don’t want you to rehearse the entire tutorial ahead of time. We hope, however, that these outline and timing notes will inform your decision on what is reasonable and inform us regarding what your tutorial will be like. It’s fine if these timings change when you give the tutorial. We just want to see where the focus will be.</p>
+<h3>Past Experience</h3>
+<p>Please summarize your teaching or public speaking experience, as well as your experience with the subject of the tutorial. </p>
+<p>Tell us what experience you have in the subject, in activities such as teaching or public speaking, or anything else that would help us understand and gauge your abilities as a tutorial presenter. If possible, include a link to a video and slides from the tutorial itself (if it&rsquo;s been presented before), or of other material you have presented in the past.</p>
+<p>This section is for the reviewers’ benefit only and will not be published in the PyCon guide.</p>
+<h3>Requests</h3>
+<p>Let us know if you have specific needs or special requests — for example, requests that involve accessibility, audio, or restrictions on when your talk can be scheduled.</p>
+<p>We’re considering making tutorial assistants available to instructors. These would be volunteers with Python experience who will provide one-on-one help during the tutorial when students are working on exercises. If we do this, would you be interested and if so how many students per assistant would you want?</p>
+<p><strong>Known Conflicts</strong><br />
+Please note that the education summit occurs on April 16 (conflicting with the second day of tutorials). We have a list of potentially conflicting holidays <a href="https://pycon.blogspot.com/2019/02/pycon-2020-2021-location.html">here</a>.</p>
+<p><strong>Accessibility</strong><br />
+We will accommodate disability-related needs whenever possible, and the merit of your tutorial will be judged independently from any request made here. This section will not be visible to attendees.</p>
+<h3>Miscellaneous Notes About Proposals and Tutorials</h3>
+<p>Here are some notes about the proposal, selection, and delivery process for tutorials.</p>
+<ul>
+<li>
+<p>Biography: You&rsquo;ll be asked to enter your biography when you register on this site and that information will be made public. <br />
+  Here, you may wish to include more information for reviewers to complement information about your Previous Experience.</p>
+</li>
+<li>
+<p>PyCon does not want expenses to discourage you from submitting a proposal, and offers speaker grants to ensure that<br />
+  anyone can speak at PyCon. When you create a speaker profile, check the box to indicate that you require a speaker grant. <br />
+  This is not seen by the proposal reviewers and does not affect the review of your proposal. After proposals<br />
+  are selected, we&rsquo;ll reach out to you regarding your needs. We understand situations can change, and are here for you. <br />
+  If you have any questions let us know at <a href="mailto:pycon-aid@python.org"><a href="mailto:pycon-aid@python.org">pycon-aid@python.org</a></a>. <br />
+  Please keep in mind that accepted tutorial presenters will receive a $1,500 honorarium.</p>
+</li>
+<li>
+<p>The selection process has also tended to prefer Python-relate topics over more general software development tools or <br />
+  practices that aren&rsquo;t Python-specific.</p>
+</li>
+<li>
+<p>Tutorials are subject to cancellation if enrollment is low.  In the past the cancellation criterion has been less than <br />
+  10 students registered.</p>
+</li>
+</ul>
+<h2>Q&amp;A</h2>
+<p><strong>Q: What can I do to increase the likelihood my tutorial is accepted?</strong></p>
+<p>Things we like to see include:</p>
+<ul>
+<li>
+<p><strong>A clear description of the target audience:</strong> This helps attendees know whether the tutorial is right for them and allows us to assess whether the presenter knows whether the material is appropriate for a given audience.</p>
+</li>
+<li>
+<p><strong>Reasonable learning goals:</strong> these should demonstrate what the attendees will learn and be able to do after attending the class.</p>
+</li>
+<li>
+<p><strong>Readability counts:</strong> we like outlines that are easy to understand. Markdown is a great tool for giving your submission clear formatting, allowing us to distinguish, at first glance, between topics and sub-topics. A good tutorial is available here: <a href="https://guides.github.com/features/mastering-markdown/#">https://guides.github.com/features/mastering-markdown/#</a> After submitting, please check to make sure your submission has rendered properly. </p>
+</li>
+<li>
+<p><strong>Material that clearly should be presented as a tutorial (rather than a talk):</strong> tutorial spaces are limited, and if the material can be presented more concisely, and to a bigger audience by turning it into a talk, we prefer that. </p>
+</li>
+<li>
+<p><strong>Thoughtfulness regarding time:</strong> We like to see that submitters have considered how much is reasonable to cover in a given time period and how the material might change based on the audience. To demonstrate this, you may choose to include: What topics could run over, how you’ll provide buffer time (if you need it), and what topics you might adjust if things go unexpectedly fast or slow. Think explicitly about what you can reasonably cover in the time given.</p>
+</li>
+</ul>
+<p>We&rsquo;ve provided some examples of <a href="https://us.pycon.org/2020/speaking/tutorials/samples/">tutorial proposals we&rsquo;ve loved in the past</a>. </p>
+<p><em>Please note that even if your tutorial is excellent, there’s no guarantee that it will be accepted</em>. The tutorial selection process attempts to choose a good variety of tutorial topics and levels that will be in demand, i.e., it doesn&rsquo;t just select the best proposals!</p>
+<p><strong>Q: What should I avoid in my tutorial proposal?</strong></p>
+<p>Your tutorial is less likely to be approved if it includes:</p>
+<ul>
+<li>Requirements that attendees prepare for the tutorial ahead of time or install additional software packages (especially large ones, which they may be unable to download at the conference).</li>
+<li>The use of tools that cost money or are proprietary.</li>
+<li>Being negative about other languages, platforms, and paradigms.</li>
+</ul>
+<p>We will not accept any tutorial that violates the  code of conduct. </p>
+<p><strong>Q: Who should apply?</strong></p>
+<p>While we don’t speak in absolutes, we’d like to see that presenters have experience with teaching, public speaking, or both. This assures us that you’re prepared to deliver what you’ve promised and understand the work going in. If you’ve never engaged in teaching or public speaking, we encourage you to gain more experience first. For example, you can submit talks (rather than tutorials) or teach with local usergroups.</p>
+<p><strong>Q: Is there an honorarium? If so, why?</strong></p>
+<p>Tutorials require significantly more preparation than talks. To compensate the instructor(s) for the time they must take away from work or other activities, we provide a $1,500 honorarium per tutorial. </p>
+<p>We will need to collect a <a href="https://www.irs.gov/pub/irs-pdf/fw9.pdf">W9</a> form from US tax payers. <br />
+If you are a non-US tax payer, you will need to fill out a <a href="https://www.irs.gov/pub/irs-pdf/fw8ben.pdf">W8BEN</a> form.</p>
+<p><strong>Q: Help! I’m traveling from another country without a work visa, and cannot accept the stipend.</strong></p>
+<p>We understand that without a work visa, many of our international applicants may be unable to accept the stipend. Unfortunately, we can’t get you a work visa. However, our financial aid application is open to all. If you can accept financial aid, we encourage you to apply to help cover the cost of attending.</p>
+<p><strong>Q: How else can I help with tutorials?</strong></p>
+<ul>
+<li>We are looking for committee members to review submitted proposals. If you’re interested, please contact us at <a href="mailto:pycon-tutorials@python.org?subject=JoiningTutorialsReviewCommittee"><a href="mailto:pycon-tutorials@python.org">pycon-tutorials@python.org</a></a></li>
+<li>Outreach! If you’re a member of a usergroup, or know any awesome potential instructors, please spread the word. If you know of any user groups we should reach out to personally, especially those targeted at people underrepresented in tech, please let us know!</li>
+<li>Be a teaching assistant! Many instructors want teaching assistants when giving their tutorials. <a href="mailto:pycon-tutorials@python.org?subject=BeingATutorialAssistant">Let us know</a> if you’re interested and what your area of expertise is. </li>
+</ul>
+<h2>Questions or Suggestions</h2>
+<p>If you have questions about any of this, or suggestions, please contact us at: <a href="mailto:pycon-tutorials@python.org?subject=Question/Suggestion about Tutorial Proposal"><a href="mailto:pycon-tutorials@python.org">pycon-tutorials@python.org</a></a>.</p>
+
+
+
+    </div>
+
+  </div>
+
+    <footer class="footer">
+      <div class="footer-img"></div>
+      <div class="credits">
+        <a href="http://python.org/psf-landing/">
+          <img class="psf-logo" src="/2020/static/images/psf-logo.png" width=300 alt="PSF logo">
+        </a>
+        <p class="footer-credits">
+          The PyCon 2020 conference in Pittsburgh, PA, USA, is a production of the
+          <a href="http://python.org/psf-landing/">Python Software Foundation</a>.
+        </p>
+        <p class="footer-credits">
+          This site is built using
+          <a href="https://www.djangoproject.com/">Django</a>
+          and
+          <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+          Hosting is provided by
+          <a href="http://heroku.com/">Heroku</a>.
+        </p>
+        <p class="footer-credits">
+          PyCon 2020 logo and design created by
+          <a href="http://robbdesign.co">
+            <img class="footer-credit-logo" title="Robb Design Co." alt="Robb Design Co." src="/2020/static/images/robb-design-co.png"/>
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    
+
+    
+      <!-- Bootstrap JS and its dependencies-->
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/b-1.6.1/b-html5-1.6.1/b-print-1.6.1/sl-1.3.1/datatables.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+      <!-- Third-party javascript libraries go here -->
+
+      <!-- Project specific Javascript in this file -->
+      <script src="/2020/static/js/project.js"></script>
+
+      
+      
+
+      
+
+    
+  </body>
+</html>

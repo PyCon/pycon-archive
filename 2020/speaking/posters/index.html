@@ -1,0 +1,402 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PyCon US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="/2020/static/images/2020-favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/2020/static/images/2020-favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/2020/static/images/2020-favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/2020/static/images/2020-favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/2020/static/images/2020-favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/2020/static/images/2020-favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/2020/static/images/2020-favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/2020/static/images/2020-favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/2020/static/images/2020-favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/2020/static/images/2020-favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/2020/static/images/2020-favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2020/static/images/2020-favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2020/static/images/2020-favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2020/static/images/2020-favicons/favicon-16x16.png">
+    <link rel="manifest" href="/2020/static/images/2020-favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/2020/static/images/2020-favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+    <!-- Third-party CSS libraries go here -->
+
+    <!-- project-specific CSS -->
+    <link href="/2020/static/css/custom-2020-styles.css" rel="stylesheet">
+
+    
+
+    
+    
+
+    
+
+  </head>
+
+  <body>
+  <div id="content-wrapper">
+
+    <header class="header ">
+        <div class="top-nav" role="navigation">
+        <!--
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/2020/">Home</a>
+          </li>
+          
+            <li class="nav-item">
+              <a id="sign-up-link" class="nav-link" href="/2020/accounts/signup/">
+                Sign Up
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="log-in-link" class="nav-link" href="/2020/accounts/login/">
+                Sign In
+              </a>
+            </li>
+          
+        </ul>
+        -->
+      </div>
+        <a href="/" class="header-img">
+          <h1 class="sr-only">PyCon Pittsburgh. April 15-23, 2020.</h1>
+        </a>
+    </header>
+
+    <button id="toggle-nav" class="btn btn--toggle">Menu</button>
+    <div id="main-nav" class="main-nav" role="navigation">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-collapse">
+            
+<ul class="navbar-nav mr-auto">
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-1" data-toggle="dropdown">
+                About PyCon
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-1">
+    
+        <a class="dropdown-item " href="/2020/about/" >What Is PyCon?</a>
+    
+        <a class="dropdown-item " href="/2020/about/code-of-conduct/" >Code of Conduct</a>
+    
+        <a class="dropdown-item " href="/2020/about/diversity/" >Diversity</a>
+    
+        <a class="dropdown-item " href="/2020/about/staff/" >Staff Information</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-4" data-toggle="dropdown">
+                PSF
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-4">
+    
+        <a class="dropdown-item " href="/2020/psf/" >Python Software Foundation</a>
+    
+        <a class="dropdown-item " href="/2020/donate/" >Donate</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-42" data-toggle="dropdown">
+                Events
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-42">
+    
+        <a class="dropdown-item " href="/2020/events/languagesummit/" >Language Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/edusummit/" >Education Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/startuprow/participants/" >Startup Row Participants</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/online/" class="nav-link  ">
+                Online
+            </a>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/sponsors/virtualexpohall/" class="nav-link  ">
+                Virtual Expo Hall
+            </a>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-43" data-toggle="dropdown">
+                Hatchery
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-43">
+    
+        <a class="dropdown-item " href="/2020/hatchery/trainers/" >Python Trainers Summit</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/mentoredsprints/" >Mentored Sprints for Diverse Beginners</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/beginnersdata/" >Beginners Data Workshop for Minorities</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-36" data-toggle="dropdown">
+                Resources
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-36">
+    
+        <a class="dropdown-item " href="/2020/financial-assistance/" >Financial Aid</a>
+    
+        <a class="dropdown-item " href="/2020/registration/airline-resources/" >Airfare Cancellation Resources</a>
+    
+        <a class="dropdown-item " href="/2020/registration/international-refund/" >International Refund Policy</a>
+    
+</div>
+            
+        </li>
+    
+</ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+
+      
+
+      
+    
+
+
+      
+<div class="cms_page_title">
+<h1>Proposing a Poster</h1>
+</div>
+<div class="callout"> <b> <p align=center>2020 PyCon Poster Session</b>
+
+<p align=center><b>April 19, 2020&nbsp;&nbsp;&nbsp; 10:00 AM &ndash; 1:00 PM</b></p>
+
+</div>
+
+<p><br></p>
+<p>On the third and final day of the main conference, we will celebrate projects large and small through our <strong>Poster Session</strong>, where dozens of creators get to interact one-on-one with conference attendees. </p>
+<p>The PyCon poster session is an excellent opportunity to present ideas, topics, or projects and have one-on-one interactions with members of the Python community. The session is held in the large event space to facilitate as many brief and interactive presentations as possible. As such, the poster session is particularly well suited for topics of interest to a subset of the community. Unlike the broader scope of a talk or tutorial, the poster session often acts as an incubator for further discussions.  </p>
+<p>Posters themselves are a graphical summary of your project and can be presented in a variety of visual modes to fit a 8-foot wide by 4-foot high (8′×4′) space. The most common form is a single printed poster or posters of approximately 48 inches wide by 36 inches high (4′×3′) or several individual pages but other creative modes are encouraged. The presentation space is one side of a standalone poster board that you can tack posters or individual pages to (thumbtacks will be provided!). The presentation space also has regular conference WiFi and can include power on request for individual demos. </p>
+<div style="margin:auto; width:800px;"><a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/129877449@N07/albums/72157689329740755" title="PyCon 2017 Posters"><img src="https://farm5.staticflickr.com/4389/36533482993_52e1584914_c.jpg" width="800" height="450" alt="PyCon 2017 Posters"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></div>
+
+<h2>Important Dates</h2>
+<ul>
+<li>September 12, 2019 — Call for poster proposals.</li>
+<li>October 2, 2019 — Financial aid applications opens.</li>
+<li>November 2019 — Registration opens.</li>
+<li>December 20, 2019 — Poster proposals due.</li>
+<li>January 27, 2020 — Posters announced.</li>
+<li>January 31, 2020 — Financial aid applications close.</li>
+<li>January 31, 2020 — Deadline to confirm participation.</li>
+<li>February 4, 2020 — Financial aid grants awarded.</li>
+<li>February 12, 2020 — The schedule is posted here on the PyCon website.</li>
+<li>April 19, 2020 — Poster session takes place in the Expo Hall.</li>
+</ul>
+<h2>Proposing a Poster</h2>
+<p>You will be able to propose poster sessions beginning on <strong>September 12, 2019</strong>.  To submit a proposal, <a href="/2020/accounts/signup/">sign up</a> then log in to your account and proceed to your <a href="/2020/users/dashboard/">account dashboard.</a></p>
+<h3>Step One: Speaker Profile</h3>
+<p>You will have to create a speaker profile on the website (and be logged in) in order to submit a poster proposal. </p>
+<p>Be sure to include a one-paragraph biography, written in the third person (e.g. &ldquo;Nicole leads a machine learning workgroup&hellip;&rdquo; or &ldquo;In his spare time, Jason enjoys teaching Python&hellip;&rdquo;). Your bio should be creative and express the most important things you&rsquo;d like the community to know about you. You could include a community you&rsquo;re a part of, where you work, projects you&rsquo;ve hacked on, publications you&rsquo;ve written, volunteer activities or anything else that is meaningful to you. Note that we use this for the conference guide and other promotional materials. </p>
+<p>The primary author should submit the proposal, after which additional authors can be added (they must create speaker accounts too).</p>
+<p>PyCon does not want expenses to discourage you from submitting a proposal, and offers presenter grants to ensure that anyone can present at PyCon. When you create a speaker profile, check the box to indicate that you require a speaker grant. This is not seen by the proposal reviewers and does not affect the review of your proposal. </p>
+<p>After proposals are selected, we&rsquo;ll reach out to you regarding your needs. We understand situations can change and are here for you. If you have any questions, let us know at <a href="mailto:pycon-aid@python.org"><a href="mailto:pycon-aid@python.org">pycon-aid@python.org</a></a></p>
+<h3>Step Two: Choosing a Topic</h3>
+<p>For general advice on developing and submitting a proposal see :</p>
+<ul>
+<li><a href="https://us.pycon.org/2020/speaking/">So You Want To Present a Talk/Tutorial/Poster At PyCon</a></li>
+</ul>
+<p>Also, take a look at past poster sessions to get a sense of the breadth of topics.</p>
+<ul>
+<li><a href="http://us.pycon.org/2019/schedule/posters/list/">PyCon 2019 Posters</a></li>
+<li><a href="http://us.pycon.org/2018/schedule/posters/list/">PyCon 2018 Posters</a></li>
+<li><a href="http://us.pycon.org/2017/schedule/posters/list/">PyCon 2017 Posters</a></li>
+<li><a href="http://us.pycon.org/2016/schedule/posters/list/">PyCon 2016 Posters</a></li>
+<li><a href="http://us.pycon.org/2015/schedule/posters/list/">PyCon 2015 Posters</a></li>
+<li><a href="http://us.pycon.org/2014/schedule/posters/list/">PyCon 2014 Posters</a></li>
+</ul>
+<p>If your questions still aren&rsquo;t answered feel free to email <a href="mailto:pycon-posters@python.org">the Posters team</a>.</p>
+<h3>Step Three: The Poster Proposal</h3>
+<p>There are three primary parts to a poster proposal:</p>
+<ol>
+<li>Title </li>
+<li>Description/Abstract </li>
+<li>Additional Notes </li>
+</ol>
+<p>The title is the first thing your audience will see about your poster. Make it brief and descriptive &mdash; straight to the point is often the best bet! </p>
+<p>The description or abstract will be published in the conference guide and promotional materials. Rather than giving an exhaustive summary, the abstract should provide enough descriptive information to convince your audience to come seek your poster out (~1-3 paragraphs). Note that the description is written in Markdown and can include links to other material.</p>
+<p>Finally, additional notes are a place for you to communicate to the reviewers. Use this space to describe anything you think might be relevant for us to help make you successful in your presentation. For example, note if you need power for a demonstration &mdash;, and we&rsquo;ll see what we can do. Additionally, you can show us more materials related to your poster proposal that may help inform us about your topic. </p>
+<h2>Preparing a Poster</h2>
+<p>If your proposal is accepted, you will then have to design or create your poster. Here are some general tips for designing your poster:</p>
+<ol>
+<li>Should be readable from 3-4 feet away (use a large font!) </li>
+<li>Title and important information should be readable from 10 feet away. </li>
+<li>The title should be short and draw interest. </li>
+<li>Total word count should be approximately 300-800 words per poster. </li>
+<li>Content should be clear and to the point. </li>
+<li>Use graphics, images, colors, headings, numbers, and bullets to bring visual interest. </li>
+<li>Layout your work in an easy to follow narrative.  </li>
+<li>Use enough whitespace so your poster isn&rsquo;t crowded. </li>
+</ol>
+<p>Generally speaking, a poster is laid out as a landscape 48 inches wide by 36 inches high (this is also the most cost effective to print). Alternatively, you can use multiple sheets of paper, each with its own content. Feel free to be creative and create artworks or collages, use poster board, or a variety of visual modes &mdash; just note that you&rsquo;ll have to hang or tack your poster on a 8-foot wide by 4-foot high standing poster board (which gives you room to print two posters or even duplicate a single poster and post it twice). </p>
+<p>You can use a variety of software to design your poster. We recommend Google Draw, Microsoft PowerPoint, or your favorite presentation software because they easily allow you to add basic shapes, text, and images to your document. Just be sure to set your document properties so that you have the correct resolution. Of course, you can also use the Adobe Creative Suite tools, Inkscape, or Gimp to design and layout your poster, though this is slightly more advanced. </p>
+<p>For more information about designing posters, please see <a href="https://www.makesigns.com/tutorials/">MakeSigns poster tutorials</a>.</p>
+<p>This year, <a href="https://www.makesigns.com/conference/5453/pycon-2020">MakeSigns</a> has also provided PyCon a 10% discount and a new group shipping option to print your poster. By default, orders placed by <strong>12:00 PM Central Time on Wednesday, April 8, 2020</strong>, will be included in the group shipment being delivered directly to the David L. Lawrence Convention Center. (In addition to the cost of your poster, a $5.00 group service fee (standard shipping included) will be charged per poster.) Then once you arrive at PyCon, you can pick up your poster at the Staff Office at the David L. Lawrence Convention Center starting on Wednesday, April 15th, 2020.</p>
+<p>If you miss the deadline to be included in the group shipment, you can still place your order with <a href="https://www.makesigns.com/conference/5453/pycon-2020">MakeSigns</a> and have your poster shipped directly to your home and bring it with you to the conference, or have it sent to your attention as a guest at the hotel you will be staying at in Pittsburgh. However, should you choose to send your poster directly to your hotel, please be sure and call ahead to make sure they will accept packages delivered to guests.</p>
+<p>Other options include office supply and shipping retail stores also offer printing services. Don&rsquo;t forget to consider how you&rsquo;re going to get your poster to Pittsburgh as well! Either ship it directly to your hotel or bring it with you as you travel in a tube or other protective carrier. In addition, you also have the option of printing your poster after you arrive in Pittsburgh.</p>
+<h2>Frequently Asked Questions</h2>
+<p>We&rsquo;re excited to present the poster session and we know you might have a lot of questions. Hopefully, we can cover them here, but for anything we missed, <a href="mailto:pycon-posters@python.org">email us!</a></p>
+<h3>Q: What is a poster session?</h3>
+<p>A poster session is a plenary session where each speaker is given space to display their work as a poster. During the session, speakers stand with their posters, and the audience circulates freely, seeking out the particular presentations they are interested in and talking directly to the presenter in small groups. For PyCon 2020, we will have a designated plenary poster session and will be providing space for posters up to 8&rsquo; wide by 4&rsquo; high in size. <a href="http://www.youtube.com/watch?v=1dyzaZjwdfE" title="poster video">This video</a> will give you an idea of what poster sessions are.</p>
+<h3>Q: What makes a good poster presentation?</h3>
+<p>First, a good proposal. Poster sessions are intended to give you the chance to present interesting ideas and start conversations with others. Additionally, proposal titles and abstracts are one of the major tools the audience will use to identify posters of interest, so it is important to communicate clearly.</p>
+<p>Second, the poster itself. It is important to understand that a poster is neither a paper nor a slideshow. The poster isn&rsquo;t there for the audience to just read, it is a visual aid for you to use in creating a quick engaging impromptu presentation, and to refer to in answering questions and fueling discussion. Use this session as a way to make connections with people that you can continue through the open spaces or informally during the conference.</p>
+<h3>Q: Can I submit both a poster and a talk proposal?</h3>
+<p>Absolutely! We encourage everyone to submit a poster proposal even if they have also submitted a talk proposal. If both are accepted, we encourage authors to adapt their presentation to make the best use of each venue. Even if a talk proposal can not be accommodated by the program committee, it may still be well suited for a poster presentation.</p>
+<h3>Q: How good do the posters have to be?</h3>
+<p>Alternatively:</p>
+<ul>
+<li>How professional do the posters need to look?</li>
+<li>How much money do I need to spend on the poster? </li>
+</ul>
+<p>The poster session is about facilitating one-on-one interactive presentations with an interested audience, therefore we encourage you to spend more time considering how best to organize and <em>show</em> your work. For example, a well structured, well-organized collection of individual sheets of paper tacked to the board can be as effective as a professionally printed poster. </p>
+<p>Generally speaking, posters are 48″ wide by 36″ high (4&rsquo;x3&rsquo;) and can be printed for around USD $50.00. MakeSigns also has a <a href="https://www.makesigns.com/conference/5453/pycon-2020">discount code</a> and group shipping option for all PyCon 2020 poster presenters. (In addition to the cost of your poster, a $5.00 group service fee (standard shipping included) will be charged per poster.) Posters that have lots of image and short, to-the-point text are excellent. Don&rsquo;t be afraid of box and line diagrams or using photographs in your poster! </p>
+<ul>
+<li>MakeSigns <a href="https://www.makesigns.com/conference/5453/pycon-2020">PyCon Discount</a></li>
+</ul>
+<p>If you&rsquo;re still worried about the cost of printing your poster, please <a href="mailto:pycon-posters@python.org">email us</a> and we&rsquo;ll see what we can do to help. </p>
+<h3>Q: Does my poster need to be in English?</h3>
+<p>Nope! If you feel there will be a significant audience for your poster in a foreign language, you may implement your poster in that language. The difficulty is that the reviewers won&rsquo;t necessarily speak or understand the language that you&rsquo;re presenting. Clear communication with us is necessary if you&rsquo;re interested in presenting in a language we don&rsquo;t understand. And of course, you will need to adhere to the <a href="https://us.pycon.org/2020/about/code-of-conduct/">code of conduct</a> even in a different language.</p>
+<h3>Q. If I am doing a demo with my poster, is it possible to get additional supplies?</h3>
+<p>Each poster display will have power, table and chairs. If you need additional supplies (such as a flip chart or markers, etc) please note that in your proposal. There is an &ldquo;Additional requirements&rdquo; field in the Poster proposal form where you can enter your additional needs.</p>
+<h3>Q. Is there a place in Pittsburgh where I can print my poster instead of using the group shipping option or having to bring it with me?</h3>
+<p><em>Yes, our committee found these locations:</em><br />
+<strong>FedEx</strong> submit &mdash; 48 hours prior to the pickup date<br />
+<a href="https://local.fedex.com/pa/pittsburgh/office-2064/?cmp=LOC-1001545-3-1-971-1110000-US-US-EN-GPLCOPYANDPRINT">More details and schedule</a>   &nbsp;&nbsp; <em>Please note this location closes on Saturday evenings at 6:00 PM (ET) and is not open on Sundays.</em><br />
+<a href="https://goo.gl/maps/WLNbHA1Mz6Phwe1T6">Directions</a><br />
+<a href="https://www.fedex.com/apps/printonline/#!upload/large/pid%3D1466693799380%401446218320816%40false/false">Upload poster here</a></p>
+<p><strong>Staples</strong> &mdash; submit 48 hours prior to the pickup date<br />
+<a href="https://stores.staples.com/pa/pittsburgh/2515-banksville-road?cmpid=st_ll_goo&amp;cid=LS:RETAIL:G">More details and schedule</a> <br />
+<a href="https://goo.gl/maps/tmqGX7zqEehQaqPz5">Directions</a><br />
+<a href="https://design.staples.com/posters">Upload poster here</a></p>
+
+
+
+    </div>
+
+  </div>
+
+    <footer class="footer">
+      <div class="footer-img"></div>
+      <div class="credits">
+        <a href="http://python.org/psf-landing/">
+          <img class="psf-logo" src="/2020/static/images/psf-logo.png" width=300 alt="PSF logo">
+        </a>
+        <p class="footer-credits">
+          The PyCon 2020 conference in Pittsburgh, PA, USA, is a production of the
+          <a href="http://python.org/psf-landing/">Python Software Foundation</a>.
+        </p>
+        <p class="footer-credits">
+          This site is built using
+          <a href="https://www.djangoproject.com/">Django</a>
+          and
+          <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+          Hosting is provided by
+          <a href="http://heroku.com/">Heroku</a>.
+        </p>
+        <p class="footer-credits">
+          PyCon 2020 logo and design created by
+          <a href="http://robbdesign.co">
+            <img class="footer-credit-logo" title="Robb Design Co." alt="Robb Design Co." src="/2020/static/images/robb-design-co.png"/>
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    
+
+    
+      <!-- Bootstrap JS and its dependencies-->
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/b-1.6.1/b-html5-1.6.1/b-print-1.6.1/sl-1.3.1/datatables.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+      <!-- Third-party javascript libraries go here -->
+
+      <!-- Project specific Javascript in this file -->
+      <script src="/2020/static/js/project.js"></script>
+
+      
+      
+
+      
+
+    
+  </body>
+</html>

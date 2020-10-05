@@ -1,0 +1,404 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PyCon US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="/2020/static/images/2020-favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/2020/static/images/2020-favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/2020/static/images/2020-favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/2020/static/images/2020-favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/2020/static/images/2020-favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/2020/static/images/2020-favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/2020/static/images/2020-favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/2020/static/images/2020-favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/2020/static/images/2020-favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/2020/static/images/2020-favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/2020/static/images/2020-favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2020/static/images/2020-favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2020/static/images/2020-favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2020/static/images/2020-favicons/favicon-16x16.png">
+    <link rel="manifest" href="/2020/static/images/2020-favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/2020/static/images/2020-favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+    <!-- Third-party CSS libraries go here -->
+
+    <!-- project-specific CSS -->
+    <link href="/2020/static/css/custom-2020-styles.css" rel="stylesheet">
+
+    
+
+    
+    
+
+    
+
+  </head>
+
+  <body>
+  <div id="content-wrapper">
+
+    <header class="header ">
+        <div class="top-nav" role="navigation">
+        <!--
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/2020/">Home</a>
+          </li>
+          
+            <li class="nav-item">
+              <a id="sign-up-link" class="nav-link" href="/2020/accounts/signup/">
+                Sign Up
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="log-in-link" class="nav-link" href="/2020/accounts/login/">
+                Sign In
+              </a>
+            </li>
+          
+        </ul>
+        -->
+      </div>
+        <a href="/" class="header-img">
+          <h1 class="sr-only">PyCon Pittsburgh. April 15-23, 2020.</h1>
+        </a>
+    </header>
+
+    <button id="toggle-nav" class="btn btn--toggle">Menu</button>
+    <div id="main-nav" class="main-nav" role="navigation">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-collapse">
+            
+<ul class="navbar-nav mr-auto">
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-1" data-toggle="dropdown">
+                About PyCon
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-1">
+    
+        <a class="dropdown-item " href="/2020/about/" >What Is PyCon?</a>
+    
+        <a class="dropdown-item " href="/2020/about/code-of-conduct/" >Code of Conduct</a>
+    
+        <a class="dropdown-item " href="/2020/about/diversity/" >Diversity</a>
+    
+        <a class="dropdown-item " href="/2020/about/staff/" >Staff Information</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-4" data-toggle="dropdown">
+                PSF
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-4">
+    
+        <a class="dropdown-item " href="/2020/psf/" >Python Software Foundation</a>
+    
+        <a class="dropdown-item " href="/2020/donate/" >Donate</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-42" data-toggle="dropdown">
+                Events
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-42">
+    
+        <a class="dropdown-item " href="/2020/events/languagesummit/" >Language Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/edusummit/" >Education Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/startuprow/participants/" >Startup Row Participants</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/online/" class="nav-link  ">
+                Online
+            </a>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/sponsors/virtualexpohall/" class="nav-link  ">
+                Virtual Expo Hall
+            </a>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-43" data-toggle="dropdown">
+                Hatchery
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-43">
+    
+        <a class="dropdown-item " href="/2020/hatchery/trainers/" >Python Trainers Summit</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/mentoredsprints/" >Mentored Sprints for Diverse Beginners</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/beginnersdata/" >Beginners Data Workshop for Minorities</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-36" data-toggle="dropdown">
+                Resources
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-36">
+    
+        <a class="dropdown-item " href="/2020/financial-assistance/" >Financial Aid</a>
+    
+        <a class="dropdown-item " href="/2020/registration/airline-resources/" >Airfare Cancellation Resources</a>
+    
+        <a class="dropdown-item " href="/2020/registration/international-refund/" >International Refund Policy</a>
+    
+</div>
+            
+        </li>
+    
+</ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+
+      
+
+      
+    
+
+
+      
+<div class="cms_page_title">
+<h1>Sponsor FAQ</h1>
+</div>
+<p>Planning, managing, and executing your company’s presence at a conference or trade show can be a daunting experience if you’ve never had that responsibility. Even if you have experience, it’s sometimes difficult to keep track of everything that needs to be done.</p>
+<p>We’ve put together an FAQ of often-asked questions and answers to help you navigate your way around the many pre, onsite, and post-event details. We want all our sponsors to have a rewarding, fun, and worthwhile time at PyCon 2020!</p>
+<p><strong>Q.</strong> Are shipping charges included in my sponsorship? </p>
+<p><strong>A.</strong> No. Sponsors are responsible for shipping charges to and from the conference. Please use Tricord&rsquo;s online form to request a quote for domestic or international shipping logistics. This will give you a good idea regarding all the costs that are included in shipping to the advance warehouse and/or direct to the convention center. Information about shipping can be found in the exhibitor kit.</p>
+<p><strong>Q.</strong> Is there an advantage to shipping my items to the advance warehouse?</p>
+<p><strong>A.</strong> Yes. Tricord will store your items for up to 30 days prior to your show, guaranteeing the delivery of your items to your booth by your published set-up time. Shipping to the advance warehouse allows show management to have access to your shipped items when necessary. For example, we need swag bag inserts on a different day than your booth material or Job Fair material. Please note: there are material handling fees involved with shipping to the advance warehouse. Information about material handling fees can be found in the exhibitor kit.</p>
+<p><strong>Q.</strong> What is “material handling”?</p>
+<p><strong>A.</strong> Material Handling is the unloading of your exhibit materials. The service includes delivery to your booth, handling of empty containers to and from storage, and removal of your materials from your booth for reloading onto your outbound carrier. This is not to be confused with the cost to transport your exhibit material to and from the event. We highly recommend that you ask for an estimate for material handling charges.</p>
+<p>• Unloading the freight and delivery to your booth is not included. Avoid unexpected costs at show site and estimate the cost for this service. <br />
+• We understand that your calculation is only an estimate. Invoicing will be done from the actual weight. Adjustments will be made accordingly.<br />
+• Save by combining shipments. A minimum charge applies for each shipment under 200 lbs.<br />
+• Make sure that a Bill of Lading is filled out completely for each shipment.<br />
+• Confirm that your driver has the correct dates and times that your shipment needs to be delivered and picked up.<br />
+• Use provided shipping labels to make sure show name, booth number, and other vital information are provided.</p>
+<p><strong>Q.</strong> Are there disadvantages to shipping directly to the convention center?</p>
+<p><strong>A.</strong> Yes. Since shipments are accepted on only one day, that makes it hard for shipping companies to guarantee arrival. You run the risk that your shipment won’t get there in time for you to complete your set-up before the expo hall opens. There are material handling fees involved with shipping to the direct warehouse. Information about material handling fees can be found in the exhibitor kit.</p>
+<p><strong>Q.</strong> What is a “Bill of Lading” and why do I need one?</p>
+<p><strong>A.</strong> You Bill of Lading is one of the most important documents in the shipping process. To ship any goods, a bill of lading is required and acts as a receipt and a contract. A completed BOL legally shows that the carrier has received the freight as described and is obligated to deliver that freight in good condition to the consignee. Information on shipping, drayage, and material handling can be found in the exhibitor kit.</p>
+<p><strong>Q.</strong> How can I save money on shipping charges?</p>
+<p><strong>A.</strong> You can save money by combining shipments. A minimum charge applies for each shipment under 100 lbs. so it is more economical to ship a pallet or skid (considered “crated” material) than individual boxes. Handling charges to receive small packages start at $25.25 vs  $98.50 per 100 lbs.</p>
+<p><strong>Q.</strong> What shipping labels should I use and what are the shipping deadlines for each shipping method?</p>
+<p><strong>A.</strong> There are 2 sets of labels: Advance shipping and Direct shipping. Labels can be downloaded from the exhibitor kit. </p>
+<p><strong>Booth Material labels</strong></p>
+<ul>
+<li>Advance shipment labels - GREEN </li>
+<li>Advance shipments should arrive on or between April 8, 2020</li>
+<li>Direct Exhibition Freight shipment labels - GREEN</li>
+<li>Direct shipments must arrive only on: Tuesday, April 14, 2020 or Wednesday, April 15, 2020</li>
+</ul>
+<p><strong>PyLadies Auction labels</strong></p>
+<ul>
+<li>Advance Swag Bag Items shipment labels - LIGHT BLUE </li>
+<li>Advance shipments should arrive on or before Wednesday, April 8, 2020</li>
+</ul>
+<p><strong>Swag bag labels</strong></p>
+<ul>
+<li>Advance Auction Items shipment labels - ORANGE </li>
+<li>Advance shipments should arrive on or before Wednesday, April 8, 2020</li>
+</ul>
+<p><strong>Job Fair labels</strong></p>
+<ul>
+<li>Advance Job Fair shipment labels - PINK</li>
+<li>Advance shipments should arrive on or before Wednesday, April 8, 2020</li>
+<li>Direct labels - PURPLE</li>
+<li>Direct shipments must arrive only on: Tuesday, April 14, 2020 or Wednesday, April 15, 2020</li>
+</ul>
+<p><strong>Q.</strong> Is wifi included in my booth?</p>
+<p><strong>A.</strong> Yes. Standard wifi up to 2Mbps for 1 device is included. Optional - you can order your own wifi network. Prices range from a &ldquo;run of show&rdquo; (all three days) of $880 to $2,640, depending on the number of devices and Mbps (early bird pricing). Order from the David L. Lawrence Convention Center <a href="http://www.pittsburghcc.com/exhibitors/exhibitor-services/" title="here">here</a>.</p>
+<p><strong>Q.</strong> How do I make sure that my swag bag items make it into the attendee bag?</p>
+<p><strong>A.</strong> Make sure that each box is labeled correctly (ORANGE labels) and ship to the advance warehouse no later than Wednesday, April 8, 2020. Please do not pack swag bag inserts with your exhibition freight since we stuff bags before you get to your booth for setup.</p>
+<p><strong>Q.</strong> How can I track my shipments?</p>
+<p><strong>A.</strong> Confirm your delivery date and time with your carrier and have all pertinent shipping information in the hands of your representative at show site. You may also want to review the return of your items at the end of the show. If you ship with Tricord, your domestic shipment can be tracked online if you complete their online shipping form.</p>
+<p><strong>Q.</strong> What is the early bird discount deadline date for ordering show services?</p>
+<p><strong>A.</strong>   March 24, 2020</p>
+<p><strong>Q.</strong> Should I order carpet and padding for my booth?</p>
+<p><strong>A.</strong> It is optional, but having a carpet and pad is a nice addition to your booth, and provides a comfortable surface for your staff and attendees to stand on. Information on ordering carpet and padding can be found online. </p>
+<p><strong>Q.</strong> Should I order booth cleaning?</p>
+<p><strong>A.</strong> It’s up to you. Booth cleaning is optional. Vacuuming a 10x10 booth is $36/day; 10x20 is $62/day (early bird pricing). You can also bring your own vacuum and do it yourself.</p>
+<p><strong>Q.</strong> Do I need to order power for my booth?</p>
+<p><strong>A.</strong> Standard 5 amp/500 watt outlet is included. If you need more than what is provided, you can order from the David L. Lawrence Convention Center. </p>
+<p><strong>Q.</strong> Is lead retrieval included in my sponsorship?</p>
+<p><strong>A.</strong> Lead retrieval is included only at the Keystone and Diamond Levels. Sponsors will receive ordering details from Boomset, the company providing the scanners.</p>
+<p><strong>Q.</strong> Is lead retrieval an option for the Job Fair?</p>
+<p><strong>A</strong>. Yes. Sponsors will receive ordering details from Boomset, the company providing the scanners.</p>
+<p><strong>Q.</strong> What do I do with my empty crates/boxes after I set up my booth?</p>
+<p><strong>A.</strong> After your exhibit is set-up and your products displayed, you must place &ldquo;empty&rdquo; stickers on your empty containers for storage during the show. &ldquo;Empty&rdquo; stickers will be available at the Tricord Service Center on the show floor. Simply write your booth number, company and show name on the sticker and place the container in the aisle. It will be stored throughout the exposition and then returned to your booth upon show close. Place stickers on all four (4) sides of the crate. Please label your empty containers as soon as possible to keep your area clear and make it easier to prepare your<br />
+booth.</p>
+<p><strong>Q.</strong> Is there a place to store extra giveaways if I don’t have room in my booth?</p>
+<p><strong>A.</strong> Material storage is optional. There is a charge for this. You can get pricing and labels at the Tricord Service Center in the expo hall.  </p>
+<p><strong>Q.</strong> How can I save money on labor costs?</p>
+<p><strong>A.</strong> You can save money by pre-ordering labor for move-in and move-out. Be sure to return your orders before the discount deadline to receive the best price.</p>
+<p><strong>Q.</strong> Do I have to staff my booth during the Opening Reception?</p>
+<p><strong>A.</strong> It is not required, but if you choose not to participate, please let us know so that we can let attendees know that you’ll be in your booth the next day. We highly recommend that you staff your booth during this time since you have the potential of interacting with 3000+ attendees who are there specifically to meet sponsors.</p>
+<p><strong>Q.</strong> I don’t have a booth but am participating in the Job Fair. What do I need to know about shipping items for my table?</p>
+<p><strong>A.</strong> If you will be shipping items just for the Job Fair, please use the appropriate shipping label (the PINK label in the exhibitor manual) and make sure that your items arrive no later than April 8, 2020.</p>
+<p><strong>Q.</strong> Can I use my expo booth for the Job Fair?</p>
+<p><strong>A.</strong> No. The expo hall with booths is a different event than the Job Fair. We do not reuse the Expo Hall booths for the job fair. A 6-foot table with 2 chairs will be provided for your company. Standard power is included. You are welcome to bring pop-up graphics and a branded tablecloth.</p>
+<p><strong>Q.</strong> I have a booth in the expo hall. How do I get my job fair items to my job fair table?</p>
+<p><strong>A.</strong> Go to the Tricord Service Center to get job fair labels. Place labels with your table number on the items you wish to go to the Job Fair.</p>
+<p>There will be no charge to move items from a booth to a job fair table for those that shipped to the advance warehouse or shipped directly to show site and have paid for the material handling process.</p>
+<p>Exhibitors that brought their own materials in, and would like to leave them to be taken to their job fair table will have to pay the ½ hour labor fee, at the advance rate, of $170.00 or $85.00 for the ½ hour.  They too will need to come to the Tricord Service Center to pick up labels that they place on the materials with the Table Number on the label and then pay for the move.</p>
+<p><strong>Q.</strong> How do job fair sponsors add jobs to the job fair site?</p>
+<p><strong>A.</strong> You can either send us the information to add or you can log in to the website and go to your dashboard: <a href="http://us.pycon.org">us.pycon.org</a>/2020/dashboard/. Once at your dashboard, click on your sponsorship and you should see a field to input the job postings. </p>
+<p><strong>Q.</strong> Do you have any suggestions for better items to give away that attendees will associate with my company?</p>
+<p><strong>A.</strong> It can be challenging to get the attention of an attendee, and the last thing you want is to see your giveaway in the trash! We recommend thoughtful, waste-free giveaways, such as useful, needed items, and charitable gifts that also give back. These can be great ways to build a good reputation among booth visitors and create buzz.</p>
+<ul>
+<li><strong>The following suggestions came directly from the attendee survey:</strong></li>
+<li>A cheat sheet</li>
+<li>Quiz</li>
+<li>Game or puzzle</li>
+<li>Coupon for a complimentary email course</li>
+<li>Coupon code for a free eBook</li>
+<li>Pocket-sized book with a branded company sticker</li>
+<li>Sticker sheet (with generic and fun stickers as well as their company logo)</li>
+<li>High-quality ballpoint pens with subtle branding</li>
+<li>
+<p>Movie ticket</p>
+</li>
+<li>
+<p>**A great idea for booth prizes: Gift Cards to support your favorite open source project - <a href="https://opencollective.com/gift-cards**">https://opencollective.com/gift-cards**</a></p>
+</li>
+</ul>
+<p><strong>Things To Know For Outbound Shipping</strong></p>
+<ul>
+<li>Outbound shipping is not an automatic process!</li>
+<li>Come to the Tricord Service Center and pick up an Outbound Material Handling Form. Forms will begin being issued on Saturday morning. This form is required whether you are using an over the road carrier or a POV (Privately Owned Vehicle) and require assistance with loading.</li>
+<li>Please select a carrier prior to the weekend. You may select any carrier of your choosing. Options are: Tricord Logistics, any over-the-road carrier such as YRC, ABF, UPS, FedEx, etc. If you select a carrier other than Tricord, please contact your carrier to arrange for the pick-up of your materials by the published dates in the exhibitor kit. (Note that UPS and FedEx typically do not pick up on Saturday or Sundays. If using either of these carriers be sure to request a confirmation number for the pick-up on weekends or for pick-ups after 4:00 p.m.)</li>
+<li>When your empties have been returned, pack up all of your product and/or booth materials.</li>
+<li>When you are all packed, return the completed Outbound Material Handling Form to the Tricord Service Desk. DO NOT leave this form in your booth with your freight.</li>
+<li>Be sure to get a copy of your completed Outbound Material Handling Form from your Tricord Representative.</li>
+<li>Note that PyCon is required to have the exhibit hall 100% clear by Sunday, April 19, 2020.  Pick-ups on Monday is not permitted.</li>
+</ul>
+<p>If you have any other questions, please don’t hesitate to contact us at <a href="mailto:pycon-sponsors@python.org">pycon-sponsors@python.org</a>.</p>
+
+
+
+    </div>
+
+  </div>
+
+    <footer class="footer">
+      <div class="footer-img"></div>
+      <div class="credits">
+        <a href="http://python.org/psf-landing/">
+          <img class="psf-logo" src="/2020/static/images/psf-logo.png" width=300 alt="PSF logo">
+        </a>
+        <p class="footer-credits">
+          The PyCon 2020 conference in Pittsburgh, PA, USA, is a production of the
+          <a href="http://python.org/psf-landing/">Python Software Foundation</a>.
+        </p>
+        <p class="footer-credits">
+          This site is built using
+          <a href="https://www.djangoproject.com/">Django</a>
+          and
+          <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+          Hosting is provided by
+          <a href="http://heroku.com/">Heroku</a>.
+        </p>
+        <p class="footer-credits">
+          PyCon 2020 logo and design created by
+          <a href="http://robbdesign.co">
+            <img class="footer-credit-logo" title="Robb Design Co." alt="Robb Design Co." src="/2020/static/images/robb-design-co.png"/>
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    
+
+    
+      <!-- Bootstrap JS and its dependencies-->
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/b-1.6.1/b-html5-1.6.1/b-print-1.6.1/sl-1.3.1/datatables.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+      <!-- Third-party javascript libraries go here -->
+
+      <!-- Project specific Javascript in this file -->
+      <script src="/2020/static/js/project.js"></script>
+
+      
+      
+
+      
+
+    
+  </body>
+</html>

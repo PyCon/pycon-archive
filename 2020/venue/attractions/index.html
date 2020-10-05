@@ -1,0 +1,435 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PyCon US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="/2020/static/images/2020-favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/2020/static/images/2020-favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/2020/static/images/2020-favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/2020/static/images/2020-favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/2020/static/images/2020-favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/2020/static/images/2020-favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/2020/static/images/2020-favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/2020/static/images/2020-favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/2020/static/images/2020-favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/2020/static/images/2020-favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/2020/static/images/2020-favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2020/static/images/2020-favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2020/static/images/2020-favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2020/static/images/2020-favicons/favicon-16x16.png">
+    <link rel="manifest" href="/2020/static/images/2020-favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/2020/static/images/2020-favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+    <!-- Third-party CSS libraries go here -->
+
+    <!-- project-specific CSS -->
+    <link href="/2020/static/css/custom-2020-styles.css" rel="stylesheet">
+
+    
+
+    
+    
+
+    
+
+  </head>
+
+  <body>
+  <div id="content-wrapper">
+
+    <header class="header ">
+        <div class="top-nav" role="navigation">
+        <!--
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/2020/">Home</a>
+          </li>
+          
+            <li class="nav-item">
+              <a id="sign-up-link" class="nav-link" href="/2020/accounts/signup/">
+                Sign Up
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="log-in-link" class="nav-link" href="/2020/accounts/login/">
+                Sign In
+              </a>
+            </li>
+          
+        </ul>
+        -->
+      </div>
+        <a href="/" class="header-img">
+          <h1 class="sr-only">PyCon Pittsburgh. April 15-23, 2020.</h1>
+        </a>
+    </header>
+
+    <button id="toggle-nav" class="btn btn--toggle">Menu</button>
+    <div id="main-nav" class="main-nav" role="navigation">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-collapse">
+            
+<ul class="navbar-nav mr-auto">
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-1" data-toggle="dropdown">
+                About PyCon
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-1">
+    
+        <a class="dropdown-item " href="/2020/about/" >What Is PyCon?</a>
+    
+        <a class="dropdown-item " href="/2020/about/code-of-conduct/" >Code of Conduct</a>
+    
+        <a class="dropdown-item " href="/2020/about/diversity/" >Diversity</a>
+    
+        <a class="dropdown-item " href="/2020/about/staff/" >Staff Information</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-4" data-toggle="dropdown">
+                PSF
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-4">
+    
+        <a class="dropdown-item " href="/2020/psf/" >Python Software Foundation</a>
+    
+        <a class="dropdown-item " href="/2020/donate/" >Donate</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-42" data-toggle="dropdown">
+                Events
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-42">
+    
+        <a class="dropdown-item " href="/2020/events/languagesummit/" >Language Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/edusummit/" >Education Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/startuprow/participants/" >Startup Row Participants</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/online/" class="nav-link  ">
+                Online
+            </a>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/sponsors/virtualexpohall/" class="nav-link  ">
+                Virtual Expo Hall
+            </a>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-43" data-toggle="dropdown">
+                Hatchery
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-43">
+    
+        <a class="dropdown-item " href="/2020/hatchery/trainers/" >Python Trainers Summit</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/mentoredsprints/" >Mentored Sprints for Diverse Beginners</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/beginnersdata/" >Beginners Data Workshop for Minorities</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-36" data-toggle="dropdown">
+                Resources
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-36">
+    
+        <a class="dropdown-item " href="/2020/financial-assistance/" >Financial Aid</a>
+    
+        <a class="dropdown-item " href="/2020/registration/airline-resources/" >Airfare Cancellation Resources</a>
+    
+        <a class="dropdown-item " href="/2020/registration/international-refund/" >International Refund Policy</a>
+    
+</div>
+            
+        </li>
+    
+</ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+
+      
+
+      
+    
+
+
+      
+<div class="cms_page_title">
+<h1>Local Attractions and Resources</h1>
+</div>
+<h1>Basic Needs</h1>
+<p><a href="https://goo.gl/maps/u6CUb1SLmFVGAmxb8">Rite Aid</a><br />
+Drug store<br />
+623 Smithfield Street<br />
+Downtown</p>
+<p><a href="https://goo.gl/maps/AxbwF7JKPVALBwjk8">Concentra Urgent Care</a><br />
+Urgent Care<br />
+1600 W. Carson Street, Suite 200<br />
+South Side</p>
+<p><a href="https://goo.gl/maps/5qsrHTj4jsMkkbv4A">Target</a><br />
+Big Box<br />
+6231 Penn Avenue<br />
+East Liberty</p>
+<p><a href="https://goo.gl/maps/HqchmhbweL4qXqfNA">Giant Eagle</a><br />
+Grocery<br />
+6320 Shakespeare Street (near Target)<br />
+East Liberty</p>
+<p><a href="https://goo.gl/maps/e8BSN9GTzb7tNApX9">Greyhound</a><br />
+Bus Station<br />
+55 11th Street<br />
+Cultural District</p>
+<p><a href="https://goo.gl/maps/fz1iKNeFTB2i9d1o6">Pittsburgh Police Zone 2</a><br />
+Police Station<br />
+2000 Centre Ave<br />
+Hill District</p>
+<p><a href="https://www.google.com/maps/place/Waterworks+Shopping+Plaza/@40.4877082,-79.8899768,17z/data=!3m1!4b1!4m5!3m4!1s0x8834ed116ca44a5d:0xfda4acb3f6cced49!8m2!3d40.4877082!4d-79.8877881">Waterworks Shopping Plaza</a><br />
+Strip Mall<br />
+933 Freeport Road<br />
+Fox Chapel/Aspinwall</p>
+<h1>Museums and Attractions</h1>
+<p><a href="https://www.nationalityrooms.pitt.edu">Cathedral of Learning Nationality Rooms</a><br />
+Classrooms decorated in the style of various cultures<br />
+Oakland</p>
+<p><a href="https://carnegiemuseums.org">Carnegie Museums of Art and Natural History</a><br />
+World class museums with fine and modern art, animal remains, architecture, gemstones and minerals<br />
+Oakland<br />
+Open until 8pm on Thursdays</p>
+<p><a href="https://carnegiemuseums.org">Carnegie Science Center</a><br />
+Natural physics, space, robotics, human body, planentarium, USS Requin submarine<br />
+Chateau<br />
+Monthly 21+ nights on Fridays</p>
+<p><a href="https://carnegiemuseums.org">Andy Warhol Museum</a><br />
+Largest single artist museum in the country<br />
+North Shore<br />
+Open till 10pm on Fridays, half price admission</p>
+<p><a href="https://www.mattress.org">Mattress Factory</a><br />
+Modern art, home of world-famous “Repetitive Vision” by Kusama<br />
+Central North Side</p>
+<p><a href="https://randy.land">Randyland</a><br />
+Original art, offbeat tourist destination<br />
+Central North Side</p>
+<p><a href="https://www.phipps.conservatory.org/">Phipps Conservatory and Botanical Gardens</a><br />
+Indoor and outdoor garden<br />
+Oakland</p>
+<p><strong>Children’s Museum</strong><br />
+Allegheny Center</p>
+<p><strong>Clemente Museum</strong><br />
+Museum of the life of baseball great Roberto Clemente<br />
+Lower Lawrenceville</p>
+<p><strong>Frick Art &amp; Historical Center</strong><br />
+Massive art and car museum<br />
+Point Breeze</p>
+<p><strong>August Wilson House</strong><br />
+Hill District</p>
+<p><a href="https://www.bicycleheaven.org">Bicycle Heaven</a><br />
+Largest transport museum dedicated to bicycles<br />
+North Shore</p>
+<p><a href="https://www.postnatural.org">Center for PostNatural History</a><br />
+Garfield</p>
+<p><a href="http://trundlemanor.com">Trundle Manor</a><br />
+Macabre art museum<br />
+Swissvale</p>
+<p><strong>Wood Street Galleries</strong><br />
+Tech-heavy installation art<br />
+Downtown<br />
+Free, five minute walk</p>
+<p><a href="https://downtownpittsburgh.com/2018/05/14/garrison-canal-new-public-art-downtown">Garrison Canal</a><br />
+LED art in an alley<br />
+Downtown<br />
+Free, five minute walk</p>
+<p><a href="https://www.visitpittsburgh.com/neighborhoods/mt-washington">Grandview Overlook</a><br />
+Beautiful overlook of Pittsburgh from Mt. Washington<br />
+Mt. Washington</p>
+<h1>Religious</h1>
+<p><a href="https://svtemple.org">Sri Venkateswara Temple</a><br />
+Hindu temple, one of the oldest and largest in USA<br />
+Penn Hills, PA</p>
+<p><a href="https://goo.gl/maps/mSzV1V86tcDvssG2A">Beth Hamedrash Hagodol</a><br />
+Orthodox synagogue<br />
+Uptown</p>
+<p><a href="https://www.dorhadash.net">Congregation Dor Hadash</a><br />
+Reconstructionist synagogue<br />
+Shadyside</p>
+<p><strong>Old Saint Patrick&rsquo;s Church</strong><br />
+Catholic church<br />
+Strip District</p>
+<p><strong>St. Stanislaus Kostka R. C. Church</strong><br />
+Catholic church<br />
+Strip District</p>
+<p><strong>Church of the Epiphany</strong><br />
+Catholic church<br />
+Uptown</p>
+<p><strong>St. Mary of Mercy Roman Catholic Church</strong><br />
+Catholic church<br />
+Downtown</p>
+<p><strong>First Presbyterian Church</strong><br />
+Presbyterian church<br />
+Downtown</p>
+<p><strong>First Lutheran Church</strong><br />
+Lutheran church<br />
+Downtown</p>
+<p><strong>Pittsburgh Downtown Musallah</strong><br />
+Mosque<br />
+Downtown</p>
+<h1>Neighborhoods</h1>
+<p><strong>Oakland</strong><br />
+Home of Carnegie Mellon, Pitt, and the Carnegie Museums<br />
+Bus routes 61, 71</p>
+<p><strong>Strip District</strong><br />
+Lots of small shops and restaurants</p>
+<p><strong>Squirrel Hill</strong><br />
+Lots of Asian restaurants, small shops, and synogogues<br />
+Bus Route 61</p>
+<p><strong>Lawrenceville</strong><br />
+&ldquo;Williamsburg NYC, but in Pittsburgh&rdquo;</p>
+<p><strong>South Side</strong><br />
+Bars as far as the eye can see</p>
+<p><strong>Allegheny Center</strong><br />
+Museums</p>
+<p><strong>East Liberty</strong><br />
+Restaurants, Target nearest to DLCC (just off East Liberty Busway Station)                                                                                              </p>
+<p><strong>Dormont</strong><br />
+South Hills<br />
+Home of the Dor-Stop Diner from &ldquo;Diners Drive-Ins and Dives&rdquo;</p>
+<p><a href="https://downtownpittsburgh.com/2018/05/14/garrison-canal-new-public-art-downtown">Downtown</a><br />
+You are / will be here</p>
+<p><strong>North Side</strong><br />
+The City of Allegheny was annexed by Pittsburgh in 1907, and became known as the North Side.</p>
+<p><strong>Mexican War Streets</strong><br />
+Densely filled with restored row houses, community gardens, and tree lined streets and alleyways</p>
+<p><strong>Friendship</strong><br />
+Neighborhood of large Victorian houses in the East End of the city</p>
+<p><strong>Bloomfield</strong><br />
+Pittsburgh&rsquo;s Little Italy</p>
+
+
+
+    </div>
+
+  </div>
+
+    <footer class="footer">
+      <div class="footer-img"></div>
+      <div class="credits">
+        <a href="http://python.org/psf-landing/">
+          <img class="psf-logo" src="/2020/static/images/psf-logo.png" width=300 alt="PSF logo">
+        </a>
+        <p class="footer-credits">
+          The PyCon 2020 conference in Pittsburgh, PA, USA, is a production of the
+          <a href="http://python.org/psf-landing/">Python Software Foundation</a>.
+        </p>
+        <p class="footer-credits">
+          This site is built using
+          <a href="https://www.djangoproject.com/">Django</a>
+          and
+          <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+          Hosting is provided by
+          <a href="http://heroku.com/">Heroku</a>.
+        </p>
+        <p class="footer-credits">
+          PyCon 2020 logo and design created by
+          <a href="http://robbdesign.co">
+            <img class="footer-credit-logo" title="Robb Design Co." alt="Robb Design Co." src="/2020/static/images/robb-design-co.png"/>
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    
+
+    
+      <!-- Bootstrap JS and its dependencies-->
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/b-1.6.1/b-html5-1.6.1/b-print-1.6.1/sl-1.3.1/datatables.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+      <!-- Third-party javascript libraries go here -->
+
+      <!-- Project specific Javascript in this file -->
+      <script src="/2020/static/js/project.js"></script>
+
+      
+      
+
+      
+
+    
+  </body>
+</html>

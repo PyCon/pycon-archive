@@ -1,0 +1,464 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PyCon US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="/2020/static/images/2020-favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/2020/static/images/2020-favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/2020/static/images/2020-favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/2020/static/images/2020-favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/2020/static/images/2020-favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/2020/static/images/2020-favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/2020/static/images/2020-favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/2020/static/images/2020-favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/2020/static/images/2020-favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/2020/static/images/2020-favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/2020/static/images/2020-favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2020/static/images/2020-favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2020/static/images/2020-favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2020/static/images/2020-favicons/favicon-16x16.png">
+    <link rel="manifest" href="/2020/static/images/2020-favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/2020/static/images/2020-favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+    <!-- Third-party CSS libraries go here -->
+
+    <!-- project-specific CSS -->
+    <link href="/2020/static/css/custom-2020-styles.css" rel="stylesheet">
+
+    
+
+    
+    
+
+    
+
+  </head>
+
+  <body>
+  <div id="content-wrapper">
+
+    <header class="header ">
+        <div class="top-nav" role="navigation">
+        <!--
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/2020/">Home</a>
+          </li>
+          
+            <li class="nav-item">
+              <a id="sign-up-link" class="nav-link" href="/2020/accounts/signup/">
+                Sign Up
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="log-in-link" class="nav-link" href="/2020/accounts/login/">
+                Sign In
+              </a>
+            </li>
+          
+        </ul>
+        -->
+      </div>
+        <a href="/" class="header-img">
+          <h1 class="sr-only">PyCon Pittsburgh. April 15-23, 2020.</h1>
+        </a>
+    </header>
+
+    <button id="toggle-nav" class="btn btn--toggle">Menu</button>
+    <div id="main-nav" class="main-nav" role="navigation">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-collapse">
+            
+<ul class="navbar-nav mr-auto">
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-1" data-toggle="dropdown">
+                About PyCon
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-1">
+    
+        <a class="dropdown-item " href="/2020/about/" >What Is PyCon?</a>
+    
+        <a class="dropdown-item " href="/2020/about/code-of-conduct/" >Code of Conduct</a>
+    
+        <a class="dropdown-item " href="/2020/about/diversity/" >Diversity</a>
+    
+        <a class="dropdown-item " href="/2020/about/staff/" >Staff Information</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-4" data-toggle="dropdown">
+                PSF
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-4">
+    
+        <a class="dropdown-item " href="/2020/psf/" >Python Software Foundation</a>
+    
+        <a class="dropdown-item " href="/2020/donate/" >Donate</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-42" data-toggle="dropdown">
+                Events
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-42">
+    
+        <a class="dropdown-item " href="/2020/events/languagesummit/" >Language Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/edusummit/" >Education Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/startuprow/participants/" >Startup Row Participants</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/online/" class="nav-link  ">
+                Online
+            </a>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/sponsors/virtualexpohall/" class="nav-link  ">
+                Virtual Expo Hall
+            </a>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-43" data-toggle="dropdown">
+                Hatchery
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-43">
+    
+        <a class="dropdown-item " href="/2020/hatchery/trainers/" >Python Trainers Summit</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/mentoredsprints/" >Mentored Sprints for Diverse Beginners</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/beginnersdata/" >Beginners Data Workshop for Minorities</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-36" data-toggle="dropdown">
+                Resources
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-36">
+    
+        <a class="dropdown-item " href="/2020/financial-assistance/" >Financial Aid</a>
+    
+        <a class="dropdown-item " href="/2020/registration/airline-resources/" >Airfare Cancellation Resources</a>
+    
+        <a class="dropdown-item " href="/2020/registration/international-refund/" >International Refund Policy</a>
+    
+</div>
+            
+        </li>
+    
+</ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+
+      
+
+      
+    
+
+
+      
+<div class="cms_page_title">
+<h1>Food and Beverages</h1>
+</div>
+<h1>Local Food</h1>
+<p>When it comes to Restaurants, Pittsburgh has a lot to offer&hellip; too much to list individually! Here are a couple good places to start.</p>
+<p><a href="https://www.pittsburghmagazine.com/best-restaurants-in-pittsburgh-in-2019/">Pittsburgh Magazine&rsquo;s Best Restaurants of 2019 list</a> (Everywhere)</p>
+<p>Downtown, including the Cultural District on Penn and Liberty Avenues near the PyCon venue, has many choices, including:</p>
+<ul>
+<li>
+<p><a href="https://www.baebaes.kitchen/">Bae Bae&rsquo;s Kitchen</a><br />
+Korean inspired fast casual. Busy at lunch time, but less so before noon or after 1pm.</p>
+</li>
+<li>
+<p><a href="https://www.bakersfieldtacos.com/">Bakersfield</a></p>
+</li>
+<li>
+<p><a href="http://www.butcherandtherye.com/">Butcher and the Rye</a></p>
+</li>
+<li>
+<p><a href="http://www.condadotacos.com/">Condado Tacos</a></p>
+</li>
+<li>
+<p><a href="https://goo.gl/maps/6rNsgxajK2fHJ3WQ6">Hello Bistro</a><br />
+Salad Bar place. Order or make your own. Nice and fast.</p>
+</li>
+<li>
+<p><a href="https://goo.gl/maps/U5GzcpogzTgLQcfUA">Fogo de Chão</a><br />
+All you can eat steak house. Check out the lunch specials.</p>
+</li>
+<li>
+<p><a href="https://www.meatandpotatoespgh.com/">Meat &amp; Potatoes</a></p>
+</li>
+<li>
+<p><a href="http://www.nickysthaikitchen.com/">Nicky&rsquo;s Thai Kitchen</a></p>
+</li>
+<li>
+<p><strong>Or, the Whale</strong><br />
+<a href="https://www.google.com/maps/dir/David+L.+Lawrence+Convention+Center,+Fort+Duquesne+Boulevard,+Pittsburgh,+PA/or,+The+Whale,+463+Boulevard+of+the+Allies,+Pittsburgh,+PA+15219/@40.4418267,-80.0017999,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8834f3e2eb0a8de7:0x36ba9693af60a61!2m2!1d-79.996162!2d40.445799!1m5!1m1!1s0x8834f15092e3e7c9:0x93b0a6433a47e9e6!2m2!1d-79.998808!2d40.4375189!3e3">(Bus route)</a><br />
+Nice upscale restaurant</p>
+</li>
+<li>
+<p><a href="http://www.porkandbeanspgh.com/">Pork &amp; Beans</a></p>
+</li>
+<li>
+<p><a href="https://goo.gl/maps/wvu4VhWYZcvQM64P6">Primanti Bros.</a><br />
+Old fashioned Pittsburgh sandwiches<br />
+Market Square <a href="https://www.google.com/maps/dir/David+L.+Lawrence+Convention+Center,+Fort+Duquesne+Boulevard,+Pittsburgh,+PA/Primanti+Bros.,+2+Market+Square,+Pittsburgh,+PA+15222/@40.4428061,-80.0006131,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8834f3e2eb0a8de7:0x36ba9693af60a61!2m2!1d-79.996162!2d40.445799!1m5!1m1!1s0x8834f156a5026db1:0x569456f888725b7!2m2!1d-80.0026501!2d40.4403065!3e3">(Bus route)</a></p>
+</li>
+<li>
+<p><a href="http://www.properpittsburgh.com/">Proper Brick Oven &amp; Tap Room</a><br />
+Nice Brick Oven Pizza Spot. Think about making reservations ahead of time. Within walking distance.</p>
+</li>
+<li>
+<p><a href="https://www.siennamercato.com/">Sienna Mercato</a><br />
+Nice Restaurant with a good vibe and good for big groups. They have two floors. The top floor serves pizza and other american cuisine. The first floor is more unique as it serves meatballs. Within walking distance.</p>
+</li>
+<li>
+<p><a href="https://goo.gl/maps/q28Y1JjZdA7JEyjp9">Siena on the Square</a><br />
+Nice Italian-American cuisine on Market Square. Within walking distance.<br />
+Market Square</p>
+</li>
+<li>
+<p><a href="http://takopgh.com/">täkō</a><br />
+Must try taco place in downtown. Definitely needs a reservation.<br />
+Market Square</p>
+</li>
+<li>
+<p><a href="https://www.tenpennypgh.com/">Ten Penny</a></p>
+</li>
+<li>
+<p><a href="https://www.thewarrenpgh.com/">The Warren</a></p>
+</li>
+</ul>
+<p>Other nearby restaurants:</p>
+<ul>
+<li>
+<p><a href="https://goo.gl/maps/jRE4BXUDHeohHkEG8">Bar Marco</a><br />
+Nice bar and restaurant<br />
+Strip District</p>
+</li>
+<li>
+<p><a href="https://goo.gl/maps/Bpfo3TwvM4RSN9R77">Cafe Raymond</a><br />
+Nice brunch place. Good for large groups.<br />
+Strip District</p>
+</li>
+<li>
+<p><a href="https://goo.gl/maps/ScDBQ5wBMGr3meFu7">Chicken Latino</a><br />
+Small local Colombian restaurant<br />
+Strip District</p>
+</li>
+<li>
+<p><a href="https://goo.gl/maps/WTEqZBKNMxJSsR5k9">Cinderlands Warehouse</a><br />
+Local brewery with lots of space and good food<br />
+Strip District</p>
+</li>
+<li>
+<p><a href="https://goo.gl/maps/Aj8RRCEaNPTYJLN27">DeLuca&rsquo;s Diner</a><br />
+Nice traditional and well known restaurant<br />
+Strip District</p>
+</li>
+<li>
+<p><a href="https://g.page/DiAnoiasEatery">DiAnoia&rsquo;s Eatery</a><br />
+Nice Italian brunch spot<br />
+Strip District</p>
+</li>
+<li>
+<p><a href="https://goo.gl/maps/bHProW38x273UZHA9">Driftwood Oven</a><br />
+Sourdough pizza and bread<br />
+Lawrenceville</p>
+</li>
+<li>
+<p><a href="https://goo.gl/maps/dnBS6iSb6ESAfGbXA">Gaucho</a><br />
+Great Argentinian cusine. One of the most popular restaurants in town. Lines can be long, especially at popular dinner times.<br />
+Strip District</p>
+</li>
+</ul>
+<p><a href="https://www.smallmangalley.org/">Smallman Galley</a> (Strip District) and <a href="https://www.federalgalley.org/">Federal Galley</a> (North Shore) are restaurant accelerators/incubators and good for groups of people who all want different things.</p>
+<p>Want a lot of vegan choices? We&rsquo;ve got you. Check out <a href="https://aptekapgh.com/">Apteka</a> (Bloomfield), <a href="https://www.b52pgh.com/">B52</a> (Lawrenceville), <a href="https://www.onionmaiden.com/">Onion Madien</a> (Allentown), and <a href="http://reedand.company/">REED&amp;CO</a> (Lawrenceville)</p>
+<h1>Local Coffee &amp; Tea</h1>
+<p><a href="https://www.blackforgecoffee.com/">Black Forge</a><br />
+Black metal theme with its own video game<br />
+Allentown, McKees Rocks</p>
+<p><a href="https://commonplacecoffee.com/">Commonplace Coffee</a><br />
+Mexican War Streets, Garfield, Squirrel Hill, and more.</p>
+<p><a href="http://www.constellationcoffeepgh.com/">Constellation Coffee</a><br />
+Lawrenceville</p>
+<p><a href="https://crazymocha.com/">Crazy Mocha</a><br />
+Everywhere</p>
+<p><a href="https://defer.coffee/">De Fer Coffee &amp; Tea</a><br />
+Strip District</p>
+<p><a href="https://espressoamano.com/">Espresso a Mano</a><br />
+Lawrenceville</p>
+<p><a href="https://www.gasolinestreetcoffee.com/">Gasoline Street Coffee</a><br />
+Downtown</p>
+<p><a href="https://laprima.com/pages/locations">La Prima</a><br />
+Local Italian coffee place close to downtown. It is one of the older places in Pittsburgh and it is well known and established.<br />
+Strip District</p>
+<p><a href="https://www.nicholascoffee.us/">Nicholas Coffee Co.</a><br />
+Downtown (Market Square)</p>
+<p><a href="https://www.prestogeorge.com/">Prestogeorge</a><br />
+Strip District</p>
+<p><a href="https://www.redhawkcoffee.com/">Redhawk Coffee</a><br />
+Probably the best coffee in downtown Pittsburgh. Great folks and friendly vibe.<br />
+Downtown, Oakland</p>
+<p><a href="http://www.zekescoffeepgh.com/">Zeke&rsquo;s Coffee</a><br />
+Local chain supplying many restaurants<br />
+East Liberty</p>
+<h1>Local Breweries</h1>
+<p><a href="https://www.alleghenycitybrewing.com/">Allegheny City</a><br />
+North Side</p>
+<p><a href="https://www.cinderlands.com/">Cinderlands</a><br />
+Strip District, Lawrenceville</p>
+<p><a href="https://www.couchbrewery.com/">Couch</a><br />
+Larimer</p>
+<p><a href="http://www.dancinggnomebeer.com/the-brewery">Dancing Gnome</a><br />
+Sharpsburg</p>
+<p><a href="https://www.eastendbrewing.com/">East End Brewing</a><br />
+Larimer</p>
+<p><a href="https://www.11thhourbrews.com/">Eleventh Hour</a><br />
+Lawrenceville</p>
+<p><a href="https://gristhouse.com/">Grist House</a><br />
+Millvale</p>
+<p><a href="http://heliconbrewing.com/">Helicon Brewing</a><br />
+Oakdale</p>
+<p><a href="https://hitchhiker.beer/">Hitchhiker</a><br />
+Mt. Lebanon, Sharpsburg</p>
+<p><a href="https://mindfulbrewing.com/">Mindful</a><br />
+Castle Shannon</p>
+<p><a href="https://www.pennbrew.com/">Penn Brewery</a><br />
+North Side, Downtown</p>
+<p><a href="https://roundaboutbeer.com/">Roundabout</a><br />
+Lawrenceville</p>
+<p><a href="http://www.strangerootsbeer.com/">Strange Roots Experiment Ales</a><br />
+Gibsonia, Millvale</p>
+<p><a href="https://stbcbeer.com/taprooms/pittsburgh/">Southern Tier Brewing Company</a><br />
+North Shore</p>
+
+
+
+    </div>
+
+  </div>
+
+    <footer class="footer">
+      <div class="footer-img"></div>
+      <div class="credits">
+        <a href="http://python.org/psf-landing/">
+          <img class="psf-logo" src="/2020/static/images/psf-logo.png" width=300 alt="PSF logo">
+        </a>
+        <p class="footer-credits">
+          The PyCon 2020 conference in Pittsburgh, PA, USA, is a production of the
+          <a href="http://python.org/psf-landing/">Python Software Foundation</a>.
+        </p>
+        <p class="footer-credits">
+          This site is built using
+          <a href="https://www.djangoproject.com/">Django</a>
+          and
+          <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+          Hosting is provided by
+          <a href="http://heroku.com/">Heroku</a>.
+        </p>
+        <p class="footer-credits">
+          PyCon 2020 logo and design created by
+          <a href="http://robbdesign.co">
+            <img class="footer-credit-logo" title="Robb Design Co." alt="Robb Design Co." src="/2020/static/images/robb-design-co.png"/>
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    
+
+    
+      <!-- Bootstrap JS and its dependencies-->
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/b-1.6.1/b-html5-1.6.1/b-print-1.6.1/sl-1.3.1/datatables.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+      <!-- Third-party javascript libraries go here -->
+
+      <!-- Project specific Javascript in this file -->
+      <script src="/2020/static/js/project.js"></script>
+
+      
+      
+
+      
+
+    
+  </body>
+</html>

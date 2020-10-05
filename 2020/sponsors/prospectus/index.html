@@ -1,0 +1,705 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PyCon US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="/2020/static/images/2020-favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/2020/static/images/2020-favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/2020/static/images/2020-favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/2020/static/images/2020-favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/2020/static/images/2020-favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/2020/static/images/2020-favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/2020/static/images/2020-favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/2020/static/images/2020-favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/2020/static/images/2020-favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/2020/static/images/2020-favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/2020/static/images/2020-favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2020/static/images/2020-favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2020/static/images/2020-favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2020/static/images/2020-favicons/favicon-16x16.png">
+    <link rel="manifest" href="/2020/static/images/2020-favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/2020/static/images/2020-favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+    <!-- Third-party CSS libraries go here -->
+
+    <!-- project-specific CSS -->
+    <link href="/2020/static/css/custom-2020-styles.css" rel="stylesheet">
+
+    
+
+    
+    
+
+    
+
+  </head>
+
+  <body>
+  <div id="content-wrapper">
+
+    <header class="header ">
+        <div class="top-nav" role="navigation">
+        <!--
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/2020/">Home</a>
+          </li>
+          
+            <li class="nav-item">
+              <a id="sign-up-link" class="nav-link" href="/2020/accounts/signup/">
+                Sign Up
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="log-in-link" class="nav-link" href="/2020/accounts/login/">
+                Sign In
+              </a>
+            </li>
+          
+        </ul>
+        -->
+      </div>
+        <a href="/" class="header-img">
+          <h1 class="sr-only">PyCon Pittsburgh. April 15-23, 2020.</h1>
+        </a>
+    </header>
+
+    <button id="toggle-nav" class="btn btn--toggle">Menu</button>
+    <div id="main-nav" class="main-nav" role="navigation">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-collapse">
+            
+<ul class="navbar-nav mr-auto">
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-1" data-toggle="dropdown">
+                About PyCon
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-1">
+    
+        <a class="dropdown-item " href="/2020/about/" >What Is PyCon?</a>
+    
+        <a class="dropdown-item " href="/2020/about/code-of-conduct/" >Code of Conduct</a>
+    
+        <a class="dropdown-item " href="/2020/about/diversity/" >Diversity</a>
+    
+        <a class="dropdown-item " href="/2020/about/staff/" >Staff Information</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-4" data-toggle="dropdown">
+                PSF
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-4">
+    
+        <a class="dropdown-item " href="/2020/psf/" >Python Software Foundation</a>
+    
+        <a class="dropdown-item " href="/2020/donate/" >Donate</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-42" data-toggle="dropdown">
+                Events
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-42">
+    
+        <a class="dropdown-item " href="/2020/events/languagesummit/" >Language Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/edusummit/" >Education Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/startuprow/participants/" >Startup Row Participants</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/online/" class="nav-link  ">
+                Online
+            </a>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/sponsors/virtualexpohall/" class="nav-link  ">
+                Virtual Expo Hall
+            </a>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-43" data-toggle="dropdown">
+                Hatchery
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-43">
+    
+        <a class="dropdown-item " href="/2020/hatchery/trainers/" >Python Trainers Summit</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/mentoredsprints/" >Mentored Sprints for Diverse Beginners</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/beginnersdata/" >Beginners Data Workshop for Minorities</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-36" data-toggle="dropdown">
+                Resources
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-36">
+    
+        <a class="dropdown-item " href="/2020/financial-assistance/" >Financial Aid</a>
+    
+        <a class="dropdown-item " href="/2020/registration/airline-resources/" >Airfare Cancellation Resources</a>
+    
+        <a class="dropdown-item " href="/2020/registration/international-refund/" >International Refund Policy</a>
+    
+</div>
+            
+        </li>
+    
+</ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+
+      
+
+      
+    
+
+
+      
+<div class="cms_page_title">
+<h1>Sponsorship Prospectus</h1>
+</div>
+<p><strong>Contact: <a href="mailto:pycon-sponsors@python.org," title="pycon-sponsors@python.org"><a href="mailto:pycon-sponsors@python.org">pycon-sponsors@python.org</a></a></strong></p>
+<p>Emily Morehouse-Valcarcel, PyCon Conference Chair<br />
+Ewa Jodlowska, PSF Executive Director <br />
+Jackie Augustine, PyCon Event Manager<br />
+Betsy Waliszewski, Sponorship and Event Coordinator</p>
+<p>PyCon is the largest annual gathering for the community using and developing the open-source Python programming language. PyCon is organized by the Python community <strong>for</strong> the community. It is underwritten by the Python Software Foundation, a 501(c)3 charitable organization set up to manage the growth and development of Python worldwide.</p>
+<p>Our conference continues to connect with new community members locally, nationally, and globally. Your sponsorship helps keep PyCon affordable and accessible to the widest possible audience. PyCon generates 80% of the PSF’s revenue. Because of your support, we were able to award $137,200 in financial aid to 143 PyCon 2019 attendees. In 2018, grants were awarded to recipients in 51 countries totaling $324,000.</p>
+<p>Benefits of sponsorship:</p>
+<ul>
+<li>Being part of the biggest and most prestigious Python conference in the world</li>
+<li>Being matched with those who could potentially become clients or employees</li>
+<li>Increasing your brand exposure and elevating your corporate identity within the community</li>
+<li>Staying in front of your current and potential customers - 3000+ attendees will see your products </li>
+<li>Strengthening your company’s reputation by investing in Python and the open source community</li>
+</ul>
+<p>Sample sponsorships are below. Depending on your level of sponsorship, packages include complimentary conference passes, booth space, lead retrieval scanners, speaking opportunities, and participation in the Job Fair.</p>
+<p><strong>Python Software Foundation Sponsors (Diamond, Platinum, Gold, and Silver) receive additional tickets to PyCon. Please inquire for details.</strong></p>
+<p>We want to hear from you! Contact us anytime - we are flexible and willing to build a sponsorship package that fits your needs. Only you know your business, how you measure success and what you&rsquo;re looking for.</p>
+<ul>
+<li><a href="/2020/sponsors/prospectus#Keystone">Keystone Level Sponsorship</a> SOLD OUT</li>
+<li><a href="/2020/sponsors/prospectus#Diamond"> Diamond Level Sponsorship</a> SOLD OUT</li>
+<li><a href="/2020/sponsors/prospectus#Platinum"> Platinum Level Sponsorship</a> SOLD OUT</li>
+<li><a href="/2020/sponsors/prospectus#Gold"> Gold Level Sponsorship</a> SOLD OUT</li>
+<li><a href="/2020/sponsors/prospectus#Silver"> Silver Level Sponsorship</a> </li>
+<li><a href="/2020/sponsors/prospectus#Patron"> PyCon Patron</a> </li>
+<li><a href="/2020/sponsors/prospectus#Media"> Media Partnership</a> </li>
+<li><a href="/2020/sponsors/prospectus#a-la-carte">À la carte options</a></li>
+<li><a href="/2020/sponsors/prospectus#CommunityBooths"> Community Booths</a> SOLD OUT</li>
+</ul>
+<h4>Estimated attendance: 3200+</h4>
+<h4>Quick stats from 2019:</h4>
+<ul>
+<li>3393 people checked in </li>
+<li>Of those 3393 checked in attendees, 55 countries were represented. Here is the breakdown of where they reported being from:<ul>
+<li>88% from the United States</li>
+<li>12% total combined from Anguilla, Argentina, Australia, Belarus, Belgium, Bolivia , Brazil, Canada, China, Colombia, Costa Rica, Croatia, Cuba, Czechia, Denmark, Dominican Republic , Ethiopia, Finland, France, Germany, Guatemala, India, Ireland, Israel, Italy, Japan, Kenya, Korea , Mexico, Netherlands , New Zealand, Nicaragua, Nigeria, Norway, Peru, Poland, Portugal, Qatar, Russia, Serbia, Singapore, Slovakia, Spain, Sweden, Switzerland, Taiwan , Turkey, Turks and Caicos Islands, Uganda, Ukraine, United Kingdom , United States, and Zimbabwe.</li>
+</ul>
+</li>
+</ul>
+<h4>Audience profile:</h4>
+<p>Developers, technologists, programmers, educators, bloggers, authors, web developers, CTOs, managers, entrepreneurs, scientists, engineers and domain experts</p>
+<h4>Sample Job Titles</h4>
+<p>
+<a target="_blank" href="https://www.dropbox.com/s/la8rkyj6m2x70zc/PyCon%20Attendee%20Job%20Titles.pdf?dl=0">Click here to view sample job titles from 2019 attendees</a>
+</p>
+
+<h4>They come to learn about:</h4>
+<p>Python internals, beginner, and advanced skills. Use cases and case studies. Python used in a variety of industries including robotics, startups and the enterprise. Python powering some of the Web’s biggest sites. Speeding up your Python applications. The growing Python ecosystem and community.</p>
+<h4>Customized Sponsor Package:</h4>
+<p>We&rsquo;re happy to customize a sponsorship package to give you the freedom to choose what you think works best in order to meet your event participation goals. Please contact us at <a href="mailto:pycon-sponsors@python.org">pycon-sponsors@python.org</a> to discuss options.</p>
+<p>Media sponsorship: please contact us at <a href="mailto:pycon-sponsors@python.org">pycon-sponsors@python.org</a> to discuss available sponsorship options.</p>
+<h4>More information regarding the Expo Hall/Job Fair/Deadlines will be sent out in the Sponsor Manual in December 2019 from our decorator/staff.</h4>
+<ul>
+<li><strong>Conference Schedule:</strong><ul>
+<li>Two tutorial days: April 15-16, 2020</li>
+<li>Main Conference: April 17-19, 2020</li>
+<li>Three day Expo Hall: April 16-18, 2020</li>
+<li>Job Fair: April 19, 2020</li>
+<li>Development Sprints: April 20-23, 2020</li>
+</ul>
+</li>
+</ul>
+<h4>Exhibit Floor Information and Schedule</h4>
+<p>The Exhibit Hall will be located in Exhibit Hall A in the David L. Lawrence Convention Center.</p>
+<p>All meals and snacks will be served in the expo hall. Please prepare to have your booth staffed from 5:30 pm - 7:30 pm on Thursday and 8:00 am until 5 pm on Friday and Saturday. It is mandatory that your booth is staffed for the &ldquo;active times&rdquo; (see below). </p>
+<h4>Move-in</h4>
+<ul>
+<li><strong>Keystone &amp; Diamond Level</strong>: begins on Tuesday, April 14 at 2:00pm - 7:00pm and concludes on Thursday, April 16 at 2:00pm. </li>
+<li><strong>Platinum &amp; Gold Levels</strong>: begins on Wednesday, April 15 at 8:00am - 6:00pm and concludes on Thursday, April 16 at 2:00pm.  </li>
+<li>There is an Opening Reception on the Exhibit Floor from 5:30pm to 7:30pm on Thursday. </li>
+</ul>
+<h4>Exhibit Floor Times</h4>
+<ul>
+<li>
+<p><strong>Thursday, April 16, 2020</strong> – 5:30pm to 7:30pm</p>
+</li>
+<li>
+<p><strong>Friday, April 17, 2020</strong> – 8:00am to 5:00pm<br />
+    Active times are:</p>
+<ul>
+<li>8:00am until 9:30am</li>
+<li>10:10am until 10:50am</li>
+<li>12:40pm until 1:55pm</li>
+<li>3:45pm until 4:30pm</li>
+</ul>
+</li>
+<li>
+<p><strong>Saturday, April 18, 2020</strong> – 8:00am to 5:00pm<br />
+    Active times are:</p>
+<ul>
+<li>8:00am until 9:30am</li>
+<li>10:10am until 10:50am</li>
+<li>12:40pm until 1:55pm</li>
+<li>3:45pm until 4:30pm</li>
+</ul>
+</li>
+</ul>
+<h4>Move-out</h4>
+<p>Begins on 5:00pm Saturday, April 18th. Everything needs to be cleared out by 7pm. At this point, we transform the Expo Hall into the Job Fair (details for the job fair below).</p>
+<p>You have an option to opt-out of the Booth Space in the Exhibit Hall. However, if you do not opt-out before the start of the conference and leave your booth empty, a fee will be applied to your sponsorship. This can be arranged by contacting us at <a href="mailto:pycon-sponsors@python.org">pycon-sponsors@python.org</a>.</p>
+<h2 id=“job-fair-info”>Job Fair Information</h2>
+
+<p>We always have an amazing turnout at our Job Fair. Many companies find good prospects during the three-hour event, some receiving hundreds of resumes in a short time. The job fair is open to the public, with tickets available online. This opens up opportunities to reach the local dev scene, schools, and user groups and increases the Job Fair audience with quality candidates.</p>
+<p>Date &amp; Time: Sunday, April 19, 2020 – 10:00am to 1:00pm</p>
+<p>Location: Exhibit Hall A — David L. Lawrence Convention Center</p>
+<p>Move-in: Begins at 8:00 am Sunday, April 19. The Job Fair is open to attendees and the public from 10:00 am to 1:00 pm. </p>
+<p>Move-out: Begins at 1:00pm. Sponsor material should be cleared out by 3:00pm.</p>
+<p>Layout: Every participant will have a company sign, (1) six-foot table, and (2) chairs. We do not use booths during the Job Fair. You are welcome to have a standing banner or customized tablecloth. Giveaways/flyers are welcome. Power and wifi will be provided.</p>
+<h4>Note: The Expo Hall with booths is a different event than the Job Fair. We do not reuse the Expo Hall booths for the job fair; the entire room is reset Saturday, April 18, at 5:00 pm. Please, opt-in for the Job Fair during sign up. <a href="https://pycon-us-2020-production.herokuapp.com/2020/sponsors/faq/">Please see our Sponsor FAQ for more information</a>.</h4>
+<h2>Sponsor Packages</h2>
+<p><a id="Keystone"></a></p>
+<h3>Keystone Level Sponsorship — $60K USD (SOLD OUT)</h3>
+<p><a class="btn btn-primary" href="/2020/sponsors/apply/">Sign up here</a></p>
+<ul>
+<li>20x30 booth space in Exhibit Hall Thursday, April 16th – Saturday, April 18th</li>
+<li>(2) complimentary lead retrieval units </li>
+<li>Invitation to the &ldquo;Sponsor Thank-You Reception&rdquo;</li>
+<li>Conference wifi and standard power included</li>
+<li>(25) Full conference passes</li>
+<li>(8) Expo only staff passes</li>
+<li>(2) Sponsor Workshops on Thursday, April 16th</li>
+<li>(1) Full-color ad to be used in rotation in general session &amp; all breakout rooms in between talks</li>
+<li>Digital Signage </li>
+<li>Opening Reception sponsor (includes logo printed on opening reception banner and refreshment tickets)</li>
+<li>Onsite Mention: Verbal thank-you from the main stage</li>
+<li>Preferred Event App Listing: Company name, logo, description, and link </li>
+<li>Onsite Exhibit Management and Floor Manager from Thursday - Sunday</li>
+<li>Tote bag insert (provided by sponsor)</li>
+<li>Logo placement alongside the PyCon logo on the tote bag (&ldquo;PyCon 2020 sponsored by x and y&rdquo;)</li>
+<li>Keystone sponsor designation and listing on the PyCon website</li>
+<li>Blog post highlighting what you do with Python</li>
+<li>Preferred rotation of Python case study posted on <a href="http://python.org">python.org</a></li>
+<li>Job listing(s) on the Jobs Fair page</li>
+<li>Complimentary table for the Job Fair on Sunday, April 19th</li>
+<li>Interview Room available to recruiting team all day Sunday, April 19th</li>
+<li>Participation in PyCon Charity Auction</li>
+<li>PyCon Dinner Room Naming Rights</li>
+<li>Additional full conference passes available at a 25% discount off the regular corporate rate.</li>
+</ul>
+<p><a id="Diamond"></a>  </p>
+<h3>Diamond Level Sponsorship — $35K USD (Limit: 4) (SOLD OUT)</h3>
+<p><a class="btn btn-primary" href="/2020/sponsors/apply/">Sign up here</a></p>
+<ul>
+<li>20x20 booth space in Exhibit Hall Thursday, April 16th – Saturday, April 18th</li>
+<li>(1) complimentary lead retrieval unit</li>
+<li>Invitation to the &ldquo;Sponsor Thank-You Reception&rdquo;</li>
+<li>Conference wifi and standard power included</li>
+<li>(15) Full conference passes</li>
+<li>(6) Expo only staff passes</li>
+<li>(1) Sponsor Workshop on Thursday, April 16th</li>
+<li>(1) Full-color ad to be used in rotation in general session &amp; all breakout rooms in between talks</li>
+<li>Digital Signage </li>
+<li>Onsite Mention: Verbal thank-you from the main stage</li>
+<li>Onsite Exhibit Management and Floor Manager from Thursday - Sunday</li>
+<li>Tote bag insert (provided by sponsor)</li>
+<li>Diamond sponsor designation and listing on the PyCon website</li>
+<li>Job listing(s) on the Jobs Fair page</li>
+<li>Complimentary table for the Job Fair on Sunday, April 19th</li>
+<li>Interview Room available to recruiting team all day Sunday, April 19th</li>
+<li>Participation in PyCon Charity Auction</li>
+<li>Event App Listing: Company name, logo, description, and link </li>
+<li>Additional full conference passes available at a 20% discount off the regular corporate rate.</li>
+<li>Preferred rotation of Python case study posted on <a href="http://python.org">python.org</a></li>
+<li>PyCon Dinner Room Naming Rights </li>
+</ul>
+<p><a id="Platinum"></a></p>
+<h3>Platinum Level Sponsorship — $17,500 USD  (SOLD OUT)</h3>
+<p><a class="btn btn-primary" href="/2020/sponsors/apply/">Sign up here</a></p>
+<ul>
+<li>10x20 booth space in Exhibit Hall Thursday, April 16th – Saturday, April 18th</li>
+<li>Invitation to the &ldquo;Sponsor Thank-You Reception&rdquo;</li>
+<li>(10) Full conference passes</li>
+<li>(4) Expo only staff passes</li>
+<li>Conference wifi and standard power included</li>
+<li>Digital Signage </li>
+<li>(1) Full-color ad to be used in rotation in all breakout rooms in between talks</li>
+<li>Onsite Mention: Verbal thank-you from the main stage </li>
+<li>Onsite Exhibit Management and Floor Manager from Thursday - Sunday</li>
+<li>Tote bag insert (provided by sponsor)</li>
+<li>Platinum sponsor designation and listing on the PyCon website</li>
+<li>Job listing(s) on the Jobs Fair page</li>
+<li>Complimentary table for the Job Fair on Sunday, April 19th</li>
+<li>Participation in PyCon Charity Auction</li>
+<li>Event App Listing: Company name, logo, description, and link </li>
+<li>Additional full conference passes available at a 15% discount off the regular corporate rate.</li>
+</ul>
+<p><a id="Gold"></a></p>
+<h3>Gold Level Sponsorship — $9,500 USD (SOLD OUT)</h3>
+<p><a class="btn btn-primary" href="/2020/sponsors/apply/">Sign up here</a></p>
+<ul>
+<li>10x10 booth space in Exhibit Hall Thursday, April 16th – Saturday, April 18th</li>
+<li>Invitation to the &ldquo;Sponsor Thank-You Reception&rdquo;</li>
+<li>5 Full conference passes</li>
+<li>4 Expo only staff passes</li>
+<li>Conference wifi and standard power included</li>
+<li>Onsite Exhibit Management and Floor Manager from Thursday - Sunday</li>
+<li>Tote bag insert (provided by sponsor)</li>
+<li>Gold sponsor designation and listing on the PyCon website</li>
+<li>Participation in PyCon Charity Auction</li>
+<li>Job listing(s) on the Jobs Fair page</li>
+<li>Complimentary table for the Job Fair on Sunday, April 19th</li>
+</ul>
+<p><a id="Silver"></a></p>
+<h3>Silver Level Sponsorship — $5,000 USD</h3>
+<p><a class="btn btn-primary" href="/2020/sponsors/apply/">Sign up here</a></p>
+<ul>
+<li>(2) Full conference passes</li>
+<li>Tote bag insert (provided by sponsor)</li>
+<li>Silver sponsor designation and listing on the PyCon website</li>
+<li>Participation in PyCon Charity Auction</li>
+<li>Job listing(s) on the Jobs Fair page</li>
+</ul>
+<h4><span class="label label-important">Note:</span> that this level does not include a job fair table <strong>nor</strong> a booth in the Expo Hall</h4>
+<p><a id="Patron"></a></p>
+<h3>PyCon Patron — $1,000 USD</h3>
+<p><a class="btn btn-primary" href="/2020/sponsors/apply/">Sign up here</a><br />
+(For individuals and start-up businesses)</p>
+<ul>
+<li>Patron sponsor designation and listing on the PyCon website</li>
+<li>(1) Full conference pass</li>
+<li>Logo added to onsite “Patron Wall”</li>
+</ul>
+<p><a id="Media"></a></p>
+<h3>Media Partnership</h3>
+<p><a class="btn btn-primary" href="/2020/sponsors/apply/">Sign up here</a></p>
+<ul>
+<li>Applicants are reviewed and approved on a case-by-case basis</li>
+<li>Media Partnership designation and listing on the PyCon website</li>
+<li>Applicants are encouraged to help publicize PyCon before, during, and after the event</li>
+<li>Approved applicants will receive (1) full conference pass</li>
+</ul>
+<h4>Additional Information</h4>
+<ul>
+<li>Small entity discount: Organizations with fewer than 25 employees receive a 30% discount for gold and silver sponsorships. </li>
+</ul>
+<p><a id="CommunityBooths"></a></p>
+<h3>COMMUNITY BOOTHS (SOLD OUT)</h3>
+<ul>
+<li>Free booths for F/OSS projects: (12) complimentary booth spaces for OSS projects will be provided as requested and while available. Participants must confirm their booth will be staffed for all conference days. Each booth comes with (2) Full conference passes, (1) 6&rsquo; table, (2) chairs, your project&rsquo;s sign, conference wifi, and standard power. </li>
+<li>
+<h4>All applications are reviewed by our conference chairs. Project criteria include the following:</h4>
+</li>
+<li>Must be open source</li>
+<li>Must be non-commercial</li>
+<li>Must be Python-specific</li>
+</ul>
+<p><a class="btn btn-primary" href="/2020/sponsors/apply/">Sign up here</a></p>
+<p><a id="a-la-carte"></a></p>
+<h3>À la carte Options (Marketing and Promotional Opportunities)</h3>
+<ul>
+<li><a href="/2020/sponsors/prospectus#SwagBag">Swag Bag Sponsorship</a> (SOLD OUT)</li>
+<li><a href="/2020/sponsors/prospectus#LanyardSponsorship">Lanyard Sponsorship</a>  (SOLD OUT)</li>
+<li><a href="/2020/sponsors/prospectus#TShirtSponsorship">Attendee T-Shirt Sponsorship</a> NEW FOR 2020 (SOLD OUT)</li>
+<li><a href="/2020/sponsors/prospectus#PyLadies Auction">PyLadies Auction Sponsorship</a> (SOLD OUT)</li>
+<li><a href="/2020/sponsors/prospectus#BreakfastLunch">Breakfast or Lunch</a> (SOLD OUT)</li>
+<li><a href="/2020/sponsors/prospectus#FinancialAid">Financial Aid Sponsorship</a> (SOLD OUT)</li>
+<li><a href="/2020/sponsors/prospectus#Workshop">Sponsor Workshop</a> (SOLD OUT)</li>
+<li><a href="/2020/sponsors/prospectus#AttendeeLounge">Attendee Lounge Sponsorship</a> (SOLD OUT)</li>
+<li><a href="/2020/sponsors/prospectus#FunRun">PyCon FunRun / Walk Sponsorship</a> NEW FOR 2020 (SOLD OUT)</li>
+<li><a href="/2020/sponsors/prospectus#JobFair">Table in the Job Fair</a></li>
+<li><a href="/2020/sponsors/prospectus#JobFair">Captioning Sponsorship</a> (NEW FOR 2020 - JUST ADDDED)</li>
+<li><a href="/2020/sponsors/prospectus#Coffee">Conference Day Coffee Break Sponsorship</a> (SOLD OUT)</li>
+<li><a href="/2020/sponsors/prospectus#SprintCoffee">Sprint Day Coffee Break Sponsorship</a> (SOLD OUT)</li>
+<li><a href="/2020/sponsors/prospectus#Sprint">Sprint Sponsorship</a> (SOLD OUT)</li>
+<li><a href="/2020/sponsors/prospectus#Summit">Summit Sponsorship</a> </li>
+<li><a href="/2020/sponsors/prospectus#Open Space">Open Space Sponsorship</a></li>
+<li><a href="/2020/sponsors/prospectus#Hatchery">Hatchery Sponsorship</a></li>
+</ul>
+<p><a id="SwagBag"></a></p>
+<h3>Swag Bag Insert — $25,000 USD (SOLD OUT)</h3>
+<ul>
+<li>Sponsor to provide quantity 3100</li>
+<li>Python logo can be included on the item, following PSF guidelines</li>
+<li>Logo placement on Swag Bag sponsor page on <a href="http://us.pycon.org">us.pycon.org</a></li>
+<li>(4) Full conference passes</li>
+</ul>
+<p><a id="LanyardSponsorship"></a>  </p>
+<h3>Lanyard — $13,000 USD (Limit: 1)  (SOLD OUT)</h3>
+<ul>
+<li>Logo placement on Lanyard Sponsor web page on <a href="http://us.pycon.org">us.pycon.org</a></li>
+<li>Logo placement the conference lanyard</li>
+<li>(2) Standing signs with your logo to be placed in a high-traffic area</li>
+<li>(4) Full conference passes</li>
+<li>Includes cost of lanyards and badge  holders</li>
+</ul>
+<p><a id="TShirtSponsorship"></a> </p>
+<h3>Attendee T-Shirt — $10,000 USD (SOLD OUT)</h3>
+<p>For the first time, we’re offering an Attendee T-Shirt Sponsorship (Limit 2). Have your company logo displayed on the iconic 2020 t-shirt. PyCon t-shirts are collected and prized by attendees, so your company will be recognized for years to come.</p>
+<ul>
+<li>Logo placement on Attendee T-Shirt Sponsor web page on <a href="http://us.pycon.org">us.pycon.org</a></li>
+<li>Logo placement on the attendee t-shirt</li>
+<li>(1) Standing sign with your logo to be placed at t-shirt distribution area</li>
+<li>(4) Full conference passes</li>
+</ul>
+<p><a id="PyLadiesAuction"></a></p>
+<h3>PyLadies Auction — $7,500 USD (Limit 2) (SOLD OUT)</h3>
+<ul>
+<li>A fun and entertaining way to support the PyLadies community. </li>
+<li>(1) Standing sign with your logo to be placed in a high-traffic area</li>
+<li>(1) Standing sign with your logo to be placed at event location</li>
+<li>Sponsor sign on each table </li>
+<li>Logo placement on Pyladies Auction sponsor page on <a href="http://us.pycon.org">us.pycon.org</a></li>
+<li>3 Full conference passes</li>
+</ul>
+<p><a id="BreakfastLunch"></a></p>
+<h3>Breakfast or Lunch — $6,000 for all 3 days (SOLD OUT)</h3>
+<ul>
+<li>Logo printed on 8.5&rdquo;x11&rdquo; self-standing signs to be placed at all food stations  </li>
+<li>Sponsor sign on each table during meal and sponsor provided swag</li>
+<li>(2) Standing signs with your logo to be placed in a high traffic area</li>
+<li>Logo placement on Breakfast or Lunch sponsor page on <a href="http://us.pycon.org">us.pycon.org</a></li>
+<li>(3) Full conference passes</li>
+</ul>
+<p><a id="FinancialAid"></a></p>
+<h3>Financial Aid for PyCon Attendees $5,000 — (SOLD OUT)</h3>
+<ul>
+<li>Logo placement on Financial Aid page on <a href="http://us.pycon.org">us.pycon.org</a></li>
+<li>(1) Standing sign with your logo to be placed in a high traffic area</li>
+<li>(2) Full conference passes</li>
+</ul>
+<p><a id="Workshop"></a></p>
+<h3>Sponsor Workshop — $5,000 USD (SOLD OUT)</h3>
+<ul>
+<li>Provides a one and a half hour slot on Thursday, April 16</li>
+<li>Logo placement on Sponsor Workshop sponsor page on <a href="http://us.pycon.org">us.pycon.org</a></li>
+<li>Free registrations for attendees </li>
+<li>Coffee &amp; tea provided by show management during breaks </li>
+<li>Basic AV &amp; power provided by show management</li>
+<li>(2) Full conference passes</li>
+</ul>
+<p><a id="AttendeeLounge"></a></p>
+<h3>Attendee Lounge Branding/Signage &ndash; $5,000 USD (SOLD OUT)</h3>
+<p>This furnished area offers a restful place for PyCon attendees to relax, network, or write a few lines of code. This opportunity offers a double-sided meter board with your company logo and information. Sponsor may provide branded pillows and company literature in the area.</p>
+<ul>
+<li>Logo placement on Attendee Lounge page on <a href="http://us.pycon.org">us.pycon.org</a> </li>
+<li>(1) Standing sign with your logo to be placed in the Attendee Lounge area</li>
+<li>(2) Full conference passes</li>
+</ul>
+<p><a id="FunRun"></a></p>
+<h3>FunRun / Walk &ndash; $4,000 USD (SOLD OUT)</h3>
+<p>Sponsor PyCon’s annual fun run on Sunday, April 19th. Includes sponsor logo on the official t-shirt. Additional option to provide a prize giveaway.</p>
+<ul>
+<li>Logo placement on FunRun web page on <a href="http://us.pycon.org">us.pycon.org</a></li>
+<li>Logo placement on the FunRun t-shirt </li>
+<li>(2) Full conference passes</li>
+<li>(1) Standing sign with your logo to be placed in a high traffic area</li>
+<li>(1) Standing sign with your logo to be placed at the Race starting location</li>
+</ul>
+<p><a id="JobFair"></a></p>
+<h3>Table in the Job Fair- $4,000 USD</h3>
+<ul>
+<li>6-foot table with 2 chairs provided for your company on Sunday, April 19, 2020, from 10:00 am to 1:00 pm.</li>
+<li>Conference wifi and standard power is included</li>
+<li>Logo placement on Job Fair sponsor page on <a href="http://us.pycon.org">us.pycon.org</a></li>
+<li>(3) Expo only staff passes</li>
+</ul>
+<p><a id="Captioning"></a></p>
+<h3>Captioning —  $3,000 USD (LIMIT 4)</h3>
+<p>CART provides equal communication access for people with hearing loss or deafness, and serves many others also such as people with language or learning differences, with tinnitus, with autism. Captioning boosts focused attention and learning for hearing people too.</p>
+<ul>
+<li>(1) slide in rotation between all breakouts (not keynotes)</li>
+<li>Onsite Mention: Verbal thank-you from the main stage during the welcome message</li>
+<li>(2) Full conference passes</li>
+</ul>
+<p><a id="Coffee"></a></p>
+<h3>Conference Day Coffee Break —  $3,000 USD per day (SOLD OUT)</h3>
+<ul>
+<li>Provides coffee and tea for the attendees for up to 4-6 hours on Friday, April 17 or Saturday, April 18</li>
+<li>(2) standing signs with your logo to be placed in high traffic area and signage with your logo at all coffee stations </li>
+<li>Logo placement on Conference Day Coffee Break sponsor page on <a href="http://us.pycon.org">us.pycon.org</a></li>
+<li>(2) Full conference passes</li>
+</ul>
+<p><a id="SprintCoffee"></a></p>
+<h3>Sprint Day Coffee Break —  $3,000 USD for all 4 days (SOLD OUT)</h3>
+<ul>
+<li>Provides coffee and tea for the attendees for up to 4-6 hours during the Sprints</li>
+<li>(1) Standing sign with your logo to be placed in a high-traffic area and signage with your logo at the coffee stations </li>
+<li>Logo placement on Sprint Day Coffee Break sponsor page on <a href="http://us.pycon.org">us.pycon.org</a></li>
+<li>(2) Full conference passes</li>
+</ul>
+<p><a id="Sprint"></a></p>
+<h3>Sprint — $2,500 USD for all 4 days (SOLD OUT)</h3>
+<ul>
+<li>Provides power drops for sprint meeting room tables</li>
+<li>Logo placement on Sprint page on <a href="http://us.pycon.org">us.pycon.org</a></li>
+<li>Logo printed on Sprint schedule board</li>
+<li>(2) Standing signs with your logo to be placed in a high-traffic area</li>
+<li>(2) Full conference passes</li>
+</ul>
+<p><a id="Summit"></a></p>
+<h3>Education Summit/Language Summit/Young Coder Workshop — $1,500 per event</h3>
+<ul>
+<li>Logo placement on respective event&rsquo;s webpage on <a href="http://us.pycon.org">us.pycon.org</a></li>
+<li>(1) Standing sign with your logo to be placed in front of respective event </li>
+<li>Supports Python development through the Language Summit; supports Python Education; supports new user development through the Young Coders Workshop.</li>
+<li>(1) Full conference pass</li>
+</ul>
+<p><a id="Open Space"></a></p>
+<h3>Open Space room branding/signage — $1,500 USD</h3>
+<ul>
+<li>Logo placement on Open Space page on <a href="http://us.pycon.org">us.pycon.org</a>  </li>
+<li>Logo placement on all Open Space schedule boards</li>
+<li>(1) Standing sign with your logo to be placed in a high traffic area</li>
+<li>(1) Full conference pass</li>
+</ul>
+<p><a id="Hatchery"></a></p>
+<h3>Hatchery Program Branding/Signage &ndash; $1,500 USD</h3>
+<ul>
+<li>The PyCon Hatchery Program establishes a path for the introduction of new tracks, summits, and demos that share and fulfill the mission of the Python Software Foundation into PyCon’s schedule.</li>
+<li>Logo placement on Hatchery page on <a href="http://us.pycon.org">us.pycon.org</a>  </li>
+<li>Logo printed on all Hatchery schedule boards</li>
+<li>(1) Standing sign with your logo to be placed in a high traffic area</li>
+<li>(1) Full conference pass</li>
+</ul>
+
+
+
+    </div>
+
+  </div>
+
+    <footer class="footer">
+      <div class="footer-img"></div>
+      <div class="credits">
+        <a href="http://python.org/psf-landing/">
+          <img class="psf-logo" src="/2020/static/images/psf-logo.png" width=300 alt="PSF logo">
+        </a>
+        <p class="footer-credits">
+          The PyCon 2020 conference in Pittsburgh, PA, USA, is a production of the
+          <a href="http://python.org/psf-landing/">Python Software Foundation</a>.
+        </p>
+        <p class="footer-credits">
+          This site is built using
+          <a href="https://www.djangoproject.com/">Django</a>
+          and
+          <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+          Hosting is provided by
+          <a href="http://heroku.com/">Heroku</a>.
+        </p>
+        <p class="footer-credits">
+          PyCon 2020 logo and design created by
+          <a href="http://robbdesign.co">
+            <img class="footer-credit-logo" title="Robb Design Co." alt="Robb Design Co." src="/2020/static/images/robb-design-co.png"/>
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    
+
+    
+      <!-- Bootstrap JS and its dependencies-->
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/b-1.6.1/b-html5-1.6.1/b-print-1.6.1/sl-1.3.1/datatables.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+      <!-- Third-party javascript libraries go here -->
+
+      <!-- Project specific Javascript in this file -->
+      <script src="/2020/static/js/project.js"></script>
+
+      
+      
+
+      
+
+    
+  </body>
+</html>

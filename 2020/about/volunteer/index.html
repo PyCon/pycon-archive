@@ -1,0 +1,432 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PyCon US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="/2020/static/images/2020-favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/2020/static/images/2020-favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/2020/static/images/2020-favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/2020/static/images/2020-favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/2020/static/images/2020-favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/2020/static/images/2020-favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/2020/static/images/2020-favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/2020/static/images/2020-favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/2020/static/images/2020-favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/2020/static/images/2020-favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/2020/static/images/2020-favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2020/static/images/2020-favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2020/static/images/2020-favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2020/static/images/2020-favicons/favicon-16x16.png">
+    <link rel="manifest" href="/2020/static/images/2020-favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/2020/static/images/2020-favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+    <!-- Third-party CSS libraries go here -->
+
+    <!-- project-specific CSS -->
+    <link href="/2020/static/css/custom-2020-styles.css" rel="stylesheet">
+
+    
+
+    
+    
+
+    
+
+  </head>
+
+  <body>
+  <div id="content-wrapper">
+
+    <header class="header ">
+        <div class="top-nav" role="navigation">
+        <!--
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/2020/">Home</a>
+          </li>
+          
+            <li class="nav-item">
+              <a id="sign-up-link" class="nav-link" href="/2020/accounts/signup/">
+                Sign Up
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="log-in-link" class="nav-link" href="/2020/accounts/login/">
+                Sign In
+              </a>
+            </li>
+          
+        </ul>
+        -->
+      </div>
+        <a href="/" class="header-img">
+          <h1 class="sr-only">PyCon Pittsburgh. April 15-23, 2020.</h1>
+        </a>
+    </header>
+
+    <button id="toggle-nav" class="btn btn--toggle">Menu</button>
+    <div id="main-nav" class="main-nav" role="navigation">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-collapse">
+            
+<ul class="navbar-nav mr-auto">
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-1" data-toggle="dropdown">
+                About PyCon
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-1">
+    
+        <a class="dropdown-item " href="/2020/about/" >What Is PyCon?</a>
+    
+        <a class="dropdown-item " href="/2020/about/code-of-conduct/" >Code of Conduct</a>
+    
+        <a class="dropdown-item " href="/2020/about/diversity/" >Diversity</a>
+    
+        <a class="dropdown-item " href="/2020/about/staff/" >Staff Information</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-4" data-toggle="dropdown">
+                PSF
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-4">
+    
+        <a class="dropdown-item " href="/2020/psf/" >Python Software Foundation</a>
+    
+        <a class="dropdown-item " href="/2020/donate/" >Donate</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-42" data-toggle="dropdown">
+                Events
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-42">
+    
+        <a class="dropdown-item " href="/2020/events/languagesummit/" >Language Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/edusummit/" >Education Summit</a>
+    
+        <a class="dropdown-item " href="/2020/events/startuprow/participants/" >Startup Row Participants</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/online/" class="nav-link  ">
+                Online
+            </a>
+            
+        </li>
+    
+        <li class="nav-item ">
+            <a href="/2020/sponsors/virtualexpohall/" class="nav-link  ">
+                Virtual Expo Hall
+            </a>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-43" data-toggle="dropdown">
+                Hatchery
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-43">
+    
+        <a class="dropdown-item " href="/2020/hatchery/trainers/" >Python Trainers Summit</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/mentoredsprints/" >Mentored Sprints for Diverse Beginners</a>
+    
+        <a class="dropdown-item " href="/2020/hatchery/beginnersdata/" >Beginners Data Workshop for Minorities</a>
+    
+</div>
+            
+        </li>
+    
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link  dropdown-toggle" aria-haspopup="true" id="navitem-36" data-toggle="dropdown">
+                Resources
+            </a>
+            
+                
+<div class="dropdown-menu" aria-labelledby="navitem-36">
+    
+        <a class="dropdown-item " href="/2020/financial-assistance/" >Financial Aid</a>
+    
+        <a class="dropdown-item " href="/2020/registration/airline-resources/" >Airfare Cancellation Resources</a>
+    
+        <a class="dropdown-item " href="/2020/registration/international-refund/" >International Refund Policy</a>
+    
+</div>
+            
+        </li>
+    
+</ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+
+      
+
+      
+    
+
+
+      
+<div class="cms_page_title">
+<h1>Volunteering On-Site</h1>
+</div>
+<p>Call for On-Site Volunteers</p>
+<p>Got a couple of hours to give? PyCon is organized and run by volunteers from the Python community. This year we&rsquo;re looking for over <a href="">300 on-site volunteer hours</a> to help make sure everything runs smoothly.</p>
+<p>Everyone who is attending PyCon is welcome to volunteer, but you <strong>must be registered</strong> to volunteer. All help is very <strong>much appreciated</strong>. Thank you!</p>
+<p><span class="label label-note">Pro Tip:</span> Sign-up to be a Session Chair or Session Runner – it&rsquo;s a great opportunity to meet the speakers!</p>
+<table>
+<thead>
+<tr>
+<th>Volunteer</th>
+<th>Sign-up</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Session Staff (must be logged in)</td>
+<td>Session Staff sign-up</td>
+<td>Fri - Sun</td>
+</tr>
+<tr>
+<td>Green Room Staff</td>
+<td>Green Room Staff sign-up</td>
+<td>Fri - Sun</td>
+</tr>
+<tr>
+<td>Registration Desk</td>
+<td>Registration sign-up</td>
+<td>Tue - Sun</td>
+</tr>
+<tr>
+<td>Hand Out Swag Bags</td>
+<td>Swag handout sign-up</td>
+<td>Fri - Sun</td>
+</tr>
+<tr>
+<td>Setup Swag Bag Stuffing Area <br> <em>Physical!</em></td>
+<td>Swag Setup sign-up</td>
+<td>Thursday (11am-3pm)</td>
+</tr>
+<tr>
+<td>Swag Bag Stuffing <br> <em>Stuff 10 bags!</em></td>
+<td>Just Show Up to Hall C!</td>
+<td>Thursday (3 - 6pm)</td>
+</tr>
+<tr>
+<td>Tutorial Support</td>
+<td>Tutorial support / hosts sign-up</td>
+<td>Wed - Thurs</td>
+</tr>
+<tr>
+<td>Language Summit Greeters <strong>TODO</strong>: is this happening?</td>
+<td>Sign up to greet people at the Language Summit!</td>
+<td>Wed AM</td>
+</tr>
+<tr>
+<td>Young Coders Setup</td>
+<td>Volunteer sign-up</td>
+<td>Fri</td>
+</tr>
+<tr>
+<td>Young Coders Teacher Assistance</td>
+<td>Volunteer sign-up</td>
+<td>Sun</td>
+</tr>
+<tr>
+<td>PyCon Charlas</td>
+<td>Volunteer sign-up</td>
+<td>Fri</td>
+</tr>
+<tr>
+<td><strong>TODO:</strong> Additional hatchery activites, e.g. Art of Python</td>
+<td>Volunteer sign-up</td>
+<td>Fri Evening</td>
+</tr>
+<tr>
+<td>Mentored Sprints</td>
+<td>Volunteer sign-up</td>
+<td>Sat Afternoon</td>
+</tr>
+<tr>
+<td>PyLadies Auction</td>
+<td>Volunteer sign-up</td>
+<td>Sat Evening</td>
+</tr>
+<tr>
+<td>5k Fun Run/Walk Helpers</td>
+<td>Sign up to help at the 5k Fun Run/Walk!</td>
+<td>Sun AM</td>
+</tr>
+</tbody>
+</table>
+<h1>Session Staff</h1>
+<p><em>Volunteer:</em> Please read and understand the duties before you sign up to be a session chair/runner. Follow the links below for complete descriptions.</p>
+<ul>
+<li>Session Chairs and Session Runners are present for an entire session (usually 2 to 3 talks in a row).</li>
+<li>A Session Chair introduces the speaker, manages the time, and facilitates the question and answer period. &ldquo;Please be seated. Our next speaker is&hellip;&rdquo;</li>
+<li>A Session Runner accompanies the speaker from the Speakers Lounge to the appropriate stage. They help in any way needed to make the session run smoothly. No running required.</li>
+<li>You must be logged in to view the sign ups on <a href="https://us.pycon.org/2020/schedule/talks/">https://us.pycon.org/2020/schedule/talks/</a></li>
+</ul>
+<h1>Green Room Staff</h1>
+<p><em>Volunteer:</em> <a href="">Sign up to help for a talk block</a></p>
+<ul>
+<li>Green room staff help the Session Staff Chairs coordinate keeping the talks on schedule. They check in volunteers &amp; speakers, keep an eye on the clock, use a walkie-talkie, and reassure speakers before their talk.</li>
+</ul>
+<h1>Registration Desk</h1>
+<p><em>Volunteer:</em> <a href="">Sign up for an hour slot at the registration desk</a></p>
+<ul>
+<li>Someone needs to say &ldquo;Welcome! What is your name?&rdquo;, print a name tag, hand them their stuff.</li>
+<li>Please consider signing up for an hour on the registration desk. It&rsquo;s a great way to meet people and answer basic questions. If this is your first PyCon, it&rsquo;s a good way to get into volunteering!</li>
+</ul>
+<h1>Swag Bag Handout</h1>
+<p><em>Volunteer:</em> <a href="">Sign up for an hour slot at the swag/t-shirt desk</a></p>
+<ul>
+<li>Help distributing swag bags &amp; t-shirts; especially during that busy first morning of the conference.</li>
+</ul>
+<h1>Tutorial Support</h1>
+<p><em>Volunteer:</em> <a href="">Sign-up for an hour slot helping with a tutorial</a></p>
+<ul>
+<li>We&rsquo;re looking for one or two &ldquo;Tutorial Hosts&rdquo; for each tutorial to help welcome participants as they arrive: be sure they&rsquo;re in the right tutorial, give them any printed handouts, ask them if they need help setting up their laptop, etc.</li>
+</ul>
+<h1>Young Coder Support</h1>
+<p><em>Volunteer:</em> Sign up for Friday (April 17th) to help setup and / or sign up for Sunday (April 19th) to be a Teacher Assistant.<br />
+We need people to help setup the Young Coder rooms (Raspberry Pi installation) on the night before the classes start. If you are interested in helping setup, please come to <strong>TODO ROOM</strong> April 17th at 4pm. <a href="">Sign up here.</a></p>
+<p>If you have a couple of hours to volunteer on April 19th, consider being a TA at the Sunday Young Coders class. Several time slots are available <a href="">here</a>.</p>
+<h1>PyCon Charlas Helpers</h1>
+<p><em>Volunteer:</em> PyCon Charlas needs staff to help this newly hatched event &ndash; a whole track of Spanish-language talks! (It might be helpful if you are conversant in Spanish). <a href="">Sign up here</a></p>
+<h1><strong>TODO: Hatchery events!</strong></h1>
+<h1>Auction Helpers</h1>
+<p><em>Volunteer:</em> PyLadies Auction needs staff to help for the event! <a href="">Sign up and report to <strong>TODO ROOM</strong> by 3pm on April 16th</a></p>
+<h1>Swag Bag Stuffing Setup</h1>
+<p><em>Volunteer:</em> Thursday, April 14th, from 11am-3pm. <a href="">Sign up for an hour slot helping set up for swag stuffing</a>.</p>
+<p>This is a physical role. We will be moving boxes and unboxing swag getting ready for the great stuffing at 3:00!</p>
+<h1>Stuff Swag Bags</h1>
+<p><em>Volunteer:</em> Just show up! Thursday April 14, 3pm - 6pm (or until we&rsquo;re done)</p>
+<ul>
+<li>Come stuff 10 bags! Many hands make light work!</li>
+<li>Help in quick sprints with lots of other people. For the big event, look for us at the end of tutorials on Thursday. Our goal is 5 bags/minute (can you guess how many things go in each bag? - close to 1/4 million items to bag!). Are you agile - in a crowd? We&rsquo;ll need about 100 volunteers for this sprint.</li>
+</ul>
+<h1>Language Summit Greeters  <strong>TODO</strong>: is this happening?</h1>
+<p>We are looking for two volunteers to help greet attendees for the Language Summit on May 1st between 9:20am and 10:30am. On the day of, please report to <strong>TODO ROOM</strong>, the staff office. <a href="">Sign up here</a></p>
+<h1>5k Fun Run/Walk Helpers</h1>
+<p>We are looking for six volunteers to help with the 5k on the morning of April 19th. Three volunteers will help mark the course and 3 volunteers will help record runners&rsquo; times. On the day of, please report to the starting point on April 19th at 6:30am.</p>
+
+
+
+    </div>
+
+  </div>
+
+    <footer class="footer">
+      <div class="footer-img"></div>
+      <div class="credits">
+        <a href="http://python.org/psf-landing/">
+          <img class="psf-logo" src="/2020/static/images/psf-logo.png" width=300 alt="PSF logo">
+        </a>
+        <p class="footer-credits">
+          The PyCon 2020 conference in Pittsburgh, PA, USA, is a production of the
+          <a href="http://python.org/psf-landing/">Python Software Foundation</a>.
+        </p>
+        <p class="footer-credits">
+          This site is built using
+          <a href="https://www.djangoproject.com/">Django</a>
+          and
+          <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a>.
+          Hosting is provided by
+          <a href="http://heroku.com/">Heroku</a>.
+        </p>
+        <p class="footer-credits">
+          PyCon 2020 logo and design created by
+          <a href="http://robbdesign.co">
+            <img class="footer-credit-logo" title="Robb Design Co." alt="Robb Design Co." src="/2020/static/images/robb-design-co.png"/>
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    
+
+    
+      <!-- Bootstrap JS and its dependencies-->
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/b-1.6.1/b-html5-1.6.1/b-print-1.6.1/sl-1.3.1/datatables.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+      <!-- Third-party javascript libraries go here -->
+
+      <!-- Project specific Javascript in this file -->
+      <script src="/2020/static/js/project.js"></script>
+
+      
+      
+
+      
+
+    
+  </body>
+</html>
