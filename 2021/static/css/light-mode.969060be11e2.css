@@ -1,0 +1,391 @@
+body {
+  background: #fff;
+  color: #333;
+}
+
+.grid {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.90) 450px), url("../images/grid-light.abc29ba68e1c.png");
+  background-position: center top;
+}
+
+@media only screen and (max-width: 1100px){
+  .grid {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.90) 350px), url("../images/grid-light.abc29ba68e1c.png");
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .grid {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.90) 250px), url("../images/grid-light.abc29ba68e1c.png");
+  }
+}
+
+.template-homepage .grid {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.90) 900px), url("../images/grid-light.abc29ba68e1c.png");
+  background-position: center top;
+}
+
+@media only screen and (max-width: 1100px){
+  .template-homepage .grid {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.90) 600px), url("../images/grid-light.abc29ba68e1c.png");
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .template-homepage .grid {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.90) 300px), url("../images/grid-light.abc29ba68e1c.png");
+  }
+}
+
+/*------------------------------------*\
+    Containers
+\*------------------------------------*/
+.messages-container {
+  color: #fff;
+}
+
+/*------------------------------------*\
+    Internal page header/banner
+\*------------------------------------*/
+
+header {
+  background-color: #fff;
+  color: #333;
+  border-bottom: 1px solid #dedede;
+}
+
+.pycon-header {
+  background-image: url("../images/wide-banner-light.bde0bd93b23b.png");
+}
+
+@media only screen and (max-width: 940px) {
+  .pycon-header {
+    background-image: url("../images/mid-banner-light.ba6e494371b2.png");
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .pycon-header {
+    background-image: url("../images/small-banner-light.2f27d165fdb4.svg");
+  }
+}
+
+#welcome-logo {
+  content: url("../images/square-logo-light.4c12d005d254.svg");
+}
+
+#robb-design-logo {
+  content: url("../images/robb-design-co-light.862a7f1d444b.png");
+}
+
+#psf-logo {
+  content: url("../images/psf-logo-light.6d20ed1aa4be.png");
+}
+
+
+/*------------------------------------*\
+    Homepage specific styles
+\*------------------------------------*/
+
+/*------------------------------------*\
+    Menu
+\*------------------------------------*/
+
+.pure-menu-item a {
+  color: #333;
+}
+
+.pure-menu-item a.highlight {
+  background-color: #6c003d;
+  color: #fff;
+}
+
+.pure-menu-item a:hover,
+.pure-menu-item a:active,
+.pure-menu-item a:focus,
+.pure-menu-item a.current_branch,
+.pure-menu-selected>.pure-menu-link,
+.pure-menu-selected>.pure-menu-link:visited,
+.pure-menu-active>.pure-menu-link {
+  background-color: #ab2c23;
+  color: #fff;
+}
+
+.pure-menu-children {
+  background-color: #fff;
+  border: 1px solid #dedede;
+}
+
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+.footer {
+  background: #fff;
+  border-top: 1px solid #dedede;
+}
+
+/*------------------------------------*\
+    Sponsor Listings
+\*------------------------------------*/
+
+.sponsor img {
+  display: block;
+  background-color: white;
+  border: .5em solid white;
+  border-radius: .5em;
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  box-shadow: white 0px 0px .75em;
+  -webkit-box-shadow: white 0px 0px .75em;
+  -moz-box-shadow: white 0px 0px .75em;
+}
+
+.sponsor span {
+  display: block;
+  background-color: white;
+  border: .5em solid white;
+  border-radius: .5em;
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  box-shadow: white 0px 0px .75em;
+  -webkit-box-shadow: white 0px 0px .75em;
+  -moz-box-shadow: white 0px 0px .75em;
+}
+
+.sponsor span .sponsors-logo-light-background {
+  display: block;
+  background-color: white;
+  border: .5em solid white;
+  border-radius: .5em;
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  box-shadow: white 0px 0px .75em;
+  -webkit-box-shadow: white 0px 0px .75em;
+  -moz-box-shadow: white 0px 0px .75em;
+}
+
+.sponsor a .sponsors-logo-light-background {
+  display: block;
+  background-color: white;
+  border: .5em solid white;
+  border-radius: .5em;
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  box-shadow: white 0px 0px .75em;
+  -webkit-box-shadow: white 0px 0px .75em;
+  -moz-box-shadow: white 0px 0px .75em;
+}
+
+.sponsors-job-listing .editor-toolbar button {
+  color: black;
+}
+
+/*------------------------------------*\
+    Content
+\*------------------------------------*/
+
+/*------------------------------------*\
+    Typography
+\*------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+  border-bottom: 1px solid #636363;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  background-color: #ab2c23;
+  color: #fff;
+}
+
+/*------------------------------------*\
+    Forms / buttons
+\*------------------------------------*/
+
+input,
+textarea,
+select {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #636363;
+}
+
+select {
+  border-color: #636363 !important;
+}
+
+::placeholder {
+  color: #ccc;
+}
+
+input:active, input:focus {
+  border-color: #6c003d;
+}
+
+label {
+  color: #333;
+}
+
+.help-block strong {
+  color: red;
+}
+
+.callout {
+  border: 1px solid #636363;
+  color: #333;
+}
+
+hr {
+  background: #333;
+  background-image: linear-gradient(to right, #333, #ccc, #333);
+}
+
+.user-content {
+  padding: 1em;
+  border: 1px solid #636363;
+  background-color: #eee;
+}
+
+/*------------------------------------*\
+    Accessibility
+\*------------------------------------*/
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/*------------------------------------*\
+    Dashboard
+\*------------------------------------*/
+
+.dashboard-proposals-table {
+  border: 1px dashed black;
+}
+
+/*------------------------------------*\
+    User Content
+\*------------------------------------*/
+
+/*------------------------------------*\
+    Symposion
+\*------------------------------------*/
+.dataTable tbody tr.even {
+  background-color: #fff;
+}
+
+.dataTable tbody tr.odd {
+  background-color: #aaa;
+}
+
+.dataTable tbody tr.selected {
+    background-color: #eee;
+}
+
+.dataTable th[role=columnheader] {
+ border-bottom: 1px solid #000;
+}
+
+.table-striped tr:nth-child(even) {
+   background-color: #aaa;
+}
+
+.reviewTableFooter a[role=button] {
+  border: 1px solid #000;
+}
+
+/*------------------------------------*\
+    Stripe payment
+\*------------------------------------*/
+
+#div_id_card .controls {
+  border-color: #000;
+}
+
+#div_id_card label {
+  color: #000;
+  border-bottom: 1px solid #636363;
+}
+
+button,
+.btn,
+.btn-primary,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  border: 1px solid #000;
+}
+
+.review-box {
+  background-color: #eee;
+}
+
+/*------------------------------------*\
+    Schedule styles
+\*------------------------------------*/
+
+.calendar {
+  border: 1px solid black;
+
+}
+
+.calendar td {
+  border: 1px dashed rgba(17, 17, 17, 0.2);
+}
+
+.calendar .highlight {
+  background-color: #eee;
+}
+
+.slot-break {
+  background-color: #eee;
+}
+
+.speaker-profile div {
+  border: 1px solid rgba(17, 17, 17, 0.5);
+}
+
+.slot:hover {
+  background-color: #eee;
+}
+
+.slot-tutorial:hover {
+  background-color: rgba(255, 228, 107, 0.7);
+}
+
+.slot-talk:hover {
+  background-color: rgba(228, 61, 51, 0.7);
+}
+
+.slot-charlas:hover {
+  background-color: rgba(90, 178, 188, 0.7);
+}
+
+.slot-sponsor-workshop:hover {
+  background-colo: rgba(255, 255, 255, 0.7);
+}
+
+.slot a:hover {
+  color: black;
+}
+
+.sprint-card {
+  box-shadow: black 0px 0px .75em;
+  -webkit-box-shadow: black 0px 0px .1em;
+  -moz-box-shadow: black 0px 0px .1em;
+}
