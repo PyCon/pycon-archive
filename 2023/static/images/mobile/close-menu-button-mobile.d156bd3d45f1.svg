@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="25"
+   height="24.914038"
+   viewBox="0 0 25.000001 24.914037"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="close-menu-button-mobile.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="5.2086245"
+     inkscape:cx="28.894385"
+     inkscape:cy="-12.671292"
+     inkscape:window-width="1366"
+     inkscape:window-height="699"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <g
+     id="Group_2177"
+     data-name="Group 2177"
+     transform="matrix(0.35443306,0,0,0.35443306,-626.82201,-29.313976)">
+    <path
+       id="Path_121"
+       data-name="Path 121"
+       d="m 325.954,226.751 h -81.932 c -3.065,0 -5.554,-3.023 -5.554,-6.745 0,-3.722 2.487,-6.745 5.554,-6.745 h 81.932 c 3.07,0 5.555,3.023 5.555,6.745 0,3.722 -2.49,6.745 -5.555,6.745 z"
+       transform="rotate(-45,921.1395,-1664.5725)"
+       fill="#d3c9a0" />
+    <path
+       id="Path_123"
+       data-name="Path 123"
+       d="m 244.022,324.34 h 81.932 c 3.07,0 5.554,3.023 5.554,6.745 0,3.722 -2.487,6.745 -5.554,6.745 h -81.932 c -3.065,0 -5.554,-3.023 -5.554,-6.745 0,-3.722 2.484,-6.745 5.55,-6.745 z"
+       transform="rotate(45,1301.7184,2057.6744)"
+       fill="#d3c9a0" />
+  </g>
+</svg>

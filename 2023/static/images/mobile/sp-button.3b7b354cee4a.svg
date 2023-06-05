@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="48.346"
+   height="48.346"
+   viewBox="0 0 48.346 48.346"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="sponsor-toggle.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs7" />
+  <sodipodi:namedview
+     id="namedview5"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="9.5974847"
+     inkscape:cx="11.200851"
+     inkscape:cy="24.173"
+     inkscape:window-width="1366"
+     inkscape:window-height="699"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3" />
+  <path
+     id="Path_140"
+     data-name="Path 140"
+     d="M24.173,0A24.173,24.173,0,1,1,0,24.173,24.173,24.173,0,0,1,24.173,0Z"
+     fill="#b7a763" />
+  <g
+     id="Group_2160"
+     data-name="Group 2160"
+     transform="translate(-163.327,-480.827)">
+    <line
+       id="Line_100"
+       data-name="Line 100"
+       y2="17"
+       transform="translate(187.5,496.5)"
+       fill="none"
+       stroke="#ffffff"
+       stroke-linecap="round"
+       stroke-width="3"
+       x1="0"
+       y1="0"
+       x2="0" />
+    <line
+       id="Line_101"
+       data-name="Line 101"
+       x1="16"
+       transform="translate(179.5,505)"
+       fill="none"
+       stroke="#ffffff"
+       stroke-linecap="round"
+       stroke-width="3"
+       y1="0"
+       x2="0"
+       y2="0" />
+  </g>
+</svg>

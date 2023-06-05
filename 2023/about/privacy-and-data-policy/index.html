@@ -1,0 +1,811 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            
+            
+            
+            
+            
+            - PyCon US 2023
+            
+        </title>
+
+        <!-- meta -->
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Rubik+Mono+One&family=Rubik:ital,wght@0,500;0,600;0,700;0,900;1,500;1,600;1,700;1,900&family=Sulphur+Point:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+        <!-- css -->
+        
+        <link rel="stylesheet" type="text/css" href="../../static/css/normalize.112272e51c80.css">
+        <link rel="stylesheet" type="text/css" href="../../static/css/defaults.6deb0f34f69a.css">
+        <link rel="stylesheet" type="text/css" href="../../static/css/pycon.ed62bda8d74a.css">
+
+        <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+
+        <!-- favicons -->
+        <link rel="shortcut icon" href="../../static/images/favicon/favicon.083aac545fb0.ico"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="../../static/images/favicon/favicon-16.416e79e3ec0f.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../static/images/favicon/favicon-32.8cd363a2c27c.png">
+        <link rel="icon" type="image/png" sizes="57x57" href="../../static/images/favicon/favicon-57.9285ec2a23f6.png">
+        <link rel="icon" type="image/png" sizes="60x60" href="../../static/images/favicon/favicon-60.feb5a149e2f7.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="../../static/images/favicon/favicon-64.94bc5ed22759.png">
+        <link rel="icon" type="image/png" sizes="70x70" href="../../static/images/favicon/favicon-70.77cab1641a62.png">
+        <link rel="icon" type="image/png" sizes="72x72" href="../../static/images/favicon/favicon-72.7b2d14c4e48c.png">
+        <link rel="icon" type="image/png" sizes="76x76" href="../../static/images/favicon/favicon-76.70456dd2e1f1.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../../static/images/favicon/favicon-96.f72d3237f749.png">
+        <link rel="icon" type="image/png" sizes="114x114" href="../../static/images/favicon/favicon-114.d6578539a006.png">
+        <link rel="icon" type="image/png" sizes="120x120" href="../../static/images/favicon/favicon-120.9c53c85f3a30.png">
+        <link rel="icon" type="image/png" sizes="144x144" href="../../static/images/favicon/favicon-144.ef21fa050454.png">
+        <link rel="icon" type="image/png" sizes="150x150" href="../../static/images/favicon/favicon-150.595abb395b5d.png">
+        <link rel="icon" type="image/png" sizes="152x152" href="../../static/images/favicon/favicon-152.07e7d12d12b9.png">
+        <link rel="icon" type="image/png" sizes="160x160" href="../../static/images/favicon/favicon-160.720d71de2ec2.png">
+        <link rel="icon" type="image/png" sizes="180x180" href="../../static/images/favicon/favicon-180.be63db4b3ef5.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../../static/images/favicon/favicon-192.953e5b735200.png">
+        <link rel="icon" type="image/png" sizes="310x310" href="../../static/images/favicon/favicon-310.8e9889d03500.png">
+
+        
+        
+        
+    </head>
+
+    <body class="">
+        
+    
+    <button class="menu-button open-menu"><span class="sr-only">Menu</span></button>
+    
+    <div class="mobile-background">
+        <button id="theme-switch" class="theme-switch" onclick="switchToDarkTheme()"><span class="sr-only">Night</span></button>
+        <aside class="sidebar">
+            <div class="sidebar-background"></div>
+            <a href="https://us.pycon.org/2023" class="edition-special">20th Anniversary Special</a>
+            <p>April 19-27, 2023</p>
+            <!-- <a href="TODO" class="search"><span class="sr-only">Search</span></a> -->
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="https://twitter.com/pycon">Follow Us</a></li>
+                    <li>/</li>
+                    <li><a href="mailto:pycon-reg@python.org">Contact Us</a></li>
+                    <li>/</li>
+                    <li><a href="https://pycon.blogspot.com/">Blog</a></li>
+                    <li>/</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- mobile header -->
+        <header class="mobile-header">
+            <button class="mobile-menu-button open-menu"><span class="sr-only">Menu</span></button>
+            <div class="mobile-logo"><span class="sr-only">20 year celebration - PyCon US 23</span></div>
+            <!-- <a href="" class="mobile-search"><span class="sr-only">Search</span></a> -->
+            
+                <a href="../../accounts/login/index.html" class="mobile-login"><span class="sr-only">Login</span></a>
+            
+        </header>
+
+        <main>
+            
+            
+
+<article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="privacy-and-data-policy">Privacy and Data Policy</h1>
+<p>Last updated <strong><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 13, 2023</span></strong></p>
+<p>Summary: The Python Software Foundation ("PSF") only collects the information necessary to register you for PyCon US and to provide you access to the PyCon US content and services. Registrant contact information is NOT shared with third parties without your explicit opt-in consent.</p>
+<p>If you submit a talk, tutorial, or other content, then your name will be publicly associated with your personal content for purposes of giving you credit for your contribution to the conference and to maintain historical records.</p>
+<p>You may opt in to getting email messages about the PyCon US conference, and you may opt-in to sharing basic contact information with sponsors of PyCon US. Choosing not to opt in will in no way detract from your ability to attend or engage with PyCon US.</p>
+<p>After PyCon US is over and we have fully discharged all of our responsibilities, we will delete any personal information that is not required to preserve publicly-available educational materials or to maintain legal records.</p>
+<h3 id="1-who-is-responsible-for-the-personal-information-that-we-collect">1.&nbsp;WHO IS RESPONSIBLE FOR THE PERSONAL INFORMATION THAT WE COLLECT?</h3>
+<p>For the purpose of data protection laws, the Python Software Foundation ("PSF") is the data controller in respect to the personal information that we collect and use as part of our business activities. As the data controller, we control, manage, and dictate the purpose for which your personal information is used and how we use your personal information for our business activity.</p>
+<p>If you choose to provide your personal information to other parties during PyCon US, including sponsors, then their data privacy policies apply to the data that you give to them.</p>
+<h3 id="2-what-personal-information-do-we-collect">2.&nbsp;WHAT PERSONAL INFORMATION DO WE COLLECT?</h3>
+<p>The types of personal information that the PSF may collect include, but are not limited to, the following:</p>
+<ul>
+<li>Full name</li>
+<li>Address</li>
+<li>Phone numbers</li>
+<li>Email addresses</li>
+<li>Other contact information</li>
+<li>Payment information</li>
+<li>Company, firm, organization, agency, or other entity information</li>
+<li>Photograph</li>
+<li>Biography</li>
+<li>Preference information, such as communications that you receive from us</li>
+<li>Dietary preferences and requirements</li>
+<li>Information that you provide for the purposes of attending meetings, events, webinars, and other programs</li>
+<li>Any other information relating to you (or other individuals) which you may provide to us</li>
+</ul>
+<p>If you provide personal information to us regarding or related to a third party, then you confirm that you have the consent of the third party to share such personal information and that you have made the information in this Privacy Policy available to the relevant third party.</p>
+<h3 id="3-use-of-third-party-services">3. USE OF THIRD PARTY SERVICES</h3>
+<p>The PSF uses some third party services to assist with producing PyCon and operating online services supporting PyCon. Specifically, we use:</p>
+<ul>
+<li>
+<p>Hubilo (<a href="https://hubilo.com/">https://hubilo.com/</a>) to provide online content management and streaming services for PyCon US. Hubilo has its own Terms of Service (<a href="https://hubilo.com/terms-of-use">https://hubilo.com/terms-of-use</a>/) and Privacy Policy (<a href="https://hubilo.com/privacy-policy/">https://hubilo.com/privacy-policy/</a>), which apply to your use of the Hubilo service to access PyCon US online content. To the extent that Hublio's terms are more restrictive than this policy, the more restrictive terms will apply. Hubilo's use of PyCon attendee data is subject to the <a href="https://uploads-ssl.webflow.com/61f2936079ce67606fdade16/63a9c7122eee221c3c616e90_Hubilo%20_%20Data%20Processing%20Addendum%20%5BDPA%5D%20-%20Updated.pdf">Data Processing Agreement</a> between Hubilo and PSF.</p>
+</li>
+<li>
+<p>ShareMy.Health to verify attendees' COVID status. We share your name and email address with ShareMy.Health to enable them to contact you to verify your test results. Your disclosure of personal information to ShareMy.Health is governed by their Privacy Policy (<a href="https://www.sharemy.health/privacy">https://www.sharemy.health/privacy</a>).&nbsp;</p>
+</li>
+<li>
+<p>CVent to manage attendee room assignments. We share your name, email address, affiliation, and address with CVent. CVent's use of this information is governed by the <a href="https://www.cvent.com/sites/default/files/files/2022-09/CVENT%20CUSTOMER%20GDPR%20DPA%20C2P%20SCC%20%2B%20UK%20IDTA%20%28version%205.26.2022%29_0.docx">Data Processing Addendum</a> between CVent and PSF. Your disclosure of personal information to CVent is governed by their Privacy Policy (<a href="https://www.cvent.com/en/cvent-global-privacy-policy">https://www.cvent.com/en/cvent-global-privacy-policy</a>).&nbsp;</p>
+</li>
+<li>
+<p>Heroku (Salesforce) to host the PyCon website. We store your registration information on Heroku servers. Their use of this information is subject to the <a href="https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/Agreements/data-processing-addendum.pdf">Data Processing Addendum</a> between Salesforce and PSF and the Salesforce Privacy Statement (<a href="https://www.salesforce.com/company/privacy/full_privacy/">https://www.salesforce.com/company/privacy/full_privacy/</a>).</p>
+</li>
+<li>
+<p>[Amazon Web Services (AWS) to host the PyCon website. We store your registration information on AWS servers. Their use of this information is subject to the <a href="https://aws.amazon.com/blogs/security/aws-gdpr-data-processing-addendum/">Data Processing Addendum</a> between AWS and PSF and the AWS Privacy Notice (https://aws.amazon.com/privacy/).]</p>
+</li>
+</ul>
+<h3 id="4-sensitive-or-special-categories-of-information">4.&nbsp;SENSITIVE OR SPECIAL CATEGORIES OF INFORMATION</h3>
+<h4 id="sensitive-information">SENSITIVE INFORMATION</h4>
+<p>Some countries consider some personal information particularly sensitive or special. This may include Ethnicity, Nationality, Gender, and other demographic information. The PSF only collects this data when voluntarily given by the individual, and does not require it from any attendee. The PSF may use this information to create aggregated reports only; the PSF does not share any person's sensitive information with third parties.</p>
+<h4 id="website-usage-information">WEBSITE USAGE INFORMATION</h4>
+<p>We collect information when you provide it to us, such as when you email us information, connect with us on social media, use the "contact us" feature, use the subscription feature located on our website, or when you engage in any other communication, recorded or otherwise communicated.</p>
+<p>The PSF collects certain information automatically when you use the website, such as the IP addresses and domain names of visitors, browser type, history of pages viewed and other usage information about your use of the website. We collect this information for site administration purposes, such as to analyze this data for trends and statistics. We may share statistical or aggregated non-personal information about our users with advertisers, business partners, sponsors, or other third parties. This data is used to customize our website content and advertising to deliver a better experience to our users. Please see the section below on cookies for information.</p>
+<h4 id="cookies">COOKIES</h4>
+<p>As you browse the PyCon US website (and the sites of third party providers contracted to provide services), those sites may place cookies on your computer. The cookies used by the PyCon website are strictly functional cookies and have no marketing purpose. For any third party provider, please see that provider's cookie policy.</p>
+<h4 id="presenter-or-author-information">PRESENTER OR AUTHOR INFORMATION</h4>
+<p>If you choose to author a written resource, including a mailing list post, or speak at PyCon US (both live and recorded for further broadcasting), you may be required to provide minimal biographical information to associate with your presentation or materials. You agree that this information will remain publicly available for purposes of proper attribution of your work and maintenance of the historical record.</p>
+<h3 id="5-how-do-we-obtain-your-personal-information">5.&nbsp;HOW DO WE OBTAIN YOUR PERSONAL INFORMATION?</h3>
+<p>As noted above, we collect information from you in the course of your use of the PSF website, products, and services. For example, we collect information from you when you subscribe to our mailing list. We collect information from you when you contact or communicate with us (including through the website, by email, or otherwise). We collect your personal information while monitoring the PSF website, products, and services. We gather information about you when you provide it to us, or interact with us directly, for instance engaging with staff or registering for an event. We may also in certain cases collect or receive information about you from other sources, such as third party companies.</p>
+<h3 id="6-how-do-we-use-the-personal-information-that-we-collect">6.&nbsp;HOW DO WE USE THE PERSONAL INFORMATION THAT WE COLLECT?</h3>
+<p>The PSF collects personal information for the following principal purposes. The list below will state the purpose and the reason for the purpose of collecting your personal information.</p>
+<ul>
+<li>To provide the PyCon website to you</li>
+<li>To enroll you for PyCon US-related mailings (opt-in only)</li>
+<li>To register you for events, tutorials, and other services</li>
+<li>To provide you with information about Python, PyCon US, and events within PyCon US</li>
+<li>To allow you to connect with PyCon US sponsors (opt-in only)</li>
+<li>To communicate with you and to respond to your questions, inquiries, or concerns</li>
+<li>To administer and improve the PSF and PyCon US, including the websites, events, tutorials, and other services</li>
+<li>To process your payment for the PSF services and events</li>
+<li>To prevent and detect fraud</li>
+<li>To protect and enforce our legal rights</li>
+</ul>
+<p>We do this for our legitimate business purposes, and under certain circumstances, to perform a contract between you and us. We may request your consent in circumstances where a legal justification over and above legitimate interests is required by applicable law.</p>
+<h3 id="7-who-do-we-share-your-personal-information-with">7.&nbsp;WHO DO WE SHARE YOUR PERSONAL INFORMATION WITH?</h3>
+<p>The PSF may share personal information with third parties engaged to assist the PSF in providing services to you or to carry out one or more of the purposes described above. These service providers are prohibited from using your personal information for any purpose other than to provide this assistance and are contractually required to protect personal information disclosed by the PSF and to comply with the general privacy principles described in this Privacy Policy. For example, we share your information with service providers, contractors and sub-contractors to help us provide the website, products, events, and services. For example, we may use a service provider to process payment information or provide analytics. When we use service providers, we provide limited access to your information so that such service provider can perform the tasks on our behalf.</p>
+<p>The PSF also shares basic contact information (badge name, nickname provided at signup, email address, and country provided during registration) with sponsors if you have explicitly consented to having your contact information shared with those sponsors by permitting them to scan your PyCon badge. You may also choose to share additional information with specific sponsors via the PyCon dashboard.</p>
+<p>The PSF reserves the right to disclose and/or transfer personal information to a third party, if the PSF has reason to believe that disclosing personal information is necessary to identify, contact, or bring legal action against someone who may be causing injury to or interference with our rights or property, other website users, or anyone else who could be harmed by such activities. Additionally, the PSF may disclose personal information in response to a subpoena, warrant, or other court order, or when we believe in good faith that a law, regulation, subpoena, warrant or other court order requires or authorizes us to do so, or it is required to respond to an emergency situation.</p>
+<p>If you choose not to provide the PSF with your personal information, you may still visit some of the PSF website; however, you may be unable to access certain options, offers, and services.</p>
+<h3 id="8-transfer-of-personal-information-across-borders">8.&nbsp;TRANSFER OF PERSONAL INFORMATION ACROSS BORDERS</h3>
+<p>The PSF is a United States organization, headquartered in the United States. While we are not a global company, we may allow your personal information to be shared with third-party service providers based both within the United States and in other countries. This may entail a transfer of your personal information from a location within the European Economic Area to outside the European Economic Area, or from outside the European Economic Area to a location with the Economic European Area.</p>
+<p>When we provide your personal information overseas, we do so in connection with providing information or services or as required or authorized under law. It is possible the overseas entities, which we share your information with, may not be subject to foreign laws that provide the same level of protection of information with, may not be subject to foreign laws that provide the same level of protection of information as your country of residence or employment, or may not be subject to any privacy obligations. Overseas entities may be required or compelled to disclose your personal information to a third party, such as an overseas authority. Where we transfer information outside of the European Economic Areas, we will implement appropriate measures to ensure that your personal information remains protected and secure in accordance with applicable data protection laws. For example, we will implement EU standard contractual clauses (as contemplated by Article 46(2) of the European Union's General Data Protection Regulation) between the PSF related entities that share and process personal data. Where our third-party service providers process personal data outside the European Economic Area in the course of providing services to us, our written agreement with them will include appropriate measures, usually standard contractual clauses. For more information about the measures in place, please contact us (see section below "Contacting the PSF with Questions, Concerns, or Complaints").</p>
+<p>Unfortunately, the transmission of information via the internet is not completely secure. Although we use reasonable efforts to protect your personal information, we cannot guarantee the security of your personal information transmitted to our website and any transmission is at your own risk. Once we have received your personal information, we will use reasonable and appropriate procedures and security features to try to prevent unauthorized access.</p>
+<h3 id="9-your-rights-including-removing-correcting-or-updating-personal-information">9.&nbsp;YOUR RIGHTS, INCLUDING REMOVING, CORRECTING OR UPDATING PERSONAL INFORMATION</h3>
+<p>If you change your mind on how the PSF discloses or uses your information, or wish to access, correct or update personal information (such as your address), we will endeavor to correct, update or remove the personal data that you give us. Information that you have explicitly made available for unrestricted public access, such as having your name associated with a talk that you provide, may not be able to be deleted.</p>
+<p>Citizens of California and Virginia, and citizens of countries in the European Union and European Economic Area may have further rights, including:</p>
+<ul>
+<li>Right of Access to your Personal Information</li>
+<li>Right to Rectify your Personal Information</li>
+<li>Right to Erasure of your Personal Information</li>
+<li>Right to Restrict the use of your Personal Information</li>
+<li>Right to Data Portability</li>
+<li>Right to Object to the Personal use of your Information</li>
+<li>Right to Withdraw Consent</li>
+<li>Right to Complain to the Relevant Data Protection Authority</li>
+</ul>
+<p>If these rights apply to you and you wish to exercise those rights, please contact the PyCon US organizers.</p>
+<h3 id="10-how-long-will-we-keep-your-personal-information">10.&nbsp;HOW LONG WILL WE KEEP YOUR PERSONAL INFORMATION</h3>
+<p>We will keep your personal information for no longer than is necessary for the purposes for which the personal data are processed.</p>
+<h3 id="11-contacting-the-psf-with-questions-concerns-or-complaints">11.&nbsp;CONTACTING THE PSF WITH QUESTIONS, CONCERNS, OR COMPLAINTS</h3>
+<p>If you have any questions, concerns, or complaints about this Privacy Policy, please contact legal@python.org. You are entitled to make an anonymous complaint or inquiry in relation to this Privacy Policy or your privacy rights; however, we may require you to identify yourself if required by law or it is impracticable for us to deal with your matter otherwise.</p>
+<p>We will acknowledge receipt of any complaint and will strive to provide you with a written response within 30 days of receipt of your complaint. There may be instances where this is not possible due to the circumstances under which the complaint was made, the content of the complaint, and the scope of the complaint. If this is the case, we will respond to your complaint in a reasonable and practical time.</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 13, 2023</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+<hr>
+<p>**End of official Privacy and Data Policy**</p>
+<hr>
+
+<div>
+<h2 id="updates-2023-04-13">Updates, 2023-04-13</h2>
+<p>
+  We updated our privacy policy to be sure that we are as transparent as possible
+  in how we handle your data, and explicitly make clear where that data is stored.
+</p>
+<p>
+  A full diff is shown below for review, but a <i>legally non-binding</i> summary of material
+  changes are as follows:
+</p>
+<ul>
+  <li>The country you provided during registration will be provided to sponsors who scan your badge.</li>
+  <ul><li><b>Reason</b>: Ironically, this is to ensure that all parties are in compliance with the most up to date privacy laws.</li></ul>
+  <li>We added an up-to-date list of third-parties data is shared with, for what purpose, and references to their data and privacy policies.</li>
+</ul>
+<pre style="font-size: .75em; white-space: pre-wrap;">
+--- a/docs/us.pycon.org/Privacy-Policy.md
++++ b/docs/us.pycon.org/Privacy-Policy.md
+@@ -1,4 +1,11 @@
+-Summary: The Python Software Foundation ("PSF") only collects the information necessary to register you for PyCon US and to provide you access to the PyCon US content and services. Registrant contact information is NOT shared with third parties without your explicit opt-in consent.
++# Privacy and Data Policy
++
++Last updated [DATE]
++
++Summary: The Python Software Foundation ("PSF") only collects the information necessary to register you for PyCon US and to provide you access to the PyCon US content and services. Registrant contact information is NOT shared with third parties without your explicit opt-in consent.
+ 
+ If you submit a talk, tutorial, or other content, then your name will be publicly associated with your personal content for purposes of giving you credit for your contribution to the conference and to maintain historical records.
+ 
+@@ -14,29 +21,37 @@ If you choose to provide your personal information to other parties during PyCon
+ 
+ ### 2\. WHAT PERSONAL INFORMATION DO WE COLLECT?
+ 
+-The type of personal information that the PSF may collect include, but is not limited to the following:
++The types of personal information that the PSF may collect include, but are not limited to, the following:
+ 
+ -   Full name
+ -   Address
+--   Phone Numbers
+--   Email Addresses
+--   Other Contact Information
+--   Payment Information
+--   Company, Firm, Organization, Agency, or other entity information
++-   Phone numbers
++-   Email addresses
++-   Other contact information
++-   Payment information
++-   Company, firm, organization, agency, or other entity information
+ -   Photograph
+--   Biographies
+--   Preference Information, such as communications that you receive from us
+--   Dietary Preferences and Requirements
+--   Information that you provide to use for the purposes of attending meetings, events, webinars, and other programs
++-   Biography
++-   Preference information, such as communications that you receive from us
++-   Dietary preferences and requirements
++-   Information that you provide for the purposes of attending meetings, events, webinars, and other programs
+ -   Any other information relating to you (or other individuals) which you may provide to us
+ 
+ If you provide personal information to us regarding or related to a third party, then you confirm that you have the consent of the third party to share such personal information and that you have made the information in this Privacy Policy available to the relevant third party.
+ 
+-### 3\. USE OF THIRD PARTY SERVICES
++### 3\. USE OF THIRD PARTY SERVICES
++
++The PSF uses some third party services to assist with producing PyCon and operating online services supporting PyCon. Specifically, we use:
++
++-   Hubilo (<https://hubilo.com/>) to provide online content management and streaming services for PyCon US. Hubilo has its own Terms of Service (<https://hubilo.com/terms-of-use>/) and Privacy Policy (<https://hubilo.com/privacy-policy/>), which apply to your use of the Hubilo service to access PyCon US online content. To the extent that Hublio's terms are more restrictive than this policy, the more restrictive terms will apply. Hubilo's use of PyCon attendee data is subject to the [Data Processing Agreement](https://uploads-ssl.webflow.com/61f2936079ce67606fdade16/63a9c7122eee221c3c616e90_Hubilo%20_%20Data%20Processing%20Addendum%20%5BDPA%5D%20-%20Updated.pdf) between Hubilo and PSF.
++
++-   ShareMy.Health to verify attendees' COVID status. We share your name and email address with ShareMy.Health to enable them to contact you to verify your test results. Your disclosure of personal information to ShareMy.Health is governed by their Privacy Policy (<https://www.sharemy.health/privacy>). 
++
++-   CVent to manage attendee room assignments. We share your name, email address, affiliation, and address with CVent. CVent's use of this information is governed by the [Data Processing Addendum](https://www.cvent.com/sites/default/files/files/2022-09/CVENT%20CUSTOMER%20GDPR%20DPA%20C2P%20SCC%20%2B%20UK%20IDTA%20%28version%205.26.2022%29_0.docx) between CVent and PSF. Your disclosure of personal information to CVent is governed by their Privacy Policy (<https://www.cvent.com/en/cvent-global-privacy-policy>). 
+ 
+-The PSF uses some third party services, notably Hubilo (<https://hubilo.com/>) to provide online content management and streaming services for PyCon US. Hubilo has its own terms of service and privacy policy, which apply to your use of the Hubilo service to access PyCon US online content.
++-   Heroku (Salesforce) to host the PyCon website. We store your registration information on Heroku servers. Their use of this information is subject to the [Data Processing Addendum](https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/Agreements/data-processing-addendum.pdf) between Salesforce and PSF and the Salesforce Privacy Statement (<https://www.salesforce.com/company/privacy/full_privacy/>).
+ 
+-To the extent that any part of the Hubilo Terms of Service (<https://hubilo.com/terms-of-use>/) or Privacy Policy (<https://hubilo.com/privacy-policy/>) is more restrictive than this policy, the more restrictive terms will apply.
++-   [Amazon Web Services (AWS) to host the PyCon website. We store your registration information on AWS servers. Their use of this information is subject to the [Data Processing Addendum](https://aws.amazon.com/blogs/security/aws-gdpr-data-processing-addendum/) between AWS and PSF and the AWS Privacy Notice (https://aws.amazon.com/privacy/).]
+ 
+ ### 4\. SENSITIVE OR SPECIAL CATEGORIES OF INFORMATION
+ 
+@@ -64,7 +79,7 @@ As noted above, we collect information from you in the course of your use of the
+ 
+ ### 6\. HOW DO WE USE THE PERSONAL INFORMATION THAT WE COLLECT?
+ 
+-the PSF collects personal information for the following principal purposes. The list below will state the purpose and the reason for the purpose of collecting your personal information.
++The PSF collects personal information for the following principal purposes. The list below will state the purpose and the reason for the purpose of collecting your personal information.
+ 
+ -   To provide the PyCon website to you
+ -   To enroll you for PyCon US-related mailings (opt-in only)
+@@ -83,7 +98,7 @@ We do this for our legitimate business purposes, and under certain circumstances
+ 
+ The PSF may share personal information with third parties engaged to assist the PSF in providing services to you or to carry out one or more of the purposes described above. These service providers are prohibited from using your personal information for any purpose other than to provide this assistance and are contractually required to protect personal information disclosed by the PSF and to comply with the general privacy principles described in this Privacy Policy. For example, we share your information with service providers, contractors and sub-contractors to help us provide the website, products, events, and services. For example, we may use a service provider to process payment information or provide analytics. When we use service providers, we provide limited access to your information so that such service provider can perform the tasks on our behalf.
+ 
+-The PSF also shares basic contact information (name and email address) with sponsors if you have explicitly opted in to having your contact information shared with those sponsors.
++The PSF also shares basic contact information (badge name, nickname provided at signup, email address, and country provided during registration) with sponsors if you have explicitly consented to having your contact information shared with those sponsors by permitting them to scan your PyCon badge. You may also choose to share additional information with specific sponsors via the PyCon dashboard.
+ 
+ The PSF reserves the right to disclose and/or transfer personal information to a third party, if the PSF has reason to believe that disclosing personal information is necessary to identify, contact, or bring legal action against someone who may be causing injury to or interference with our rights or property, other website users, or anyone else who could be harmed by such activities. Additionally, the PSF may disclose personal information in response to a subpoena, warrant, or other court order, or when we believe in good faith that a law, regulation, subpoena, warrant or other court order requires or authorizes us to do so, or it is required to respond to an emergency situation.
+ 
+@@ -101,7 +116,7 @@ Unfortunately, the transmission of information via the internet is not completel
+ 
+ If you change your mind on how the PSF discloses or uses your information, or wish to access, correct or update personal information (such as your address), we will endeavor to correct, update or remove the personal data that you give us. Information that you have explicitly made available for unrestricted public access, such as having your name associated with a talk that you provide, may not be able to be deleted.
+ 
+-Citizens of California and citizens of countries in the European Union and European Economic Area may have further rights, including:
++Citizens of California and Virginia, and citizens of countries in the European Union and European Economic Area may have further rights, including:
+ 
+ -   Right of Access to your Personal Information
+ -   Right to Rectify your Personal Information
+</pre>
+
+
+        </main>
+
+        <div id="menu-panel" class="menu-panel">
+            <button class="close-menu-button"><span class="sr-only">Close</span></button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="https://us.pycon.org/">Home</a></li>
+                    
+
+<li class="has-children">
+	<a href="index.html#"  class="current_branch">About PyCon US</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../pycon/index.html"  >What is PyCon US?</a>
+	
+</li>
+
+<li >
+	<a href="../code-of-conduct/index.html"  >Code of Conduct</a>
+	
+</li>
+
+<li >
+	<a href="../diversity/index.html"  >Diversity</a>
+	
+</li>
+
+<li >
+	<a href="../health-safety-guidelines/index.html"  >Health &amp; Safety Guidelines</a>
+	
+</li>
+
+<li >
+	<a href="../staff/index.html"  >Staff Information</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="index.html#"  >Sponsorship</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../sponsorship/why-sponsor/index.html"  >Why Sponsor?</a>
+	
+</li>
+
+<li >
+	<a href="../../sponsorship/sponsors/index.html"  >Sponsors</a>
+	
+</li>
+
+<li >
+	<a href="../../sponsorship/digital-swag/index.html"  >Digital Swag</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="index.html#"  >Python Software Foundation</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../psf/about/index.html"  >About</a>
+	
+</li>
+
+<li >
+	<a href="../../psf/donate/index.html"  >Donate to the PSF</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="index.html#"  >Attend PyCon US</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../attend/information/index.html"  >Registration Information</a>
+	
+</li>
+
+<li >
+	<a href="../../attend/pycon-online/index.html"  >PyCon US Online</a>
+	
+</li>
+
+<li >
+	<a href="../../attend/venue/index.html"  >Venue and Hotels</a>
+	
+</li>
+
+<li >
+	<a href="../../attend/travel-grants/index.html"  >Travel Grants</a>
+	
+</li>
+
+<li >
+	<a href="../../attend/faq/index.html"  >Travel Grants FAQ</a>
+	
+</li>
+
+<li >
+	<a href="../../attend/vaccine-verification/index.html"  >Vaccine Verification</a>
+	
+</li>
+
+<li >
+	<a href="../../attend/captioning/index.html"  >Captioning</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="index.html#"  >Events</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../events/pyladies-auction/index.html"  >PyLadies Auction</a>
+	
+</li>
+
+<li >
+	<a href="../../events/language-summit/index.html"  >Language Summit</a>
+	
+</li>
+
+<li >
+	<a href="../../events/education-summit/index.html"  >Education Summit</a>
+	
+</li>
+
+<li >
+	<a href="../../events/maintainers-summit/index.html"  >Maintainers Summit</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/events/maintainers-summit-keynote/"  >Maintainers Summit Keynote</a>
+	
+</li>
+
+<li >
+	<a href="../../events/packaging-summit/index.html"  >Packaging Summit</a>
+	
+</li>
+
+<li >
+	<a href="../../events/open-spaces/index.html"  >Open Spaces</a>
+	
+</li>
+
+<li >
+	<a href="../../events/mentored-sprints/index.html"  >Mentored Sprints for Diverse Beginners</a>
+	
+</li>
+
+<li >
+	<a href="../../events/lightning-talks/index.html"  >Lightning Talks</a>
+	
+</li>
+
+<li >
+	<a href="../../events/sprints/index.html"  >Sprints</a>
+	
+</li>
+
+<li >
+	<a href="../../events/pyladies-luncheon/index.html"  >PyLadies Luncheon</a>
+	
+</li>
+
+<li >
+	<a href="../../events/newcomer-orientation/index.html"  >Newcomer Orientation</a>
+	
+</li>
+
+<li >
+	<a href="../../events/pycon-active/index.html"  >PyCon Active</a>
+	
+</li>
+
+<li >
+	<a href="../../events/typing-summit/index.html"  >Typing Summit</a>
+	
+</li>
+
+<li >
+	<a href="../../events/webassembly-summit/index.html"  >WebAssembly Summit</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="index.html#"  >Expo Hall</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../expo/expo-hall/index.html"  >Expo Hall</a>
+	
+</li>
+
+<li >
+	<a href="../../expo/opening-reception/index.html"  >Opening Reception</a>
+	
+</li>
+
+<li >
+	<a href="../../expo/job-fair/index.html"  >Job Fair</a>
+	
+</li>
+
+<li >
+	<a href="../../expo/presenting-startup-row/index.html"  >Startup Row</a>
+	
+</li>
+
+<li >
+	<a href="../../expo/job-listings/index.html"  >Job Listings</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="index.html#"  >Schedule</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../schedule/tutorials/index.html"  >Tutorials (Wed. and Thurs.)</a>
+	
+</li>
+
+<li >
+	<a href="../../schedule/sponsor-presentations/index.html"  >Sponsor Presentations (Thursday)</a>
+	
+</li>
+
+<li >
+	<a href="../../schedule/talks/index.html"  >Talks (Friday - Sunday)</a>
+	
+</li>
+
+<li >
+	<a href="../../schedule/posters/list/index.html"  >Posters (Sunday)</a>
+	
+</li>
+
+<li >
+	<a href="../keynote-speakers.html"  >Keynote Speakers</a>
+	
+</li>
+
+<li >
+	<a href="../../schedule/index.html"  >Overview</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="index.html#"  >All About SLC</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../all-about-slc/slc-events/index.html"  >SLC Events During PyCon US</a>
+	
+</li>
+
+<li >
+	<a href="../../all-about-slc/recommendations/index.html"  >Local Recommendations</a>
+	
+</li>
+
+<li >
+	<a href="../../all-about-slc/travel.html"  >Traveling to Salt Lake City</a>
+	
+</li>
+
+<li >
+	<a href="../../all-about-slc/transit.html"  >Public Transit in Salt Lake City</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="index.html#"  >Volunteers</a>
+	
+		<ul>
+			
+
+<li class="has-children">
+	<a href="../../volunteers/volunteering/index.html"  >Volunteering</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../volunteers/volunteering/session-staff/index.html"  >Session Staff</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="index.html#"  >Online</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../online/pycon-online.html"  >PyCon Online</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+
+                    
+                </ul>
+            </nav>
+        </div>
+
+        <footer>
+            <div class="footer-text">
+                <p>Need help? <a href="../faq/index.html">Click here</a> to find the correct person to contact.</p>
+                <p>The PyCon US 2023 conference in Salt Lake, UT, USA is a production of the <a href="https://www.python.org/psf/">Python Software Foundation</a>.</p>
+                <p>This site is built using <a href="https://www.djangoproject.com/">Django</a> and <a href="https://wagtail.org/">Wagtail</a>. Hosting is provided by <a href="https://www.heroku.com/">Heroku</a>.</p>
+                <p>PyCon US 2023 logo and design by <a href="https://www.marketingcan.com/">Marketing Can</a>.</p>
+                <p>Site design implemented by <a href="https://kabucreative.com/">Kabu Creative</a>.</p>
+                <p><a href="index.html">Privacy and Data policy</a>.</p>
+            </div>
+        </footer>
+
+        
+        <script type="text/javascript" src="../../static/js/vendor/jquery-3.6.4.min.641dd1437010.js"></script>
+        <script type="text/javascript" src="../../static/js/pycon.56f91ba36804.js"></script>
+        
+        <script>
+        var lightModeCssId = 'pyConLightModeCss';  // you could encode the css path itself to generate id..
+
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires="+ d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for(var i = 0; i <ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function switchToLightTheme() {
+            if (!document.getElementById(lightModeCssId))
+            {
+                var head  = document.getElementsByTagName('head')[0];
+                var link  = document.createElement('link');
+                link.id   = lightModeCssId;
+                link.rel  = 'stylesheet';
+                link.type = 'text/css';
+                link.href = '/2023/static/css/dark-mode.b92de74bfe3d.css';
+                link.media = 'all';
+                head.appendChild(link);
+            }
+            setCookie("theme", "light", 365);
+            button = document.getElementById("theme-switch");
+            button.onclick = switchToDarkTheme;
+            button.innerHTML = "<span class='sr-only'>Day</span>";
+            button.classList.toggle("day")
+        }
+    
+        function switchToDarkTheme() {
+            if (document.getElementById(lightModeCssId))
+            {
+                document.getElementById(lightModeCssId).outerHTML = "";
+            }
+            setCookie("theme", "dark", 365);
+            button = document.getElementById("theme-switch");
+            button.onclick = switchToLightTheme;
+            button.innerHTML = "<span class='sr-only'>Night</span>";
+            button.classList.toggle("day")
+        }
+    
+        if (getCookie("theme") == "light"){
+            switchToLightTheme();
+        }
+        if (getCookie("theme") == "dark"){
+            switchToDarkTheme();
+        }
+        if (getCookie("theme") == "") {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                switchToLightTheme();
+            }
+        }
+
+        function closeAlert(elem) {
+            elem.parentElement.remove()
+        }
+      </script>
+
+        
+        
+        
+
+    </div>
+    </body>
+</html>

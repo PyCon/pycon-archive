@@ -1,0 +1,590 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            Jatin Khilnani
+            
+            
+            - PyCon US 2023
+            
+        </title>
+
+        <!-- meta -->
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Rubik+Mono+One&family=Rubik:ital,wght@0,500;0,600;0,700;0,900;1,500;1,600;1,700;1,900&family=Sulphur+Point:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+        <!-- css -->
+        
+        <link rel="stylesheet" type="text/css" href="../../../static/css/normalize.112272e51c80.css">
+        <link rel="stylesheet" type="text/css" href="../../../static/css/defaults.6deb0f34f69a.css">
+        <link rel="stylesheet" type="text/css" href="../../../static/css/pycon.ed62bda8d74a.css">
+
+        <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+
+        <!-- favicons -->
+        <link rel="shortcut icon" href="../../../static/images/favicon/favicon.083aac545fb0.ico"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../static/images/favicon/favicon-16.416e79e3ec0f.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../static/images/favicon/favicon-32.8cd363a2c27c.png">
+        <link rel="icon" type="image/png" sizes="57x57" href="../../../static/images/favicon/favicon-57.9285ec2a23f6.png">
+        <link rel="icon" type="image/png" sizes="60x60" href="../../../static/images/favicon/favicon-60.feb5a149e2f7.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="../../../static/images/favicon/favicon-64.94bc5ed22759.png">
+        <link rel="icon" type="image/png" sizes="70x70" href="../../../static/images/favicon/favicon-70.77cab1641a62.png">
+        <link rel="icon" type="image/png" sizes="72x72" href="../../../static/images/favicon/favicon-72.7b2d14c4e48c.png">
+        <link rel="icon" type="image/png" sizes="76x76" href="../../../static/images/favicon/favicon-76.70456dd2e1f1.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../../../static/images/favicon/favicon-96.f72d3237f749.png">
+        <link rel="icon" type="image/png" sizes="114x114" href="../../../static/images/favicon/favicon-114.d6578539a006.png">
+        <link rel="icon" type="image/png" sizes="120x120" href="../../../static/images/favicon/favicon-120.9c53c85f3a30.png">
+        <link rel="icon" type="image/png" sizes="144x144" href="../../../static/images/favicon/favicon-144.ef21fa050454.png">
+        <link rel="icon" type="image/png" sizes="150x150" href="../../../static/images/favicon/favicon-150.595abb395b5d.png">
+        <link rel="icon" type="image/png" sizes="152x152" href="../../../static/images/favicon/favicon-152.07e7d12d12b9.png">
+        <link rel="icon" type="image/png" sizes="160x160" href="../../../static/images/favicon/favicon-160.720d71de2ec2.png">
+        <link rel="icon" type="image/png" sizes="180x180" href="../../../static/images/favicon/favicon-180.be63db4b3ef5.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../../../static/images/favicon/favicon-192.953e5b735200.png">
+        <link rel="icon" type="image/png" sizes="310x310" href="../../../static/images/favicon/favicon-310.8e9889d03500.png">
+
+        
+        
+        
+    </head>
+
+    <body class="">
+        
+    
+    <button class="menu-button open-menu"><span class="sr-only">Menu</span></button>
+    
+    <div class="mobile-background">
+        <button id="theme-switch" class="theme-switch" onclick="switchToDarkTheme()"><span class="sr-only">Night</span></button>
+        <aside class="sidebar">
+            <div class="sidebar-background"></div>
+            <a href="https://us.pycon.org/2023" class="edition-special">20th Anniversary Special</a>
+            <p>April 19-27, 2023</p>
+            <!-- <a href="TODO" class="search"><span class="sr-only">Search</span></a> -->
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="https://twitter.com/pycon">Follow Us</a></li>
+                    <li>/</li>
+                    <li><a href="mailto:pycon-reg@python.org">Contact Us</a></li>
+                    <li>/</li>
+                    <li><a href="https://pycon.blogspot.com/">Blog</a></li>
+                    <li>/</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- mobile header -->
+        <header class="mobile-header">
+            <button class="mobile-menu-button open-menu"><span class="sr-only">Menu</span></button>
+            <div class="mobile-logo"><span class="sr-only">20 year celebration - PyCon US 23</span></div>
+            <!-- <a href="" class="mobile-search"><span class="sr-only">Search</span></a> -->
+            
+                <a href="https://us.pycon.org/2023/accounts/login/" class="mobile-login"><span class="sr-only">Login</span></a>
+            
+        </header>
+
+        <main>
+            
+            
+  <div class="speaker-profile">
+    
+      <img src="https://pycon-assets.s3.amazonaws.com/2023/media/speaker_photos/151_Z6s36is.jpg.256x256_q85.jpg" alt="Jatin Khilnani" title="Jatin Khilnani" />
+    
+    <div>
+      <h1>Jatin Khilnani</h1>
+
+      <p><p>A consultant in earlier life with experience in designing data &amp; analytics solutions. Currently focusing on researching data science methods and their application to areas in artificial intelligence.</p></p>
+    </div>
+  </div>
+
+  <h2>Presentations</h2>
+  
+  <div class="speaker-presentation">
+    <a href="https://us.pycon.org/2023/schedule/presentation/130/">Posters: Bird&#x27;s-eye view of data in Python</a>
+    
+  </div>
+  
+
+        </main>
+
+        <div id="menu-panel" class="menu-panel">
+            <button class="close-menu-button"><span class="sr-only">Close</span></button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="https://us.pycon.org/">Home</a></li>
+                    
+
+<li class="has-children">
+	<a href="index.html#"  >About PyCon US</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="https://us.pycon.org/2023/about/pycon/"  >What is PyCon US?</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/about/code-of-conduct/"  >Code of Conduct</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/about/diversity/"  >Diversity</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/about/health-safety-guidelines/"  >Health &amp; Safety Guidelines</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/about/staff/"  >Staff Information</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="index.html#"  >Sponsorship</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="https://us.pycon.org/2023/sponsorship/why-sponsor/"  >Why Sponsor?</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/sponsorship/sponsors/"  >Sponsors</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/sponsorship/digital-swag/"  >Digital Swag</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="index.html#"  >Python Software Foundation</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="https://us.pycon.org/2023/psf/about/"  >About</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/psf/donate/"  >Donate to the PSF</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="index.html#"  >Attend PyCon US</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="https://us.pycon.org/2023/attend/information/"  >Registration Information</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/attend/pycon-online/"  >PyCon US Online</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/attend/venue/"  >Venue and Hotels</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/attend/travel-grants/"  >Travel Grants</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/attend/faq/"  >Travel Grants FAQ</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/attend/vaccine-verification/"  >Vaccine Verification</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/attend/captioning/"  >Captioning</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="index.html#"  >Events</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="https://us.pycon.org/2023/events/pyladies-auction/"  >PyLadies Auction</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/events/language-summit/"  >Language Summit</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/events/education-summit/"  >Education Summit</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/events/maintainers-summit/"  >Maintainers Summit</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/events/maintainers-summit-keynote/"  >Maintainers Summit Keynote</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/events/packaging-summit/"  >Packaging Summit</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/events/open-spaces/"  >Open Spaces</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/events/mentored-sprints/"  >Mentored Sprints for Diverse Beginners</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/events/lightning-talks/"  >Lightning Talks</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/events/sprints/"  >Sprints</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/events/pyladies-luncheon/"  >PyLadies Luncheon</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/events/newcomer-orientation/"  >Newcomer Orientation</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/events/pycon-active/"  >PyCon Active</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/events/typing-summit/"  >Typing Summit</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/events/webassembly-summit/"  >WebAssembly Summit</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="index.html#"  >Expo Hall</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="https://us.pycon.org/2023/expo/expo-hall/"  >Expo Hall</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/expo/opening-reception/"  >Opening Reception</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/expo/job-fair/"  >Job Fair</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/expo/presenting-startup-row/"  >Startup Row</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/expo/job-listings/"  >Job Listings</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="index.html#"  >Schedule</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="https://us.pycon.org/2023/schedule/tutorials/"  >Tutorials (Wed. and Thurs.)</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/schedule/sponsor-presentations/"  >Sponsor Presentations (Thursday)</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/schedule/talks/"  >Talks (Friday - Sunday)</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/schedule/posters/list/"  >Posters (Sunday)</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/about/keynote-speakers/"  >Keynote Speakers</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/schedule/"  >Overview</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="index.html#"  >All About SLC</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="https://us.pycon.org/2023/all-about-slc/slc-events/"  >SLC Events During PyCon US</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/all-about-slc/recommendations/"  >Local Recommendations</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/all-about-slc/travel"  >Traveling to Salt Lake City</a>
+	
+</li>
+
+<li >
+	<a href="https://us.pycon.org/2023/all-about-slc/transit"  >Public Transit in Salt Lake City</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="index.html#"  >Volunteers</a>
+	
+		<ul>
+			
+
+<li class="has-children">
+	<a href="https://us.pycon.org/2023/volunteers/volunteering/"  >Volunteering</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="https://us.pycon.org/2023/volunteers/volunteering/session-staff/"  >Session Staff</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="index.html#"  >Online</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="https://us.pycon.org/2023/online/pycon-online"  >PyCon Online</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+
+                    
+                </ul>
+            </nav>
+        </div>
+
+        <footer>
+            <div class="footer-text">
+                <p>Need help? <a href="https://us.pycon.org/2023/about/faq/">Click here</a> to find the correct person to contact.</p>
+                <p>The PyCon US 2023 conference in Salt Lake, UT, USA is a production of the <a href="https://www.python.org/psf/">Python Software Foundation</a>.</p>
+                <p>This site is built using <a href="https://www.djangoproject.com/">Django</a> and <a href="https://wagtail.org/">Wagtail</a>. Hosting is provided by <a href="https://www.heroku.com/">Heroku</a>.</p>
+                <p>PyCon US 2023 logo and design by <a href="https://www.marketingcan.com/">Marketing Can</a>.</p>
+                <p>Site design implemented by <a href="https://kabucreative.com/">Kabu Creative</a>.</p>
+                <p><a href="https://us.pycon.org/2023/about/privacy-and-data-policy/">Privacy and Data policy</a>.</p>
+            </div>
+        </footer>
+
+        
+        <script type="text/javascript" src="../../../static/js/vendor/jquery-3.6.4.min.641dd1437010.js"></script>
+        <script type="text/javascript" src="../../../static/js/pycon.56f91ba36804.js"></script>
+        
+        <script>
+        var lightModeCssId = 'pyConLightModeCss';  // you could encode the css path itself to generate id..
+
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires="+ d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for(var i = 0; i <ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function switchToLightTheme() {
+            if (!document.getElementById(lightModeCssId))
+            {
+                var head  = document.getElementsByTagName('head')[0];
+                var link  = document.createElement('link');
+                link.id   = lightModeCssId;
+                link.rel  = 'stylesheet';
+                link.type = 'text/css';
+                link.href = '/2023/static/css/dark-mode.b92de74bfe3d.css';
+                link.media = 'all';
+                head.appendChild(link);
+            }
+            setCookie("theme", "light", 365);
+            button = document.getElementById("theme-switch");
+            button.onclick = switchToDarkTheme;
+            button.innerHTML = "<span class='sr-only'>Day</span>";
+            button.classList.toggle("day")
+        }
+    
+        function switchToDarkTheme() {
+            if (document.getElementById(lightModeCssId))
+            {
+                document.getElementById(lightModeCssId).outerHTML = "";
+            }
+            setCookie("theme", "dark", 365);
+            button = document.getElementById("theme-switch");
+            button.onclick = switchToLightTheme;
+            button.innerHTML = "<span class='sr-only'>Night</span>";
+            button.classList.toggle("day")
+        }
+    
+        if (getCookie("theme") == "light"){
+            switchToLightTheme();
+        }
+        if (getCookie("theme") == "dark"){
+            switchToDarkTheme();
+        }
+        if (getCookie("theme") == "") {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                switchToLightTheme();
+            }
+        }
+
+        function closeAlert(elem) {
+            elem.parentElement.remove()
+        }
+      </script>
+
+        
+        
+        
+
+    </div>
+    </body>
+</html>

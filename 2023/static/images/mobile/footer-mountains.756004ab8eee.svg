@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="282" height="131" viewBox="0 0 282 131">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2918" data-name="Rectangle 2918" width="282" height="131" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_154" data-name="Rectangle 154" width="356.742" height="123.716" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="Path_167" data-name="Path 167" d="M1068.452,896.364l119.86,119.877H948.575Z" transform="translate(-948.575 -896.364)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Footer_mountains_-_mobile" data-name="Footer mountains - mobile" clip-path="url(#clip-path)">
+    <g id="Group_104" data-name="Group 104" transform="translate(-7.462 0.284)">
+      <g id="Group_103" data-name="Group 103" clip-path="url(#clip-path-2)">
+        <g id="Group_101" data-name="Group 101" transform="translate(38.064 1.312)">
+          <g id="Group_100" data-name="Group 100">
+            <g id="Group_99" data-name="Group 99" clip-path="url(#clip-path-3)">
+              <g id="Group_98" data-name="Group 98" transform="translate(-5.362 -15.739)">
+                <rect id="Rectangle_139" data-name="Rectangle 139" width="11.542" height="136.578" transform="translate(51.32)" fill="#b7a763"/>
+                <rect id="Rectangle_140" data-name="Rectangle 140" width="11.542" height="136.578" transform="translate(68.426)" fill="#b7a763"/>
+                <rect id="Rectangle_141" data-name="Rectangle 141" width="11.542" height="136.578" transform="translate(85.533)" fill="#b7a763"/>
+                <rect id="Rectangle_142" data-name="Rectangle 142" width="11.542" height="136.578" transform="translate(102.639)" fill="#b7a763"/>
+                <rect id="Rectangle_143" data-name="Rectangle 143" width="11.542" height="136.578" transform="translate(119.746)" fill="#b7a763"/>
+                <rect id="Rectangle_144" data-name="Rectangle 144" width="11.542" height="136.578" transform="translate(136.853)" fill="#b7a763"/>
+                <rect id="Rectangle_145" data-name="Rectangle 145" width="11.542" height="136.578" transform="translate(153.959)" fill="#b7a763"/>
+                <rect id="Rectangle_146" data-name="Rectangle 146" width="11.542" height="136.578" transform="translate(171.066)" fill="#b7a763"/>
+                <rect id="Rectangle_147" data-name="Rectangle 147" width="11.542" height="136.578" transform="translate(188.172)" fill="#b7a763"/>
+                <rect id="Rectangle_148" data-name="Rectangle 148" width="11.542" height="136.578" transform="translate(205.279)" fill="#b7a763"/>
+                <rect id="Rectangle_149" data-name="Rectangle 149" width="11.542" height="136.578" transform="translate(222.385)" fill="#b7a763"/>
+                <rect id="Rectangle_150" data-name="Rectangle 150" width="11.542" height="136.578" fill="#b7a763"/>
+                <rect id="Rectangle_151" data-name="Rectangle 151" width="11.542" height="136.578" transform="translate(17.107)" fill="#b7a763"/>
+                <rect id="Rectangle_152" data-name="Rectangle 152" width="11.542" height="136.578" transform="translate(34.213)" fill="#b7a763"/>
+                <rect id="Rectangle_153" data-name="Rectangle 153" width="11.542" height="136.578" transform="translate(239.492)" fill="#b7a763"/>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="Group_102" data-name="Group 102" transform="translate(115.971 3.839)">
+          <path id="Path_169" data-name="Path 169" d="M1149.452,898.992l119.86,119.877H1029.575Z" transform="translate(-1029.575 -898.992)" fill="#b7a763"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

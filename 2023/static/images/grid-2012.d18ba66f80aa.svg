@@ -1,0 +1,15 @@
+<svg id="mosaic_2012" data-name="mosaic 2012" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="271" height="271" viewBox="0 0 271 271">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4017" data-name="Rectangle 4017" width="271" height="271" fill="none"/>
+    </clipPath>
+  </defs>
+  <path id="Path_4276" data-name="Path 4276" d="M0,0H271V271H0Z" transform="translate(0)" fill="#136d96"/>
+  <g id="Group_3002" data-name="Group 3002" transform="translate(0.123)">
+    <g id="Group_3001" data-name="Group 3001" transform="translate(-0.123)" clip-path="url(#clip-path)">
+      <path id="Path_4274" data-name="Path 4274" d="M1162.146,167.795a80.3,80.3,0,1,1,0-113.556,80.3,80.3,0,0,1,0,113.556" transform="translate(-1240.431 -6.146)"/>
+      <path id="Path_4275" data-name="Path 4275" d="M1482.059,205.065a80.992,80.992,0,1,1,0-114.54,80.993,80.993,0,0,1,0,114.54" transform="translate(-1289.289 -12.294)" fill="#d3cdbf"/>
+      <line id="Line_118" data-name="Line 118" x2="155" y2="81" transform="translate(135.5 135.5)" fill="none" stroke="#d3cdbf" stroke-width="24"/>
+    </g>
+  </g>
+</svg>

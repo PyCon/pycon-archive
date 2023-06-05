@@ -1,0 +1,20 @@
+<svg id="Mosaic_2014" data-name="Mosaic 2014" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="271" height="271" viewBox="0 0 271 271">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_169" data-name="Rectangle 169" width="271" height="271" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Artwork_15" data-name="Artwork 15" transform="translate(135.5 135.5)">
+    <g id="Group_204" data-name="Group 204" transform="translate(-135.5 -135.5)">
+      <g id="Group_201" data-name="Group 201">
+        <rect id="Rectangle_168" data-name="Rectangle 168" width="271" height="271" fill="#acdbe5"/>
+      </g>
+      <g id="Group_203" data-name="Group 203">
+        <g id="Group_202" data-name="Group 202" clip-path="url(#clip-path)">
+          <path id="Path_222" data-name="Path 222" d="M833.691,184.173c0-90.22-182.856-163.356-408.422-163.356S16.849,93.953,16.849,184.173Z" transform="translate(23.738 29.329)" fill="#75bc4b"/>
+          <path id="Path_223" data-name="Path 223" d="M-220.944,157.259C-220.944,96.2-73.908,39.92,107.469,39.92S435.883,96.2,435.883,157.259h732.832v51.112a13.549,13.549,0,0,1-13.55,13.55H-207.394a13.549,13.549,0,0,1-13.55-13.55Z" transform="translate(-311.286 56.243)" fill="#61a73c"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
