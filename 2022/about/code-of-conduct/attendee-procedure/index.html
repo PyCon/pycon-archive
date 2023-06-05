@@ -1,0 +1,509 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>PyCon 2022
+    - Procedures for Reporting Incidents
+</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="https://us.pycon.org/2022/static/site.47af69f09674.webmanifest">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" href="https://us.pycon.org/2022/static/images/favicon/favicon.7898ab386ef8.ico"/>
+  <link rel="apple-touch-icon" sizes="76x76" href="https://us.pycon.org/2022/static/images/favicon/apple-touch-icon.30703cfa4f78.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://us.pycon.org/2022/static/images/favicon/favicon-32x32.22ad05e448e1.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://us.pycon.org/2022/static/images/favicon/favicon-16x16.326f630435f6.png">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="https://us.pycon.org/2022/static/css/normalize.112272e51c80.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Nunito+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://us.pycon.org/2022/static/css/main.9199a00e7546.css">
+  <link rel="stylesheet" href="https://us.pycon.org/2022/static/css/pycon.6f8c0de5a1fe.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  
+  
+
+  
+  
+</head>
+
+<body lang="en" class="template-cmspage">
+  <header class="header">
+    <div class="logo-container">
+      <button id="theme-switch" class="theme-switch" onclick="switchToLightTheme()">Day</button>
+      <div class="logo-bg"></div>
+      <a href="https://us.pycon.org/" class="logo">
+        <h1 class="sr-only">PyCon US 2022</h1>
+      </a>
+    </div>
+    <div class="line"></div>
+    <div class="light-mode-switch">
+    </div>
+    <div class="pure-menu pure-menu-horizontal" role="navigation">
+      <button id="toggle-nav" class="trigger-button">Menu</button>
+      <ul id="main-nav" class="pure-menu-list">
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://us.pycon.org/2022/">
+            Home
+          </a>
+        </li>
+        
+  
+  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="index.html#"  class="pure-menu-link">About</a>
+      
+          
+<ul class="pure-menu-children">
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/about/what-is-pycon/"  class="pure-menu-link">What Is PyCon?</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/about/diversity/"  class="pure-menu-link">Diversity</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/about/code-of-conduct/"  class="pure-menu-link">Code of Conduct</a>
+        
+    </li>
+    
+</ul>
+
+      
+  </li>
+  
+  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="index.html#"  class="pure-menu-link">PSF</a>
+      
+          
+<ul class="pure-menu-children">
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/psf/about/"  class="pure-menu-link">About</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/psf/donate/"  class="pure-menu-link">Donate</a>
+        
+    </li>
+    
+</ul>
+
+      
+  </li>
+  
+  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="index.html#"  class="pure-menu-link">Sponsors</a>
+      
+          
+<ul class="pure-menu-children">
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/sponsorship/sponsors/"  class="pure-menu-link">Our Sponsors</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/sponsorship/why-sponsor/"  class="pure-menu-link">Why Sponsor?</a>
+        
+    </li>
+    
+</ul>
+
+      
+  </li>
+  
+  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="https://us.pycon.org/2022/events/"  class="pure-menu-link">Events and Summits</a>
+      
+          
+<ul class="pure-menu-children">
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/events/language-summit/"  class="pure-menu-link">Language Summit</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/events/education-summit/"  class="pure-menu-link">Education Summit</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/events/newcomer-orientation/"  class="pure-menu-link">Newcomer Orientation</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/events/typing-summit/"  class="pure-menu-link">Typing Summit</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/events/maintainers-summit/"  class="pure-menu-link">Maintainers Summit</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/events/packaging-summit/"  class="pure-menu-link">Packaging Summit</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/events/mentored-sprints/"  class="pure-menu-link">Mentored Sprints for Diverse Beginners</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/events/lightning-talks/"  class="pure-menu-link">Lightning Talks</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/events/pyladies-auction/"  class="pure-menu-link">PyLadies Auction</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/events/development-sprints/"  class="pure-menu-link">Development Sprints</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/events/pyladies-luncheon/"  class="pure-menu-link">PyLadies Luncheon</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/events/charlas/"  class="pure-menu-link">Las PyCon Charlas</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/events/open-spaces/"  class="pure-menu-link">Open Spaces</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/events/active/"  class="pure-menu-link">PyCon US Active</a>
+        
+    </li>
+    
+</ul>
+
+      
+  </li>
+  
+  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="https://us.pycon.org/2022/schedule/"  class="pure-menu-link">Schedule</a>
+      
+          
+<ul class="pure-menu-children">
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/schedule/tutorials/"  class="pure-menu-link">Tutorials (Wed. and Thurs.)</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/schedule/sponsor-workshops/"  class="pure-menu-link">Sponsor Workshops (Thursday)</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/schedule/talks/"  class="pure-menu-link">Talks (Friday - Sunday)</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/schedule/posters/list/"  class="pure-menu-link">Posters (Sunday)</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/about/keynote-speakers/"  class="pure-menu-link">Keynote Speakers</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/about/captioning/"  class="pure-menu-link">Captioning</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/events/development-sprints/"  class="pure-menu-link">Sprints</a>
+        
+    </li>
+    
+</ul>
+
+      
+  </li>
+  
+  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="https://us.pycon.org/2022/online/pycon-online/"  class="pure-menu-link">PyCon US Online and Recordings</a>
+      
+          
+<ul class="pure-menu-children">
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/online/recordings/"  class="pure-menu-link">Recordings</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="https://us.pycon.org/2022/online/pycon-online/"  class="pure-menu-link">PyCon US Online</a>
+        
+    </li>
+    
+</ul>
+
+      
+  </li>
+  
+
+        
+        
+      </ul>
+    </div>
+  </header>
+
+  <div class="banner-background">
+    <div class="banner-container">
+      <div class="banner-left"></div>
+      <div class="banner-right"></div>
+      <div class="banner">
+        <div class="pycon-header"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="homepage-bars">
+      <div class="bar bar-1"></div>
+      <div class="bar bar-2"></div>
+      <div class="bar bar-3"></div>
+      <div class="bar bar-4"></div>
+      <div class="bar bar-5"></div>
+  </div>
+
+  
+
+  <div class="homepage-content-container">
+  
+  </div>
+
+  
+    <div class="content-wrapper">
+      
+    <div class="cms-title">
+      <h1>Procedures for Reporting Incidents</h1>
+      
+    </div>
+    <div class="cms-body">
+      <div class="content-container">
+        <div class="block-paragraph"><div class="left"><p data-block-key="691sb"><b>If you believe someone is in physical danger, including from themselves</b>, the most important thing is to get that person help. Please contact the appropriate crisis number, non-emergency number, or police number. If you are a PyCon attendee, you can consult with a volunteer or staff member to help find an appropriate number.</p><p data-block-key="1eo0j">If you believe someone has violated the <a href="https://us.pycon.org/2021/about/code-of-conduct/"><b>Code of Conduct</b></a>, we encourage you to report it. If you are unsure whether the incident is a violation, or whether the space where it happened is covered by the Code of Conduct, we encourage you to still report it. We are fine with receiving reports where we decide to take no action for the sake of creating a safer space.</p><p data-block-key="btlcv">If you find that you need to make a report, and you cannot find the appropriate Code of Conduct reporting contact, you may report to the PyCon Code of Conduct email alias below. PyCon event staff will handle your report. If this happens, please also mention that you could not find specific reporting information so that we can improve.</p><p data-block-key="1rlp3"><i>General reporting procedure:</i></p><p data-block-key="5ssgf">The best way to contact the PyCon Code of Conduct event staff is by email at <a href="mailto:pycon-us-report@python.org"><b>pycon-us-report@python.org</b></a>. The members of the PyCon event staff who monitor this account are:</p><ul><li data-block-key="6kuq0">Jackie Augustine</li><li data-block-key="bkevv">Ee Durbin</li></ul><p data-block-key="b47ja">In the event of a <b>conflict of interest</b>, you may directly contact any of the lead incident responders:</p><ul><li data-block-key="6brss">Jackie Augustine<ul><li data-block-key="d692p">Python Software Foundation - Event Manager<ul><li data-block-key="df48a"><a href="mailto:jackie@python.org"><b>jackie@python.org</b></a></li></ul></li></ul></li></ul><h2><a id="report-data""></a>REPORT DATA</h2><p data-block-key="a02cn">When you make a report via email or phone, please include:</p><ul><li data-block-key="9r8sn">Your contact info (so we can get in touch with you if we need to follow up)</li><li data-block-key="ectqj">Date and time of the incident</li><li data-block-key="1tos2">Location of incident</li><li data-block-key="2hor7">Whether the incident is ongoing</li><li data-block-key="af13r">Description of the incident</li><li data-block-key="6qjit">Identifying information of the reported person: name, physical appearance, height, clothing, voice accent, identifying badge information such as company name, ribbons, or badge number</li><li data-block-key="30atd">Additional circumstances surrounding the incident</li><li data-block-key="5sb40">Other people involved in or witnesses to the incident and their contact information or description</li></ul><p data-block-key="8mqst">Please provide as much information as possible.</p><h2><a id="confidentiality""></a>CONFIDENTIALITY</h2><p data-block-key="aqbn9"><b>All reports will be kept confidential</b>. When we discuss incidents with people who are reported, we will anonymize details as much as we can to protect reporter privacy.</p><p data-block-key="bktuf">However, some incidents happen in one-on-one interactions, and even if the details are anonymized, the reported person may be able to guess who made the report. If you have concerns about retaliation or your personal safety, please note those in your report. We still encourage you to report, so that we can support you while keeping our conference attendees safe. In some cases, we can compile several anonymized reports into a pattern of behavior, and take action on that pattern.</p><p data-block-key="eh8bd">In some cases, we may determine that a public statement will need to be made. If that’s the case, the identities of all victims and reporters will remain confidential unless those individuals instruct us otherwise.</p><h2><a id="report-handling-procedure""></a>REPORT HANDLING PROCEDURE</h2><p data-block-key="4mj3p">When you make a report to an incident responder, they will gather information about the incident according to the <a href="../staff-procedure/index.html"><b>Procedure For Incident Response</b></a>.</p><p data-block-key="6o5ea">After an incident responder takes the report, they will immediately consult with the PyCon event staff, unless there is a conflict of interest, in which case any non-interested parties will be contacted.</p><p data-block-key="5p5u0">If the incident is ongoing and needs to be immediately addressed, any lead incident responder may take appropriate action to ensure the safety of everyone involved. If the situation requires it, this may take the form of a referral to an appropriate non-PyCon agency, including the local police. PyCon is not equipped to handle emergency situations.</p><p data-block-key="8153f">If the incident is less urgent, the report will be discussed by the event staff, who will meet to determine an appropriate response. Examples of possible incident responses are outlined in the <a href="https://us.pycon.org/2021/about/code-of-conduct/staff-procedure/"><b>Procedure For Incident Response</b></a>.</p><p data-block-key="a3ubs">Before any large in-person gathering conference, staff will have a mandatory meeting where incident response procedures will be outlined. After the conference, all incident responders will attend a debriefing session with the lead responders to discuss all incidents and determine any necessary follow-up actions.</p><h2><a id="following-up-with-reporters""></a>FOLLOWING UP WITH REPORTERS</h2><p data-block-key="f9ptn">Within one week of an incident report, a member of the event staff, or one of the lead responders, will follow up with the person who made the report and provided their contact information. The follow up may include:</p><ul><li data-block-key="as2hj">An acknowledgment that the Code of Conduct responders discussed the situation</li><li data-block-key="2oo2q">Whether or not the report was determined to be a violation of the Code of Conduct</li><li data-block-key="9gt6q">What actions (if any) were taken to correct the reported behavior</li></ul><p data-block-key="6qftt">In some cases, the lead responders may need to ask additional questions about the incident in order to identify the reported person.</p><h2><a id="conflicts-of-interest""></a>CONFLICTS OF INTEREST</h2><p data-block-key="7d80s">If an incident responder has a conflict of interest for a report, they will recuse themselves from the discussion and handling of the incident. The incident documentation will not be available to them, and they will excuse themselves from any conversations involving handling the incident.</p><p data-block-key="14l4u">Should more than two of the PyCon lead incident responders need to recuse themselves, another PyCon staff member will step in as a temporary lead incident responder.</p><p data-block-key="5aiom">This procedure was adapted from the Ada Initiative’s guide titled “<a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports"><b>Conference anti-harassment/Responding to Reports</b></a>”, the <a href="https://www.djangoproject.com/conduct/reporting/"><b>Django Project reporting guidelines</b></a> (CC BY 3.0), with additions by <a href="https://otter.technology/"><b>Otter Tech</b></a>.</p></div>
+</div>
+      </div>
+    </div>
+
+    </div>
+  
+
+  <div class="footer-outer-container">
+    <div class="footer-inner-container">
+      <footer class="footer">
+
+        <div class="bar bar-1"></div>
+        <div class="bar bar-2"></div>
+        <div class="bar bar-3"></div>
+        <div class="bar bar-4"></div>
+
+        <div class="footer-content">
+          <p class="footer-credits footer-help">
+              Need Help? <a href="https://us.pycon.org/2022/about/faq/">Click here</a> to find the right person to contact.
+          </p>
+          <p class="footer-credits">
+            The PyCon 2022 conference in Salt Lake, UT, USA is a production of the
+            <a href="http://python.org/psf-landing/">Python Software Foundation</a>.
+          </p>
+          <p class="footer-credits">
+            This site is built using
+            <a href="https://www.djangoproject.com/">Django</a>
+            and
+            <a href="https://wagtail.io/">Wagtail</a>.
+            Hosting is provided by
+            <a href="http://heroku.com/">Heroku</a>.
+          </p>
+          <p class="footer-credits">
+            PyCon 2022 logo and design by <a href="https://www.marketingcan.com/">Marketing Can</a>. Site design implemented by <a href="https://kabucreative.com">Kabu Creative</a>.
+          </p>
+          <p class="footer-credits">
+            <a href="https://us.pycon.org/2022/about/privacy-and-data-policy/">Privacy and Data Policy</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  
+  <script src="https://use.fontawesome.com/5cfde8bb33.js"></script>
+
+  <script src="https://us.pycon.org/2022/static/js/vendor/modernizr-3.11.2.min.57b15b0dca5e.js"></script>
+  <script src="https://us.pycon.org/2022/static/js/plugins.f9d1ee144514.js"></script>
+  <script src="https://us.pycon.org/2022/static/js/main.5aa59a6e8632.js"></script>
+  <script src="https://us.pycon.org/2022/static/js/menu.c1be78c8bee1.js"></script>
+  <script src="https://us.pycon.org/2022/static/js/pycon.68b329da9893.js"></script>
+  
+  
+
+  <script>
+    var lightModeCssId = 'pyConLightModeCss';  // you could encode the css path itself to generate id..
+    var welcomeLogoId = 'welcome-logo';
+    var psfLogoId = 'psf-logo';
+
+    // As documented in https://stripe.com/docs/js/appendix/style
+    const STRIPE_STYLE_DARK = {
+      style: {
+        base: {
+          backgroundColor: '#000',
+          iconColor: '#fff',
+          color: '#fff',
+          fontWeight: 500,
+          fontSize: '16px',
+          fontSmoothing: 'antialiased',
+          ':-webkit-autofill': {
+            color: '#999',
+          },
+          '::placeholder': {
+            color: '#ccc',
+          },
+          padding: "1em 0",
+        },
+        invalid: {
+          iconColor: 'red',
+          color: 'red',
+        },
+      },
+    }
+
+    const STRIPE_STYLE_LIGHT = {
+      style: {
+        base: {
+          backgroundColor: '#fff',
+          iconColor: '#000',
+          color: '#000',
+          fontWeight: 500,
+          fontSize: '16px',
+          fontSmoothing: 'antialiased',
+          ':-webkit-autofill': {
+            color: '#888',
+          },
+          '::placeholder': {
+            color: '#333',
+          },
+          padding: "1em 0",
+        },
+        invalid: {
+          iconColor: 'red',
+          color: 'red',
+        },
+      },
+    }
+
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays*24*60*60*1000));
+      var expires = "expires="+ d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    function switchToLightTheme() {
+        if (!document.getElementById(lightModeCssId))
+        {
+            var head  = document.getElementsByTagName('head')[0];
+            var link  = document.createElement('link');
+            link.id   = lightModeCssId;
+            link.rel  = 'stylesheet';
+            link.type = 'text/css';
+            link.href = '/2022/static/css/light-mode.b219da3f8a7d.css';
+            link.media = 'all';
+            head.appendChild(link);
+        }
+        setCookie("theme", "light", 365);
+        button = document.getElementById("theme-switch");
+        button.onclick = switchToDarkTheme;
+        button.innerHTML = "Night";
+        button.classList.toggle("day")
+        window.STRIPE_STYLE = STRIPE_STYLE_LIGHT;
+    }
+
+    function switchToDarkTheme() {
+        if (document.getElementById(lightModeCssId))
+        {
+            document.getElementById(lightModeCssId).outerHTML = "";
+        }
+        setCookie("theme", "dark", 365);
+        button = document.getElementById("theme-switch");
+        button.onclick = switchToLightTheme;
+        button.innerHTML = "Day";
+        button.classList.toggle("day")
+        window.STRIPE_STYLE = STRIPE_STYLE_DARK;
+    }
+
+    if (getCookie("theme") == "light"){
+        switchToLightTheme();
+    }
+    if (getCookie("theme") == "dark"){
+        switchToDarkTheme();
+    }
+    if (getCookie("theme") == "") {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+            switchToLightTheme();
+        }
+    }
+  </script>
+
+  
+  
+
+  
+</body>
+
+</html>

@@ -1,0 +1,969 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>PyCon 2022</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="../../static/site.47af69f09674.webmanifest">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" href="../../static/images/favicon/favicon.7898ab386ef8.ico"/>
+  <link rel="apple-touch-icon" sizes="76x76" href="../../static/images/favicon/apple-touch-icon.30703cfa4f78.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../static/images/favicon/favicon-32x32.22ad05e448e1.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../static/images/favicon/favicon-16x16.326f630435f6.png">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="../../static/css/normalize.112272e51c80.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Nunito+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../static/css/main.9199a00e7546.css">
+  <link rel="stylesheet" href="../../static/css/pycon.6f8c0de5a1fe.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  
+  
+
+  
+  
+</head>
+
+<body lang="en" class="full">
+  <header class="header">
+    <div class="logo-container">
+      <button id="theme-switch" class="theme-switch" onclick="switchToLightTheme()">Day</button>
+      <div class="logo-bg"></div>
+      <a href="http://us.pycon.org/" class="logo">
+        <h1 class="sr-only">PyCon US 2022</h1>
+      </a>
+    </div>
+    <div class="line"></div>
+    <div class="light-mode-switch">
+    </div>
+    <div class="pure-menu pure-menu-horizontal" role="navigation">
+      <button id="toggle-nav" class="trigger-button">Menu</button>
+      <ul id="main-nav" class="pure-menu-list">
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../index.html">
+            Home
+          </a>
+        </li>
+        
+  
+  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="index.html#"  class="pure-menu-link">About</a>
+      
+          
+<ul class="pure-menu-children">
+    
+    <li class="pure-menu-item">
+        <a href="../../about/what-is-pycon/index.html"  class="pure-menu-link">What Is PyCon?</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../about/diversity/index.html"  class="pure-menu-link">Diversity</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../about/code-of-conduct/index.html"  class="pure-menu-link">Code of Conduct</a>
+        
+    </li>
+    
+</ul>
+
+      
+  </li>
+  
+  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="index.html#"  class="pure-menu-link">PSF</a>
+      
+          
+<ul class="pure-menu-children">
+    
+    <li class="pure-menu-item">
+        <a href="../../psf/about/index.html"  class="pure-menu-link">About</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../psf/donate/index.html"  class="pure-menu-link">Donate</a>
+        
+    </li>
+    
+</ul>
+
+      
+  </li>
+  
+  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="index.html#"  class="pure-menu-link">Sponsors</a>
+      
+          
+<ul class="pure-menu-children">
+    
+    <li class="pure-menu-item">
+        <a href="../../sponsorship/sponsors/index.html"  class="pure-menu-link">Our Sponsors</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../sponsorship/why-sponsor/index.html"  class="pure-menu-link">Why Sponsor?</a>
+        
+    </li>
+    
+</ul>
+
+      
+  </li>
+  
+  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="../../events/index.html"  class="pure-menu-link">Events and Summits</a>
+      
+          
+<ul class="pure-menu-children">
+    
+    <li class="pure-menu-item">
+        <a href="../../events/language-summit/index.html"  class="pure-menu-link">Language Summit</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../events/education-summit/index.html"  class="pure-menu-link">Education Summit</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../events/newcomer-orientation/index.html"  class="pure-menu-link">Newcomer Orientation</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../events/typing-summit/index.html"  class="pure-menu-link">Typing Summit</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../events/maintainers-summit/index.html"  class="pure-menu-link">Maintainers Summit</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../events/packaging-summit/index.html"  class="pure-menu-link">Packaging Summit</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../events/mentored-sprints/index.html"  class="pure-menu-link">Mentored Sprints for Diverse Beginners</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../events/lightning-talks/index.html"  class="pure-menu-link">Lightning Talks</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../events/pyladies-auction/index.html"  class="pure-menu-link">PyLadies Auction</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../events/development-sprints/index.html"  class="pure-menu-link">Development Sprints</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../events/pyladies-luncheon/index.html"  class="pure-menu-link">PyLadies Luncheon</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="http://us.pycon.org/2022/events/charlas/"  class="pure-menu-link">Las PyCon Charlas</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../events/open-spaces/index.html"  class="pure-menu-link">Open Spaces</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../events/active/index.html"  class="pure-menu-link">PyCon US Active</a>
+        
+    </li>
+    
+</ul>
+
+      
+  </li>
+  
+  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover pure-menu-selected">
+      <a href="../index.html"  class="pure-menu-link current_branch">Schedule</a>
+      
+          
+<ul class="pure-menu-children">
+    
+    <li class="pure-menu-item pure-menu-selected">
+        <a href="index.html"  class="pure-menu-link current_item current_branch">Tutorials (Wed. and Thurs.)</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../sponsor-workshops/index.html"  class="pure-menu-link">Sponsor Workshops (Thursday)</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../talks/index.html"  class="pure-menu-link">Talks (Friday - Sunday)</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../posters/list/index.html"  class="pure-menu-link">Posters (Sunday)</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../about/keynote-speakers/index.html"  class="pure-menu-link">Keynote Speakers</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../about/captioning/index.html"  class="pure-menu-link">Captioning</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../events/development-sprints/index.html"  class="pure-menu-link">Sprints</a>
+        
+    </li>
+    
+</ul>
+
+      
+  </li>
+  
+  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="../../online/pycon-online/index.html"  class="pure-menu-link">PyCon US Online and Recordings</a>
+      
+          
+<ul class="pure-menu-children">
+    
+    <li class="pure-menu-item">
+        <a href="../../online/recordings/index.html"  class="pure-menu-link">Recordings</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../online/pycon-online/index.html"  class="pure-menu-link">PyCon US Online</a>
+        
+    </li>
+    
+</ul>
+
+      
+  </li>
+  
+
+        
+        
+      </ul>
+    </div>
+  </header>
+
+  <div class="banner-background">
+    <div class="banner-container">
+      <div class="banner-left"></div>
+      <div class="banner-right"></div>
+      <div class="banner">
+        <div class="pycon-header"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="homepage-bars">
+      <div class="bar bar-1"></div>
+      <div class="bar bar-2"></div>
+      <div class="bar bar-3"></div>
+      <div class="bar bar-4"></div>
+      <div class="bar bar-5"></div>
+  </div>
+
+  
+
+  <div class="homepage-content-container">
+  
+  </div>
+
+  
+    <div class="content-wrapper">
+      
+
+    <div class="panel-heading">
+      <h1>PyCon 2022 Tutorials Schedule</h1>
+      
+    </div>
+
+    <div class="panel-body">
+      
+      <div style="text-align: center;">
+  <p><b>Tutorial Registration will launch next week</b></br><small>(The week of February 28, 2022)</small></p>
+  <p><small>Times subject to change.</small></p>
+  </br>
+</div>
+      
+    </div>
+
+    <div class="panel-body">
+    
+      <div id="2022-04-27">
+        <center><h3>April 27, 2022</h3></center>
+      </div>
+      <table class="calendar table table-bordered">
+    <thead>
+        <tr>
+            <th class="time">&nbsp;</th>
+            
+                <th>250AB</th>
+            
+                <th>250C</th>
+            
+                <th>250DE</th>
+            
+                <th>250F</th>
+            
+                <th>251AB</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        
+            <tr>
+                <td class="time highlight" data-timestamp="2022-04-27T09:00:00Z">09:00AM</td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="../presentation/38/index.html">Introduction to Natural Language Processing</a>
+                                </span>
+                                <br>
+                                <span class="speaker">
+                                    Leah Simpson, Ray McLendon
+                                </span>
+                                <div class="badges" style="float: right">
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="../presentation/164/index.html">Distributed Python with Ray: Hands-on with the Ray Core APIs</a>
+                                </span>
+                                <br>
+                                <span class="speaker">
+                                    Jules S. Damji
+                                </span>
+                                <div class="badges" style="float: right">
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                              
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="../presentation/28/index.html">Getting started with Object-Oriented Programming through Signal Processing</a>
+                                </span>
+                                <br>
+                                <span class="speaker">
+                                    Francesco Bruni
+                                </span>
+                                <div class="badges" style="float: right">
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="../presentation/64/index.html">All about decorators</a>
+                                </span>
+                                <br>
+                                <span class="speaker">
+                                    Reuven M. Lerner
+                                </span>
+                                <div class="badges" style="float: right">
+                                
+                            
+                        
+                    </td>
+                
+                
+            </tr>
+        
+            <tr>
+                <td class="time " data-timestamp="2022-04-27T12:30:00Z">12:30PM</td>
+                
+                    <td class="slot slot-break" colspan="5" rowspan="1" style="position: relative;">
+                        
+                            <div class="title">
+                            
+                                <p>Lunch</p>
+                            
+                            </div>
+                        
+                    </td>
+                
+                
+            </tr>
+        
+            <tr>
+                <td class="time highlight" data-timestamp="2022-04-27T13:30:00Z">01:30PM</td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="../presentation/30/index.html">Python Metaprogramming: decorators, descriptors, metaclasses, and more</a>
+                                </span>
+                                <br>
+                                <span class="speaker">
+                                    Trey Hunner
+                                </span>
+                                <div class="badges" style="float: right">
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="../presentation/100/index.html">Python Types for Fun and Profit</a>
+                                </span>
+                                <br>
+                                <span class="speaker">
+                                    Pradeep Kumar Srinivasan, Jia Chen, Shannon Zhu
+                                </span>
+                                <div class="badges" style="float: right">
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="../presentation/50/index.html">Knowledge graph data modelling with TerminusDB</a>
+                                </span>
+                                <br>
+                                <span class="speaker">
+                                    Cheuk Ting Ho
+                                </span>
+                                <div class="badges" style="float: right">
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="../presentation/172/index.html">Building your first Dashboard using Dash</a>
+                                </span>
+                                <br>
+                                <span class="speaker">
+                                    Laura Gutierrez Funderburk
+                                </span>
+                                <div class="badges" style="float: right">
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="../presentation/27/index.html">Goodbye, &quot;Hello, World.&quot; Hello, Functional FastAPI Web App!</a>
+                                </span>
+                                <br>
+                                <span class="speaker">
+                                    Mario Munoz
+                                </span>
+                                <div class="badges" style="float: right">
+                                
+                            
+                        
+                    </td>
+                
+                
+            </tr>
+        
+            <tr>
+                <td class="time " data-timestamp="2022-04-27T17:00:00Z">05:00PM</td>
+                
+                
+                    <td colspan="5"></td>
+                
+            </tr>
+        
+    </tbody>
+</table>
+
+    
+      <div id="2022-04-28">
+        <center><h3>April 28, 2022</h3></center>
+      </div>
+      <table class="calendar table table-bordered">
+    <thead>
+        <tr>
+            <th class="time">&nbsp;</th>
+            
+                <th>250AB</th>
+            
+                <th>250C</th>
+            
+                <th>250DE</th>
+            
+                <th>250F</th>
+            
+                <th>251AB</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        
+            <tr>
+                <td class="time highlight" data-timestamp="2022-04-28T09:00:00Z">09:00AM</td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="../presentation/93/index.html">Learning from errors: understanding and debugging Python errors</a>
+                                </span>
+                                <br>
+                                <span class="speaker">
+                                    DOROTA JARECKA
+                                </span>
+                                <div class="badges" style="float: right">
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="../presentation/47/index.html">Network Analysis Made Simple</a>
+                                </span>
+                                <br>
+                                <span class="speaker">
+                                    Eric Ma
+                                </span>
+                                <div class="badges" style="float: right">
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="../presentation/53/index.html">A Pythonista’s Introductory Guide to WebAssembly</a>
+                                </span>
+                                <br>
+                                <span class="speaker">
+                                    Ariel Ortiz
+                                </span>
+                                <div class="badges" style="float: right">
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="../presentation/177/index.html">Introduction to Property-Based Testing</a>
+                                </span>
+                                <br>
+                                <span class="speaker">
+                                    Zac Hatfield-Dodds
+                                </span>
+                                <div class="badges" style="float: right">
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="../presentation/66/index.html">JupyterLab for Everybody - Harness the Full Power of Interactive Python Development</a>
+                                </span>
+                                <br>
+                                <span class="speaker">
+                                    Mike Müller
+                                </span>
+                                <div class="badges" style="float: right">
+                                
+                            
+                        
+                    </td>
+                
+                
+            </tr>
+        
+            <tr>
+                <td class="time " data-timestamp="2022-04-28T12:30:00Z">12:30PM</td>
+                
+                    <td class="slot slot-break" colspan="5" rowspan="1" style="position: relative;">
+                        
+                            <div class="title">
+                            
+                                <p>Lunch</p>
+                            
+                            </div>
+                        
+                    </td>
+                
+                
+            </tr>
+        
+            <tr>
+                <td class="time highlight" data-timestamp="2022-04-28T13:30:00Z">01:30PM</td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="../presentation/24/index.html">Introduction to Data Analysis Using Pandas</a>
+                                </span>
+                                <br>
+                                <span class="speaker">
+                                    Stefanie Molin
+                                </span>
+                                <div class="badges" style="float: right">
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="../presentation/102/index.html">Assessing and mitigating unfairness in AI systems</a>
+                                </span>
+                                <br>
+                                <span class="speaker">
+                                    Manojit Nandi
+                                </span>
+                                <div class="badges" style="float: right">
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="../presentation/34/index.html">Documenting your code: from docstrings to automated builds</a>
+                                </span>
+                                <br>
+                                <span class="speaker">
+                                    Jacob Deppen
+                                </span>
+                                <div class="badges" style="float: right">
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="../presentation/35/index.html">Awesome Modern Web Testing with Playwright</a>
+                                </span>
+                                <br>
+                                <span class="speaker">
+                                    Pandy Knight
+                                </span>
+                                <div class="badges" style="float: right">
+                                
+                            
+                        
+                    </td>
+                
+                    <td class="slot slot-tutorial" colspan="1" rowspan="1" style="position: relative;">
+                        
+                            
+                                <span class="title">
+                                    <a href="../presentation/74/index.html">Python under the hood: What so special about Python Objects?</a>
+                                </span>
+                                <br>
+                                <span class="speaker">
+                                    Lucy Sheppard
+                                </span>
+                                <div class="badges" style="float: right">
+                                
+                            
+                        
+                    </td>
+                
+                
+            </tr>
+        
+            <tr>
+                <td class="time " data-timestamp="2022-04-28T17:00:00Z">05:00PM</td>
+                
+                    <td class="slot slot-plenary" colspan="5" rowspan="1" style="position: relative;">
+                        
+                            <div class="title">
+                            
+                                <p>Opening Reception</p>
+                            
+                            </div>
+                        
+                    </td>
+                
+                
+            </tr>
+        
+            <tr>
+                <td class="time highlight" data-timestamp="2022-04-28T18:00:00Z">06:00PM</td>
+                
+                
+                    <td colspan="5"></td>
+                
+            </tr>
+        
+    </tbody>
+</table>
+
+    
+    </div>
+
+
+    </div>
+  
+
+  <div class="footer-outer-container">
+    <div class="footer-inner-container">
+      <footer class="footer">
+
+        <div class="bar bar-1"></div>
+        <div class="bar bar-2"></div>
+        <div class="bar bar-3"></div>
+        <div class="bar bar-4"></div>
+
+        <div class="footer-content">
+          <p class="footer-credits footer-help">
+              Need Help? <a href="../../about/faq/index.html">Click here</a> to find the right person to contact.
+          </p>
+          <p class="footer-credits">
+            The PyCon 2022 conference in Salt Lake, UT, USA is a production of the
+            <a href="http://python.org/psf-landing/">Python Software Foundation</a>.
+          </p>
+          <p class="footer-credits">
+            This site is built using
+            <a href="https://www.djangoproject.com/">Django</a>
+            and
+            <a href="https://wagtail.io/">Wagtail</a>.
+            Hosting is provided by
+            <a href="http://heroku.com/">Heroku</a>.
+          </p>
+          <p class="footer-credits">
+            PyCon 2022 logo and design by <a href="https://www.marketingcan.com/">Marketing Can</a>. Site design implemented by <a href="https://kabucreative.com">Kabu Creative</a>.
+          </p>
+          <p class="footer-credits">
+            <a href="../../about/privacy-and-data-policy/index.html">Privacy and Data Policy</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  
+  <script src="https://use.fontawesome.com/5cfde8bb33.js"></script>
+
+  <script src="../../static/js/vendor/modernizr-3.11.2.min.57b15b0dca5e.js"></script>
+  <script src="../../static/js/plugins.f9d1ee144514.js"></script>
+  <script src="../../static/js/main.5aa59a6e8632.js"></script>
+  <script src="../../static/js/menu.c1be78c8bee1.js"></script>
+  <script src="../../static/js/pycon.68b329da9893.js"></script>
+  
+  
+
+  <script>
+    var lightModeCssId = 'pyConLightModeCss';  // you could encode the css path itself to generate id..
+    var welcomeLogoId = 'welcome-logo';
+    var psfLogoId = 'psf-logo';
+
+    // As documented in https://stripe.com/docs/js/appendix/style
+    const STRIPE_STYLE_DARK = {
+      style: {
+        base: {
+          backgroundColor: '#000',
+          iconColor: '#fff',
+          color: '#fff',
+          fontWeight: 500,
+          fontSize: '16px',
+          fontSmoothing: 'antialiased',
+          ':-webkit-autofill': {
+            color: '#999',
+          },
+          '::placeholder': {
+            color: '#ccc',
+          },
+          padding: "1em 0",
+        },
+        invalid: {
+          iconColor: 'red',
+          color: 'red',
+        },
+      },
+    }
+
+    const STRIPE_STYLE_LIGHT = {
+      style: {
+        base: {
+          backgroundColor: '#fff',
+          iconColor: '#000',
+          color: '#000',
+          fontWeight: 500,
+          fontSize: '16px',
+          fontSmoothing: 'antialiased',
+          ':-webkit-autofill': {
+            color: '#888',
+          },
+          '::placeholder': {
+            color: '#333',
+          },
+          padding: "1em 0",
+        },
+        invalid: {
+          iconColor: 'red',
+          color: 'red',
+        },
+      },
+    }
+
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays*24*60*60*1000));
+      var expires = "expires="+ d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    function switchToLightTheme() {
+        if (!document.getElementById(lightModeCssId))
+        {
+            var head  = document.getElementsByTagName('head')[0];
+            var link  = document.createElement('link');
+            link.id   = lightModeCssId;
+            link.rel  = 'stylesheet';
+            link.type = 'text/css';
+            link.href = '/2022/static/css/light-mode.b219da3f8a7d.css';
+            link.media = 'all';
+            head.appendChild(link);
+        }
+        setCookie("theme", "light", 365);
+        button = document.getElementById("theme-switch");
+        button.onclick = switchToDarkTheme;
+        button.innerHTML = "Night";
+        button.classList.toggle("day")
+        window.STRIPE_STYLE = STRIPE_STYLE_LIGHT;
+    }
+
+    function switchToDarkTheme() {
+        if (document.getElementById(lightModeCssId))
+        {
+            document.getElementById(lightModeCssId).outerHTML = "";
+        }
+        setCookie("theme", "dark", 365);
+        button = document.getElementById("theme-switch");
+        button.onclick = switchToLightTheme;
+        button.innerHTML = "Day";
+        button.classList.toggle("day")
+        window.STRIPE_STYLE = STRIPE_STYLE_DARK;
+    }
+
+    if (getCookie("theme") == "light"){
+        switchToLightTheme();
+    }
+    if (getCookie("theme") == "dark"){
+        switchToDarkTheme();
+    }
+    if (getCookie("theme") == "") {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+            switchToLightTheme();
+        }
+    }
+  </script>
+
+  
+  
+
+  
+</body>
+
+</html>
