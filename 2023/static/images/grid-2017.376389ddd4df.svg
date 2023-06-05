@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="271" height="271" viewBox="0 0 271 271">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_173" data-name="Rectangle 173" width="271" height="271" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Mosaic_2017" data-name="Mosaic 2017" transform="translate(135.5 135.5)">
+    <g id="Group_207" data-name="Group 207" transform="translate(-135.5 -135.5)">
+      <rect id="Rectangle_170" data-name="Rectangle 170" width="271" height="271" fill="#e8684e"/>
+      <rect id="Rectangle_171" data-name="Rectangle 171" width="36.133" height="225.833" transform="translate(189.7 45.167)" fill="#f2f2f2"/>
+      <rect id="Rectangle_172" data-name="Rectangle 172" width="36.133" height="195.619" transform="translate(99.367 75.381)" fill="#f2f2f2"/>
+      <g id="Group_206" data-name="Group 206">
+        <g id="Group_205" data-name="Group 205" clip-path="url(#clip-path)">
+          <path id="Path_224" data-name="Path 224" d="M429.5,271c0,149.669-121.331,271-271,271s-271-121.331-271-271S8.831,0,158.5,0s271,121.331,271,271m-45.167,0c0-124.725-101.108-225.833-225.833-225.833S-67.333,146.275-67.333,271,33.775,496.833,158.5,496.833,384.333,395.725,384.333,271" transform="translate(112.5)" fill="#186f8e"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

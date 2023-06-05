@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="271" height="271" viewBox="0 0 271 271">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4015" data-name="Rectangle 4015" width="271" height="271" transform="translate(189.662 564.187)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="mosaic_2013" data-name="mosaic 2013" transform="translate(-189.662 -564.187)">
+    <rect id="Rectangle_4013" data-name="Rectangle 4013" width="271" height="271" transform="translate(189.662 564.187)" fill="#f9cb29"/>
+    <rect id="Rectangle_4014" data-name="Rectangle 4014" width="109.61" height="271" transform="translate(351.052 564.187)" fill="#358698"/>
+    <g id="Group_2999" data-name="Group 2999">
+      <g id="Group_2998" data-name="Group 2998" clip-path="url(#clip-path)">
+        <path id="Path_4271" data-name="Path 4271" d="M111.377,725.836a80.3,80.3,0,1,1,0-113.557,80.3,80.3,0,0,1,0,113.557"/>
+        <path id="Path_4272" data-name="Path 4272" d="M381.94,756.465a80.3,80.3,0,1,1,0-113.556,80.3,80.3,0,0,1,0,113.556" fill="#fff"/>
+        <path id="Path_4273" data-name="Path 4273" d="M311.981,498.489a80.3,80.3,0,1,1,0-113.556,80.3,80.3,0,0,1,0,113.556"/>
+        <line id="Line_119" data-name="Line 119" x1="57.497" y1="213.468" transform="translate(266.941 486.219)" fill="none" stroke="#fff" stroke-width="13"/>
+        <line id="Line_120" data-name="Line 120" x2="222.371" y2="25.346" transform="translate(102.068 674.342)" fill="none" stroke="#fff" stroke-width="13"/>
+      </g>
+    </g>
+  </g>
+</svg>

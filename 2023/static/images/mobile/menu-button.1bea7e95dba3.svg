@@ -1,0 +1,13 @@
+<svg id="menu_button_-_mobile" data-name="menu button - mobile" xmlns="http://www.w3.org/2000/svg" width="108" height="29" viewBox="0 0 108 29">
+  <path id="Path_4135" data-name="Path 4135" d="M14.5,0h79a14.5,14.5,0,0,1,0,29h-79a14.5,14.5,0,0,1,0-29Z" fill="#14392a"/>
+  <g id="Group_2276" data-name="Group 2276" transform="translate(11.833 7.232)">
+    <g id="menu_font" data-name="menu font" transform="translate(46.457 2.232)">
+      <path id="Path_4134" data-name="Path 4134" d="M.45,0V-6.3H2.106L3.69-2.16,5.265-6.3H6.921V0H5.967V-5.148H5.859L4.158-.927H3.222L1.512-5.148H1.4V0ZM14.9,0H11.511V-6.3H14.9v.891H12.465v1.917h1.98v.81h-1.98V-.891H14.9Zm9.207,0h-1.26L20.358-5.094V-.009H19.4V-6.3h1.341l2.4,5v-5h.963Zm8.262,0V-.585a2.383,2.383,0,0,1-.635.454,1.714,1.714,0,0,1-.769.175,2.344,2.344,0,0,1-1.206-.311,2.344,2.344,0,0,1-.841-.828,2.2,2.2,0,0,1-.31-1.156V-6.3h.954l.009,4.05a1.236,1.236,0,0,0,.184.666,1.307,1.307,0,0,0,.5.468,1.473,1.473,0,0,0,.707.171,1.485,1.485,0,0,0,.72-.171,1.316,1.316,0,0,0,.5-.468,1.236,1.236,0,0,0,.185-.666V-6.3h.954V0Z" transform="translate(0 8)" fill="#fff"/>
+    </g>
+    <g id="Icons_Menu_Icon_white" data-name="Icons / Menu Icon white">
+      <path id="Path_121" data-name="Path 121" d="M255.242,215.848h-15.71a1.318,1.318,0,0,1,0-2.586h15.71a1.318,1.318,0,0,1,0,2.586Z" transform="translate(-232.134 -213.262)" fill="#fff"/>
+      <path id="Path_122" data-name="Path 122" d="M275.234,269.27h19.077a1.293,1.293,0,0,1,0,2.586H275.234a1.293,1.293,0,1,1,0-2.586Z" transform="translate(-273.941 -263.281)" fill="#fff"/>
+      <path id="Path_123" data-name="Path 123" d="M239.532,324.34h15.71a1.318,1.318,0,0,1,0,2.586h-15.71a1.318,1.318,0,0,1,0-2.586Z" transform="translate(-232.134 -312.463)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="26.45833mm"
+   height="13.229166mm"
+   viewBox="0 0 26.45833 13.229166"
+   version="1.1"
+   id="svg1402"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="search-button-dark-mode.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1404"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.29925298"
+     inkscape:cx="-339.17791"
+     inkscape:cy="-73.516394"
+     inkscape:window-width="1366"
+     inkscape:window-height="699"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1399" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="search_button_2"
+       data-name="search button 2"
+       transform="scale(0.16510454)">
+      <path
+         id="black_circle-2"
+         data-name="black circle"
+         d="M 40.063,0 A 40.063,40.063 0 1 1 0,40.063 40.063,40.063 0 0 1 40.063,0 Z"
+         fill="#b7a763" />
+      <g
+         id="magnifier-2"
+         data-name="magnifier"
+         transform="translate(29.098,27.99)">
+        <g
+           id="Ellipse_3-3"
+           data-name="Ellipse 3"
+           fill="none"
+           stroke="#ffffff"
+           stroke-width="2">
+          <circle
+             cx="9.0139999"
+             cy="9.0139999"
+             r="9.0139999"
+             stroke="none"
+             id="circle751" />
+          <circle
+             cx="9.0139999"
+             cy="9.0139999"
+             r="8.0139999"
+             fill="none"
+             id="circle753" />
+        </g>
+        <line
+           id="Line_1-3"
+           data-name="Line 1"
+           x2="8.0129995"
+           y2="9.0139999"
+           transform="translate(14.523,14.523)"
+           fill="none"
+           stroke="#ffffff"
+           stroke-width="2"
+           x1="0"
+           y1="0" />
+      </g>
+    </g>
+    <g
+       id="search_button_1"
+       data-name="search button 1"
+       transform="matrix(0.16510454,0,0,0.16510454,13.229164,0)">
+      <path
+         id="black_circle-3"
+         data-name="black circle"
+         d="M 40.063,0 A 40.063,40.063 0 1 1 0,40.063 40.063,40.063 0 0 1 40.063,0 Z"
+         fill="#ddd7a5" />
+      <g
+         id="magnifier-3"
+         data-name="magnifier"
+         transform="translate(29.098,27.99)">
+        <g
+           id="Ellipse_3-4"
+           data-name="Ellipse 3"
+           fill="none"
+           stroke="#070000"
+           stroke-width="2">
+          <circle
+             cx="9.0139999"
+             cy="9.0139999"
+             r="9.0139999"
+             stroke="none"
+             id="circle760" />
+          <circle
+             cx="9.0139999"
+             cy="9.0139999"
+             r="8.0139999"
+             fill="none"
+             id="circle762" />
+        </g>
+        <line
+           id="Line_1-4"
+           data-name="Line 1"
+           x2="8.0129995"
+           y2="9.0139999"
+           transform="translate(14.523,14.523)"
+           fill="none"
+           stroke="#070000"
+           stroke-width="2"
+           x1="0"
+           y1="0" />
+      </g>
+    </g>
+  </g>
+</svg>
