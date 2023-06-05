@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="15"
+   height="15"
+   viewBox="0 0 15 15"
+   version="1.1"
+   id="svg12"
+   sodipodi:docname="separator-btn.svg"
+   inkscape:version="0.92.4 (unknown)">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     id="namedview14"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="7.9646315"
+     inkscape:cx="15.06661"
+     inkscape:cy="14.814499"
+     inkscape:window-x="0"
+     inkscape:window-y="34"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg12" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.a{fill:#24788b;}.b{fill:#dca538;}.c{fill:#cf423f;}</style>
+  </defs>
+  <g
+     id="g826"
+     transform="scale(0.50624369)">
+    <circle
+       id="circle6"
+       r="14.815"
+       cy="14.815"
+       cx="14.815"
+       class="a"
+       style="fill:#24788b" />
+    <circle
+       id="circle8"
+       transform="translate(3.875,3.875)"
+       r="10.941"
+       cy="10.941"
+       cx="10.941"
+       class="b"
+       style="fill:#dca538" />
+    <circle
+       id="circle10"
+       transform="translate(6.627,6.627)"
+       r="8.1890001"
+       cy="8.1890001"
+       cx="8.1890001"
+       class="c"
+       style="fill:#cf423f" />
+  </g>
+</svg>

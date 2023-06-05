@@ -1,0 +1,766 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>PyCon 2022
+    - Development Sprints
+</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="../../static/site.47af69f09674.webmanifest">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" href="../../static/images/favicon/favicon.7898ab386ef8.ico"/>
+  <link rel="apple-touch-icon" sizes="76x76" href="../../static/images/favicon/apple-touch-icon.30703cfa4f78.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../static/images/favicon/favicon-32x32.22ad05e448e1.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../static/images/favicon/favicon-16x16.326f630435f6.png">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="../../static/css/normalize.112272e51c80.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Nunito+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../static/css/main.9199a00e7546.css">
+  <link rel="stylesheet" href="../../static/css/pycon.6f8c0de5a1fe.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  
+  
+
+  
+  
+</head>
+
+<body lang="en" class="template-cmspage">
+  <header class="header">
+    <div class="logo-container">
+      <button id="theme-switch" class="theme-switch" onclick="switchToLightTheme()">Day</button>
+      <div class="logo-bg"></div>
+      <a href="http://us.pycon.org/" class="logo">
+        <h1 class="sr-only">PyCon US 2022</h1>
+      </a>
+    </div>
+    <div class="line"></div>
+    <div class="light-mode-switch">
+    </div>
+    <div class="pure-menu pure-menu-horizontal" role="navigation">
+      <button id="toggle-nav" class="trigger-button">Menu</button>
+      <ul id="main-nav" class="pure-menu-list">
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../index.html">
+            Home
+          </a>
+        </li>
+        
+  
+  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="index.html#"  class="pure-menu-link">About</a>
+      
+          
+<ul class="pure-menu-children">
+    
+    <li class="pure-menu-item">
+        <a href="../../about/what-is-pycon/index.html"  class="pure-menu-link">What Is PyCon?</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../about/diversity/index.html"  class="pure-menu-link">Diversity</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../about/code-of-conduct/index.html"  class="pure-menu-link">Code of Conduct</a>
+        
+    </li>
+    
+</ul>
+
+      
+  </li>
+  
+  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="index.html#"  class="pure-menu-link">PSF</a>
+      
+          
+<ul class="pure-menu-children">
+    
+    <li class="pure-menu-item">
+        <a href="../../psf/about/index.html"  class="pure-menu-link">About</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../psf/donate/index.html"  class="pure-menu-link">Donate</a>
+        
+    </li>
+    
+</ul>
+
+      
+  </li>
+  
+  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="index.html#"  class="pure-menu-link">Sponsors</a>
+      
+          
+<ul class="pure-menu-children">
+    
+    <li class="pure-menu-item">
+        <a href="../../sponsorship/sponsors/index.html"  class="pure-menu-link">Our Sponsors</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../sponsorship/why-sponsor/index.html"  class="pure-menu-link">Why Sponsor?</a>
+        
+    </li>
+    
+</ul>
+
+      
+  </li>
+  
+  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="../index.html"  class="pure-menu-link">Events and Summits</a>
+      
+          
+<ul class="pure-menu-children">
+    
+    <li class="pure-menu-item">
+        <a href="../language-summit/index.html"  class="pure-menu-link">Language Summit</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../education-summit/index.html"  class="pure-menu-link">Education Summit</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../newcomer-orientation/index.html"  class="pure-menu-link">Newcomer Orientation</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../typing-summit/index.html"  class="pure-menu-link">Typing Summit</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../maintainers-summit/index.html"  class="pure-menu-link">Maintainers Summit</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../packaging-summit/index.html"  class="pure-menu-link">Packaging Summit</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../mentored-sprints/index.html"  class="pure-menu-link">Mentored Sprints for Diverse Beginners</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../lightning-talks/index.html"  class="pure-menu-link">Lightning Talks</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../pyladies-auction/index.html"  class="pure-menu-link">PyLadies Auction</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="index.html"  class="pure-menu-link">Development Sprints</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../pyladies-luncheon/index.html"  class="pure-menu-link">PyLadies Luncheon</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="http://us.pycon.org/2022/events/charlas/"  class="pure-menu-link">Las PyCon Charlas</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../open-spaces/index.html"  class="pure-menu-link">Open Spaces</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../active/index.html"  class="pure-menu-link">PyCon US Active</a>
+        
+    </li>
+    
+</ul>
+
+      
+  </li>
+  
+  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover pure-menu-selected">
+      <a href="../../schedule/index.html"  class="pure-menu-link current_branch">Schedule</a>
+      
+          
+<ul class="pure-menu-children">
+    
+    <li class="pure-menu-item">
+        <a href="../../schedule/tutorials/index.html"  class="pure-menu-link">Tutorials (Wed. and Thurs.)</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../schedule/sponsor-workshops/index.html"  class="pure-menu-link">Sponsor Workshops (Thursday)</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../schedule/talks/index.html"  class="pure-menu-link">Talks (Friday - Sunday)</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../schedule/posters/list/index.html"  class="pure-menu-link">Posters (Sunday)</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../about/keynote-speakers/index.html"  class="pure-menu-link">Keynote Speakers</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../about/captioning/index.html"  class="pure-menu-link">Captioning</a>
+        
+    </li>
+    
+    <li class="pure-menu-item pure-menu-selected">
+        <a href="index.html"  class="pure-menu-link current_item current_branch">Sprints</a>
+        
+    </li>
+    
+</ul>
+
+      
+  </li>
+  
+  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="../../online/pycon-online/index.html"  class="pure-menu-link">PyCon US Online and Recordings</a>
+      
+          
+<ul class="pure-menu-children">
+    
+    <li class="pure-menu-item">
+        <a href="../../online/recordings/index.html"  class="pure-menu-link">Recordings</a>
+        
+    </li>
+    
+    <li class="pure-menu-item">
+        <a href="../../online/pycon-online/index.html"  class="pure-menu-link">PyCon US Online</a>
+        
+    </li>
+    
+</ul>
+
+      
+  </li>
+  
+
+        
+        
+      </ul>
+    </div>
+  </header>
+
+  <div class="banner-background">
+    <div class="banner-container">
+      <div class="banner-left"></div>
+      <div class="banner-right"></div>
+      <div class="banner">
+        <div class="pycon-header"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="homepage-bars">
+      <div class="bar bar-1"></div>
+      <div class="bar bar-2"></div>
+      <div class="bar bar-3"></div>
+      <div class="bar bar-4"></div>
+      <div class="bar bar-5"></div>
+  </div>
+
+  
+
+  <div class="homepage-content-container">
+  
+  </div>
+
+  
+    <div class="content-wrapper">
+      
+    <div class="cms-title">
+      <h1>Development Sprints</h1>
+      
+    </div>
+    <div class="cms-body">
+      <div class="content-container">
+        <div class="block-paragraph"><div class="left"><h2><a id="when-will-sprints-take-place""></a>When will sprints take place?</h2><p data-block-key="dvntj"><b>Monday, May 2, 2022 – Tuesday, May 3, 2022 at 8:00am - Sprint will be held in the 250 and 251 rooms </b>and are free to attend with a PyCon US registration. <b>NOTE:</b> Please be familiar with the <a href="https://us.pycon.org/2022/attend/health-safety-guidelines/">PyCon US Health &amp; Safety Guidelines</a>. Sprint days are part of the conference and only registered attendees of PyCon US can participate due to the guidelines put in place for the 2022 conference.</p><p data-block-key="1mm9i">Development sprints are a key part of PyCon US, and a chance for the contributors to open-source projects to get together face-to-face for two days of intensive learning, development and camaraderie. Newbies sit with gurus, go out for lunch and dinner together, and have a great time while advancing their project.</p><ul><li data-block-key="1ut1v"><a href="http://pycon.blogspot.com/2016/03/why-not-join-sprints-this-year-at-pycon.html">Why not join the sprints this year at PyCon US?</a> by <a href="https://twitter.com/NaomiCeder"><b>Naomi Ceder</b></a></li></ul><h2 data-block-key="6d13g"><b>What&#x27;s a sprint?</b></h2><p data-block-key="7vcv9">PyCon Development Sprints are two days of intensive learning and development on an open source project of your choice, in a team environment. It&#x27;s a time to come together with colleagues, old and new, to share what you&#x27;ve learned and apply it to an open source project.</p><p data-block-key="ahso2">In the crucible of a sprint room, teaming with both focus and humor, it&#x27;s a time to test, fix bugs, add new features, and improve documentation. And it&#x27;s a time to network, make friends, and build relationships that go beyond the conference.</p><p data-block-key="76isr">PyCon provides the space and infrastructure (network, power, tables &amp; chairs); you bring your skills, humanity, and brainpower (oh! and don&#x27;t forget your computer).</p><h2 data-block-key="7r3dv"><b>Who can participate?</b></h2><p data-block-key="16njb"><b>You!</b> All experience levels are welcome; sprints are a great opportunity to get connected with, and start contributing to your favorite Python project. Participation in the sprints is free and included in your conference registration. Please go to your attendee profile on your <a href="../../users/dashboard/index.html">dashboard</a> and indicated the number of sprint days you will be attending.</p><p data-block-key="d2rho"></p><p data-block-key="2c7dp">If you would like to mentor a newcomer to sprints, <a href="https://forms.gle/hdUuTrB55X3mopLeA">fill out this form</a>.</p><h2 data-block-key="7s18a"><b>Who can run a sprint?</b></h2><p data-block-key="cdbij"><b>You!</b> If you&#x27;ve never run a sprint before, the <a href="https://opensourceevents.github.io/"><b>In-Person Event Handbook</b></a> is an excellent guide.</p><p data-block-key="93nb6">Please edit this page and add your project according to the instructions below.</p><h2 data-block-key="fuvjj"><b>What&#x27;s the schedule?</b></h2><p data-block-key="btmpp">Sprints run all day from Monday, May 2nd and Tuesday, May 3rd. That&#x27;s 8:00am to 11:00pm. Lunch will be provided</p><h2 data-block-key="64b1o"><b>Where will the sprints be?</b></h2><p data-block-key="c4uo0">The Sprints will take place at the Salt Palace Convention Center. Each Sprinting project will claim its own room or if the room is large enough, it will share the space with other Sprinting Projects.</p><h2 data-block-key="e0o10"><b>Which projects are sprinting?</b></h2><p data-block-key="d8t4c">If you are interested in leading a sprint, <b>please add your project using the link below:</b></p><p data-block-key="3op80">Please <a href="../../sprints/project/submit/index.html">submit a sprint here</a> and add a brief description of your project that will be listed below. Include links to what you&#x27;ll be sprinting on. Indicate if the sprint will be newcomer friendly!</p><h2><a id="have-questions-not-covered-here""></a>Have questions not covered here?</h2><p data-block-key="2gdjp">Reach out to <a href="mailto:pycon-sprints@python.org">pycon-sprints@python.org</a></p></div>
+</div>
+<div class="block-sprintlisting">
+
+
+<div class="sprints">
+  
+  <div class="sprint-card" id="sprint-34">
+    
+    <div class="logo">
+      <a href="https://cloudcustodian.io">
+        <img src="https://pycon-assets.s3.amazonaws.com/2022/media/sprint_project_logos/icon-color.png">
+      </a>
+    </div>
+    
+    <div class="description">
+      <h3><a href="https://cloudcustodian.io">Cloud Custodian</a></h3>
+      <br>
+      <p>Cloud Custodian is a CNCF project that provides an open source rules engine that helps organizations define policies in yaml to better manage their cloud environments with automated governance, security, compliance and efficiency.</p>
+      <span style="font-size: x-small; float: right; padding-bottom: 1px; margin-bottom: 1px;" >
+      
+      <span>Submitted by Kapil</span>
+      
+      | <a href="index.html#sprint-34">Anchor link</a>
+      </span>
+    </div>
+  </div>
+  
+  <div class="sprint-card" id="sprint-35">
+    
+    <div class="description">
+      <h3><a href="https://hypothesis.readthedocs.io/en/latest/">Hypothesis</a></h3>
+      <br>
+      <p>Hypothesis helps you write better tests!  With property-based testing, you no longer have to think of inputs and outputs - and with the Ghostwriter, you'll never stare at an empty file again.  At PyCon, we'll be sprinting on a variety of goals suitable for intermediate to expert Pythonistas:</p>
+<ul>
+<li><strong>Improve the Docs</strong>: we'd like to overhaul our API reference, and make sure everything is clearly explained right where you'd expect.  Great for fresh users, designers, and technical writers.</li>
+<li><strong>Support for new Typing features</strong>: the ecosystem is evolving fast, and we're keen to keep up with new additions in 3.10, 3.11, and Numpy.</li>
+<li><strong>Django</strong>: we're seeking a Django user who can help us add support for <code>pytest-django</code> without making silly mistakes.</li>
+<li><strong>Deep Magic</strong>: compiling our backend for speed?  Supporting symbolic execution, grammar-based, and coverage-guided fuzzing?  Evil tricks with Unicode and timezones?  Reporting the <em>reason</em> that a test failed?  We have plenty of expert-level challenges to sink your teeth into.</li>
+<li><strong>Something else?</strong>  Bugs don't stay open for long, but we have dozens more small features and refactorings on the backlog - or bring your own idea!</li>
+</ul>
+      <span style="font-size: x-small; float: right; padding-bottom: 1px; margin-bottom: 1px;" >
+      
+      <span>Submitted by Zac</span>
+      
+      | <a href="index.html#sprint-35">Anchor link</a>
+      </span>
+    </div>
+  </div>
+  
+  <div class="sprint-card" id="sprint-37">
+    
+    <div class="logo">
+      <a href="http://us.pycon.org/2022/events/development-sprints/docs.pyvista.org">
+        <img src="https://pycon-assets.s3.amazonaws.com/2022/media/sprint_project_logos/50384771.png">
+      </a>
+    </div>
+    
+    <div class="description">
+      <h3><a href="http://us.pycon.org/2022/events/development-sprints/docs.pyvista.org">PyVista</a></h3>
+      <br>
+      <p>PyVista: a community effort to make 3D visualization and analysis more approachable</p>
+<p>PyVista is used across science and engineering disciplines. A diverse community use PyVista to visualize data/models in 3D, generate publication-quality illustrations, automate analysis workflows, and build custom applications leveraging PyVista's 3D capabilities.</p>
+      <span style="font-size: x-small; float: right; padding-bottom: 1px; margin-bottom: 1px;" >
+      
+      <span>Submitted by Alexander</span>
+      
+      | <a href="index.html#sprint-37">Anchor link</a>
+      </span>
+    </div>
+  </div>
+  
+  <div class="sprint-card" id="sprint-38">
+    
+    <div class="description">
+      <h3><a href="https://github.com/NREL/yamm">yamm</a></h3>
+      <br>
+      <p>The yamm project is a freshly open sourced python package developed by the National Renewable Energy Laboratory. The package maintains a collection of algorithms and wrappers for mapping GPS data to road networks (commonly know as "map-matching"). Currently, the package is used to support various NREL efforts to de-carbonize transportation including recent development and refinement of vehicle energy prediction tools to enable eco-routing in Google Maps and other applications.  </p>
+<p>We'll be sprinting on a variety of topics listed out in this discussion: <a href="https://github.com/NREL/yamm/discussions/2">https://github.com/NREL/yamm/discussions/2</a>. No previous experience with map-matching or GIS is required although it would be helpful for getting up to speed quickly.</p>
+      <span style="font-size: x-small; float: right; padding-bottom: 1px; margin-bottom: 1px;" >
+      
+      <span>Submitted by Nick Reinicke</span>
+      
+      | <a href="index.html#sprint-38">Anchor link</a>
+      </span>
+    </div>
+  </div>
+  
+  <div class="sprint-card" id="sprint-39">
+    
+    <div class="logo">
+      <a href="https://pantsbuild.org">
+        <img src="https://pycon-assets.s3.amazonaws.com/2022/media/sprint_project_logos/PANTS_LOGO.png">
+      </a>
+    </div>
+    
+    <div class="description">
+      <h3><a href="https://pantsbuild.org">Pantsbuild &amp; PEX</a></h3>
+      <br>
+      <p>Pants 2 is a fast, scalable, user-friendly build system for codebases of all sizes. It's currently focused on Python, Go, Java, Scala, Shell, and Docker, with support for other languages and frameworks coming soon.</p>
+<p>PEX is a tool to create self-contained executable Python virtual environments (<code>.pex</code> files).</p>
+<p>At our sprint (Monday Only):</p>
+<p>* Pantsbuild contributors can help you get Pants set up in your repo<br>
+  * Pantsbuild contributors will talk to you about whether you can benefit <br>
+from monorepos<br>
+  * First-time contributor tickets for both Pantsbuild and PEX</p>
+      <span style="font-size: x-small; float: right; padding-bottom: 1px; margin-bottom: 1px;" >
+      
+      <span>Submitted by Chris</span>
+      
+      | <a href="index.html#sprint-39">Anchor link</a>
+      </span>
+    </div>
+  </div>
+  
+  <div class="sprint-card" id="sprint-40">
+    
+    <div class="logo">
+      <a href="https://strawberry.rocks">
+        <img src="https://pycon-assets.s3.amazonaws.com/2022/media/sprint_project_logos/Logo.png">
+      </a>
+    </div>
+    
+    <div class="description">
+      <h3><a href="https://strawberry.rocks">Strawberry GraphQL</a></h3>
+      <br>
+      <p>Strawberry is a GraphQL library for Python 3, inspired by dataclasses.</p>
+<p>Strawberry makes use of type hints to allow you to easily create GraphQL APIs. At the sprints we'll be looking at fixing some long standing issues, improving docs and maybe prototyping new cool feature (rust rewrite of the core or a JIT compiler for the queries).</p>
+      <span style="font-size: x-small; float: right; padding-bottom: 1px; margin-bottom: 1px;" >
+      
+      <span>Submitted by Patrick</span>
+      
+      | <a href="index.html#sprint-40">Anchor link</a>
+      </span>
+    </div>
+  </div>
+  
+  <div class="sprint-card" id="sprint-41">
+    
+    <div class="logo">
+      <a href="https://github.com/facebookincubator/cinder#readme">
+        <img src="https://pycon-assets.s3.amazonaws.com/2022/media/sprint_project_logos/Cinder-Logo-White.png">
+      </a>
+    </div>
+    
+    <div class="description">
+      <h3><a href="https://github.com/facebookincubator/cinder#readme">Cinder</a></h3>
+      <br>
+      <p>Cinder is Meta’s internal performance-oriented Python runtime, powering Instagram Server in production, as well as various other internal Python applications across Meta.</p>
+<p>It contains a number of performance optimizations, including bytecode inline caching, eager evaluation of coroutines, a method-at-a-time JIT, and an experimental bytecode compiler that uses type annotations to emit type-specialized bytecode that performs better in the JIT.</p>
+<p>We have embarked on a journey to <a href="https://discuss.python.org/t/making-cinder-more-broadly-available/14062">make Cinder more broadly available</a>, by upstreaming some parts, and extracting other parts into a pip-installable extension.</p>
+<p>We are excited to participate in the PyCon US 2022 dev sprints, where a bunch of us will be hacking on <a href="https://docs.google.com/document/d/1F_ILuvSPsRES2nRwQ9U_465pCHgXg2R9Hh-in0GTvdY/edit?usp=sharing">several upstreaming projects</a>. If you are interested in this work, come chat with us at the dev sprints!</p>
+      <span style="font-size: x-small; float: right; padding-bottom: 1px; margin-bottom: 1px;" >
+      
+      <span>Submitted by Itamar</span>
+      
+      | <a href="index.html#sprint-41">Anchor link</a>
+      </span>
+    </div>
+  </div>
+  
+  <div class="sprint-card" id="sprint-42">
+    
+    <div class="logo">
+      <a href="https://github.com/returntocorp/semgrep">
+        <img src="https://pycon-assets.s3.amazonaws.com/2022/media/sprint_project_logos/semgrep-logo.png">
+      </a>
+    </div>
+    
+    <div class="description">
+      <h3><a href="https://github.com/returntocorp/semgrep">Semgrep</a></h3>
+      <br>
+      <p>Semgrep is a customizable linter for finding bugs and enforcing standards in your code.</p>
+<p>Its rules look like the code you already write; no abstract syntax trees or regex wrestling. In fact, to find all print calls, you can just search <code>print(...)</code>. But Semgrep is also smart enough to parse 24 different languages, understand control flow, and variable propagation. In fact, it's possible to mirror the entirety of Bandit by just writing Semgrep patterns.</p>
+      <span style="font-size: x-small; float: right; padding-bottom: 1px; margin-bottom: 1px;" >
+      
+      <span>Submitted by Bence</span>
+      
+      | <a href="index.html#sprint-42">Anchor link</a>
+      </span>
+    </div>
+  </div>
+  
+  <div class="sprint-card" id="sprint-43">
+    
+    <div class="description">
+      <h3><a href="https://github.com/ehmatthes/django-simple-deploy">django-simple-deploy</a></h3>
+      <br>
+      <p>Helping new Django developers through their first deployment is often a difficult process. People go from a friendly resource like the Polls tutorial, to being thrown into a platform provider's documentation.</p>
+<p>django-simple-deploy is a standalone management command that automates the initial deployment process. If people have an account on a provider's platform, they can deploy their project in three steps, before they even visit the provider's documentation. A typical deploy command looks like this:</p>
+<p><code>python <a href="http://manage.py">manage.py</a> simple_deploy --automate-all --platform azure</code></p>
+<p>After running this command, a live version of the project pops up in the user's browser.</p>
+<p>The project works and has a baseline set of tests. Sprint goals:</p>
+<ul>
+<li>Fix a bug with Azure deployment.</li>
+<li>The project currently dumps a log of the entire deployment process. Expand on this to generate a friendly .html file that leads the user into the most relevant sections of the platform's documentation.</li>
+<li>Identify one additional platform to support. The project is structured so you can write a new "recipe" for deployment to a specific platform.</li>
+<li>Any new or existing <a href="https://github.com/ehmatthes/django-simple-deploy/issues">issues</a>.</li>
+</ul>
+<p>This project does not aim to take the place of a platform's documentation. It aims to get new developers a working version of their project; then they can start to understand how the project was deployed, and how to maintain the deployment.</p>
+<p>Any help, feedback, or discussion is welcome. :)</p>
+      <span style="font-size: x-small; float: right; padding-bottom: 1px; margin-bottom: 1px;" >
+      
+      <span>Submitted by Eric</span>
+      
+      | <a href="index.html#sprint-43">Anchor link</a>
+      </span>
+    </div>
+  </div>
+  
+  <div class="sprint-card" id="sprint-44">
+    
+    <div class="logo">
+      <a href="https://github.com/pyodide/pyodide">
+        <img src="https://pycon-assets.s3.amazonaws.com/2022/media/sprint_project_logos/77002075.png">
+      </a>
+    </div>
+    
+    <div class="description">
+      <h3><a href="https://github.com/pyodide/pyodide">Pyodide</a></h3>
+      <br>
+      <p>Pyodide is a Python distribution for the browser and Node.js based on WebAssembly.</p>
+<p>This sprint is focused on improving different components of Pyodide, to make the experience of Python in the browser better.</p>
+<p>We also welcome participants interested in,<br>
+ - adapting your Python applications to run in the browser<br>
+ - working on better WASM support in CPython<br>
+ - exploring  other frameworks and projects in the ecosystem, such as PyScript, JupyterLite, Irydium, etc</p>
+      <span style="font-size: x-small; float: right; padding-bottom: 1px; margin-bottom: 1px;" >
+      
+      <span>Submitted by Roman Yurchak</span>
+      
+      | <a href="index.html#sprint-44">Anchor link</a>
+      </span>
+    </div>
+  </div>
+  
+  <div class="sprint-card" id="sprint-45">
+    
+    <div class="logo">
+      <a href="https://github.com/pyjanitor-devs/pyjanitor">
+        <img src="https://pycon-assets.s3.amazonaws.com/2022/media/sprint_project_logos/Screen_Shot_2022-05-01_at_3.08.53_PM.png">
+      </a>
+    </div>
+    
+    <div class="description">
+      <h3><a href="https://github.com/pyjanitor-devs/pyjanitor">pyjanitor</a></h3>
+      <br>
+      <p>pyjanitor is a library of commonly-used data cleaning functions that operate on pandas DataFrames. We are beginner-friendly and are looking for newcomer contributors who would like to help improve the project's documentation while also getting experience contributing to an open-source project. We are also open to new functionality being contributed!</p>
+      <span style="font-size: x-small; float: right; padding-bottom: 1px; margin-bottom: 1px;" >
+      
+      <span>Submitted by Eric</span>
+      
+      | <a href="index.html#sprint-45">Anchor link</a>
+      </span>
+    </div>
+  </div>
+  
+</div>
+</div>
+      </div>
+    </div>
+
+    </div>
+  
+
+  <div class="footer-outer-container">
+    <div class="footer-inner-container">
+      <footer class="footer">
+
+        <div class="bar bar-1"></div>
+        <div class="bar bar-2"></div>
+        <div class="bar bar-3"></div>
+        <div class="bar bar-4"></div>
+
+        <div class="footer-content">
+          <p class="footer-credits footer-help">
+              Need Help? <a href="../../about/faq/index.html">Click here</a> to find the right person to contact.
+          </p>
+          <p class="footer-credits">
+            The PyCon 2022 conference in Salt Lake, UT, USA is a production of the
+            <a href="http://python.org/psf-landing/">Python Software Foundation</a>.
+          </p>
+          <p class="footer-credits">
+            This site is built using
+            <a href="https://www.djangoproject.com/">Django</a>
+            and
+            <a href="https://wagtail.io/">Wagtail</a>.
+            Hosting is provided by
+            <a href="http://heroku.com/">Heroku</a>.
+          </p>
+          <p class="footer-credits">
+            PyCon 2022 logo and design by <a href="https://www.marketingcan.com/">Marketing Can</a>. Site design implemented by <a href="https://kabucreative.com">Kabu Creative</a>.
+          </p>
+          <p class="footer-credits">
+            <a href="../../about/privacy-and-data-policy/index.html">Privacy and Data Policy</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  
+  <script src="https://use.fontawesome.com/5cfde8bb33.js"></script>
+
+  <script src="../../static/js/vendor/modernizr-3.11.2.min.57b15b0dca5e.js"></script>
+  <script src="../../static/js/plugins.f9d1ee144514.js"></script>
+  <script src="../../static/js/main.5aa59a6e8632.js"></script>
+  <script src="../../static/js/menu.c1be78c8bee1.js"></script>
+  <script src="../../static/js/pycon.68b329da9893.js"></script>
+  
+  
+
+  <script>
+    var lightModeCssId = 'pyConLightModeCss';  // you could encode the css path itself to generate id..
+    var welcomeLogoId = 'welcome-logo';
+    var psfLogoId = 'psf-logo';
+
+    // As documented in https://stripe.com/docs/js/appendix/style
+    const STRIPE_STYLE_DARK = {
+      style: {
+        base: {
+          backgroundColor: '#000',
+          iconColor: '#fff',
+          color: '#fff',
+          fontWeight: 500,
+          fontSize: '16px',
+          fontSmoothing: 'antialiased',
+          ':-webkit-autofill': {
+            color: '#999',
+          },
+          '::placeholder': {
+            color: '#ccc',
+          },
+          padding: "1em 0",
+        },
+        invalid: {
+          iconColor: 'red',
+          color: 'red',
+        },
+      },
+    }
+
+    const STRIPE_STYLE_LIGHT = {
+      style: {
+        base: {
+          backgroundColor: '#fff',
+          iconColor: '#000',
+          color: '#000',
+          fontWeight: 500,
+          fontSize: '16px',
+          fontSmoothing: 'antialiased',
+          ':-webkit-autofill': {
+            color: '#888',
+          },
+          '::placeholder': {
+            color: '#333',
+          },
+          padding: "1em 0",
+        },
+        invalid: {
+          iconColor: 'red',
+          color: 'red',
+        },
+      },
+    }
+
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays*24*60*60*1000));
+      var expires = "expires="+ d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    function switchToLightTheme() {
+        if (!document.getElementById(lightModeCssId))
+        {
+            var head  = document.getElementsByTagName('head')[0];
+            var link  = document.createElement('link');
+            link.id   = lightModeCssId;
+            link.rel  = 'stylesheet';
+            link.type = 'text/css';
+            link.href = '/2022/static/css/light-mode.b219da3f8a7d.css';
+            link.media = 'all';
+            head.appendChild(link);
+        }
+        setCookie("theme", "light", 365);
+        button = document.getElementById("theme-switch");
+        button.onclick = switchToDarkTheme;
+        button.innerHTML = "Night";
+        button.classList.toggle("day")
+        window.STRIPE_STYLE = STRIPE_STYLE_LIGHT;
+    }
+
+    function switchToDarkTheme() {
+        if (document.getElementById(lightModeCssId))
+        {
+            document.getElementById(lightModeCssId).outerHTML = "";
+        }
+        setCookie("theme", "dark", 365);
+        button = document.getElementById("theme-switch");
+        button.onclick = switchToLightTheme;
+        button.innerHTML = "Day";
+        button.classList.toggle("day")
+        window.STRIPE_STYLE = STRIPE_STYLE_DARK;
+    }
+
+    if (getCookie("theme") == "light"){
+        switchToLightTheme();
+    }
+    if (getCookie("theme") == "dark"){
+        switchToDarkTheme();
+    }
+    if (getCookie("theme") == "") {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+            switchToLightTheme();
+        }
+    }
+  </script>
+
+  
+  
+
+  
+</body>
+
+</html>
