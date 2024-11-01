@@ -1,0 +1,38 @@
+/*------------------------------------*\
+    Stripe payment
+\*------------------------------------*/
+
+#credit-card-payment-container .panel-heading:first-child {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  #div_id_card .controls {
+    text-align: center;
+    padding: 1em 1em;
+    border: 1px solid #dddada;
+    background-color: white;
+  }
+  
+  #div_id_card {
+    width: 30em;
+    text-align: left;
+  }
+  
+  #div_id_card label {
+    line-height: 1;
+    letter-spacing: 2px;
+    font-weight: normal;
+    color: #2B292F;
+    border-bottom: 1px solid #636363;
+    padding-bottom: 5px;
+    display: inline-block;
+    margin: 0.75rem 0 1.05rem;
+    font-size: 1.424em;
+  }
+  
+  #card-errors, .text-error, .red {
+    color: #CD4544;
+  }

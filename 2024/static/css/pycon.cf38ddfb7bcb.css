@@ -1,0 +1,453 @@
+@import url("./fonts.833af735584c.css");
+@import url("./typography.7040b2b92d55.css");
+@import url("./stripe_payment.0a1527db9f42.css");
+@import url("./notification_banner.d1c59cd94628.css");
+@import url("./page_structure.24f8d1c5d512.css");
+@import url("./homepage.cfc179245b50.css");
+@import url("./buttons.6f1029fe4b02.css");
+@import url("./forms.0676eaec9c6e.css");
+@import url("./navigation.ece55ef4303c.css");
+@import url("./footer.020ec3abf319.css");
+@import url("./dashboard.792506a192ab.css");
+
+:root {
+    --black-and-white-grey-200: #6A6A6A;
+    --black-and-white-black-brown: #432C16;
+    --purple-dark-purple-2: #581763;
+}
+
+body {
+    position: relative;
+    font-family: e-Ukraine;
+    color: var(--black-and-white-grey-200);
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+    width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        max-width: 100%;
+    }
+    
+}
+
+/* preload images to avoid flashing on load*/
+body::after {
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:url("../images/menu-plus-icon.8198488e0012.svg") url("../images/menu-minus-icon.265f1b79b9d4.svg") url("../images/chevron-down.04c07d9a9e7e.svg") url("../images/chevron-up.5dc5abf2ce61.svg");
+ }
+
+/* sponsors */
+.sponsor-title {
+    max-width: 244px;
+    height: 180px;
+    font-size: 22px;
+    text-align: center;
+    margin: 140px auto 60px;
+    color: #fff;
+    background: url("../images/sponsor-galette.7e1a04d7d7d7.png") no-repeat top left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor-title span {
+    padding: 40px;
+}
+
+.sponsor-title:first-of-type {
+    margin-top: 0;
+}
+
+.sp-level {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+    .sp-level {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .sp-level {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.sp-square {
+    min-height: 175px;
+    border-radius: 16px;
+    border: 0.806px solid #DADADA;
+    background: #fff;
+    box-shadow: 0px 3px 16px 0px rgba(136, 136, 136, 0.35) inset;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sp-description {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25px;
+    height: calc(100% - 50px);
+    width: calc(100% - 50px);
+    overflow: auto;
+}
+
+.sp-square.with-description:hover .sp-logo {
+    opacity: 0;
+}
+
+.sp-square.with-description:hover .sp-description {
+    opacity: 1;
+}
+
+/* dashboard */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    margin: 60px 0;
+    padding: 0;
+}
+
+hr + hr {
+    display: none;
+}
+
+br {
+    margin-top: 40px;
+}
+
+.row .btn {
+    margin-top: 5px;
+}
+
+/* registration flow */
+
+.panel h2, .dashboard-card h2 {
+    font-size: 30px;
+}
+
+.panel-footer {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.panel h3 {
+    margin-top: 40px;
+}
+
+/* reg flow */
+
+.registration-discounts {
+    margin: auto;
+    width: 75%;
+    padding: .5em;
+    border: 1px solid var(--purple-dark-purple-2);
+    border-radius: 5px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: smaller;
+}
+
+.registration-discounts table {
+    margin-bottom: 0em;
+}
+
+/* tees */
+
+.registration-form .conference-tees {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.registration-form .conference-tees-product {
+    flex: 1 0 29%;
+    border: 1px dashed;
+    border-radius: 5px;
+    margin: .5em;
+    padding: .5em;
+}
+
+.registration-form {
+    display: flex;
+    justify-content: center;
+}
+
+.control-label {
+    text-wrap: balance;
+}
+
+/* presentations */
+.registration-form .presentations .session {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.registration-form .presentations .session .presentation {
+    flex: 1 0 25%;
+    border: 1px dashed;
+    border-radius: 5px;
+    margin: .5em;
+    padding: .5em;
+    max-width: 50%;
+    overflow-wrap: anywhere;
+    font-size: .9em;
+}
+
+.registration-form .presentations .sold-out {
+    color: #212529;
+    background-color: lightgrey;
+}
+
+.registration-form .presentations .disabled {
+    color: #212529;
+    background-color: lightgrey;
+}
+
+/* travelgrants */
+#travelgrants-container {
+    width: 100%;
+}
+.table-travelgrants .selected {
+    background-color: #eeeeee;
+}
+.travelgrants-list-form {
+    width: 100%;
+    font-size: .9em;
+}
+
+/* schedule */
+.calendar {
+  width: 80vw;
+  min-width: 60em;
+  position: relative;
+  left: calc(50% - 40vw);
+  border: 1px solid #1A4130;
+  margin-bottom: 2em;
+  padding: .25em .25em;
+  border-radius: .5em;
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  table-layout: fixed;
+  line-height: initial;
+  overflow-wrap: anywhere;
+}
+
+.calendar td,
+.calendar div {
+  boder-radius: .5em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.calendar th {
+  font-weight: 400;
+  font-size: .8em;
+  color: black;
+  text-align: center;
+}
+.calendar .header {
+  display: grid;
+  font-weight: 400;
+  font-size: .8em;
+  color: black;
+  text-align: center;
+  padding: .5em;
+}
+
+.calendar .time  {
+  display: grid;
+  padding-top: .25em;
+  padding-bottom: .25em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border: none;
+  max-width: 8em;
+}
+
+.calendar td:first-child {
+  border: none;
+}
+.calendar th:first-child {
+  width: 10%;
+}
+.calendar th:not(first-child){
+  width: auto;
+}
+
+.calendar .highlight {
+  background-color: #dddddd;
+}
+
+.calendar .time {
+  font-size: .8em;
+}
+
+.slot * {
+  text-align: center;
+}
+
+.slot .title {
+  font-size: .9em;
+}
+
+.slot .title a {
+  text-decoration: none;
+}
+
+.slot .title a:hover {
+  color: white;
+}
+
+.slot:hover {
+  color: white;
+}
+
+.slot .speaker {
+  padding-top: .5em;
+  font-size: .75em;
+}
+
+.slot .room-override {
+  font-size: smaller;
+  padding-bottom: 1em;
+}
+
+.slot-break {
+  background-color: #9ADBEC;
+}
+
+.speaker-profile {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2em;
+}
+
+.speaker-profile div {
+  margin-left: 1em;
+  padding: 1em;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: .5em;
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+}
+
+.speaker-presentation {
+  display: block;
+  margin-top: 0;
+  padding: 0.5em;
+}
+
+.slot:hover a  {
+    color: white;
+}
+
+.slot:hover {
+  background-color: #2853A3;
+  color: white
+}
+
+.slot {
+  border: 1px dashed #cccccc !important;
+  padding: 10px;
+  border-radius: .25em;
+  align-items: center;
+  position: relative;
+}
+
+.slot a:hover {
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.slot .badges {
+  position: absolute;
+  bottom: .25em;
+  left: .25em;
+}
+
+.slot .badges .btn {
+  border-radius: .25em;
+  margin: 0;
+  padding: .2em;
+  padding-bottom:.25em;
+}
+
+.slot .badges a {
+  height: 1.25em;
+  width: 1.25em;
+  font-size: .75em;
+  align-items: center;
+}
+
+.slot .badges .btn:before {
+  background: none;
+}
+
+.slot-charla .speaker:after {
+  content: "Charla";
+  font-size: .75em;
+  position: absolute;
+  bottom: .25em;
+  right: .25em;
+}
+
+/* sprints */
+.sprint-card {
+  display: grid;
+  grid-template-areas:
+    'menu main main main main main'
+    'menu main main main main main'
+    'menu footer footer footer footer footer';
+
+  border: 1px solid;
+  border-radius: .5em;
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  box-shadow: white 0px 0px .75em;
+  -webkit-box-shadow: white 0px 0px .1em;
+  -moz-box-shadow: white 0px 0px .1em;
+}
+
+.sprint-card .logo {
+  grid-area: menu;
+  max-width:10em;
+  max-height:10em;
+  height:auto;
+  width:auto;
+  margin: 1em;
+}
+
+.sprint-card .description{
+  grid-area: main;
+  font-size: smaller;
+}
+
+.sprint-card .actions {
+  grid-area: footer;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}

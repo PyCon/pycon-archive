@@ -1,0 +1,337 @@
+/* forms */
+form {
+    width: fit-content;
+    max-width: 100%;
+    border-bottom: 5px solid #c9ddff;
+    border-left: 5px solid #c9ddff;
+    border-right: 5px solid #dec6ff;
+    border-radius: 20px;
+    border-top: 5px solid #dec6ff;
+    padding: 10px;
+
+}
+
+.raw-form {
+    border: unset;
+    border: unset;
+}
+
+@media only screen and (min-width: 700px) {
+
+    form {
+        width: 40em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+    }
+}
+
+form .travelgrans-list-form {
+    width: 90%;
+}
+
+legend {
+    margin-bottom: 20px;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid var(--black-and-white-black-brown);
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width: 700px) {
+
+    input[type=text],
+    input[type=password],
+    input[type=date],
+    input[type=email],
+    input[type=search],
+    input[type=url],
+    textarea,
+    select {
+        max-width: 95%;
+        width: 34em;
+    }
+}
+
+input:read-only,
+textarea:read-only {
+    background-color: #cccccc;
+}
+
+textarea {
+    min-height: 300px;
+}
+
+form label {
+    color: var(--black-and-white-black-brown);
+    display: block;
+    margin-bottom: 8px;
+}
+
+form .helptext,
+form .help-block {
+    margin-top: 8px;
+    display: block;
+    font-size: 70%;
+    line-height: 1.6;
+    font-weight: 400;
+    max-width: 100%;
+}
+
+form .help-block.demographic {
+    margin-bottom: 30px;
+}
+
+form .help-inline strong,
+form .help-block strong {
+    color: red;
+}
+
+form .secondaryAction {
+    margin-bottom: 20px;
+}
+
+form h1,
+form h2,
+form h3,
+form h4,
+form h5,
+form h6 {
+    text-align: center;
+}
+
+.control-group>label {
+    display: inline-block;
+}
+
+form p:has(label[for=id_remember]) {
+    display: flex;
+    gap: 10px;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 25px;
+    border: 10px solid currentColor;
+    border-radius: 5px;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+label.radio {
+    position: relative;
+    left: 1.2em;
+}
+
+
+label.radio input[type=radio] {
+    position: relative;
+    left: -1.5em;
+    top: 1.2em;
+}
+
+.control-label {
+    width: 90%;
+}
+
+form p label[for=id_newsletter_opt_in],
+form p label[for=id_psf_newsletter_opt_in] {
+    display: inline;
+}
+
+/* edit profile custom style */
+form[id=signup_form] p,
+form:is(:has([name="nickname"]), :has([name="full_name"])) p {
+    width: 90%;
+}
+
+.content:has(form) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* side-by-side and full-col */
+
+
+.form-container {
+    border: 1px solid #dddada;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 700px) {
+    .form-container {
+        padding: 0 20px;
+    }
+
+    .form-section legend {
+        margin: auto;
+        margin-bottom: 1em;
+    }
+
+}
+
+.side-by-side-elems select {
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 4px;
+    min-height: 2.2rem;
+
+}
+
+.side-by-side-elems>.side-by-side-elems {
+    margin-top: 2rem;
+}
+
+.side-by-side-elems {
+    display: inline-flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: baseline;
+    width: 100%;
+}
+
+.centered-elems {
+    display: inline-flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.centered-elems .control-group {
+    width: 33%;
+}
+
+.elems-full-column .control-group {
+    width: 38rem;
+    margin: auto;
+    flex-direction: column;
+}
+
+.elems-full-column-alt .control-group {
+    width: 100%;
+    margin: auto;
+    margin-top: 1.5rem;
+    flex-direction: column;
+}
+
+.elems-full-column .control-group+.control-group {
+    margin-top: 1em;
+}
+
+@media (max-width: 700px) {
+    .side-by-side-elems {
+        display: block;
+    }
+
+    .elems-full-column .control-group {
+        width: 90%;
+        margin: 0 2rem;
+    }
+
+    .centered-elems .control-group {
+        width: 100%
+    }
+
+    #registration-intro {
+        margin: 0 1em;
+        width: 90%
+    }
+}
+
+.side-by-side-elems .control-group {
+    width: 17rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.elems-full-column .control-group {
+    width: 34rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.compact .control-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media (max-width: 500px) {
+    .side-by-side-elems .control-group {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .side-by-side-elems .pycon-selection input {
+        margin-left: 0;
+    }
+
+    .elems-full-column .control-group {
+        width: 90%;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .elems-full-column .pycon-selection input {
+        margin-left: 0;
+    }
+}
+
+.elems-full-column .pycon-selection input {
+    margin: 0 0.5rem;
+}
+
+.side-by-side-elems .textinput {
+    width: 100%;
+    padding-right: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .side-by-side-elems .textinput {
+        width: 90%;
+    }
+
+}
+
+.side-by-side-elems .pycon-selection input {
+    margin: 0 0.5rem;
+}
+
+.side-by-side-elems .form-group:first-of-type {
+    margin-left: 0;
+}
+
+.elems-as-columns .control-group .controls {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-by-side-elems .control-group .controls:has(label.radio ) {
+    margin-left: 10px;
+}
+
+.controls + label.radio {
+    width: 90%;
+}
+
+.control-group,
+.side-by-side-elems,
+.elems-full-column {
+    margin-bottom: 1em;
+}
+
+p.button-block {
+    display: block;
+    margin: 40px 0;
+}
+
+.well {
+    margin-bottom: 40px;
+}

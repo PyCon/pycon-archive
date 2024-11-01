@@ -1,0 +1,98 @@
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--black-and-white-black-brown);
+    font-family: e-Ukraine Head;
+    font-weight: 500;
+}
+
+h1, h2 {
+    font-size: 60px;
+    line-height: 1.4;
+}
+
+@media only screen and (max-width: 1000px) {
+    h1, h2 {
+        font-size: 40px;
+    }
+}
+
+strong, 
+b {
+    font-weight: 500;
+    color: var(--black-and-white-black-brown);
+}
+
+a {
+    color: var(--black-and-white-black-brown);
+}
+
+.content li {
+    list-style-type: none;
+    position: relative;
+    text-align: justify;
+    padding: 8px 0;
+}
+
+.content li::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url("../images/custom-bullet.a4c927253729.svg") no-repeat top left;
+    position: absolute;
+    top: 9px;
+    top: 8px;
+    left: -40px;
+}
+
+.noto-font {
+    font-family: 'NotoEmoji';
+    font-size: 2em;
+}
+
+.sponsor-job-listing-text h1, h2, h3, h4, h5, h6 {
+    color: var(--black-and-white-black-brown);
+    font-family: unset;
+    font-weight: unset;
+}
+
+.sponsor-job-listing-text h1, h2 {
+    font-size: unset;
+    line-height: unset;
+}
+
+@media only screen and (max-width: 1000px) {
+    .sponsor-job-listing-text h1, h2 {
+        font-size: unset;
+    }
+}
+
+.sponsor-job-listing-text li {
+    list-style-type: unset;
+    position: unset;
+    text-align: unset;
+    padding: unset;
+}
+
+.sponsor-job-listing-text li::before {
+    content: unset;
+    display:unset;
+    width:unset;
+    height:unset;
+    background:unset;
+    position:unset;
+    top:unset;
+    top:unset;
+    left:unset;
+}
+
+.sponsor-job-listing-text {
+  margin-left: 1em;
+  font-size: smaller;
+  padding-left: 1em;
+  padding-right: 1em;
+  border: 1px solid grey;
+  border-radius: 1em;
+  background: #eeeeee;
+}

@@ -1,0 +1,22 @@
+/* footer */
+.site-footer {
+    background-color: lightblue;
+    padding: 100px 0 180px;
+    text-align: center;
+    background: url("../images/seamless-waves-footer.1d4a2ae19209.png") repeat-x bottom center;
+}
+
+.site-footer p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 775px;
+}
+
+.footer-text-large {
+    font-size: 24px;
+    margin: 25px 0 50px;
+}
+
+.need-help {
+    margin-top: 50px;
+}

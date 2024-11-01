@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "e-Ukraine";
+    src:
+        local("e-Ukraine"),
+        url("../font/e-Ukraine/e-Ukraine-Regular.5f8d5cfd59c0.otf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "e-Ukraine";
+    src:
+        local("e-Ukraine"),
+        url("../font/e-Ukraine/e-Ukraine-Medium.7921d93ace94.otf") format("opentype");
+    font-weight: 500;
+}
+
+
+@font-face {
+    font-family: "e-Ukraine Head";
+    src:
+        local("e-Ukraine"),
+        url("../font/e-UkraineHead/e-UkraineHead-Medium.61989d15ac7d.otf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "NotoEmoji";
+    src:
+        local("NotoEmoji"),
+        url("../font/Noto-Emoji/NotoEmoji-Regular.74a68c700389.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "NotoEmoji";
+    src:
+        local("NotoEmoji"),
+        url("../font/Noto-Emoji/NotoEmoji-Medium.d069fe4c7994.ttf") format("truetype");
+    font-weight: 500;
+}

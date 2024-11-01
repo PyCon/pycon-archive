@@ -1,0 +1,73 @@
+/* Buttons */
+
+.content button,
+.content .btn,
+.content .button:not(.secondaryAction),
+.content input[type=submit] {
+    display: inline-block;
+    padding: 12px 24px 12px 48px; 
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%; /* 30.6px */
+    border-radius: 100px;
+    border: 1px solid #8914E8;
+    background: linear-gradient(270deg, #8914E8 60%, #C275FF 86%);
+    box-shadow: 0px 4px 21px 0px #44245E inset, 0px -2px 2px 0px #7A2ABA inset, 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.content .btn-smol {
+    font-size: 14px !important;
+    padding: 6px 12px 6px 12px;
+    border-radius: 20px;
+    margin: 3px;
+}
+.content .btn-smol:before {
+    background: none !important;
+}
+
+.content input[type=submit],
+.content input.btn {
+    /* cannot use ::after with inputs, so remove left padding */
+    padding: 12px 24px !important;
+}
+
+.content button::before,
+.content .btn::before,
+.content .button:not(.secondaryAction)::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/button-icon.a79d808b10f9.svg") no-repeat top left;
+    position: absolute;
+    left: 24px;
+    top: calc(50% - 8px);
+    text-decoration: none;
+}
+
+.content button:hover,
+.content .btn:hover,
+.content .button:not(.secondaryAction):hover,
+.content input[type=submit]:hover {
+    border: 1px solid #8914E8; background: linear-gradient(270deg, #8914E8 0%, #C275FF 49%);
+    box-shadow: 0px 4px 21px 0px #44245E inset, 0px -2px 2px 0px #7A2ABA inset, 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.content button:active,
+.content .btn:active,
+.content .button:not(.secondaryAction):active,
+.content input[type=submit]:active {
+    background: #8914E8;
+    box-shadow: 0px 4px 21px 0px #44245E inset, 0px -2px 2px 0px #7A2ABA inset, 0px 2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.buttonHolder {
+    display: flex;
+    justify-content: center;
+}
