@@ -1,0 +1,50 @@
+/* notification banner */
+ul.messages {
+    margin: 0;
+    padding: 0;
+}
+
+.alert {
+    display: block;
+    position: relative;
+    padding: 0 50px 0 25px;
+    list-style-type: none;
+    color: var(--purple-dark-purple-2);
+    border-bottom: 1px solid var(--purple-dark-purple-2);
+}
+
+.alert-close {
+    position: absolute;
+    right: 25px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.content .alert-error,
+.content .alert-info,
+.content .alert-warning {
+    background-color: var(--purple-dark-purple-2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 1px 22px;
+    margin: 30px 0;
+}
+
+.content .alert-error b,
+.content .alert-error strong,
+.content .alert-error a,
+.content .alert-info b,
+.content .alert-info strong,
+.content .alert-info a,
+.content .alert-warning b,
+.content .alert-warning strong,
+.content .alert-warning a  {
+    color: #fff;
+}
+
+.content .alert-error li::before,
+.content .alert-info li::before,
+.content .alert-warning li::before {
+    background: url("../images/custom-bullet-white.6f6c2f85fc95.svg") no-repeat top left;
+    
+}

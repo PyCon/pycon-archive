@@ -1,0 +1,801 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from us.pycon.org/2024/speaking/tutorials/samples/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Nov 2024 13:47:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <title>
+            
+    - Tutorial Samples
+
+            
+            
+            - PyCon US 2024
+            
+        </title>
+
+        <!-- meta -->
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;family=Rubik+Mono+One&amp;family=Rubik:ital,wght@0,500;0,600;0,700;0,900;1,500;1,600;1,700;1,900&amp;family=Sulphur+Point:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" rel="stylesheet">
+
+        <!-- css -->
+        
+        <link rel="stylesheet" type="text/css" href="../../../static/css/normalize.9a8a61c7f5e7.css">
+        <link rel="stylesheet" type="text/css" href="../../../static/css/defaults.a6d5e72df32d.css">
+        <link rel="stylesheet" type="text/css" href="../../../static/css/pycon.cf38ddfb7bcb.css">
+
+        <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+
+        <!-- favicons -->
+        <link rel="manifest" href="../../../static/images/favicon/site.9adae63eb292.webmanifest" crossorigin="use-credentials" />
+
+        <link rel="shortcut icon" href="../../../static/images/favicon/favicon.820bd8d7ff72.ico"/>
+        <link rel="icon" type="image/png" sizes="192x192" href="../../../static/images/favicon/android-chrome-192x192.473bdd973d26.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="../../../static/images/favicon/android-chrome-512x512.4c312b2ecc0f.png">
+        <link rel="icon" type="image/png" sizes="180x180" href="../../../static/images/favicon/apple-touch-icon.50635e2c49c1.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../static/images/favicon/favicon-16x16.21e725df15e4.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../static/images/favicon/favicon-32x32.56594da90651.png">
+        <link rel="icon" type="image/png" sizes="70x70" href="../../../static/images/favicon/mstile-70x70.b7fe82d8ce6b.png">
+        <link rel="icon" type="image/png" sizes="144x144" href="../../../static/images/favicon/mstile-144x144.4e34ac1cfdb4.png">
+        <link rel="icon" type="image/png" sizes="310x150" href="../../../static/images/favicon/mstile-310x150.11cfe0aa5b07.png">
+        <link rel="icon" type="image/png" sizes="310x310" href="../../../static/images/favicon/mstile-310x310.d857d6a0cb28.png">
+        <link rel="icon" type="image/svg+xml" sizes="any" href="../../../static/images/favicon/safari-pinned-tab.d725ec716959.svg">
+        
+        
+        
+        
+    </head>
+
+    <body class="template-cmspage">
+        
+
+        <div class="menu-panel">
+            <button class="close-menu-button">
+                <img src="../../../static/images/close.694712b6c1fe.svg" alt="Close menu" />    
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li class="home"><a href="https://us.pycon.org/">Home</a></li>
+                    
+
+<li class="has-children">
+	<a href="#"  >
+		<span class="toggle-children"></span>
+		About PyCon US
+	</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../../about/pycon/index.html"  >
+		
+		What is PyCon US?
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../about/diversity/index.html"  >
+		
+		Diversity
+	</a>
+	
+</li>
+
+<li >
+	<a href="https://policies.python.org/us.pycon.org/code-of-conduct/"  >
+		
+		Code of Conduct
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../about/health-safety-guidelines/index.html"  >
+		
+		Health &amp; Safety Guidelines
+	</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="#"  >
+		<span class="toggle-children"></span>
+		Python Software Foundation
+	</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../../psf/about/index.html"  >
+		
+		About
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../psf/donate/index.html"  >
+		
+		Donate to the PSF
+	</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="#"  >
+		<span class="toggle-children"></span>
+		Sponsorship
+	</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../../sponsorship/why-sponsor/index.html"  >
+		
+		Why Sponsor?
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../sponsorship/sponsors/index.html"  >
+		
+		Sponsors
+	</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="#"  class="current_branch">
+		<span class="toggle-children"></span>
+		Speaking at PyCon US
+	</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../guidelines/index.html"  >
+		
+		Proposal Guidelines
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../talks/index.html"  >
+		
+		Proposing a Talk
+	</a>
+	
+</li>
+
+<li >
+	<a href="../index.html"  class="current_branch">
+		
+		Proposing a Tutorial
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../charlas/index.html"  >
+		
+		Proposing a Charla
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../posters/index.html"  >
+		
+		Proposing a Poster
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../mentorship/index.html"  >
+		
+		Proposal Mentorship
+	</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="#"  >
+		<span class="toggle-children"></span>
+		Attend PyCon US
+	</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../../attend/onsite/index.html"  >
+		
+		Onsite Information
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../attend/pycon-online/index.html"  >
+		
+		PyCon US Online
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../attend/information/index.html"  >
+		
+		Registration Information
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../attend/travel-grants/index.html"  >
+		
+		Travel Grants
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../attend/faq/index.html"  >
+		
+		Travel Grants FAQ
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../attend/venue/index.html"  >
+		
+		Venue and Hotels
+	</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="#"  >
+		<span class="toggle-children"></span>
+		Expo Hall
+	</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../../expo/expo-hall/index.html"  >
+		
+		Expo Hall
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../expo/job-fair/index.html"  >
+		
+		Job Fair
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../expo/opening-reception/index.html"  >
+		
+		Opening Reception
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../expo/startup-row/index.html"  >
+		
+		Startup Row
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../expo/community-booths/index.html"  >
+		
+		Community Booths
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../expo/job-listings/index.html"  >
+		
+		Job Listings
+	</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="#"  >
+		<span class="toggle-children"></span>
+		Events
+	</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../../events/pyladies-auction/index.html"  >
+		
+		PyLadies Auction
+	</a>
+	
+</li>
+
+<li class="has-children">
+	<a href="../../../events/hatchery/index.html"  >
+		<span class="toggle-children"></span>
+		Hatchery Program
+	</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../../events/hatchery/community-organizers-summit/index.html"  >
+		
+		Community Organizers Summit
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../events/hatchery/humble-data/index.html"  >
+		
+		Humble Data
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../events/hatchery/docs-summit/index.html"  >
+		
+		Documentation Summit
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../events/hatchery/flaskcon/index.html"  >
+		
+		FlaskCon
+	</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li >
+	<a href="../../../events/packaging-summit/index.html"  >
+		
+		Packaging Summit
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../events/education-summit/index.html"  >
+		
+		Education Summit
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../events/pyladies-lunch/index.html"  >
+		
+		PyLadies Luncheon
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../events/newcomer-orientation/index.html"  >
+		
+		Newcomer Orientation
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../events/open-spaces/index.html"  >
+		
+		Open Spaces
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../events/dev-sprints/index.html"  >
+		
+		Development Sprints
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../events/lightning-talks/index.html"  >
+		
+		Lightning Talks
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../events/maintainers-summit/index.html"  >
+		
+		Maintainers Summit
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../events/mentored-sprints/index.html"  >
+		
+		Mentored Sprints for Diverse Beginners
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../events/language-summit/index.html"  >
+		
+		Language Summit
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../events/webassembly-summit/index.html"  >
+		
+		WebAssembly Summit
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../events/typing-summit/index.html"  >
+		
+		Typing Summit
+	</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="#"  >
+		<span class="toggle-children"></span>
+		Schedule
+	</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../../schedule/tutorials/index.html"  >
+		
+		Tutorials (Wed. and Thurs.)
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../schedule/sponsor-presentations/index.html"  >
+		
+		Sponsor Presentations (Thursday)
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../schedule/talks/index.html"  >
+		
+		Talks (Friday - Sunday)
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../schedule/posters/list/index.html"  >
+		
+		Posters (Sunday)
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../about/keynote-speakers/index.html"  >
+		
+		Keynote Speakers
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../schedule/index.html"  >
+		
+		Overview
+	</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="#"  >
+		<span class="toggle-children"></span>
+		All About Pittsburgh
+	</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../../all-about-pitt/travel/index.html"  >
+		
+		Traveling to Pittsburgh
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../all-about-pitt/recommendations/index.html"  >
+		
+		Local Recommendations
+	</a>
+	
+</li>
+
+<li >
+	<a href="../../../all-about-pitt/transit/index.html"  >
+		
+		Public Transit in Pittsburgh
+	</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+<li class="has-children">
+	<a href="../../../volunteers/index.html"  >
+		<span class="toggle-children"></span>
+		Volunteers
+	</a>
+	
+		<ul>
+			
+
+<li class="has-children">
+	<a href="../../../volunteers/volunteering/index.html"  >
+		<span class="toggle-children"></span>
+		Volunteering
+	</a>
+	
+		<ul>
+			
+
+<li >
+	<a href="../../../volunteers/volunteering/session-staff/index.html"  >
+		
+		Session Staff
+	</a>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+
+		</ul>
+	
+</li>
+
+
+                    
+                </ul>
+            </nav>
+        </div>
+
+        <!-- homepage specific styling -->
+        <div class="homepage-banner">
+            <div class="homepage-banner-clouds"></div>
+            <div class="homepage-banner-border"><div></div></div>
+            <div class="homepage-banner-landscape"></div>
+            <div class="homepage-header">
+                <div class="container">
+                    <div class="logo-container">
+                        <div class="logo">
+                            <img src="../../../static/images/pycon24-wordmark-purple.293b6a59b448.svg" alt="PyCon 2024"/>
+                            <span>By the community, for the community</span>
+                        </div>
+                    </div>
+                    <div class="arrow-container">
+                        <a href="#content"><span class="arrow-down"><i class="arrow down"></i></span></a>
+                    </div>
+                    <header class="site-header">
+                        <div class="social-menu">
+                            <a href="https://pycon.blogspot.com/">Blog</a>
+                            <a href="https://www.linkedin.com/company/thepsf" class="icon"><img src="../../../static/images/linkedin.223fb900a540.svg" alt="LinkedIn"/></a>
+                            <a href="https://fosstodon.org/@pycon" class="icon"><img src="../../../static/images/mastadon.d4b3629888cb.svg" alt="Mastadon"/></a>
+                            <a href="https://twitter.com/pycon?lang=en" class="icon"><img src="../../../static/images/x.abed5575d201.svg" alt="X (formally Twitter)"/></a>
+                        </div>
+                        <div class="main-menu">
+                            <button class="menu-button open-menu">
+                                <span class="desktop">
+                                    <img src="../../../static/images/menu-plus.333790ee813a.svg" alt="Open menu" />
+                                    <span class="label">Menu</span>
+                                </span>
+                                <img src="../../../static/images/mobile-menu-icon.3ef118d5e83a.svg" class="mobile" />
+                            </button>
+                        </div>
+                    </header>
+                </div>
+            </div>
+            <div class="plane"></div>
+        </div>
+        <div class="homepage-banner-sea"></div>
+        <!-- end homepage specific styling -->
+
+        <!-- internal page specific styling -->
+        <div class="internal-page-header">
+            <div class="internal-page-header-container">
+                <div class="container">
+                    <a href="https://us.pycon.org/" class="internal-page-logo">
+                        <img src="../../../static/images/internal-page-logo.1eccc28bab7a.svg" alt="logo of PyCon snake" class="snake"/>
+                        <img src="../../../static/images/pycon24-wordmark-black.3623942db8a1.svg" alt="PyCon 2024" class="wordmark"/>
+                    </a>
+                    <div class="links">
+                        <div class="social-menu">
+                            <a href="https://pycon.blogspot.com/">Blog</a>
+                            <a href="https://www.linkedin.com/company/thepsf" class="icon"><img src="../../../static/images/linkedin.223fb900a540.svg" alt="LinkedIn"/></a>
+                            <a href="https://fosstodon.org/@pycon" class="icon"><img src="../../../static/images/mastadon.d4b3629888cb.svg" alt="Mastadon"/></a>
+                            <a href="https://twitter.com/pycon?lang=en" class="icon"><img src="../../../static/images/x.abed5575d201.svg" alt="X (formally Twitter)"/></a>
+                        </div>
+                        <div>
+                            <button class="menu-button open-menu">
+                                <span class="desktop">
+                                    <img src="../../../static/images/menu-plus.333790ee813a.svg" alt="Open menu" />
+                                    <span class="label">Menu</span>
+                                </span>
+                                <img src="../../../static/images/mobile-menu-icon.3ef118d5e83a.svg" class="mobile" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="internal-clouds"></div>
+            </div>
+        </div>
+        <!-- end internal page specific styling -->
+
+        <div class="container">
+            <div id="content"></div>
+            <main class="content">
+                
+                    <div class="language-picker">
+                    
+                    
+                    </div>
+                
+                
+    
+    <div class="cms-title">
+      <h1>Tutorial Samples</h1>
+    </div>
+    <div class="cms-body">
+      <div class="content-container">
+        <div class="block-paragraph"><div class="left"><h3 data-block-key="ciof7"><b>Sample 1: Using List Comprehensions and Generator Expressions For Data Processing, by Trey Hunner</b></h3><h4><a id="description""></a>Description</h4><p data-block-key="cscf9">Creating one list out of another list is a very common thing to do in Python, so common that Python includes a special construct just for this purpose: list comprehensions.</p><p data-block-key="10lv">In this tutorial, we’ll get hands-on experience using list comprehensions, set comprehensions, and dictionary comprehensions. We’ll also learn how and when we can slightly tweak our comprehensions to turn them into more performant generator expressions.</p><p data-block-key="9l1ue">We will learn some tricks for figuring out which of our “for” loops can be rewritten as comprehensions and which cannot. We will focus heavily on code readability and code clarity and we’ll discuss when comprehensions help readability and when they hurt.</p><p data-block-key="dlots">All new skills will be acquired through practice. We’ll work through many exercises both individually and as a group. All students will also receive a cheat sheet which can be used for guidance during future comprehension-writing journeys.</p><p data-block-key="8ao4v">A laptop with Python installed is required for this workshop.</p><h4><a id="audience""></a>Audience</h4><p data-block-key="7krk2">This tutorial is for Python programmers who are familiar with looping in Python but haven’t fully embraced list comprehensions and generator expressions. Students are expected to be comfortable with Python’s syntax overall and be familiar with for loops in Python.</p><p data-block-key="fgd7i">Students will walk out of this tutorial with an appreciation for what list comprehensions are good for and how to use them to write more descriptive and more readable Python code. Students will also have an understanding that generator expressions can be used to ease data processing, allowing code to be written in a fundamentally different (and often more clear) way.</p><h4><a id="outline""></a>Outline</h4><ul><li data-block-key="co3i4">List Comprehensions (30 minutes)<ul><li data-block-key="1vma9">Review of for loops in Python</li><li data-block-key="8th14">List comprehensions for transformation</li><li data-block-key="29v11">Copy-pasting from a loop to a comprehension</li><li data-block-key="478p1">First exercise break</li></ul></li><li data-block-key="cq1h3">More List Comprehensions (30 minutes)<ul><li data-block-key="2ckup">Comprehensions with filtering</li><li data-block-key="1t52h">Identifying comprehension-ready loops</li><li data-block-key="f8ghb">Writing readable comprehensions</li><li data-block-key="dfc52">Second exercise break</li><li data-block-key="f70gl">When to use list comprehensions and when not to use them</li></ul></li><li data-block-key="1lnho">Set &amp; Dictionary Comprehensions (30 minutes)<ul><li data-block-key="6dkmj">Sets &amp; Set Comprehensions</li><li data-block-key="a8i07">Dictionaries &amp; Dictionary Comprehensions</li><li data-block-key="78o2v">Third exercise break</li></ul></li><li data-block-key="fd5fm">Generator Expressions (45 minutes)<ul><li data-block-key="4upij">Python’s many functions that consume iterables</li><li data-block-key="c9959">Generator expressions as lazy list comprehensions</li><li data-block-key="anuu4">Properties of lazy single-use iterables</li><li data-block-key="8o44j">Fourth exercise break</li></ul></li><li data-block-key="7mn5g">Data Processing (45 minutes)<ul><li data-block-key="b23i2">Generator piping for data processing</li><li data-block-key="3fh3t">Generators combined with tuple, any, all, etc</li><li data-block-key="fkda4">Fifth exercise break</li><li data-block-key="eh7sk">Cheat sheet and review of when and how we use these tools</li></ul></li></ul><p data-block-key="82t7f">I plan to provide quite a bit of exercise time during this tutorial. I will provide more than enough exercises for the allotted time so that students will not walk out of the room bored by the material.</p><h4><a id="additional-notes""></a>Additional Notes</h4><p data-block-key="9f5gj">I work as a professional Python trainer and I have hosted workshops for companies, conferences, and local meetups. My workshops are typically very hands-on and exercise driven.</p><p data-block-key="qjp4">I have taught this workshop-style tutorial before at <a href="https://www.youtube.com/watch?v=_6U1XoxyyBY">PyCon 2018</a> as well as through my Python training company, Truthful Technology LLC.</p><h3 data-block-key="4oqg3"><b>Sample 1: Evaluation</b></h3><p data-block-key="a2co5">Trey is a seasoned instructor and proposer, and has included all the required material.</p><p data-block-key="1rgah"><b>Description</b>:<br/>The description is excellent, giving us and prospective attendees a clear idea of what they will learn, what the tutorial will emphasize, what materials will be provided, and how the tutorial will be taught.</p><h4><a id="audience""></a>Audience:</h4><p data-block-key="as1a2">Clear description and learning goals. This doesn’t just say advanced/intermediate/beginner; it shows, in detail, exactly what the attendees are expected to know (and to not know)</p><h4><a id="outline""></a>Outline:</h4><p data-block-key="cqva3">Trey shows when he will cover exercises and when he will lecture. We love to see this. Trey also shows thoughtfulness regarding having enough exercises.</p><p data-block-key="82aqn">One reviewer was happy to see this material applied to data processing.</p><p data-block-key="3b6mg">One reviewer expressed concern regarding number of topics Trey planned to cover, and its ability to fill the timeslot, but Trey’s past teaching experience gave us confidence he had weighed things carefully.</p><p data-block-key="f9scc">Overall, this is an excellent outline satisfies all our requirements. However, if you don’t have as much experience writing proposals as Trey and are worried about giving enough detail, we recommend erring on the side of ‘too long’ rather than ‘too short’.</p><p data-block-key="5l1ol">Note your timing notes don’t have to be this precise. Rounding to 30 minute increments or marking all of the sections at 20% would have also been just fine.</p><p data-block-key="br63i"><b>Format:</b><br/><br/>Note also that we now request that submitters denote what portion of the tutorial will be dedicated to participation versus lecturing. This was not the case when this tutorial was submitted.</p><p data-block-key="3ik73">What else Trey could have done:<br/>Describe time tradeoffs: What sections/topics might run long? Which sections might he shorten if this happens?</p><h3 data-block-key="b1jlo"><b>Sample 2: Writing about Python (Even When You Hate Writing), by Thursday Bram</b></h3><h4><a id="description""></a>Description</h4><p data-block-key="2m15f">This tutorial is an introduction to writing about Python: we’ll cover potential pitfalls in documentation and other technical writing, practice writing non-technical content (from blog posts to job listings), and testing our writing for readability and accessibility. We’ll even cover where writing can fit into your workflow and a few tricks for reducing your writing workload.</p><p data-block-key="2n5to">After this tutorial, you’ll be equipped to write about Python for both technical and nontechnical audiences. You might even enjoy writing by the time we’re done!</p><h4><a id="audience""></a>Audience</h4><p data-block-key="9jgc">While this tutorial is aimed at programmers with Python experience, non-technical attendees will find the material accessible. Some basic knowledge about the Python programming language and the Python community is required (making it to PyCon in the first place demonstrates the level of knowledge required).</p><p data-block-key="4tql0">Attendees will have at least one writing sample they can share and will be better equipped to write and test their own materials, as well as evaluate others’ writing. They’ll also know about opportunities to share their writing with other pythonistas.</p><h4><a id="outline""></a>Outline</h4><p data-block-key="cf2rn">Introduction (15 min)<br/>* Why good writing matters<br/>* Accessibility<br/>* Usability<br/><br/>Reading Activity (15 min)<br/>* Review examples of Python writing<br/>* Discuss errors and possible fixes<br/><br/>Documentation Activity (45 min)<br/>* Write 5-step tutorial solo<br/>* Edit and discuss as a group<br/><br/>Templates and Other Shortcuts (30 min)<br/>* Overview of shortcut opportunities<br/>* Templates vs templating (disambiguation)<br/><br/>Job Listing Activity (30 min)<br/>* Review template<br/>* Fill in template solo<br/>* Edit and discuss as a group<br/><br/>Writing for Other People (30 min)<br/>* Planning writing projects<br/>* Guest posts pitches, book proposals, and what they have in common)<br/>* Writing opportunities in the Python community<br/><br/>Wrapup (15 min)<br/>* Practice writing<br/>* Writing resources<br/>* Final questions</p><h4><a id="additional-notes""></a>Additional Notes</h4><p data-block-key="ecle3">While this tutorial draws on <i>The Python Style Supplement</i>, attendees do not need a copy. I’ll have a workbook that each attendee will be able to take home (which I’ll need help printing in Cleveland).</p><p data-block-key="90l1l">You can see an ARC of <i>The Python Style Supplement</i> here: <i>REDACTED</i></p><h3 data-block-key="8gubr"><b>Sample 2: Evaluation</b></h3><p data-block-key="8dt3v">This is a tutorial on a less commonly covered topic and in an unconventional format. Because it was relatively unique, it wasn’t competing directly with others in the same category. However, its unconventional format generated both concern and enthusiasm. Two reviewers suggested that it might be better presented as a talk. However, the majority of reviewers were excited by the tutorial and were won over by the quality of the proposal.</p><h4><a id="audience""></a>Audience:</h4><p data-block-key="asnq2">We especially liked the ‘audience’ section. The description of whom the tutorial was aimed at was excellent.</p><p data-block-key="7rj7b">Most of our favorite proposals include clear learning goals (showing us what the audience will learn, and giving them motivation to attend). This one provides additional details, unique to the format of the tutorial itself:</p><p data-block-key="529kl">“Attendees will have at least one writing sample they can share and will be better equipped to write and test their own materials, as well as evaluate others’ writing. They’ll also know about opportunities to share their writing with other pythonistas.”</p><h4><a id="additional-notes""></a>Additional Notes:</h4><p data-block-key="drmd1">We appreciated having access to some materials ahead of time (the author’s book-in-progress). Her requirement that we print the documents didn’t cause concern; we appreciated her forethought.</p><h3 data-block-key="ao1mn"><b>Sample 3: What To Expect When You’re Expecting: A Hands-On Guide to Regression Testing (Emily Morehouse)</b></h3><h4><a id="description""></a>Description</h4><p data-block-key="522tf">We all know we should be testing our applications, but testing is hard and great testing is even harder. Take a deep dive into what and how to test your Django apps, plus learn how to leverage modern headless browser libraries and automated visual diff-ing to get (and keep) pixel-perfect apps.</p><h4><a id="audience""></a>Audience</h4><p data-block-key="21tv7">A foundational knowledge of Python and a web framework of choice is beneficial, as we’ll dive right into testing an existing application. Starter code and code progressions will be provided, so you don’t have to be a Django expert to grasp the content! Whether you love, hate, or have never used Javascript, you’ll feel at home; our use of JS will be limited to leveraging libraries to gather data and screenshots for visual regression testing, whether for a JS client or a Django web app.</p><h4><a id="outline""></a>Outline</h4><ul><li data-block-key="4tc62">Introduction (10 mins, 10 mins total)<ul><li data-block-key="vcjg">Introduction, outline, and expectations of what you should take away from this tutorial</li></ul></li><li data-block-key="d0vkb">Foundational Knowledge for Testing (35 mins, 45 mins total)<ul><li data-block-key="bet3q">Testing, Wat?<ul><li data-block-key="1ca3c">We all know we should be writing tests for our code, but what does that really mean?</li><li data-block-key="8ivd">What does writing tests “in the real world” look like?</li></ul></li><li data-block-key="2hqcm">Rapid-Fire Introduction to Testing: 20,000 foot view, short descriptions of different types of testing<ul><li data-block-key="e14jj">What kinds of tests are most impactful for different use cases?</li></ul></li><li data-block-key="1uhpl">The Importance Of Consistent Regression Testing<ul><li data-block-key="7uia3">Change blindness</li></ul></li><li data-block-key="b75cd">Anatomy Of A Test<ul><li data-block-key="1ciqh">Ingredients for successful testing</li><li data-block-key="fnm38">Process and workflows for testing</li></ul></li><li data-block-key="dref2">What Should You Be Testing?<ul><li data-block-key="7vamo">Good tests mimic good bug reports</li></ul></li><li data-block-key="6k7d">Approaches For Regression Testing</li><li data-block-key="21ti">Approaches For Visual Regression Testing<ul><li data-block-key="ctqlj">Visual Regression Testing Is Easier In 2018!</li></ul></li></ul></li><li data-block-key="6lvcd">Walkthrough - Regression Testing in Django (1 hr, 1.75 hr total)<ul><li data-block-key="2hnfb">From a carefully crafted starter application, we’ll walk through the important aspects of our application that must, could and should be tested. We’ll also cover tips for scoping out areas that are more likely to have bugs introduced and ways to separate your code appropriately for the best testing approaches.</li></ul></li><li data-block-key="7gnk4">Walkthrough - Visual Regression Testing Powered By Javascript (45 mins, 2.5 hrs total)<ul><li data-block-key="acu8v">From our same carefully crafter starter app, we’ll add visual regression tests using my test runner, test assertion, web driver, and image diff libraries of choice. (Yes, you CAN use Python for this, but there are some awesome JS libraries that make our lives even easier).</li></ul></li><li data-block-key="erk74">Flex Time (remainder of time left)<ul><li data-block-key="85s8j">Additional time for breaking things and putting them back together, questions, helping each other, etc.</li></ul></li><li data-block-key="4qa9e">Conclusion<ul><li data-block-key="fp26m">Wrap up, call to action, and suggested tools/resources</li></ul></li></ul><h4><a id="additional-notes""></a>Additional Notes</h4><p data-block-key="c2i6i">Preliminary talk materials (currently incomplete):<br/>- REDACTED<br/>Preliminary talk slides (currently incomplete):<br/>- REDACTED</p><p data-block-key="d1k3q">Previous talks:</p><ul><li data-block-key="8r0dl"><a href="https://www.youtube.com/watch?v=rnet1BYmjRc">DinosaurJS: What To Expect When You’re Expecting</a>(talk version of this workshop)</li><li data-block-key="cus25"><a href="https://www.youtube.com/watch?v=XhWvz4dK4ng">PyCon 2018: The AST and Me</a></li></ul><p data-block-key="fnddt">Scheduling: I would need to be scheduled on the second tutorial day, as I’ll be attending the Language Summit on the first day.</p><h3 data-block-key="cltav"><b>Sample 3: Evaluation</b></h3><p data-block-key="ao447"><b>Topic:</b><br/><br/>Reviewers really liked the topic, noting that it was popular and important, yet not frequently proposed.</p><p data-block-key="59hes"><b>Materials and Past Experience:</b><br/><br/>While not visible here, Emily included some preliminary slides and materials, which we found to be quite detailed. We appreciated her inclusion of videos of her prior talks.</p><p data-block-key="eh0mu"><b>Outline:<br/></b><br/>Emily’s outline provides a lot of detail. Note that instead of single words, she includes long phrases and complete sentences, giving us an idea of not just what points she’ll be discussing, but how she’ll be covering them.</p><p data-block-key="a34qu">Note that her timings differ from this year’s guidelines.</p></div></div>
+      </div>
+    </div>
+
+            </main>
+        </div>
+
+        <footer class="site-footer">
+
+            <div class="container">
+                <img src="../../../static/images/pycon24-wordmark-black.3623942db8a1.svg" alt="PyCon 2024"/>
+                <p class="footer-text-large">The PyCon US 2024 conference in Pittsburgh, Pennsylvania, USA is a production of the <a href="https://www.python.org/psf/">Python Software Foundation</a>.</p>
+                <p>This site is built using <a href="https://www.djangoproject.com/">Django</a> and <a href="https://wagtail.org/">Wagtail</a>.
+                <p>PyCon US 2024 illustration and design by <a href="https://www.linkedin.com/in/anastasiia-buhaienko-b12629183/">Anastasia B</a> and <a href="https://www.linkedin.com/in/kyrylo-kostritskiy-b1b7311b3/">Kyryl Ko</a> of <a href="https://www.awesomic.com/">Awesomic Inc</a>, Coordinated by Georgi K.</p>
+                <p>Site design implemented by <a href="https://kabucreative.com/">Kabu Creative</a>.</p>
+                <p><a href="https://policies.python.org/us.pycon.org/Privacy-Policy/">Privacy and Data policy</a>.</p>
+            </div>
+        </footer>
+
+        
+        <script type="text/javascript" src="../../../static/js/vendor/jquery-3.6.4.min.641dd1437010.js"></script>
+        <script type="text/javascript" src="../../../static/js/pycon.42139f8b6842.js"></script>
+        
+        <script>
+            function closeAlert(elem) {
+                elem.parentElement.remove()
+            }
+        </script>
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+
+        
+        
+        
+
+    </div>
+    </body>
+
+<!-- Mirrored from us.pycon.org/2024/speaking/tutorials/samples/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Nov 2024 13:47:25 GMT -->
+</html>
