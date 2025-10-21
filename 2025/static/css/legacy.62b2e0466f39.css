@@ -1,0 +1,220 @@
+/* dashboard */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  margin: 60px 0;
+  padding: 0;
+}
+
+hr + hr {
+  display: none;
+}
+
+.row .btn {
+  margin-top: 5px;
+}
+
+/* registration flow */
+
+.panel-heading {
+  text-align: center;
+}
+
+.panel-heading :is(h1, h2, h3) {
+  text-align: center;
+}
+
+.panel + .panel {
+  margin-top: var(--v-spacing);
+}
+
+.side-by-side-elems {
+  display: grid;
+  gap: var(--v-spacing);
+}
+
+.centered-elems {
+  display: grid;
+  place-items: center;
+}
+
+.elems-full-column .control-group {
+  margin: auto;
+  flex-direction: column;
+  width: 100%;
+}
+
+.elems-full-column-alt .control-group {
+  width: 100%;
+  margin: auto;
+  margin-top: 1.5rem;
+  flex-direction: column;
+}
+
+.elems-full-column .control-group + .control-group {
+  margin-top: 1rem;
+}
+
+.form-intro {
+  margin: var(--v-spacing) auto;
+  max-width: 80ch;
+}
+
+.form-intro h1 {
+  text-align: center;
+}
+
+.side-by-side-elems .control-group {
+  flex: 1;
+}
+
+.elems-full-column .pycon-selection input {
+  margin: 0 0.5rem;
+}
+
+.side-by-side-elems .textinput {
+  width: 100%;
+  padding-right: 0;
+}
+
+.side-by-side-elems .pycon-selection input {
+  margin: 0 0.5rem;
+}
+
+.control-group .controls {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--v-spacing) / 4);
+}
+
+.controls label + label {
+  margin-left: 0;
+}
+
+form :has(.side-by-side-elems, .elems-full-column) {
+  display: grid;
+  gap: var(--v-spacing);
+}
+
+/* Help text should be aligned with label */
+.controls label:has([type="checkbox"], [type="radio"]) + .help-block {
+  margin-left: 1.2rem;
+}
+
+.well {
+  margin-bottom: var(--v-spacing);
+}
+
+/* TODO: Shim. Move away from well */
+form :has(.side-by-side-elems, .elems-full-column) .well {
+  margin-bottom: 0;
+}
+
+.panel h2 {
+  font-size: 30px;
+}
+
+.panel-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panel h3 {
+  margin-top: 40px;
+}
+
+#invoice-details .panel-body + div {
+  margin-top: var(--v-spacing);
+}
+
+@media (min-width: 768px) {
+  .side-by-side-elems {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* TODO: Shim. Should not be nested */
+  .side-by-side-elems > .side-by-side-elems {
+    grid-column: span 2;
+  }
+
+  .help-block.demographic {
+    grid-column: span 2;
+    text-align: center;
+  }
+}
+
+/* reg flow */
+
+.registration-discounts {
+  margin: auto;
+  width: 75%;
+  padding: .5em;
+  border: 1px solid var(--purple-dark-purple-2);
+  border-radius: 5px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: smaller;
+}
+
+.registration-discounts table {
+  margin-bottom: 0em;
+}
+
+.registration-form {
+  display: flex;
+  justify-content: center;
+}
+
+.control-label {
+  text-wrap: balance;
+}
+
+.StripeElement { 
+  background-color: white;
+  padding: 1rem;
+}
+
+/* presentations */
+.registration-form .presentations .session {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.registration-form .presentations .session .presentation {
+  flex: 1 0 25%;
+  border: 1px dashed;
+  border-radius: 5px;
+  margin: .5em;
+  padding: .5em;
+  max-width: 50%;
+  overflow-wrap: anywhere;
+  font-size: .9em;
+}
+
+.registration-form .presentations .sold-out {
+  color: #212529;
+  background-color: lightgrey;
+}
+
+.registration-form .presentations .disabled {
+  color: #212529;
+  background-color: lightgrey;
+}
+
+/* travelgrants */
+#travelgrants-container {
+  width: 100%;
+}
+
+.table-travelgrants .selected {
+  background-color: #eeeeee;
+}
+
+.travelgrants-list-form {
+  width: 100%;
+  font-size: .9em;
+}

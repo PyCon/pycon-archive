@@ -1,0 +1,19 @@
+.search-form {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1ch;
+  
+  padding: 0;
+  width: 100%;
+
+  box-shadow: none;
+  border: none;
+}
+
+.search-form input[name="query"] {
+  flex: 1;
+}
+
+.search-form button {
+  margin-top: 0;
+}

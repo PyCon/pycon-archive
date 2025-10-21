@@ -1,0 +1,28 @@
+.content {
+  margin: 0 auto;
+}
+
+.content > * + *,
+.content [class*="text-"] > * + * {
+  margin-top: 1.5rem;
+}
+
+.content :is(h1,h2,h3,h4,h5,h6) {
+  margin-bottom: 1rem;
+}
+
+.content li + li {
+  margin-top: .5rem;
+}
+
+.content > h1:first-child {
+  text-align: center;
+}
+
+.content hgroup > * {
+  margin-bottom: 0;
+}
+
+.content hgroup > * + * {
+  margin-top: 0.5rem;
+}

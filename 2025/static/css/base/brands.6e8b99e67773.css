@@ -1,0 +1,46 @@
+.brand {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+
+  background-color: currentColor;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.brand.xsmall {
+  width: .75rem;
+  height: .75rem;
+}
+
+.brand.small {
+  width: .875rem;
+  height: .875rem;
+}
+
+.brand.large {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.brand.xlarge {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.brand.xxlarge {
+  width: 2rem;
+  height: 2rem;
+}
+
+.brand-linkedin {
+  mask-image: url("../../icons/social/linkedin.6896b3468d19.svg");
+}
+
+.brand-mastodon {
+  mask-image: url("../../icons/social/mastodon.5a5cdc0bfae5.svg");
+}
+
+.brand-xtwitter {
+  mask-image: url("../../icons/social/xtwitter.43379b7189cb.svg");
+}

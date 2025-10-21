@@ -1,0 +1,60 @@
+.schedule-block {
+  position: relative;
+  margin-top: calc(2 * var(--v-spacing));
+  background-image: url("../../images/theme/grain.292257442008.png");
+}
+
+.schedule-block .block-heading {
+  font-size: var(--size-display-3);
+  line-height: var(--heading-line-height);
+  color: var(--color-white);
+}
+
+.schedule-block .block-heading span {
+  display: block;
+  font-size: var(--size-display-4);
+  color: var(--text-color);
+}
+
+.schedule-block::before {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  z-index: -1;
+
+  display: block;
+  width: 100%;
+  height: 130px;
+
+  background-image: 
+    linear-gradient(to bottom, transparent 80%, var(--color-accent-6) 80%),
+    url("../../images/theme/wave-blue.3a83b4c0a54e.svg");
+  background-position: 
+      top center;
+  background-repeat: 
+    no-repeat,
+    no-repeat;
+  background-size: 
+    cover,
+    cover;
+
+  content: "";
+}
+
+.schedule-block .date-list {
+  font-size: var(--size-6);
+}
+
+.schedule-block .date-list-event-name {
+  color: var(--color-white);
+}
+
+@media (min-width: 768px) {
+  .schedule-block .block-heading {
+    font-size: var(--size-display-2);
+  }
+
+  .schedule-block .block-heading span {
+    font-size: var(--size-display-4);
+  }
+}
