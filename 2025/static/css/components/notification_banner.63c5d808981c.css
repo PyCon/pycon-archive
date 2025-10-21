@@ -1,0 +1,54 @@
+ul.messages,
+.errorlist {
+  margin-top: 0;
+  background-color: var(--color-accent-3);
+  list-style: none;
+  padding: 1rem var(--gutters);
+}
+
+/* Give .errorlist some room */
+form p + .errorlist {
+  margin-top: .35rem;
+}
+
+ul.messages:empty,
+.errorlist:empty {
+  display: none;
+}
+
+main .errorlist {
+  border-radius: .25rem;
+}
+
+.alert,
+.errorlist > * {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1ch;
+  font-size: .95rem;
+}
+
+.alert ul {
+  width: 100%;
+}
+
+.alert p {
+  order: 0;
+}
+
+.alert-close {
+  order: 1;
+}
+
+.content .alert {
+  border-radius: .25rem;
+  padding: .35rem .5rem;
+  background-color: var(--color-accent-5);
+  color: var(--color-white);
+}
+
+.content [class*="alert-"] :is(b, strong){
+    color: var(--color-white);
+}

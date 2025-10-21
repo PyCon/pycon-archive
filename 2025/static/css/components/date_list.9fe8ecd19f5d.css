@@ -1,0 +1,21 @@
+.date-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  row-gap: 1rem;
+}
+
+.date-list-event {
+  display: contents;
+}
+
+.date-list-event-name {
+  font-weight: var(--weight-bold);
+  line-height: var(--heading-line-height);
+}
+
+.date-list-event-name,
+.date-list-event-date {
+  margin: -.45rem;
+  padding: .45rem 1.5rem .45rem 0;
+  border-bottom: 1px dashed var(--color-white);
+}
