@@ -1,0 +1,41 @@
+.container {
+  margin: 0 auto;
+  padding: 0 var(--gutters);
+  max-width: var(--container-width);
+}
+
+/* TODO: Shim */
+.container:has(> :last-child:is(form)) > *:not(form) {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: var(--gutters);
+}
+
+.block {
+  padding: var(--v-spacing) 0;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    gap: calc(2 * var(--gutters));
+  }
+  
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grid-cols-2-sidebar {
+    grid-template-columns: 3fr 1fr;
+  }
+}

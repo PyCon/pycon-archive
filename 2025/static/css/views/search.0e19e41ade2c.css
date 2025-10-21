@@ -1,0 +1,52 @@
+.template-search main > .container {
+  --container-width: 800px;
+}
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.search-results li {
+  list-style: none;
+}
+
+.result-heading {
+  margin-bottom: .5rem;
+  font-size: var(--size-display-6);
+  font-weight: var(--weight-normal);
+}
+
+.result-path {
+  font-size: var(--size-8);
+  opacity: .8;
+}
+
+.result-description {
+  margin-top: 1rem;
+}
+
+.result-previews {
+  margin-top: 1rem;
+  padding: 0;
+  font-size: var(--size-8);
+}
+
+.result-preview-more {
+  margin-top: .5rem;
+  font-style: italic;
+}
+
+.result-preview {
+  margin-top: .25rem;
+}
+
+.search-match {
+  display: inline-block;
+  background-color: var(--color-accent-4);
+  padding-left: .2ch;
+  padding-right: .2ch;
+}

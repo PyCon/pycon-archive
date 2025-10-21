@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "NotoEmoji";
+  src:
+    local('NotoEmoji'),
+    url("../../font/Noto-Emoji/NotoEmoji-Regular.74a68c700389.ttf") format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "NotoEmoji";
+  src:
+    local('NotoEmoji'),
+    url("../../font/Noto-Emoji/NotoEmoji-Medium.d069fe4c7994.ttf") format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Cooper";
+  src:
+    local('Cooper'),
+    url("../../font/Cooper/Cooper-Regular.e9bc8af037ff.woff2") format('woff2'),;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Cooper";
+  src:
+    local('Cooper'),
+    url("../../font/Cooper/Cooper-Italic.5801ff900ae9.woff2") format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cooper";
+  src:
+    local('Cooper'),
+    url("../../font/Cooper/Cooper-Bold.f13829b1335e.woff2") format('woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Cooper";
+  src:
+    local('Cooper'),
+    url("../../font/Cooper/Cooper-BoldItalic.3e3d7d09c018.woff2") format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cooper";
+  src:
+    local('Cooper'),
+    url("../../font/Cooper/Cooper-Black.59e3d17d6fe1.woff2") format('woff2');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Cooper";
+  src:
+    local('Cooper'),
+    url("../../font/Cooper/Cooper-BlackItalic.babcf2f6c95a.woff2") format('woff2');
+  font-weight: 800;
+  font-style: italic;
+}
