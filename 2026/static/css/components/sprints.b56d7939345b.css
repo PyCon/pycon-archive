@@ -1,0 +1,110 @@
+/* sprints */
+.sprints {
+  display: flex;
+  flex-direction: column;
+  gap: var(--v-spacing);
+  margin-top: var(--v-spacing);
+}
+
+.sprint-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    'logo body'
+    'logo meta';
+  gap: 0 var(--h-spacing);
+
+  padding: var(--v-spacing) var(--h-spacing);
+  border: var(--card-border);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-shadow);
+  transition:
+    border-color var(--transition-speed) ease,
+    box-shadow var(--transition-speed) ease;
+}
+
+.sprint-card:hover {
+  border-color: var(--color-accent-3);
+  box-shadow: 0 6px 0 0 var(--color-accent-3);
+}
+
+.sprint-card-logo {
+  grid-area: logo;
+  display: flex;
+  align-items: start;
+  width: 8rem;
+}
+
+.sprint-card-logo img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--card-border-radius);
+  object-fit: contain;
+}
+
+.sprint-card-body {
+  grid-area: body;
+}
+
+.sprint-card-body h3 {
+  font-size: var(--size-5);
+  margin-bottom: 0.25rem;
+}
+
+.sprint-card-body h3 a {
+  text-decoration: none;
+}
+
+.sprint-card-body h3 a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent-3);
+  text-underline-offset: 0.15em;
+}
+
+.sprint-card-body p {
+  font-size: var(--size-7);
+  opacity: 0.85;
+}
+
+.sprint-card-meta {
+  grid-area: meta;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1ch;
+  padding-top: 0.5rem;
+  font-size: var(--size-8);
+  opacity: 0.6;
+}
+
+.sprint-card-meta a {
+  text-decoration: none;
+}
+
+.sprint-card-meta a:hover {
+  text-decoration: underline;
+}
+
+/* No logo — let body span full width */
+.sprint-card:not(:has(.sprint-card-logo)) {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'body'
+    'meta';
+}
+
+@media (max-width: 600px) {
+  .sprint-card {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'logo'
+      'body'
+      'meta';
+    gap: var(--v-spacing) 0;
+  }
+
+  .sprint-card-logo {
+    width: 5rem;
+  }
+}

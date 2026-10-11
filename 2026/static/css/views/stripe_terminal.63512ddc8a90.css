@@ -1,0 +1,1124 @@
+/* ==========================================================================
+   On-site Stripe Terminal POS
+   --------------------------------------------------------------------------
+   Operated by a volunteer at a noisy event with people standing in front of
+   them. Three priorities: the operator should always know what reader is
+   connected, what's in the cart, and what to press next. JS hooks (IDs +
+   Bootstrap-style class names like .badge-pill .badge-success) are kept
+   intact and styled here from scratch — no Bootstrap, no inline styles.
+   ========================================================================== */
+
+.template-terminal {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  /* The site's <html> already paints the dark gradient; keep the body
+     translucent so the gradient shows through and the surface tints we
+     layer on top read as elevated rather than as flat panels. */
+  background: transparent;
+}
+
+/* Tokens scoped to the terminal so we can tune the surface treatment
+   without leaking into the rest of the site. */
+.template-terminal {
+  --t-surface-1: rgba(255, 255, 255, 0.04);
+  --t-surface-2: rgba(255, 255, 255, 0.07);
+  --t-border: rgba(255, 255, 255, 0.1);
+  --t-border-strong: rgba(255, 255, 255, 0.2);
+  --t-muted: rgba(255, 255, 255, 0.62);
+  --t-faint: rgba(255, 255, 255, 0.45);
+  --t-success: #34d399;
+  --t-warning: var(--color-yellow);
+  --t-danger: var(--color-red);
+  --t-info: var(--color-cyan);
+  --t-radius: 0.5rem;
+  --t-radius-lg: 0.75rem;
+  --t-tap: 48px;
+  --t-gutter: 1.25rem;
+}
+
+/* ==========================================================================
+   Header — always visible, glanceable from across a table.
+   ========================================================================== */
+
+.terminal-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-rows: auto auto;
+  gap: 0.35rem 1.5rem;
+  align-items: center;
+  padding: 0.85rem var(--t-gutter);
+  background: var(--bg-color);
+  border-bottom: 1px solid var(--t-border);
+}
+
+.terminal-header__brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.terminal-header__eyebrow {
+  font-size: var(--size-9);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--t-faint);
+}
+
+.terminal-header__title {
+  font-size: var(--size-6);
+  font-weight: var(--weight-bold);
+}
+
+.terminal-header__pills {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-self: end;
+}
+
+.terminal-header__reader-label {
+  font-size: var(--size-8);
+  color: var(--t-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.terminal-header__message {
+  grid-column: 1 / -1;
+  min-height: 0;
+}
+
+.terminal-header__message:empty,
+.terminal-header__message:has(.alert:empty) {
+  display: none;
+}
+
+/* ==========================================================================
+   Status pills (Bootstrap-style class names kept for JS compatibility).
+   ========================================================================== */
+
+.badge.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: var(--size-9);
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1;
+  /* Subtle ring so each pill reads even when the color is the same as the
+     darker neighbor. */
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.badge.badge-pill:empty {
+  display: none;
+}
+
+.badge-pill.badge-danger {
+  background: var(--t-danger);
+  color: #1a0e0a;
+}
+.badge-pill.badge-success {
+  background: var(--t-success);
+  color: #042818;
+}
+.badge-pill.badge-warning {
+  background: var(--t-warning);
+  color: #2a1f00;
+}
+.badge-pill.badge-info {
+  background: var(--t-info);
+  color: #00282d;
+}
+.badge-pill.badge-primary {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+/* ==========================================================================
+   Status message banner — alert.alert-{level} written by JS.
+   ========================================================================== */
+
+.alert {
+  display: block;
+  padding: 0.6rem 0.9rem;
+  border-radius: var(--t-radius);
+  font-size: var(--size-7);
+  font-weight: var(--weight-semibold);
+  background: var(--t-surface-2);
+  color: var(--text-color);
+  border: 1px solid var(--t-border-strong);
+  animation: terminal-pop-in 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.alert:empty {
+  display: none;
+}
+
+.alert.alert-primary {
+  background: rgba(88, 51, 233, 0.18);
+  border-color: rgba(88, 51, 233, 0.55);
+}
+
+.alert.alert-success {
+  background: rgba(52, 211, 153, 0.18);
+  border-color: rgba(52, 211, 153, 0.55);
+  color: #bff5dd;
+}
+
+.alert.alert-danger {
+  background: rgba(212, 116, 84, 0.22);
+  border-color: rgba(212, 116, 84, 0.65);
+  color: #fbd7c8;
+}
+
+.alert.alert-warning {
+  background: rgba(255, 215, 121, 0.18);
+  border-color: rgba(255, 215, 121, 0.65);
+  color: #ffeab6;
+}
+
+@keyframes terminal-pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   Layout — main + footer.
+   ========================================================================== */
+
+.terminal-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.25rem var(--t-gutter) 6rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 720px;
+  flex: 1 1 auto;
+}
+
+.terminal-footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 9;
+  padding: 0.85rem var(--t-gutter) max(0.85rem, env(safe-area-inset-bottom));
+  background: var(--bg-color);
+  border-top: 1px solid var(--t-border);
+}
+
+/* When the action button inside the footer is hidden, the sticky bar
+   would still take up screen real estate and tint the bottom of the
+   page. Collapse it. */
+.terminal-footer:has(#action-scan[hidden]) {
+  display: none;
+}
+
+.terminal-footer__inner {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  justify-content: center;
+}
+
+.terminal-footer:has(#action-scan[hidden]):has(#action-list:empty) {
+  display: none;
+}
+
+/* ==========================================================================
+   Eyebrow / section labels.
+   ========================================================================== */
+
+.terminal-eyebrow {
+  display: block;
+  font-size: var(--size-9);
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--t-faint);
+  margin-bottom: 0.55rem;
+}
+
+/* ==========================================================================
+   Cards — surface for cart, invoice, inventory, scanner.
+   ========================================================================== */
+
+.terminal-card {
+  background: var(--t-surface-1);
+  border: 1px solid var(--t-border);
+  border-radius: var(--t-radius-lg);
+  padding: 1rem 1.1rem;
+  animation: terminal-card-in 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes terminal-card-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   Attendee identity panel.
+   ========================================================================== */
+
+.terminal-attendee {
+  background: linear-gradient(135deg, rgba(88, 51, 233, 0.2) 0%, rgba(221, 4, 210, 0.12) 100%);
+  border: 1px solid rgba(221, 4, 210, 0.35);
+  border-radius: var(--t-radius-lg);
+  padding: 1rem 1.1rem 1.1rem;
+  animation: terminal-card-in 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.terminal-attendee__badge {
+  margin: 0.1rem 0 0.4rem;
+  font-size: var(--size-display-5);
+  line-height: 1.05;
+  font-weight: var(--weight-black);
+}
+
+.terminal-attendee__badge strong {
+  font-weight: var(--weight-black);
+}
+
+.terminal-attendee__badge span {
+  font-weight: var(--weight-semibold);
+  color: var(--t-muted);
+}
+
+.terminal-attendee__name {
+  margin: 0;
+  font-size: var(--size-7);
+  color: var(--t-muted);
+}
+
+/* ==========================================================================
+   Cart / invoice line items — table because JS writes <tr><td>.
+   ========================================================================== */
+
+.terminal-line-items {
+  width: 100%;
+  border: 0;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+  font-size: var(--size-7);
+}
+
+.terminal-line-items th {
+  padding: 0.45rem 0.6rem;
+  text-align: left;
+  font-size: var(--size-9);
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--t-faint);
+  border-bottom: 1px solid var(--t-border);
+}
+
+.terminal-line-items td {
+  padding: 0.7rem 0.6rem;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--t-border);
+}
+
+.terminal-line-items tr:last-child td {
+  border-bottom: none;
+}
+
+.terminal-line-items td:first-child {
+  width: 2.5rem;
+  text-align: right;
+  color: var(--t-muted);
+  font-size: var(--size-8);
+}
+
+.terminal-line-items td:nth-child(3),
+.terminal-line-items td:nth-child(4) {
+  text-align: right;
+  font-weight: var(--weight-semibold);
+}
+
+/* JS-injected cart row class */
+.cart-item td {
+  border-bottom: 1px solid var(--t-border);
+}
+.cart-item:last-child td {
+  border-bottom: none;
+}
+
+/* The auto-injected sales-tax row reads as derived, not editable. */
+.cart-tax-row td {
+  color: var(--t-muted);
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.cart-tax-row td:first-child {
+  color: transparent;
+}
+
+.cart-tax-opt-row td {
+  border-top: 0;
+  padding: 0.6rem 0 0.2rem;
+  background: transparent;
+}
+
+.template-terminal .button.btn-tax-opt {
+  width: 100%;
+  min-height: 40px;
+  padding: 0.55rem 0.85rem;
+  background: transparent;
+  color: var(--t-muted);
+  border: 1px dashed var(--t-border-strong);
+  font-size: var(--size-8);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: var(--t-radius);
+}
+
+.template-terminal .button.btn-tax-opt:hover {
+  color: var(--text-color);
+  border-color: var(--text-color);
+  background: var(--t-surface-2);
+}
+
+.template-terminal .button.btn-tax-opt.is-applied {
+  border-style: solid;
+  border-color: var(--color-yellow);
+  color: var(--color-yellow);
+}
+
+.template-terminal .button.btn-tax-opt.is-applied:hover {
+  background: rgba(255, 215, 121, 0.1);
+  color: var(--color-yellow);
+}
+
+/* Total row — JS appends a <tr> with this className. */
+.terminal-line-items tr.justify-content-between td,
+.terminal-line-items tr th[scope='row'] {
+  border-top: 2px solid var(--t-border-strong);
+  border-bottom: none;
+  padding-top: 1rem;
+}
+
+.terminal-line-items th[scope='row'] {
+  text-align: left;
+  font-size: var(--size-7);
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--t-muted);
+}
+
+.total-field {
+  font-size: var(--size-display-4);
+  font-weight: var(--weight-black);
+  text-align: right;
+  letter-spacing: -0.01em;
+}
+
+/* Invoice variant — slightly more breathing room since it's the final
+   confirmation surface. */
+.terminal-line-items--invoice td {
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+}
+
+/* ==========================================================================
+   Buttons — JS writes Bootstrap-style classes; we style them all here.
+   ========================================================================== */
+
+.template-terminal .terminal-cta,
+.template-terminal .button {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: var(--t-tap);
+  padding: 0.85rem 1.25rem;
+  border-radius: var(--t-radius);
+  border: 1px solid transparent;
+  background: var(--color-blue);
+  color: var(--color-white);
+  font-family: inherit;
+  font-size: var(--size-7);
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition:
+    background-color 160ms ease-out,
+    border-color 160ms ease-out,
+    transform 160ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 160ms ease-out;
+}
+
+.template-terminal .terminal-cta:hover,
+.template-terminal .button:hover {
+  background: #6f4dff;
+}
+
+.template-terminal .terminal-cta:active,
+.template-terminal .button:active {
+  transform: translateY(1px);
+}
+
+.template-terminal .terminal-cta:focus-visible,
+.template-terminal .button:focus-visible {
+  outline: 3px solid var(--color-yellow);
+  outline-offset: 2px;
+}
+
+.terminal-cta--ghost {
+  background: transparent;
+  border-color: var(--t-border-strong);
+  color: var(--text-color);
+}
+
+.terminal-cta--ghost:hover {
+  background: var(--t-surface-2);
+  border-color: var(--text-color);
+}
+
+.terminal-cta {
+  width: 100%;
+  max-width: 28rem;
+}
+
+.terminal-cta--lg,
+.terminal-cta--xl {
+  font-size: var(--size-6);
+  min-height: 56px;
+}
+
+.terminal-cta--xl {
+  font-size: var(--size-5);
+  min-height: 64px;
+}
+
+/* Bootstrap-style mini buttons that JS writes. */
+.template-terminal .button.btn-sm,
+.template-terminal .button.xsmall {
+  min-height: 36px;
+  padding: 0.4rem 0.8rem;
+  font-size: var(--size-8);
+}
+
+.template-terminal .button.btn-primary {
+  background: var(--color-blue);
+}
+
+.template-terminal .button.btn-success {
+  background: var(--color-yellow);
+  color: #20180a;
+}
+
+.template-terminal .button.btn-success:hover {
+  background: #ffe39b;
+}
+
+.template-terminal .button.btn-danger {
+  background: rgba(212, 116, 84, 0.18);
+  color: #fbd7c8;
+  border-color: rgba(212, 116, 84, 0.55);
+}
+
+.template-terminal .button.btn-danger:hover {
+  background: rgba(212, 116, 84, 0.32);
+}
+
+/* The "Charge Now" button JS appends in the invoice footer. */
+.checkout-cart-button {
+  width: 100%;
+  margin-top: 0.4rem;
+  background: var(--color-yellow);
+  color: #20180a;
+  font-size: var(--size-5);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  min-height: 64px;
+  box-shadow: 0 8px 24px -10px rgba(255, 215, 121, 0.6);
+  animation: terminal-charge-pulse 2.4s ease-in-out infinite;
+}
+
+.checkout-cart-button:hover {
+  background: #ffe39b;
+  box-shadow: 0 12px 28px -10px rgba(255, 215, 121, 0.8);
+}
+
+@keyframes terminal-charge-pulse {
+  0%,
+  100% {
+    box-shadow: 0 8px 24px -10px rgba(255, 215, 121, 0.55);
+  }
+  50% {
+    box-shadow: 0 12px 32px -10px rgba(255, 215, 121, 0.85);
+  }
+}
+
+/* The little "x" cart row remove. */
+.remove-cart-item {
+  min-height: 36px;
+  min-width: 36px;
+  padding: 0.4rem 0.7rem;
+}
+
+/* ==========================================================================
+   Setup — discover/connect/reader-management.
+   ========================================================================== */
+
+.terminal-setup {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.terminal-setup__row {
+  display: flex;
+  justify-content: center;
+}
+
+.terminal-setup__readers {
+  background: var(--t-surface-1);
+  border: 1px solid var(--t-border);
+  border-radius: var(--t-radius-lg);
+  padding: 1rem 1.1rem;
+}
+
+/* Reader rows — JS writes .list-group-item.list-group-item-action. */
+.terminal-reader-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.terminal-reader-list .list-group-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: var(--t-tap);
+  padding: 0.75rem 1rem;
+  background: var(--t-surface-2);
+  border: 1px solid var(--t-border);
+  border-radius: var(--t-radius);
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: var(--weight-semibold);
+  cursor: pointer;
+  transition:
+    border-color 160ms ease-out,
+    background-color 160ms ease-out;
+}
+
+.terminal-reader-list .list-group-item:hover,
+.terminal-reader-list .list-group-item:focus-visible {
+  border-color: var(--color-cyan);
+  background: rgba(37, 200, 235, 0.08);
+}
+
+/* ==========================================================================
+   Inventory — categories + products. JS writes the whole tree.
+   ========================================================================== */
+
+.terminal-inventory {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+/* Category heading row */
+.terminal-inventory > .list-group-item:not(.product) {
+  font-size: var(--size-9);
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--t-faint);
+  padding: 0.85rem 0 0.25rem;
+  border-bottom: 1px solid var(--t-border);
+}
+
+/* Product row — stacked on phones so the price stepper + add button +
+   quick-bump row each get full width on a 320px screen. */
+.terminal-inventory .product {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.55rem;
+  padding: 0.85rem 0;
+  font-size: var(--size-7);
+}
+
+.terminal-inventory .product:not(:last-child) {
+  border-bottom: 1px solid var(--t-border);
+}
+
+.terminal-inventory .product .product-name {
+  font-weight: var(--weight-semibold);
+  font-size: var(--size-7);
+  line-height: 1.25;
+}
+
+.terminal-inventory .price-and-add {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: stretch;
+  gap: 0.45rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.terminal-inventory .price-and-add > span:first-child {
+  /* The "$" prefix. */
+  display: inline-flex;
+  align-items: center;
+  padding: 0 0.35rem;
+  font-size: var(--size-6);
+  font-weight: var(--weight-bold);
+  color: var(--t-muted);
+}
+
+.product-price {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--size-6);
+  font-weight: var(--weight-black);
+  min-width: 4rem;
+  text-align: right;
+  justify-content: flex-end;
+  font-variant-numeric: tabular-nums;
+}
+
+input.product-price {
+  width: 100%;
+  min-height: var(--t-tap);
+  padding: 0.55rem 0.7rem;
+  background: var(--t-surface-2);
+  border: 1px solid var(--t-border-strong);
+  border-radius: var(--t-radius);
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: var(--size-5);
+  font-weight: var(--weight-black);
+  text-align: right;
+  -moz-appearance: textfield;
+}
+
+input.product-price::-webkit-outer-spin-button,
+input.product-price::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input.product-price:focus {
+  /* Inset outline so the focus indicator stays inside the input box and
+     doesn't bleed onto the adjacent Add button. */
+  outline: 2px solid var(--color-yellow);
+  outline-offset: -2px;
+  border-color: var(--color-yellow);
+}
+
+/* Higher specificity than `.button.btn-primary` so the auction-yellow
+   commit button beats the Bootstrap-blue base. */
+.template-terminal .button.add-product,
+.template-terminal .add-product {
+  min-width: var(--t-tap);
+  min-height: var(--t-tap);
+  padding: 0 1.1rem;
+  font-size: var(--size-5);
+  font-weight: var(--weight-black);
+  background: var(--color-yellow);
+  color: #20180a;
+  border: 0;
+}
+
+.template-terminal .button.add-product:hover,
+.template-terminal .add-product:hover {
+  background: #ffe39b;
+}
+
+/* Quick-bump row: +1 / +10 / +100. Three equal taps under the price
+   stepper. Big enough that a thumb can't miss them, small enough that
+   they don't outweigh the primary "+" add button. */
+.product-bumps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+}
+
+.template-terminal .button.btn-bump {
+  min-height: 40px;
+  padding: 0.4rem 0.6rem;
+  background: var(--t-surface-2);
+  color: var(--text-color);
+  border: 1px solid var(--t-border-strong);
+  font-size: var(--size-7);
+  font-weight: var(--weight-bold);
+  font-variant-numeric: tabular-nums;
+  border-radius: var(--t-radius);
+}
+
+.template-terminal .button.btn-bump:hover {
+  background: rgba(255, 215, 121, 0.12);
+  border-color: var(--color-yellow);
+  color: var(--color-yellow);
+}
+
+.template-terminal .button.btn-bump:active {
+  background: rgba(255, 215, 121, 0.22);
+  transform: translateY(1px);
+}
+
+/* ==========================================================================
+   Scanner — html5-qrcode injects its own DOM under #reader. Box it in,
+   strip the vendor chrome, and recolor every interactive element so the
+   library reads as part of our card instead of a 3rd-party widget.
+   ========================================================================== */
+
+.terminal-scanner {
+  /* Cap width so the camera viewport doesn't sprawl across a desktop —
+     a face / badge in front of a webcam reads better at ~480px than full
+     width. The eyebrow stays left-aligned with the rest of the cards. */
+  max-width: 480px;
+  margin-inline: auto;
+}
+
+.terminal-scanner__viewport {
+  width: 100%;
+}
+
+#reader {
+  width: 100% !important;
+  display: block !important;
+  border: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+/* The library's first-child is an empty placeholder div with `id=""` — we
+   collapse it so it doesn't render a phantom dashed box above the real
+   scan region. */
+#reader > div:first-child:not([id]),
+#reader > div[id='']:first-child {
+  display: none !important;
+}
+
+/* The real camera viewport (always rendered with this id by the lib). */
+#reader__scan_region {
+  width: 100% !important;
+  background: rgba(0, 0, 0, 0.35) !important;
+  border: 1px solid var(--t-border-strong) !important;
+  border-radius: var(--t-radius) !important;
+  min-height: 220px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem !important;
+  color: var(--t-muted);
+  position: relative;
+}
+
+#reader__scan_region img {
+  filter: invert(1) brightness(1.1) drop-shadow(0 0 6px rgba(255, 255, 255, 0.15));
+  opacity: 0.85;
+  max-width: 96px;
+}
+
+#reader video {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 60vh;
+  border-radius: calc(var(--t-radius) - 2px);
+  display: block;
+}
+
+/* Library's "ⓘ" help icon in the corner — pure noise on the operator UI. */
+#reader__header_message,
+#reader__scan_region [title='Info icon'],
+#reader__scan_region img[alt='Info icon'] {
+  display: none !important;
+}
+
+/* Dashboard region holds the action buttons + camera picker. */
+#reader__dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: transparent !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+#reader__dashboard_section {
+  width: 100% !important;
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+#reader__dashboard_section_csr,
+#reader__dashboard_section_fsr,
+#reader__dashboard_section_swaplink {
+  background: transparent !important;
+  color: var(--text-color) !important;
+  text-align: center;
+}
+
+/* Every button the library injects: "Request Camera Permissions",
+   "Stop Scanning", "Switch Camera", etc. */
+#reader button,
+#reader__dashboard button,
+#reader__dashboard_section_csr button {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: var(--t-tap);
+  padding: 0.75rem 1.1rem !important;
+  background: var(--color-blue) !important;
+  color: var(--color-white) !important;
+  border: 1px solid transparent !important;
+  border-radius: var(--t-radius) !important;
+  font-family: inherit !important;
+  font-size: var(--size-7) !important;
+  font-weight: var(--weight-bold) !important;
+  letter-spacing: 0.02em !important;
+  cursor: pointer;
+  box-shadow: none !important;
+  margin: 0 !important;
+  transition:
+    background-color 160ms ease-out,
+    transform 160ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#reader button:hover,
+#reader__dashboard button:hover,
+#reader__dashboard_section_csr button:hover {
+  background: #6f4dff !important;
+}
+
+#reader button:active {
+  transform: translateY(1px);
+}
+
+#reader__dashboard_section_swaplink {
+  font-size: var(--size-8) !important;
+  color: var(--t-muted) !important;
+  text-decoration: underline !important;
+  padding: 0.5rem 0 !important;
+}
+
+#reader__dashboard_section_swaplink:hover {
+  color: var(--color-cyan) !important;
+}
+
+/* Camera selection dropdown if multiple cameras present. */
+#reader__camera_selection,
+#reader select {
+  width: 100% !important;
+  padding: 0.55rem 0.7rem !important;
+  background: var(--t-surface-2) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--t-border-strong) !important;
+  border-radius: var(--t-radius) !important;
+  font-family: inherit !important;
+  font-size: var(--size-7) !important;
+}
+
+/* The little ⓘ help icon the library renders in the corner. */
+#reader__header_message,
+#reader__status_span {
+  background: transparent !important;
+  color: var(--t-muted) !important;
+  font-family: inherit !important;
+  font-size: var(--size-8) !important;
+  text-align: center;
+  padding: 0.5rem !important;
+}
+
+/* Hide the noisy library credit / "Powered by" line. */
+#reader__filescan_input + label {
+  display: none !important;
+}
+#reader [class*='powered'] {
+  display: none !important;
+}
+
+/* ==========================================================================
+   Empty / collapsed states. JS sets some of these visible via inline
+   style.display, which beats normal `display: none`. We collapse the
+   *contents* (eyebrow, padding, border) instead so an empty section
+   has no visual weight even if the wrapper itself stays "visible".
+   ========================================================================== */
+
+.terminal-card:has(#cart-items:empty),
+.terminal-card:has(#invoice-items:empty),
+.terminal-card:has(#inventory-list:empty),
+.terminal-setup__readers:has(#reader-list:empty) {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  margin: 0;
+  animation: none;
+}
+
+.terminal-card:has(#cart-items:empty) > .terminal-eyebrow,
+.terminal-card:has(#invoice-items:empty) > .terminal-eyebrow,
+.terminal-card:has(#inventory-list:empty) > .terminal-eyebrow,
+.terminal-setup__readers:has(#reader-list:empty) > .terminal-eyebrow {
+  display: none;
+}
+
+/* ==========================================================================
+   Narrow viewport tuning — primary hardware target is iPhone SE (320–375px).
+   Everything above ≤480 must clear a 320px viewport without horizontal
+   scroll and without losing tap-target size. We trade vertical density
+   for thumb-reach margins, not the other way around.
+   ========================================================================== */
+
+@media (max-width: 480px) {
+  .template-terminal {
+    --t-gutter: 0.85rem;
+  }
+
+  .terminal-header {
+    grid-template-columns: 1fr;
+    padding: 0.7rem var(--t-gutter);
+    gap: 0.5rem;
+  }
+
+  .terminal-header__pills {
+    justify-self: start;
+  }
+
+  .terminal-header__title {
+    font-size: var(--size-7);
+  }
+  .terminal-header__eyebrow {
+    font-size: 0.6rem;
+  }
+
+  .terminal-main {
+    padding: 0.85rem var(--t-gutter) 7rem;
+    gap: 0.75rem;
+  }
+
+  .terminal-card,
+  .terminal-attendee {
+    padding: 0.85rem 0.95rem;
+    border-radius: var(--t-radius);
+  }
+
+  .terminal-attendee__badge {
+    font-size: var(--size-4);
+  }
+  .terminal-attendee__name {
+    font-size: var(--size-8);
+  }
+
+  /* Cart cells: drop the qty column on phones — JS writes qty=1 most of
+     the time and the column eats horizontal space we need for the title. */
+  .terminal-line-items td:first-child {
+    width: 1.5rem;
+    padding-right: 0.25rem;
+  }
+  .terminal-line-items td {
+    padding: 0.6rem 0.4rem;
+  }
+  .total-field {
+    font-size: var(--size-display-5);
+  }
+
+  .terminal-cta {
+    font-size: var(--size-7);
+  }
+  .terminal-cta--lg,
+  .terminal-cta--xl {
+    font-size: var(--size-6);
+    min-height: 56px;
+  }
+
+  .checkout-cart-button {
+    font-size: var(--size-6);
+    min-height: 56px;
+    box-shadow: 0 6px 18px -8px rgba(255, 215, 121, 0.55);
+  }
+
+  /* Inventory row stays grid-stacked; tighten gaps. */
+  .terminal-inventory .product {
+    padding: 0.7rem 0;
+    gap: 0.45rem;
+  }
+  input.product-price {
+    font-size: var(--size-6);
+  }
+  .add-product {
+    font-size: var(--size-6);
+    padding: 0 0.85rem;
+  }
+
+  .template-terminal .button.btn-bump {
+    min-height: 38px;
+  }
+}
+
+/* iPhone SE 1st-gen / very narrow phones. */
+@media (max-width: 360px) {
+  .template-terminal {
+    --t-gutter: 0.7rem;
+  }
+  .terminal-header__pills {
+    gap: 0.35rem;
+  }
+  .terminal-attendee__badge {
+    font-size: var(--size-5);
+    line-height: 1.1;
+  }
+  .terminal-line-items td:nth-child(2) {
+    font-size: var(--size-8);
+  }
+  .terminal-inventory .price-and-add {
+    grid-template-columns: 1.25rem minmax(0, 1fr) auto;
+    gap: 0.35rem;
+  }
+}
+
+/* Reduce motion respect. */
+@media (prefers-reduced-motion: reduce) {
+  .terminal-card,
+  .terminal-attendee,
+  .alert,
+  .checkout-cart-button {
+    animation: none;
+  }
+  .template-terminal .terminal-cta,
+  .template-terminal .button {
+    transition: none;
+  }
+}

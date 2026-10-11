@@ -1,0 +1,306 @@
+/* ==========================================================================
+   Sprint Days Report
+   ========================================================================== */
+
+.sd {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+/* Header */
+.sd-header {
+  margin-bottom: 1.75rem;
+}
+.sd-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+.sd-title {
+  margin-bottom: 0.25rem;
+}
+.sd-subtitle {
+  opacity: 0.55;
+  font-size: var(--size-7);
+}
+.sd-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Day cards */
+.sd-days {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+.sd-day {
+  padding: 1.1rem 1.25rem;
+  border-radius: 0.375rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.sd-day-label {
+  font-size: var(--size-9);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.55;
+  font-weight: var(--weight-semibold);
+}
+.sd-day-num {
+  font-size: var(--size-1);
+  font-weight: var(--weight-bold);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.sd-day-num--quiet {
+  opacity: 0.8;
+}
+.sd-day-foot {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--size-9);
+  opacity: 0.55;
+  flex-wrap: wrap;
+}
+.sd-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.5;
+}
+.sd-day--meta {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Callout for unanswered */
+.sd-callout {
+  margin: 1.5rem 0;
+  padding: 0.9rem 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(212, 116, 84, 0.3);
+  background: rgba(212, 116, 84, 0.04);
+}
+.sd-callout-num {
+  font-size: var(--size-3);
+  font-weight: var(--weight-bold);
+  color: var(--color-red);
+  font-variant-numeric: tabular-nums;
+}
+.sd-callout-text {
+  font-size: var(--size-8);
+  opacity: 0.8;
+}
+.sd-callout-text strong {
+  opacity: 1;
+}
+.sd-callout-text a {
+  color: var(--color-red);
+  text-decoration: none;
+  margin-left: 0.35rem;
+  font-weight: var(--weight-semibold);
+}
+.sd-callout-text a:hover {
+  text-decoration: underline;
+}
+
+/* Filters + search */
+.sd-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.sd-filters {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+.sd-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.35em 0.75em;
+  border-radius: 2em;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: transparent;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: var(--size-9);
+  font-weight: var(--weight-semibold);
+  transition: all 0.12s;
+}
+.sd-filter:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+.sd-filter--active {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border-color: var(--secondary-color);
+}
+.sd-filter--alert {
+  border-color: rgba(212, 116, 84, 0.4);
+  color: var(--color-red);
+}
+.sd-filter--alert:hover {
+  background: rgba(212, 116, 84, 0.08);
+  border-color: rgba(212, 116, 84, 0.6);
+}
+.sd-filter--alert.sd-filter--active {
+  background: var(--color-red);
+  color: var(--primary-color);
+  border-color: var(--color-red);
+}
+.sd-filter-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.4em;
+  height: 1.4em;
+  border-radius: 1em;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 0.8em;
+  padding: 0 0.35em;
+}
+.sd-filter--active .sd-filter-count {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.sd-search {
+  margin-left: auto;
+  width: 240px;
+  padding: 0.4em 0.7em;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0.35em;
+  background: transparent;
+  color: var(--text-color);
+  font-size: var(--size-8);
+}
+.sd-search::placeholder {
+  color: var(--text-color);
+  opacity: 0.3;
+}
+.sd-search:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-offset);
+}
+
+/* Roster table */
+.sd-table-wrap {
+  border-radius: 0.375rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+}
+.sd-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.sd-table thead th {
+  text-align: left;
+  padding: 0.65rem 1rem;
+  font-size: var(--size-9);
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.5;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+.sd-table tbody td {
+  padding: 0.6rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: var(--size-8);
+  vertical-align: middle;
+}
+.sd-table tbody tr:first-child td {
+  border-top: none;
+}
+.sd-row:hover td {
+  background: rgba(255, 255, 255, 0.03);
+}
+.sd-col-day {
+  width: 5rem;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.sd-col-time {
+  width: 6rem;
+  white-space: nowrap;
+  opacity: 0.55;
+  font-size: var(--size-9);
+}
+.sd-attendee-name {
+  font-weight: var(--weight-semibold);
+}
+.sd-attendee-email {
+  font-size: var(--size-9);
+  opacity: 0.55;
+  font-family: var(--mono-font, monospace);
+}
+.sd-tick {
+  color: var(--color-cyan);
+  font-weight: var(--weight-bold);
+}
+.sd-empty {
+  text-align: center;
+  padding: 2rem 1rem;
+  opacity: 0.5;
+  font-size: var(--size-8);
+}
+
+/* Status badge */
+.sd-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2em 0.55em;
+  border-radius: 0.2rem;
+  font-size: var(--size-9);
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+.sd-badge--ok {
+  background: rgba(37, 200, 235, 0.12);
+  color: var(--color-cyan);
+}
+.sd-badge--day {
+  background: rgba(255, 215, 121, 0.12);
+  color: var(--color-yellow);
+}
+.sd-badge--alert {
+  background: rgba(212, 116, 84, 0.12);
+  color: var(--color-red);
+}
+.sd-badge--muted {
+  background: rgba(255, 255, 255, 0.06);
+  opacity: 0.55;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .sd-title-row {
+    flex-direction: column;
+  }
+  .sd-search {
+    width: 100%;
+    margin-left: 0;
+  }
+  .sd-col-time {
+    display: none;
+  }
+}

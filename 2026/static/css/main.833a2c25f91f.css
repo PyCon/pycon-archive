@@ -1,0 +1,266 @@
+/* Define layers */
+@layer reset, base, elements, components, pages, legacy, utilities;
+
+@import url("/2026/static/css/reset.0d05960530c2.css") layer(reset);
+
+/* Base layer, orphans in this file */
+@import url("/2026/static/css/base/fonts.f3cc494e2b14.css") layer(base);
+@import url("/2026/static/css/base/typography.f408c276fb13.css") layer(base);
+@import url("/2026/static/css/base/layout.a0f8d094b54d.css") layer(base);
+@import url("/2026/static/css/base/content.19550020a3df.css") layer(base);
+
+/* Elements */
+@import url("/2026/static/css/base/brands.e01a424bca2e.css") layer(elements);
+@import url("/2026/static/css/base/buttons.c1dcd2ca9b5e.css") layer(elements);
+@import url("/2026/static/css/base/forms.8f2b65be1962.css") layer(elements);
+@import url("/2026/static/css/base/navs.334d51b2b045.css") layer(elements);
+@import url("/2026/static/css/base/pills.cf8c97b7db72.css") layer(elements);
+@import url("/2026/static/css/base/tables.97644cdcac34.css") layer(elements);
+
+/* Components */
+@import url("/2026/static/css/components/navigation.d7bbd7947405.css") layer(components);
+@import url("/2026/static/css/components/footer.7d26dabbf60d.css") layer(components);
+
+@import url("/2026/static/css/components/card.01ee2cbc35c3.css") layer(components);
+@import url("/2026/static/css/components/dialog.636b882dc550.css") layer(components);
+@import url("/2026/static/css/components/date_list.2020e9fdc7b6.css") layer(components);
+@import url("/2026/static/css/components/notification_banner.8e27ca00992b.css") layer(components);
+
+@import url("/2026/static/css/components/search_form.c0d240002381.css") layer(components);
+@import url("/2026/static/css/components/search_dialog.615dbe37dc2e.css") layer(components);
+
+@import url("/2026/static/css/components/schedule.c8e49b992cfd.css") layer(components);
+@import url("/2026/static/css/components/schedule_block.6f3f1f97f39d.css") layer(components);
+@import url("/2026/static/css/components/sponsor_listing.22cf5f5fc187.css") layer(components);
+@import url("/2026/static/css/components/sprints.b56d7939345b.css") layer(components);
+
+@import url("/2026/static/css/components/messaging.7d8f88f9981d.css") layer(components);
+@import url("/2026/static/css/components/skip_nav.cf711a3d7995.css") layer(components);
+
+/* Pages */
+@import url("/2026/static/css/views/homepage.d382ec39afa8.css") layer(pages);
+@import url("/2026/static/css/views/sub_page.900ca0c9aae2.css") layer(pages);
+@import url("/2026/static/css/views/dashboard.84332799f1ff.css") layer(pages);
+@import url("/2026/static/css/views/presentation.739bd3e90b7a.css") layer(pages);
+@import url("/2026/static/css/views/registration.83805bfe9e2c.css") layer(pages);
+@import url("/2026/static/css/views/search.b5f6ce3dc086.css") layer(pages);
+@import url("/2026/static/css/views/speaker_profile.128eeb8a0c37.css") layer(pages);
+@import url("/2026/static/css/views/voucher_report.6f5114afaaab.css") layer(pages);
+@import url("/2026/static/css/views/lead_retrieval_dashboard.c117d4a89e93.css") layer(pages);
+@import url("/2026/static/css/views/lead_retrieval_report.ce6cd488554c.css") layer(pages);
+@import url("/2026/static/css/views/lead_retrieval_tutorials.dd34b39b50d4.css") layer(pages);
+@import url("/2026/static/css/views/sprint_days_report.54c26f453c44.css") layer(pages);
+@import url("/2026/static/css/views/roster_report.5d87255f9eb3.css") layer(pages);
+@import url("/2026/static/css/views/special_assistance_report.34d6ba41b931.css") layer(pages);
+@import url("/2026/static/css/views/session_staff_roster.a46971fcb5c5.css") layer(pages);
+@import url("/2026/static/css/views/rooms.c28297b25a70.css") layer(pages);
+@import url("/2026/static/css/views/stripe_terminal.63512ddc8a90.css") layer(pages);
+@import url("/2026/static/css/views/lightning_talk_manage.0f24f33bd853.css") layer(pages);
+@import url("/2026/static/css/views/green_room_roster.bc617d874cf6.css") layer(pages);
+
+/* Miscellaneous */
+@import url("/2026/static/css/legacy.61ccf0c94537.css") layer(legacy);
+@import url("/2026/static/css/base/utilities.5a0ab01ccb3e.css") layer(utilities);
+
+/* Custom Styles */
+@layer base {
+  :root {
+    /* Colors */
+    --color-white: #ffffff; /* White */
+    --color-black: #272727; /* Black */
+
+    --color-gray: #8c8c8c; /* Dark Gray */
+
+    --color-purple: #680579; /* Purple */
+    --color-pink: #dd04d2; /* Pink */
+    --color-yellow: #ffd779; /* Yellow */
+    --color-red: #d47454; /* Red */ /* XXX */
+    --color-blue: #5833e9; /* Blue */
+    --color-dark-blue: #101136; /* Dark Blue */
+    --color-cyan: #25c8eb; /* Cyan */
+
+    /* Accent colors can be used for highlighting or other design elements */
+    --color-accent-1: var(--color-purple);
+    --color-accent-2: var(--color-pink);
+    --color-accent-3: var(--color-yellow);
+    --color-accent-4: var(--color-red);
+    --color-accent-5: var(--color-blue);
+    --color-accent-6: var(--color-cyan);
+
+    /* 
+      Color application
+
+      Primary and secondary colors should always contrast, light on dark or dark on light.
+      Primary and secondary colors should be used for buttons, text, or other high visibility items.
+    */
+    --primary-color: var(--color-dark-blue);
+    --secondary-color: var(--color-white);
+    --bg-color: #090a28;
+    --bg-gradient: linear-gradient(180deg, #3b3ea9 23.5%, var(--color-dark-blue) 53.29%);
+    --text-color: var(--color-white);
+    --error-color: var(--color-red);
+
+    /* Typography */
+    --font-family: 'Open Sans', serif;
+    --font-size: 16px;
+    --weight-normal: 400;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+    --weight-black: 800;
+
+    /* Type scaling */
+
+    /* Base sizing, primarily for content */
+    --size-1: 3.815rem;
+    --size-2: 3.052rem;
+    --size-3: 2.441rem;
+    --size-4: 1.953rem;
+    --size-5: 1.563rem;
+    --size-6: 1.25rem;
+    --size-7: 1rem;
+    --size-8: 0.825rem;
+    --size-9: 0.64rem;
+
+    /* Display sizing, primarily for block headings and callouts */
+    --size-display-1: calc(var(--size-1) * 1.5);
+    --size-display-2: calc(var(--size-2) * 1.5);
+    --size-display-3: calc(var(--size-3) * 1.5);
+    --size-display-4: calc(var(--size-4) * 1.5);
+    --size-display-5: calc(var(--size-5) * 1.5);
+    --size-display-6: calc(var(--size-6) * 1.5);
+    --size-display-7: calc(var(--size-7) * 1.5);
+    --size-display-8: calc(var(--size-8) * 1.5);
+    --size-display-9: calc(var(--size-9) * 1.5);
+
+    --heading-line-height: 1.18;
+
+    /* Layout */
+    --gutters: 1rem;
+    --h-spacing: var(--gutters);
+    --v-spacing: 1.5rem;
+    --container-width: 1200px;
+    --container-width-max: 1600px;
+
+    /* Forms */
+    --field-border-color: #cccccc;
+    --field-disabled-color: #eeeeee;
+
+    /* Focus */
+    --focus-outline: 4px solid var(--color-accent-2);
+    --focus-offset: 2px;
+
+    /* Card styles */
+    --card-border-radius: 0.25rem;
+    --card-border: 2px solid var(--secondary-color);
+    --card-shadow: 0 6px 0 0 var(--secondary-color);
+
+    /* Tables */
+    --table-stripe-bg: var(--primary-color);
+    --table-selected: var(--color-purple);
+
+    /* Components */
+    --cal-spacing: 0.65rem;
+
+    /* Effects */
+    --transition-speed: 0.22s;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  *:focus {
+    outline: var(--focus-outline);
+    outline-offset: var(--focus-offset);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-color);
+    background-image: var(--bg-gradient);
+    color: var(--text-color);
+  }
+
+  a {
+    color: currentColor;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  main {
+    margin: 0 0 calc(2 * var(--v-spacing));
+  }
+
+  body:not(.template-subpage, .template-homepage) {
+    background-image: url("/2026/static/images/theme/hero/stars.8f274ea6d270.svg");
+    background-repeat: no-repeat;
+    background-position: center top 1rem;
+    background-size: contain;
+
+    main {
+      padding-top: 3rem;
+    }
+  }
+
+  [rel='external']::after {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.5ch;
+    width: 1.08em;
+    height: 1.08em;
+    mask-image: url("/2026/static/icons/external-link.2a067e31c6d2.svg");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    background-color: currentColor;
+    text-indent: -9999rem;
+    content: '↗';
+  }
+
+  .value-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .value-list dt {
+    font-weight: var(--weight-bold);
+  }
+
+  .value-list dd {
+    margin-left: 0;
+  }
+
+  .video-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .translation-nav {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    :root {
+      --font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>
+            Privacy-Preserving Natural Language Querying via Schema-Driven Agent Pipelines
+            
+            
+            - PyCon US 2026
+            
+        </title>
+
+<!-- meta -->
+<meta content="" name="description"/>
+<meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
+<!-- opengraph metas -->
+<meta content="Privacy-Preserving Natural Language Querying via Schema-Driven Agent Pipelines" property="og:title"/>
+<meta content="
+Users from non-technical backgrounds often need to explore data without directly interacting with query languages or execution engines. This project … Presented by: Prazy Jindal 
+" property="og:description"/>
+<meta content="/2026/static/images/theme/pycon-banner.830104bb944e.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="675" property="og:image:height"/>
+<meta content="website" property="og:type"/>
+<meta content="PyCon US 2026" property="og:site_name"/>
+<!-- Twitter Card meta -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@pycon" name="twitter:site"/>
+<meta content="Privacy-Preserving Natural Language Querying via Schema-Driven Agent Pipelines" name="twitter:title"/>
+<meta content="
+Users from non-technical backgrounds often need to explore data without directly interacting with query languages or execution engines. This project … Presented by: Prazy Jindal 
+" name="twitter:description"/>
+<meta content="https://us.pycon.org/2026/static/images/theme/pycon-banner.830104bb944e.jpg" name="twitter:image"/>
+<!-- css -->
+<link href="/2026/static/css/main.833a2c25f91f.css" rel="stylesheet" type="text/css"/>
+<link crossorigin="anonymous" href="/2026/static/vendor/font-awesome/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" referrerpolicy="no-referrer" rel="stylesheet"/>
+<!-- favicons -->
+<!-- Three needed files for favicon +1 for PWA: -->
+<!-- https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs -->
+<link href="/2026/static/images/favicon/favicon.e49b6e6a5203.ico" rel="icon"/>
+<link href="/2026/static/images/favicon/favicon.1ee063c11cb1.svg" rel="icon" type="image/svg+xml"/>
+<link href="/2026/static/images/favicon/apple-touch-icon.f650e750d132.png" rel="apple-touch-icon"/>
+<link crossorigin="use-credentials" href="/2026/static/images/favicon/site.a742b1aa2501.webmanifest" rel="manifest"/>
+<link href="/2026/static/css/archive.css" rel="stylesheet"/></head>
+<body class=""><aside aria-label="Archive notice" class="container content archive-notice"><p>Archived PyCon US 2026 website. Registration, accounts, search, and form submissions are no longer available.</p></aside>
+<!-- Accessible Jump Navigation -->
+<nav class="skip-nav">
+<ul>
+<li><a href="/2026/schedule/presentation/122/#Content">Skip to content</a></li>
+<li><a href="/2026/schedule/presentation/122/#SiteNav">Skip to navigation</a></li>
+<li><a href="/2026/schedule/presentation/122/#SiteFooter">Skip to footer</a></li>
+</ul>
+</nav>
+<header class="site-header">
+<div aria-label="Main Navigation" class="site-nav" id="SiteNav">
+<div class="container">
+<div class="site-nav-wrapper">
+<div class="site-nav-controls">
+<a class="site-nav-logo hover-rotate-left" href="/2026/"><img alt="PyCon US 2026" class="logo-light" height="30" src="/2026/static/images/theme/sub-logo-full.94351d59d82e.svg"/><img alt="PyCon US 2026" class="logo-dark" height="30" src="/2026/static/images/theme/sub-logo-full-dark.bdcc46a28282.svg"/></a>
+
+<button aria-controls="SiteNavLists" aria-expanded="false" aria-label="Toggle navigation">
+<i class="fa-solid fa-bars"></i>
+</button>
+</div>
+<nav aria-expanded="false" class="site-nav-lists" hidden="" id="SiteNavLists">
+<ul class="site-nav-list site-nav-primary">
+<li>
+<a class="site-nav-logo hover-rotate-left" href="/2026/"><img alt="PyCon US 2026" class="logo-light" height="30" src="/2026/static/images/theme/sub-logo-full.94351d59d82e.svg"/><img alt="PyCon US 2026" class="logo-dark" height="30" src="/2026/static/images/theme/sub-logo-full-dark.bdcc46a28282.svg"/>
+</a>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-1" aria-expanded="false" aria-haspopup="true" class="" href="/2026/about/">
+    About
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-1">
+<li>
+<a class="" href="/2026/about/pycon/">
+    What is PyCon US?
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/health-safety-guidelines/">
+    Health &amp; Safety Guidelines
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/psf/">
+    Python Software Foundation
+  </a>
+</li>
+<li>
+<a class="" href="https://policies.python.org/us.pycon.org/code-of-conduct/">
+    Code of Conduct
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/diversity/">
+    Diversity
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/support/">
+    Support
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-8" aria-expanded="false" aria-haspopup="true" class="" href="/2026/sponsorship/">
+    Sponsor
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-8">
+<li>
+<a class="" href="/2026/sponsorship/why-sponsor/">
+    Why Sponsor?
+  </a>
+</li>
+<li>
+<a class="" href="/2026/sponsorship/sponsors/">
+    Sponsors
+  </a>
+</li>
+<li>
+<a class="" href="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/psf_sponsor_prospectus_feb26-compressed.pdf">
+    Sponsorship Prospectus
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-11" aria-expanded="false" aria-haspopup="true" class="" href="/2026/speaking/">
+    Speaking
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-11">
+<li>
+<a class="" href="/2026/speaking/guidelines/">
+    Proposal Guidelines
+  </a>
+</li>
+<li>
+<a class="" href="/2026/speaking/talks/">
+    Proposing a Talk
+  </a>
+</li>
+<li>
+<a class="" href="/2026/speaking/tutorials/">
+    Proposing a Tutorial
+  </a>
+</li>
+<li>
+<a class="" href="/2026/speaking/charlas/">
+    Proposing a Charlas
+  </a>
+</li>
+<li>
+<a class="" href="/2026/speaking/posters/">
+    Proposing a Poster
+  </a>
+</li>
+<li>
+<a class="" href="/2026/speaking/mentorship/">
+    Proposal Mentorship
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-21" aria-expanded="false" aria-haspopup="true" class="" href="/2026/attend/">
+    Attend
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-21">
+<li>
+<a class="" href="/2026/attend/information/">
+    Registration Information
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/onsite-information/">
+    Onsite Information
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/travel-grants/">
+    Travel Grants
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/faq/">
+    Travel Grants FAQ
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/international-travel/">
+    International Travel
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/startup-row/">
+    Startup Row
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/community-booths/">
+    Community Booths
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/expo-hall/">
+    Expo Hall
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/convince-your-boss/">
+    How to Convince Your Boss
+  </a>
+</li>
+<li>
+<a class="" href="/2026/documents/5/How_to_Convince_Your_Boss_Template.pdf">
+    How to Convince Your Boss Template
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-25" aria-expanded="false" aria-haspopup="true" class="" href="/2026/venue/">
+    Venue
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-25">
+<li>
+<a class="" href="/2026/venue/hotels/">
+    Hotels
+  </a>
+</li>
+<li>
+<a class="" href="/2026/venue/transit/">
+    Public Transit in Long Beach
+  </a>
+</li>
+<li>
+<a class="" href="/2026/venue/travel/">
+    Traveling to Long Beach
+  </a>
+</li>
+<li>
+<a class="" href="/2026/venue/maps/">
+    Maps
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/onsite-information/">
+    Onsite Information
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-33" aria-expanded="false" aria-haspopup="true" class="" href="/2026/events/">
+    Events &amp; Summits
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-33">
+<li>
+<a class="" href="/2026/events/newcomer-orientation/">
+    Newcomer Orientation
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/opening-reception/">
+    Opening Reception
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/education-summit/">
+    Education Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/webassembly-summit/">
+    Web Assembly Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/typing-summit/">
+    Typing Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/maintainers-summit/">
+    Maintainers Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/packaging-summit/">
+    Packaging Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/open-spaces/">
+    Open Spaces
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/pyladies-auction/">
+    PyLadies Auction
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/job-fair/">
+    Job Fair &amp; Community Showcase
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/pyladies-lunch/">
+    PyLadies Luncheon
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/lightning-talks/">
+    Lightning Talks
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/dev-sprints/">
+    Development Sprints
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-42" aria-expanded="false" aria-haspopup="true" class="" href="/2026/schedule/presentation/122/">
+    Schedule
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-42">
+<li>
+<a class="" href="/2026/schedule/tutorials/">
+    Tutorials (Wed. and Thurs.)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/schedule/sponsor-presentations/">
+    Sponsor Presentations (Thurs. and Fri.)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/schedule/talks/">
+    Talks (Friday - Sunday)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/schedule/open-spaces/">
+    Open Spaces (Friday - Sunday)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/schedule/posters/list/">
+    Posters (Sunday)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/keynote-speakers/">
+    Keynote Speakers
+  </a>
+</li>
+<li>
+<a class="" href="/2026/tracks/ai/">
+    AI Track (Friday)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/tracks/security/">
+    Security Track (Saturday)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/dev-sprints/">
+    Sprints (Mon. and Tues.)
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-63" aria-expanded="false" aria-haspopup="true" class="" href="/2026/volunteer/">
+    Volunteer
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-63">
+<li>
+<a class="" href="/2026/volunteer/volunteering/">
+    Volunteering
+  </a>
+</li>
+<li>
+<a class="" href="/2026/volunteer/session-staff/">
+    Session Staff
+  </a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="site-nav-list site-nav-secondary">
+<li class="hide-for-mobile">
+
+</li>
+
+
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</header>
+<main id="Content">
+<div class="container">
+<div class="presentation-detail-header mb-3">
+<hgroup class="presentation-detail-header-headline">
+<span class="pill">Posters</span>
+<h1 class="size-display-4 text-center">
+        Privacy-Preserving Natural Language Querying via Schema-Driven Agent Pipelines
+      </h1>
+</hgroup>
+<div class="presentation-detail-meta">
+<h2 class="presentation-detail-meta-headline">Presented by</h2>
+<p class="speaker-list">
+<a href="/2026/speaker/profile/131/">Prazy Jindal</a>
+</p>
+</div>
+<div class="presentation-detail-meta">
+<h2 class="presentation-detail-meta-headline">Experience Level:</h2>
+<p>Some experience</p>
+</div>
+</div>
+<div class="max-medium">
+<h2 class="size-display-6">Description</h2>
+<div class="content">
+<p>Users from non-technical backgrounds often need to explore data without directly interacting with query languages or execution engines. This project presents a <strong>privacy-preserving approach</strong> to natural language querying, where user questions are translated into structured queries without ever exposing underlying data to external models. Instead of operating on raw data, the system relies entirely on schema metadata - table names, column descriptions, relationships, and business context to guide query generation. By design, this schema-restricted approach treats privacy as a first-class constraint rather than an afterthought.</p>
+<p>The system is built around an <strong>LLM-powered</strong>, agent-driven pipeline that breaks natural language query generation into well-defined stages, including intent interpretation, schema-aware table and column selection, contextual grounding using validated examples, and structured query synthesis. The architecture separates query generation from query execution, allowing the same pipeline to support different analytical backends like Spark and PySpark. For moderately complex analytical questions, the end-to-end workflow completes in approximately 30–50 seconds.</p>
+<p>This poster presents the full pipeline architecture, explains how schema-only reasoning enables privacy-preserving query generation, and demonstrates example prompts and generated queries using synthetic datasets. The poster focuses on architectural design, particularly how privacy constraints influence pipeline structure and agent responsibilities.</p>
+</div>
+</div>
+</div>
+</main>
+<footer class="site-footer" id="SiteFooter">
+<div class="container">
+<div class="site-footer-colophon content">
+<p class="lead"><b>The PyCon US 2026 conference in Long Beach, California, USA is a production of the <a href="https://www.python.org/psf/">Python Software Foundation</a>.</b></p>
+<p>This site is built using <a href="https://www.djangoproject.com/">Django</a> and <a href="https://wagtail.org/">Wagtail</a>.
+                    <p>PyCon US 2026 illustration and design by <a href="https://meanapasc.myportfolio.com/">Meanapas.C</a> and <a href="https://tiles.bio/humblejack">Hamza Haj Taieb</a>, Coordinated by <a href="https://www.galileosparadox.com/">Georgi K</a></p>
+<p>Site design implemented by <a href="https://yupgup.com/">YupGup</a>.</p>
+<p>Need help? <a href="/2026/about/support/">Check out our Support page</a> to find the correct person to contact.</p>
+<p><a href="https://policies.python.org/PSF-Privacy-Notice/">Privacy Notice</a></p>
+</p></div>
+<div class="site-footer-aux">
+<div>
+<small>© Python Software Foundation</small>
+</div>
+<ul class="nav">
+<li>
+<a aria-label="Blog" href="https://pycon.blogspot.com/"><span class="brand large brand-blogger"></span></a>
+</li>
+<li>
+<a aria-label="LinkedIn" href="https://www.linkedin.com/company/thepsf"><span class="brand large brand-linkedin"></span></a>
+</li>
+<li>
+<a aria-label="Mastodon" href="https://fosstodon.org/@pycon"><span class="brand large brand-mastodon"></span></a>
+</li>
+<li>
+<a aria-label="X (formally Twitter)" href="https://twitter.com/pycon?lang=en"><span class="brand large brand-xtwitter"></span></a>
+</li>
+</ul>
+</div>
+</div>
+</footer>
+
+<script src="/2026/static/js/vendor/jquery-3.6.4.min.641dd1437010.js" type="text/javascript"></script>
+<script src="/2026/static/js/main.dbd960a20e46.js" type="module"></script>
+
+</body>
+</html>

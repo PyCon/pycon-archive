@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Mirrored from https://us.pycon.org/2026/speaking/guidelines/ by HTTrack Website Copier/3.x [XR&CO], Sun, 11 Oct 2026 20:01:39 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8"/>
+<title>
+            
+            Proposal Guidelines
+            
+            
+            
+            - PyCon US 2026
+            
+        </title>
+
+<!-- meta -->
+<meta content="" name="description"/>
+<meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
+<!-- opengraph metas -->
+<meta content="Proposal Guidelines" property="og:title"/>
+<meta content="PyCon US 2026" property="og:description"/>
+<meta content="/2026/static/images/theme/pycon-banner.830104bb944e.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="675" property="og:image:height"/>
+<meta content="website" property="og:type"/>
+<meta content="PyCon US 2026" property="og:site_name"/>
+<!-- Twitter Card meta -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@pycon" name="twitter:site"/>
+<meta content="Proposal Guidelines" name="twitter:title"/>
+<meta content="For the community, by the community" name="twitter:description"/>
+<meta content="https://us.pycon.org/2026/static/images/theme/pycon-banner.830104bb944e.jpg" name="twitter:image"/>
+<!-- css -->
+<link href="/2026/static/css/main.833a2c25f91f.css" rel="stylesheet" type="text/css"/>
+<link crossorigin="anonymous" href="/2026/static/vendor/font-awesome/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" referrerpolicy="no-referrer" rel="stylesheet"/>
+<!-- favicons -->
+<!-- Three needed files for favicon +1 for PWA: -->
+<!-- https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs -->
+<link href="/2026/static/images/favicon/favicon.e49b6e6a5203.ico" rel="icon"/>
+<link href="/2026/static/images/favicon/favicon.1ee063c11cb1.svg" rel="icon" type="image/svg+xml"/>
+<link href="/2026/static/images/favicon/apple-touch-icon.f650e750d132.png" rel="apple-touch-icon"/>
+<link crossorigin="use-credentials" href="/2026/static/images/favicon/site.a742b1aa2501.webmanifest" rel="manifest"/>
+<link href="/2026/static/css/archive.css" rel="stylesheet"/></head>
+<body class="template-subpage"><aside aria-label="Archive notice" class="container content archive-notice"><p>Archived PyCon US 2026 website. Registration, accounts, search, and form submissions are no longer available.</p></aside>
+<!-- Accessible Jump Navigation -->
+<nav class="skip-nav">
+<ul>
+<li><a href="/2026/speaking/guidelines/#Content">Skip to content</a></li>
+<li><a href="/2026/speaking/guidelines/#SiteNav">Skip to navigation</a></li>
+<li><a href="/2026/speaking/guidelines/#SiteFooter">Skip to footer</a></li>
+</ul>
+</nav>
+<header class="site-header">
+<div aria-label="Main Navigation" class="site-nav" id="SiteNav">
+<div class="container">
+<div class="site-nav-wrapper">
+<div class="site-nav-controls">
+<a class="site-nav-logo hover-rotate-left" href="/2026/"><img alt="PyCon US 2026" class="logo-light" height="30" src="/2026/static/images/theme/sub-logo-full.94351d59d82e.svg"/><img alt="PyCon US 2026" class="logo-dark" height="30" src="/2026/static/images/theme/sub-logo-full-dark.bdcc46a28282.svg"/></a>
+
+<button aria-controls="SiteNavLists" aria-expanded="false" aria-label="Toggle navigation">
+<i class="fa-solid fa-bars"></i>
+</button>
+</div>
+<nav aria-expanded="false" class="site-nav-lists" hidden="" id="SiteNavLists">
+<ul class="site-nav-list site-nav-primary">
+<li>
+<a class="site-nav-logo hover-rotate-left" href="/2026/"><img alt="PyCon US 2026" class="logo-light" height="30" src="/2026/static/images/theme/sub-logo-full.94351d59d82e.svg"/><img alt="PyCon US 2026" class="logo-dark" height="30" src="/2026/static/images/theme/sub-logo-full-dark.bdcc46a28282.svg"/>
+</a>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-1" aria-expanded="false" aria-haspopup="true" class="" href="/2026/about/">
+    About
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-1">
+<li>
+<a class="" href="/2026/about/pycon/">
+    What is PyCon US?
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/health-safety-guidelines/">
+    Health &amp; Safety Guidelines
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/psf/">
+    Python Software Foundation
+  </a>
+</li>
+<li>
+<a class="" href="https://policies.python.org/us.pycon.org/code-of-conduct/">
+    Code of Conduct
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/diversity/">
+    Diversity
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/support/">
+    Support
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-8" aria-expanded="false" aria-haspopup="true" class="" href="/2026/sponsorship/">
+    Sponsor
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-8">
+<li>
+<a class="" href="/2026/sponsorship/why-sponsor/">
+    Why Sponsor?
+  </a>
+</li>
+<li>
+<a class="" href="/2026/sponsorship/sponsors/">
+    Sponsors
+  </a>
+</li>
+<li>
+<a class="" href="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/psf_sponsor_prospectus_feb26-compressed.pdf">
+    Sponsorship Prospectus
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-11" aria-expanded="false" aria-haspopup="true" class="FalseTrue" href="/2026/speaking/">
+    Speaking
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-11">
+<li>
+<a aria-current="true" class="TrueTrue" href="/2026/speaking/guidelines/">
+    Proposal Guidelines
+  </a>
+</li>
+<li>
+<a class="" href="/2026/speaking/talks/">
+    Proposing a Talk
+  </a>
+</li>
+<li>
+<a class="" href="/2026/speaking/tutorials/">
+    Proposing a Tutorial
+  </a>
+</li>
+<li>
+<a class="" href="/2026/speaking/charlas/">
+    Proposing a Charlas
+  </a>
+</li>
+<li>
+<a class="" href="/2026/speaking/posters/">
+    Proposing a Poster
+  </a>
+</li>
+<li>
+<a class="" href="/2026/speaking/mentorship/">
+    Proposal Mentorship
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-21" aria-expanded="false" aria-haspopup="true" class="" href="/2026/attend/">
+    Attend
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-21">
+<li>
+<a class="" href="/2026/attend/information/">
+    Registration Information
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/onsite-information/">
+    Onsite Information
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/travel-grants/">
+    Travel Grants
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/faq/">
+    Travel Grants FAQ
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/international-travel/">
+    International Travel
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/startup-row/">
+    Startup Row
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/community-booths/">
+    Community Booths
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/expo-hall/">
+    Expo Hall
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/convince-your-boss/">
+    How to Convince Your Boss
+  </a>
+</li>
+<li>
+<a class="" href="/2026/documents/5/How_to_Convince_Your_Boss_Template.pdf">
+    How to Convince Your Boss Template
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-25" aria-expanded="false" aria-haspopup="true" class="" href="/2026/venue/">
+    Venue
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-25">
+<li>
+<a class="" href="/2026/venue/hotels/">
+    Hotels
+  </a>
+</li>
+<li>
+<a class="" href="/2026/venue/transit/">
+    Public Transit in Long Beach
+  </a>
+</li>
+<li>
+<a class="" href="/2026/venue/travel/">
+    Traveling to Long Beach
+  </a>
+</li>
+<li>
+<a class="" href="/2026/venue/maps/">
+    Maps
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/onsite-information/">
+    Onsite Information
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-33" aria-expanded="false" aria-haspopup="true" class="" href="/2026/events/">
+    Events &amp; Summits
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-33">
+<li>
+<a class="" href="/2026/events/newcomer-orientation/">
+    Newcomer Orientation
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/opening-reception/">
+    Opening Reception
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/education-summit/">
+    Education Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/webassembly-summit/">
+    Web Assembly Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/typing-summit/">
+    Typing Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/maintainers-summit/">
+    Maintainers Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/packaging-summit/">
+    Packaging Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/open-spaces/">
+    Open Spaces
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/pyladies-auction/">
+    PyLadies Auction
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/job-fair/">
+    Job Fair &amp; Community Showcase
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/pyladies-lunch/">
+    PyLadies Luncheon
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/lightning-talks/">
+    Lightning Talks
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/dev-sprints/">
+    Development Sprints
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-42" aria-expanded="false" aria-haspopup="true" class="" href="/2026/speaking/guidelines/">
+    Schedule
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-42">
+<li>
+<a class="" href="/2026/schedule/tutorials/">
+    Tutorials (Wed. and Thurs.)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/schedule/sponsor-presentations/">
+    Sponsor Presentations (Thurs. and Fri.)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/schedule/talks/">
+    Talks (Friday - Sunday)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/schedule/open-spaces/">
+    Open Spaces (Friday - Sunday)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/schedule/posters/list/">
+    Posters (Sunday)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/keynote-speakers/">
+    Keynote Speakers
+  </a>
+</li>
+<li>
+<a class="" href="/2026/tracks/ai/">
+    AI Track (Friday)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/tracks/security/">
+    Security Track (Saturday)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/dev-sprints/">
+    Sprints (Mon. and Tues.)
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-63" aria-expanded="false" aria-haspopup="true" class="" href="/2026/volunteer/">
+    Volunteer
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-63">
+<li>
+<a class="" href="/2026/volunteer/volunteering/">
+    Volunteering
+  </a>
+</li>
+<li>
+<a class="" href="/2026/volunteer/session-staff/">
+    Session Staff
+  </a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="site-nav-list site-nav-secondary">
+<li class="hide-for-mobile">
+
+</li>
+
+
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</header>
+<main id="Content">
+<div class="sub-hero">
+<div class="container">
+<div class="translation-nav">
+<span>Translations available:</span>
+<a href="/es/2026/speaking/guidelines/" hreflang="es" rel="alternate">
+          español
+      </a>
+</div>
+<h1>Proposal Guidelines</h1>
+</div>
+</div>
+<div class="content-wrapper">
+<div class="container">
+<div class="content">
+<div class="w-block-paragraph block-paragraph"><div class="text-left"><p data-block-key="klu22">We are very excited to invite everyone to Long Beach, CA, for PyCon US 2026! PyCon US is seeking speakers of all experience levels and backgrounds to contribute to our conference program! If you use Python professionally, as a hobbyist, or are just excited about Python or programming and open source communities, we’d love to hear from you.</p><p data-block-key="2vget">All speakers will be presenting their topics in person this year at the <a href="https://www.longbeachcc.com/">Long Beach Convention and Entertainment Center</a>, in Long Beach, California. Travel grants will be available to speakers, so please don’t let that be a deterrent. We want you and your ideas at PyCon US!</p><p data-block-key="cm83s">Be sure to read and understand the <a href="/2026/about/health-safety-guidelines/">Health &amp; Safety Guidelines for PyCon US 2026.</a></p><p data-block-key="ad20m">We are also excited to be using <a href="https://pretalx.com/pycon-us-2026/">Pretalx</a> again this year for our proposal submission, reviewing, and schedule building.</p><p data-block-key="9igd5">We are providing useful and important information below that will help you submit an informed and successful proposal, so please take the time to read everything thoroughly. If you have questions regarding the CFP, please email <a href="mailto:pycon-cfp@python.org">pycon-cfp@python.org</a>.</p><h3><a "="" id="timeline"></a><b>Timeline:</b></h3><ul><li data-block-key="da4uv"><b>October 31, 2025</b> — Call For Proposals Opens</li><li data-block-key="82jun"><b>November 21, 2025</b> — Deadline to participate in the <a href="/2026/speaking/mentorship/">Proposal Mentorship Program</a></li><li data-block-key="9opc3"><b>December 11, 2025</b> — Travel Grant Applications and Registration Open on the PyCon US website</li><li data-block-key="10cu4"><b>December 19, 2025</b> — Call For Proposals Closes</li><li data-block-key="72vff"><b>February 10, 12 &amp; 17, 2026**</b> — Notifications are sent to speakers</li><li data-block-key="6l240"><b>February 25, 2026</b> — Travel Grant applications close and final day for speakers to confirm attendance</li><li data-block-key="2p044"><b>March 13, 2026</b> — The schedule is posted here on the PyCon US website</li><li data-block-key="edb4n"><b>May 13-19, 2026</b> — PyCon US 2026 in Long Beach, California</li></ul><p data-block-key="94rti"><b>**</b>This year, we will be sending out three rounds of proposal notifications to speakers over a two week period. If you don’t hear a decision during the first round - don’t worry! Our committees will notify you on the status of your proposal in either the second or third round.</p><p data-block-key="5qabg">Part of PyCon US’s purpose is to generate materials to help with Python education and advocacy all over the world, so we intend to record all PyCon US Keynotes, Charlas, Talks, and Lightning Talks and release the recordings on our <a href="https://www.youtube.com/c/PyConUS">YouTube channel</a>. For the details, see the <a href="/2026/speaking/recording/">PyCon Recording Release</a>.</p><p data-block-key="26ttl"><b>Please note</b>: all presentations at PyCon US 2026 will be in person only, with no live stream taking place.</p><p data-block-key="4624o">Everyone is encouraged to submit a proposal, regardless of experience level. PyCon US thrives on having talks ranging from introductory to advanced. If you are reading this, and you are interested in speaking at PyCon US, we want you to submit a proposal.</p><p data-block-key="br7ev">Before writing up a proposal, read the following descriptions of the four kinds of presentations at PyCon US — Talks, Charlas, Tutorials, and Posters — and follow the individual page links for the proposal kind that best suits your topic.</p><p data-block-key="bakia"><b>Important Note</b>: Proposal submissions that are solely or to a large extent written or include AI-generated text by a large-scale language model (LLM) such as ChatGPT will not be accepted and disregarded without a second chance to submit.</p><h3><a "="" id="please-read-pycon-us-2026-proposal-submission-policies"></a>PLEASE READ: PyCon US 2026 Proposal Submission Policies</h3><h4><a "="" id="proposal-limit"></a>Proposal Limit</h4><p data-block-key="61m08">Although PyCon US 2026 wants to see and hear everyone’s ideas, we also want to ensure high-quality proposals and streamline the review process for our review teams. To do so, we are introducing a new proposal limit of <b><i>three proposal submissions per person</i></b>. This limit includes all submission types (Talks, Tutorials, Posters, and Charlas). If you are listed as a co-speaker on a proposal, it will count toward your total.</p><ul><li data-block-key="7ctl5"><b>Submission Limit</b>: Each individual may submit a maximum of three proposals, of any type.</li><li data-block-key="8lfvv"><b>Co-Speaking Count:</b> Proposals where you are a co-speaker will count as one of your three submissions.</li><li data-block-key="b4102"><b>Non-Compliance</b>: If an individual submits more than three proposals, none of their submissions will be reviewed by the committee.</li></ul><h4><a "="" id="two-speaker-limit"></a>Two-Speaker Limit</h4><p data-block-key="5li1s">PyCon US would love to invite as many speakers as possible to our conference, however, it’s important to maintain a diverse range of topics and speakers. To do so, proposals for Talks, Tutorials, Posters and Charlas may include a maximum of two speakers. Exceptions may be considered for podcasts and panels submitting for the Talks, reasonings for multiple speakers can be provided in the "Notes" section of your proposal.</p><p data-block-key="59s7f">For questions or clarification regarding this year’s policies, <a href="mailto:pycon-cfp@python.org">please contact the conference organizing team</a>.</p><h4><a "="" id="code-of-conduct"></a>Code of Conduct</h4><p data-block-key="90aro">All speakers are expected to have read and adhere to the conference <a href="https://policies.python.org/us.pycon.org/code-of-conduct/">Code of Conduct</a>. In particular for speakers: slide contents and spoken material should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery are not appropriate, and neither is language or imagery that denigrates or demeans people based on race, gender, religion, sexual orientation, physical appearance, disability, body size, or any other dimension of diversity.</p><h4><a "="" id="travel-grants"></a>Travel Grants</h4><p data-block-key="8pr7r"><b><i>Travel Grant applications are now closed.</i></b></p><p data-block-key="8tsmk">PyCon US does not want expenses to discourage you from submitting a proposal, and our <a href="/2026/attend/travel-grants/">Travel Grants program</a> is in place to help support speakers who need assistance. PyCon US speaker travel grants are based on financial need, not merit. The goal of the travel grant program is to bring as many individuals to PyCon US who would otherwise not be able to attend. If cost is a barrier, we encourage you to apply.</p><p data-block-key="16q0h">Although we wish we could give grants to everyone who applies, our funds are limited, and we receive hundreds of applications each year. We kindly ask that if you can attend PyCon US <b>without</b> financial assistance, please refrain from requesting a travel grant so that we can allocate funding to as many folks who require the assistance as possible.</p><p data-block-key="dopgs">When you create a speaker profile, check the box to indicate that you require a speaker grant. This is not seen by the proposal reviewers and does not affect the review of your proposal.</p><p data-block-key="8hgju"><b><i>Please note that this year’s speaker Travel Grant policy allows for a maximum of one speaker travel grant per accepted proposal.</i></b> This applies to all session types.</p><p data-block-key="ctvir">After proposals are selected, we’ll reach out to you regarding your needs. We understand situations can change and we are here for you. If you have any questions, let us know at <a href="mailto:pycon-aid@python.org">pycon-aid@python.org</a>.</p><h4><a "="" id="talks"></a>Talks</h4><p data-block-key="5rlik">These are the traditional talk sessions given during the main conference days, Friday through Sunday, May 15-17, 2026.</p><p data-block-key="15fp7">PyCon US is dedicated to featuring a diverse and inclusive mix of speakers in the lineup.</p><p data-block-key="8lco7">We will make every effort to provide accommodations for speakers and attendees of all abilities — all we ask is that you let us know so we can prepare accordingly.</p><p data-block-key="95j9b">Most talks are 30 minutes long, but we do offer a limited number of 45-minute slots for important topics that promise to benefit from a more extensive treatment. We organize the schedule by grouping talks by topic and having them in the same room for consecutive sessions.</p><h4><a "="" id="new-this-year-the-future-of-ai-with-python-track-and-python-security-track"></a>NEW THIS YEAR: The Future of AI with Python Track and Python Security Track</h4><p data-block-key="adqev">This year, PyCon US is adding two dedicated tracks to the PyCon US Talk schedule. Each track will take place during the main conference days between Friday-Sunday, May 15-17, 2026.</p><ul><li data-block-key="4n4e8"><b>Trailblazing Python Security</b> – Python users – from enterprise users to individual tinkerers – deserve a safe, malware-free experience and tools to develop secure applications. Talks for this track should focus on how to make Python and the vast collection of libraries on PyPI safer and more secure for users in many different settings.</li><li data-block-key="ap4l6"><b>The Future of AI with Python</b> – How will AI support the next generation of developers and learners? How can Python empower practitioners to make better code and better experiences for their users? Talks for this track could focus on building open source implementations for Python developers, AI as an educational tool, or the ethical responsibility that comes with building intelligent systems.</li></ul><p data-block-key="2b9ej">Submissions for these tracks are a part of the CFP. If you would like your proposal to be considered for either of these tracks, please select the “Talks” Track as usual and then either “Trailblazing Python Security” or “The Future of AI with Python” in the “Category” field during the submission process in Pretalx. All talk proposals submitted under the “Trailblazing Python Security” or “The Future of AI with Python” categories will be considered for these tracks.</p><p data-block-key="2s17">Learn more: <a href="/2026/speaking/talks/"><b>Proposing a Talk</b></a></p><h4><a "="" id="charlas"></a>Charlas</h4><p data-block-key="30cct">PyCon US Charlas (“charla” is the Spanish word for conference “talk”) will be a 2 full-day track of Python talks en Español at PyCon US on the first 2 main conference days, Friday and Saturday, May 15-16, 2026, and is open to the entire Python community.</p><p data-block-key="64dg9">If you can speak Spanish, why not submit a proposal for a charla? If you speak Spanish as a second, third, or twelfth language, please do not hesitate to participate! The call for proposals opens and closes with the rest of the CFP.</p><p data-block-key="boa1t">Learn more: <a href="/2026/speaking/charlas/"><b>Proposing a Charlas</b></a></p><h4><a "="" id="tutorials"></a>Tutorials</h4><p data-block-key="34vlf">As with the talks, we are looking for tutorials that can grow this community at any level. We aim for tutorials that will advance Python, advance this community, and shape the future. Each tutorial session runs for 3 full hours plus a break for coffee or tea. There is both a morning tutorial session and an afternoon tutorial session on the two days preceding the main conference — this year, the tutorial days are Wednesday and Thursday, May 13-14, 2026 in the same venue that hosts the main conference days that follow.</p><p data-block-key="dpron">Attention full-time trainers: Please bring your coursework to PyCon US. Every year we get several educators who bring their show on the road, so show us what you have on the syllabus for 2026.</p><p data-block-key="7ikjf">As tutorials are longer than talks and are in an interactive classroom-like setting, they require much more preparation. Due to the amount of work involved, tutorial instructors are compensated. There is a limit of at most two tutorials given by one presenter.</p><p data-block-key="6q6t9">Learn more: <a href="/2026/speaking/tutorials/"><b>Proposing a Tutorial</b></a></p><h4><a "="" id="posters"></a>Posters</h4><p data-block-key="7eru6">Posters will be displayed during the open Expo Hall hours of the conference and through the Posters Session which takes place alongside the Job Fair on Sunday, May 17, 2026.</p><p data-block-key="26gvq">A poster is a presentation of a topic on an 8′×4′ poster board. As attendees mingle through the rows, they find interesting topics, read through them, and then strike up a discussion. As with the other proposal types, we are looking to you to talk about what’s going on in this community and tell everyone where it is going. If you are doing something awesome, share it!</p><p data-block-key="egr4n">Learn more: <a href="/2026/speaking/posters/"><b>Proposing a Poster</b></a></p><h4><a "="" id="where-to-submit-your-proposal"></a>Where to Submit Your Proposal</h4><p data-block-key="arom0">Please review our <a href="/2026/speaking/pretalx/">submission instructions</a> for more details and guidelines on submitting your proposal on <a href="https://pretalx.com/pycon-us-2026/">Pretalx</a>.</p><p data-block-key="48fvr">Due to the competitive selection process, we encourage prospective speakers to submit their proposals as early as possible as it allows for participation in the <a href="/2026/speaking/mentorship/">Proposal Mentorship Program</a> to receive proposal feedback prior to the CFP deadline. - <i>Proposal Mentorship Program sign-up is now closed.</i></p><p data-block-key="1re8n">PyCon US is using Pretalx again in 2026. It is a highly recommended platform that provides a very seamless process for submitting, reviewing, and scheduling for PyCon US.</p><p data-block-key="9lcuh">Please follow the below steps to submit your proposal.</p><p data-block-key="1susd"><b><i>Important note</i></b><i>: when creating a speaker profile on Pretalx, it is important to use the same email address used to create your account on us.pycon.org/2026/.</i></p><ol><li data-block-key="ec9qt">To submit your proposal, first head to <a href="https://pretalx.com/pycon-us-2026/">Pretalx</a>.</li><li data-block-key="9fili">You will arrive at the PyCon US 2026 Pretalx landing page. Here, you will see two buttons: “Edit or View Your Proposals” and “Go to CFP”.</li><li data-block-key="4r7dq">To submit a new proposal, click “Go to CFP” then “Submit a Proposal”.</li><li data-block-key="9g9g6">Follow the steps provided. Please be sure to read the help text for each section while filling out your proposal.</li><li data-block-key="1sncp">Important: Make sure the “Session Type” and “Track” selections are the same; ie if you select ‘Tutorial’ for the session type, please be sure to select ‘Tutorial’ for the track as well. If you’d like your talk proposal to be considered for either of our thematic talk tracks this year, please select the “Talks” Track per usual and select either “The Future of AI with Python” or “Trailblazing Python Security” in the “Category” field.</li><li data-block-key="698g9">You will be prompted to set up your Pretalx account in Step 3 of the submission process, this will be your speaker profile.</li><li data-block-key="d59fr">Once your proposal is filled out and your account and speaker profile information have been entered, you will see the button to submit your proposal.</li><li data-block-key="5i31t">After your proposal is submitted, you will be able to edit and review your proposal up until the date of the CFP deadline. This can be done via the landing page by clicking the button “Edit or View Your Proposals”.</li><li data-block-key="7gkel">An email confirmation will be sent to you once your proposal has been submitted.</li></ol></div></div>
+<div class="w-block-html block-html"><div style="text-align:center;"><button style="background-color: blue; color: white; padding: 25px 30px; border-radius: 10px;">Call for Proposals are Closed</button></div></div>
+<div class="w-block-paragraph block-paragraph"><div class="text-left"><h4><a "="" id="about-pycon-us-2026"></a>About PyCon US 2026</h4><p data-block-key="7bb40">PyCon US is the largest annual gathering for the community using and developing the open-source Python programming language. It is produced and underwritten by the <a href="https://www.python.org/psf-landing/">Python Software Foundation</a>, the 501(c)(3) nonprofit organization dedicated to advancing and promoting Python. Through PyCon US, the PSF advances its mission of growing the international community of Python programmers.</p><p data-block-key="en6kl">PyCon US is really four events in a row. Learn more about <a href="/2026/about/pycon/">what PyCon US has to offer</a>.</p></div></div>
+</div>
+</div>
+</div>
+</main>
+<footer class="site-footer" id="SiteFooter">
+<div class="container">
+<div class="site-footer-colophon content">
+<p class="lead"><b>The PyCon US 2026 conference in Long Beach, California, USA is a production of the <a href="https://www.python.org/psf/">Python Software Foundation</a>.</b></p>
+<p>This site is built using <a href="https://www.djangoproject.com/">Django</a> and <a href="https://wagtail.org/">Wagtail</a>.
+                    <p>PyCon US 2026 illustration and design by <a href="https://meanapasc.myportfolio.com/">Meanapas.C</a> and <a href="https://tiles.bio/humblejack">Hamza Haj Taieb</a>, Coordinated by <a href="https://www.galileosparadox.com/">Georgi K</a></p>
+<p>Site design implemented by <a href="https://yupgup.com/">YupGup</a>.</p>
+<p>Need help? <a href="/2026/about/support/">Check out our Support page</a> to find the correct person to contact.</p>
+<p><a href="https://policies.python.org/PSF-Privacy-Notice/">Privacy Notice</a></p>
+</p></div>
+<div class="site-footer-aux">
+<div>
+<small>© Python Software Foundation</small>
+</div>
+<ul class="nav">
+<li>
+<a aria-label="Blog" href="https://pycon.blogspot.com/"><span class="brand large brand-blogger"></span></a>
+</li>
+<li>
+<a aria-label="LinkedIn" href="https://www.linkedin.com/company/thepsf"><span class="brand large brand-linkedin"></span></a>
+</li>
+<li>
+<a aria-label="Mastodon" href="https://fosstodon.org/@pycon"><span class="brand large brand-mastodon"></span></a>
+</li>
+<li>
+<a aria-label="X (formally Twitter)" href="https://twitter.com/pycon?lang=en"><span class="brand large brand-xtwitter"></span></a>
+</li>
+</ul>
+</div>
+</div>
+</footer>
+
+<script src="/2026/static/js/vendor/jquery-3.6.4.min.641dd1437010.js" type="text/javascript"></script>
+<script src="/2026/static/js/main.dbd960a20e46.js" type="module"></script>
+
+</body>
+<!-- Mirrored from https://us.pycon.org/2026/speaking/guidelines/ by HTTrack Website Copier/3.x [XR&CO], Sun, 11 Oct 2026 20:01:39 GMT -->
+</html>

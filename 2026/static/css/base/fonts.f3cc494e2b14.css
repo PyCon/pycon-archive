@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'NotoEmoji';
+  src:
+    local('NotoEmoji'),
+    url("/2026/static/font/Noto-Emoji/NotoEmoji-Regular.74a68c700389.ttf") format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'NotoEmoji';
+  src:
+    local('NotoEmoji'),
+    url("/2026/static/font/Noto-Emoji/NotoEmoji-Medium.d069fe4c7994.ttf") format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src:
+    local('Open Sans'),
+    url("/2026/static/font/Open-Sans/OpenSans-Regular.94d168f74b7d.ttf") format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src:
+    local('Open Sans'),
+    url("/2026/static/font/Open-Sans/OpenSans-Italic.cb1fe0e823d6.ttf") format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src:
+    local('Open Sans'),
+    url("/2026/static/font/Open-Sans/OpenSans-SemiBold.ebebb4b54355.ttf") format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src:
+    local('Open Sans'),
+    url("/2026/static/font/Open-Sans/OpenSans-Bold.6bbd5cf43b71.ttf") format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src:
+    local('Open Sans'),
+    url("/2026/static/font/Open-Sans/OpenSans-ExtraBold.73e878b76363.ttf") format('truetype');
+  font-weight: 800;
+}

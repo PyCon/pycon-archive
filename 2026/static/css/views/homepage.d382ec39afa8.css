@@ -1,0 +1,85 @@
+/* Framing */
+.template-homepage main {
+  margin-top: 0;
+}
+
+.template-homepage .site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 20;
+}
+
+@media (max-width: 1139px) {
+  .template-homepage .site-header {
+    /*background-color: #3918b8;*/ /* Blend in with the hero */
+    position: fixed;
+  }
+}
+
+/* Home hero */
+.home-hero {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-top: clamp(calc(1rem + 120px), 5vw, calc(4rem + 120px));
+  padding-bottom: 44vw;
+  background-image: url("/2026/static/images/theme/hero/hero-fg.3ab59249863d.svg"), url("/2026/static/images/theme/hero/stars.8f274ea6d270.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    center bottom,
+    center top 1rem;
+  background-size: contain, contain;
+  width: 100%;
+
+  aspect-ratio: 1920 / 800;
+}
+
+.home-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 98%;
+  background-image: linear-gradient(180deg, #3b3ea9 0%, #101136 150%);
+  border-bottom-left-radius: 50% 100px;
+  border-bottom-right-radius: 50% 100px;
+  z-index: -2;
+}
+
+.home-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 98%;
+  background-image: linear-gradient(180deg, #3d15bf 25%, #a11dc3 40%, #f237e2 56%, #ffe5a4 70%, #aaff00 90%);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  border-bottom-left-radius: 50% 100px;
+  border-bottom-right-radius: 50% 100px;
+  z-index: -1;
+  transition: opacity var(--transition-speed) ease-in-out;
+}
+
+.site-header.is-open ~ main > .home-hero::after {
+  opacity: 0;
+}
+
+.home-hero-logo {
+  display: block;
+  margin: 0 auto;
+  width: clamp(120px, 40vw, 540px);
+}
+
+@media (min-width: 1140px) {
+  .home-hero {
+    background-position:
+      center bottom,
+      center top 4rem;
+  }
+}

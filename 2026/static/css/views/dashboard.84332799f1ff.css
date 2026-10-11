@@ -1,0 +1,56 @@
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.card:empty {
+  display: none;
+}
+
+.dashboard-card .card-heading,
+.dashboard-card h3 {
+  font-size: var(--size-5);
+}
+
+.dashboard-section-heading {
+  font-size: var(--size-3);
+}
+
+/* Speaking section header with inline template downloads */
+.speaking-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.speaking-header h3 {
+  margin: 0;
+}
+
+.speaking-header .actions {
+  margin: 0;
+}
+
+.dashboard-proposals-table td,
+.dashboard-proposals-table th {
+  vertical-align: middle;
+}
+
+.dashboard-proposals-table .actions-cell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .dashboard-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dashboard-section {
+    grid-column: span 2;
+  }
+}
