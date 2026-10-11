@@ -1,0 +1,112 @@
+.button,
+button,
+input[type='button'],
+input[type='submit'] {
+  -webkit-appearance: none;
+
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5ch;
+
+  padding: 0.625em 1em;
+
+  box-shadow: 0px 0px 18px 0px #ffc0cb80;
+
+  border: 1.5px solid var(--color-gray);
+  border-radius: 0.5em;
+
+  background-color: var(--secondary-color);
+
+  font-size: 1rem;
+  font-weight: var(--weight-semibold);
+  line-height: 1;
+  text-decoration: none;
+  color: var(--primary-color);
+
+  cursor: pointer;
+
+  transition: all 0.2s;
+}
+
+.button:hover,
+button:hover,
+input[type='button']:hover,
+input[type='submit']:hover {
+  background-color: #dbeafe;
+}
+
+/* Sizes */
+.button.xsmall {
+  font-size: 0.75rem;
+}
+
+.button.small {
+  font-size: 0.875rem;
+}
+
+.button.large {
+  font-size: 1.25rem;
+}
+
+.button.xlarge {
+  font-size: 1.5rem;
+}
+
+.button.xxlarge {
+  font-size: 2rem;
+}
+
+/* Styles */
+.button.focal {
+  box-shadow: none;
+  border-color: currentColor;
+  background-color: var(--color-accent-5);
+  color: var(--secondary-color);
+}
+
+.button.solid {
+  box-shadow: none;
+  border-color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.button.focal:hover,
+.button.solid:hover {
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+
+.button
+
+/* States */
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Collections of buttons/actions */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.actions.center {
+  justify-content: center;
+}
+
+/* Style button as links */
+.button.link {
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}

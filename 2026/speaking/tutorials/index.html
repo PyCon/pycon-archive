@@ -1,0 +1,469 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Mirrored from https://us.pycon.org/2026/speaking/tutorials/ by HTTrack Website Copier/3.x [XR&CO], Sun, 11 Oct 2026 20:01:40 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8"/>
+<title>
+            
+            Proposing a Tutorial
+            
+            
+            
+            - PyCon US 2026
+            
+        </title>
+
+<!-- meta -->
+<meta content="" name="description"/>
+<meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
+<!-- opengraph metas -->
+<meta content="Proposing a Tutorial" property="og:title"/>
+<meta content="PyCon US 2026" property="og:description"/>
+<meta content="/2026/static/images/theme/pycon-banner.830104bb944e.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="675" property="og:image:height"/>
+<meta content="website" property="og:type"/>
+<meta content="PyCon US 2026" property="og:site_name"/>
+<!-- Twitter Card meta -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@pycon" name="twitter:site"/>
+<meta content="Proposing a Tutorial" name="twitter:title"/>
+<meta content="For the community, by the community" name="twitter:description"/>
+<meta content="https://us.pycon.org/2026/static/images/theme/pycon-banner.830104bb944e.jpg" name="twitter:image"/>
+<!-- css -->
+<link href="/2026/static/css/main.833a2c25f91f.css" rel="stylesheet" type="text/css"/>
+<link crossorigin="anonymous" href="/2026/static/vendor/font-awesome/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" referrerpolicy="no-referrer" rel="stylesheet"/>
+<!-- favicons -->
+<!-- Three needed files for favicon +1 for PWA: -->
+<!-- https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs -->
+<link href="/2026/static/images/favicon/favicon.e49b6e6a5203.ico" rel="icon"/>
+<link href="/2026/static/images/favicon/favicon.1ee063c11cb1.svg" rel="icon" type="image/svg+xml"/>
+<link href="/2026/static/images/favicon/apple-touch-icon.f650e750d132.png" rel="apple-touch-icon"/>
+<link crossorigin="use-credentials" href="/2026/static/images/favicon/site.a742b1aa2501.webmanifest" rel="manifest"/>
+<link href="/2026/static/css/archive.css" rel="stylesheet"/></head>
+<body class="template-subpage"><aside aria-label="Archive notice" class="container content archive-notice"><p>Archived PyCon US 2026 website. Registration, accounts, search, and form submissions are no longer available.</p></aside>
+<!-- Accessible Jump Navigation -->
+<nav class="skip-nav">
+<ul>
+<li><a href="/2026/speaking/tutorials/#Content">Skip to content</a></li>
+<li><a href="/2026/speaking/tutorials/#SiteNav">Skip to navigation</a></li>
+<li><a href="/2026/speaking/tutorials/#SiteFooter">Skip to footer</a></li>
+</ul>
+</nav>
+<header class="site-header">
+<div aria-label="Main Navigation" class="site-nav" id="SiteNav">
+<div class="container">
+<div class="site-nav-wrapper">
+<div class="site-nav-controls">
+<a class="site-nav-logo hover-rotate-left" href="/2026/"><img alt="PyCon US 2026" class="logo-light" height="30" src="/2026/static/images/theme/sub-logo-full.94351d59d82e.svg"/><img alt="PyCon US 2026" class="logo-dark" height="30" src="/2026/static/images/theme/sub-logo-full-dark.bdcc46a28282.svg"/></a>
+
+<button aria-controls="SiteNavLists" aria-expanded="false" aria-label="Toggle navigation">
+<i class="fa-solid fa-bars"></i>
+</button>
+</div>
+<nav aria-expanded="false" class="site-nav-lists" hidden="" id="SiteNavLists">
+<ul class="site-nav-list site-nav-primary">
+<li>
+<a class="site-nav-logo hover-rotate-left" href="/2026/"><img alt="PyCon US 2026" class="logo-light" height="30" src="/2026/static/images/theme/sub-logo-full.94351d59d82e.svg"/><img alt="PyCon US 2026" class="logo-dark" height="30" src="/2026/static/images/theme/sub-logo-full-dark.bdcc46a28282.svg"/>
+</a>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-1" aria-expanded="false" aria-haspopup="true" class="" href="/2026/about/">
+    About
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-1">
+<li>
+<a class="" href="/2026/about/pycon/">
+    What is PyCon US?
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/health-safety-guidelines/">
+    Health &amp; Safety Guidelines
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/psf/">
+    Python Software Foundation
+  </a>
+</li>
+<li>
+<a class="" href="https://policies.python.org/us.pycon.org/code-of-conduct/">
+    Code of Conduct
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/diversity/">
+    Diversity
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/support/">
+    Support
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-8" aria-expanded="false" aria-haspopup="true" class="" href="/2026/sponsorship/">
+    Sponsor
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-8">
+<li>
+<a class="" href="/2026/sponsorship/why-sponsor/">
+    Why Sponsor?
+  </a>
+</li>
+<li>
+<a class="" href="/2026/sponsorship/sponsors/">
+    Sponsors
+  </a>
+</li>
+<li>
+<a class="" href="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/psf_sponsor_prospectus_feb26-compressed.pdf">
+    Sponsorship Prospectus
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-11" aria-expanded="false" aria-haspopup="true" class="FalseTrue" href="/2026/speaking/">
+    Speaking
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-11">
+<li>
+<a class="" href="/2026/speaking/guidelines/">
+    Proposal Guidelines
+  </a>
+</li>
+<li>
+<a class="" href="/2026/speaking/talks/">
+    Proposing a Talk
+  </a>
+</li>
+<li>
+<a aria-current="true" class="TrueTrue" href="/2026/speaking/tutorials/">
+    Proposing a Tutorial
+  </a>
+</li>
+<li>
+<a class="" href="/2026/speaking/charlas/">
+    Proposing a Charlas
+  </a>
+</li>
+<li>
+<a class="" href="/2026/speaking/posters/">
+    Proposing a Poster
+  </a>
+</li>
+<li>
+<a class="" href="/2026/speaking/mentorship/">
+    Proposal Mentorship
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-21" aria-expanded="false" aria-haspopup="true" class="" href="/2026/attend/">
+    Attend
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-21">
+<li>
+<a class="" href="/2026/attend/information/">
+    Registration Information
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/onsite-information/">
+    Onsite Information
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/travel-grants/">
+    Travel Grants
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/faq/">
+    Travel Grants FAQ
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/international-travel/">
+    International Travel
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/startup-row/">
+    Startup Row
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/community-booths/">
+    Community Booths
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/expo-hall/">
+    Expo Hall
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/convince-your-boss/">
+    How to Convince Your Boss
+  </a>
+</li>
+<li>
+<a class="" href="/2026/documents/5/How_to_Convince_Your_Boss_Template.pdf">
+    How to Convince Your Boss Template
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-25" aria-expanded="false" aria-haspopup="true" class="" href="/2026/venue/">
+    Venue
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-25">
+<li>
+<a class="" href="/2026/venue/hotels/">
+    Hotels
+  </a>
+</li>
+<li>
+<a class="" href="/2026/venue/transit/">
+    Public Transit in Long Beach
+  </a>
+</li>
+<li>
+<a class="" href="/2026/venue/travel/">
+    Traveling to Long Beach
+  </a>
+</li>
+<li>
+<a class="" href="/2026/venue/maps/">
+    Maps
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/onsite-information/">
+    Onsite Information
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-33" aria-expanded="false" aria-haspopup="true" class="" href="/2026/events/">
+    Events &amp; Summits
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-33">
+<li>
+<a class="" href="/2026/events/newcomer-orientation/">
+    Newcomer Orientation
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/opening-reception/">
+    Opening Reception
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/education-summit/">
+    Education Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/webassembly-summit/">
+    Web Assembly Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/typing-summit/">
+    Typing Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/maintainers-summit/">
+    Maintainers Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/packaging-summit/">
+    Packaging Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/open-spaces/">
+    Open Spaces
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/pyladies-auction/">
+    PyLadies Auction
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/job-fair/">
+    Job Fair &amp; Community Showcase
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/pyladies-lunch/">
+    PyLadies Luncheon
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/lightning-talks/">
+    Lightning Talks
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/dev-sprints/">
+    Development Sprints
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-42" aria-expanded="false" aria-haspopup="true" class="" href="/2026/speaking/tutorials/">
+    Schedule
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-42">
+<li>
+<a class="" href="/2026/schedule/tutorials/">
+    Tutorials (Wed. and Thurs.)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/schedule/sponsor-presentations/">
+    Sponsor Presentations (Thurs. and Fri.)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/schedule/talks/">
+    Talks (Friday - Sunday)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/schedule/open-spaces/">
+    Open Spaces (Friday - Sunday)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/schedule/posters/list/">
+    Posters (Sunday)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/keynote-speakers/">
+    Keynote Speakers
+  </a>
+</li>
+<li>
+<a class="" href="/2026/tracks/ai/">
+    AI Track (Friday)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/tracks/security/">
+    Security Track (Saturday)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/dev-sprints/">
+    Sprints (Mon. and Tues.)
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-63" aria-expanded="false" aria-haspopup="true" class="" href="/2026/volunteer/">
+    Volunteer
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-63">
+<li>
+<a class="" href="/2026/volunteer/volunteering/">
+    Volunteering
+  </a>
+</li>
+<li>
+<a class="" href="/2026/volunteer/session-staff/">
+    Session Staff
+  </a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="site-nav-list site-nav-secondary">
+<li class="hide-for-mobile">
+
+</li>
+
+
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</header>
+<main id="Content">
+<div class="sub-hero">
+<div class="container">
+<div class="translation-nav">
+<span>Translations available:</span>
+<a href="/es/2026/speaking/tutorials/" hreflang="es" rel="alternate">
+          español
+      </a>
+</div>
+<h1>Proposing a Tutorial</h1>
+</div>
+</div>
+<div class="content-wrapper">
+<div class="container">
+<div class="content">
+<div class="w-block-paragraph block-paragraph"><div class="text-left"><p data-block-key="l9ol9">Are you an experienced speaker or instructor? Want to teach PyCon US attendees a new skill, library, or technology? Apply to be one of our tutorial instructors for PyCon US 2026! PyCon US 2026 tutorials will be held May 13 - May 14, 2026, at the <a href="https://www.longbeachcc.com/">Long Beach Convention and Entertainment Center</a> in Long Beach, California for PyCon US 2026!</p><p data-block-key="8evvc">Please note that tutorials will not be recorded this year at PyCon US 2026.</p><p data-block-key="hbh9">Remember to check the <a href="/2026/speaking/guidelines/"><b>Proposal Guidelines</b></a><b>,</b> where you will find the steps to submit your proposal</p><p data-block-key="dokbq"><b>Call for Proposals is now closed.</b></p><h4><a "="" id="weve-provided-some-examples-of-tutorial-proposals-weve-loved-in-the-past"></a>We’ve provided some examples of <a href="https://us.pycon.org/2024/speaking/tutorials/samples/">tutorial proposals we’ve loved in the past</a>.</h4><p data-block-key="2t4g1">Please read through these, as well as the remainder of this page, before writing your proposal. This should give you an idea of what we are looking for.</p><h3><a "="" id="for-submitting-tutorials-fill-in-the-fields-as-follows"></a><b>For Submitting Tutorials, Fill in the Fields as Follows:</b></h3><h4><a "="" id="title"></a><b>Title</b></h4><p data-block-key="3fe6k">Give your tutorial a name that accurately describes the tutorial’s focus to potential students.</p><h4><a "="" id="description"></a><b>Description</b></h4><p data-block-key="f1nds">A high-level description of the tutorial, limited to ~300 words. The description is used to describe your tutorial on the PyCon US website should it be selected. We ask that you make it brief.</p><h4><a "="" id="audience"></a><b>Audience</b></h4><p data-block-key="b7626">At what level of Python and other topic-specific experience or expertise is the tutorial aiming for?</p><p data-block-key="3n01n">The audience selections in the proposal submission form are as follows:</p><ul><li data-block-key="apv3s"><b>Just starting out:</b> introductory, anyone can follow along without previous context</li><li data-block-key="1d0dt"><b>Some experience:</b> some background knowledge/context is required</li><li data-block-key="72i83"><b>Advance experience:</b> attendees must know the material to follow the session</li></ul><p data-block-key="4rtuk">These levels mean something different to everyone, however we ask that you select the most accurate audience level so attendees can decide if it is a good fit for them to attend. Feel free to include additional detail regarding the sort of background expected, as well as who may benefit. Reviewers need to know what level of Python experience is targeted and also what level(s) of domain-specific expertise is targeted, for example, networking, SQL, database, etc. See our <a href="https://us.pycon.org/2024/speaking/tutorials/samples/">sample tutorial proposals</a> for details.</p><h4><a "="" id="format"></a><b>Format</b></h4><p data-block-key="9dgl5">Please describe what portion of the tutorial you plan to spend on student exercises, lecture, or other activities. We don’t want precision, we just want to know what teaching tools you’ll use, and how interactive your tutorial will be. If you want to describe this via other means, feel free.</p><h4><a "="" id="outline"></a><b>Outline</b></h4><p data-block-key="7fc6v">Your outline should list the topics and activities you will guide your students through during your 3-hour tutorial. You may wish to consult the <a href="https://guides.github.com/features/mastering-markdown/">markdown guide</a> for styling. <b>Please err on the side of ‘too much detail’ rather than ‘not enough’.</b> <b>One of the most common reasons for us not accepting a tutorial is lack of detail.</b></p><p data-block-key="1lmgf">You should also include timing notes, estimating what portion of your tutorial you’ll devote to each major topic (usually there are 2-5 of those).</p><p data-block-key="c0m3b">The outline will not be shared with conference attendees.</p><p data-block-key="ee8i8"><b><i>What should my timing notes look like? How precise do I need to be?</i></b></p><p data-block-key="6e4as">We request you provide a rough estimate of how much time (or percentage of the talk) you’ll dedicate to each major topic (not subtopics). We recommend these timings be no more precise than 30-minute increments, but we’ll allow some leeway. Please don’t give your timings down to the minute!</p><p data-block-key="dj7nc">Alternatively, you are welcome to provide the portion of time you expect to spend on each major topic. Please indicate whether you are using percentages or minutes.</p><p data-block-key="a3glm"><b><i>Why an outline with timings?</i></b></p><p data-block-key="b88tj">We want to assess what topics the tutorial will focus most on, as well as the level of students the course is appropriate for. For example, a course that spends 2.5 hours on simple concepts and ends with a brief tour of advanced features is more appropriate for a beginner audience than one with the opposite structure.</p><p data-block-key="dmbtb">It is also here to help you think about your material: can your planned material be realistically presented in the time allotted and in the depth they want?</p><p data-block-key="2iii9">It’s fine if these timings change in the final tutorial.</p><h4><a "="" id="past-experience"></a><b>Past Experience</b></h4><p data-block-key="a4lnq">Please summarize your teaching or public speaking experience, as well as your experience with the subject of the tutorial.</p><p data-block-key="ahd1r">Tell us what experience you have in the subject, in activities such as teaching or public speaking, or anything else that would help us understand and gauge your abilities as a tutorial presenter.</p><p data-block-key="8i63d">This section will not be published on the PyCon US schedule. However, it is important, as we do give preference to those with speaking and teaching experience.</p><h4><a "="" id="example-presentations"></a><b>Example Presentations</b></h4><p data-block-key="81g25">If possible, include a link to a video and slides from the tutorial itself (if it’s been presented before). Otherwise, please record a sample presentation (it can be brief) and link to it.</p><h4><a "="" id="notes"></a><b>Notes</b></h4><p data-block-key="egvpd">This section is a place for submitters to communicate with the reviewers. You can use this space to describe anything you think might be relevant for us to help make you successful in your presentation. Additionally, you can include more materials related to your proposal that may help inform us about your topic.</p><h4><a "="" id="internet-requirements-prep-for-tutorial"></a><b>Internet Requirements (Prep for Tutorial)</b></h4><p data-block-key="enbol">Reasoning: We will ask you to email attendees ahead of time with any necessary installation and download instructions, but it is likely that some will not prepare ahead of time/will enroll day-of. We want to know how you’ll handle this.</p><h4><a "="" id="internet-requirements-during-tutorial"></a><b>Internet Requirements (During tutorial)</b></h4><p data-block-key="88ib9">Internet at the conference is limited and may be unreliable. We want to know how you’ll be handling our limited bandwidth and whether you will have a way for attendees to complete the tutorial if internet connectivity is lost. <b>Please note that we expect attendees to have less than 1Mbps of bandwith each.</b></p><h4><a "="" id="requestsaccessibility"></a><b>Requests/Accessibility</b></h4><p data-block-key="bfmjt">We will accommodate disability-related needs whenever reasonable, and the merit of your tutorial will be judged independently from any request made here. This section will not be visible to attendees.</p><h4><a "="" id="known-conflicts"></a><b>Known Conflicts</b></h4><p data-block-key="1j022">Please note that there may be Summits, such as the Education Summit, occurring on May 13th and 14th (conflicting with the tutorial days).</p><h4><a "="" id="guidelines-for-proposals-and-tutorials"></a><b>Guidelines for Proposals and Tutorials</b></h4><p data-block-key="9h2te">Here are some notes about the proposal, selection, and delivery process for tutorials.</p><ul><li data-block-key="bpdb9">Biography: You’ll be asked to enter your biography when you register on this site and that information will be made public. Here, you may wish to include more information for reviewers to complement information about your past experience.</li><li data-block-key="d8t4d">PyCon US does not want expenses to discourage you from submitting a proposal, and offers speaker grants to ensure that anyone can speak at PyCon US. When you create a speaker profile, check the box to indicate that you require a speaker grant. This is not seen by the proposal reviewers and does not affect the review of your proposal. After proposals are selected, we’ll reach out to you regarding your needs. We understand situations can change and we are here for you. If you have any questions let us know at <a href="mailto:pycon-aid@python.org">pycon-aid@python.org</a>. Please keep in mind that accepted tutorial presenters will receive a $1,500 honorarium and there is a limit to two speakers per tutorial.</li><li data-block-key="e4hmh">The selection process has also tended to prefer Python-related topics over more general software development tools or practices that aren’t Python-specific.</li><li data-block-key="eugdh">Tutorials are subject to cancellation if enrollment is low. In the past, the cancellation criterion has been less than 10 students registered.</li></ul><h3><a "="" id="qampa"></a><b>Q&amp;A</b></h3><h4><a "="" id="q-who-should-apply"></a><b>Q: Who should apply?</b></h4><p data-block-key="711or">While we don’t speak in absolutes, <i>we’d like to see that presenters have experience with teaching, public speaking, or both.</i> This assures us that you’re prepared to deliver what you’ve promised and understand the work going in. If you’ve never engaged in teaching or public speaking, we encourage you to gain more experience first. For example, you can submit talks (rather than tutorials) or teach with local user groups.</p><h4><a "="" id="q-what-can-i-do-to-increase-the-likelihood-my-tutorial-is-accepted"></a><b>Q: What can I do to increase the likelihood my tutorial is accepted?</b></h4><p data-block-key="qgqa">Things we like to see include:</p><ul><li data-block-key="264dg">A clear description of the target audience: This helps attendees know whether the tutorial is right for them and allows us to assess whether the presenter knows whether the material is appropriate for a given audience.</li><li data-block-key="dujdf">Reasonable learning goals: These should demonstrate what the attendees will learn and be able to do after attending the class.</li><li data-block-key="dvbe0">Readability counts: We like outlines that are easy to understand. Markdown is a great tool for giving your submission clear formatting, allowing us to distinguish, at first glance, between topics and sub-topics. Check out this <a href="https://guides.github.com/features/mastering-markdown/#">Mastering Markdown tutorial</a> to help you craft a readable submission. After submitting, please check to make sure your submission has been rendered properly.</li><li data-block-key="2qj4c">Material that clearly should be presented as a tutorial (rather than a talk): Tutorial spaces are limited, and if the material can be presented more concisely, and to a bigger audience by turning it into a talk, we prefer that.</li><li data-block-key="1p2fv">Thoughtfulness regarding time: We like to see that submitters have considered how much is reasonable to cover in a given time period and how the material might change based on the audience. To demonstrate this, you may choose to include: What topics could run over, how you’ll provide buffer time (if you need it), and what topics you might adjust if things go unexpectedly fast or slow. Think explicitly about what you can reasonably cover in the time given.</li></ul><p data-block-key="bv295"><b><i>Please note that even if your tutorial is excellent, there’s no guarantee that it will be accepted.</i></b> The tutorial selection process attempts to choose a good variety of tutorial topics and levels that will be in demand, i.e., it doesn’t just select the best proposals!</p><h4><a "="" id="q-what-should-i-avoid-in-my-tutorial-proposal"></a><b>Q: What should I avoid in my tutorial proposal?</b></h4><p data-block-key="a7tkl">Your tutorial is less likely to be approved if it includes:</p><ul><li data-block-key="fpf17">Requirements that attendees prepare for the tutorial ahead of time or install additional software packages (especially large ones, which they may be unable to download at the conference).</li><li data-block-key="3mc0i">The use of tools that cost money or are proprietary.</li><li data-block-key="efl7">Being negative about other languages, platforms, and paradigms.</li><li data-block-key="2qfsi">We will not accept any tutorial that violates the <a href="https://policies.python.org/us.pycon.org/code-of-conduct/">PyCon US Code of Conduct</a>.</li></ul><h4><a "="" id="q-how-can-i-see-which-tutorials-have-been-accepted-in-the-past-beyond-the-samples-provided-above"></a><b>Q: How can I see which tutorials have been accepted in the past (beyond the samples provided above)?</b></h4><p data-block-key="b29v5">You can see an array of some of the topics others have presented at our past conference sites.</p><ul><li data-block-key="6vh8b"><a href="https://us.pycon.org/2025/schedule/tutorials/"><b>PyCon US 2025 Tutorials</b></a></li><li data-block-key="bu1l5"><a href="https://pycon-archive.python.org/2024/schedule/tutorials/index.html"><b>PyCon US 2024 Tutorials</b></a></li><li data-block-key="9iu93"><a href="https://pycon-archive.python.org/2023/schedule/tutorials/index.html"><b>PyCon US 2023 Tutorials</b></a></li><li data-block-key="c3ssf"><a href="https://pycon-archive.python.org/2022/schedule/tutorials/index.html"><b>PyCon US 2022 Tutorials</b></a></li><li data-block-key="ej1j3"><a href="http://us.pycon.org/2019/schedule/tutorials/"><b>PyCon US 2019 Tutorials</b></a></li><li data-block-key="4gib6"><a href="http://us.pycon.org/2018/schedule/tutorials/"><b>PyCon US 2018 Tutorials</b></a></li></ul><h4><a "="" id="q-is-there-an-honorarium-if-so-why"></a><b>Q: Is there an honorarium? If so, why?</b></h4><p data-block-key="f8hab">Tutorials require significantly more preparation than talks. To compensate the instructor(s) for the time they must take away from work or other activities, we provide a $1,500 honorarium per tutorial.</p><p data-block-key="e8kck">We will need to collect a <a href="https://www.irs.gov/pub/irs-pdf/fw8ben.pdf">W9 form</a> from US taxpayers.</p><p data-block-key="fv6aj">If you are a non-US taxpayer, you will need to fill out a <a href="https://www.irs.gov/pub/irs-pdf/fw8ben.pdf">W8BEN form</a>.</p><h4><a "="" id="q-help-im-traveling-from-another-country-without-a-work-visa-and-cannot-accept-the-stipend"></a><b>Q: Help! I’m traveling from another country without a work visa, and cannot accept the stipend.</b></h4><p data-block-key="3qss8">We understand that without a work visa, many of our international applicants may be unable to accept the stipend. Unfortunately, we can’t get you a work visa. However, our financial aid application is open to all. If you can accept financial aid, we encourage you to apply to help cover the cost of attending.</p><h4><a "="" id="q-how-else-can-i-help-with-tutorials"></a><b>Q: How else can I help with tutorials?</b></h4><p data-block-key="51b23">We are looking for committee members to review submitted proposals. If you’re interested, please contact us at <a href="mailto:pycon-tutorials@python.org">pycon-tutorials@python.org</a></p><p data-block-key="ckhem">Outreach! If you’re a member of a user group or know any awesome potential instructors, please spread the word. If you know of any user groups we should reach out to personally, especially those targeted at people underrepresented in tech, please let us know!</p><p data-block-key="asnb0">Be a teaching assistant! Many instructors want teaching assistants when giving their tutorials. Let us know if you’re interested and what your area of expertise is.</p><h3><a "="" id="questions-or-suggestions"></a><b>Questions or Suggestions?</b></h3><p data-block-key="f6723">If you have questions about any of this, or suggestions, please contact us at: <a href="mailto:pycon-tutorials@python.org">pycon-tutorials@python.org</a>.</p></div></div>
+</div>
+</div>
+</div>
+</main>
+<footer class="site-footer" id="SiteFooter">
+<div class="container">
+<div class="site-footer-colophon content">
+<p class="lead"><b>The PyCon US 2026 conference in Long Beach, California, USA is a production of the <a href="https://www.python.org/psf/">Python Software Foundation</a>.</b></p>
+<p>This site is built using <a href="https://www.djangoproject.com/">Django</a> and <a href="https://wagtail.org/">Wagtail</a>.
+                    <p>PyCon US 2026 illustration and design by <a href="https://meanapasc.myportfolio.com/">Meanapas.C</a> and <a href="https://tiles.bio/humblejack">Hamza Haj Taieb</a>, Coordinated by <a href="https://www.galileosparadox.com/">Georgi K</a></p>
+<p>Site design implemented by <a href="https://yupgup.com/">YupGup</a>.</p>
+<p>Need help? <a href="/2026/about/support/">Check out our Support page</a> to find the correct person to contact.</p>
+<p><a href="https://policies.python.org/PSF-Privacy-Notice/">Privacy Notice</a></p>
+</p></div>
+<div class="site-footer-aux">
+<div>
+<small>© Python Software Foundation</small>
+</div>
+<ul class="nav">
+<li>
+<a aria-label="Blog" href="https://pycon.blogspot.com/"><span class="brand large brand-blogger"></span></a>
+</li>
+<li>
+<a aria-label="LinkedIn" href="https://www.linkedin.com/company/thepsf"><span class="brand large brand-linkedin"></span></a>
+</li>
+<li>
+<a aria-label="Mastodon" href="https://fosstodon.org/@pycon"><span class="brand large brand-mastodon"></span></a>
+</li>
+<li>
+<a aria-label="X (formally Twitter)" href="https://twitter.com/pycon?lang=en"><span class="brand large brand-xtwitter"></span></a>
+</li>
+</ul>
+</div>
+</div>
+</footer>
+
+<script src="/2026/static/js/vendor/jquery-3.6.4.min.641dd1437010.js" type="text/javascript"></script>
+<script src="/2026/static/js/main.dbd960a20e46.js" type="module"></script>
+
+</body>
+<!-- Mirrored from https://us.pycon.org/2026/speaking/tutorials/ by HTTrack Website Copier/3.x [XR&CO], Sun, 11 Oct 2026 20:01:40 GMT -->
+</html>

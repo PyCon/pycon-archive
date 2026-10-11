@@ -1,0 +1,185 @@
+/* ==========================================================================
+   Lead Retrieval — minimal polish for the dashboard card.
+   Scoped to existing markup so the structure stays identical to the recorded
+   tutorial videos; only fixes spacing, the awful black-bordered box, and the
+   default DataTables controls.
+   ========================================================================== */
+
+/* Replace the black-bordered "licenses available" box with a clean panel.
+   Keep inline button flow (matches the original layout in the recorded video). */
+.lr-dash-licenses-box {
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1rem 1.25rem;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+}
+.lr-dash-licenses-box small {
+  opacity: 0.6;
+}
+.lr-dash-licenses-box p {
+  margin: 0.5rem 0;
+}
+
+/* Tame the DataTables-generated controls used by .table-leads / .table-scans. */
+.dataTables_wrapper {
+  margin-top: 0.5rem;
+}
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 1rem 0.75rem 0;
+  font-size: var(--size-9);
+  opacity: 0.75;
+}
+.dataTables_wrapper .dataTables_length label,
+.dataTables_wrapper .dataTables_filter label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: var(--weight-semibold);
+  opacity: 0.75;
+}
+.dataTables_wrapper .dataTables_length select,
+.dataTables_wrapper .dataTables_filter input {
+  padding: 0.25em 0.5em;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0.25rem;
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--text-color);
+  font-size: var(--size-9);
+}
+.dataTables_wrapper .dataTables_filter input:focus,
+.dataTables_wrapper .dataTables_length select:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-offset);
+}
+
+.dataTables_wrapper .dataTables_info {
+  font-size: var(--size-9);
+  opacity: 0.55;
+  margin-top: 0.75rem;
+}
+
+/* Pagination — covers both modern (.paginate_button) and legacy two_button mode
+   (.paginate_enabled_previous / .paginate_disabled_next / etc.). */
+.dataTables_wrapper .dataTables_paginate {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0.75rem 0 0 1rem;
+  font-size: var(--size-9);
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button,
+.dataTables_wrapper .dataTables_paginate .paginate_active,
+.dataTables_wrapper .dataTables_paginate a[class*='paginate_'] {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35em 0.85em;
+  border-radius: 0.35rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: var(--weight-semibold);
+  cursor: pointer;
+  transition:
+    background 0.12s,
+    border-color 0.12s,
+    opacity 0.12s;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover,
+.dataTables_wrapper .dataTables_paginate a[class*='paginate_']:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper .dataTables_paginate a[class*='paginate_disabled_'] {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_active,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border-color: var(--secondary-color);
+}
+
+/* Footer row so info + paginate sit nicely */
+.dataTables_wrapper .reviewTableFooter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+/* Lead/scan tables — tighter, room to breathe. */
+table.table-leads,
+table.table-scans {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0 1rem;
+  font-size: var(--size-8);
+}
+table.table-leads th,
+table.table-scans th {
+  text-align: left;
+  padding: 0.55rem 0.65rem;
+  font-size: var(--size-9);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: var(--weight-semibold);
+  opacity: 0.55;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+table.table-leads td,
+table.table-scans td {
+  padding: 0.55rem 0.65rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  vertical-align: middle;
+}
+table.table-leads tr:last-child td,
+table.table-scans tr:last-child td {
+  border-bottom: none;
+}
+
+/* Give the lead-retrieval section h3s breathing room (sponsor name + table sub-headings). */
+.dashboard-card h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.dashboard-card h3:first-of-type {
+  margin-top: 0;
+}
+
+/* Section heading with an inline action button (e.g. "Team Captured Leads · Export") */
+.lr-dash-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.lr-dash-section-head h3 {
+  margin: 0;
+}
+.lr-dash-section-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Action buttons within the box should sit nicely on the row. */
+.lr-dash-licenses-box .button {
+  margin: 0;
+}

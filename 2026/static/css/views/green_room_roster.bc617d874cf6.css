@@ -1,0 +1,567 @@
+/* Green Room — Speaker Check-In Roster.
+   Scan-first triage list for Green Room Staff. Leading status glyph
+   carries pre-attentive role; row tint and pill confirm it. */
+
+.gr-roster {
+  --gr-surface-1: oklch(0.27 0.07 275);
+  --gr-surface-2: oklch(0.32 0.08 275);
+  --gr-surface-deep: oklch(0.21 0.06 275);
+  --gr-divider: oklch(0.4 0.07 275 / 0.5);
+  --gr-muted: oklch(0.78 0.02 275);
+  --gr-text: oklch(0.96 0.01 275);
+
+  --gr-picked: oklch(0.8 0.13 195);
+  --gr-pending: oklch(0.86 0.16 92);
+  --gr-at-risk: oklch(0.68 0.18 28);
+  --gr-missed: oklch(0.55 0.06 25);
+  --gr-unlinked: oklch(0.68 0.02 275);
+
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: var(--gutters);
+}
+
+/* ── Header ────────────────────────────────────────────────── */
+.gr-roster__header {
+  margin-block: 2rem 1.5rem;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.gr-roster__eyebrow {
+  margin: 0;
+  font-size: var(--size-8);
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-yellow);
+}
+
+.gr-roster__title {
+  margin: 0;
+  font-size: var(--size-2);
+  font-weight: var(--weight-black);
+  line-height: 1.05;
+}
+
+.gr-roster__lede {
+  margin: 0.25rem 0 1rem;
+  font-size: var(--size-7);
+  color: var(--gr-muted);
+  max-width: 60ch;
+}
+
+/* ── Stats strip ───────────────────────────────────────────── */
+.gr-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin: 0 0 1.5rem;
+  padding: 0.85rem 1rem;
+  background: var(--gr-surface-1);
+  border-radius: var(--card-border-radius);
+  border: 1px solid var(--gr-divider);
+}
+
+.gr-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.gr-stat dt {
+  margin: 0;
+  font-size: var(--size-9);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gr-muted);
+}
+
+.gr-stat dd {
+  margin: 0;
+  font-size: var(--size-5);
+  font-weight: var(--weight-bold);
+  font-variant-numeric: tabular-nums;
+  color: var(--gr-text);
+}
+
+.gr-stat--picked dd {
+  color: var(--gr-picked);
+}
+.gr-stat--pending dd {
+  color: var(--gr-pending);
+}
+.gr-stat--at-risk dd {
+  color: var(--gr-at-risk);
+}
+.gr-stat--missed dd {
+  color: var(--gr-missed);
+}
+.gr-stat--unlinked dd {
+  color: var(--gr-unlinked);
+}
+
+/* ── Controls row ──────────────────────────────────────────── */
+.gr-controls {
+  all: unset;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.gr-when {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.gr-when__pill {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  padding: 0.4rem 0.95rem;
+  border-radius: 999px;
+  background: var(--gr-surface-1);
+  border: 1.5px solid oklch(0.4 0.06 275);
+  color: var(--gr-text);
+  font-size: var(--size-7);
+  font-weight: var(--weight-semibold);
+  text-decoration: none;
+  transition:
+    background var(--transition-speed) ease-out,
+    border-color var(--transition-speed) ease-out;
+}
+
+.gr-when__pill:hover {
+  text-decoration: none;
+  background: var(--gr-surface-2);
+}
+
+.gr-when__pill--active {
+  background: var(--color-yellow);
+  border-color: var(--color-yellow);
+  color: oklch(0.2 0.06 275);
+}
+
+.gr-when__count {
+  font-variant-numeric: tabular-nums;
+  opacity: 0.75;
+  font-size: var(--size-8);
+}
+
+.gr-when__pill--active .gr-when__count {
+  opacity: 0.9;
+}
+
+.gr-search {
+  display: inline-flex;
+  align-items: stretch;
+  gap: 0.5rem;
+  font-size: var(--size-8);
+  color: var(--gr-muted);
+}
+
+.gr-search__label {
+  display: none;
+}
+
+.gr-search__input {
+  appearance: none;
+  background: var(--gr-surface-1);
+  color: var(--gr-text);
+  border: 1.5px solid oklch(0.4 0.06 275);
+  border-radius: var(--card-border-radius);
+  padding: 0.45rem 0.85rem;
+  font: inherit;
+  min-width: 22ch;
+  transition: border-color var(--transition-speed) ease-out;
+}
+
+.gr-search__input:focus-visible {
+  outline: none;
+  border-color: var(--color-yellow);
+}
+
+.gr-search__submit {
+  appearance: none;
+  font: inherit;
+  font-weight: var(--weight-semibold);
+  background: transparent;
+  color: var(--gr-text);
+  border: 1.5px solid var(--gr-text);
+  border-radius: var(--card-border-radius);
+  padding: 0.45rem 0.95rem;
+  cursor: pointer;
+  transition:
+    background var(--transition-speed) ease-out,
+    color var(--transition-speed) ease-out;
+}
+
+.gr-search__submit:hover {
+  background: var(--gr-text);
+  color: oklch(0.2 0.06 275);
+}
+
+/* ── Status chips ──────────────────────────────────────────── */
+.gr-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.gr-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: var(--gr-surface-1);
+  border: 1.5px solid oklch(0.4 0.06 275);
+  color: var(--gr-text);
+  font-size: var(--size-8);
+  font-weight: var(--weight-semibold);
+  text-decoration: none;
+  transition:
+    background var(--transition-speed) ease-out,
+    border-color var(--transition-speed) ease-out;
+}
+
+.gr-chip:hover {
+  text-decoration: none;
+  background: var(--gr-surface-2);
+}
+
+.gr-chip--active {
+  background: var(--gr-text);
+  color: oklch(0.2 0.06 275);
+  border-color: var(--gr-text);
+}
+
+.gr-chip__count {
+  font-variant-numeric: tabular-nums;
+  opacity: 0.75;
+}
+
+.gr-chip--active .gr-chip__count {
+  opacity: 0.9;
+}
+
+/* ── List rows ─────────────────────────────────────────────── */
+.gr-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.gr-row {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 0.5rem 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--gr-surface-1);
+  border-radius: var(--card-border-radius);
+  scroll-margin-top: 1.5rem;
+  transition: background var(--transition-speed) ease-out;
+}
+
+.gr-row[hidden] {
+  display: none;
+}
+
+.gr-row:hover {
+  background: var(--gr-surface-2);
+}
+
+.gr-row:target {
+  animation: gr-row-pulse 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.gr-row--picked_up {
+  background: var(--gr-surface-deep);
+}
+
+.gr-row--at_risk {
+  background: oklch(0.31 0.1 28 / 0.55);
+}
+
+.gr-row--missed {
+  opacity: 0.6;
+}
+
+.gr-row--unlinked {
+  opacity: 0.75;
+}
+
+.gr-row__lead {
+  font-size: 1.85rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.gr-row--picked_up .gr-row__lead {
+  color: var(--gr-picked);
+}
+.gr-row--not_picked_up .gr-row__lead {
+  color: var(--gr-pending);
+}
+.gr-row--at_risk .gr-row__lead {
+  color: var(--gr-at-risk);
+}
+.gr-row--missed .gr-row__lead {
+  color: var(--gr-missed);
+}
+.gr-row--unlinked .gr-row__lead {
+  color: var(--gr-unlinked);
+}
+
+.gr-row__main {
+  min-width: 0;
+}
+
+.gr-row__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem 0.85rem;
+}
+
+.gr-row__name {
+  margin: 0;
+  font-size: var(--size-6);
+  font-weight: var(--weight-bold);
+  line-height: 1.25;
+  color: var(--gr-text);
+}
+
+.gr-row__next {
+  margin: 0.35rem 0 0;
+  font-size: var(--size-8);
+  color: var(--gr-text);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.85rem;
+}
+
+.gr-row__talk {
+  font-weight: var(--weight-semibold);
+}
+
+.gr-row__kind {
+  font-size: var(--size-9);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-yellow);
+  border: 1px solid var(--color-yellow);
+  border-radius: 4px;
+  padding: 0 0.4rem;
+}
+
+.gr-row__room {
+  color: var(--gr-muted);
+}
+
+.gr-row__when {
+  color: var(--gr-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.gr-row__when--unscheduled {
+  font-style: italic;
+}
+
+.gr-row__meta {
+  margin: 0.35rem 0 0;
+  font-size: var(--size-8);
+  color: var(--gr-muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.85rem;
+}
+
+.gr-row__email {
+  color: oklch(0.78 0.02 275);
+  word-break: break-all;
+}
+
+.gr-row__check,
+.gr-row__print {
+  font-variant-numeric: tabular-nums;
+}
+
+.gr-row__check {
+  color: var(--gr-picked);
+}
+
+.gr-row__note {
+  font-style: italic;
+}
+
+/* ── Status pill ───────────────────────────────────────────── */
+.gr-status {
+  display: inline-block;
+  padding: 0.1rem 0.55rem;
+  font-size: var(--size-9);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  font-weight: var(--weight-bold);
+  border: 1px solid currentColor;
+  background: oklch(0 0 0 / 0);
+}
+
+.gr-status--picked_up {
+  color: var(--gr-picked);
+  background: oklch(0.8 0.13 195 / 0.15);
+}
+.gr-status--not_picked_up {
+  color: var(--gr-pending);
+  background: oklch(0.86 0.16 92 / 0.15);
+}
+.gr-status--at_risk {
+  color: var(--gr-at-risk);
+  background: oklch(0.68 0.18 28 / 0.18);
+}
+.gr-status--missed {
+  color: var(--gr-missed);
+  background: oklch(0.55 0.06 25 / 0.18);
+}
+.gr-status--unlinked {
+  color: var(--gr-unlinked);
+  background: oklch(0.5 0.02 275 / 0.18);
+}
+
+/* ── Per-speaker session list ──────────────────────────────── */
+.gr-row__details {
+  margin-top: 0.5rem;
+  font-size: var(--size-8);
+}
+
+.gr-row__details > summary {
+  cursor: pointer;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: oklch(0.7 0.02 275);
+  font-size: var(--size-9);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.gr-row__details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.gr-row__details > summary::before {
+  content: '▸';
+  display: inline-block;
+  transition: transform var(--transition-speed) cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.gr-row__details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.gr-sessions {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0 0 0 0.85rem;
+  border-left: 1px solid var(--gr-divider);
+  display: grid;
+  gap: 0.35rem;
+}
+
+.gr-session {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.85rem;
+  align-items: baseline;
+  color: oklch(0.88 0.01 275);
+  font-size: var(--size-8);
+  line-height: 1.45;
+}
+
+.gr-session__title {
+  font-weight: var(--weight-semibold);
+}
+
+.gr-session__kind {
+  font-size: var(--size-9);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-yellow);
+}
+
+.gr-session__where {
+  color: var(--gr-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Empty state & footnote ────────────────────────────────── */
+.gr-empty {
+  list-style: none;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  color: var(--gr-muted);
+  background: var(--gr-surface-1);
+  border-radius: var(--card-border-radius);
+  border: 1px dashed var(--gr-divider);
+}
+
+.gr-empty p {
+  margin: 0 0 0.5rem;
+}
+
+.gr-footnote {
+  margin: 1.5rem 0 2.5rem;
+  font-size: var(--size-9);
+  color: var(--gr-muted);
+  letter-spacing: 0.04em;
+}
+
+/* ── Animation ─────────────────────────────────────────────── */
+@keyframes gr-row-pulse {
+  0% {
+    background: oklch(0.45 0.15 280);
+  }
+  100% {
+    background: var(--gr-surface-1);
+  }
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 700px) {
+  .gr-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .gr-search {
+    width: 100%;
+  }
+
+  .gr-search__input {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .gr-row {
+    grid-template-columns: 2rem 1fr;
+    gap: 0.4rem 0.75rem;
+    padding: 0.85rem 1rem;
+  }
+
+  .gr-row__lead {
+    font-size: 1.5rem;
+  }
+}

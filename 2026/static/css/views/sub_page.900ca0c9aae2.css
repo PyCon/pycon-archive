@@ -1,0 +1,31 @@
+.template-subpage {
+  background-color: #101136;
+}
+
+.template-subpage .site-header,
+.sub-hero {
+  background-color: #3b3ea9;
+}
+
+.sub-hero {
+  padding: 3rem 0 clamp(12rem, 20vw, 15rem);
+  background-image:
+    url("/2026/static/images/theme/sub-hero/sub-hero-fg.8dfc20dcbb79.svg"), url("/2026/static/images/theme/sub-hero/sub-hero-stars.793295d49cc8.svg");
+  background-position:
+    bottom center,
+    top -6vw center;
+  background-repeat: no-repeat;
+  background-size: cover, contain;
+}
+
+.sub-hero h1 {
+  text-align: center;
+}
+
+.content-wrapper {
+  padding-top: clamp(8rem, 15vw, 16rem);
+  background-image: url("/2026/static/images/theme/grid.3ca4bd4effc6.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}

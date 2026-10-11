@@ -1,0 +1,8 @@
+.archive-notice {
+  padding-top: 5rem;
+}
+
+/* The original navigation overlays the page when expanded. */
+body:has(.site-header.is-open) .archive-notice {
+  visibility: hidden;
+}

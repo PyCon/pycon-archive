@@ -1,0 +1,344 @@
+/* ==========================================================================
+   Lead Retrieval Tutorials (Manager + User)
+   ========================================================================== */
+
+.lr-tut .sub-hero {
+  text-align: left;
+}
+.lr-tut .sub-hero h1 {
+  text-align: left;
+}
+.lr-tut-eyebrow {
+  font-size: var(--size-9);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.55;
+  margin: 0 0 0.5rem;
+}
+.lr-tut-lede {
+  max-width: 60ch;
+  font-size: var(--size-7);
+  opacity: 0.75;
+  margin-top: 0.75rem;
+}
+
+/* Layout: ToC sidebar + content */
+.lr-tut-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.lr-tut-toc {
+  position: sticky;
+  top: 1.5rem;
+  align-self: start;
+}
+.lr-tut-toc-inner {
+  padding: 1.25rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.4rem;
+  background: rgba(255, 255, 255, 0.03);
+}
+.lr-tut-toc h2 {
+  font-size: var(--size-9);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.55;
+  margin: 0 0 0.75rem;
+  font-weight: var(--weight-semibold);
+}
+.lr-tut-toc ol {
+  list-style: decimal;
+  padding-left: 1.25rem;
+  margin: 0;
+  font-size: var(--size-8);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.lr-tut-toc a {
+  display: block;
+  position: relative;
+  padding: 0.15rem 0 0.15rem 0.6rem;
+  border-left: 2px solid transparent;
+  color: var(--text-color);
+  text-decoration: none;
+  opacity: 0.7;
+  transition:
+    opacity 0.12s,
+    color 0.12s,
+    border-color 0.12s;
+}
+.lr-tut-toc a:hover {
+  opacity: 1;
+  color: var(--color-cyan);
+}
+.lr-tut-toc a.is-active {
+  opacity: 1;
+  color: var(--color-cyan);
+  border-left-color: var(--color-cyan);
+}
+.lr-tut-toc-foot {
+  margin: 1.25rem 0 0;
+  font-size: var(--size-9);
+  opacity: 0.5;
+}
+
+/* Content prose */
+.lr-tut-content {
+  min-width: 0;
+}
+.lr-tut-section {
+  scroll-margin-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  margin-bottom: 2.5rem;
+}
+.lr-tut-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.lr-tut-section h2 {
+  font-size: var(--size-4);
+  margin: 0 0 1rem;
+  scroll-margin-top: 1.5rem;
+}
+.lr-tut-section h2 .lr-tut-anchor {
+  margin-left: 0.5rem;
+  font-size: 0.55em;
+  opacity: 0;
+  text-decoration: none;
+  color: var(--color-cyan);
+  transition: opacity 0.12s;
+}
+.lr-tut-section h2:hover .lr-tut-anchor {
+  opacity: 0.7;
+}
+.lr-tut-section h2 .lr-tut-anchor:hover {
+  opacity: 1;
+}
+.lr-tut-section p {
+  font-size: var(--size-7);
+  line-height: 1.65;
+  max-width: 70ch;
+}
+.lr-tut-section ul,
+.lr-tut-section > ol {
+  font-size: var(--size-7);
+  line-height: 1.65;
+  max-width: 70ch;
+  padding-left: 1.5rem;
+}
+.lr-tut-section li {
+  margin-bottom: 0.35rem;
+}
+.lr-tut-section a {
+  color: var(--color-cyan);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.lr-tut-section em {
+  font-style: normal;
+  font-weight: var(--weight-semibold);
+}
+.lr-tut-section strong {
+  font-weight: var(--weight-bold);
+}
+
+/* Numbered step blocks */
+.lr-tut-steps {
+  counter-reset: lr-step;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 70ch;
+}
+.lr-tut-steps > li {
+  counter-increment: lr-step;
+  position: relative;
+  padding: 1rem 1.25rem 1rem 3.75rem;
+  border-radius: 0.4rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+.lr-tut-steps > li::before {
+  content: counter(lr-step);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(37, 200, 235, 0.25), rgba(37, 200, 235, 0.08));
+  border: 1px solid rgba(37, 200, 235, 0.3);
+  color: var(--color-cyan);
+  font-weight: var(--weight-bold);
+  font-size: var(--size-8);
+  font-variant-numeric: tabular-nums;
+}
+.lr-tut-steps > li:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+.lr-tut-steps h3 {
+  font-size: var(--size-7);
+  margin: 0 0 0.35rem;
+}
+.lr-tut-steps p {
+  margin: 0;
+}
+.lr-tut-steps ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+/* Inline note / aside callout (for "how this works" explainers, tips, etc.) */
+.lr-tut-note {
+  margin-top: 0.85rem;
+  padding: 0.85rem 1rem;
+  border-radius: 0.35rem;
+  border: 1px solid rgba(37, 200, 235, 0.25);
+  background: rgba(37, 200, 235, 0.06);
+  font-size: var(--size-8);
+  line-height: 1.55;
+}
+.lr-tut-note p {
+  margin: 0 0 0.5rem;
+  max-width: none;
+}
+.lr-tut-note p:last-child {
+  margin-bottom: 0;
+}
+.lr-tut-note i {
+  color: var(--color-cyan);
+  margin-right: 0.25rem;
+}
+.lr-tut-note a {
+  color: var(--color-cyan);
+}
+
+/* Video block (placeholder + future iframe slot) */
+.lr-tut-video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 70ch;
+  box-shadow: 0 12px 32px -16px rgba(0, 0, 0, 0.6);
+}
+.lr-tut-video-caption {
+  font-size: var(--size-9) !important;
+  opacity: 0.55;
+  margin-top: 0.6rem;
+}
+.lr-tut-video-caption a {
+  color: var(--color-cyan);
+}
+.lr-tut-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.lr-tut-video-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  opacity: 0.55;
+}
+.lr-tut-video-placeholder i {
+  font-size: var(--size-2);
+}
+.lr-tut-video-placeholder span {
+  font-size: var(--size-8);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* App download buttons (User tutorial) — store-pill style. */
+.lr-tut-app-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.lr-tut-store-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 1.25rem;
+  border-radius: 0.55rem;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition:
+    background 0.15s,
+    transform 0.15s,
+    border-color 0.15s;
+  min-width: 200px;
+}
+.lr-tut-store-btn:hover {
+  background: #111;
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-1px);
+}
+.lr-tut-store-icon {
+  font-size: 1.85rem;
+  line-height: 1;
+}
+.lr-tut-store-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  text-align: left;
+}
+.lr-tut-store-eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+}
+.lr-tut-store-name {
+  font-size: 1.1rem;
+  font-weight: var(--weight-semibold);
+}
+
+.lr-tut-sample-badges {
+  margin-top: 1rem;
+  padding: 1.25rem;
+  border-radius: 0.4rem;
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.02);
+}
+.lr-tut-muted {
+  opacity: 0.55;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .lr-tut-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .lr-tut-toc {
+    position: static;
+  }
+  .lr-tut-toc-inner {
+    padding: 1rem;
+  }
+}

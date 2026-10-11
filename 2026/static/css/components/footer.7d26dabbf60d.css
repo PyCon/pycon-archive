@@ -1,0 +1,42 @@
+.site-footer {
+  position: relative;
+  padding: clamp(6rem, 10vw, 12rem) 0 clamp(18rem, 30vw, 24rem);
+
+  background-image: url("/2026/static/images/theme/footer-bg.5707b42f850d.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.site-footer-colophon {
+  padding: 0 0 2rem;
+
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+.site-footer-colophon .logo {
+  display: block;
+  margin: 0 auto;
+  max-height: 120px;
+}
+
+.site-footer-colophon p {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 65ch;
+}
+
+.site-footer-aux {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--h-spacing);
+
+  padding: var(--v-spacing) 0;
+
+  border-top: 1px solid currentColor;
+}
+
+.site-footer-aux .nav {
+  justify-content: flex-end;
+}

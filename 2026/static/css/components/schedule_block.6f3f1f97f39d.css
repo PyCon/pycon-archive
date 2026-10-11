@@ -1,0 +1,35 @@
+/* XXX */
+.schedule-block {
+  position: relative;
+  padding-top: 28vw;
+  background-image: url("/2026/static/images/theme/sunset.5449c652f10b.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 150% auto;
+}
+
+.schedule-block .block-heading {
+  font-size: var(--size-display-3);
+  line-height: var(--heading-line-height);
+  color: var(--color-white);
+}
+
+.schedule-block .block-heading span {
+  display: block;
+  font-size: var(--size-display-4);
+  color: var(--text-color);
+}
+
+.schedule-block .date-list {
+  font-size: var(--size-6);
+}
+
+.schedule-block .date-list-event-name {
+  color: var(--color-white);
+}
+
+@media (min-width: 768px) {
+  .schedule-block .block-heading {
+    font-size: var(--size-display-4);
+  }
+}

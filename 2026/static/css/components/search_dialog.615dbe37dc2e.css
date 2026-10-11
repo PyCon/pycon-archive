@@ -1,0 +1,16 @@
+.search-dialog form {
+  width: 100%;
+}
+
+.search-dialog .dialog-body {
+  padding: 1rem;
+}
+
+.search-dialog-results {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.search-dialog-results ul {
+  padding: 1.5rem 0 0;
+}

@@ -1,0 +1,146 @@
+/* Messaging panel — presenter & attendee panels */
+
+.messaging-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--v-spacing);
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--gutters);
+}
+
+.messaging-panel > .card + .card {
+  margin-top: 0;
+}
+
+/* Message thread card */
+.message-card {
+  padding: 1.25rem;
+  border-radius: var(--card-border-radius);
+  border: var(--card-border);
+}
+
+.message-card + .message-card {
+  margin-top: var(--v-spacing);
+}
+
+.message-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.message-header h4 {
+  margin: 0;
+  font-size: var(--size-5);
+}
+
+.message-meta {
+  font-size: var(--size-8);
+  opacity: 0.6;
+}
+
+.message-body {
+  margin-top: 0.5rem;
+}
+
+.message-body p {
+  margin-top: 0.5rem;
+}
+
+/* Responses nested under a message */
+.responses-list {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--color-accent-2);
+}
+
+.responses-heading {
+  margin-bottom: 0.75rem;
+  font-size: var(--size-7);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+}
+
+.response-card {
+  padding: 0.875rem 1rem;
+  border-radius: var(--card-border-radius);
+  border-left: 3px solid var(--color-accent-2);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.response-card + .response-card {
+  margin-top: 0.75rem;
+}
+
+.response-meta {
+  display: block;
+  font-size: var(--size-8);
+  opacity: 0.6;
+  margin-bottom: 0.375rem;
+}
+
+.response-body {
+  font-size: var(--size-7);
+}
+
+.response-body p + p {
+  margin-top: 0.5rem;
+}
+
+/* File upload list */
+.upload-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.upload-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--card-border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.upload-item .upload-meta {
+  font-size: var(--size-8);
+  opacity: 0.6;
+}
+
+/* Empty state */
+.empty-state {
+  opacity: 0.5;
+  font-size: var(--size-7);
+}
+
+/* Form pages */
+.form-panel {
+  max-width: 65ch;
+  margin: 0 auto;
+  padding: 0 var(--gutters);
+}
+
+.form-panel .card {
+  padding: 1.5rem;
+}
+
+.form-panel .form-help {
+  margin-bottom: 1.5rem;
+  font-size: var(--size-7);
+  opacity: 0.8;
+}
+
+.form-panel .original-message {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}

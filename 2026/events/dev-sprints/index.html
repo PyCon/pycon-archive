@@ -1,0 +1,970 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Mirrored from https://us.pycon.org/2026/events/dev-sprints/ by HTTrack Website Copier/3.x [XR&CO], Sun, 11 Oct 2026 20:02:38 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8"/>
+<title>
+            
+            Development Sprints
+            
+            
+            
+            - PyCon US 2026
+            
+        </title>
+
+<!-- meta -->
+<meta content="" name="description"/>
+<meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
+<!-- opengraph metas -->
+<meta content="Development Sprints" property="og:title"/>
+<meta content="PyCon US 2026" property="og:description"/>
+<meta content="/2026/static/images/theme/pycon-banner.830104bb944e.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="675" property="og:image:height"/>
+<meta content="website" property="og:type"/>
+<meta content="PyCon US 2026" property="og:site_name"/>
+<!-- Twitter Card meta -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@pycon" name="twitter:site"/>
+<meta content="Development Sprints" name="twitter:title"/>
+<meta content="For the community, by the community" name="twitter:description"/>
+<meta content="https://us.pycon.org/2026/static/images/theme/pycon-banner.830104bb944e.jpg" name="twitter:image"/>
+<!-- css -->
+<link href="/2026/static/css/main.833a2c25f91f.css" rel="stylesheet" type="text/css"/>
+<link crossorigin="anonymous" href="/2026/static/vendor/font-awesome/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" referrerpolicy="no-referrer" rel="stylesheet"/>
+<!-- favicons -->
+<!-- Three needed files for favicon +1 for PWA: -->
+<!-- https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs -->
+<link href="/2026/static/images/favicon/favicon.e49b6e6a5203.ico" rel="icon"/>
+<link href="/2026/static/images/favicon/favicon.1ee063c11cb1.svg" rel="icon" type="image/svg+xml"/>
+<link href="/2026/static/images/favicon/apple-touch-icon.f650e750d132.png" rel="apple-touch-icon"/>
+<link crossorigin="use-credentials" href="/2026/static/images/favicon/site.a742b1aa2501.webmanifest" rel="manifest"/>
+<link href="/2026/static/css/archive.css" rel="stylesheet"/></head>
+<body class="template-subpage"><aside aria-label="Archive notice" class="container content archive-notice"><p>Archived PyCon US 2026 website. Registration, accounts, search, and form submissions are no longer available.</p></aside>
+<!-- Accessible Jump Navigation -->
+<nav class="skip-nav">
+<ul>
+<li><a href="/2026/events/dev-sprints/#Content">Skip to content</a></li>
+<li><a href="/2026/events/dev-sprints/#SiteNav">Skip to navigation</a></li>
+<li><a href="/2026/events/dev-sprints/#SiteFooter">Skip to footer</a></li>
+</ul>
+</nav>
+<header class="site-header">
+<div aria-label="Main Navigation" class="site-nav" id="SiteNav">
+<div class="container">
+<div class="site-nav-wrapper">
+<div class="site-nav-controls">
+<a class="site-nav-logo hover-rotate-left" href="/2026/"><img alt="PyCon US 2026" class="logo-light" height="30" src="/2026/static/images/theme/sub-logo-full.94351d59d82e.svg"/><img alt="PyCon US 2026" class="logo-dark" height="30" src="/2026/static/images/theme/sub-logo-full-dark.bdcc46a28282.svg"/></a>
+
+<button aria-controls="SiteNavLists" aria-expanded="false" aria-label="Toggle navigation">
+<i class="fa-solid fa-bars"></i>
+</button>
+</div>
+<nav aria-expanded="false" class="site-nav-lists" hidden="" id="SiteNavLists">
+<ul class="site-nav-list site-nav-primary">
+<li>
+<a class="site-nav-logo hover-rotate-left" href="/2026/"><img alt="PyCon US 2026" class="logo-light" height="30" src="/2026/static/images/theme/sub-logo-full.94351d59d82e.svg"/><img alt="PyCon US 2026" class="logo-dark" height="30" src="/2026/static/images/theme/sub-logo-full-dark.bdcc46a28282.svg"/>
+</a>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-1" aria-expanded="false" aria-haspopup="true" class="" href="/2026/about/">
+    About
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-1">
+<li>
+<a class="" href="/2026/about/pycon/">
+    What is PyCon US?
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/health-safety-guidelines/">
+    Health &amp; Safety Guidelines
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/psf/">
+    Python Software Foundation
+  </a>
+</li>
+<li>
+<a class="" href="https://policies.python.org/us.pycon.org/code-of-conduct/">
+    Code of Conduct
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/diversity/">
+    Diversity
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/support/">
+    Support
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-8" aria-expanded="false" aria-haspopup="true" class="" href="/2026/sponsorship/">
+    Sponsor
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-8">
+<li>
+<a class="" href="/2026/sponsorship/why-sponsor/">
+    Why Sponsor?
+  </a>
+</li>
+<li>
+<a class="" href="/2026/sponsorship/sponsors/">
+    Sponsors
+  </a>
+</li>
+<li>
+<a class="" href="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/psf_sponsor_prospectus_feb26-compressed.pdf">
+    Sponsorship Prospectus
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-11" aria-expanded="false" aria-haspopup="true" class="" href="/2026/speaking/">
+    Speaking
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-11">
+<li>
+<a class="" href="/2026/speaking/guidelines/">
+    Proposal Guidelines
+  </a>
+</li>
+<li>
+<a class="" href="/2026/speaking/talks/">
+    Proposing a Talk
+  </a>
+</li>
+<li>
+<a class="" href="/2026/speaking/tutorials/">
+    Proposing a Tutorial
+  </a>
+</li>
+<li>
+<a class="" href="/2026/speaking/charlas/">
+    Proposing a Charlas
+  </a>
+</li>
+<li>
+<a class="" href="/2026/speaking/posters/">
+    Proposing a Poster
+  </a>
+</li>
+<li>
+<a class="" href="/2026/speaking/mentorship/">
+    Proposal Mentorship
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-21" aria-expanded="false" aria-haspopup="true" class="" href="/2026/attend/">
+    Attend
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-21">
+<li>
+<a class="" href="/2026/attend/information/">
+    Registration Information
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/onsite-information/">
+    Onsite Information
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/travel-grants/">
+    Travel Grants
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/faq/">
+    Travel Grants FAQ
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/international-travel/">
+    International Travel
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/startup-row/">
+    Startup Row
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/community-booths/">
+    Community Booths
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/expo-hall/">
+    Expo Hall
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/convince-your-boss/">
+    How to Convince Your Boss
+  </a>
+</li>
+<li>
+<a class="" href="/2026/documents/5/How_to_Convince_Your_Boss_Template.pdf">
+    How to Convince Your Boss Template
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-25" aria-expanded="false" aria-haspopup="true" class="" href="/2026/venue/">
+    Venue
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-25">
+<li>
+<a class="" href="/2026/venue/hotels/">
+    Hotels
+  </a>
+</li>
+<li>
+<a class="" href="/2026/venue/transit/">
+    Public Transit in Long Beach
+  </a>
+</li>
+<li>
+<a class="" href="/2026/venue/travel/">
+    Traveling to Long Beach
+  </a>
+</li>
+<li>
+<a class="" href="/2026/venue/maps/">
+    Maps
+  </a>
+</li>
+<li>
+<a class="" href="/2026/attend/onsite-information/">
+    Onsite Information
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-33" aria-expanded="false" aria-haspopup="true" class="" href="/2026/events/">
+    Events &amp; Summits
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-33">
+<li>
+<a class="" href="/2026/events/newcomer-orientation/">
+    Newcomer Orientation
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/opening-reception/">
+    Opening Reception
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/education-summit/">
+    Education Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/webassembly-summit/">
+    Web Assembly Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/typing-summit/">
+    Typing Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/maintainers-summit/">
+    Maintainers Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/packaging-summit/">
+    Packaging Summit
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/open-spaces/">
+    Open Spaces
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/pyladies-auction/">
+    PyLadies Auction
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/job-fair/">
+    Job Fair &amp; Community Showcase
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/pyladies-lunch/">
+    PyLadies Luncheon
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/lightning-talks/">
+    Lightning Talks
+  </a>
+</li>
+<li>
+<a class="" href="/2026/events/dev-sprints/">
+    Development Sprints
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-42" aria-expanded="false" aria-haspopup="true" class="FalseTrue" href="/2026/events/dev-sprints/">
+    Schedule
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-42">
+<li>
+<a class="" href="/2026/schedule/tutorials/">
+    Tutorials (Wed. and Thurs.)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/schedule/sponsor-presentations/">
+    Sponsor Presentations (Thurs. and Fri.)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/schedule/talks/">
+    Talks (Friday - Sunday)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/schedule/open-spaces/">
+    Open Spaces (Friday - Sunday)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/schedule/posters/list/">
+    Posters (Sunday)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/about/keynote-speakers/">
+    Keynote Speakers
+  </a>
+</li>
+<li>
+<a class="" href="/2026/tracks/ai/">
+    AI Track (Friday)
+  </a>
+</li>
+<li>
+<a class="" href="/2026/tracks/security/">
+    Security Track (Saturday)
+  </a>
+</li>
+<li>
+<a aria-current="true" class="TrueTrue" href="/2026/events/dev-sprints/">
+    Sprints (Mon. and Tues.)
+  </a>
+</li>
+</ul>
+</li>
+<li class="has-children">
+<a aria-controls="SiteNavSubmenu-63" aria-expanded="false" aria-haspopup="true" class="" href="/2026/volunteer/">
+    Volunteer
+  </a>
+<ul aria-hidden="true" class="site-nav-submenu" id="SiteNavSubmenu-63">
+<li>
+<a class="" href="/2026/volunteer/volunteering/">
+    Volunteering
+  </a>
+</li>
+<li>
+<a class="" href="/2026/volunteer/session-staff/">
+    Session Staff
+  </a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="site-nav-list site-nav-secondary">
+<li class="hide-for-mobile">
+
+</li>
+
+
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</header>
+<main id="Content">
+<div class="sub-hero">
+<div class="container">
+<div class="translation-nav">
+<span>Translations available:</span>
+<a href="/es/2026/events/dev-sprints/" hreflang="es" rel="alternate">
+          español
+      </a>
+</div>
+<h1>Development Sprints</h1>
+</div>
+</div>
+<div class="content-wrapper">
+<div class="container">
+<div class="content">
+<div class="w-block-paragraph block-paragraph"><div class="text-left"><h4><a "="" id="when-will-sprints-take-place"></a>When will sprints take place?</h4><p data-block-key="49i88">Monday, May 18th, 2026, 8:00am – Tuesday, May 19th, 2025, 9:00pm PST - Sprints are free to attend with a PyCon US registration.</p><p data-block-key="5hsbp"><b>NOTE:</b> Please be familiar with the PyCon US <a href="/2026/about/health-safety-guidelines/">Health &amp; Safety Guidelines</a>. Sprint days are part of the conference and only registered attendees of PyCon US can participate due to the guidelines put in place for the 2026 conference.</p><p data-block-key="ahivj">Development sprints are a key part of PyCon US, and a chance for the contributors to open-source projects to get together face-to-face for two days of intensive learning, development and camaraderie. Newbies sit with gurus, go out for lunch and dinner together, and have a great time while advancing their project.</p><p data-block-key="94frv"><a href="https://pycon.blogspot.com/2016/03/why-not-join-sprints-this-year-at-pycon.html">Why not join the sprints this year at PyCon US?</a> by Naomi Ceder</p><h4><a "="" id="whats-a-sprint"></a>What's a sprint?</h4><p data-block-key="74pkk">PyCon US Development Sprints are two days of intensive learning and development on an open source project of your choice, in a team environment. It's a time to come together with colleagues, old and new, to share what you've learned and apply it to an open source project.</p><p data-block-key="1vv7n">In the crucible of a sprint room, teaming with both focus and humor, it's a time to test, fix bugs, add new features, and improve documentation. And it's a time to network, make friends, and build relationships that go beyond the conference.</p><p data-block-key="fn108">PyCon US provides the space and infrastructure (network, power, tables &amp; chairs); you bring your skills, humanity, and brainpower (oh! and don't forget your computer).</p><h4><a "="" id="who-can-participate"></a>Who can participate?</h4><p data-block-key="1idid">You! All experience levels are welcome; sprints are a great opportunity to get connected with, and start contributing to your favorite Python project. Participation in the sprints is free and included in your conference registration. If you are attending sprints, please go to your <span aria-disabled="true" style="opacity: 0.6;" title="Unavailable in the archive">attendee profile on your dashboard</span> and indicate the number of sprint days you will be attending.</p><h4><a "="" id="who-can-run-a-sprint"></a>Who can run a sprint?</h4><p data-block-key="4a49b">You! If you've never run a sprint before, the <a href="https://opensourceevents.github.io/">In-Person Event Handbook</a> is an excellent guide.</p><p data-block-key="dn9o8">Instructions for adding a sprint project to this page are below.</p><h4><a "="" id="whats-the-schedule"></a>What's the schedule?</h4><p data-block-key="aq9ht">Sprints run all day from Monday, May 18th through Tuesday, May 19th. That's 8:00am to 9:00pm PST.</p><p data-block-key="aps74"><b><i>Please note</i></b>: Lunch will not be provided so please plan your lunch breaks accordingly!</p><h4><a "="" id="where-will-the-sprints-be"></a>Where will the sprints be?</h4><p data-block-key="dceku">The Sprints will take place at the Long Beach Convention Center. Each Sprinting project will claim its own room or if the room is large enough, it will share the space with other Sprinting Projects.</p><h4><a "="" id="which-projects-are-sprinting"></a>Which projects are sprinting?</h4><p data-block-key="621dg">If you are interested in leading a sprint, <b>please add your project using the link below:</b></p><p data-block-key="a0ppv">Please <span aria-disabled="true" style="opacity: 0.6;" title="Unavailable in the archive">submit a sprint here</span> and add a brief description of your project that will be listed below. Include links to what you'll be sprinting on. Indicate if the sprint will be newcomer-friendly!</p><h4><a "="" id="have-questions-not-covered-here"></a>Have questions not covered here?</h4><p data-block-key="q5j">Reach out to <a href="mailto:pycon-sprints@python.org">pycon-sprints@python.org</a></p></div></div>
+<div class="w-block-sprints block-sprints">
+<div class="sprints">
+<div class="sprint-card" id="sprint-1">
+<div class="sprint-card-logo">
+<a href="https://www.python.org/">
+<img alt="Python Infrastructure logo" src="/2026/media/sprint_project_logos/python-logo-only.png"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://www.python.org/">Python Infrastructure</a></h3>
+      Come work on the Python infrastructure!
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by Coffee</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-1">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-2">
+<div class="sprint-card-logo">
+<a href="https://beeware.org">
+<img alt="BeeWare logo" src="/2026/media/sprint_project_logos/BeeWare.png"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://beeware.org">BeeWare</a></h3>
+      Do you want to write an app for your phone using nothing but Python? Have you got some Python code that you'd like to distribute to users as a standalone installer? BeeWare is a collection of libraries and tools for building a cross-platform native graphical user interface using nothing but Python, and then packaging your Python code as a standalone app for distribution on macOS, Windows, Linux, iOS, Android, or as a single-page web app. No matter your level of experience, we can find a way for you to contribute to BeeWare. And every contributor earns a <a href="https://beeware.org/contributing/challenge-coins/">BeeWare Challenge Coin</a>!
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by Russell</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-2">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-6">
+<div class="sprint-card-logo">
+<a href="https://hatch.pypa.io/">
+<img alt="hatch logo" src="/2026/media/sprint_project_logos/IMG_0939.jpeg"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://hatch.pypa.io/">hatch</a></h3>
+      Hatch is a modern extensible environment manager. We support you in your packaging needs with hatchling a batteries included approach to better defaults for packaging your project. We will work on adding new things to hatch, fixing annoying bugs to improve the experience. All skill levels are welcome! We will be holding a sprint on the 18th.
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by Cary</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-6">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-4">
+<div class="sprint-card-logo">
+<a href="https://github.com/lwgray/marcus">
+<img alt="Marcus logo" src="/2026/media/sprint_project_logos/Marcus_logo_with_name.png"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://github.com/lwgray/marcus">Marcus</a></h3>
+      Marcus is an open-source orchestration server for AI coding agents. You describe what to build. Marcus breaks the work into tasks on a shared kanban board. Multiple agents pull tasks independently, write the code, and coordinate through the board — never through chat. You walk away; you come back to working software.
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by Larry</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-4">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-8">
+<div class="sprint-card-logo">
+<a href="https://tinyhub.energy">
+<img alt="Tiny Hub Energy logo" src="/2026/media/sprint_project_logos/BR3TH.jpg"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://tinyhub.energy">Tiny Hub Energy</a></h3>
+      My project is a DePIN (Decentralized Physical Infrastructure Network) software running on Google Cloud. The IaaS software also features an invisible back end network with plans to batch settlements via Pimlico every 5 minutes. In my opinion, society as a whole will refuse to adapt to anything boasting crypto, we all know it can be a little sketchy. Given all the advancements in AI, a DePIN product can finally have all the automation required and predictive functions needed for major success. 
+
+Additionally, there is an opportunity here to become the first closed loop cloud software, our cloud compute cost could instantly be replaced with clean energy coming from out customers. Smart home devices and bidirectionally charged EVs are set to create the first real "smart homes" and I envision this orchestrated in real time on the tiny hub network. 
+
+Microgrid strategies for small communities across the country and a grid upgrade are required to continue to scale this technology. Maybe one day my platform can shoot type 1 energy beams from a space based solar farm straight to a residential home, anything is possible.
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by Cole</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-8">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-15">
+<div class="sprint-card-logo">
+<a href="https://www.djangoproject.com">
+<img alt="Django logo" src="/2026/media/sprint_project_logos/django-logo-negative.png"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://www.djangoproject.com">Django</a></h3>
+      Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. It's been around for 20 years and is built to take care of much of the hassle of web development, so people can focus on writing apps without needing to reinvent the wheel.
+
+If you'd like to get started before sprints begin, <a href="https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/">you can make sure your machine can run the tests locally</a>
+<strong>Newcomer friendly!</strong>
+</div>
+<div class="sprint-card-meta">
+<span>Submitted by Tim</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-15">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-3">
+<div class="sprint-card-logo">
+<a href="https://www.pyopensci.org">
+<img alt="PyOpenSci logo" src="/2026/media/sprint_project_logos/pyopensci-logo.png"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://www.pyopensci.org">PyOpenSci</a></h3>
+      pyOpenSci supports the Python scientific software ecosystem through its <a href="https://www.pyopensci.org/software-peer-review/about/intro.html">open community-led peer reviews</a> and free <a href="https://www.pyopensci.org/python-packaging-science.html">Python packaging resources</a>. It also has its own software that requires maintenance. We will work on documentation, infrastructure, security, translations, and other tasks. Ideas for new features are welcome too! 
+
+This is our fourth year hosting sprints at PyCon US. Read the recap of our 2024 sprint to get an idea what to expect: <a href="https://www.pyopensci.org/blog/recap-pyos-pyconus-2024.html#-our-second-pyopensci-sprint-">https://www.pyopensci.org/blog/recap-pyos-pyconus-2024.html#-our-second-pyopensci-sprint-</a>
+
+Whether you are an experienced Python developer or just getting started, everyone is welcome!
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by Inessa</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-3">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-5">
+<div class="sprint-card-logo">
+<a href="https://api.arcade.academy">
+<img alt="Arcade logo" src="/2026/media/sprint_project_logos/logo.png"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://api.arcade.academy">Arcade</a></h3>
+      Arcade is an easy to learn library for creating 2D games. It has a user-friendly API that makes it easy for beginners to get started, and expansive lower level utilities that create great possibilities for advanced users.
+
+We are fast approaching the release of our new 4.0 version, which brings a lot of under the hood the changes together to bring native support for running in a browser with Pyodide, utilizing WebGL. If you have an interest in game development with Python, check us out! We can always use help even just testing out our pre-release builds of this new version on the web.
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by Darren</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-5">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-7">
+<div class="sprint-card-logo">
+<a href="https://www.list.org/">
+<img alt="GNU Mailman logo" src="/2026/media/sprint_project_logos/logo2010-2.jpg"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://www.list.org/">GNU Mailman</a></h3>
+      Mailman is an email list management system complete with a Django based web UI for list management and archiving.
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by Mark</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-7">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-10">
+<div class="sprint-card-logo">
+<a href="https://github.com/scanapi/scanapi">
+<img alt="ScanAPI logo" src="/2026/media/sprint_project_logos/logo-white-on-black.png"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://github.com/scanapi/scanapi">ScanAPI</a></h3>
+      ScanAPI 🪼
+
+ScanAPI is an open source API integration testing framework built in Python and maintained by Cumbuca Dev, a Brazilian FLOSS community focused on contributor onboarding, open source sustainability and collaborative development.
+
+The project provides:
+<ul>
+<li>Automated Integration Testing</li>
+<li>Automated Live Documentation</li>
+<li>Real-time API diagnostics</li>
+<li>Flexible YAML/JSON-based configuration</li>
+<li>Contributor-friendly architecture for extensibility and experimentation</li>
+</ul>
+
+Given an API specification, ScanAPI automatically hits endpoints, validates expected behaviors, executes test cases and generates detailed execution reports that can also serve as live API documentation.
+
+One of the project's main goals is lowering barriers to API testing and open source contribution. Even developers with minimal Python experience can quickly start contributing by creating tests, improving documentation, expanding integrations and participating in collaborative workflows.
+
+ScanAPI is also part of Cumbuca Dev’s broader work strengthening the Brazilian open source ecosystem through mentorship, GitHub onboarding initiatives and contributor-centered community programs.
+
+We are actively looking for contributors interested in:
+- Python
+- API testing
+- Developer Experience (DX)
+- Documentation
+- CI/CD workflows
+- Open source collaboration
+- Community building
+
+Whether this is your first contribution or your hundredth PR, you are welcome to build with us 💜
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by Maria Antônia</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-10">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-11">
+<div class="sprint-card-logo">
+<a href="https://github.com/bloomberg/memray">
+<img alt="Memray logo" src="/2026/media/sprint_project_logos/memray_logo.png"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://github.com/bloomberg/memray">Memray</a></h3>
+      Memray is a Python memory profiler - see <a href="https://bloomberg.github.io/memray/">our docs</a>. We'll be working on hardening our GitHub Actions setup and adding some new features, including Python 3.15 support. Many of the open issues require some C or C++ knowledge to complete, though there are a few that only require Python or JavaScript. Feel free to join us whether you'd like to contribute a new feature, or just learn more about Memray or get help trying it out!
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by Matt</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-11">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-14">
+<div class="sprint-card-logo">
+<a href="https://civicdatatech.github.io/volunteer">
+<img alt="Civic Data Tech logo" src="/2026/media/sprint_project_logos/civic_data_tech_logo.png"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://civicdatatech.github.io/volunteer">Civic Data Tech</a></h3>
+      Civic Data Tech focuses on supporting the open-source projects and maintainers that make civic data usable and trustworthy. Our primary project support today is focused on CivicPatch and OpenStates.
+
+Developers can contribute to both projects. You can learn more about the projects here: 
+
+Civic Patch: <a href="https://civicpatch.org/">https://civicpatch.org/</a>
+AI Scraping Tools for Civic Data
+
+Open States / Jurisdictions
+A verified catalogue of local United States Jurisdictions and their Divisions (expanded OCDids + metadata)
+<a href="https://github.com/openstates/jurisdictions">https://github.com/openstates/jurisdictions</a>
+</div>
+<div class="sprint-card-meta">
+<span>Submitted by Kas</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-14">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-16">
+<div class="sprint-card-logo">
+<a href="https://djangonaut.space">
+<img alt="Djangonaut Space logo" src="/2026/media/sprint_project_logos/Main-white.png"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://djangonaut.space">Djangonaut Space</a></h3>
+      Djangonaut Space is a contributor mentorship program for the Django web framework, its community projects and Python projects. We'd love to discuss how you can get involved as a mentee (Djangonaut) or as a mentor (Navigator / Captain).
+
+If you maintain or contribute to a package and you would like to be a mentor to others, come find us and let's discuss you becoming a Navigator.
+
+If you'd like to recreate Djangonaut Space for your own community, let us know. We have information to share with you!
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by Tim</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-16">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-17">
+<div class="sprint-card-logo">
+<a href="https://civic.band">
+<img alt="CivicBand logo" src="/2026/media/sprint_project_logos/CivicBand_Logo.png"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://civic.band">CivicBand</a></h3>
+      CivicBand is a project of the Raft Foundation dedicated to municipal transparency and civic participation. We host the largest public collection of civic meeting and election finance data for the US and Canada. 
+
+We are entirely powered by Python, and want your help making Civic Data more accessible. ✨
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by phildini</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-17">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-12">
+<div class="sprint-card-logo">
+<a href="https://github.com/bloomberg/pystack">
+<img alt="PyStack logo" src="/2026/media/sprint_project_logos/pystack_logo.png"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://github.com/bloomberg/pystack">PyStack</a></h3>
+      PyStack is a Python debugging tool that lets you attach to a running process and see the stack of every thread, including the C or C++ or Rust running beneath your Python code. See <a href="https://bloomberg.github.io/pystack/">the docs</a> for more details. We'll be working on hardening our GitHub Actions setup and adding some new features, including Python 3.15 support. Many of the open issues require some C or C++ knowledge to complete, but even if you don't feel confident adding a new feature, you can join us to suggest features you'd like to see in PyStack, or to learn how it works, or even to get help trying it out.
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by Matt</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-12">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-20">
+<div class="sprint-card-logo">
+<a href="https://palletsprojects.com/">
+<img alt="Pallets logo" src="/2026/media/sprint_project_logos/IMG_5018.png"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://palletsprojects.com/">Pallets</a></h3>
+      The home of Flask, Quart, Jinja, Click, and Werkzeug! Join us for some fun. Newcomers welcome!
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by Eddie</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-20">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-21">
+<div class="sprint-card-logo">
+<a href="https://github.com/psf/organizer-toolkit">
+<img alt="The PSF Organizers Kit logo" src="/2026/media/sprint_project_logos/IMG_0003.png"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://github.com/psf/organizer-toolkit">The PSF Organizers Kit</a></h3>
+      The Python Software Community and Conference Organizers Kit is a comprehensive resource developed by members of the Python Software Community to support individuals and groups in organizing Python-related events and fostering local communities. Adapted from materials by PyLadies Global, this kit offers practical guidance for both new and experienced organizers.
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by Mesrenyame</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-21">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-18">
+<div class="sprint-card-logo">
+<a href="https://devguide.python.org/">
+<img alt="CPython logo" src="/2026/media/sprint_project_logos/python-logo-only_P9UnNdr.png"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://devguide.python.org/">CPython</a></h3>
+      The interpreter itself. Come fix a bug, add a feature, or discuss a PEP!
+<ul>
+<li>Recommended for Python users with 2+ years of experience.</li>
+<li>Fork and clone the repository before coming to the venue in case of slow wifi :)</li>
+<li>Use the Python Developer's Guide to go through the initial build on you machine: <a href="https://devguide.python.org/">https://devguide.python.org/</a></li>
+</ul>
+
+Don't be shy! First-time contributors welcome.
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by Petr Viktorin</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-18">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-19">
+<div class="sprint-card-logo">
+<a href="https://documentdb.io">
+<img alt="DocumentDB logo" src="/2026/media/sprint_project_logos/documentdb_color_whitetext.png"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://documentdb.io">DocumentDB</a></h3>
+      DocumentDB is an open-source document database that speaks both MongoDB wire protocol AND PostgreSQL. Use your favorite  drivers and tools like pymongo, pydantic, LangChain, LlamaIndex, and more with the reliability of Postgres under the hood.
+
+Whether you want to improve docs, add Python examples, or just learn about data, feel free to join us! All skill levels welcome.
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by Patty</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-19">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-22">
+<div class="sprint-card-logo">
+<a href="https://conda.org">
+<img alt="conda logo" src="/2026/media/sprint_project_logos/conda-pngrepo-com.png"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://conda.org">conda</a></h3>
+      A community supporting a language-agnostic, multi-platform package management ecosystem for projects of any size and complexity.
+
+Stop by the packaging sprint room to collaborate on conda/PyPI interoperability: the conda-pypi project, WheelsNext prototypes, metadata conversion improvements, and documentation.
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by Dan</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-22">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-23">
+<div class="sprint-card-body">
+<h3><a href="https://github.com/nvidia/cuda-python">CUDA Python</a></h3>
+      CUDA Python is the home for accessing NVIDIA’s CUDA platform from Python.
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by Andy</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-23">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-24">
+<div class="sprint-card-body">
+<h3><a href="https://github.com/cloud-custodian/cel-python">Cloud Custodian</a></h3>
+      This is an add-on to Cloud Custodian. It provides elegant, simple expressions that can replace bulky YAML-style expressions that are first-class parts of Custodian Rules.
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by S.Lott</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-24">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-25">
+<div class="sprint-card-logo">
+<a href="https://ppb.dev/">
+<img alt="PursuedPyBear logo" src="/2026/media/sprint_project_logos/1000018289.png"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://ppb.dev/">PursuedPyBear</a></h3>
+      Unbearably fun game development!
+    </div>
+<div class="sprint-card-meta">
+<span>Submitted by Jamie</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-25">#link</a>
+</span>
+</div>
+</div>
+<div class="sprint-card" id="sprint-13">
+<div class="sprint-card-logo">
+<a href="https://github.com/sponsors/aio-libs">
+<img alt="aio-libs: aiohttp and the ecosystem logo" src="/2026/media/sprint_project_logos/aiohttp-plain.png"/>
+</a>
+</div>
+<div class="sprint-card-body">
+<h3><a href="https://github.com/sponsors/aio-libs">aio-libs: aiohttp and the ecosystem</a></h3>
+<ul>
+<li>
+
+The <a href="https://github.com/sponsors/aio-libs">aio-libs</a> organization maintains a suite of foundational asyncio libraries for Python, including <strong>aiohttp</strong>, a widely used HTTP client/server library. These libraries form the async backbone of many production systems and open source projects.
+</li>
+<li>
+
+We’ll be sprinting on open issues across aiohttp and its dependencies, including bug fixes, documentation improvements, test enhancements, and broader ecosystem support. All experience levels are welcome. We’re happy to help new contributors get set up and find a task that matches their interests.
+</li>
+<li>
+
+Please review our planned <a href="https://github.com/orgs/aio-libs/projects/5">sprint board</a> for ideas — it’s a starting point, not a limit. If you have something else you’d like to work on within aiohttp or the wider aio-libs ecosystem, bring it along and we’ll help you scope it.
+</li>
+<li>
+
+Before contributing, please take a look at our <a href="https://github.com/aio-libs/aiohttp/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a> and the <a href="https://docs.aiohttp.org/en/stable/contributing.html">contributing guide</a>, which covers setting up a development environment, running the test suite, and our PR workflow.
+</li>
+<li>
+<strong>Pre-download before you arrive.</strong> Sprint Wi-Fi gets overloaded fast. Please clone the repo and install the development dependencies ahead of time so you’re ready to code on day one: <code>git clone --recurse-submodules <a href="https://github.com/aio-libs/aiohttp.git;">https://github.com/aio-libs/aiohttp.git;</a> cd aiohttp; make install</code>
+</li>
+<li>
+
+Maintainer <a href="https://github.com/bdraco">@bdraco</a> will be at the sprint in person. Other maintainers, including <a href="https://github.com/sponsors/webknjaz">@webknjaz</a> (<a href="https://matrix.to/#/@webknjaz:matrix.org">@webknjaz:matrix.org</a>), will be available in <a href="https://matrix.to/#/%23aio-libs:matrix.org">#aio-libs:matrix.org</a> during the sprints; come say hi or chat with us there.
+</li>
+<li>
+
+We are in Seaside ballroom A, third table back on the left side of the room, first row.
+</li>
+<li>
+
+Note this sprint is only running Monday May 18th due to scheduling conflicts.
+</li>
+</ul>
+</div>
+<div class="sprint-card-meta">
+<span>Submitted by Nick</span>
+<span class="sprint-card-anchor">
+<a aria-label="Link to " href="/2026/events/dev-sprints/#sprint-13">#link</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="site-footer" id="SiteFooter">
+<div class="container">
+<div class="site-footer-colophon content">
+<p class="lead"><b>The PyCon US 2026 conference in Long Beach, California, USA is a production of the <a href="https://www.python.org/psf/">Python Software Foundation</a>.</b></p>
+<p>This site is built using <a href="https://www.djangoproject.com/">Django</a> and <a href="https://wagtail.org/">Wagtail</a>.
+                    <p>PyCon US 2026 illustration and design by <a href="https://meanapasc.myportfolio.com/">Meanapas.C</a> and <a href="https://tiles.bio/humblejack">Hamza Haj Taieb</a>, Coordinated by <a href="https://www.galileosparadox.com/">Georgi K</a></p>
+<p>Site design implemented by <a href="https://yupgup.com/">YupGup</a>.</p>
+<p>Need help? <a href="/2026/about/support/">Check out our Support page</a> to find the correct person to contact.</p>
+<p><a href="https://policies.python.org/PSF-Privacy-Notice/">Privacy Notice</a></p>
+</p></div>
+<div class="site-footer-aux">
+<div>
+<small>© Python Software Foundation</small>
+</div>
+<ul class="nav">
+<li>
+<a aria-label="Blog" href="https://pycon.blogspot.com/"><span class="brand large brand-blogger"></span></a>
+</li>
+<li>
+<a aria-label="LinkedIn" href="https://www.linkedin.com/company/thepsf"><span class="brand large brand-linkedin"></span></a>
+</li>
+<li>
+<a aria-label="Mastodon" href="https://fosstodon.org/@pycon"><span class="brand large brand-mastodon"></span></a>
+</li>
+<li>
+<a aria-label="X (formally Twitter)" href="https://twitter.com/pycon?lang=en"><span class="brand large brand-xtwitter"></span></a>
+</li>
+</ul>
+</div>
+</div>
+</footer>
+
+<script src="/2026/static/js/vendor/jquery-3.6.4.min.641dd1437010.js" type="text/javascript"></script>
+<script src="/2026/static/js/main.dbd960a20e46.js" type="module"></script>
+
+</body>
+<!-- Mirrored from https://us.pycon.org/2026/events/dev-sprints/ by HTTrack Website Copier/3.x [XR&CO], Sun, 11 Oct 2026 20:02:59 GMT -->
+</html>
