@@ -37,6 +37,7 @@ for tips on producing good archival copies.
 3. Check the crawl's response log; publish successful responses, not generated error or login-redirect placeholders. Complete missing public pages and assets, including JavaScript module imports, CSS dependencies, webmanifest icons, public media, and sponsor logos. Save `schedule/conference.json` explicitly and use its presentation and speaker URLs to check coverage.
 4. Assemble HTML under `YEAR/` and `es/YEAR/`, preserving public paths. Rewrite mirrored asset references locally, home/logo links to `/YEAR/`, and translation links to the appropriate language. Use absolute archive-host URLs for mirrored assets in JSON. Add an archive notice and remove or disable account, registration, search, and submission controls; preserve client-side navigation and schedule tabs.
 5. Serve the repository root with `python3 -m http.server`. Check internal links, fragments, asset responses, JSON, both languages, desktop/mobile navigation, schedules, presentations, and speaker pages in a browser.
+   Jekyll excludes underscore-prefixed filenames by default. Add any required mirrored assets with those names to `_config.yml`'s `include` list and check them after deployment.
 6. Merge into `main`; GitHub Pages publishes the repository root at `https://pycon-archive.python.org/`. Verify the deployed archive before changing Fastly's current-year routing in `pycon-site/infra/main.tf`. Publishing here does not change that routing.
 
 ### 2026 snapshot
